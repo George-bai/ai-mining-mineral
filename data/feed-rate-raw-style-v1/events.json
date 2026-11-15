@@ -1,0 +1,236 @@
+{
+ "seed1-base.csv": {
+  "records": 33709,
+  "events": {
+   "spikes": {
+    "kind": "fault",
+    "records": 5,
+    "first_second": 12285,
+    "last_second": 37985
+   },
+   "surge": {
+    "kind": "inserted event",
+    "records": 248,
+    "first_second": 72000,
+    "last_second": 73795
+   },
+   "trip": {
+    "kind": "inserted event",
+    "records": 204,
+    "first_second": 108000,
+    "last_second": 111650
+   },
+   "shutdown and start-up": {
+    "kind": "inserted event",
+    "records": 481,
+    "first_second": 144000,
+    "last_second": 168895
+   },
+   "zero drift": {
+    "kind": "fault",
+    "records": 7,
+    "first_second": 208800,
+    "last_second": 212395
+   },
+   "failed transmitter": {
+    "kind": "fault",
+    "records": 3,
+    "first_second": 230400,
+    "last_second": 231295
+   }
+  }
+ },
+ "seed1-1-spike.csv": {
+  "records": 33697,
+  "events": {
+   "spikes": {
+    "kind": "fault",
+    "records": 1,
+    "first_second": 12285,
+    "last_second": 12285
+   },
+   "surge": {
+    "kind": "inserted event",
+    "records": 248,
+    "first_second": 72000,
+    "last_second": 73795
+   },
+   "trip": {
+    "kind": "inserted event",
+    "records": 204,
+    "first_second": 108000,
+    "last_second": 111650
+   },
+   "shutdown and start-up": {
+    "kind": "inserted event",
+    "records": 481,
+    "first_second": 144000,
+    "last_second": 168895
+   },
+   "zero drift": {
+    "kind": "fault",
+    "records": 7,
+    "first_second": 208800,
+    "last_second": 212395
+   },
+   "failed transmitter": {
+    "kind": "fault",
+    "records": 3,
+    "first_second": 230400,
+    "last_second": 231295
+   }
+  }
+ },
+ "seed1-50-spikes.csv": {
+  "records": 33765,
+  "events": {
+   "spikes": {
+    "kind": "fault",
+    "records": 50,
+    "first_second": 165,
+    "last_second": 42395
+   },
+   "surge": {
+    "kind": "inserted event",
+    "records": 248,
+    "first_second": 72000,
+    "last_second": 73795
+   },
+   "trip": {
+    "kind": "inserted event",
+    "records": 204,
+    "first_second": 108000,
+    "last_second": 111650
+   },
+   "shutdown and start-up": {
+    "kind": "inserted event",
+    "records": 481,
+    "first_second": 144000,
+    "last_second": 168895
+   },
+   "zero drift": {
+    "kind": "fault",
+    "records": 7,
+    "first_second": 208800,
+    "last_second": 212395
+   },
+   "failed transmitter": {
+    "kind": "fault",
+    "records": 3,
+    "first_second": 230400,
+    "last_second": 231295
+   }
+  }
+ },
+ "seed1-clean-control.csv": {
+  "records": 33779,
+  "events": {
+   "surge": {
+    "kind": "inserted event",
+    "records": 248,
+    "first_second": 72000,
+    "last_second": 73795
+   },
+   "trip": {
+    "kind": "inserted event",
+    "records": 204,
+    "first_second": 108000,
+    "last_second": 111650
+   },
+   "shutdown and start-up": {
+    "kind": "inserted event",
+    "records": 481,
+    "first_second": 144000,
+    "last_second": 168895
+   },
+   "empty running belt": {
+    "kind": "inserted event",
+    "records": 7,
+    "first_second": 208800,
+    "last_second": 212395
+   }
+  }
+ },
+ "seed2-base.csv": {
+  "records": 33662,
+  "events": {
+   "spikes": {
+    "kind": "fault",
+    "records": 5,
+    "first_second": 11220,
+    "last_second": 37085
+   },
+   "surge": {
+    "kind": "inserted event",
+    "records": 242,
+    "first_second": 72000,
+    "last_second": 73795
+   },
+   "trip": {
+    "kind": "inserted event",
+    "records": 206,
+    "first_second": 108000,
+    "last_second": 111650
+   },
+   "shutdown and start-up": {
+    "kind": "inserted event",
+    "records": 476,
+    "first_second": 144000,
+    "last_second": 168895
+   },
+   "zero drift": {
+    "kind": "fault",
+    "records": 7,
+    "first_second": 208800,
+    "last_second": 212395
+   },
+   "failed transmitter": {
+    "kind": "fault",
+    "records": 3,
+    "first_second": 230400,
+    "last_second": 231295
+   }
+  }
+ },
+ "seed3-base.csv": {
+  "records": 33462,
+  "events": {
+   "spikes": {
+    "kind": "fault",
+    "records": 5,
+    "first_second": 11175,
+    "last_second": 36150
+   },
+   "surge": {
+    "kind": "inserted event",
+    "records": 229,
+    "first_second": 72000,
+    "last_second": 73795
+   },
+   "trip": {
+    "kind": "inserted event",
+    "records": 204,
+    "first_second": 108000,
+    "last_second": 111655
+   },
+   "shutdown and start-up": {
+    "kind": "inserted event",
+    "records": 478,
+    "first_second": 144000,
+    "last_second": 168895
+   },
+   "zero drift": {
+    "kind": "fault",
+    "records": 7,
+    "first_second": 208800,
+    "last_second": 212395
+   },
+   "failed transmitter": {
+    "kind": "fault",
+    "records": 3,
+    "first_second": 230400,
+    "last_second": 231295
+   }
+  }
+ }
+}

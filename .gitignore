@@ -1,0 +1,10 @@
+# What a run leaves behind: the drawings, your model configuration and the raw logs, which contain the drawings.
+local/
+drawings/
+*.pdf
+*.png
+*.jpg
+my-models.json
+out/
+__pycache__/
+*.pyc

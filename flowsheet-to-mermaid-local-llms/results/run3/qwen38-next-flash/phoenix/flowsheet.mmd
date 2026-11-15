@@ -1,0 +1,170 @@
+flowchart LR
+
+%% ================= ORE HANDLING / COMMINUTION =================
+ORE["MINED ORE<br/>12,264,000 TONS/YR<br/>0.13% Cu<br/>0.036 OZ/TON Au<br/>0.270 OZ/TON Ag"]
+PC["PRIMARY CRUSHER"]
+COS["CRUSHED ORE STOCKPILE<br/>33,000 TON (LIVE)"]
+PEBC["PEBBLE CRUSHER"]
+SAG["SAG MILL"]
+SAGSCR["SAG MILL DISCHARGE SCREEN"]
+BM["BALL MILLS"]
+BMC["BALL MILL CYCLONES"]
+
+WATER1["WATER"]
+WATER2["WATER"]
+LIME1["LIME"]
+
+ORE -->|"haul trucks"| PC
+PC --> COS
+COS -->|"conveyor"| SAG
+WATER1 --> SAG
+LIME1 --> SAG
+SAG --> SAGSCR
+SAGSCR -->|"oversize"| PEBC
+PEBC -->|"crushed pebbles to SAG feed conveyor"| SAG
+SAGSCR -->|"undersize"| BM
+WATER2 --> BM
+BM --> BMC
+BMC -->|"underflow (closed circuit)"| BM
+BMC -->|"overflow + REAGENTS"| RF
+REAG1["REAGENTS"] --> BMC
+
+%% ================= FLOTATION =================
+RF["ROUGHER FLOTATION"]
+CF["CONTACT FLOTATION"]
+RG["REGRIND"]
+C1F["1st CLEANER FLOTATION"]
+CSF["CLEANER/SCAVENGER FLOTATION"]
+C2T["2ND CLEANER CONDITIONING TANK"]
+MS["MAGNETIC SEPARATION"]
+MCGC["MAGNETIC CONCENTRATE GRAVITY CONCENTRATOR"]
+C2["2ND CLEANER"]
+C2S["2ND CLEANER SCAVENGER"]
+
+REAG2["REAGENTS"] --> RF
+REAG3["REAGENTS"] --> CF
+REAG4["REAGENTS"] --> CSF
+REAG5["REAGENTS"] --> CSF
+REAG6["REAGENTS"] --> C2T
+REAG7["REAGENTS"] --> C2T
+REAG8["REAGENTS"] --> C2T
+LIME2["LIME"] --> C1F
+
+RF -->|"concentrate"| CF
+CF -->|"overflow (back to rougher feed)"| RF
+CF -->|"underflow"| FG
+RF -->|"tails"| DC
+
+C1F -->|"concentrate"| CCT
+C1F -->|"tails"| CSF
+CSF -->|"concentrate"| C2T
+CSF -->|"tails"| FT
+C2T --> MS
+MS -->|"concentrate"| MCGC
+MS -->|"tails"| FT
+MCGC -->|"concentrate"| C2
+MCGC -->|"tails"| FT
+C2 -->|"concentrate"| IC
+C2 -->|"tails"| C2S
+C2S -->|"concentrate"| MS
+C2S -->|"tails"| FT
+RG -->|"to 1st CLEANER FLOTATION"| C1F
+
+%% ================= GRAVITY =================
+FG["FLOTATION GRAVITY"]
+CG["CLEANER GRAVITY (FUTURE)"]
+PCC["PRIMARY CLEANER COLUMN"]
+
+FG -->|"concentrate"| CG
+FG -->|"tails"| PCC
+CG -->|"concentrate"| IC
+CG -->|"tails"| PCC
+PCC -->|"concentrate (with LIME and REAGENTS)"| RG
+
+%% ================= COPPER CONCENTRATE =================
+CCT["COPPER CONCENTRATE THICKENER"]
+CCF["COPPER CONCENTRATE FILTER"]
+CCS["COPPER CONCENTRATE STOCKPILE<br/>10,000 TONS (COVERED)"]
+CTM["CONCENTRATE TO MARKET"]
+
+CCT --> CCF
+CCF -->|"concentrate"| CCS
+CCF -->|"filtrate"| CCT
+CCS -->|"wheel loader / trucks"| CTM
+
+%% ================= GRAVITY CONCENTRATE CYANIDATION =================
+IC["INTENSIVE CYANIDATION"]
+GASES["[GASES]"]
+
+IC -->|"(RESIDUE) to SAG MILL DISCHARGE SCREEN sump"| SAGSCR
+IC --> GASES
+IC -->|"(PREG)"| PST
+
+%% ================= LEACH / CIP / CARBON =================
+DC["DESLIME CYCLONES"]
+LEACH["LEACH"]
+CIP["CIP"]
+CB["CARBON BIN"]
+AW["ACID WASH"]
+STRIP["STRIP"]
+REG["REGENERATION"]
+BST["BARREN SOLUTION TANK"]
+PST["PREGNANT SOLUTION TANK"]
+EW["(ELECTROWINNING CELLS)"]
+PMS["PRECIOUS METAL EW SLUDGE<br/>TO REFINERY<br/>231,800 OZ/YR Au<br/>422,400 OZ/YR Ag"]
+HEAP["HEAP LEACH"]
+CYAN["CYANIDE"]
+TRASH["TRASH"]
+
+DC -->|"underflow (trash screened)"| LEACH
+DC -->|"trash screen"| TRASH
+CYAN --> LEACH
+DC -->|"overflow"| FT
+LEACH --> CIP
+CIP -->|"carbon screened from last CIP tank"| CB
+CB -->|"carbon feed to CIP train"| CIP
+CIP -->|"(LOADED CARBON)"| AW
+AW --> STRIP
+HEAP -->|"HEAP LEACH CARBON"| STRIP
+STRIP --> REG
+REG -->|"(BARREN CARBON)"| CB
+REG -->|"CARBON TO HEAP LEACH"| HEAP
+STRIP -->|"pregnant solution"| PST
+AW -->|"pregnant acid"| PST
+PST --> EW
+EW -->|"PRECIOUS METAL EW SLUDGE TO REFINERY 231,800 OZ/YR Au 422,400 OZ/YR Ag"| PMS
+EW -->|"barren electrolyte"| BST
+BST -->|"barren solution to acid wash"| AW
+
+%% ================= TAILINGS AND WATER =================
+FT["FINES THICKENER"]
+TP["TAILINGS POND"]
+TR["TREATED RECLAIM"]
+MINEW["MINE WATER"]
+FRESH["FRESH WATER"]
+MW["MILL WATER"]
+MWD["MILL WATER DIST'N"]
+CP["CHLORIDE PLUME"]
+FLOC["FLOCCULANT"]
+CARO1["CARO'S ACID"]
+CARO2["CARO'S ACID"]
+CARO3["CARO'S ACID"]
+LIME3["LIME"]
+
+FLOC --> FT
+CARO2 --> FT
+MW -->|"MILL WATER"| FT
+CIP -->|"final tails"| TP
+CARO3 --> TP
+FT -->|"underflow"| TP
+FT -->|"overflow"| MW
+MW --> MWD
+MWD -->|"mill water to mill"| SAG
+MINEW --> TR
+CARO1 --> TR
+LIME3 --> TR
+TR -->|"treated reclaim"| FT
+TP -->|"RECLAIM WATER"| FRESH
+FRESH --> MW
+TP --> CP
+FRESH -->|"REAGENTS GLAND WATER"| REAG1

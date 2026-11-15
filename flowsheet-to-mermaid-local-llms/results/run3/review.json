@@ -1,0 +1,127 @@
+{
+  "note": "Judged by eye against the drawing, 14 Nov 2026, then checked by a second reviewer. One attempt per model and drawing in this run, following earlier exploratory runs. Not a score: no reference answer exists yet. 'correct' = every unit and stream matches; 'partial' = most labels right and several of the plant's real loops recovered, with reading and routing errors that a check against the drawing finds; 'poor' = units mostly found, connections mostly wrong. Each note is [kind, text]; kind is right, misread, missing or wrong (a wrong connection or an invented unit).",
+  "qwen38-27b": {
+    "simple-circuit": {
+      "verdict": "correct",
+      "notes": [
+        [
+          "right",
+          "All five units, the three screen products and both recycles."
+        ]
+      ]
+    },
+    "block-diagram": {
+      "verdict": "correct",
+      "notes": [
+        [
+          "right",
+          "Every stage and both recycles."
+        ]
+      ]
+    },
+    "phoenix": {
+      "verdict": "poor",
+      "notes": [
+        [
+          "right",
+          "Most unit names, in five tidy groups."
+        ],
+        [
+          "misread",
+          "Intensive cyanidation as \"intensive oxidation\"; fines thickener as \"froth thickener\"; chloride plume as \"chloride fume\"."
+        ],
+        [
+          "missing",
+          "Primary gravity, the 2nd cleaner, the electrowinning cell."
+        ],
+        [
+          "wrong",
+          "One long chain: stockpile to pebble crusher to SAG mill and on. No pebble crusher recycle, no regrind loop, no carbon loop."
+        ]
+      ]
+    },
+    "twin-creeks": {
+      "verdict": "poor",
+      "notes": [
+        [
+          "right",
+          "All the process areas, in order."
+        ],
+        [
+          "misread",
+          "Tower Mill as \"Tauri Mill\"; Retort as \"Roster\"; solution tanks as \"salt tanks\"."
+        ],
+        [
+          "missing",
+          "The flash vessels, the cooling tower, the heater."
+        ],
+        [
+          "wrong",
+          "Oxide stacker feeds the refractory stockpile; nitric acid goes to the strip vessel; the carbon loop is not the drawing's."
+        ]
+      ]
+    }
+  },
+  "qwen38-next-flash": {
+    "simple-circuit": {
+      "verdict": "correct",
+      "notes": [
+        [
+          "right",
+          "All five units, the three screen products and both recycles."
+        ]
+      ]
+    },
+    "block-diagram": {
+      "verdict": "correct",
+      "notes": [
+        [
+          "right",
+          "Every stage and both recycles."
+        ]
+      ]
+    },
+    "phoenix": {
+      "verdict": "partial",
+      "notes": [
+        [
+          "right",
+          "The unit names it kept, with the ore feed and bullion figures."
+        ],
+        [
+          "right",
+          "Loops: pebble crusher on the SAG screen oversize; ball mill cyclones; carbon through acid wash, strip and regeneration."
+        ],
+        [
+          "missing",
+          "The regrind mill's cyclone loop; primary gravity; the tonnages and grades of the concentrate sent to market."
+        ],
+        [
+          "wrong",
+          "A \"[GASES]\" box that is not on the drawing."
+        ]
+      ]
+    },
+    "twin-creeks": {
+      "verdict": "partial",
+      "notes": [
+        [
+          "right",
+          "Seven process areas as groups; existing and expansion kiln screens kept apart; lines coloured by the drawing's legend."
+        ],
+        [
+          "misread",
+          "Sub Aerial Deposition as \"Sub-Aerial Separator\"; 4 electrowinning cells where the drawing says 6."
+        ],
+        [
+          "missing",
+          "The return of regenerated carbon to the CIL tanks."
+        ],
+        [
+          "wrong",
+          "Washed carbon sent through the heater and coolers instead of to the strip vessels."
+        ]
+      ]
+    }
+  }
+}

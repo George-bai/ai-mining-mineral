@@ -1,0 +1,42 @@
+flowchart TD
+    ore["GROUND OXIDE ORE"]
+    roughing["ROUGHING"]
+    roughing_conc["CONC."]
+    roughing_tail["TAIL"]
+    cleaning["CLEANING"]
+    scavenging["SCAVENGING"]
+    final_conc1["FINAL CONCENTRATE"]
+    cleaning_tail["TAIL"]
+    scav_conc["CONC."]
+    scav_tail["TAIL"]
+    hydrocyclone["HYDROCYCLONE"]
+    uf["UF"]
+    of["OF (FINAL TAIL)"]
+    retreat1["RETREATMENT"]
+    retreat1_conc["CONC."]
+    retreat1_tail["TAIL"]
+    retreat2["RETREATMENT"]
+    final_conc2["FINAL CONCENTRATE"]
+    final_tail["FINAL TAIL"]
+
+    ore --> roughing
+    roughing --> roughing_conc
+    roughing --> roughing_tail
+    roughing_conc --> cleaning
+    roughing_tail --> scavenging
+    cleaning --> final_conc1
+    cleaning --> cleaning_tail
+    scavenging --> scav_conc
+    scavenging --> scav_tail
+    cleaning_tail --> retreat1
+    scav_conc --> retreat1
+    retreat1 --> retreat1_conc
+    retreat1 --> retreat1_tail
+    retreat1_conc --> cleaning
+    retreat1_tail --> roughing
+    scav_tail --> hydrocyclone
+    hydrocyclone --> uf
+    hydrocyclone --> of
+    uf --> retreat2
+    retreat2 --> final_conc2
+    retreat2 --> final_tail

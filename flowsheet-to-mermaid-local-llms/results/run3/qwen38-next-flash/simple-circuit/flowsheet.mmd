@@ -1,0 +1,24 @@
+flowchart TD
+    feed([Feed])
+    gyratory[Gyratory crusher]
+    screens[Screens]
+    rodmill[Rod mill]
+    ballmill[Ball mill]
+    classifier[Classifier]
+    product([Product slurry])
+
+    feed --> gyratory
+    gyratory --> screens
+
+    %% coarse oversize screened out and returned to the crusher
+    screens -->|Coarse| gyratory
+
+    screens -->|Intermediate| rodmill
+    screens -->|Fines| ballmill
+
+    rodmill --> ballmill
+    ballmill --> classifier
+
+    %% classifier underflow returned to the ball mill
+    classifier -->|Oversize recycle| ballmill
+    classifier --> product

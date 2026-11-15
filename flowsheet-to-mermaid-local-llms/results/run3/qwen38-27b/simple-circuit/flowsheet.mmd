@@ -1,0 +1,18 @@
+flowchart TD
+    Feed["Feed"]
+    Crusher["Gyratory crusher"]
+    Screens["Screens"]
+    RodMill["Rod mill"]
+    BallMill["Ball mill"]
+    Classifier["Classifier"]
+    ProductSlurry["Product slurry"]
+
+    Feed --> Crusher
+    Crusher --> Screens
+    Screens -->|Coarse| Crusher
+    Screens -->|Intermediate| RodMill
+    Screens -->|Fines| BallMill
+    RodMill --> BallMill
+    BallMill --> Classifier
+    Classifier -->|Oversize recycle| BallMill
+    Classifier --> ProductSlurry

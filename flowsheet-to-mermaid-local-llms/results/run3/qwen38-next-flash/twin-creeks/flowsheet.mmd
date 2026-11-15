@@ -1,0 +1,320 @@
+%% SAGE MILL FLOWSHEET - Twin Creeks Mine
+%% Stream colours follow the drawing legend:
+%%   oxide ore/slurry (dark red), refractory ore/slurry (black), oxidized slurry (red),
+%%   reagent/oxygen/steam (green), flashed steam/vent gas (purple), water (blue),
+%%   carbon (grey), gold (yellow), vent gas to atmosphere (magenta)
+flowchart TD
+
+    %% ================= Oxide Crushing =================
+    subgraph SG_OCRUSH["Oxide Crushing"]
+        ROMOX["ROM Oxide Ore"]
+        HOP1["Hopper"]
+        JAW["Jaw Crusher"]
+        RSTACK["Radial Stacker"]
+        OSB["Stockpile"]
+    end
+
+    %% ================= Oxide Grinding =================
+    subgraph SG_OGRIND["Oxide Grinding"]
+        HOP2["Hopper"]
+        SCR1["Screen"]
+        SAG1["SAG Mill"]
+        SCR2["Screen"]
+        CYC1["Cyclones"]
+        BALL1["Ball Mill"]
+        TRASH1["Trash Screen"]
+        THK1["Oxide Thickener"]
+    end
+
+    %% ================= Refractory Grinding =================
+    subgraph SG_RGRIND["Refractory Grinding"]
+        ROMREF["ROM Refractory Ore"]
+        OBSP["Ore Blend Stockpiler"]
+        FEL["Front End Loader"]
+        HOP3["Hopper"]
+        SCR3["Screen"]
+        SAG2["SAG Mill"]
+        CYC2["Cyclones"]
+        PBM["Primary Ball Mill"]
+        SBM["Secondary Ball Mill"]
+        CYC3["Cyclones"]
+        TRASH2["Trash Screen"]
+        THK2["Refractory Thickener"]
+    end
+
+    %% ================= Pressure Oxidation =================
+    subgraph SG_POX["Pressure Oxidation"]
+        ACIDT["Acidulation/Storage Tanks (3)"]
+        SULF["Sulfuric Acid"]
+        AIR1["Air"]
+        HEAT["2 Stage Slurry Heaters (2)"]
+        AUTO["4 Stage Autoclave"]
+        FLASH["2 Stage Flash Vessels (2)"]
+        SCRUB["Vent Gas Scrubber (2)"]
+        CTOWER["Cooling Tower"]
+        NG["Natural Gas"]
+        SGP["Steam Generation Plant"]
+        STM["Steam"]
+        OXY["Oxygen"]
+        ATM1["To Atmosphere"]
+    end
+
+    %% ============= Refractory Slurry Cooling =============
+    subgraph SG_COOL["Refractory Slurry Cooling"]
+        SURGE1["Surge Tank"]
+        TSC1["Tube and Shell Coolers / Heat Exchangers"]
+    end
+
+    %% ================= Carbon-in-Leach =================
+    subgraph SG_CIL["Carbon-in-Leach"]
+        LIMES["Lime Silo"]
+        LIME["Lime"]
+        TWR["Tower Mill (2)"]
+        RW2["Return Water"]
+        AIR2["Air"]
+        NEUT["Neutralization Tanks (3)"]
+        CIL["CIL Tanks (7)"]
+        SCR4["Screen"]
+        LCS["Loaded Carbon Screen"]
+        SAS["Sub-Aerial Separator"]
+        RWP["Reclaim Water Return to Plant"]
+        TAIL["Tailings"]
+    end
+
+    %% ======= Carbon Stripping, Reactivation, and Sizing =======
+    subgraph SG_STRIP["Carbon Stripping, Reactivation, and Sizing"]
+        SURGE2["Surge Tank"]
+        AWASH["Acid Wash Tank"]
+        NITRIC["Nitric Acid"]
+        STRIP["Carbon Strip Vessels (2)"]
+        CTANK["Carbon Tank"]
+        HEATER["Heater"]
+        TSC2["Tube and Shell Coolers / Heat Exchangers"]
+        CAUSTIC["Caustic"]
+        KFS1["Kiln Feed Screen"]
+        KFS2["Kiln Feed Screen (expansion)"]
+        KILN1["Reactivation Kiln"]
+        KILN2["Reactivation Kiln (expansion)"]
+        QUENCH["Quench Tank"]
+        CWSCR["Carbon Wash Screen"]
+        FINES["Carbon Fines to Filter"]
+        BARREN["Barren Solution Tank"]
+        PREG["Pregnant Solution Tank"]
+        EW["Electrowinning Cells (4)"]
+        RETORT["Retort"]
+        FURN["Furnace"]
+        BULL["Gold Bullion"]
+        ATM2["To Atmosphere"]
+    end
+
+    %% ---------------- Oxide Crushing ----------------
+    ROMOX -->|ROM Oxide Ore| HOP1
+    HOP1 --> JAW
+    JAW --> RSTACK
+    RSTACK --> OSB
+
+    %% ---------------- Oxide Grinding ----------------
+    OSB --> HOP2
+    HOP2 --> SCR1
+    SCR1 -->|oversize| SAG1
+    SCR1 -->|undersize to sump| CYC1
+    SAG1 --> SCR2
+    SCR2 -->|undersize to sump| CYC1
+    CYC1 -->|underflow| BALL1
+    BALL1 -->|discharge to cyclone feed| CYC1
+    CYC1 -->|overflow| TRASH1
+    TRASH1 --> THK1
+    THK1 -->|Water Return to Oxide Circuit| SAG1
+    THK1 -->|Return Water| SCR2
+    THK1 -->|oxide slurry| NEUT
+
+    %% ---------------- Refractory Grinding ----------------
+    ROMREF -->|ROM Refractory Ore| OBSP
+    OBSP --> FEL
+    FEL --> HOP3
+    HOP3 --> SCR3
+    SCR3 -->|oversize| SAG2
+    SCR3 -->|undersize to sump| PBM
+    SAG2 -->|discharge to sump| PBM
+    PBM --> CYC2
+    CYC2 -->|underflow to sump| PBM
+    CYC2 -->|overflow| SBM
+    SBM --> CYC3
+    CYC3 -->|underflow| SBM
+    CYC3 -->|overflow| TRASH2
+    TRASH2 --> THK2
+    THK2 -->|Water Return to Refractory Circuit| SAG2
+    THK2 -->|refractory slurry| ACIDT
+
+    %% ---------------- Pressure Oxidation ----------------
+    SULF --> ACIDT
+    AIR1 --> ACIDT
+    ACIDT -->|Vent| ATM1
+    ACIDT --> HEAT
+    HEAT --> AUTO
+    NG --> SGP
+    SGP -->|Steam| STM
+    STM --> AUTO
+    OXY --> AUTO
+    AUTO -->|oxidized slurry| FLASH
+    FLASH -->|oxidized slurry| SURGE1
+    AUTO -->|flashed steam| HEAT
+    FLASH -->|flashed steam| HEAT
+    AUTO -->|flashed steam and vent gas| SCRUB
+    FLASH -->|flashed steam and vent gas| SCRUB
+    SCRUB -->|To Atmosphere| ATM1
+    CTOWER -->|Water| SCRUB
+    CTOWER -->|Cooling Water| AUTO
+    CTOWER -->|cooling water| TSC1
+
+    %% ---------------- Refractory Slurry Cooling ----------------
+    SURGE1 -->|hot oxidized slurry| TSC1
+    TSC1 -->|cooling water return| CTOWER
+    TSC1 -->|oxidized slurry| CIL
+    TSC1 -->|oxidized slurry| LCS
+
+    %% ---------------- Carbon-in-Leach ----------------
+    LIMES -->|Lime| LIME
+    LIME --> NEUT
+    LIMES --> TWR
+    RW2 --> TWR
+    AIR2 --> TWR
+    AIR2 --> CIL
+    TWR -->|lime slurry| CIL
+    NEUT --> CIL
+    CIL --> SCR4
+    SCR4 -->|tailings slurry| SAS
+    SCR4 -->|loaded carbon| LCS
+    LCS -->|screen undersize| CIL
+    LCS -->|loaded carbon| SURGE2
+    SAS -->|Reclaim Water Return to Plant| RWP
+    SAS --> TAIL
+
+    %% ------- Carbon Stripping, Reactivation, and Sizing -------
+    SURGE2 --> AWASH
+    NITRIC --> AWASH
+    AWASH -->|acid washed carbon| CTANK
+    CTANK --> HEATER
+    HEATER --> TSC2
+    CAUSTIC --> BARREN
+    BARREN -->|barren strip solution| TSC2
+    TSC2 --> STRIP
+    STRIP -->|pregnant strip solution| TSC2
+    TSC2 -->|cooled pregnant solution| PREG
+    PREG --> EW
+    EW -->|barren solution| BARREN
+    EW -->|Vent| ATM2
+    EW -->|gold laden cathodes| RETORT
+    STRIP -->|barren carbon| KFS1
+    STRIP -->|barren carbon| KFS2
+    KFS1 -->|oversize kiln feed| KILN1
+    KFS2 -->|oversize kiln feed| KILN2
+    KFS1 -->|undersize| CWSCR
+    KFS2 -->|undersize| CWSCR
+    KILN1 --> QUENCH
+    KILN2 --> QUENCH
+    QUENCH --> CWSCR
+    CWSCR -->|regenerated carbon| CTANK
+    CWSCR --> FINES
+    RETORT --> FURN
+    FURN -->|Gold| BULL
+
+    %% ---- stream colours (legend colours) ----
+    linkStyle 0 stroke:#7b1f1f,color:#7b1f1f,stroke-width:2px;
+    linkStyle 1 stroke:#7b1f1f,color:#7b1f1f,stroke-width:2px;
+    linkStyle 2 stroke:#7b1f1f,color:#7b1f1f,stroke-width:2px;
+    linkStyle 3 stroke:#7b1f1f,color:#7b1f1f,stroke-width:2px;
+    linkStyle 4 stroke:#7b1f1f,color:#7b1f1f,stroke-width:2px;
+    linkStyle 5 stroke:#7b1f1f,color:#7b1f1f,stroke-width:2px;
+    linkStyle 6 stroke:#7b1f1f,color:#7b1f1f,stroke-width:2px;
+    linkStyle 7 stroke:#7b1f1f,color:#7b1f1f,stroke-width:2px;
+    linkStyle 8 stroke:#7b1f1f,color:#7b1f1f,stroke-width:2px;
+    linkStyle 9 stroke:#7b1f1f,color:#7b1f1f,stroke-width:2px;
+    linkStyle 10 stroke:#7b1f1f,color:#7b1f1f,stroke-width:2px;
+    linkStyle 11 stroke:#7b1f1f,color:#7b1f1f,stroke-width:2px;
+    linkStyle 12 stroke:#7b1f1f,color:#7b1f1f,stroke-width:2px;
+    linkStyle 13 stroke:#7b1f1f,color:#7b1f1f,stroke-width:2px;
+    linkStyle 14 stroke:#0060ff,color:#0060ff,stroke-width:2px;
+    linkStyle 15 stroke:#0060ff,color:#0060ff,stroke-width:2px;
+    linkStyle 16 stroke:#7b1f1f,color:#7b1f1f,stroke-width:2px;
+    linkStyle 17 stroke:#111111,color:#111111,stroke-width:2px;
+    linkStyle 18 stroke:#111111,color:#111111,stroke-width:2px;
+    linkStyle 19 stroke:#111111,color:#111111,stroke-width:2px;
+    linkStyle 20 stroke:#111111,color:#111111,stroke-width:2px;
+    linkStyle 21 stroke:#111111,color:#111111,stroke-width:2px;
+    linkStyle 22 stroke:#111111,color:#111111,stroke-width:2px;
+    linkStyle 23 stroke:#111111,color:#111111,stroke-width:2px;
+    linkStyle 24 stroke:#111111,color:#111111,stroke-width:2px;
+    linkStyle 25 stroke:#111111,color:#111111,stroke-width:2px;
+    linkStyle 26 stroke:#111111,color:#111111,stroke-width:2px;
+    linkStyle 27 stroke:#111111,color:#111111,stroke-width:2px;
+    linkStyle 28 stroke:#111111,color:#111111,stroke-width:2px;
+    linkStyle 29 stroke:#111111,color:#111111,stroke-width:2px;
+    linkStyle 30 stroke:#111111,color:#111111,stroke-width:2px;
+    linkStyle 31 stroke:#0060ff,color:#0060ff,stroke-width:2px;
+    linkStyle 32 stroke:#111111,color:#111111,stroke-width:2px;
+    linkStyle 33 stroke:#008000,color:#008000,stroke-width:2px;
+    linkStyle 34 stroke:#008000,color:#008000,stroke-width:2px;
+    linkStyle 35 stroke:#a020f0,color:#a020f0,stroke-width:2px;
+    linkStyle 36 stroke:#111111,color:#111111,stroke-width:2px;
+    linkStyle 37 stroke:#111111,color:#111111,stroke-width:2px;
+    linkStyle 38 stroke:#008000,color:#008000,stroke-width:2px;
+    linkStyle 39 stroke:#008000,color:#008000,stroke-width:2px;
+    linkStyle 40 stroke:#008000,color:#008000,stroke-width:2px;
+    linkStyle 41 stroke:#008000,color:#008000,stroke-width:2px;
+    linkStyle 42 stroke:#e00000,color:#e00000,stroke-width:2px;
+    linkStyle 43 stroke:#e00000,color:#e00000,stroke-width:2px;
+    linkStyle 44 stroke:#a020f0,color:#a020f0,stroke-width:2px;
+    linkStyle 45 stroke:#a020f0,color:#a020f0,stroke-width:2px;
+    linkStyle 46 stroke:#a020f0,color:#a020f0,stroke-width:2px;
+    linkStyle 47 stroke:#a020f0,color:#a020f0,stroke-width:2px;
+    linkStyle 48 stroke:#a020f0,color:#a020f0,stroke-width:2px;
+    linkStyle 49 stroke:#0060ff,color:#0060ff,stroke-width:2px;
+    linkStyle 50 stroke:#0060ff,color:#0060ff,stroke-width:2px;
+    linkStyle 51 stroke:#0060ff,color:#0060ff,stroke-width:2px;
+    linkStyle 52 stroke:#e00000,color:#e00000,stroke-width:2px;
+    linkStyle 53 stroke:#0060ff,color:#0060ff,stroke-width:2px;
+    linkStyle 54 stroke:#e00000,color:#e00000,stroke-width:2px;
+    linkStyle 55 stroke:#e00000,color:#e00000,stroke-width:2px;
+    linkStyle 56 stroke:#008000,color:#008000,stroke-width:2px;
+    linkStyle 57 stroke:#008000,color:#008000,stroke-width:2px;
+    linkStyle 58 stroke:#008000,color:#008000,stroke-width:2px;
+    linkStyle 59 stroke:#0060ff,color:#0060ff,stroke-width:2px;
+    linkStyle 60 stroke:#008000,color:#008000,stroke-width:2px;
+    linkStyle 61 stroke:#008000,color:#008000,stroke-width:2px;
+    linkStyle 62 stroke:#008000,color:#008000,stroke-width:2px;
+    linkStyle 63 stroke:#e00000,color:#e00000,stroke-width:2px;
+    linkStyle 64 stroke:#e00000,color:#e00000,stroke-width:2px;
+    linkStyle 65 stroke:#e00000,color:#e00000,stroke-width:2px;
+    linkStyle 66 stroke:#808080,color:#808080,stroke-width:2px;
+    linkStyle 67 stroke:#e00000,color:#e00000,stroke-width:2px;
+    linkStyle 68 stroke:#808080,color:#808080,stroke-width:2px;
+    linkStyle 69 stroke:#0060ff,color:#0060ff,stroke-width:2px;
+    linkStyle 70 stroke:#e00000,color:#e00000,stroke-width:2px;
+    linkStyle 71 stroke:#808080,color:#808080,stroke-width:2px;
+    linkStyle 72 stroke:#008000,color:#008000,stroke-width:2px;
+    linkStyle 73 stroke:#808080,color:#808080,stroke-width:2px;
+    linkStyle 74 stroke:#808080,color:#808080,stroke-width:2px;
+    linkStyle 75 stroke:#808080,color:#808080,stroke-width:2px;
+    linkStyle 76 stroke:#008000,color:#008000,stroke-width:2px;
+    linkStyle 77 stroke:#d4a017,color:#d4a017,stroke-width:2px;
+    linkStyle 78 stroke:#d4a017,color:#d4a017,stroke-width:2px;
+    linkStyle 79 stroke:#d4a017,color:#d4a017,stroke-width:2px;
+    linkStyle 80 stroke:#d4a017,color:#d4a017,stroke-width:2px;
+    linkStyle 81 stroke:#d4a017,color:#d4a017,stroke-width:2px;
+    linkStyle 82 stroke:#d4a017,color:#d4a017,stroke-width:2px;
+    linkStyle 83 stroke:#a020f0,color:#a020f0,stroke-width:2px;
+    linkStyle 84 stroke:#d4a017,color:#d4a017,stroke-width:2px;
+    linkStyle 85 stroke:#808080,color:#808080,stroke-width:2px;
+    linkStyle 86 stroke:#808080,color:#808080,stroke-width:2px;
+    linkStyle 87 stroke:#808080,color:#808080,stroke-width:2px;
+    linkStyle 88 stroke:#808080,color:#808080,stroke-width:2px;
+    linkStyle 89 stroke:#808080,color:#808080,stroke-width:2px;
+    linkStyle 90 stroke:#808080,color:#808080,stroke-width:2px;
+    linkStyle 91 stroke:#808080,color:#808080,stroke-width:2px;
+    linkStyle 92 stroke:#808080,color:#808080,stroke-width:2px;
+    linkStyle 93 stroke:#808080,color:#808080,stroke-width:2px;
+    linkStyle 94 stroke:#808080,color:#808080,stroke-width:2px;
+    linkStyle 95 stroke:#808080,color:#808080,stroke-width:2px;
+    linkStyle 96 stroke:#d4a017,color:#d4a017,stroke-width:2px;
+    linkStyle 97 stroke:#d4a017,color:#d4a017,stroke-width:2px;
