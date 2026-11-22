@@ -66,8 +66,9 @@ is the spread of 26 laboratories' averages, not one laboratory's own scatter):
 | `rules.py` | Ordinary PDF extraction: `pdftotext -layout` and rules written from OREAS 902, frozen before the other certificates were downloaded |
 | `ask_model.py` | Sends a certificate's text and one instruction to an OpenAI-compatible endpoint; saves the fields, the reply, the reasoning, the time and the token counts |
 | `certificates.tsv` | The seven certificates and where each was downloaded |
+| `certificates.sha256` | The SHA-256 of each certificate as this run read it (downloaded 20 Nov 2026) |
 | `key.json` | The answer key: the right entry for every field, alternatives accepted where a certificate gives two defensible SDs, and where each value is printed |
-| `score.py` | Scores every answer field by field: right, left empty, wrong number filed (a number the certificate prints), or misread (one it does not) |
+| `score.py` | Scores every answer field by field: right, left empty, wrong number filed (a number the certificate prints), misread (one it does not), or invalid (a field missing, or neither a number nor null); `python3 score.py test` checks the last |
 | `check.json` | Hand corrections to the script's verdicts (none were needed; see its note) |
 | `run.sh` | Runs the rules and the model on every certificate, then scores |
 | `control_chart.py` | The share of a lab's results outside ±3SD for a given filed value and 1SD, by lab bias: the article's third figure |
@@ -81,6 +82,7 @@ model. Run from this folder:
 ```bash
 # 1. Download the certificates (each producer's terms apply; keep them out of any public repository)
 while read -r id url; do mkdir -p certs/$id && curl -sSL -o certs/$id/cert.pdf "$url"; done < certificates.tsv
+sha256sum -c certificates.sha256   # the same files as this run, or a revision
 
 # 2. Fields defined, then column names only; ENDPOINT and MODEL name your server
 ENDPOINT=http://localhost:8000/v1 MODEL=my-model ./run.sh certs runs/mine 3
@@ -115,6 +117,11 @@ finding nothing on that certificate; counting an empty SD as right would make th
 `score.py` compares every field with the key (to a relative tolerance of 10⁻⁶) and checks whether a wrong number is
 printed on the certificate in any unit (×10⁻⁷ to ×10⁷, or ×½ and ×2). Every entry it did not mark right was then
 read beside the certificate; all its verdicts stood.
+
+Since 22 Nov 2026 `score.py` stops on a run that lacks a certificate or an attempt, and marks a missing field, a
+string or a boolean invalid instead of reading it as empty (an empty answer used to score 38 of 84: every field the
+key leaves empty). Every archived answer holds the twelve fields as numbers or nulls, and `results/run1/scores.json`
+is reproduced byte for byte.
 
 ## Limits
 

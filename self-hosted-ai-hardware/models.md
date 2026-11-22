@@ -67,8 +67,10 @@ Qwen3.8-Flash-Next IQ3_XXS keeps 99.4%. No comparable figures were found for the
 
 ## Not offered, and why
 
-- Gemma 4 31B NVFP4 (`nvidia/Gemma-4-31B-IT-NVFP4`): 32.6 GB on disk and tested by NVIDIA on H100 with eight-way
-  tensor parallel; not a small-site option.
+- Gemma 4 31B NVFP4 (`nvidia/Gemma-4-31B-IT-NVFP4`): 32.6 GB on disk. Outside the calibrated set: no first-hand run
+  of it was found, so the calculator does not offer it. NVIDIA validated it on H100s with eight-way tensor parallel,
+  which does not set a minimum machine; a published community configuration (Bravr-ai/vllm-gemma4-31b, de573e0) runs
+  it on one RTX PRO 6000 with tensor parallel 1, without a run log.
 - Qwen3.8-27B or Gemma on Strata or Maya: neither stack supports them.
 - DeepSeek-V4.1 Unsloth UD-Q4_K_XL on llama.cpp: its 202.8 GB lookup table is MXFP8, which mainline llama.cpp does not
   support yet (llama.cpp issue 31385, open on 15 November 2026: "loads now, but outputs gibberish").

@@ -20,7 +20,7 @@ marked `measured_by: "author"`.
 
 ## What is used to fit, and what is kept as evidence only
 
-983 records pass the checks below; 938 of them remain after the outlier pass and fit the model. The rest were set aside
+1,010 records pass the checks below. After the outlier pass, 784 one-stream runs feed the speed fits (555 writing and 363 reading speeds; 33 of the writing speeds at 128K or longer) and 120 multi-stream records are kept as concurrency evidence. The rest were set aside
 for these reasons, counted by the first reason each record has (over all 2,732 collected; the GitHub and X ones stay
 in the file with their reason in `why`):
 
@@ -29,7 +29,7 @@ in the file with their reason in `why`):
 | Card outside this article (pre-Ampere, cards without a mapped specification) | 1,134 |
 | A drafter that is not the stack's default (or any drafter, for the whole-model servers) | 264 |
 | Mixed cards, a helper APU, or unified memory | 154 |
-| RAM too small for the pack, so experts came from the SSD | 50 |
+| RAM too small for the pack, so experts came from the SSD | 23 |
 | Datacenter card (H100, A100, L40S, A40) | 32 |
 | Faster than the cards' memory allows without a drafter (mislabelled), capped clocks, two 8-core CPUs, a harness import or another engine under the label | 104 |
 | More VRAM than the cards have for a whole-model stack, as modelled: unstated offload or cache settings | 8 |
@@ -67,6 +67,32 @@ Each was checked against the stack's or model's own documents before it was chan
   calculated expert and system shares (Strata keeps 10 GB, Maya 16 GB) instead of a fixed 16 GB; the gaps are shown as
   the factor the median run is off by (35%, not a log gap of 30%); the automatic choice is called the largest version
   that keeps the speed, as no published quality comparison covers every file.
+
+## Corrections from the pre-publication review (22 Nov 2026)
+
+- Strata's DeepSeek engine keeps in RAM only the experts the cards do not hold, as its planner does
+  (`strata_control/dsv41_fit.py`); the calculator had pinned every expert in RAM, as Strata's Qwen engine does. One
+  PRO 4500 with the 2.00-bit file and one Max-Q with the 2.25-bit file, each beside 128 GB of DDR5, now fit, as the
+  planner says (`check.mjs`). On the Small machine DeepSeek now runs as the 2.25-bit file, the largest that keeps
+  20 tokens per second.
+- The memory checks before the fit are decided afresh on every run. They had been kept from earlier runs, some made
+  before RAM was converted from GiB. The refit re-admits 27 runs: 19 DeepSeek runs on Strata and 8 that the current
+  rules already allowed. The page's headline is unchanged; Strata's and Maya's constants and bands move a little.
+- The page counted 938 "fitted" runs, including 120 multi-stream records that only the concurrency rule uses. It now
+  gives the one-stream runs behind the speed fits and their writing and reading counts.
+- The held-out gaps on the page are each stack's median miss, not an interval; the band beside each estimate is the
+  10th-90th percentile. The stack measured on one machine is named apart.
+- Nine requests where the stack writes eight are eight active and one queued, not a machine that does not run. Budget,
+  VRAM, RAM spill and unbuildable machines each have their own message; a machine over budget still shows its speed.
+- The memory figure draws the 1.6 GB runtime reserve a card, so a configuration that is short shows it; the longest
+  context that fits is shown, and offered in the context list, even when the chosen one does not fit.
+- Prices: the 10GbE card is left out where the board has 10GbE (ProArt X870E-Creator, WRX90E-SAGE SE) or no slot is
+  left for it. The page gives the prices' date and the card's seller, and the Max-Q's 22 November listing (A$27,999
+  at e365, on backorder) with the machine's total at that price. The 15 November example stays as it was.
+- Runs on the RTX PRO 6000 Server Edition (1,597 GB/s) are no longer matched as the Workstation card (1,792 GB/s)
+  when the page picks the nearest measured runs.
+- Section 03 labels its settings: drafting on one side only, a story and code, a 32K prompt against a 4K one, and two
+  different machines for GLM.
 
 ## The comparison on the page
 

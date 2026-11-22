@@ -1,6 +1,6 @@
 // The calculator's model: where each byte lives and how fast it moves, with per-stack constants fitted to first-hand runs.
 // Sizes GB (decimal; cards and RAM modules are sold in GiB and converted), bandwidth GB/s, speeds tokens/s. The fitted constants and their errors are in calibration.mjs (built by fit.mjs).
-import { BUDGET, stacks, toolsGpu, siteKit } from './catalog.mjs';
+import { BUDGET, NIC, checked, stacks, toolsGpu, siteKit } from './catalog.mjs';
 import { calibration } from './calibration.mjs';
 
 const GiB = 1.073741824;            // GB per GiB
@@ -14,7 +14,7 @@ export function memory({ profile, gpu, count, platform, context, streams }) {
   if (profile.kind === 'resident') {
     const kv = streams * (profile.stateGB + context * profile.kvToken / 1e9);
     const used = profile.weights + kv + RESERVE * count;
-    return { vram, ram, weights: profile.weights, kv, cache: 0, c: 1, vramUsed: used, vramShort: Math.max(0, used - vram),
+    return { vram, ram, weights: profile.weights, kv, reserve: RESERVE * count, cache: 0, c: 1, vramUsed: used, vramShort: Math.max(0, used - vram),
       ramUsed: SYSTEM_RAM, ramShort: Math.max(0, SYSTEM_RAM - ram), ssd: 0 };
   }
   // Strata keeps a 64K window of the cache in VRAM and the rest of a long context in pinned RAM; its DeepSeek engine keeps the
@@ -26,10 +26,11 @@ export function memory({ profile, gpu, count, platform, context, streams }) {
   const fixed = profile.dense + kvVram + RESERVE * count;
   const cache = Math.max(0, vram - fixed);
   const c = Math.min(1, cache / profile.experts);
-  // Strata pins every expert in RAM; Maya keeps in RAM only the experts the cards do not hold.
-  const expertsInRam = profile.stack === 'strata' ? profile.experts : profile.experts * (1 - c);
+  // Strata's Qwen engine pins every expert in RAM; its DeepSeek engine (restInRam) and Maya keep in RAM only the experts the
+  // cards do not hold.
+  const expertsInRam = profile.stack === 'strata' && !profile.restInRam ? profile.experts : profile.experts * (1 - c);
   const ramUsed = expertsInRam + kvRam + profile.ramExtra;
-  return { vram, ram, weights: profile.dense, kv: kvVram, kvRam, cache: Math.min(cache, profile.experts), c,
+  return { vram, ram, weights: profile.dense, kv: kvVram, kvRam, reserve: RESERVE * count, cache: Math.min(cache, profile.experts), c,
     vramUsed: fixed + Math.min(cache, profile.experts), vramShort: Math.max(0, fixed + 1 - vram),
     ramUsed, ramExperts: expertsInRam, ramSystem: profile.ramExtra, ramShort: Math.max(0, ramUsed - ram), ssd: profile.table };
 }
@@ -71,6 +72,8 @@ export function prefill({ profile, gpu, count, platform, context, m, k = calibra
 }
 
 const round = (x) => Math.round(x);
+const aud = (x) => `A$${round(x).toLocaleString('en-AU')}`;
+const day = (iso) => { const [y, m, d] = iso.split('-'); return `${+d} ${'Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec'.split(' ')[m - 1]} ${y}`; };
 
 /** Everything the page shows for one configuration. */
 export function calculate(cfg) {
@@ -99,7 +102,8 @@ export function calculate(cfg) {
   // cards wider than two slots: no checked board and case takes two of them beside the tools card (hardware.md)
   if (gpu.width > 2 && count > 1) cannot(`${count} × ${gpu.short} are too wide to fit side by side with the tools card on these boards.`);
   // the server case has eight openings: four dual-slot cards fill them, leaving none for the 10GbE card (hardware.md)
-  if (platform.server && count + 1 === platform.slots) notes.push(`Four cards fill the server's eight openings, so the 10GbE card has no slot: it runs on the board's 1GbE.`);
+  const noSlot = platform.server && count + 1 === platform.slots;
+  if (noSlot) notes.push(`Four cards fill the server's eight openings, so the 10GbE card has no slot: it runs on the board's 1GbE.`);
   // each card's link: the slower of card and slot, halved where two cards share a desktop's CPU lanes (x8/x8)
   const link = { 3: 13, 4: 26, 5: 52 }[Math.min(gpu.pcie, platform.gen)] * (count > 1 && platform.split ? 0.5 : 1);
   const host = { ...platform, pcieGBs: link };
@@ -107,30 +111,33 @@ export function calculate(cfg) {
   // price
   const watts = gpu.watts * count + toolsGpu.watts + platform.watts;
   const kit = siteKit.find((x) => watts <= x.upTo) || siteKit[siteKit.length - 1];
-  const parts = { gpus: gpu.price * count, tools: toolsGpu.price, host: platform.price, site: kit.price };
+  // no network card where the board has 10GbE or no slot is left for one
+  const parts = { gpus: gpu.price * count, tools: toolsGpu.price, host: platform.price, site: kit.price - (platform.lan10 || noSlot ? NIC : 0) };
   const price = parts.gpus + parts.tools + parts.host + parts.site;
   if (price > BUDGET) problems.push(`A$${round(price).toLocaleString('en-AU')} is above the A$100,000 ceiling.`);
   if (watts > siteKit[siteKit.length - 1].upTo) cannot(`About ${round(watts)} W at full load: beyond one 15 A circuit and the largest UPS here.`);
   else if (watts > platform.psu * 0.9) cannot(`About ${round(watts)} W at full load is more than ${round(platform.psu * 0.9)} W, the 90% of this host's ${platform.psu} W power supply kept as its limit.`);
   if (watts > 1000 || platform.outlet15) notes.push(`${platform.outlet15 ? 'Its power supply' : `About ${round(watts)} W at full load: the UPS`} needs a 15 A outlet.`);
 
-  const m = memory({ profile, gpu, count, platform, context, streams });
-  if (m.vramShort > 0) problems.push(profile.kind === 'resident'
-    ? `The model and ${streams > 1 ? streams + ' contexts' : 'its context'} need ${m.vramUsed.toFixed(0)} GB of VRAM; the cards have ${m.vram.toFixed(0)} GB.`
-    : `The dense weights and ${streams > 1 ? streams + ' contexts' : 'context'} do not fit in ${m.vram.toFixed(0)} GB of VRAM.`);
-  if (m.ramShort > 0) problems.push(`Needs about ${Math.ceil(m.ramUsed)} GB of RAM for the experts and system; this host's ${platform.ram} GiB is ${Math.floor(m.ram)} GB. It would read experts from the SSD and run far slower.`);
+  // requests beyond the stack's slots wait in a queue: memory and speed are for the streams being written
   const limit = profile.slots || (stack.slotsPerGpu ? stack.slots * count : stack.slots);
-  if (stack.slots && streams > limit) problems.push(`This set-up answers at most ${limit} streams at once here; more requests wait in a queue.`);
+  const active = Math.min(streams, limit), queued = streams - active;
+  if (queued) notes.push(`This set-up writes at most ${limit} streams at once here; ${queued} more ${queued > 1 ? 'wait' : 'waits'} in a queue.`);
+  const m = memory({ profile, gpu, count, platform, context, streams: active });
+  if (m.vramShort > 0) problems.push(profile.kind === 'resident'
+    ? `The model and ${active > 1 ? active + ' contexts' : 'its context'} need ${m.vramUsed.toFixed(0)} GB of VRAM; the cards have ${m.vram.toFixed(0)} GB.`
+    : `The dense weights and ${active > 1 ? active + ' contexts' : 'context'} do not fit in ${m.vram.toFixed(0)} GB of VRAM.`);
+  if (m.ramShort > 0) problems.push(`Needs about ${Math.ceil(m.ramUsed)} GB of RAM for the experts and system; this host's ${platform.ram} GiB is ${Math.floor(m.ram)} GB. It would read experts from the SSD and run far slower.`);
 
   const valid = !problems.length;
   const band = (x) => ({ mid: x, lo: x * k.decodeLo, hi: x * k.decodeHi });
   // each stream's speed with n streams: memory, expert cache and contention recomputed for that n
   const at = (n) => {
-    const mn = n === streams ? m : memory({ profile, gpu, count, platform, context, streams: n });
+    const mn = n === active ? m : memory({ profile, gpu, count, platform, context, streams: n });
     const dn = decodeOne({ profile, gpu, count, platform, context, m: mn }) / (1 + contention(profile, mn, count) * (n - 1));
     return { n, ...band(dn), fits: !(mn.vramShort > 0 || mn.ramShort > 0) };
   };
-  const d1 = at(1).mid, now = at(streams);
+  const d1 = at(1).mid, now = at(active);
   const p = prefill({ profile, gpu, count, platform: host, context, m });
   const prompt = context - 1024;
 
@@ -142,16 +149,21 @@ export function calculate(cfg) {
     maxStreams = n;
     if (pn.lo >= target) maxStreamsLo = n;
   }
-  // the longest context each of the chosen streams can hold, up to the model's limit
+  // the longest context each of the streams being written can hold, up to the model's limit
   let maxContext = 0;
   for (let c = 4096; c <= model.context; c += 4096) {
-    const mc = memory({ profile, gpu, count, platform, context: c, streams });
+    const mc = memory({ profile, gpu, count, platform, context: c, streams: active });
     if (mc.vramShort > 0 || mc.ramShort > 0) break;
     maxContext = c;
   }
 
-  return { valid, builds, problems, notes, price, parts, watts, memory: m, link,
-    decode: band(now.mid), single: band(d1), aggregate: band(now.mid * streams),
+  // the prices' date and the card's seller; where the card was rechecked later, the same machine at that price
+  const later = gpu.later ? { ...gpu.later, total: price + (gpu.later.price - gpu.price) * count } : null;
+  const dated = `Listed prices of ${day(checked)}; the card from ${new URL(gpu.source).hostname.replace(/^www\./, '')}.`
+    + (later ? ` On ${later.date} it was ${aud(later.price)} ${later.stock}: ${aud(later.total)} in all${later.total > BUDGET ? ', above the A$100,000 ceiling' : ''}.` : '');
+
+  return { valid, builds, problems, notes, price, parts, watts, memory: m, link, active, queued, later, dated,
+    decode: band(now.mid), single: band(d1), aggregate: band(now.mid * active),
     prefill: { mid: p, lo: p * k.prefillLo, hi: p * k.prefillHi },
     readSeconds: { mid: prompt / p, lo: prompt / (p * k.prefillHi), hi: prompt / (p * k.prefillLo) },
     curve: Array.from({ length: Math.min(limit, 16) }, (_, i) => at(i + 1)),

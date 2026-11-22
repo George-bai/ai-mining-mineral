@@ -213,6 +213,8 @@ def key_as_graph(key, drop=()):
 
 
 def selftest(keys):
+    if not sorted(Path(keys).glob("*.yaml")):
+        sys.exit(f"no answer keys (*.yaml) in {keys}: the self-check needs the reference/ folder beside score.py")
     for f in sorted(Path(keys).glob("*.yaml")):
         key = yaml.safe_load(open(f))
         r = score(key, key_as_graph(key))
@@ -244,7 +246,7 @@ def show(chart):
     """Print a chart beside its key: every box with its pairing, the lines not in the key, the streams missed."""
     g = json.loads((chart / "mermaid.json").read_text())["graph"]
     r = json.loads((chart / "score.json").read_text())
-    keys = Path(__file__).parent.parent / "reference"
+    keys = Path(__file__).parent / "reference"
     drawing = next(p.split("-")[0] for p in chart.parts if re.match(r"[pr]\d+-", p))
     kf = next(keys.glob(f"{drawing}-*.yaml"), None) or next((Path(__file__).parent.parent / "local/dev/keys").glob(f"{drawing}-*.yaml"))
     items = {it["id"]: it for it in yaml.safe_load(open(kf))["items"]}
@@ -269,7 +271,7 @@ def key_item(key, i):
 if __name__ == "__main__":
     here = Path(__file__).parent
     if sys.argv[1] == "test":
-        selftest(here.parent / "reference")
+        selftest(here / "reference")
         sys.exit()
     if sys.argv[1] == "pairs":
         pairs(sys.argv[2])

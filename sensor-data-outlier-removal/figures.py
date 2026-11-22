@@ -117,7 +117,7 @@ def fig1(d, narrow):
     L, R, ph = 46, 12, 150 if narrow else 170
     f = Fig(w, 2 * ph + 190, "Feed rate over one shift, raw and after a hard limit",
             "Top: raw records, flattened by five spikes of up to 1,000,000 t/h. Bottom: the same shift after removing records "
-            "outside 0 to 1,500 t/h, moving between about 850 and 1,120 t/h and following the real hourly averages.")
+            "above 1,500 t/h, moving between about 850 and 1,120 t/h and following the real hourly averages.")
     xt = [0, 3, 6, 9, 12] if narrow else list(range(0, 13, 2))
     a = Panel(f, L, 34, w - L - R, ph, (0, 12), (0, 1_050_000))
     a.axes([0, 250_000, 500_000, 750_000, 1_000_000], xt, yfmt=compact, title="Raw records (t/h)")
@@ -127,7 +127,7 @@ def fig1(d, narrow):
     f.text(a.X(0.3), a.Y(0) - 8, "The real feed rate is in this line", fill=MUTED)
     top = 34 + ph + 78
     b = Panel(f, L, top, w - L - R, ph, (0, 12), (850, 1150))
-    b.axes([900, 1000, 1100], xt, xlabel="Hours into the shift", title="After the hard limit, 0 to 1,500 t/h")
+    b.axes([900, 1000, 1100], xt, xlabel="Hours into the shift", title="After the hard upper limit, 1,500 t/h")
     f.legend(L, top - 34 + (0 if not narrow else 0), [("thin", RUST, "Records kept"), ("line", INK, "Real hourly average")])
     b.axes([], [])
     b.path(d["ch"], d["cx"], RUST, 1)

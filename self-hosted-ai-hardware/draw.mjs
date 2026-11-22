@@ -44,14 +44,14 @@ export function curveSVG({ curve, target, maxStreams, wide = true, width }) {
   return svg(w, h, 'Writing speed of each stream as more run together', desc, body);
 }
 
-/** VRAM, RAM and SSD as three bars: what each holds and what is left. */
+/** VRAM, RAM and SSD as three bars: what each holds and what is left; a mark at the capacity where the parts overrun it. */
 export function memorySVG({ m, kind, wide = true, width }) {
   const w = Math.round(width || (wide ? 520 : 340)), row = 46, L = 48, R = 8, h = 3 * row + 6, bw = w - L - R;
   const GB = (x) => (x >= 100 ? n0(x) : (+x.toFixed(1)).toString());
   const rows = [
     { name: 'VRAM', total: m.vram, parts: kind === 'resident'
-        ? [['weights', m.weights, C.ink], ['context', m.kv, C.coral]]
-        : [['dense', m.weights, C.ink], ['context', m.kv, C.coral], ['experts', m.cache, C.olive]] },
+        ? [['weights', m.weights, C.ink], ['context', m.kv, C.coral], ['runtime', m.reserve || 0, C.faint]]
+        : [['dense', m.weights, C.ink], ['context', m.kv, C.coral], ['runtime', m.reserve || 0, C.faint], ['experts', m.cache, C.olive]] },
     { name: 'RAM', total: m.ram, parts: kind === 'resident'
         ? [['system', 16, C.faint]]
         : [['experts', m.ramExperts, C.olive], ['context', m.kvRam || 0, C.coral], ['system', m.ramSystem, C.faint]] },
@@ -68,7 +68,8 @@ export function memorySVG({ m, kind, wide = true, width }) {
     const used = r.parts.reduce((t, p) => t + p[1], 0);
     const label = r.name === 'SSD' ? (m.ssd ? `${GB(m.ssd)} GB lookup table, read a few rows per token` : 'model files only')
       : `${r.parts.filter((p) => p[1] > 0.05).map((p) => `${p[0]} ${GB(p[1])}`).join(' · ')} of ${GB(r.total)} GB${used > r.total + 0.5 ? ' · short' : ''}`;
-    body += text(L, y + 32, label, { fill: used > r.total + 0.5 ? C.brand : C.mute });
+    // on a phone the label starts at the left edge, under the row name, so the longest one still fits
+    body += text(w < 480 ? 0 : L, y + 32, label, { fill: used > r.total + 0.5 ? C.brand : C.mute });
   });
   const desc = rows.map((r) => `${r.name} ${GB(r.total)} GB: ${r.parts.map((p) => `${p[0]} ${GB(p[1])} GB`).join(', ') || 'files only'}`).join('. ');
   return svg(w, h, 'Where the model lives', desc, body);
@@ -100,7 +101,7 @@ export function tiersSVG({ tiers, wide = true }) {
 
 /** One box, two ways to run the same model: measured ranges side by side. */
 export function stackSVG({ pairs, wide = true }) {
-  const w = wide ? 640 : 340, L = wide ? 150 : 0, R = 64, rowH = wide ? 26 : 44, groupGap = 18;
+  const w = wide ? 640 : 340, L = wide ? 190 : 0, R = 64, rowH = wide ? 26 : 44, groupGap = 18;
   const h = pairs.length * (2 * rowH + groupGap + 20) + 6;
   let body = '', y = 6;
   for (const g of pairs) {

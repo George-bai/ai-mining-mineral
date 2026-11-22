@@ -6,7 +6,8 @@ charts with no help.
 
 Here the same two models, Qwen 3.8 27B and Qwen 3.8 Flash Next, read the two whole-plant drawings of No. 06 (Phoenix
 mine mill and Twin Creeks mine) three times with a flowsheet-reading skill and three times without it. Each chart was
-scored against an answer key of the drawing's units, streams and loops, and every chart was checked by hand.
+scored against an answer key of the drawing's units, streams and loops, and every chart was checked by Claude, an AI
+reader ("the hand check" below).
 
 **Finding.** On each drawing, all three Flash Next attempts with the skill found more streams than any attempt without it
 on that drawing, and drew fewer wrong lines, in about twice the time. The 27B model was run twice (its first run shared
@@ -43,8 +44,8 @@ items found, lines right and minutes, is in `results/results.json`.
 - Phoenix: 61 to 68 streams with the skill, 45 to 52 without; 23 to 29 wrong lines against 36 to 38.
 - Twin Creeks: 75 to 79 against 62 to 65, plus one chart that does not draw; 10 to 17 wrong lines against 25.
 - Time: 22 to 26 minutes an attempt against 7 to 16. The two conditions ran side by side on one server.
-- The invalid chart (no skill, Twin Creeks, attempt 1) writes ten arrows as `--|label|`, which `repair.py` does not
-  cover. Even if it had scored as well as the best no-skill Twin Creeks attempt (65), it would stay below the lowest
+- The invalid chart (no skill, Twin Creeks, attempt 1) writes 26 arrows as `--|label|` (its `check.json` names the first
+  ten, lines 107 to 128), which `repair.py` does not cover. Even if it had scored as well as the best no-skill Twin Creeks attempt (65), it would stay below the lowest
   skill attempt (75).
 
 **27B, rerun.** More streams on Phoenix, level on Twin Creeks and on wrong lines, fifteen times slower:
@@ -135,7 +136,7 @@ Python 3 and Pillow.
 **How it was made.** Written and tuned only on other drawings: slides 41, 47 and 48 of the same lecture, and the
 process flowsheets (Figure 17-1) of two public technical reports, the 2024 NI 43-101 reports for Macraes (OceanaGold)
 and Detour Lake (Agnico Eagle). Each development drawing had its own answer key. Those drawings and keys are not
-published. Six versions, one change at a time, each scored on the development drawings and checked by hand:
+published. Six versions, one change at a time, each scored on the development drawings and checked by Claude:
 
 | Version | What changed |
 |---|---|
@@ -202,8 +203,7 @@ for r in ../local/runs/test-noskill ../local/runs/test-flowsheet-reading; do
 done
 ```
 
-`score.py test` and `score.py show` look for the keys one folder up (`../reference`, as in the article's working
-folder). From this repository, link them there first: `ln -s flowsheet-reading-skill/reference ../reference`.
+`score.py test` and `score.py show` read the keys in `reference/` beside `score.py`.
 
 **The fence.** `run.sh` starts each attempt in bubblewrap: its own `/tmp`, home read-only, other repositories and runs
 out of sight, and the folder above this one hidden whole (in this repository, the repository itself, with this folder's
@@ -229,7 +229,7 @@ them out of any commit. To stop a run early, kill the process group of `run.sh` 
 
 Times compare the complete setups (model, weights, server and hardware together), not the models alone.
 
-**Frozen before the test** (SHA-256, 16 Nov 2026, 10:52 am AEST; unchanged after the runs but for `run.sh`, below the table):
+**Frozen before the test** (SHA-256, 16 Nov 2026, 10:52 am AEST; unchanged after the runs but for `run.sh` and `score.py`, below the table):
 
 | File | SHA-256 |
 |---|---|
@@ -256,6 +256,10 @@ that a rerun from this repository, where the keys and results sit beside it, can
 this whole folder, read-only (it held neither `reference/` nor `results/` then), and with no skill laid an empty folder
 over `flowsheet-reading/`. Nothing else in `run.sh` changed.
 
+`score.py` here is not the frozen file either. On 22 Nov 2026 `test` and `show` were pointed at `reference/` beside it
+(the frozen file looked one folder up), and `test` now stops with a plain message when no key is there. Scoring is
+unchanged: with this file every archived `score.json` (35) is reproduced byte for byte.
+
 `models.json` here differs from the file the runs used only in its endpoint addresses.
 
 ## Scoring
@@ -271,7 +275,8 @@ chart's own words for where the box sits and by its lines. Junctions, carriers a
 through, so A → sump → B counts as A → B. Streams found: key streams the chart has. Wrong lines: chart lines that are no
 key stream. Loops found: key loops whose every step the chart has.
 
-**The hand check.** Every chart was read beside its key and the drawing. Where the scorer paired a box wrongly, the
+**The hand check.** Every chart was read by Claude, an AI reader, beside its key and the drawing, knowing which
+condition it came from (`checked` in each `check.json`). Where the scorer paired a box wrongly, the
 right pairing and the reason are written in its `check.json`, by the rules in `reference/README.md` (some dated: they
 were written down as the checks went on, and applied alike to both conditions). Every box whose label is not exactly its
 key item's, or that pairs with nothing or with several items, and every box paired with a repeated key label, was read

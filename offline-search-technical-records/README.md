@@ -99,7 +99,7 @@ model code uses Triton kernels when Triton is installed, and this machine has no
 lets it fall back to its own PyTorch code.
 
 **Hardware.** One workstation: AMD Threadripper 7960X (24 cores), 123 GB RAM, the GPU setups on an RTX 4080 SUPER
-32 GB shared with a speech-recognition service and other work (about 7.5 GB free; KnowLine ran while the speech service was stopped). Python 3.12, torch 2.15.0+cu132,
+memory-modified to 32 GB (the retail card has 16 GB; up to 32,133 MiB were in use on it during the runs), shared with a speech-recognition service and other work (about 7.5 GB free; KnowLine ran while the speech service was stopped). Python 3.12, torch 2.15.0+cu132,
 transformers 5.23.0, sentence-transformers 6.3.0.
 
 **Offline.** `offline.sh` starts every run in a new user and network namespace (`unshare -rn`) holding only loopback;

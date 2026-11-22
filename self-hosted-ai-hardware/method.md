@@ -10,8 +10,12 @@ and RAM modules are sold in GiB, so both are converted (128 GiB of RAM is 137.4 
   or 64 KiB in F16 (llama.cpp) for its 16 full-attention layers, plus 0.16 GB of DeltaNet state per stream; Gemma 4
   26B-A4B 10/20 KiB for its 5 global layers plus a 1,024-token sliding window; Gemma 4 31B 80 KiB plus 0.8 GB.
 - **Expert stacks** (Strata, Project Maya): the dense weights, the resident part of the context and 1.6 GB per card stay
-  in VRAM; the rest of VRAM caches routed experts. Strata pins every expert in RAM and needs RAM ≥ experts + about
-  10 GB; Maya keeps in RAM only the experts the cards do not hold, plus 16 GB for the system. The lookup tables (Qwen's
+  in VRAM; the rest of VRAM caches routed experts. Strata's Qwen engine pins every expert in RAM and needs RAM ≥
+  experts + about 10 GB. Its DeepSeek engine keeps in RAM only the experts the cards do not hold: its planner
+  (`strata_control/dsv41_fit.py`) budgets the experts left after the cards are filled, plus 9 GB for the engine and
+  system, where the calculator keeps 10 GB. Maya also keeps in RAM only the experts the cards do not hold, plus 16 GB for
+  the system. The calculator fills the cards by bytes, not whole experts, so it can place slightly more in VRAM than
+  that planner. The lookup tables (Qwen's
   n-gram table, DeepSeek's Engram) stay on the SSD. The context: Strata keeps a 64K window in VRAM and the rest of a
   longer context in pinned RAM (about 12.5 KB a token for Qwen3.8-Flash-Next); its DeepSeek engine keeps the whole cache
   in VRAM, about 1.3 KB a token per conversation (0.17 GB at 128K, 0.68 GB at 512K, 9.47 GB for seven more at 1M, in
@@ -54,7 +58,8 @@ drafter, at a context within a quarter of its own (`k.sweeps` in `calibration.mj
 2 × PRO 5000), approaching 1 when most experts run on the CPU, where extra slots buy waiting time and no speed
 (Strata's RTX 5070 sweep). The maximum streams shown is the largest n that keeps the reader's target speed, fits in
 memory and stays within the stack's slots (8 per card for Strata's Qwen engine, 8 per engine for its DeepSeek engine
-on one card or two, 8 for Maya). A machine that cannot be built (cards, slots, width, power or a head split the
+on one card or two, 8 for Maya). Requests beyond those slots wait in a queue: memory and speed are worked out for the
+streams being written, and the page shows them as active and queued. A machine that cannot be built (cards, slots, width, power or a head split the
 software refuses) shows no capacity at all. The curve on the page recomputes
 memory, the expert cache and contention at every stream count, and marks the counts that no longer fit.
 
@@ -98,7 +103,8 @@ Before fitting, a run is kept as evidence only (`fit: false` with a reason) when
 article (pre-Ampere, datacenter, unified-memory), mixed cards or a helper APU; used a non-default drafter or Turbo;
 had capped clocks; had too little RAM for its pack (experts from the SSD); needed more VRAM than its cards have for a
 whole-model stack (some layers or cache must have been offloaded, which the record does not say); or was faster than
-the cards' memory allows without a drafter or batching (mislabelled).
+the cards' memory allows without a drafter or batching (mislabelled). The memory and bandwidth checks are decided
+afresh on every fit, like the outliers, so a change to the memory rules re-admits the runs it no longer excludes.
 
 ## What it leaves out
 

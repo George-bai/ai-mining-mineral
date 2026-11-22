@@ -12,7 +12,7 @@ import { cards, AMD, lane } from './cards.mjs';
 const T = (id, stack, experts, dense, used, active, more = {}) => ({ id, stack, kind: 'tiered', experts, dense, used, active, table: 0,
   kvVramGB32k: stack === 'strata' && used > 0.019 ? 0.56 : 0.05, kvRamToken: 1000, ramExtra: stack === 'strata' ? 10 : 16, ...more });
 // the same cache and prefill inputs as the offered packs of these models (catalog.mjs)
-const GLM = { kvVramGB32k: 0.196, kvRamToken: 5984 }, DS_STRATA = { kvVramToken: 1300, kvRamToken: 0, slots: 8 };
+const GLM = { kvVramGB32k: 0.196, kvRamToken: 5984 }, DS_STRATA = { kvVramToken: 1300, kvRamToken: 0, slots: 8, restInRam: true };
 const extra = [
   T('glm-maya-l', 'maya', 148.504, 7.806, 8 / 288, 18, GLM), T('glm-maya-s24', 'maya', 88.653, 6.039, 8 / 288, 18, GLM),
   T('qn-strata-q20', 'strata', 33.974, 3.639, 10 / 512, 6), T('qn-strata-iq2xs', 'strata', 35.455, 3.76, 10 / 512, 6),
@@ -34,6 +34,9 @@ for (const m of models.filter((x) => x.profiles.some((p) => p.kind === 'resident
 const data = JSON.parse(readFileSync(new URL('./anchors.json', import.meta.url), 'utf8'));
 const runs = data.runs;
 for (const a of runs) delete a.outlier;   // outliers are decided afresh on every run
+// so are the checks below, so a change to the memory rules re-admits the runs they no longer exclude
+const DERIVED = /^(RAM short|faster than the cards|needs about [\d.]+ GB of VRAM as modelled|harness import)/;
+for (const a of runs) if (!a.fit && DERIVED.test(a.why || '')) { a.fit = true; delete a.why; }
 
 function setup(a) {
   const [vram, bw, tensor, gen] = cards[a.gpu.card];

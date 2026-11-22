@@ -62,7 +62,7 @@ keeps every system on the same text.
 
 The first three are rerankers: they see only the question and one passage. The last three are decision models built
 for this protocol; they receive SAG-Wiki's request unchanged (question, kept evidence, criterion, candidate).
-GPU models run on the 32 GB RTX 4080 SUPER (about 7.5 GB free beside the services already on it). KnowLine needs about
+GPU models run on the 32 GB RTX 4080 SUPER (memory-modified; the retail card has 16 GB, noted 22 Nov 2026; about 7.5 GB free beside the services already on it). KnowLine needs about
 13.6 GB on a GPU, more than is free, so it runs on the CPU (Threadripper 7960X). `decide.py` logs every request and
 answer.
 

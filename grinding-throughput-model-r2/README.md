@@ -94,8 +94,9 @@ The change in throughput across each input's range, in t/h, from the formula and
 | Grinding media | 12.84 | 12.76 | | Water flow | 11.13 | 11.13 |
 
 R² is the share of throughput's variance a model reproduces. The straight-line part of the formula is 96.1 % of
-it, the sine wave 1.7 % and the noise 2.2 %: the regression reaches 0.962, a model that also knew the sine
-would reach 0.978, and only one that knew the seed would reach 1.000.
+it, the sine wave 1.7 % and the noise 2.2 %. On all rows the regression reaches 0.962 and a model that also knew the
+sine 0.978. Replaying seed 42 reaches 1.000; so would a lookup table of these rows, but on rows not yet drawn only the
+replay would.
 
 ## Checks a real mill would pass and this file fails
 

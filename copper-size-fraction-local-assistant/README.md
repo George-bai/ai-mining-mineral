@@ -4,8 +4,8 @@ Code, prompt and results for the article at https://eleticle.com/articles/copper
 
 Two local language models, each in a coding agent with a shell so it could run Python, were given Table 1 of a
 published study of copper flotation tailings and asked one question: which size fraction carries the most
-copper? Each model answered ten times. We worked the answer out ourselves (`check.py`) and read all 20 replies
-against it by hand (`results/run1/review.json`).
+copper? Each model answered ten times. We worked the answer out ourselves (`check.py`), and Claude, an AI reader,
+read all 20 replies against it (`results/run1/review.json`).
 
 **In short:** all 20 attempts named the fraction with the most of the reported copper (CTS−C5, the finest) and said that the richest fraction
 (CTS+106) is a different one. None said that the 8.2 % of the sample missing from the table might hold copper.
@@ -77,7 +77,7 @@ python3 collect.py ../local/runs/run1            # writes results/run1/: answers
 
 `results/run1/<model>/<attempt>/answer.md` is each final reply; `steps.md` is everything before it in order
 (thinking, each command the model ran, what came back); `results.json` has the time, turns, tool calls and
-tokens. `review.json` is our reading of each reply, by hand, against `check.py`:
+tokens. `review.json` is Claude's reading of each reply against `check.py`:
 
 | Check | Qwen 3.8 27B | Qwen 3.8 Flash Next |
 |---|---|---|
@@ -87,7 +87,7 @@ tokens. `review.json` is our reading of each reply, by hand, against `check.py`:
 | Table arithmetic and comparisons in the reply right (sizes and whole-sample shares scored separately) | 5 / 10 | 4 / 10 |
 | Said the masses add to 91.8 % | 0 / 10 | 9 / 10 |
 | Said the missing 8.2 % may hold copper | 0 / 10 | 0 / 10 |
-| Gave CTS−C5 no size the table does not give | 1 / 10 | 1 / 10 |
+| Sized CTS−C5 only as the table does (no size in µm, not "the coarsest") | 1 / 10 | 1 / 10 |
 | Made no mineral or recovery claim | 8 / 10 | 0 / 10 |
 
 What the readings rest on:

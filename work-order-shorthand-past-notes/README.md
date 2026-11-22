@@ -1,9 +1,10 @@
 # Does searching a site’s own work orders help a local LLM as much as a glossary?
 
 Code and data for Eleticle Core Log No. 16 (https://eleticle.com/articles/work-order-shorthand-past-notes/), which
-follows No. 13 (`../work-order-shorthand-glossary/`) and uses the search setup with the most complete lists in No. 15
-(`../offline-search-technical-records/`; its lead there is the two-record question, which it alone answered in all
-three wordings when asked again with its date; on the other questions five setups tied).
+follows No. 13 (`../work-order-shorthand-glossary/`) and uses the search setup with the most complete lists on No. 15's 576 pages
+(`../offline-search-technical-records/`; its lead there is the two-record question: asked again with its date, it alone
+had both facts in the first five in all three wordings, though on the 26 plant pages KnowLine-4B-Gen5 did and it did
+not; on the other questions five setups tied).
 
 No. 13 gave a local LLM (Qwen 3.8 27B) each company's fixed 50-line glossary, built from 3,200 of its work orders,
 and read 300 held-out notes with and without it. Here the same model, server and prompt read the same 300 notes with
@@ -195,7 +196,7 @@ python3 score.py notes-test.json local/answers --check check.json --out results.
 One model, one answer per note and version, sampled; the glossary's run-to-run difference above is nearly as large as
 the same-day gap between versions. One annotator's key, three readings in doubt. Both versions rest on the annotator's reading of the same
 3,200 notes: the glossary's 50 lines were counted from them by a script, the search reads them all. A site would have
-to write such readings; this test did not measure that work. its index carries that reader's
+to write such readings; this test did not measure that work. The search's index carries that reader's
 mistakes too ("BRAKE PACS" = brake pads). Three companies' notes, mostly heavy mobile equipment. The hand check was
 made by AI readers (Claude), not a planner. MaintNorm has been public since 2024; the model may have met these notes.
 

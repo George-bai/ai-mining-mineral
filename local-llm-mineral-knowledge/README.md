@@ -2,7 +2,8 @@
 
 Two local language models answered the three mineral-domain tasks of a published test, MineralBench, three
 times each: 976 questions rebuilt from the sources it names, 5,856 answers, and a side run of 1,200 more. A
-script graded every answer, then every different answer was read beside its key by hand. This folder holds the
+script graded every answer, then every different answer was read beside its key by Claude, an AI reader ("the hand
+check"). This folder holds the
 test harness, every graded answer, the key, the hand-check rules and each correction with its reason, and the
 script that turns them into the article's numbers. The article is at https://eleticle.com/articles/local-llm-mineral-knowledge/.
 
@@ -81,7 +82,7 @@ have open weights. Scores out of 100; the paper's from its own questions and scr
 | Qwen 3.8 Flash Next (here) | 2026-08-26 | open | 41.6 (33.0) | 55.8 (55.7) |
 
 On properties the paper's five local models score 20.8 to 40.0 and its eight online models 56.1 to 80.6; on
-Geo-NER 16.1 to 36.2 and 17.5 to 69.6. The two models here answered rebuilt questions graded by hand, so their scores sit beside the
+Geo-NER 16.1 to 36.2 and 17.5 to 69.6. The two models here answered rebuilt questions graded by script and Claude, so their scores sit beside the
 paper's, not in its ranking. In particular, Qwen 3.8 27B's scores here against Qwen3.5-27B's in the paper do not show
 whether the newer model improved: the questions and the grading differ, and either can move a score more than that
 gap. Running Qwen3.5-27B on these questions would answer it. A date marks when that model first became public: the
@@ -141,7 +142,8 @@ With other versions of the first two, the scripts draw a new sample of the same 
 
 ## The hand check
 
-Rules: [`hand-check-rules.md`](hand-check-rules.md), written before any answer was read. In short: the
+Done by Claude, an AI reader, not a mineralogist. Rules: [`hand-check-rules.md`](hand-check-rules.md), written before
+any answer was read. In short: the
 answer is the first line the model wrote; terms count when they name the same concept (spelling variants and
 accepted synonyms included); element lists count when the set of elements matches; hardness within 0.5 Mohs and
 specific gravity within 3 %; luster, streak and colour when every value named is in the key; cleavage when the

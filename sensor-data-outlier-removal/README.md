@@ -5,7 +5,7 @@ Code and figures for the article at https://eleticle.com/articles/sensor-data-ou
 One mill feed rate tag, cleaned several ways, to show that the right cleaning depends on what data you
 were given (raw records or averages) and what it is for. In the main example, five bad readings in 4,571
 hide a whole shift of feed rate on the raw trend, and one of them moves an hourly average by 137 t/h
-while leaving it inside the normal range.
+while leaving it inside the instrument span.
 
 **What is real and what is not.** The hourly averages are real: 96 consecutive hours from a working
 plant, anonymised and scaled, and published with the right to do so. The records inside each hour are generated, and every fault and event is

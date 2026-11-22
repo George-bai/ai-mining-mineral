@@ -11,7 +11,7 @@ chosen machine.
 | DeepSeek-V4.1-Flash-1017 | Project Maya or Strata | Both have a DeepSeek engine (Strata's is ported from Maya's, MIT). Maya's own quants and ISTA-DAS sets differ in size. |
 | Qwen3.8-27B | SGLang (Blackwell, NVFP4) or llama.cpp (any card) | A dense model that fits whole in VRAM: a batching server serves many streams; the expert stacks do not support it. |
 | Gemma 4 26B-A4B | vLLM (Blackwell, NVFP4) or llama.cpp | As above. |
-| Gemma 4 31B | llama.cpp | The NVFP4 checkpoint is not a small-site option (see models.md). |
+| Gemma 4 31B | llama.cpp | The NVFP4 checkpoint has no first-hand run to calibrate it (see models.md). |
 
 ## The stacks
 
@@ -24,7 +24,9 @@ including the Radeon AI PRO R9700 (Linux), Intel Arc (Linux), Apple Silicon.
   least the experts plus about 10 GB ([MODELS.md](https://github.com/Niko1221/Strata/blob/v0.2.13/docs/MODELS.md)).
   From 64K the KV cache keeps its most-read part in VRAM and streams the rest from pinned RAM.
 - Placement (DeepSeek): routed experts in VRAM as far as they fit, the rest computed on the CPU from RAM; dense
-  weights split across cards; the Engram table on the SSD.
+  weights split across cards; the Engram table on the SSD. Its planner budgets RAM for only the experts the cards do
+  not hold, plus 9 GB for the engine and system (`strata_control/dsv41_fit.py` at d2f0964); short of that, the CPU
+  reads some experts from the SSD and runs slower.
 - Drafting: MTP on by default for Qwen ("1.6-1.8x sooner"); DSpark for DeepSeek where it measures a gain.
 - Concurrency: one request at a time by default; `parallel` 2 to 8 slots, more on a layer split (8 per pipeline
   group). The DeepSeek engine takes at most 8 on one card or two: "A number above 8 is run as 8"

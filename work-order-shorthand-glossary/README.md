@@ -4,7 +4,7 @@ Code and data for Eleticle Core Log No. 13 (https://eleticle.com/articles/work-o
 
 A local LLM (Qwen 3.8 27B, on two 16 GB graphics cards) read 300 real, held-out mining maintenance work orders
 twice: once with no help, once with a 50-line glossary built from 3,200 other work orders of the same company. Every answer was
-scored against MaintNorm's key, then checked by hand, blind to which version it came from.
+scored against MaintNorm's key, then checked by hand by an AI reader (Claude), blind to which version it came from.
 
 | | Without the glossary | With the glossary |
 |---|---|---|
@@ -25,7 +25,7 @@ bootstrap draws of whole notes within each company, Python `random.Random(1)`, t
 differences). Per company, notes whose meaning came through: A 83 → 95,
 B 63 → 97, C 82 → 91.
 
-In four answers the glossary itself caused the miss, by a line applied where it does not fit: `quick = Kwik` (from
+In four answers the model applied a glossary line where it does not fit: `quick = Kwik` (from
 "quick tip" → "Kwik Tip", a bucket tip brand) turned two "quick fill" connectors into "Kwik fill"; `no = number`
 turned "no a/c fans" into "Number air conditioner fans"; `lock = lockout` turned a bucket "tooth lock" into a
 "tooth lockout". A fifth may be one: `temp = temperature` gave "temperature repair" for `TEMP REP` on a leak, which
@@ -87,7 +87,8 @@ sent) added the "keep numbers" and "make doubt visible" lines, the leave-out of 
    synonym is right ("air conditioning" for air conditioner, "inspect" for inspection, "center" for centre); a
    different thing, action, side or interval is wrong (`1000H` as 10:00, `u/s` as upstream); an everyday form that
    already says it is right (`cab`, `#6`). Each answer also gets four verdicts: **meaning kept** (nothing misread,
-   dropped or added), **diagnosis** (a fault, cause or failed part with no counterpart in the note; a misreading of
+   dropped or added; shorthand left visibly unread does not break it: 6 of the 283 kept with the glossary and 10 of
+   the 228 without still hold a piece marked unsure or kept as written), **diagnosis** (a fault, cause or failed part with no counterpart in the note; a misreading of
    the note's own words is counted under meaning), **done** (says work was done when the note does not), **added** (a
    part, place or task not in the note). The diagnosis rule was first applied unevenly: a re-check after the page
    review, made with the versions known, added three diagnoses (A-test-122, A-test-127, C-test-101), all without the
@@ -130,9 +131,16 @@ With another model or run, the hand check starts again: read `sheet.md`, write y
 
 One model, one answer per note and version, sampled (a second run would differ in places). One annotator's key, and
 two of its readings in doubt. Three companies' notes, mostly heavy mobile equipment, short texts only; a site's own
-glossary would be checked by its planners rather than taken from counts alone. The hand check is one reader's.
+glossary would be checked by its planners rather than taken from counts alone. The hand check is one AI reader's
+(Claude), not a planner's.
 The split is MaintNorm's, not by date, so "held out" means held out from the glossary and the prompt: MaintNorm has
 been public since 2024, and the model may have met these notes in training; its effect on this comparison is unknown.
+
+Two later checks, from Core Log No. 16 (`../work-order-shorthand-past-notes/`): 47 test notes equal a train note
+once the tokens the key masks as asset numbers are removed, 55 by a broader check (`near_duplicates_broad` in its
+`coverage.json`); without the 55, meaning kept 193 → 230 of 245 (15.1 points, against 18.3 on all 300). The glossary
+version, run again on 21 Nov 2026 with the same prompt and server, kept 273 of 300 (20 notes changed verdict; read
+by other AI readers).
 
 ## Files
 

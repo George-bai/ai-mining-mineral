@@ -33,7 +33,8 @@ const runs = [];
 for (const a of pick) {
   if ((per[a.profile] = (per[a.profile] || 0) + 1) > 40) continue;
   const draft = (a.drafting || '').split(':')[0].toLowerCase();
-  runs.push({ p: a.profile, card: a.gpu.card === 'pro6000s' ? 'ws6000' : a.gpu.card === 'pro6000' ? 'ws6000' : a.gpu.card, vendor: ['r9700', '7900xtx', '9070', '9070xt'].includes(a.gpu.card) ? 'amd' : 'nvidia',
+  // the Server Edition keeps its own id: its bandwidth (1,597 GB/s) is not the Workstation's (1,792)
+  runs.push({ p: a.profile, card: a.gpu.card === 'pro6000' ? 'ws6000' : a.gpu.card, vendor: ['r9700', '7900xtx', '9070', '9070xt'].includes(a.gpu.card) ? 'amd' : 'nvidia',
     q: quantLabel(a.quant), same: same(a.quant, packs[a.profile]),
     n: a.gpu.count, vram: cards[a.gpu.card][0] * a.gpu.count, d: +(+a.decode).toFixed(1), f: a.prefill ? Math.round(a.prefill) : null, ctx: a.decodeContext || null,
     g: `${a.gpu.count > 1 ? `${a.gpu.count} × ` : ''}${names[a.gpu.card]}`, h: [a.host.cpu, a.host.ram ? `${a.host.ram} GB` : null].filter(Boolean).join(', ') || 'host not stated',
@@ -63,7 +64,13 @@ for (const wide of [true, false]) {
 }
 // the page without its script: the Medium machine's numbers written into the HTML, so they cannot drift from the calculator
 const n0 = (x) => Math.round(x).toLocaleString('en-AU'), rng = (b) => `${n0(b.lo)}–${n0(b.hi)}`, r = first.r;
-const fitted = anchors.filter((a) => a.fit && !a.outlier).length;
+// what the speed fits used: one-stream writing and reading speeds outside the outliers, and the runs behind them
+const used = JSON.parse(readFileSync(new URL('./fit-report.json', import.meta.url), 'utf8')).fitted.filter((x) => !x.outlier);
+const byId = new Map(anchors.map((a) => [a.id, a]));
+const writes = used.filter((x) => x.what === 'decode'), reads = used.filter((x) => x.what === 'prefill');
+const fitted = new Set(used.map((x) => x.id)).size, long = writes.filter((x) => (byId.get(x.id).decodeContext || 0) >= 131072).length;
+const passed = anchors.filter((a) => a.fit).length, multi = anchors.filter((a) => a.fit && a.streams > 1).length;
+const fits = `After the outlier pass, ${n0(fitted)} one-stream runs feed the speed fits (${n0(writes.length)} writing and ${n0(reads.length)} reading speeds; ${long} of the writing speeds at 128K or longer) and ${multi} multi-stream records are kept as concurrency evidence.`;
 
 // tables in the public Markdown, written between <!-- name --> markers so they always match the calculator
 const block = (file, name, md) => {
@@ -84,14 +91,20 @@ block('README.md', 'machines', [`| | ${machines.map((x) => x.name).join(' | ')} 
   ...models.map((m) => `| ${m.name} | ${machines.map((x) => cell(at(x, m))).join(' | ')} |`)].join('\n'));
 // the ceiling: model-independent checks only (price, slots, card width, power), so the smallest model at 64K stands in
 const small = models.find((m) => m.id === 'gemma26');
-block('hardware.md', 'ceiling', ['| Host | 2 × Max-Q | 3 × Max-Q |', '|---|---|---|', ...platforms.map((pf) => `| ${pf.name} | ${[2, 3].map((count) => {
-  const r = at({ gpu: 'maxq', count, platform: pf.id }, small, { context: 65536 }).r;
-  return r.valid ? `A$${n0(r.price)}, fits${r.notes.length ? ` (${r.notes.join(' ')})` : ''}` : `A$${n0(r.price)}: ${r.problems.join(' ')}`; }).join(' | ')} |`)].join('\n'));
+const ceiling = platforms.flatMap((pf) => [2, 3].map((count) => ({ pf, count, r: at({ gpu: 'maxq', count, platform: pf.id }, small, { context: 65536 }).r })));
+const later = gpus.find((g) => g.id === 'maxq').later, crossed = ceiling.filter((x) => x.r.valid && x.r.later.total > 100000);
+block('hardware.md', 'ceiling', ['| Host | 2 × Max-Q | 3 × Max-Q |', '|---|---|---|', ...platforms.map((pf) => `| ${pf.name} | ${ceiling.filter((x) => x.pf === pf).map(({ r }) =>
+  r.valid ? `A$${n0(r.price)}, fits${r.notes.length ? ` (${r.notes.join(' ')})` : ''}` : `A$${n0(r.price)}: ${r.problems.join(' ')}`).join(' | ')} |`),
+  '', `At the Max-Q's ${later.date} listing (A$${n0(later.price)} at e365, ${later.stock}), these machines that fit at the 15 November price would pass A$100,000: ${crossed.map((x) => `${x.count} × Max-Q with the ${x.pf.name} (A$${n0(x.r.later.total)})`).join('; ')}.`].join('\n'));
 // the fitted-run count in the notes, from the same rule as the page's
-for (const [file, re] of [['README.md', /[\d,]+( of them, on comparable hardware)/], ['evidence.md', /[\d,]+( of them remain after the outlier pass)/]]) {
+const ramShort = anchors.filter((a) => /^RAM short/.test(a.why || '')).length;
+for (const [file, re, text] of [
+  ['README.md', /[\d,]+ of them, on comparable hardware[\s\S]*?(?:fit the model|concurrency evidence)\./, `${n0(passed)} of them, on comparable hardware and default settings, pass the checks in \`evidence.md\`. ${fits}`],
+  ['evidence.md', /[\d,]+ records pass the checks below[\s\S]*?(?:fit the model|concurrency evidence)\./, `${n0(passed)} records pass the checks below. ${fits}`],
+  ['evidence.md', /(?<=\| RAM too small for the pack, so experts came from the SSD \| )[\d,]+/, String(ramShort)]]) {
   const u = new URL(file, import.meta.url), s = readFileSync(u, 'utf8');
-  if (!re.test(s)) throw new Error(`${file}: fitted-run count not found`);
-  writeFileSync(u, s.replace(re, (m, rest) => `${n0(fitted)}${rest}`));
+  if (!re.test(s)) throw new Error(`${file}: run count not found (${re})`);
+  writeFileSync(u, s.replace(re, () => text));
 }
 if (!inRepo) { console.log(`data.json and figures written to out/ (${runs.length} runs; ${first.p.id}, ${Math.round(r.decode.mid)} tok/s, A$${Math.round(r.price)})`); process.exit(0); }
 // function replacements throughout, so a '$' in the text (A$24,999) is never read as a group reference
@@ -99,23 +112,28 @@ const set = (html, id, text) => html.replace(new RegExp(`(id="${id}"[^>]*>)[^<]*
 let html = readFileSync(new URL('index.html', page), 'utf8');
 html = set(html, 'price', `A$${n0(r.price)}`);
 html = set(html, 'parts', `${mc.count} × ${gpus.find((g) => g.id === mc.gpu).short} A$${n0(r.parts.gpus)} · tools card A$${n0(r.parts.tools)} · host A$${n0(r.parts.host)} · power and network A$${n0(r.parts.site)}`);
+html = set(html, 'price-date', r.dated);
 html = set(html, 'decode', rng(r.decode));
 html = set(html, 'prefill', rng(r.prefill));
 html = set(html, 'prefill-note', `tokens/s · a full 128K prompt in ${rng(r.readSeconds)} s`);
 html = set(html, 'max-streams', String(r.maxStreams));
-// the limits list: the held-out gaps across the stacks, from the fit, so the range cannot drift from calibration.mjs
-const gaps = (key) => { const v = Object.values(calibration).map((k) => Math.round((Math.exp(k.runs.heldOut.medianError[key]) - 1) * 100)); return `${Math.min(...v)}–${Math.max(...v)}%`; };
-html = html.replace(/<b>[\d–]+%<\/b>(<span>typical miss of the estimated writing speed on machines the fit had not seen; )[\d–]+%/, (m, a) => `<b>${gaps('decode')}</b>${a}${gaps('prefill')}`);
+// the limits list: each stack's held-out median gap, from the fit, so the range cannot drift from calibration.mjs. A stack
+// measured on fewer than three machines is named apart: its held-out gap says nothing about other machines.
+const gap = (k, key) => Math.round((Math.exp(k.runs.heldOut.medianError[key]) - 1) * 100);
+const gaps = (key) => { const v = Object.values(calibration).filter((k) => k.runs.heldOut.machines[key] >= 3).map((k) => gap(k, key)); return `${Math.min(...v)}–${Math.max(...v)}%`; };
+const few = Object.values(calibration).filter((k) => k.runs.heldOut.machines.prefill < 3);
+if (few.length !== 1) throw new Error(`the limits list names one stack measured on one machine, not ${few.length}`);
+html = html.replace(/(<ul class="stats limits" id="limit-list">\s*<li>)[\s\S]*?(<\/li>)/, (m, a, b) => `${a}<b>${gaps('decode')}</b><span>median miss of the estimated writing speed per stack, on machines the fit had not seen; ${gaps('prefill')} for reading. One stack was measured on one machine only (${gap(few[0], 'prefill')}% for reading). The range beside each estimate covers about eight in ten such runs. All one stream; more streams are extrapolated</span>${b}`);
 html = set(html, 'streams-note', `each about 20 tok/s or more at 128K, mid estimate; ${r.maxStreamsLo} at the low end`);
 html = set(html, 'max-context', `${Math.round(r.maxContext / 1024)}K`);
 html = html.replace(/(<p class="static-note">)[^<]*(<)/, (m, a, b) => `${a}The ${mc.name} machine (${mc.spec}) running ${m0.name}, one stream at 128K context. The calculator needs JavaScript.${b}`);
 html = html.replace(/(<p class="label basis" id="basis">)[^<]*(<)/, (m, a, b) => `${a}Calculator · six quantised models · Australian prices incl. GST · speeds fitted to ${n0(fitted)} first-hand runs${b}`);
-html = html.replace(/<b>(?:[\d,]+|RUNS) first-hand runs<\/b>/, () => `<b>${n0(fitted)} first-hand runs</b>`);
+html = html.replace(/(<li><span class="label">Measured<\/span>)[\s\S]*?(<\/li>)/, (m, a, b) => `${a}<b>${n0(fitted)} first-hand runs</b>One stream each: ${n0(writes.length)} writing and ${n0(reads.length)} reading speeds, only ${long} of them writing at 128K or more. From GitHub, X and the LocalMaxxing leaderboard, each with its hardware and settings.${b}`);
 html = html.replace(/(<li id="finding"><span class="label">[^<]*<\/span>)[\s\S]*?(<\/li>)/, (m, a, b) => `${a}An <mark>A$${n0(r.price)}</mark> machine with one 96&nbsp;GB card, plus a 16&nbsp;GB tools card, runs GLM-5.3-Flash, a 320-billion-parameter model, at an estimated ${n0(r.decode.mid)} tokens per second (${rng(r.decode)}) for one 128K-token conversation: its experts live in RAM as well as on the card.${b}`);
 const alt = (re, text) => { html = html.replace(re, (m, a) => `${a}${text}"`); };
 alt(/(<img src="fig-curve-wide\.svg"[^>]*alt=")[^"]*"/, `Each stream writes about ${n0(r.curve[0].mid)} tokens per second alone, falling as more run at once; at the middle of the range ${r.maxStreams} keep 20 tokens per second each, at its low end ${r.maxStreamsLo}.`);
 alt(/(<img src="fig-memory-wide\.svg"[^>]*alt=")[^"]*"/, `VRAM holds the dense weights, the context and ${n0(r.memory.cache)} GB of experts; RAM holds the rest of the experts.`);
 alt(/(<img src="fig-tiers-wide\.svg"[^>]*alt=")[^"]*"/, 'Estimated writing speed of each model on the Small, Medium and Large machines at 128K context.');
-alt(/(<img src="fig-stack-wide\.svg"[^>]*alt=")[^"]*"/, 'Measured: an expert-cache stack writes three to four times faster than a general GGUF runner on the same kind of computer.');
+alt(/(<img src="fig-stack-wide\.svg"[^>]*alt=")[^"]*"/, 'Measured: on one computer, an expert-cache stack with its default drafting wrote three to five times faster than a general GGUF runner without drafting; on two different machines, three times.');
 writeFileSync(new URL('index.html', page), html);
 console.log(`data.json: ${runs.length} runs; static figures for ${mc.name} with ${m0.name}: ${first.p.id}, ${Math.round(first.r.decode.mid)} tok/s, A$${Math.round(first.r.price)}`);

@@ -26,6 +26,9 @@ export const stacks = {
 // Profiles are listed largest file first, the least compressed; answer quality is compared only where published (models.md).
 // used = share of routed expert bytes read per token (top-k / experts per layer). active = billions of parameters per token.
 // GLM cache: 544 bytes a token in each of its 11 full-attention layers (Maya SETTINGS.md, GLM5-FLASH.md, v1.1.63).
+// DeepSeek on Strata (restInRam): its planner fills the cards with experts after the dense weights and keeps in RAM only the
+// rest, plus 9 GB for the engine and system there, 10 GB here as for its Qwen engine (strata_control/dsv41_fit.py, d2f0964).
+// Its Qwen engine pins every expert in RAM.
 // DeepSeek on Strata: about 1.3 KB a token of VRAM per conversation (0.17 GB at 128K, 0.68 GB at 512K; DEEPSEEK41.md) and at
 // most 8 conversations per engine, on one card or two. DeepSeek's card gives 8B active parameters
 // for reading a prompt and 16B for writing; active stays 16, as a refit with 8 predicted held-out prompt speeds worse (method.md).
@@ -73,9 +76,9 @@ export const models = [
       {id: 'ds-maya-s', draft1: 1.12, label: '2–3-bit mixed · 178 GB + 162 GB table', stack: 'maya', quant: 'Maya-S', kind: 'tiered', experts: 169.02, dense: 8.833, table: 161.619, used: 6 / 384, active: 16,
         kvVramGB32k: 0.04, kvRamToken: 1100, ramExtra: 16, source: hf('peasantsmith/DeepSeek-V4.1-Flash-1017-Maya-GGUF', '928ffcc3b0497f1d2f356d87ed17a1b8641bd382')},
       {id: 'ds-strata-225', label: '2.25 bits · 155 GB + 111 GB table', stack: 'strata', quant: '2.25 bpw · ISTA-DAS GSQ-RCO', kind: 'tiered', experts: 149.06, dense: 5.943, table: 110.595, used: 6 / 384, active: 16,
-        kvVramToken: 1300, kvRamToken: 0, ramExtra: 10, slots: 8, source: hf('ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF', '65d53bc8be65123e255ff02f3ded958b6dbf54fd')},
+        kvVramToken: 1300, kvRamToken: 0, ramExtra: 10, slots: 8, restInRam: true, method: 'Expert cache: the busiest experts in VRAM, the rest in RAM', source: hf('ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF', '65d53bc8be65123e255ff02f3ded958b6dbf54fd')},
       {id: 'ds-strata-200', label: '2.00 bits · 138 GB + 111 GB table', stack: 'strata', quant: '2.00 bpw · ISTA-DAS GSQ-RCO', kind: 'tiered', experts: 132.073, dense: 5.943, table: 110.595, used: 6 / 384, active: 16,
-        kvVramToken: 1300, kvRamToken: 0, ramExtra: 10, slots: 8, source: hf('ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF', '65d53bc8be65123e255ff02f3ded958b6dbf54fd')},
+        kvVramToken: 1300, kvRamToken: 0, ramExtra: 10, slots: 8, restInRam: true, method: 'Expert cache: the busiest experts in VRAM, the rest in RAM', source: hf('ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF', '65d53bc8be65123e255ff02f3ded958b6dbf54fd')},
       {id: 'ds-maya-xs', draft1: 1.12, label: '1–2-bit mixed · 117 GB + 162 GB table', stack: 'maya', quant: 'Maya-XS v2', kind: 'tiered', experts: 109.566, dense: 6.933, table: 161.619, used: 6 / 384, active: 16,
         kvVramGB32k: 0.04, kvRamToken: 1100, ramExtra: 16, source: hf('peasantsmith/DeepSeek-V4.1-Flash-1017-Maya-GGUF', '928ffcc3b0497f1d2f356d87ed17a1b8641bd382')}
     ]}
@@ -89,7 +92,7 @@ export const gpus = [
   {id: 'pro5000', name: 'RTX PRO 5000 Blackwell 48 GB', short: 'PRO 5000', vendor: 'nvidia', blackwell: true, vram: 48, bw: 1344, tensor: 258, pcie: 5, watts: 300, width: 2,
     price: 13999, stock: 'Scorptec, in stock', source: 'https://www.scorptec.com.au/product/graphics-cards/workstation/118878-900-5g153-2550-000'},
   {id: 'maxq', name: 'RTX PRO 6000 Blackwell Max-Q 96 GB', short: 'PRO 6000 Max-Q', vendor: 'nvidia', blackwell: true, vram: 96, bw: 1792, tensor: 439, pcie: 5, watts: 300, width: 2,
-    price: 24999, stock: 'e365, no quantity limit stated (Scorptec A$25,999, one per household)', source: 'https://www.e365.com.au/product/nvidia-rtx-pro-6000-blackwell-max-q-96gb/'},
+    price: 24999, stock: 'e365, no quantity limit stated (Scorptec A$25,999, one per household)', later: {date: '22 Nov 2026', price: 27999, stock: 'on backorder'}, source: 'https://www.e365.com.au/product/nvidia-rtx-pro-6000-blackwell-max-q-96gb/'},
   {id: 'ws6000', name: 'RTX PRO 6000 Blackwell Workstation 96 GB', short: 'PRO 6000', vendor: 'nvidia', blackwell: true, vram: 96, bw: 1792, tensor: 500, pcie: 5, watts: 600, width: 2,
     price: 26153.6, stock: 'Zylax, no quantity limit stated', source: 'https://www.zylax.com.au/nvidia-rtx-pro-6000-blackwell-96gb-workstation-gddr7-graphics-card-900-5g144-2500-000'},
   {id: '5090', name: 'GeForce RTX 5090 32 GB', short: 'RTX 5090', vendor: 'nvidia', blackwell: true, vram: 32, bw: 1792, tensor: 419, pcie: 5, watts: 575, width: 3.5,
@@ -107,19 +110,20 @@ export const toolsGpu = {name: 'RTX PRO 2000 Blackwell 16 GB', vram: 16, watts: 
 // Hosts: everything except the GPUs (CPU, board, RAM, 4 TB NVMe, PSU, case, cooler), AUD incl. GST, 15 Nov 2026 (hardware.md).
 // ram GB; bw = theoretical GB/s of the populated channels; gen = PCIe generation of the GPU slots; split = two cards share
 // the CPU lanes at x8/x8; slots = cards the board
-// and case take in all, the tools card included; watts = host draw at full load without the cards.
+// and case take in all, the tools card included; lan10 = 10GbE on the board (ProArt X870E 1 port, WRX90E-SAGE SE 2), so no
+// network card; watts = host draw at full load without the cards.
 export const platforms = [
   {id: 'am4-128', name: '128 GB DDR4 · Ryzen 9 5950X desktop', short: 'The DDR4 desktop', mem: 'DDR4-3200, 2 channels', ecc: false, ram: 128, bw: 51.2, gen: 4, split: true, slots: 3, server: false, psu: 1250, watts: 230, price: 3926,
     note: 'ROG Strix X570-E (x8/x8 CPU slots, chipset x4), 4 x 32 GB DDR4-3200, Define 7 XL, 1,250 W. Four-DIMM 3200 operation to be qualified.'},
-  {id: 'am5-128', name: '128 GB DDR5 · Ryzen 9 9950X desktop', short: 'The DDR5 desktop', mem: 'DDR5-5600, 2 channels', ecc: false, ram: 128, bw: 89.6, gen: 5, split: true, slots: 3, server: false, psu: 1250, watts: 250, price: 5916,
+  {id: 'am5-128', name: '128 GB DDR5 · Ryzen 9 9950X desktop', short: 'The DDR5 desktop', mem: 'DDR5-5600, 2 channels', ecc: false, ram: 128, bw: 89.6, gen: 5, split: true, slots: 3, server: false, lan10: true, psu: 1250, watts: 250, price: 5916,
     note: 'ProArt X870E-Creator (x8/x8 CPU slots, chipset x4), 2 x 64 GB DDR5-5600 (out of stock on 15 Nov), Define 7 XL, 1,250 W.'},
-  {id: 'am5-256', name: '256 GB DDR5 · Ryzen 9 9950X desktop', short: 'The DDR5 desktop with 256 GB', mem: 'DDR5-3600, 2 channels, 4 DIMMs', ecc: false, ram: 256, bw: 57.6, gen: 5, split: true, slots: 3, server: false, psu: 1250, watts: 260, price: 8346,
+  {id: 'am5-256', name: '256 GB DDR5 · Ryzen 9 9950X desktop', short: 'The DDR5 desktop with 256 GB', mem: 'DDR5-3600, 2 channels, 4 DIMMs', ecc: false, ram: 256, bw: 57.6, gen: 5, split: true, slots: 3, server: false, lan10: true, psu: 1250, watts: 260, price: 8346,
     note: 'As above with 4 x 64 GB. AMD rates four DIMMs at 3600 MT/s; ASUS lists up to 5200 with qualified kits.'},
   {id: 'trx50-128', name: '128 GB DDR5 ECC · Threadripper 9970X', short: 'The Threadripper workstation', mem: 'DDR5-4800 ECC, 4 channels', ecc: true, ram: 128, bw: 153.6, gen: 5, split: false, slots: 4, server: false, psu: 1600, outlet15: true, watts: 450, price: 17508,
     note: 'Derived from Scorptec Atlas R2R10690 (A$20,999 in stock) less its RTX PRO 4000, with a 1,600 W Seasonic and Meshify 2 XL. Pro WS TRX50-SAGE WIFI.'},
-  {id: 'wrx90-256', name: '256 GB DDR5 ECC · Threadripper PRO 9965WX', short: 'The Threadripper PRO workstation', mem: 'DDR5-5600 ECC, 8 channels', ecc: true, ram: 256, bw: 358.4, gen: 5, split: false, slots: 4, server: false, psu: 1600, outlet15: true, watts: 480, price: 25833,
+  {id: 'wrx90-256', name: '256 GB DDR5 ECC · Threadripper PRO 9965WX', short: 'The Threadripper PRO workstation', mem: 'DDR5-5600 ECC, 8 channels', ecc: true, ram: 256, bw: 358.4, gen: 5, split: false, slots: 4, server: false, lan10: true, psu: 1600, outlet15: true, watts: 480, price: 25833,
     note: 'Pro WS WRX90E-SAGE SE, 8 x 32 GB DDR5-5600 RDIMM (A$2,016 each), Meshify 2 XL, Seasonic PRIME PX-1600 (needs a 15 A outlet).'},
-  {id: 'wrx90-512', name: '512 GB DDR5 ECC · Threadripper PRO 9965WX', short: 'The Threadripper PRO workstation with 512 GB', mem: 'DDR5-5600 ECC, 8 channels', ecc: true, ram: 512, bw: 358.4, gen: 5, split: false, slots: 4, server: false, psu: 1600, outlet15: true, watts: 490, price: 45361,
+  {id: 'wrx90-512', name: '512 GB DDR5 ECC · Threadripper PRO 9965WX', short: 'The Threadripper PRO workstation with 512 GB', mem: 'DDR5-5600 ECC, 8 channels', ecc: true, ram: 512, bw: 358.4, gen: 5, split: false, slots: 4, server: false, lan10: true, psu: 1600, outlet15: true, watts: 490, price: 45361,
     note: 'As above with 8 x 64 GB DDR5-5600 RDIMM (A$4,457 each).'},
   {id: 'sp3-256', name: '256 GB DDR4 ECC · used EPYC 7443 server', short: 'The used EPYC server', mem: 'DDR4-3200 ECC, 8 channels', ecc: true, ram: 256, bw: 204.8, gen: 4, split: false, slots: 4, server: true, psu: 1500, watts: 330, price: 14700,
     note: 'Used EPYC 7443 with a Supermicro H12SSL-i (eBay from the UK, warranty unstated; GST not stated, 10% added), 8 x 32 GB DDR4-3200 RDIMM (new), SilverStone RM44 4U, 1,500 W.'},
@@ -128,6 +132,8 @@ export const platforms = [
 ];
 
 // Power and network for the machine: an online double-conversion UPS sized to the load, a managed 10GbE switch and card.
+// The card (TP-Link TX401, A$109) is left out where the board has 10GbE or no slot is left for it.
+export const NIC = 109;
 export const siteKit = [
   {upTo: 1000, price: 1570, note: 'CyberPower OLS2000ERT2UA (1,800 W, 10 A plug) + MikroTik CRS304 + TP-Link TX401'},
   {upTo: 1600, price: 1885, note: 'CyberPower OLS3000ERT2UA (2,700 W, 15 A plug) + switch and card'},

@@ -1,86 +1,86 @@
 // Written by fit.mjs from anchors.json. Do not edit by hand: change the runs or the model, then run node fit.mjs.
 export const calibration = {
  "strata": {
-  "amd": 3.186,
+  "amd": 2.244,
   "eff": 1,
-  "lat": 1.447,
-  "beta": 2.806,
+  "lat": 2.104,
+  "beta": 2.108,
   "ramEff": 0.65,
-  "single": 0.6918,
-  "multi": 0.6332,
-  "full": 0.5779,
-  "longCtx": 0.5485,
+  "single": 0.7941,
+  "multi": 0.7115,
+  "full": 0.5051,
+  "longCtx": 0.3962,
   "kappaResident": 0.45,
   "kappaGpus": 0.67,
-  "pa": 0.01072,
-  "pb": 0.0001453,
-  "pScale": 1.592e-14,
+  "pa": 0.01453,
+  "pb": 2.104e-38,
+  "pScale": 0.08442,
   "pLen": 4000000,
   "sweeps": 4,
-  "decodeLo": 0.715,
-  "decodeHi": 1.45,
-  "prefillLo": 0.515,
-  "prefillHi": 1.698,
+  "decodeLo": 0.681,
+  "decodeHi": 1.457,
+  "prefillLo": 0.435,
+  "prefillHi": 1.633,
   "runs": {
-   "decode": 216,
-   "prefill": 115,
-   "outliers": 6,
+   "decode": 224,
+   "prefill": 117,
+   "outliers": 11,
    "medianError": {
-    "decode": 0.147,
-    "prefill": 0.273
+    "decode": 0.157,
+    "prefill": 0.265
    },
    "heldOut": {
-    "decode": 216,
-    "prefill": 121,
+    "decode": 225,
+    "prefill": 127,
     "machines": {
-     "decode": 53,
-     "prefill": 33
+     "decode": 57,
+     "prefill": 35
     },
     "medianError": {
-     "decode": 0.165,
-     "prefill": 0.297
+     "decode": 0.178,
+     "prefill": 0.316
     }
    }
   }
  },
  "maya": {
-  "amd": 1.601,
-  "eff": 0.5051,
-  "lat": 5.24,
+  "amd": 1.593,
+  "eff": 0.4891,
+  "lat": 4.758,
   "beta": 6,
-  "ramEff": 0.265,
+  "ramEff": 0.261,
   "single": 1,
-  "multi": 1.477,
-  "longCtx": 0.3507,
+  "multi": 1.478,
+  "longCtx": 0.35,
   "kappaResident": 0.5,
   "kappaGpus": 0,
-  "pa": 0.009639,
-  "pb": 0.0001539,
-  "pScale": 0.31,
+  "pa": 0.009347,
+  "pb": 0.0001902,
+  "pScale": 0.2831,
   "pLen": 4000000,
   "sweeps": 9,
-  "decodeLo": 0.628,
-  "decodeHi": 1.803,
-  "prefillLo": 0.417,
-  "prefillHi": 1.89,
+  "decodeLo": 0.618,
+  "decodeHi": 1.79,
+  "prefillLo": 0.428,
+  "prefillHi": 2.056,
   "runs": {
-   "decode": 127,
-   "prefill": 116,
-   "outliers": 32,
+   "decode": 128,
+   "prefill": 114,
+   "outliers": 39,
    "medianError": {
-    "decode": 0.243,
-    "prefill": 0.402
+    "decode": 0.242,
+    "prefill": 0.387
    },
    "heldOut": {
-    "decode": 128,
-    "prefill": 147,
+    "decode": 130,
+    "prefill": 151,
     "machines": {
      "decode": 38,
      "prefill": 35
     },
     "medianError": {
-     "decode": 0.297,
-     "prefill": 0.475
+     "decode": 0.298,
+     "prefill": 0.488
     }
    }
   }

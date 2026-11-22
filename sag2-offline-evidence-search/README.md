@@ -112,8 +112,8 @@ record: `# <record>`, then `## <page or section>`, wrapped lines inside a paragr
   by record, heading and text).
 - **Judge:** `decide.py` (No. 15's decision service) with `Qwen/Qwen3-Reranker-0.6B` @`e61197ed`, 0.6 B parameters,
   Apache-2.0: its yes/no prompt with SAG-Wiki's criterion as the instruction. A reranker scores each candidate against
-  the question alone; it does not read the passages SAG-Wiki sends beside it. On an RTX 4080 SUPER (32 GB, shared
-  with other work).
+  the question alone; it does not read the passages SAG-Wiki sends beside it. On an RTX 4080 SUPER memory-modified to 32 GB (the
+  retail card has 16 GB), shared with other work.
 - **Answer:** SAG-Wiki writes cited answers only in its desktop and web chat; `answer.py` sends a request in that chat's
   format (`core/src/models.rs`, `answer_messages` and `ANSWER_SYSTEM`, unchanged), not the chat's whole step: the chat
   keeps only the sources that fit its token budget (`prepare_answer`), and for a model whose name starts with "qwen"
