@@ -8,7 +8,7 @@ and by deep search, where a local model judges each candidate passage. A questio
 excerpts SAG-Wiki displays hold its whole answer, from the pages the key names. Every list was then read by Claude
 readers, blind to the setup.
 
-**Corrected 22 Nov 2026: the first milestone.** q01-q03 ask what had been achieved at the plant "by the end of 2021",
+**Corrected 22 Nov 2026: the first filtered concentrate.** q01-q03 ask what had been achieved at the plant "by the end of 2021",
 and the key credited the December-quarter report's page 3 passage (in our words: commissioning continuing, a filtered
 molybdenum concentrate already produced) as saying it had happened by then. That report was released on 28 January 2022, and Newcrest's half-year
 results presentation (17 Feb 2022, slide 11) dates the start of filtered-concentrate production to January 2022; the
@@ -111,6 +111,9 @@ it, with `HF_HUB_OFFLINE=1`. Documents, weights and packages were fetched before
 
 `questions.json` was written before any run on these questions, after reading the pages that name the plant, then
 revised after a protocol review and frozen (SHA-256 `7f2ef0d76cd352c927adcd2072cd2b1c66937a653879585f8516b0cab3e59a21`).
+That key, as run, is `questions-as-run.json`; `questions.json` is the same key with the corrected explanation of
+`filtered-2021` (22 Nov, SHA-256 `b726696a9d010f6f8da3ce472621cb7282bd1208e5db1f423e9b22e7c94ca3e8`): the question text, the required phrases and the scores are the same.
+`runs.json` names each batch's key file and its SHA-256.
 Twelve questions: the brief's question, "where does the moly plant get its feed, and what had been achieved by the end
 of 2021?", in three wordings (q01 names both reports, q02 uses site shorthand, q03 requires the February 2026 edition);
 q04, one shift's molybdenum recovery, which these records cannot answer; seven questions on one fact each (q05–q11) and
@@ -154,7 +157,7 @@ other honest answers. All were fixed before any run on these questions. `protoco
 | d1-2B | –, 10 | 1, – | –, – | 7 | **1** | **1** | **1** | **2** | **2** | **1** | **4, 3** |
 | KnowLine | **1, 3** | 1, 7 | **2, 4** | **1** | **1** | **1** | **2** | **2** | **2** | **2** | 1, 10 |
 
-Bold: the whole answer in the first five. Two numbers: feed route then concentrate milestone (q01–q03, here the dated re-run q13–q15), commissioning quarter then first shipment (q12).
+Bold: the whole answer in the first five. Two numbers: feed route then filtered concentrate (q01–q03, here the dated re-run q13–q15), commissioning quarter then first shipment (q12).
 
 ### The 26 pages naming the plant: rank at which each fact is first shown (– not in the first ten; w: only the other edition, at that rank)
 
@@ -168,7 +171,7 @@ Bold: the whole answer in the first five. Two numbers: feed route then concentra
 | d1-2B | 2, – | 10, 8 | 2, – | **1** | – | **1** | **1** | **2** | **2** | **1** | 1, 8 |
 | KnowLine | **2, 4** | **4, 2** | **2, 5** | **1** | – | **1** | **1** | **3** | **2** | **2** | **2, 1** |
 
-Bold: the whole answer in the first five. Two numbers: feed route then concentrate milestone (q01–q03, here the dated re-run q13–q15), commissioning quarter then first shipment (q12).
+Bold: the whole answer in the first five. Two numbers: feed route then filtered concentrate (q01–q03, here the dated re-run q13–q15), commissioning quarter then first shipment (q12).
 
 ### q04, one shift's recovery (no answer in these records), all 576 pages
 
@@ -203,6 +206,7 @@ export LOCAL=$PWD/local && mkdir -p $LOCAL/sources
 # download the five records listed in sources.json into $LOCAL/sources/ (file names as in sources.json), check the SHA-256s
 python3 prepare.py sources.json $LOCAL/sources $LOCAL/corpus-full
 python3 prepare.py sources.json $LOCAL/sources $LOCAL/corpus-focused --only '(?i)(molybdenum|moly)\s+plant'
+# the SEC pages can differ byte for byte between downloads: check the extracted text against text_sha256 (pdftotext 26.01.0)
 npm install --prefix $LOCAL/sag-cli @zleap-ai/sag@0.3.11
 uv venv --python 3.12 $LOCAL/.venv && VIRTUAL_ENV=$LOCAL/.venv uv pip install torch transformers sentence-transformers torchvision pillow requests
 # download the six models at the revisions above into $LOCAL/hf (HF_HOME), and install hs-decide-1-flash's serving/ package
@@ -222,8 +226,8 @@ python3 score.py $DATED/runs check.json --questions questions-dated.json
 
 | File | What it is |
 |---|---|
-| `sources.json`, `prepare.py` | The five records and the text extraction |
-| `questions.json`, `questions-dated.json` | The twelve questions and the key; q01-q03 asked again with their date (q13-q15) |
+| `sources.json`, `prepare.py` | The five records, the SHA-256 of each extracted text (`text_sha256`, both collections), and the text extraction |
+| `questions.json`, `questions-as-run.json`, `questions-dated.json` | The twelve questions and the key (corrected; as run); q01-q03 asked again with their date (q13-q15) |
 | `offline.sh`, `run.py`, `run_all.sh`, `run_everything.sh` | One offline run; every run |
 | `decide.py`, `check_decide.py` | The local decision service for SAG-Wiki, and its smoke check |
 | `score.py`, `test_score.py`, `handsheet.py` | Scoring, its tests, the blind hand-check sheets |

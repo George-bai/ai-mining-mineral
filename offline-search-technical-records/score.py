@@ -110,12 +110,17 @@ def main():
         if meta is None:
             problems.append(f"{system}/{coll}/{rep}: no run.json (the run did not finish)")
             continue
-        for mode in meta.get("modes", ["fast", "deep"]):
+        want = ["fast"] if system == "keyword" else ["deep"]  # as planned: keyword fast search, every model deep search
+        if meta.get("modes") != want:
+            problems.append(f"{system}/{coll}/{rep}: modes {meta.get('modes')}, planned {want}")
+        for mode in want:
             files = {f.name.split(".")[0]: f for f in run.glob(f"q*.{mode}.json")}
             if set(files) != set(QUESTIONS):
                 problems.append(f"{system}/{coll}/{rep} {mode}: missing {sorted(set(QUESTIONS) - set(files))}")
             for qid, f in sorted(files.items()):
                 rec = json.loads(f.read_text())
+                if not rec["results"]:  # every recorded list returned passages; an empty one is a failed or cut run
+                    problems.append(f"{system}/{coll}/{rep} {mode} {qid}: no passages returned")
                 key = f"{system}|{coll}|{rep}|{mode}|{qid}|"
                 c = {k[len(key):]: v for k, v in corrections.items() if k.startswith(key)}
                 s = score_list(QUESTIONS[qid], rec["results"], c)
@@ -124,7 +129,8 @@ def main():
     if not out:
         print(f"PROBLEM no finished runs under {runs}")
         return 1
-    (runs / "scores.json").write_text(json.dumps(out, indent=1))
+    if not problems:  # a batch with any problem leaves no scores.json to be read as a result
+        (runs / "scores.json").write_text(json.dumps(out, indent=1))
     n = sum(1 for q in Q["questions"] if q["needs"])
     for system, colls in out.items():
         for coll, reps in sorted(colls.items()):

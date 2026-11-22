@@ -17,7 +17,8 @@ merge: each reader writes <out>/verdicts-<n>.txt, one entry per line, every item
 The merge maps ids back, writes check.json in score.py's form (keys '<note id>|<version>' and '...|<token index>',
 '_answers' with a digest of each answer read, '_key_doubts'), and '_calibration': the readers' verdicts on No. 13's
 archived answers beside No. 13's recorded ones. Then, unless --blind-only, it applies <out>/after-unblinding.txt, the
-verdicts changed with the versions known (one line each, with its reason), and lists them under '_after_unblinding'.
+verdicts changed with the versions known (one line each, with its reason), and lists them under '_after_unblinding';
+without that file it stops.
 --as-read gives the readers' verdicts as first written, before the settlement made before unblinding. Each verdict
 file must open with '# read <first id> to <last id>, all <n> entries' for its whole sheet, or the merge refuses it.
 """
@@ -87,8 +88,10 @@ def parse_verdicts(text):
 
 def after_unblinding(check, path):
     """Changes made with the versions known: '<note id>|<version> meaning=0 | why' or '<note id>|<version>|<i> right | why'."""
-    done = []
-    for line in Path(path).read_text(encoding="utf-8").splitlines():
+    done, text = [], Path(path).read_text(encoding="utf-8")
+    if not any(l.strip() and not l.startswith("#") for l in text.splitlines()) and "# no verdict changed after unblinding" not in text:
+        raise SystemExit(f"{path}: no changes listed; a file with none says '# no verdict changed after unblinding'")
+    for line in text.splitlines():
         if not line.strip() or line.startswith("#"):
             continue
         head, _, why = line.partition(" | ")
@@ -171,7 +174,9 @@ def merge(out, answers, check_path, blind_only=False, as_read=False):
         nid, ver = key.split("|")
         seen[key] = digest(parse(json.loads((Path(answers) / ver / f"{nid}.json").read_text(encoding="utf-8"))["content"]))
     agree = sum(c["recorded"]["meaning"] == c["readers"]["meaning"] for c in calib.values())
-    late = [] if blind_only or not (out / "after-unblinding.txt").exists() else after_unblinding(check, out / "after-unblinding.txt")
+    if not blind_only and not (out / "after-unblinding.txt").exists():
+        raise SystemExit(f"{out / 'after-unblinding.txt'} missing: the final result applies it; for the blind result use --blind-only")
+    late = [] if blind_only else after_unblinding(check, out / "after-unblinding.txt")
     result = dict(sorted(check.items())) | {"_answers": seen, "_key_doubts": doubts, "_after_unblinding": late, "_calibration": {
         "items": calib, "meaning_agree": agree, "n": len(calib),
         "recorded_lost_read_lost": sum(c["recorded"]["meaning"] is False and c["readers"]["meaning"] is False for c in calib.values()),

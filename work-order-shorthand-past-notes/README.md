@@ -155,6 +155,7 @@ scored on the key in both versions alike.
 blind sheets, the readers' verdicts, the id map and the changes made after unblinding. From this folder:
 
 ```bash
+(cd hand && sha256sum -c SHA256SUMS)   # the published grading files, unchanged
 python3 handsheet.py merge hand answers check.json --as-read     && python3 score.py notes-test.json answers --check check.json --final   # as first read: 286 / 273
 python3 handsheet.py merge hand answers check.json --blind-only  && python3 score.py notes-test.json answers --check check.json --final   # settled: 287 / 273
 python3 handsheet.py merge hand answers check.json               && python3 score.py notes-test.json answers --check check.json --final --out results.json   # final: 290 / 273
@@ -162,7 +163,9 @@ python3 handsheet.py merge hand answers check.json               && python3 scor
 
 A verdict file lists only the entries that differ from the defaults, so a reader's completeness rests on its first
 line, `# read <first id> to <last id>, all <n> entries`; the merge refuses a file without it, and a file with no
-verdict lines at all unless it says `# no entry differs from the defaults`.
+verdict lines at all unless it says `# no entry differs from the defaults`. The final merge needs
+`hand/after-unblinding.txt` (only `--blind-only` and `--as-read` run without it); a file with no changes must say
+`# no verdict changed after unblinding`. `hand/SHA256SUMS` lists every grading file as published.
 
 ## Repeat it
 
@@ -174,11 +177,12 @@ git clone https://github.com/nlp-tlp/maintnorm.git && git -C maintnorm checkout 
 python3 index_as_run.py maintnorm/data local/corpus               # this run's corpus; index.py (fixed) for a fresh run
 python3 -c "import json; n=json.load(open('notes-test.json'))
 for c in 'ABC': json.dump([{'id': x['id'], 'text': 'What does this work order mean? ' + x['text']} for x in n if x['company'] == c], open(f'local/questions-{c}.json', 'w'))"
+SAG=/path/to/sag QWEN=/path/to/Qwen3-Reranker-0.6B URL=http://127.0.0.1:8000/v1/chat/completions MODEL=your-model-id   # yours
 for c in A B C; do
-  ./offline.sh python run.py --sag <sag binary> --corpus local/corpus/$c --questions local/questions-$c.json \
-    --out local/search/$c --modes deep --scorer qwen3rr:<Qwen3-Reranker-0.6B folder> --label qwen-rr --limit 10
+  ./offline.sh python run.py --sag "$SAG" --corpus local/corpus/$c --questions local/questions-$c.json \
+    --out local/search/$c --modes deep --scorer "qwen3rr:$QWEN" --label qwen-rr --limit 10
 done
-python3 ask.py notes-test.json local/search local/answers --url http://<host>:<port>/v1/chat/completions --model <id>
+python3 ask.py notes-test.json local/search local/answers --url "$URL" --model "$MODEL"
 python3 coverage.py maintnorm/data local/search local/answers --out coverage.json
 python3 handsheet.py make notes-test.json local/answers ../work-order-shorthand-glossary/results.json local/hand
 # read the four sheets blind, write local/hand/verdicts-1..4.txt, then:

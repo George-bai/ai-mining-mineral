@@ -1,7 +1,8 @@
 [
  {
   "batch": "first asked, 21 Nov 2026",
-  "key": "questions.json",
+  "key": "questions-as-run.json",
+  "key_sha256": "7f2ef0d76cd352c927adcd2072cd2b1c66937a653879585f8516b0cab3e59a21",
   "system": "d1",
   "collection": "focused",
   "repeat": "1",
@@ -1970,7 +1971,8 @@
  },
  {
   "batch": "first asked, 21 Nov 2026",
-  "key": "questions.json",
+  "key": "questions-as-run.json",
+  "key_sha256": "7f2ef0d76cd352c927adcd2072cd2b1c66937a653879585f8516b0cab3e59a21",
   "system": "d1",
   "collection": "focused",
   "repeat": "2",
@@ -3939,7 +3941,8 @@
  },
  {
   "batch": "first asked, 21 Nov 2026",
-  "key": "questions.json",
+  "key": "questions-as-run.json",
+  "key_sha256": "7f2ef0d76cd352c927adcd2072cd2b1c66937a653879585f8516b0cab3e59a21",
   "system": "d1",
   "collection": "full",
   "repeat": "1",
@@ -6241,7 +6244,8 @@
  },
  {
   "batch": "first asked, 21 Nov 2026",
-  "key": "questions.json",
+  "key": "questions-as-run.json",
+  "key_sha256": "7f2ef0d76cd352c927adcd2072cd2b1c66937a653879585f8516b0cab3e59a21",
   "system": "d1",
   "collection": "full",
   "repeat": "2",
@@ -8543,7 +8547,8 @@
  },
  {
   "batch": "first asked, 21 Nov 2026",
-  "key": "questions.json",
+  "key": "questions-as-run.json",
+  "key_sha256": "7f2ef0d76cd352c927adcd2072cd2b1c66937a653879585f8516b0cab3e59a21",
   "system": "hindsight",
   "collection": "focused",
   "repeat": "1",
@@ -13379,7 +13384,8 @@
  },
  {
   "batch": "first asked, 21 Nov 2026",
-  "key": "questions.json",
+  "key": "questions-as-run.json",
+  "key_sha256": "7f2ef0d76cd352c927adcd2072cd2b1c66937a653879585f8516b0cab3e59a21",
   "system": "hindsight",
   "collection": "focused",
   "repeat": "2",
@@ -18215,7 +18221,8 @@
  },
  {
   "batch": "first asked, 21 Nov 2026",
-  "key": "questions.json",
+  "key": "questions-as-run.json",
+  "key_sha256": "7f2ef0d76cd352c927adcd2072cd2b1c66937a653879585f8516b0cab3e59a21",
   "system": "hindsight",
   "collection": "full",
   "repeat": "1",
@@ -19946,7 +19953,8 @@
  },
  {
   "batch": "first asked, 21 Nov 2026",
-  "key": "questions.json",
+  "key": "questions-as-run.json",
+  "key_sha256": "7f2ef0d76cd352c927adcd2072cd2b1c66937a653879585f8516b0cab3e59a21",
   "system": "hindsight",
   "collection": "full",
   "repeat": "2",
@@ -21677,7 +21685,8 @@
  },
  {
   "batch": "first asked, 21 Nov 2026",
-  "key": "questions.json",
+  "key": "questions-as-run.json",
+  "key_sha256": "7f2ef0d76cd352c927adcd2072cd2b1c66937a653879585f8516b0cab3e59a21",
   "system": "keyword",
   "collection": "focused",
   "repeat": "1",
@@ -22850,7 +22859,8 @@
  },
  {
   "batch": "first asked, 21 Nov 2026",
-  "key": "questions.json",
+  "key": "questions-as-run.json",
+  "key_sha256": "7f2ef0d76cd352c927adcd2072cd2b1c66937a653879585f8516b0cab3e59a21",
   "system": "keyword",
   "collection": "focused",
   "repeat": "2",
@@ -24023,7 +24033,8 @@
  },
  {
   "batch": "first asked, 21 Nov 2026",
-  "key": "questions.json",
+  "key": "questions-as-run.json",
+  "key_sha256": "7f2ef0d76cd352c927adcd2072cd2b1c66937a653879585f8516b0cab3e59a21",
   "system": "keyword",
   "collection": "full",
   "repeat": "1",
@@ -25232,7 +25243,8 @@
  },
  {
   "batch": "first asked, 21 Nov 2026",
-  "key": "questions.json",
+  "key": "questions-as-run.json",
+  "key_sha256": "7f2ef0d76cd352c927adcd2072cd2b1c66937a653879585f8516b0cab3e59a21",
   "system": "keyword",
   "collection": "full",
   "repeat": "2",
@@ -26441,7 +26453,8 @@
  },
  {
   "batch": "first asked, 21 Nov 2026",
-  "key": "questions.json",
+  "key": "questions-as-run.json",
+  "key_sha256": "7f2ef0d76cd352c927adcd2072cd2b1c66937a653879585f8516b0cab3e59a21",
   "system": "knowline",
   "collection": "focused",
   "repeat": "1",
@@ -29141,7 +29154,8 @@
  },
  {
   "batch": "first asked, 21 Nov 2026",
-  "key": "questions.json",
+  "key": "questions-as-run.json",
+  "key_sha256": "7f2ef0d76cd352c927adcd2072cd2b1c66937a653879585f8516b0cab3e59a21",
   "system": "knowline",
   "collection": "focused",
   "repeat": "2",
@@ -31841,7 +31855,8 @@
  },
  {
   "batch": "first asked, 21 Nov 2026",
-  "key": "questions.json",
+  "key": "questions-as-run.json",
+  "key_sha256": "7f2ef0d76cd352c927adcd2072cd2b1c66937a653879585f8516b0cab3e59a21",
   "system": "knowline",
   "collection": "full",
   "repeat": "1",
@@ -34037,7 +34052,8 @@
  },
  {
   "batch": "first asked, 21 Nov 2026",
-  "key": "questions.json",
+  "key": "questions-as-run.json",
+  "key_sha256": "7f2ef0d76cd352c927adcd2072cd2b1c66937a653879585f8516b0cab3e59a21",
   "system": "knowline",
   "collection": "full",
   "repeat": "2",
@@ -36233,7 +36249,8 @@
  },
  {
   "batch": "first asked, 21 Nov 2026",
-  "key": "questions.json",
+  "key": "questions-as-run.json",
+  "key_sha256": "7f2ef0d76cd352c927adcd2072cd2b1c66937a653879585f8516b0cab3e59a21",
   "system": "minilm",
   "collection": "focused",
   "repeat": "1",
@@ -37793,7 +37810,8 @@
  },
  {
   "batch": "first asked, 21 Nov 2026",
-  "key": "questions.json",
+  "key": "questions-as-run.json",
+  "key_sha256": "7f2ef0d76cd352c927adcd2072cd2b1c66937a653879585f8516b0cab3e59a21",
   "system": "minilm",
   "collection": "focused",
   "repeat": "2",
@@ -39353,7 +39371,8 @@
  },
  {
   "batch": "first asked, 21 Nov 2026",
-  "key": "questions.json",
+  "key": "questions-as-run.json",
+  "key_sha256": "7f2ef0d76cd352c927adcd2072cd2b1c66937a653879585f8516b0cab3e59a21",
   "system": "minilm",
   "collection": "full",
   "repeat": "1",
@@ -40850,7 +40869,8 @@
  },
  {
   "batch": "first asked, 21 Nov 2026",
-  "key": "questions.json",
+  "key": "questions-as-run.json",
+  "key_sha256": "7f2ef0d76cd352c927adcd2072cd2b1c66937a653879585f8516b0cab3e59a21",
   "system": "minilm",
   "collection": "full",
   "repeat": "2",
@@ -42347,7 +42367,8 @@
  },
  {
   "batch": "first asked, 21 Nov 2026",
-  "key": "questions.json",
+  "key": "questions-as-run.json",
+  "key_sha256": "7f2ef0d76cd352c927adcd2072cd2b1c66937a653879585f8516b0cab3e59a21",
   "system": "qwen-rr",
   "collection": "focused",
   "repeat": "1",
@@ -44339,7 +44360,8 @@
  },
  {
   "batch": "first asked, 21 Nov 2026",
-  "key": "questions.json",
+  "key": "questions-as-run.json",
+  "key_sha256": "7f2ef0d76cd352c927adcd2072cd2b1c66937a653879585f8516b0cab3e59a21",
   "system": "qwen-rr",
   "collection": "focused",
   "repeat": "2",
@@ -46331,7 +46353,8 @@
  },
  {
   "batch": "first asked, 21 Nov 2026",
-  "key": "questions.json",
+  "key": "questions-as-run.json",
+  "key_sha256": "7f2ef0d76cd352c927adcd2072cd2b1c66937a653879585f8516b0cab3e59a21",
   "system": "qwen-rr",
   "collection": "full",
   "repeat": "1",
@@ -47837,7 +47860,8 @@
  },
  {
   "batch": "first asked, 21 Nov 2026",
-  "key": "questions.json",
+  "key": "questions-as-run.json",
+  "key_sha256": "7f2ef0d76cd352c927adcd2072cd2b1c66937a653879585f8516b0cab3e59a21",
   "system": "qwen-rr",
   "collection": "full",
   "repeat": "2",
@@ -49343,7 +49367,8 @@
  },
  {
   "batch": "first asked, 21 Nov 2026",
-  "key": "questions.json",
+  "key": "questions-as-run.json",
+  "key_sha256": "7f2ef0d76cd352c927adcd2072cd2b1c66937a653879585f8516b0cab3e59a21",
   "system": "tinybert",
   "collection": "focused",
   "repeat": "1",
@@ -51344,7 +51369,8 @@
  },
  {
   "batch": "first asked, 21 Nov 2026",
-  "key": "questions.json",
+  "key": "questions-as-run.json",
+  "key_sha256": "7f2ef0d76cd352c927adcd2072cd2b1c66937a653879585f8516b0cab3e59a21",
   "system": "tinybert",
   "collection": "focused",
   "repeat": "2",
@@ -53345,7 +53371,8 @@
  },
  {
   "batch": "first asked, 21 Nov 2026",
-  "key": "questions.json",
+  "key": "questions-as-run.json",
+  "key_sha256": "7f2ef0d76cd352c927adcd2072cd2b1c66937a653879585f8516b0cab3e59a21",
   "system": "tinybert",
   "collection": "full",
   "repeat": "1",
@@ -54986,7 +55013,8 @@
  },
  {
   "batch": "first asked, 21 Nov 2026",
-  "key": "questions.json",
+  "key": "questions-as-run.json",
+  "key_sha256": "7f2ef0d76cd352c927adcd2072cd2b1c66937a653879585f8516b0cab3e59a21",
   "system": "tinybert",
   "collection": "full",
   "repeat": "2",
@@ -56628,6 +56656,7 @@
  {
   "batch": "q01-q03 asked again with their date as q13-q15, 22 Nov 2026",
   "key": "questions-dated.json",
+  "key_sha256": "c8d64f1f9e418167255485b705d95a7440d9ebda5080900f503d8557317c2617",
   "system": "d1",
   "collection": "focused",
   "repeat": "1",
@@ -57121,6 +57150,7 @@
  {
   "batch": "q01-q03 asked again with their date as q13-q15, 22 Nov 2026",
   "key": "questions-dated.json",
+  "key_sha256": "c8d64f1f9e418167255485b705d95a7440d9ebda5080900f503d8557317c2617",
   "system": "d1",
   "collection": "focused",
   "repeat": "2",
@@ -57614,6 +57644,7 @@
  {
   "batch": "q01-q03 asked again with their date as q13-q15, 22 Nov 2026",
   "key": "questions-dated.json",
+  "key_sha256": "c8d64f1f9e418167255485b705d95a7440d9ebda5080900f503d8557317c2617",
   "system": "d1",
   "collection": "full",
   "repeat": "1",
@@ -58008,6 +58039,7 @@
  {
   "batch": "q01-q03 asked again with their date as q13-q15, 22 Nov 2026",
   "key": "questions-dated.json",
+  "key_sha256": "c8d64f1f9e418167255485b705d95a7440d9ebda5080900f503d8557317c2617",
   "system": "d1",
   "collection": "full",
   "repeat": "2",
@@ -58402,6 +58434,7 @@
  {
   "batch": "q01-q03 asked again with their date as q13-q15, 22 Nov 2026",
   "key": "questions-dated.json",
+  "key_sha256": "c8d64f1f9e418167255485b705d95a7440d9ebda5080900f503d8557317c2617",
   "system": "hindsight",
   "collection": "focused",
   "repeat": "1",
@@ -59233,6 +59266,7 @@
  {
   "batch": "q01-q03 asked again with their date as q13-q15, 22 Nov 2026",
   "key": "questions-dated.json",
+  "key_sha256": "c8d64f1f9e418167255485b705d95a7440d9ebda5080900f503d8557317c2617",
   "system": "hindsight",
   "collection": "focused",
   "repeat": "2",
@@ -60064,6 +60098,7 @@
  {
   "batch": "q01-q03 asked again with their date as q13-q15, 22 Nov 2026",
   "key": "questions-dated.json",
+  "key_sha256": "c8d64f1f9e418167255485b705d95a7440d9ebda5080900f503d8557317c2617",
   "system": "hindsight",
   "collection": "full",
   "repeat": "1",
@@ -60625,6 +60660,7 @@
  {
   "batch": "q01-q03 asked again with their date as q13-q15, 22 Nov 2026",
   "key": "questions-dated.json",
+  "key_sha256": "c8d64f1f9e418167255485b705d95a7440d9ebda5080900f503d8557317c2617",
   "system": "hindsight",
   "collection": "full",
   "repeat": "2",
@@ -61186,6 +61222,7 @@
  {
   "batch": "q01-q03 asked again with their date as q13-q15, 22 Nov 2026",
   "key": "questions-dated.json",
+  "key_sha256": "c8d64f1f9e418167255485b705d95a7440d9ebda5080900f503d8557317c2617",
   "system": "keyword",
   "collection": "focused",
   "repeat": "1",
@@ -61504,6 +61541,7 @@
  {
   "batch": "q01-q03 asked again with their date as q13-q15, 22 Nov 2026",
   "key": "questions-dated.json",
+  "key_sha256": "c8d64f1f9e418167255485b705d95a7440d9ebda5080900f503d8557317c2617",
   "system": "keyword",
   "collection": "focused",
   "repeat": "2",
@@ -61822,6 +61860,7 @@
  {
   "batch": "q01-q03 asked again with their date as q13-q15, 22 Nov 2026",
   "key": "questions-dated.json",
+  "key_sha256": "c8d64f1f9e418167255485b705d95a7440d9ebda5080900f503d8557317c2617",
   "system": "keyword",
   "collection": "full",
   "repeat": "1",
@@ -62140,6 +62179,7 @@
  {
   "batch": "q01-q03 asked again with their date as q13-q15, 22 Nov 2026",
   "key": "questions-dated.json",
+  "key_sha256": "c8d64f1f9e418167255485b705d95a7440d9ebda5080900f503d8557317c2617",
   "system": "keyword",
   "collection": "full",
   "repeat": "2",
@@ -62458,6 +62498,7 @@
  {
   "batch": "q01-q03 asked again with their date as q13-q15, 22 Nov 2026",
   "key": "questions-dated.json",
+  "key_sha256": "c8d64f1f9e418167255485b705d95a7440d9ebda5080900f503d8557317c2617",
   "system": "knowline",
   "collection": "focused",
   "repeat": "1",
@@ -62845,6 +62886,7 @@
  {
   "batch": "q01-q03 asked again with their date as q13-q15, 22 Nov 2026",
   "key": "questions-dated.json",
+  "key_sha256": "c8d64f1f9e418167255485b705d95a7440d9ebda5080900f503d8557317c2617",
   "system": "knowline",
   "collection": "focused",
   "repeat": "2",
@@ -63232,6 +63274,7 @@
  {
   "batch": "q01-q03 asked again with their date as q13-q15, 22 Nov 2026",
   "key": "questions-dated.json",
+  "key_sha256": "c8d64f1f9e418167255485b705d95a7440d9ebda5080900f503d8557317c2617",
   "system": "knowline",
   "collection": "full",
   "repeat": "1",
@@ -63556,6 +63599,7 @@
  {
   "batch": "q01-q03 asked again with their date as q13-q15, 22 Nov 2026",
   "key": "questions-dated.json",
+  "key_sha256": "c8d64f1f9e418167255485b705d95a7440d9ebda5080900f503d8557317c2617",
   "system": "knowline",
   "collection": "full",
   "repeat": "2",
@@ -63880,6 +63924,7 @@
  {
   "batch": "q01-q03 asked again with their date as q13-q15, 22 Nov 2026",
   "key": "questions-dated.json",
+  "key_sha256": "c8d64f1f9e418167255485b705d95a7440d9ebda5080900f503d8557317c2617",
   "system": "minilm",
   "collection": "focused",
   "repeat": "1",
@@ -64279,6 +64324,7 @@
  {
   "batch": "q01-q03 asked again with their date as q13-q15, 22 Nov 2026",
   "key": "questions-dated.json",
+  "key_sha256": "c8d64f1f9e418167255485b705d95a7440d9ebda5080900f503d8557317c2617",
   "system": "minilm",
   "collection": "focused",
   "repeat": "2",
@@ -64678,6 +64724,7 @@
  {
   "batch": "q01-q03 asked again with their date as q13-q15, 22 Nov 2026",
   "key": "questions-dated.json",
+  "key_sha256": "c8d64f1f9e418167255485b705d95a7440d9ebda5080900f503d8557317c2617",
   "system": "minilm",
   "collection": "full",
   "repeat": "1",
@@ -65032,6 +65079,7 @@
  {
   "batch": "q01-q03 asked again with their date as q13-q15, 22 Nov 2026",
   "key": "questions-dated.json",
+  "key_sha256": "c8d64f1f9e418167255485b705d95a7440d9ebda5080900f503d8557317c2617",
   "system": "minilm",
   "collection": "full",
   "repeat": "2",
@@ -65386,6 +65434,7 @@
  {
   "batch": "q01-q03 asked again with their date as q13-q15, 22 Nov 2026",
   "key": "questions-dated.json",
+  "key_sha256": "c8d64f1f9e418167255485b705d95a7440d9ebda5080900f503d8557317c2617",
   "system": "qwen-rr",
   "collection": "focused",
   "repeat": "1",
@@ -66190,6 +66239,7 @@
  {
   "batch": "q01-q03 asked again with their date as q13-q15, 22 Nov 2026",
   "key": "questions-dated.json",
+  "key_sha256": "c8d64f1f9e418167255485b705d95a7440d9ebda5080900f503d8557317c2617",
   "system": "qwen-rr",
   "collection": "focused",
   "repeat": "2",
@@ -66994,6 +67044,7 @@
  {
   "batch": "q01-q03 asked again with their date as q13-q15, 22 Nov 2026",
   "key": "questions-dated.json",
+  "key_sha256": "c8d64f1f9e418167255485b705d95a7440d9ebda5080900f503d8557317c2617",
   "system": "qwen-rr",
   "collection": "full",
   "repeat": "1",
@@ -67366,6 +67417,7 @@
  {
   "batch": "q01-q03 asked again with their date as q13-q15, 22 Nov 2026",
   "key": "questions-dated.json",
+  "key_sha256": "c8d64f1f9e418167255485b705d95a7440d9ebda5080900f503d8557317c2617",
   "system": "qwen-rr",
   "collection": "full",
   "repeat": "2",
@@ -67738,6 +67790,7 @@
  {
   "batch": "q01-q03 asked again with their date as q13-q15, 22 Nov 2026",
   "key": "questions-dated.json",
+  "key_sha256": "c8d64f1f9e418167255485b705d95a7440d9ebda5080900f503d8557317c2617",
   "system": "tinybert",
   "collection": "focused",
   "repeat": "1",
@@ -68587,6 +68640,7 @@
  {
   "batch": "q01-q03 asked again with their date as q13-q15, 22 Nov 2026",
   "key": "questions-dated.json",
+  "key_sha256": "c8d64f1f9e418167255485b705d95a7440d9ebda5080900f503d8557317c2617",
   "system": "tinybert",
   "collection": "focused",
   "repeat": "2",
@@ -69436,6 +69490,7 @@
  {
   "batch": "q01-q03 asked again with their date as q13-q15, 22 Nov 2026",
   "key": "questions-dated.json",
+  "key_sha256": "c8d64f1f9e418167255485b705d95a7440d9ebda5080900f503d8557317c2617",
   "system": "tinybert",
   "collection": "full",
   "repeat": "1",
@@ -69916,6 +69971,7 @@
  {
   "batch": "q01-q03 asked again with their date as q13-q15, 22 Nov 2026",
   "key": "questions-dated.json",
+  "key_sha256": "c8d64f1f9e418167255485b705d95a7440d9ebda5080900f503d8557317c2617",
   "system": "tinybert",
   "collection": "full",
   "repeat": "2",

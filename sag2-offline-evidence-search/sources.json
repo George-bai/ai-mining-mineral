@@ -4,7 +4,8 @@
   "file": "newmont-cadia-trs-2026.htm",
   "label": "Newmont, Cadia Valley Operations technical report summary, February 2026 (SEC Exhibit 96.2)",
   "url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000010/q425ex962cadia.htm",
-  "sha256": "8858f75f2d77d8b7fbdbd14191fdd9e26ea8e73a4ac4061464da8db95c39d4b7"
+  "sha256": "8858f75f2d77d8b7fbdbd14191fdd9e26ea8e73a4ac4061464da8db95c39d4b7",
+  "text_sha256": "afcd361cbe36c3ba411d4eb3a873e92fa9cbb1f36a65dcc9240910c8d9500c25"
  },
  {
   "id": "ngm-trs-2026",
@@ -12,28 +13,32 @@
   "pages": "sec",
   "label": "Nevada Gold Mines, NGM Complex technical report summary, May 2026 (SEC Exhibit 96.1)",
   "url": "https://www.sec.gov/Archives/edgar/data/2162540/000119312526455481/d338869dex961.htm",
-  "sha256": "49deb10e174f4d6a2a0c4e7c1d9c5378b759a5e20bfb310a21f25ce487709c49"
+  "sha256": "49deb10e174f4d6a2a0c4e7c1d9c5378b759a5e20bfb310a21f25ce487709c49",
+  "text_sha256": "8ebdbeda5dcad78e481ecbd35e605c4a0095ded75ac29e49c42b9983467e77f5"
  },
  {
   "id": "msha-mai-2003-23",
   "file": "msha-mai-2003-23.pdf",
   "label": "MSHA, Goldstrike Mine, report of investigation MAI-2003-23 (roaster, 19 Nov 2003)",
   "url": "https://arlweb.msha.gov/fatals/2003/ftl03m23.pdf",
-  "sha256": "7c95a822fd199dc0b3a51bc9aaf46515b3f22479b23efa65237b5d63f46dd0ba"
+  "sha256": "7c95a822fd199dc0b3a51bc9aaf46515b3f22479b23efa65237b5d63f46dd0ba",
+  "text_sha256": "4f6888ed300f43202062a04ecf25d647c037b8ecfb2582137eec61e78bbfbced"
  },
  {
   "id": "msha-mai-2005-30",
   "file": "msha-mai-2005-30.pdf",
   "label": "MSHA, Goldstrike Mine, report of investigation MAI-2005-30 (wet mill, 22 Oct 2005)",
   "url": "https://arlweb.msha.gov/FATALS/2005/ftl05m30.pdf",
-  "sha256": "eac799363a60d54205d1e75b30c8d7435f3ded66c1b70edb7f0fdd78f0ae3bcd"
+  "sha256": "eac799363a60d54205d1e75b30c8d7435f3ded66c1b70edb7f0fdd78f0ae3bcd",
+  "text_sha256": "9839c111a3c73a6eff42efffca1f96b3271f74f56e713e06b18ef9ee87e785c1"
  },
  {
   "id": "msha-bp-49",
   "file": "msha-bp-49.pdf",
   "label": "MSHA, Conveyor safety tips for mechanics, best practice card BP-49 (Aug 2000)",
   "url": "https://arlweb.msha.gov/S%26HINFO/bpcards/conveyor/BP-49.pdf",
-  "sha256": "40a5e88f38aafe67f76d33ece5cba4b44be46ec6ce9a892b5eab02475a623ed5"
+  "sha256": "40a5e88f38aafe67f76d33ece5cba4b44be46ec6ce9a892b5eab02475a623ed5",
+  "text_sha256": "6ddf042967bf3a9f33604557cceab68bca115f3099930e88b03e6bb0a8cc77db"
  },
  {
   "id": "cfr-30-56-m",
@@ -41,6 +46,7 @@
   "label": "30 CFR Part 56 Subpart M, Machinery and equipment (eCFR, current to 19 Nov 2026)",
   "url": "https://www.ecfr.gov/current/title-30/chapter-I/subchapter-K/part-56/subpart-M",
   "sha256": "ce956f128044e1c3c55f1a66925a12558d0d9e3ce01796e4e428b7934b752c81",
-  "download": "https://www.ecfr.gov/api/versioner/v1/full/2026-11-19/title-30.xml?part=56&subpart=M"
+  "download": "https://www.ecfr.gov/api/versioner/v1/full/2026-11-19/title-30.xml?part=56&subpart=M",
+  "text_sha256": "fd01285c3eda72983b754c506b0622eb06bdbe6045734cdf4c8277f6ff64447b"
  }
 ]

@@ -3135,5 +3135,5 @@
    }
   }
  },
- "dated_note": "The dated re-run (q13-q15, 22 Nov 2026): every distinct list (42, from 84 runs) read blind to the setup by two Claude readers, beside questions-dated.json. 'shown' agreed with score.py for every fact in every list (84 judgements). 'wrong_edition' differs only by definition in 10 lists: score.py records the place of the 2024 copy even after the 2026 page has shown the fact; the readers recorded it only where the 2024 copy came first. It changes no score. No corrections."
+ "dated_note": "The dated re-run (q13-q15, 22 Nov 2026): every distinct list (42 of the 84 question lists from 28 runs) read blind to the setup by two Claude readers, beside questions-dated.json. 'shown' agreed with score.py for every fact in every list (84 judgements). 'wrong_edition' differs only by definition in 10 lists: score.py records the place of the 2024 copy even after the 2026 page has shown the fact; the readers recorded it only where the 2024 copy came first. It changes no score. No corrections."
 }

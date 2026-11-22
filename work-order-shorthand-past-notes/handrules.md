@@ -47,3 +47,7 @@ sentence, and an unsure entry does not excuse a reading the plain text asserts.
     r1234 meaning=0 diagnosis=1 | why          verdicts that differ from the defaults, with the reason
     r1234|3 wrong | why                        a corrected outcome for piece 3 (right, wrong, unsure, kept)
     doubt r1234|3 | why                        the key looks wrong for piece 3
+
+The file's first line says the whole sheet was read: `# read <first id> to <last id>, all <n> entries` (the merge
+refuses a file without it, and one with no verdict lines unless it says `# no entry differs from the defaults`).
+Added 22 Nov, after the check, when the merge began to check it.

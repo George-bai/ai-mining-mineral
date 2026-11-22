@@ -14,8 +14,8 @@ through one Unix socket. Every statement in every answer was read against the pa
 
 No. 15 (`../offline-search-technical-records/`) compares judging models on another archive; this article uses the one
 with the most complete lists there, Qwen3-Reranker-0.6B, and shows what the method does. Its lead in No. 15 is the
-two-record question: asked again with its date on 22 Nov 2026 (first asked "by the end of 2021", which no record
-answers), it was the only setup with both facts in the first five in all three wordings on all 576 pages (on the 26
+two-record question: asked again with its date on 22 Nov 2026 (first asked "by the end of 2021", which the five records
+searched there do not answer), it was the only setup with both facts in the first five in all three wordings on all 576 pages (on the 26
 plant pages, KnowLine-4B-Gen5 in three, it in two); on No. 15's other eight answerable questions, five setups found
 every answer. No. 16
 (`../work-order-shorthand-past-notes/`) uses the same search on maintenance work orders.
@@ -160,21 +160,23 @@ judge and an OpenAI-compatible chat server for the answering model on the same m
 export LOCAL=$PWD/local && mkdir -p $LOCAL/sources
 # download the six records listed in sources.json into $LOCAL/sources/ (file names as in sources.json), check the SHA-256s
 python3 prepare.py sources.json $LOCAL/sources $LOCAL/corpus
+# the SEC pages can differ byte for byte between downloads: check the extracted text against text_sha256 (pdftotext 26.01.0)
 npm install --prefix $LOCAL/sag-cli @zleap-ai/sag@0.3.11
 uv venv --python 3.12 $LOCAL/.venv && VIRTUAL_ENV=$LOCAL/.venv uv pip install torch transformers requests
 # download Qwen/Qwen3-Reranker-0.6B at e61197ed into $LOCAL/hf (HF_HOME)
 CUDA_VISIBLE_DEVICES=0 HF_HOME=$LOCAL/hf ./offline.sh $LOCAL/.venv/bin/python run.py --sag $LOCAL/sag-cli/node_modules/.bin/sag \
   --corpus $LOCAL/corpus --questions questions.json --out $LOCAL/search --modes deep \
   --scorer qwen3rr:$LOCAL/hf/hub/models--Qwen--Qwen3-Reranker-0.6B/snapshots/e61197ed45024b0ed8a2d74b80b4d909f1255473 --label qwen-rr --limit 10
+MODEL='your-model-id'   # the answering model's id on your chat server
 ./answer_offline.sh python3 /run/user/$UID/sag-llm.sock 8088 questions.json $LOCAL/search $LOCAL/answers \
-  --sources-json sources.json --model <your model id>
+  --sources-json sources.json --model "$MODEL"
 ```
 
 ## Files
 
 | File | What it is |
 |---|---|
-| `sources.json`, `prepare.py` | The six records with their hashes, and the text extraction |
+| `sources.json`, `prepare.py` | The six records with the SHA-256 of each file and of its extracted text (`text_sha256`), and the text extraction |
 | `examples.json`, `questions.json` | The eight questions with their target pages; the questions as run |
 | `offline.sh`, `run.py` | One offline search run |
 | `decide.py` | The local decision service for SAG-Wiki |

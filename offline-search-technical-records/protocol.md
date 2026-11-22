@@ -21,11 +21,11 @@ Only passages are tested. No answer prose is generated.
 | newcrest-2022-03-quarterly | Newcrest quarterly report, March 2022 quarter (28 Apr 2022) | issuer archive PDF (s24.q4cdn.com) | 24 |
 | newcrest-2022-06-quarterly | Newcrest quarterly report, June 2022 quarter (21 Jul 2022) | ASX PDF | 22 |
 | newmont-cadia-trs-2024 | Newmont, Cadia Valley Operations technical report summary, Feb 2024 (filed 29 Feb 2024) | SEC EDGAR, Exhibit 96.6 | 266 printed + cover |
-| newmont-cadia-trs-2026 | Newmont, Cadia Valley Operations technical report summary, Feb 2026 (filed 19 Feb 2026) | SEC EDGAR, Exhibit 96.2 | 239 printed + cover |
+| newmont-cadia-trs-2026 | Newmont, Cadia Valley Operations technical report summary, Feb 2026 (filed 19 Feb 2026) | SEC EDGAR, Exhibit 96.2 | 240 printed + cover (first written 239; 241 pages indexed, counted after the run) |
 
 URLs in `local/sources.json`. SHA-256 of the downloaded files: `newcrest-q4-2021.pdf` 48539c7f…7dda7,
 `newcrest-q1-2022.pdf` 03994af1…2831, `newcrest-q2-2022.pdf` be55dc11…9756, `newmont-cadia-trs-2024.htm`
-2b85c421…b2e8, `newmont-cadia-trs-2026.htm` 8858f75f…b4d9 (full hashes in `public/README.md`). The SEC files were
+2b85c421…b2e8, `newmont-cadia-trs-2026.htm` 8858f75f…d4b7 (first written …b4d9, a typo) (full hashes in `public/README.md`). The SEC files were
 fetched with a declared User-Agent naming George, as SEC's access policy requires (his choice, 21 Nov 2026).
 
 **Reuse.** ASX's terms do not permit republishing its announcements; SEC filings are free to reuse with credit. The
