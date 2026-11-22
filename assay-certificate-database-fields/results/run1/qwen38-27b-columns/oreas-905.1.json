@@ -1,0 +1,27 @@
+{
+ "fields": {
+  "cu_4a_pct": 0.1533,
+  "cu_4a_sd_pct": 0.0061,
+  "cu_ar_pct": 0.1562,
+  "cu_ar_sd_pct": 0.0047,
+  "cu_h2so4_pct": 0.1272,
+  "cu_h2so4_sd_pct": 0.0065,
+  "cu_cn_pct": null,
+  "cu_cn_sd_pct": null,
+  "au_fa_ppm": 0.391,
+  "au_fa_sd_ppm": 0.009,
+  "au_ar_ppm": 0.395,
+  "au_ar_sd_ppm": 0.019
+ },
+ "content": "\n\n{\"cu_4a_pct\":0.1533,\"cu_4a_sd_pct\":0.0061,\"cu_ar_pct\":0.1562,\"cu_ar_sd_pct\":0.0047,\"cu_h2so4_pct\":0.1272,\"cu_h2so4_sd_pct\":0.0065,\"cu_cn_pct\":null,\"cu_cn_sd_pct\":null,\"au_fa_ppm\":0.391,\"au_fa_sd_ppm\":0.009,\"au_ar_ppm\":0.395,\"au_ar_sd_ppm\":0.019}",
+ "reasoning": "Let me analyze the certificate of analysis for OREAS 905 to fill in the CRM standards table.\n\nI need to find:\n1. cu_4a_pct - Copper 4-Acid Digestion in percent (wt.%)\n2. cu_4a_sd_pct - SD for Copper 4-Acid in percent\n3. cu_ar_pct - Copper Aqua Regia in percent (wt.%)\n4. cu_ar_sd_pct - SD for Copper Aqua Regia in percent\n5. cu_h2so4_pct - Copper H2SO4 (Sulphuric Acid Leach) in percent (wt.%)\n6. cu_h2so4_sd_pct - SD for Copper H2SO4 in percent\n7. cu_cn_pct - Copper... wait, \"cn\" - this might be \"concentrate\" or something else. Let me think... Actually, looking at the columns: cu_4a, cu_ar, cu_h2so4, cu_cn. \"cn\" might stand for \"concentrate\" or \"carbonate\" or something. But looking at the certificate, I don't see a \"cn\" method. Let me re-read...\n\nWait, looking at the methods available:\n- 4-Acid Digestion\n- Aqua Regia Digestion\n- Sulphuric Acid Leach\n- Borate/Peroxide Fusion\n- Pb Fire Assay (for Au only)\n\nThere's no \"cn\" method listed. So cu_cn_pct and cu_cn_sd_pct would be null.\n\nNow let me find the values:\n\n**Copper 4-Acid Digestion:**\nFrom Table 1: Cu, Copper (ppm) = 1533, 1SD = 61\nThe column asks for \"pct\" (percent/wt.%). 1533 ppm = 1.533 wt.%\nSD: 61 ppm = 0.061 wt.%\n\n**Copper Aqua Regia Digestion:**\nFrom Table 1: Cu, Copper (ppm) = 1562, 1SD = 47\n1562 ppm = 1.562 wt.%\n47 ppm = 0.047 wt.%\n\n**Copper H2SO4 (Sulphuric Acid Leach):**\nFrom Table 1: Cu-Sol, Copper Soluble (ppm) = 1272, 1SD = 65\n1272 ppm = 1.272 wt.%\n65 ppm = 0.065 wt.%\n\n**Copper CN:**\nI don't see any \"CN\" method in the certificate. This would be null.\n\n**Gold Fire Assay (Pb Fire Assay):**\nFrom Table 1: Au, Gold (ppm) = 0.391, 1SD = 0.009\nThese are already in ppm.\n\n**Gold Aqua Regia:**\nFrom Table 1: Au, Gold (ppm) = 0.395, 1SD = 0.019\nThese are already in ppm.\n\nNow let me double-check the conversions:\n- 1533 ppm = 1533/10000 = 0.1533 wt.% ... wait, no. 1 wt.% = 10000 ppm. So 1533 ppm = 0.1533 wt.%.\n\nWait, let me recalculate:\n- 1 wt.% = 10,000 ppm (since 1% = 1/100 = 10,000/1,000,000)\n- So 1533 ppm = 1533/10000 = 0.1533 wt.%\n\nHmm, but that seems low for a copper ore CRM. Let me reconsider.\n\nActually, 1 wt.% = 10,000 ppm. So:\n- 1533 ppm = 0.1533 wt.%\n- 61 ppm = 0.0061 wt.%\n\nWait, that doesn't seem right either. Let me think again.\n\n1% = 1/100 = 0.01\n1 ppm = 1/1,000,000 = 0.000001\n\nSo 1% = 10,000 ppm. Therefore:\n1533 ppm = 1533/10000 = 0.1533%\n\nAnd 61 ppm = 61/10000 = 0.0061%\n\nFor Aqua Regia:\n1562 ppm = 1562/10000 = 0.1562%\n47 ppm = 47/10000 = 0.0047%\n\nFor H2SO4:\n1272 ppm = 1272/10000 = 0.1272%\n65 ppm = 65/10000 = 0.0065%\n\nThese seem reasonable for a copper oxide ore CRM.\n\nNow for the \"cn\" - I'm not sure what this refers to. Looking at the certificate methods:\n- Pb Fire Assay\n- 4-Acid Digestion\n- Borate/Peroxide Fusion\n- Aqua Regia Digestion\n- Sulphuric Acid Leach\n- Gas/Liquid Pycnometry\n\nThere's no \"CN\" method. So cu_cn_pct and cu_cn_sd_pct would be null.\n\nLet me finalize:\n- cu_4a_pct: 0.1533\n- cu_4a_sd_pct: 0.0061\n- cu_ar_pct: 0.1562\n- cu_ar_sd_pct: 0.0047\n- cu_h2so4_pct: 0.1272\n- cu_h2so4_sd_pct: 0.0065\n- cu_cn_pct: null\n- cu_cn_sd_pct: null\n- au_fa_ppm: 0.391\n- au_fa_sd_ppm: 0.009\n- au_ar_ppm: 0.395\n- au_ar_sd_ppm: 0.019\n",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 28259,
+  "total_tokens": 29818,
+  "completion_tokens": 1559,
+  "prompt_tokens_details": null
+ },
+ "seconds": 28.9,
+ "model": "qwen38-27b"
+}

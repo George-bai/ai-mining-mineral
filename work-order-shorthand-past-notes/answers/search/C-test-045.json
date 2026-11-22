@@ -1,0 +1,18 @@
+{
+ "id": "C-test-045",
+ "condition": "search",
+ "note": "ZH6907 C/out pos 2 tyre",
+ "model": "qwen38-27b",
+ "prompt": "You help a maintenance planner at an Australian mine site read work orders. Work orders are short notes typed in a hurry by maintainers and planners, full of the site's shorthand: abbreviations, misspellings and words run together. Codes such as AB123 or XY45 are asset numbers.\n\nRewrite the work order below in plain English for a reader who does not know the site's shorthand.\n\n- Expand every abbreviation and correct every misspelling. Choose each meaning from the note's context.\n- Keep to what the note says. Do not add a cause, a diagnosis, a fault or an outcome that the note does not state.\n- Keep the note's tense. A request for work stays a request: say that work was done only if the note says so.\n- Keep the note's asset numbers, quantities, positions and timings as they are.\n- If you cannot read a piece of shorthand with confidence, keep it as written in \"plain\", so the reader can see it is unresolved, and list it under \"unsure\".\n\nEarlier work orders from this site, found by searching its own records, and what each meant. The same shorthand can mean something else at another site.\n\nZH6907 C/O pos 7 tyre = ZH6907 change out position 7 tyre\nRHR inner drive tyre needs replacing = right hand rear inner drive tyre needs replacing\ninspect oil still around LHR tyre = inspect oil still around left hand rear tyre\npos#2 wheel stud broken = position number 2 wheel stud broken\nPos #2 steer oil inspection plug missing = position number 2 steering oil inspection plug missing\nZH6907 Investigate issue with a/c system = ZH6907 investigate issue with air conditioner system\nmunber 2 quick tip = number 2 Kwik Tip\nbottom pos #1 & #2 shocky mounts loose = bottom position number 1 and #2 shock absorber mounts loose\nZH6907 - fuel leak = ZH6907 - fuel leak\nLOOSE WHEEL STUDS ON POS 9/10 = loose wheel studs on position 9 / 10\nAnswer with a JSON object only, with three keys:\n- \"plain\": the work order in plain English.\n- \"terms\": one item for each piece of shorthand you expanded or corrected: {\"written\": \"<as written in the note>\", \"means\": \"<what it stands for>\"}.\n- \"unsure\": the shorthand you could not read with confidence, as written in the note.\n\nWork order: ZH6907 C/out pos 2 tyre\n",
+ "started": "2026-11-21T16:35:17+1000",
+ "content": "\n\n{\n  \"plain\": \"ZH6907 change out position 2 tyre\",\n  \"terms\": [\n    {\"written\": \"C/out\", \"means\": \"change out\"},\n    {\"written\": \"pos\", \"means\": \"position\"}\n  ],\n  \"unsure\": []\n}",
+ "reasoning": "Let me analyze the work order: \"ZH6907 C/out pos 2 tyre\"\n\nLooking at the earlier work orders for reference:\n- \"ZH6907 C/O pos 7 tyre = ZH6907 change out position 7 tyre\"\n\nSo \"C/O\" means \"change out\" and \"pos\" means \"position\".\n\nIn our work order:\n- \"ZH6907\" - asset number, keep as is\n- \"C/out\" - this is \"change out\" (similar to \"C/O\" in the earlier example)\n- \"pos\" - position\n- \"2\" - the number 2\n- \"tyre\" - tyre (already spelled correctly)\n\nSo the plain English version would be: \"ZH6907 change out position 2 tyre\"\n\nLet me identify the shorthand terms:\n- \"C/out\" → \"change out\" (this is the same as \"C/O\" in the earlier example)\n- \"pos\" → \"position\"\n\nThese are the pieces of shorthand I expanded. \"tyre\" is already correct spelling. \"ZH6907\" is an asset number, not shorthand to expand.\n\nLet me format the JSON response.\n",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 562,
+  "total_tokens": 896,
+  "completion_tokens": 334,
+  "prompt_tokens_details": null
+ },
+ "seconds": 5.6
+}

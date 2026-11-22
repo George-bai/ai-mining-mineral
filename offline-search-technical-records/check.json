@@ -1,0 +1,3139 @@
+{
+ "note": "The hand check: every distinct excerpt list (first 10 excerpts) read blind to the setup, beside the key in questions.json, by Claude subagents (one per batch of 24 to 35 lists), 21 Nov 2026. 'runs' are the system|collection|repeat|mode|question records that showed that exact list. 'corrections' would override the script; none were needed (202 fact judgements, all equal to score.py).",
+ "corrections": {},
+ "lists": {
+  "K001": {
+   "runs": [
+    "knowline|focused|1|deep|q07",
+    "knowline|focused|2|deep|q07"
+   ],
+   "verdict": {
+    "copper-tails": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "K002": {
+   "runs": [
+    "knowline|full|1|deep|q04",
+    "knowline|full|2|deep|q04"
+   ],
+   "verdict": {
+    "recovery_rows": [],
+    "shift_figure": false,
+    "note": "All ten rows are bare unlabelled table cells from page 14; rank 6 '77.0' could be misread as a recovery percentage but nothing labels it as molybdenum recovery."
+   }
+  },
+  "K003": {
+   "runs": [
+    "knowline|focused|1|deep|q03",
+    "knowline|focused|2|deep|q03"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 2,
+     "wrong_edition": 6,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": 4,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "K004": {
+   "runs": [
+    "knowline|full|1|deep|q12",
+    "knowline|full|2|deep|q12"
+   ],
+   "verdict": {
+    "commissioned": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": "Says 'completed during the period'; the quarter is identified by the record being the March 2022 quarterly."
+    },
+    "first-shipment": {
+     "shown": 10,
+     "wrong_edition": null,
+     "note": "Rank 1 says the first shipment is only scheduled for the June 2022 quarter; ranks 2-8 are table header fragments."
+    }
+   }
+  },
+  "K005": {
+   "runs": [
+    "knowline|full|1|deep|q09",
+    "knowline|full|2|deep|q09"
+   ],
+   "verdict": {
+    "grade": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "K006": {
+   "runs": [
+    "knowline|full|1|deep|q02",
+    "knowline|full|2|deep|q02"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": 7,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "K007": {
+   "runs": [
+    "knowline|focused|1|deep|q04",
+    "knowline|focused|2|deep|q04"
+   ],
+   "verdict": {
+    "recovery_rows": [],
+    "shift_figure": false,
+    "note": "Only table header fragments from the March 2022 quarterly; rank 10 '4.1' follows TRIFR/mhrs, a safety rate, not a recovery."
+   }
+  },
+  "K008": {
+   "runs": [
+    "knowline|focused|1|deep|q09",
+    "knowline|focused|2|deep|q09"
+   ],
+   "verdict": {
+    "grade": {
+     "shown": 3,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "K009": {
+   "runs": [
+    "knowline|full|1|deep|q01",
+    "knowline|full|2|deep|q01"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": 3,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "K010": {
+   "runs": [
+    "knowline|full|1|deep|q08",
+    "knowline|full|2|deep|q08"
+   ],
+   "verdict": {
+    "capacity": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "Rank 7 (2024 p22-6) gives a targeted 5,000 dmt/a production rate that could be mistaken for design output."
+    }
+   }
+  },
+  "K011": {
+   "runs": [
+    "knowline|focused|1|deep|q06",
+    "knowline|focused|2|deep|q06"
+   ],
+   "verdict": {
+    "first-shipment": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "All ten rows are table header fragments from the accepted page; the shipment sentence never appears."
+    }
+   }
+  },
+  "K012": {
+   "runs": [
+    "knowline|focused|1|deep|q10",
+    "knowline|focused|2|deep|q10"
+   ],
+   "verdict": {
+    "reagents": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "Rank 1 is the concentrators' consumables list, not the moly plant's."
+    }
+   }
+  },
+  "K013": {
+   "runs": [
+    "knowline|focused|1|deep|q02",
+    "knowline|focused|2|deep|q02"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": 7,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "K014": {
+   "runs": [
+    "knowline|focused|1|deep|q12",
+    "knowline|focused|2|deep|q12"
+   ],
+   "verdict": {
+    "commissioned": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "Says 'completed during the period'; the quarter is identified by the record being the March 2022 quarterly."
+    },
+    "first-shipment": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "K015": {
+   "runs": [
+    "knowline|focused|1|deep|q01",
+    "knowline|focused|2|deep|q01"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 2,
+     "wrong_edition": 6,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": 4,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "K016": {
+   "runs": [
+    "knowline|full|1|deep|q10",
+    "knowline|full|2|deep|q10"
+   ],
+   "verdict": {
+    "reagents": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "Rank 4 is the concentrators' list; rank 7 shows a testwork 96% Mo recovery, off topic."
+    }
+   }
+  },
+  "K017": {
+   "runs": [
+    "knowline|full|1|deep|q11",
+    "knowline|full|2|deep|q11"
+   ],
+   "verdict": {
+    "packing": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "K018": {
+   "runs": [
+    "knowline|focused|1|deep|q11",
+    "knowline|focused|2|deep|q11"
+   ],
+   "verdict": {
+    "packing": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "K019": {
+   "runs": [
+    "knowline|full|1|deep|q06",
+    "knowline|full|2|deep|q06"
+   ],
+   "verdict": {
+    "first-shipment": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": "Rank 2 (March 2022 quarterly) says the shipment was only scheduled."
+    }
+   }
+  },
+  "K020": {
+   "runs": [
+    "knowline|full|1|deep|q03",
+    "knowline|full|2|deep|q03"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 3,
+     "wrong_edition": null,
+     "note": "List has only 8 rows."
+    },
+    "filtered-2021": {
+     "shown": 5,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "K021": {
+   "runs": [
+    "knowline|focused|1|deep|q08",
+    "knowline|focused|2|deep|q08"
+   ],
+   "verdict": {
+    "capacity": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": "Rank 6 (2024 p22-6) gives a targeted 5,000 dmt/a production rate that could be mistaken for design output."
+    }
+   }
+  },
+  "K022": {
+   "runs": [
+    "knowline|focused|1|deep|q05",
+    "knowline|focused|2|deep|q05"
+   ],
+   "verdict": {
+    "commissioned": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": "Says 'completed during the period'; the quarter is identified by the record being the March 2022 quarterly."
+    }
+   }
+  },
+  "K023": {
+   "runs": [
+    "knowline|full|1|deep|q07",
+    "knowline|full|2|deep|q07"
+   ],
+   "verdict": {
+    "copper-tails": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "K024": {
+   "runs": [
+    "knowline|full|1|deep|q05",
+    "knowline|full|2|deep|q05"
+   ],
+   "verdict": {
+    "commissioned": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": "Rank 8 (June 2022 quarterly p4) says commissioning of other processing facilities is expected in the September 2022 quarter, which could mislead."
+    }
+   }
+  },
+  "L001": {
+   "runs": [
+    "qwen-rr|focused|1|deep|q04",
+    "qwen-rr|focused|2|deep|q04"
+   ],
+   "verdict": {
+    "recovery_rows": [],
+    "shift_figure": false,
+    "note": "All ten rows are table-header fragments from the March 2022 quarterly Cadia highlights (Metric, quarter labels, TRIFR, 4.1); no recovery figure shown."
+   }
+  },
+  "L002": {
+   "runs": [
+    "keyword|focused|1|fast|q06",
+    "keyword|focused|2|fast|q06"
+   ],
+   "verdict": {
+    "first-shipment": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "Row 1 (March 2022 quarterly) says the shipment is only scheduled for the June 2022 quarter, which could mislead."
+    }
+   }
+  },
+  "L003": {
+   "runs": [
+    "minilm|focused|1|deep|q12",
+    "minilm|focused|2|deep|q12"
+   ],
+   "verdict": {
+    "commissioned": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": "Rows 4, 6, 8, 9 (TRS) give only 'commissioned in 2022', which does not count."
+    },
+    "first-shipment": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "Row 1 says only 'scheduled for the June 2022 quarter'."
+    }
+   }
+  },
+  "L004": {
+   "runs": [
+    "hindsight|focused|1|deep|q10",
+    "hindsight|focused|2|deep|q10"
+   ],
+   "verdict": {
+    "reagents": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "Row 1 is the concentrators' consumables list from the same page, which a reader could mistake for the moly plant's."
+    }
+   }
+  },
+  "L005": {
+   "runs": [
+    "qwen-rr|focused|1|deep|q03",
+    "qwen-rr|focused|2|deep|q03"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": 7,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L006": {
+   "runs": [
+    "keyword|full|1|fast|q01",
+    "keyword|full|2|fast|q01"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "No technical-report rows at all; every row is from the December 2021 quarterly."
+    },
+    "filtered-2021": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L007": {
+   "runs": [
+    "hindsight|focused|1|deep|q01",
+    "hindsight|focused|2|deep|q01"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 2,
+     "wrong_edition": 5,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "Rows 8-10 come from the accepted page but are only header fragments (For personal use only, Highlights, Total production)."
+    }
+   }
+  },
+  "L008": {
+   "runs": [
+    "qwen-rr|full|1|deep|q01",
+    "qwen-rr|full|2|deep|q01"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 1,
+     "wrong_edition": 4,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": 3,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L009": {
+   "runs": [
+    "qwen-rr|full|1|deep|q05",
+    "qwen-rr|full|2|deep|q05"
+   ],
+   "verdict": {
+    "commissioned": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": "Row 3 (TRS 2026) gives only the year 2022."
+    }
+   }
+  },
+  "L010": {
+   "runs": [
+    "keyword|full|1|fast|q11",
+    "keyword|full|2|fast|q11"
+   ],
+   "verdict": {
+    "packing": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L011": {
+   "runs": [
+    "d1|focused|1|deep|q06",
+    "d1|focused|2|deep|q06"
+   ],
+   "verdict": {
+    "first-shipment": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "All ten rows are table-header fragments from the accepted page (quarter labels, TRIFR, 11.5); the shipment sentence never appears."
+    }
+   }
+  },
+  "L012": {
+   "runs": [
+    "tinybert|focused|1|deep|q12",
+    "tinybert|focused|2|deep|q12",
+    "tinybert|full|1|deep|q12",
+    "tinybert|full|2|deep|q12"
+   ],
+   "verdict": {
+    "commissioned": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "first-shipment": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L013": {
+   "runs": [
+    "keyword|focused|1|fast|q08",
+    "keyword|focused|2|fast|q08"
+   ],
+   "verdict": {
+    "capacity": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L014": {
+   "runs": [
+    "tinybert|focused|1|deep|q03",
+    "tinybert|focused|2|deep|q03"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 3,
+     "wrong_edition": 6,
+     "note": "Row 1 is a fragment cut mid-sentence ('upgrading of the')."
+    },
+    "filtered-2021": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "No December 2021 quarterly rows in the list."
+    }
+   }
+  },
+  "L015": {
+   "runs": [
+    "hindsight|full|1|deep|q10",
+    "hindsight|full|2|deep|q10"
+   ],
+   "verdict": {
+    "reagents": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "Row 1 is the concentrators' consumables list, which could mislead."
+    }
+   }
+  },
+  "L016": {
+   "runs": [
+    "tinybert|full|1|deep|q03",
+    "tinybert|full|2|deep|q03"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 3,
+     "wrong_edition": 6,
+     "note": "Row 1 is a fragment cut mid-sentence ('upgrading of the')."
+    },
+    "filtered-2021": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "No December 2021 quarterly rows in the list."
+    }
+   }
+  },
+  "L017": {
+   "runs": [
+    "minilm|full|1|deep|q02",
+    "minilm|full|2|deep|q02"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": 7,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L018": {
+   "runs": [
+    "minilm|full|1|deep|q03",
+    "minilm|full|2|deep|q03"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 3,
+     "wrong_edition": 6,
+     "note": "Row 1 is a fragment cut mid-sentence ('upgrading of the')."
+    },
+    "filtered-2021": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "No December 2021 quarterly rows in the list."
+    }
+   }
+  },
+  "L019": {
+   "runs": [
+    "hindsight|focused|1|deep|q09",
+    "hindsight|focused|2|deep|q09"
+   ],
+   "verdict": {
+    "grade": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L020": {
+   "runs": [
+    "tinybert|focused|1|deep|q08",
+    "tinybert|focused|2|deep|q08"
+   ],
+   "verdict": {
+    "capacity": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L021": {
+   "runs": [
+    "qwen-rr|full|1|deep|q03",
+    "qwen-rr|full|2|deep|q03"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 3,
+     "wrong_edition": null,
+     "note": "The only 2024 Page 14-4 row (row 10) shows capacity, not feed."
+    },
+    "filtered-2021": {
+     "shown": 5,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L022": {
+   "runs": [
+    "qwen-rr|full|1|deep|q04",
+    "qwen-rr|full|2|deep|q04"
+   ],
+   "verdict": {
+    "recovery_rows": [
+     9,
+     10
+    ],
+    "shift_figure": false,
+    "note": "Rows 9 and 10 give life-of-mine forecast Mo recovery (about 72% in the 2024 TRS, about 67% in the 2026 TRS); rows 3, 6, 8 describe Mo recovery drivers with 70/300 ppm head-grade inflection points but no recovery figure; row 4 says only 'improving recovery'."
+   }
+  },
+  "L023": {
+   "runs": [
+    "qwen-rr|focused|1|deep|q07",
+    "qwen-rr|focused|2|deep|q07",
+    "qwen-rr|full|1|deep|q07",
+    "qwen-rr|full|2|deep|q07"
+   ],
+   "verdict": {
+    "copper-tails": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": "Row 1 says 'the rougher tails' rejoin the Blayney copper concentrate slurry pipeline without the word copper-rich; the explicit copper-rich, thickened wording first appears at row 4."
+    }
+   }
+  },
+  "L024": {
+   "runs": [
+    "minilm|focused|1|deep|q08",
+    "minilm|focused|2|deep|q08"
+   ],
+   "verdict": {
+    "capacity": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L025": {
+   "runs": [
+    "minilm|full|1|deep|q04",
+    "minilm|full|2|deep|q04"
+   ],
+   "verdict": {
+    "recovery_rows": [
+     6,
+     7
+    ],
+    "shift_figure": false,
+    "note": "Rows 6 and 7 give forecast Mo recovery (about 72% in the 2024 TRS, about 67% in the 2026 TRS); rows 3 and 5 mention 70/300 ppm head-grade inflection points only; row 1 says only 'improving recovery'."
+   }
+  },
+  "L026": {
+   "runs": [
+    "d1|full|1|deep|q02",
+    "d1|full|2|deep|q02"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "December 2021 quarterly rows are all from Page 1 (not accepted) and do not mention the moly plant."
+    }
+   }
+  },
+  "L027": {
+   "runs": [
+    "d1|focused|1|deep|q10",
+    "d1|focused|2|deep|q10"
+   ],
+   "verdict": {
+    "reagents": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "Row 1 is the concentrators' consumables list, which could mislead."
+    }
+   }
+  },
+  "L028": {
+   "runs": [
+    "hindsight|focused|1|deep|q12",
+    "hindsight|focused|2|deep|q12"
+   ],
+   "verdict": {
+    "commissioned": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "first-shipment": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "Rows 2-10 come from the accepted page but are only table cells (g/t, 0.94, 0.86, ...); row 1 says only 'scheduled for the June 2022 quarter'."
+    }
+   }
+  },
+  "L029": {
+   "runs": [
+    "qwen-rr|focused|1|deep|q05",
+    "qwen-rr|focused|2|deep|q05"
+   ],
+   "verdict": {
+    "commissioned": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L030": {
+   "runs": [
+    "d1|full|1|deep|q04",
+    "d1|full|2|deep|q04"
+   ],
+   "verdict": {
+    "recovery_rows": [
+     1,
+     2,
+     3,
+     5,
+     6,
+     8
+    ],
+    "shift_figure": false,
+    "note": "Six rows give LOM forecast Mo recovery (72% in 2024 TRS rows 1 and 3, a 65-75% LOM range in row 2, 67% in 2026 TRS rows 5, 6, 8); none is shift- or day-level, and row 5's recovery formula is for Ridgeway copper, not Mo."
+   }
+  },
+  "L031": {
+   "runs": [
+    "hindsight|full|1|deep|q06",
+    "hindsight|full|2|deep|q06"
+   ],
+   "verdict": {
+    "first-shipment": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "Row 1 (March 2022 quarterly) says the shipment is only scheduled."
+    }
+   }
+  },
+  "L032": {
+   "runs": [
+    "tinybert|full|1|deep|q02",
+    "tinybert|full|2|deep|q02"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 3,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L033": {
+   "runs": [
+    "qwen-rr|focused|1|deep|q10",
+    "qwen-rr|focused|2|deep|q10",
+    "qwen-rr|full|1|deep|q10",
+    "qwen-rr|full|2|deep|q10"
+   ],
+   "verdict": {
+    "reagents": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L034": {
+   "runs": [
+    "tinybert|focused|1|deep|q05",
+    "tinybert|focused|2|deep|q05"
+   ],
+   "verdict": {
+    "commissioned": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L035": {
+   "runs": [
+    "d1|full|1|deep|q06",
+    "d1|full|2|deep|q06"
+   ],
+   "verdict": {
+    "first-shipment": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L036": {
+   "runs": [
+    "tinybert|full|1|deep|q07",
+    "tinybert|full|2|deep|q07"
+   ],
+   "verdict": {
+    "copper-tails": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L037": {
+   "runs": [
+    "tinybert|focused|1|deep|q04",
+    "tinybert|focused|2|deep|q04"
+   ],
+   "verdict": {
+    "recovery_rows": [],
+    "shift_figure": false,
+    "note": "No row gives a molybdenum recovery figure; rank 1 (March 2022 quarterly) only says the focus is on improving recovery, and ranks 4 and 6 give design production tonnage, not recovery."
+   }
+  },
+  "L038": {
+   "runs": [
+    "qwen-rr|full|1|deep|q02",
+    "qwen-rr|full|2|deep|q02"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 3,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L039": {
+   "runs": [
+    "minilm|focused|1|deep|q03",
+    "minilm|focused|2|deep|q03"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 3,
+     "wrong_edition": 6,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "No December 2021 quarterly row is in the list."
+    }
+   }
+  },
+  "L040": {
+   "runs": [
+    "tinybert|full|1|deep|q08",
+    "tinybert|full|2|deep|q08"
+   ],
+   "verdict": {
+    "capacity": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L041": {
+   "runs": [
+    "hindsight|full|1|deep|q12",
+    "hindsight|full|2|deep|q12"
+   ],
+   "verdict": {
+    "commissioned": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "first-shipment": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "Rank 1 says only that the first shipment was scheduled for the June 2022 quarter."
+    }
+   }
+  },
+  "L042": {
+   "runs": [
+    "hindsight|full|1|deep|q09",
+    "hindsight|full|2|deep|q09"
+   ],
+   "verdict": {
+    "grade": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L043": {
+   "runs": [
+    "minilm|full|1|deep|q09",
+    "minilm|full|2|deep|q09"
+   ],
+   "verdict": {
+    "grade": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L044": {
+   "runs": [
+    "hindsight|focused|1|deep|q08",
+    "hindsight|focused|2|deep|q08"
+   ],
+   "verdict": {
+    "capacity": {
+     "shown": 5,
+     "wrong_edition": null,
+     "note": "Rank 3 gives Concentrator 1's 17 Mt/a design capacity, which a reader could mistake for the answer."
+    }
+   }
+  },
+  "L045": {
+   "runs": [
+    "keyword|full|1|fast|q08",
+    "keyword|full|2|fast|q08"
+   ],
+   "verdict": {
+    "capacity": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L046": {
+   "runs": [
+    "d1|focused|1|deep|q03",
+    "d1|focused|2|deep|q03"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 4,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L047": {
+   "runs": [
+    "keyword|focused|1|fast|q04",
+    "keyword|focused|2|fast|q04"
+   ],
+   "verdict": {
+    "recovery_rows": [],
+    "shift_figure": false,
+    "note": "Rows 3-10 are unlabelled table fragments (0.84, 0.97, '- copper', '%', 0.40, 0.38, 0.35, 0.38) from the March 2022 quarterly that a reader could misread as figures, and row 2 mentions day-to-day recovery variation without a number; no molybdenum recovery is stated."
+   }
+  },
+  "L048": {
+   "runs": [
+    "minilm|focused|1|deep|q11",
+    "minilm|focused|2|deep|q11"
+   ],
+   "verdict": {
+    "packing": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L049": {
+   "runs": [
+    "d1|full|1|deep|q10",
+    "d1|full|2|deep|q10"
+   ],
+   "verdict": {
+    "reagents": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "Rank 1 is the concentrators' consumables list, not the moly plant's."
+    }
+   }
+  },
+  "L050": {
+   "runs": [
+    "qwen-rr|full|1|deep|q11",
+    "qwen-rr|full|2|deep|q11"
+   ],
+   "verdict": {
+    "packing": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L051": {
+   "runs": [
+    "minilm|focused|1|deep|q01",
+    "minilm|focused|2|deep|q01"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 2,
+     "wrong_edition": 8,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "No December 2021 quarterly row is in the list."
+    }
+   }
+  },
+  "L052": {
+   "runs": [
+    "d1|full|1|deep|q05",
+    "d1|full|2|deep|q05"
+   ],
+   "verdict": {
+    "commissioned": {
+     "shown": 7,
+     "wrong_edition": null,
+     "note": "Rank 1 (2024 report) gives only the year 2022."
+    }
+   }
+  },
+  "L053": {
+   "runs": [
+    "qwen-rr|full|1|deep|q06",
+    "qwen-rr|full|2|deep|q06"
+   ],
+   "verdict": {
+    "first-shipment": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "Rank 1 says only that the first shipment was scheduled for the June 2022 quarter."
+    }
+   }
+  },
+  "L054": {
+   "runs": [
+    "keyword|focused|1|fast|q05",
+    "keyword|focused|2|fast|q05"
+   ],
+   "verdict": {
+    "commissioned": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "List has only five rows; rank 1 (December 2021 quarterly) says commissioning was still continuing."
+    }
+   }
+  },
+  "L055": {
+   "runs": [
+    "minilm|full|1|deep|q10",
+    "minilm|full|2|deep|q10"
+   ],
+   "verdict": {
+    "reagents": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L056": {
+   "runs": [
+    "hindsight|focused|1|deep|q05",
+    "hindsight|focused|2|deep|q05"
+   ],
+   "verdict": {
+    "commissioned": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "All ten rows are table-header fragments from the accepted page; the commissioning sentence never appears."
+    }
+   }
+  },
+  "L057": {
+   "runs": [
+    "keyword|full|1|fast|q07",
+    "keyword|full|2|fast|q07"
+   ],
+   "verdict": {
+    "copper-tails": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L058": {
+   "runs": [
+    "hindsight|focused|1|deep|q02",
+    "hindsight|focused|2|deep|q02"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": 10,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L059": {
+   "runs": [
+    "tinybert|full|1|deep|q10",
+    "tinybert|full|2|deep|q10"
+   ],
+   "verdict": {
+    "reagents": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L060": {
+   "runs": [
+    "keyword|full|1|fast|q02",
+    "keyword|full|2|fast|q02"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "No technical-report row about the feed is in the list."
+    },
+    "filtered-2021": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L061": {
+   "runs": [
+    "tinybert|full|1|deep|q05",
+    "tinybert|full|2|deep|q05"
+   ],
+   "verdict": {
+    "commissioned": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L062": {
+   "runs": [
+    "minilm|focused|1|deep|q07",
+    "minilm|focused|2|deep|q07",
+    "minilm|full|1|deep|q07",
+    "minilm|full|2|deep|q07"
+   ],
+   "verdict": {
+    "copper-tails": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L063": {
+   "runs": [
+    "tinybert|full|1|deep|q09",
+    "tinybert|full|2|deep|q09"
+   ],
+   "verdict": {
+    "grade": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L064": {
+   "runs": [
+    "d1|focused|1|deep|q11",
+    "d1|focused|2|deep|q11"
+   ],
+   "verdict": {
+    "packing": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L065": {
+   "runs": [
+    "tinybert|focused|1|deep|q06",
+    "tinybert|focused|2|deep|q06",
+    "tinybert|full|1|deep|q06",
+    "tinybert|full|2|deep|q06"
+   ],
+   "verdict": {
+    "first-shipment": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "Rank 1 says only that the first shipment was scheduled for the June 2022 quarter."
+    }
+   }
+  },
+  "L066": {
+   "runs": [
+    "hindsight|full|1|deep|q03",
+    "hindsight|full|2|deep|q03"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 5,
+     "wrong_edition": 8,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "No December 2021 quarterly row is in the list."
+    }
+   }
+  },
+  "L067": {
+   "runs": [
+    "hindsight|full|1|deep|q02",
+    "hindsight|full|2|deep|q02"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "Rank 7 is from the accepted page but starts after the milestone sentence, so the filtered-concentrate achievement is not displayed."
+    }
+   }
+  },
+  "L068": {
+   "runs": [
+    "minilm|full|1|deep|q12",
+    "minilm|full|2|deep|q12"
+   ],
+   "verdict": {
+    "commissioned": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "first-shipment": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "Rank 1 says only that the first shipment was scheduled for the June 2022 quarter."
+    }
+   }
+  },
+  "L069": {
+   "runs": [
+    "d1|full|1|deep|q09",
+    "d1|full|2|deep|q09"
+   ],
+   "verdict": {
+    "grade": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L070": {
+   "runs": [
+    "hindsight|full|1|deep|q11",
+    "hindsight|full|2|deep|q11"
+   ],
+   "verdict": {
+    "packing": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L071": {
+   "runs": [
+    "qwen-rr|focused|1|deep|q02",
+    "qwen-rr|focused|2|deep|q02"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 3,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L072": {
+   "runs": [
+    "keyword|focused|1|fast|q03",
+    "keyword|focused|2|fast|q03"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "No technical-report row of either edition appears; the list is mostly Dec 2021 quarterly heading fragments."
+    },
+    "filtered-2021": {
+     "shown": 8,
+     "wrong_edition": null,
+     "note": "Ranks 1-6 are one-word heading or table fragments from the same page."
+    }
+   }
+  },
+  "L073": {
+   "runs": [
+    "hindsight|focused|1|deep|q06",
+    "hindsight|focused|2|deep|q06"
+   ],
+   "verdict": {
+    "first-shipment": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "All ten rows are table-header fragments of the March 2022 quarterly (Metric, Mar 2022 Qtr, TRIFR, 4.1); the June 2022 quarterly never appears."
+    }
+   }
+  },
+  "L074": {
+   "runs": [
+    "keyword|focused|1|fast|q09",
+    "keyword|focused|2|fast|q09"
+   ],
+   "verdict": {
+    "grade": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L075": {
+   "runs": [
+    "d1|full|1|deep|q11",
+    "d1|full|2|deep|q11"
+   ],
+   "verdict": {
+    "packing": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L076": {
+   "runs": [
+    "keyword|full|1|fast|q12",
+    "keyword|full|2|fast|q12"
+   ],
+   "verdict": {
+    "commissioned": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "Rank 1 (Dec 2021 quarterly) says commissioning was still continuing, which could mislead."
+    },
+    "first-shipment": {
+     "shown": 3,
+     "wrong_edition": null,
+     "note": "Rank 2 says the first shipment was only scheduled for the June 2022 quarter; the delivery is confirmed at rank 3."
+    }
+   }
+  },
+  "L077": {
+   "runs": [
+    "hindsight|full|1|deep|q07",
+    "hindsight|full|2|deep|q07"
+   ],
+   "verdict": {
+    "copper-tails": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L078": {
+   "runs": [
+    "keyword|focused|1|fast|q01",
+    "keyword|focused|2|fast|q01"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "All ten rows come from Dec 2021 quarterly page 3; no technical-report row appears."
+    },
+    "filtered-2021": {
+     "shown": 7,
+     "wrong_edition": null,
+     "note": "Ranks 1-6 are heading fragments; rank 7 is a very long row with the fact far into it."
+    }
+   }
+  },
+  "L079": {
+   "runs": [
+    "hindsight|full|1|deep|q05",
+    "hindsight|full|2|deep|q05"
+   ],
+   "verdict": {
+    "commissioned": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": "The row says completed during the period; the March 2022 quarter is read from the record."
+    }
+   }
+  },
+  "L080": {
+   "runs": [
+    "qwen-rr|focused|1|deep|q09",
+    "qwen-rr|focused|2|deep|q09"
+   ],
+   "verdict": {
+    "grade": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L081": {
+   "runs": [
+    "tinybert|focused|1|deep|q10",
+    "tinybert|focused|2|deep|q10"
+   ],
+   "verdict": {
+    "reagents": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "Rank 4 is the concentrators' consumables list (2026 page 14-7), a distractor."
+    }
+   }
+  },
+  "L082": {
+   "runs": [
+    "qwen-rr|focused|1|deep|q08",
+    "qwen-rr|focused|2|deep|q08"
+   ],
+   "verdict": {
+    "capacity": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L083": {
+   "runs": [
+    "d1|focused|1|deep|q08",
+    "d1|focused|2|deep|q08"
+   ],
+   "verdict": {
+    "capacity": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L084": {
+   "runs": [
+    "tinybert|full|1|deep|q01",
+    "tinybert|full|2|deep|q01"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "Only Dec 2021 quarterly rows (pages 2-3); no technical-report row; ranks 4-10 are table cell fragments."
+    },
+    "filtered-2021": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L085": {
+   "runs": [
+    "keyword|full|1|fast|q10",
+    "keyword|full|2|fast|q10"
+   ],
+   "verdict": {
+    "reagents": {
+     "shown": 4,
+     "wrong_edition": null,
+     "note": "Rank 3 (same page) is the concentrators' list, and rank 10 the 2024 concentrators' list; both are distractors."
+    }
+   }
+  },
+  "L086": {
+   "runs": [
+    "d1|focused|1|deep|q07",
+    "d1|focused|2|deep|q07"
+   ],
+   "verdict": {
+    "copper-tails": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": "Rank 1 (2026 page 1-19) says rougher tails rejoin the Blayney pipeline without saying copper-rich; the explicit sentence is at rank 3."
+    }
+   }
+  },
+  "L087": {
+   "runs": [
+    "minilm|focused|1|deep|q04",
+    "minilm|focused|2|deep|q04"
+   ],
+   "verdict": {
+    "recovery_rows": [],
+    "shift_figure": false,
+    "note": "No Mo recovery figure shown; rank 1 only mentions improving recovery, and rank 9 gives 3,500-4,000 t a year of design output, not a recovery."
+   }
+  },
+  "L088": {
+   "runs": [
+    "d1|focused|1|deep|q05",
+    "d1|focused|2|deep|q05"
+   ],
+   "verdict": {
+    "commissioned": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L089": {
+   "runs": [
+    "tinybert|focused|1|deep|q09",
+    "tinybert|focused|2|deep|q09"
+   ],
+   "verdict": {
+    "grade": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L090": {
+   "runs": [
+    "tinybert|full|1|deep|q04",
+    "tinybert|full|2|deep|q04"
+   ],
+   "verdict": {
+    "recovery_rows": [
+     6,
+     8
+    ],
+    "shift_figure": false,
+    "note": "Rank 6 gives Mo recovery model formulas (up to 89.5%) and rank 8 a life-of-mine Mo recovery of about 72%; neither is for a shift or day."
+   }
+  },
+  "L091": {
+   "runs": [
+    "minilm|full|1|deep|q01",
+    "minilm|full|2|deep|q01"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "No technical-report feed row; ranks 3-10 are quarterly boilerplate, footnotes and water-licence text."
+    },
+    "filtered-2021": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L092": {
+   "runs": [
+    "hindsight|focused|1|deep|q03",
+    "hindsight|focused|2|deep|q03"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 2,
+     "wrong_edition": 5,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "No Dec 2021 quarterly row appears."
+    }
+   }
+  },
+  "L093": {
+   "runs": [
+    "keyword|full|1|fast|q09",
+    "keyword|full|2|fast|q09"
+   ],
+   "verdict": {
+    "grade": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L094": {
+   "runs": [
+    "keyword|focused|1|fast|q10",
+    "keyword|focused|2|fast|q10"
+   ],
+   "verdict": {
+    "reagents": {
+     "shown": 5,
+     "wrong_edition": null,
+     "note": "Ranks 4 and 7 are the concentrators' consumables lists, distractors."
+    }
+   }
+  },
+  "L095": {
+   "runs": [
+    "minilm|focused|1|deep|q02",
+    "minilm|focused|2|deep|q02"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": 7,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L096": {
+   "runs": [
+    "keyword|full|1|fast|q03",
+    "keyword|full|2|fast|q03"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 5,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L097": {
+   "runs": [
+    "keyword|focused|1|fast|q11",
+    "keyword|focused|2|fast|q11"
+   ],
+   "verdict": {
+    "packing": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L098": {
+   "runs": [
+    "qwen-rr|focused|1|deep|q11",
+    "qwen-rr|focused|2|deep|q11"
+   ],
+   "verdict": {
+    "packing": {
+     "shown": 3,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L099": {
+   "runs": [
+    "hindsight|full|1|deep|q01",
+    "hindsight|full|2|deep|q01"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 1,
+     "wrong_edition": 3,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "No Dec 2021 quarterly row appears."
+    }
+   }
+  },
+  "L100": {
+   "runs": [
+    "tinybert|focused|1|deep|q02",
+    "tinybert|focused|2|deep|q02"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 3,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L101": {
+   "runs": [
+    "minilm|focused|1|deep|q10",
+    "minilm|focused|2|deep|q10"
+   ],
+   "verdict": {
+    "reagents": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "Rank 4 is the concentrators' list, a distractor."
+    }
+   }
+  },
+  "L102": {
+   "runs": [
+    "d1|full|1|deep|q03",
+    "d1|full|2|deep|q03"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 3,
+     "wrong_edition": 5,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "The only Dec 2021 quarterly row (rank 7, page 2, not accepted) covers the SAG mill, not the moly plant."
+    }
+   }
+  },
+  "L103": {
+   "runs": [
+    "hindsight|focused|1|deep|q07",
+    "hindsight|focused|2|deep|q07"
+   ],
+   "verdict": {
+    "copper-tails": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L104": {
+   "runs": [
+    "minilm|full|1|deep|q11",
+    "minilm|full|2|deep|q11"
+   ],
+   "verdict": {
+    "packing": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L105": {
+   "runs": [
+    "minilm|full|1|deep|q08",
+    "minilm|full|2|deep|q08"
+   ],
+   "verdict": {
+    "capacity": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L106": {
+   "runs": [
+    "keyword|full|1|fast|q04",
+    "keyword|full|2|fast|q04"
+   ],
+   "verdict": {
+    "recovery_rows": [],
+    "shift_figure": false,
+    "note": "No Mo recovery figure; rows 1 and 3 mention 'day-shift' only as construction labour assumptions, row 9 is a bare 'Gold Recovery (%)' table header, row 4 says 'improving recovery' with no number."
+   }
+  },
+  "L107": {
+   "runs": [
+    "keyword|full|1|fast|q05",
+    "keyword|full|2|fast|q05"
+   ],
+   "verdict": {
+    "commissioned": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "Rank 1 is the Dec 2021 quarterly (commissioning continuing), which could mislead."
+    }
+   }
+  },
+  "L108": {
+   "runs": [
+    "minilm|focused|1|deep|q06",
+    "minilm|focused|2|deep|q06",
+    "minilm|full|1|deep|q06",
+    "minilm|full|2|deep|q06"
+   ],
+   "verdict": {
+    "first-shipment": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "Rank 1 (March 2022 quarterly) says the shipment is only scheduled for the June 2022 quarter."
+    }
+   }
+  },
+  "L109": {
+   "runs": [
+    "minilm|full|1|deep|q05",
+    "minilm|full|2|deep|q05"
+   ],
+   "verdict": {
+    "commissioned": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L110": {
+   "runs": [
+    "qwen-rr|full|1|deep|q09",
+    "qwen-rr|full|2|deep|q09"
+   ],
+   "verdict": {
+    "grade": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L111": {
+   "runs": [
+    "d1|focused|1|deep|q09",
+    "d1|focused|2|deep|q09"
+   ],
+   "verdict": {
+    "grade": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L112": {
+   "runs": [
+    "d1|focused|1|deep|q01",
+    "d1|focused|2|deep|q01"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 5,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "Ranks 7-10 come from the accepted page but show only table headers ('Highlights', 'Head Grade')."
+    }
+   }
+  },
+  "L113": {
+   "runs": [
+    "d1|full|1|deep|q01",
+    "d1|full|2|deep|q01"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "No technical-report rows at all; every row is from the Dec 2021 quarterly."
+    },
+    "filtered-2021": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L114": {
+   "runs": [
+    "keyword|focused|1|fast|q02",
+    "keyword|focused|2|fast|q02"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "No row from either accepted technical-report page."
+    },
+    "filtered-2021": {
+     "shown": 8,
+     "wrong_edition": null,
+     "note": "Ranks 1-6 from the accepted page are bare table headers."
+    }
+   }
+  },
+  "L115": {
+   "runs": [
+    "keyword|focused|1|fast|q12",
+    "keyword|focused|2|fast|q12"
+   ],
+   "verdict": {
+    "commissioned": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "first-shipment": {
+     "shown": 3,
+     "wrong_edition": null,
+     "note": "Rank 1 says the shipment is only scheduled for the June 2022 quarter."
+    }
+   }
+  },
+  "L116": {
+   "runs": [
+    "qwen-rr|focused|1|deep|q01",
+    "qwen-rr|focused|2|deep|q01"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 2,
+     "wrong_edition": 8,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": 4,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L117": {
+   "runs": [
+    "tinybert|focused|1|deep|q07",
+    "tinybert|focused|2|deep|q07"
+   ],
+   "verdict": {
+    "copper-tails": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L118": {
+   "runs": [
+    "qwen-rr|full|1|deep|q12",
+    "qwen-rr|full|2|deep|q12"
+   ],
+   "verdict": {
+    "commissioned": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "first-shipment": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "Rank 1 says the shipment is only scheduled."
+    }
+   }
+  },
+  "L119": {
+   "runs": [
+    "keyword|focused|1|fast|q07",
+    "keyword|focused|2|fast|q07"
+   ],
+   "verdict": {
+    "copper-tails": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L120": {
+   "runs": [
+    "d1|full|1|deep|q07",
+    "d1|full|2|deep|q07"
+   ],
+   "verdict": {
+    "copper-tails": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": "Rank 1 (2026 p1-19) says 'the rougher tails are sent to rejoin the Blayney copper concentrate slurry pipeline' without the words 'copper-rich'; the explicit copper-rich wording first appears at rank 3."
+    }
+   }
+  },
+  "L121": {
+   "runs": [
+    "d1|full|1|deep|q08",
+    "d1|full|2|deep|q08"
+   ],
+   "verdict": {
+    "capacity": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L122": {
+   "runs": [
+    "d1|focused|1|deep|q04",
+    "d1|focused|2|deep|q04"
+   ],
+   "verdict": {
+    "recovery_rows": [],
+    "shift_figure": false,
+    "note": "No Mo recovery figure; row 2 says 'improving recovery' with no number, and the 48-52% Mo grade (rows 1, 7) and the 3,500-4,000 t output (row 3) are not recovery figures."
+   }
+  },
+  "L123": {
+   "runs": [
+    "qwen-rr|focused|1|deep|q12",
+    "qwen-rr|focused|2|deep|q12"
+   ],
+   "verdict": {
+    "commissioned": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "first-shipment": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "Rank 1 says the shipment is only scheduled."
+    }
+   }
+  },
+  "L124": {
+   "runs": [
+    "tinybert|focused|1|deep|q01",
+    "tinybert|focused|2|deep|q01"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "No technical-report rows at all."
+    },
+    "filtered-2021": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "All ten rows are bare table cells from the accepted page (headers, TRIFR values 6.7, 9.2, 8.5)."
+    }
+   }
+  },
+  "L125": {
+   "runs": [
+    "hindsight|full|1|deep|q08",
+    "hindsight|full|2|deep|q08"
+   ],
+   "verdict": {
+    "capacity": {
+     "shown": 4,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L126": {
+   "runs": [
+    "minilm|focused|1|deep|q09",
+    "minilm|focused|2|deep|q09"
+   ],
+   "verdict": {
+    "grade": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L127": {
+   "runs": [
+    "hindsight|focused|1|deep|q11",
+    "hindsight|focused|2|deep|q11"
+   ],
+   "verdict": {
+    "packing": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L128": {
+   "runs": [
+    "hindsight|full|1|deep|q04",
+    "hindsight|full|2|deep|q04"
+   ],
+   "verdict": {
+    "recovery_rows": [
+     2,
+     4,
+     5
+    ],
+    "shift_figure": false,
+    "note": "Row 2 shows the Mo recovery model formulas (to 89.5% above 300 ppm), and rows 4 and 5 show life-of-mine Mo recovery forecasts of about 67% (2026) and 72% (2024); none is for a shift or a day."
+   }
+  },
+  "L129": {
+   "runs": [
+    "d1|focused|1|deep|q02",
+    "d1|focused|2|deep|q02"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 4,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L130": {
+   "runs": [
+    "minilm|focused|1|deep|q05",
+    "minilm|focused|2|deep|q05"
+   ],
+   "verdict": {
+    "commissioned": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L131": {
+   "runs": [
+    "qwen-rr|focused|1|deep|q06",
+    "qwen-rr|focused|2|deep|q06"
+   ],
+   "verdict": {
+    "first-shipment": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "Rank 1 says the shipment is only scheduled for the June 2022 quarter."
+    }
+   }
+  },
+  "L132": {
+   "runs": [
+    "keyword|full|1|fast|q06",
+    "keyword|full|2|fast|q06"
+   ],
+   "verdict": {
+    "first-shipment": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "Rank 1 says the shipment is only scheduled for the June 2022 quarter."
+    }
+   }
+  },
+  "L133": {
+   "runs": [
+    "qwen-rr|full|1|deep|q08",
+    "qwen-rr|full|2|deep|q08"
+   ],
+   "verdict": {
+    "capacity": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L134": {
+   "runs": [
+    "d1|full|1|deep|q12",
+    "d1|full|2|deep|q12"
+   ],
+   "verdict": {
+    "commissioned": {
+     "shown": 4,
+     "wrong_edition": null,
+     "note": "Ranks 1-2 are from the March 2022 quarterly Page 1 (not accepted) and do not mention the moly plant."
+    },
+    "first-shipment": {
+     "shown": 3,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L135": {
+   "runs": [
+    "d1|focused|1|deep|q12",
+    "d1|focused|2|deep|q12"
+   ],
+   "verdict": {
+    "commissioned": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "first-shipment": {
+     "shown": 8,
+     "wrong_edition": null,
+     "note": "Rank 1 says the shipment is only scheduled."
+    }
+   }
+  },
+  "L136": {
+   "runs": [
+    "tinybert|focused|1|deep|q11",
+    "tinybert|focused|2|deep|q11",
+    "tinybert|full|1|deep|q11",
+    "tinybert|full|2|deep|q11"
+   ],
+   "verdict": {
+    "packing": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "L137": {
+   "runs": [
+    "hindsight|focused|1|deep|q04",
+    "hindsight|focused|2|deep|q04"
+   ],
+   "verdict": {
+    "recovery_rows": [],
+    "shift_figure": false,
+    "note": "No Mo recovery figure; row 8 talks about day-to-day recovery variations that trend to the forecast, which could suggest daily data exist, but it gives no number."
+   }
+  }
+ },
+ "dated_lists": {
+  "D001": {
+   "runs": [
+    "minilm|focused|1|deep|q13",
+    "minilm|focused|2|deep|q13"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "2026 edition at rank 2; the 2024 edition repeats it at rank 8."
+    },
+    "filtered-2021": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "No December 2021 quarterly excerpt in the ten; rank 10 (2024 Page 16-2) says only that the plant was commissioned in 2022."
+    }
+   }
+  },
+  "D002": {
+   "runs": [
+    "qwen-rr|focused|1|deep|q13",
+    "qwen-rr|focused|2|deep|q13"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": 4,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "D003": {
+   "runs": [
+    "qwen-rr|full|1|deep|q13",
+    "qwen-rr|full|2|deep|q13"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": 3,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "D004": {
+   "runs": [
+    "keyword|full|1|fast|q15",
+    "keyword|full|2|fast|q15"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "No technical report excerpt in the ten; all ranks are Newcrest quarterly pages."
+    },
+    "filtered-2021": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "D005": {
+   "runs": [
+    "d1|focused|1|deep|q13",
+    "d1|focused|2|deep|q13"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "Ranks 4-10 come from the accepted page (December 2021 quarterly Page 3) but are headings and the Cadia safety/gold paragraph; none mentions the moly plant."
+    }
+   }
+  },
+  "D006": {
+   "runs": [
+    "keyword|focused|1|fast|q14",
+    "keyword|focused|2|fast|q14"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "No technical report excerpt in the ten."
+    },
+    "filtered-2021": {
+     "shown": 8,
+     "wrong_edition": null,
+     "note": "Ranks 1-7 are from the same accepted page but are headings and the safety/gold paragraph."
+    }
+   }
+  },
+  "D007": {
+   "runs": [
+    "tinybert|full|1|deep|q13",
+    "tinybert|full|2|deep|q13"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "No technical report excerpt in the ten."
+    },
+    "filtered-2021": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "D008": {
+   "runs": [
+    "hindsight|full|1|deep|q15",
+    "hindsight|full|2|deep|q15"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "No December 2021 quarterly excerpt; ranks 6-10 are bare numbers from the March 2022 quarterly Page 14."
+    }
+   }
+  },
+  "D009": {
+   "runs": [
+    "hindsight|focused|1|deep|q13",
+    "hindsight|focused|2|deep|q13"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "Rank 8 (2026 Page 1-19, not accepted) mentions the Blayney copper concentrate slurry pipeline, but only for rougher tails rejoining it."
+    },
+    "filtered-2021": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "No December 2021 quarterly excerpt in the ten."
+    }
+   }
+  },
+  "D010": {
+   "runs": [
+    "d1|full|1|deep|q15",
+    "d1|full|2|deep|q15"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "Only technical report excerpt is 2026 Page 5-2 (not accepted), which mentions provision for a molybdenum concentrate, not the feed."
+    },
+    "filtered-2021": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "Rank 8 is the accepted page but starts after the moly sentence (only the 35 Mtpa approval). Rank 7 (March 2022 quarterly Page 3, not accepted) says commissioning was completed, which is misleading for the December 2021 question."
+    }
+   }
+  },
+  "D011": {
+   "runs": [
+    "minilm|full|1|deep|q14",
+    "minilm|full|2|deep|q14"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "Shown first from the 2024 edition (no edition required); 2026 repeats it at rank 4."
+    },
+    "filtered-2021": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": "Rank 6 (March 2022 quarterly, not accepted) says commissioning completed."
+    }
+   }
+  },
+  "D012": {
+   "runs": [
+    "d1|focused|1|deep|q14",
+    "d1|focused|2|deep|q14"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 10,
+     "wrong_edition": null,
+     "note": "Only from the 2024 edition (no edition required)."
+    },
+    "filtered-2021": {
+     "shown": 8,
+     "wrong_edition": null,
+     "note": "Ranks 1-7 are from the same accepted page but are headings and the safety/gold paragraph."
+    }
+   }
+  },
+  "D013": {
+   "runs": [
+    "d1|focused|1|deep|q15",
+    "d1|focused|2|deep|q15"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "Ranks 4-10 come from the accepted page but are headings and the safety/gold paragraph; none mentions the moly plant."
+    }
+   }
+  },
+  "D014": {
+   "runs": [
+    "qwen-rr|focused|1|deep|q14",
+    "qwen-rr|focused|2|deep|q14"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "No technical report excerpt in the ten."
+    },
+    "filtered-2021": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "All ten are table fragments (headers and numbers) from the accepted page; none mentions the moly plant."
+    }
+   }
+  },
+  "D015": {
+   "runs": [
+    "d1|full|1|deep|q13",
+    "d1|full|2|deep|q13"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "No technical report excerpt in the ten."
+    },
+    "filtered-2021": {
+     "shown": 10,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "D016": {
+   "runs": [
+    "keyword|focused|1|fast|q15",
+    "keyword|focused|2|fast|q15"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "No technical report excerpt in the ten."
+    },
+    "filtered-2021": {
+     "shown": 8,
+     "wrong_edition": null,
+     "note": "Ranks 1-7 are from the same accepted page but are headings and the safety/gold paragraph."
+    }
+   }
+  },
+  "D017": {
+   "runs": [
+    "hindsight|full|1|deep|q14",
+    "hindsight|full|2|deep|q14"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": "Shown first from the 2024 edition (no edition required); 2026 repeats it at rank 3."
+    },
+    "filtered-2021": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "Rank 6 is the accepted page but the excerpt starts after the milestone sentence: it says only that the Moly Plant will deliver an additional revenue stream, not that a filtered concentrate was produced or that commissioning continued."
+    }
+   }
+  },
+  "D018": {
+   "runs": [
+    "keyword|full|1|fast|q14",
+    "keyword|full|2|fast|q14"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "No technical report excerpt in the ten."
+    },
+    "filtered-2021": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "D019": {
+   "runs": [
+    "hindsight|focused|1|deep|q15",
+    "hindsight|focused|2|deep|q15"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "Rank 4 (2024 Page 1-20, not accepted) mentions the Blayney copper concentrate slurry pipeline, but only for rougher tails rejoining it."
+    },
+    "filtered-2021": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "No December 2021 quarterly excerpt in the ten."
+    }
+   }
+  },
+  "D020": {
+   "runs": [
+    "knowline|full|1|deep|q14",
+    "knowline|full|2|deep|q14"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": 7,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "D021": {
+   "runs": [
+    "keyword|full|1|fast|q13",
+    "keyword|full|2|fast|q13"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "No technical report excerpt in the ten."
+    },
+    "filtered-2021": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "D022": {
+   "runs": [
+    "minilm|focused|1|deep|q15",
+    "minilm|focused|2|deep|q15"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "2026 Page 14-3 at rank 2, before the 2024 Page 14-4 copy at rank 5."
+    },
+    "filtered-2021": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "No excerpt from the December 2021 quarterly in the ten."
+    }
+   }
+  },
+  "D023": {
+   "runs": [
+    "d1|full|1|deep|q14",
+    "d1|full|2|deep|q14"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "Ranks 6-9 are the December 2021 quarterly Page 1 (not accepted); rank 8 lists 'milestones achieved' but none about the moly plant."
+    }
+   }
+  },
+  "D024": {
+   "runs": [
+    "qwen-rr|full|1|deep|q15",
+    "qwen-rr|full|2|deep|q15"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 3,
+     "wrong_edition": null,
+     "note": "2026 Page 14-3; the 2024 copy only appears at rank 10."
+    },
+    "filtered-2021": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "D025": {
+   "runs": [
+    "minilm|full|1|deep|q13",
+    "minilm|full|2|deep|q13"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "No technical-report Page 14-3 or 14-4 excerpt in the ten; the only report excerpts (Page 17-8) are about site water."
+    },
+    "filtered-2021": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "Rank 1 is the same Page 3 but about safety and the SAG mill."
+    }
+   }
+  },
+  "D026": {
+   "runs": [
+    "minilm|focused|1|deep|q14",
+    "minilm|focused|2|deep|q14"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 3,
+     "wrong_edition": null,
+     "note": "Shown first from the 2024 edition (accepted here, no edition required); the 2026 copy at rank 6."
+    },
+    "filtered-2021": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": "Ranks 8-9 are the March and June 2022 quarterlies (commissioning completed, first shipment), later reports that are not accepted."
+    }
+   }
+  },
+  "D027": {
+   "runs": [
+    "tinybert|focused|1|deep|q13",
+    "tinybert|focused|2|deep|q13"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "All ten excerpts are from the December 2021 quarterly; no technical-report excerpt."
+    },
+    "filtered-2021": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "All ten excerpts come from the accepted Page 3, but each is a table-cell fragment (headers, TRIFR figures); none displays the moly sentence."
+    }
+   }
+  },
+  "D028": {
+   "runs": [
+    "tinybert|focused|1|deep|q14",
+    "tinybert|focused|2|deep|q14"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 7,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "Rank 9 (March 2022 quarterly, not accepted) says commissioning was completed, which could mislead on the December 2021 status."
+    }
+   }
+  },
+  "D029": {
+   "runs": [
+    "tinybert|full|1|deep|q14",
+    "tinybert|full|2|deep|q14"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 9,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": "Rank 2 (March 2022 quarterly, not accepted) says commissioning was completed, which could mislead on the December 2021 status."
+    }
+   }
+  },
+  "D030": {
+   "runs": [
+    "knowline|focused|1|deep|q15",
+    "knowline|focused|2|deep|q15"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": 5,
+     "wrong_edition": null,
+     "note": "Rank 4 is the same Page 3 but about the SAG mill and Panel Cave 2 East."
+    }
+   }
+  },
+  "D031": {
+   "runs": [
+    "tinybert|full|1|deep|q15",
+    "tinybert|full|2|deep|q15"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 3,
+     "wrong_edition": null,
+     "note": "2026 Page 14-3 at rank 3, before the 2024 copy at rank 6."
+    },
+    "filtered-2021": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "No excerpt from any quarterly in the ten."
+    }
+   }
+  },
+  "D032": {
+   "runs": [
+    "knowline|focused|1|deep|q13",
+    "knowline|focused|2|deep|q13"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "Rank 8 (2026 Page 10-1, not accepted) says only that moly is recovered from the copper concentrate, not the pipeline."
+    },
+    "filtered-2021": {
+     "shown": 4,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "D033": {
+   "runs": [
+    "keyword|focused|1|fast|q13",
+    "keyword|focused|2|fast|q13"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "All ten excerpts are from the December 2021 quarterly Page 3; no technical-report excerpt."
+    },
+    "filtered-2021": {
+     "shown": 7,
+     "wrong_edition": null,
+     "note": "Ranks 1-6 are table-cell fragments from Page 3; rank 7 is the long Cadia paragraph containing the moly sentence."
+    }
+   }
+  },
+  "D034": {
+   "runs": [
+    "hindsight|full|1|deep|q13",
+    "hindsight|full|2|deep|q13"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": "Rank 8 (2024 Page 1-20, not accepted) mentions rougher tails rejoining the Blayney pipeline, not the feed."
+    },
+    "filtered-2021": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "No excerpt from any quarterly in the ten."
+    }
+   }
+  },
+  "D035": {
+   "runs": [
+    "knowline|full|1|deep|q13",
+    "knowline|full|2|deep|q13"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": 3,
+     "wrong_edition": null,
+     "note": "Rank 6 (March 2022 quarterly, not accepted) says commissioning was completed, which could mislead on the December 2021 status."
+    }
+   }
+  },
+  "D036": {
+   "runs": [
+    "hindsight|focused|1|deep|q14",
+    "hindsight|focused|2|deep|q14"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 3,
+     "wrong_edition": null,
+     "note": "Shown first from the 2024 edition (accepted here, no edition required); the 2026 copy at rank 8."
+    },
+    "filtered-2021": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "D037": {
+   "runs": [
+    "knowline|full|1|deep|q15",
+    "knowline|full|2|deep|q15"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "No 2024 copy in the ten."
+    },
+    "filtered-2021": {
+     "shown": 4,
+     "wrong_edition": null,
+     "note": "Rank 9 (March 2022 quarterly, not accepted) says commissioning was completed, which could mislead on the December 2021 status."
+    }
+   }
+  },
+  "D038": {
+   "runs": [
+    "tinybert|focused|1|deep|q15",
+    "tinybert|focused|2|deep|q15"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 3,
+     "wrong_edition": null,
+     "note": "2026 Page 14-3 at rank 3, before the 2024 copy at rank 6."
+    },
+    "filtered-2021": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "No excerpt from any quarterly in the ten."
+    }
+   }
+  },
+  "D039": {
+   "runs": [
+    "minilm|full|1|deep|q15",
+    "minilm|full|2|deep|q15"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 3,
+     "wrong_edition": null,
+     "note": "2026 Page 14-3 at rank 3, before the 2024 copy at rank 5."
+    },
+    "filtered-2021": {
+     "shown": null,
+     "wrong_edition": null,
+     "note": "No excerpt from any quarterly in the ten."
+    }
+   }
+  },
+  "D040": {
+   "runs": [
+    "knowline|focused|1|deep|q14",
+    "knowline|focused|2|deep|q14"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 4,
+     "wrong_edition": null,
+     "note": "Shown first from the 2024 edition (accepted here, no edition required); the 2026 copy at rank 7."
+    },
+    "filtered-2021": {
+     "shown": 2,
+     "wrong_edition": null,
+     "note": "Rank 1 is the same Page 3 but about the SAG mill and Panel Cave 2 East."
+    }
+   }
+  },
+  "D041": {
+   "runs": [
+    "qwen-rr|full|1|deep|q14",
+    "qwen-rr|full|2|deep|q14"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 3,
+     "wrong_edition": null,
+     "note": ""
+    },
+    "filtered-2021": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  },
+  "D042": {
+   "runs": [
+    "qwen-rr|focused|1|deep|q15",
+    "qwen-rr|focused|2|deep|q15"
+   ],
+   "verdict": {
+    "feed": {
+     "shown": 3,
+     "wrong_edition": null,
+     "note": "No 2024 copy in the ten."
+    },
+    "filtered-2021": {
+     "shown": 1,
+     "wrong_edition": null,
+     "note": ""
+    }
+   }
+  }
+ },
+ "dated_note": "The dated re-run (q13-q15, 22 Nov 2026): every distinct list (42, from 84 runs) read blind to the setup by two Claude readers, beside questions-dated.json. 'shown' agreed with score.py for every fact in every list (84 judgements). 'wrong_edition' differs only by definition in 10 lists: score.py records the place of the 2024 copy even after the 2026 page has shown the fact; the readers recorded it only where the 2024 copy came first. It changes no score. No corrections."
+}

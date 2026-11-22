@@ -1,0 +1,21 @@
+# read r1737 to r3465, all 160 entries
+r4758 meaning=0 | INJ read as "injection" (key: injector), and VIMS expanded confidently and wrongly as "Vehicle Immobiliser System"
+r5615 meaning=0 | "stick cylinder" becomes "sticking cylinder": the note's word stick (the excavator stick) is changed
+r5129|4 right | "over temperature" means the same as overtemperature (rule 1/3)
+r4316 meaning=0 | REQ (required) read as "Request." in the plain text
+r2968 meaning=0 | F/WHEEL read as "front wheel" (flywheel) and HOSU as "hose" (housing): different parts named
+r7206 meaning=0 | asset number UY2435 missing from the plain text
+r3220|5 right | "drop box" is the everyday spelling of dropbox, the key's meaning (rule 3/4)
+doubt r3220|1 | key reads TEMP as "temperature"; in "TEMP REP TO ... LEAK" it is almost surely "temporary" repair, as the plain text says (meaning left at 1)
+r7082 meaning=0 | "Drag loop" (the drag motion's loop, kept as drag loop in the key) made "dragline loop", a different thing
+r6245 meaning=0 | the id "I" is changed to the number "1"
+r4493|4 right | "over temperature" means the same as overtemperature (rule 1/3)
+# r6020 meaning=0 withdrawn (settled before unblinding, 21 Nov 2026): the asset code is kept whole, so No. 13's work-order allowance applies, as to numeric codes
+r4391|1 wrong | RT/LF read as "right/left front": adds a front position not in the key's right / left
+r4391 meaning=0 | plain text asserts a front position ("right/left front suspension cylinder") the note does not give
+r9993 meaning=0 | UNIS (universal joints) read as "units"
+r9832|3 right | "&" kept in the plain text is the everyday sign for "and", the key's meaning (rule 4 exception)
+r2809 meaning=0 | ext (extinguisher) read as "external" in the plain text
+r7000|1 right | "Re-seal" is reseal with a hyphen, a spelling variant of the key's meaning (rule 1/3); the script's note "re- (again)" is the same word
+doubt r7189|2 | key reads INTER FACE as "internal face"; "interface", the plain text's reading, is at least as likely for the two words together (meaning left at 1)
+r1015 meaning=0 | "Connect Inspect" (inspect the connection, as the sister note "Connection Insp" shows) made an instruction to connect the swing motor and blower, then inspect; Motor/Blower also made "motor and blower"

@@ -1,0 +1,54 @@
+{
+ "checked": "Claude, 16 Nov 2026",
+ "pairing": {
+  "mill_sump": {
+   "to": [
+    "grinding_sump"
+   ],
+   "why": "the sump under the SAG screen feeding the ball mill cyclones (rule 1 and 2): the cyclone feed sump"
+  },
+  "rougher_tails_sump": {
+   "to": [
+    "rougher_tails_sump"
+   ],
+   "why": "'Sump with pump' with id rougher_tails_sump (rule 1)"
+  },
+  "regrind_tank": {
+   "to": [
+    "regrind_sump"
+   ],
+   "why": "'Tank' fed by the rougher and contact concentrates and pumping to the regrind cyclone (rule 2): the regrind cyclone feed sump, not the filter feed tank"
+  },
+  "cs_discharge_box": {
+   "to": [
+    "clsc_tails_sump"
+   ],
+   "why": "'Box with pump' after the cleaner/scavenger (rule 1): the cleaner scavenger tailings sump"
+  },
+  "copper_conc_pump_box": {
+   "to": [
+    "filter_feed_tank"
+   ],
+   "why": "the pump box between the concentrate thickener and filter: the filter feed tank"
+  },
+  "tailings_box": {
+   "to": [
+    "tails_tank"
+   ],
+   "why": "'Pump / mix box' before the pond: the tailings mixing box"
+  },
+  "loaded_carbon": {
+   "to": [],
+   "why": "'(LOADED CARBON)', a stream label drawn as a box"
+  },
+  "barren_carbon": {
+   "to": [],
+   "why": "'(BARREN CARBON)', a stream label drawn as a box"
+  }
+ },
+ "notes": [
+  "Test, skill. Water, lime and reagent inputs pair with their sets; 'REAGENTS / GRAND WATER' is the REAGENTS GLAND WATER outlet; '[RESIDUE]' and '[PREG]' are stream labels.",
+  "First run wrote the chart (23.1 minutes).",
+  "Read: every box whose label is not exactly its key item's, or that pairs with nothing or with a set, and every box paired with a repeated key label, with its feeds (local/dev/repeats.py); both lists uncut, 16 Nov. Boxes whose label is exactly their key item's were not each read."
+ ]
+}

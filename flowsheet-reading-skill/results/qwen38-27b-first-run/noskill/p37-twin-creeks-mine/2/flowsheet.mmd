@@ -1,0 +1,96 @@
+flowchart TD
+    subgraph OxideCrushing["Oxide Crushing"]
+        ROMO["ROM Oxide Ore"] --> HOP1["Hopper"]
+        HOP1 --> JC["Jaw Crusher"]
+        JC --> TS1["Trash Screen"]
+        TS1 --> RS["Radial Stacker"]
+    end
+
+    subgraph OxideGrinding["Oxide Grinding"]
+        RS --> HOP2["Hopper"]
+        ROMR["ROM Refractory Ore"] --> OBS["Ore Blend Stacker"]
+        OBS --> HOP2
+        HOP2 --> SAG1["SAG Mill"]
+        SAG1 --> C1["Cycloner"]
+        C1 --> SC1["Screen"]
+        SAG1 --> BM1["Ball Mill"]
+        BM1 --> OT["Oxide Thickener"]
+        SC1 --> OT
+    end
+
+    subgraph RefractoryGrinding["Refractory Grinding"]
+        FE["Front End Loader"] --> HOP3["Hopper"]
+        HOP3 --> SAG2["SAG Mill"]
+        SAG2 --> PBM["Primary Ball Mill"]
+        PBM --> C2["Cycloner"]
+        C2 --> SBM["Secondary Ball Mill"]
+        SBM --> C3["Cycloner"]
+        C3 --> TS2["Trash Screen"]
+        TS2 --> RT["Refractory Thickener"]
+    end
+
+    subgraph PressureOxidation["Pressure Oxidation"]
+        RT --> SAT["Acidulation Slurry Tanker (3)"]
+        SA["Sulfuric Acid"] --> SAT
+        AIR1["Air"] --> SAT
+        SAT --> H2S["2 Stage Slurry Heater (2)"]
+        H2S --> AC["4 Stage Autoclave"]
+        NG["Natural Gas"] --> SGP["Steam Generation Plant"]
+        SGP --> AC
+        CW["Cooling Water"] --> AC
+        AC --> FV["2 Stage Flash Vessel (2)"]
+        AC --> CT["Cooling Tower"]
+        FV --> ST1["Surge Tank"]
+        ST1 --> RSC["Refractory Slurry Cooling"]
+    end
+
+    subgraph CarbonInLeach["Carbon-in Leach"]
+        RSC --> CIL["Carbon-in-Leach"]
+        NT["Neutralization Tanker (3)"] --> CIL
+        LS["Lime Silo"] --> LM["Lime"]
+        LM --> NT
+        TW["Taural Mill (2)"] --> CIL
+        OIL["OIL Tanker (7)"] --> CIL
+        AIR2["Air"] --> CIL
+        CIL --> SCR2["Screen"]
+        SCR2 --> SAD["Sub Aerial Depatriater"]
+        CIL --> LCS["Loaded Carbon Screen"]
+    end
+
+    subgraph CarbonStripping["Carbon Stripping, Reactivation, & Sizing"]
+        LCS --> ST2["Surge Tank"]
+        ST2 --> AWT["Acid Wash Tank"]
+        AWT --> CSV["Carbon Strip Vessel (2)"]
+        NA["Nitric Acid"] --> CSV
+        CSV --> CTANK["Carbon Tank"]
+        CSV --> TUBE["Tube and Shell Cooler / Heat Exchanger"]
+        CAU["Caustic"] --> TUBE
+        TUBE --> BSS["Barron Sal. Tank"]
+        BSS --> PST["Pregnant Sal. Tank"]
+        PST --> EW["Electrowinning Cell (4)"]
+        EW --> RTR["Rotor"]
+        RTR --> FU["Furnace"]
+        FU --> GB["Gold Bullion"]
+        CTANK --> RK["Reactivation Kiln"]
+        RK --> KFS["Kiln Feed Screen"]
+        KFS --> QT["Quench Tank"]
+        QT --> CWS["Carbon Wash Screen"]
+        CWS --> CFT["Carbon Finer Tail Filter"]
+        CWS --> TAIL["Tailers"]
+    end
+
+    %% Streams
+    OT -->|Return Water| SAG1
+    OT -->|Water Return to Oxide Circuit| SAG1
+    RT -->|Water Return to Refractory Circuit| SAG2
+    SAT -->|To Atmosphere| VENT1["Vent"]
+    AC -->|Flared Steam/Went Gas| VENT2["Vent"]
+    RSC -->|Water| WGS["Waste Gas Scrubber (2)"]
+    WGS -->|To Atmosphere| VENT3["Vent"]
+    FV -->|To Atmosphere| VENT4["Vent"]
+    SAD -->|Return Water to Plant| PLANT["Plant"]
+    SAD --> TAIL
+    CFT --> TAIL
+    CTANK -->|Carbon| CIL
+    BSS -->|Gold| EW
+    GB -->|Gold| GOLD["Gold"]

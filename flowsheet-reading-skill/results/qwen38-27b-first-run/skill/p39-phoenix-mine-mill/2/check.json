@@ -1,0 +1,33 @@
+{
+ "checked": "Claude, 16 Nov 2026",
+ "pairing": {
+  "mine_ore": {
+   "to": [
+    "mined_ore"
+   ],
+   "why": "'MINE ORE': the MINED ORE input, label misread"
+  },
+  "loaded_carbon": {
+   "to": [],
+   "why": "'(LOADED) CARBON', the stream label drawn as a box (the plan's own example)"
+  },
+  "ew_cell": {
+   "to": [
+    "ew_cells"
+   ],
+   "why": "'EW cell': the unlabelled electrowinning cells (rule 1)"
+  },
+  "water_lime": {
+   "to": [
+    "water_sag",
+    "lime_sag"
+   ],
+   "why": "'WATER LIME' into the SAG mill names two items: pairs with both (README, 16 Nov) (16 Nov, on the uncut list)"
+  }
+ },
+ "notes": [
+  "Test, skill. 'Cyclones' are the ball mill cyclones. Misread labels kept: CONDITIONING PANK, DESIME CYCLONES, DIP (CIP), FIBRES THICKENER, CHLORIDE FUME. 'REAGENTS & LAND WATER' is the REAGENTS GLAND WATER outlet. Reagent and lime inputs pair with their sets.",
+  "First run wrote the chart (26.1 minutes).",
+  "Read: every box whose label is not exactly its key item's, or that pairs with nothing or with a set, and every box paired with a repeated key label, with its feeds (local/dev/repeats.py); both lists uncut, 16 Nov. Boxes whose label is exactly their key item's were not each read."
+ ]
+}

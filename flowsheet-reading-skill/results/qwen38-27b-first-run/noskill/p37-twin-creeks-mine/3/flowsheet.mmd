@@ -1,0 +1,91 @@
+flowchart TD
+    %% ===== Oxide Crushing =====
+    ROMOxideOre[ROM Oxide Ore] --> HopperOx[Hopper]
+    HopperOx --> JawCrusher[Jaw Crusher]
+    JawCrusher --> TrashScreenOx[Trash Screen]
+    TrashScreenOx --> RadialStacker[Radial Stacker]
+    ROMRefractoryOre[ROM Refractory Ore] --> OreBlendStacker[Ore Blend Stacker]
+    RadialStacker --> OreBlendStacker
+    ReturnWaterOx[Return Water] --> OreBlendStacker
+
+    %% ===== Oxide Grinding =====
+    OreBlendStacker --> HopperGrind[Hopper]
+    HopperGrind --> SAGMillOx[SAG Mill]
+    ReturnWaterGrind[Return Water] --> SAGMillOx
+    SAGMillOx --> CyclonerOx[Cycloner]
+    CyclonerOx --> BallMill[Ball Mill]
+    BallMill --> ScreenOx[Screen]
+    ScreenOx --> OxideThickener[Oxide Thickener]
+    OxideThickener --> WaterReturnOx[Water Return to Oxide Circuit]
+    WaterReturnOx --> SAGMillOx
+    OxideThickener --> TaurusMill[Taurus Mill (2)]
+
+    %% ===== Refractory Grinding =====
+    FrontEndLoader[Front End Loader] --> HopperRef[Hopper]
+    HopperRef --> SAGMillRef[SAG Mill]
+    SAGMillRef --> CyclonerRef[Cycloner]
+    CyclonerRef --> PrimaryBallMill[Primary Ball Mill]
+    PrimaryBallMill --> SecondaryBallMill[Secondary Ball Mill]
+    SecondaryBallMill --> TrashScreenRef[Trash Screen]
+    TrashScreenRef --> RefractoryThickener[Refractory Thickener]
+    RefractoryThickener --> WaterReturnRef[Water Return to Refractory Circuit]
+    WaterReturnRef --> SAGMillRef
+    RefractoryThickener --> AcidulationTanker[Acidulation Starter Tanker (3)]
+
+    %% ===== Pressure Oxidation =====
+    SulfuricAcid[Sulfuric Acid] --> AcidulationTanker
+    VentPO[Vent]
+    AirPO[Air] --> AcidulationTanker
+    AcidulationTanker --> SlurryHeater[2 Stage Slurry Heater (2)]
+    SlurryHeater --> Heater[Heater]
+    Heater --> Autoclave[4 Stage Autoclave]
+    Oxygen[Oxygen] --> Autoclave
+    NaturalGas[Natural Gas] --> SteamGenPlant[Steam Generation Plant]
+    SteamGenPlant --> Steam[Steam]
+    Steam --> Autoclave
+    Autoclave --> FlashVessel[2 Stage Flash Vessel (2)]
+    Autoclave --> HeatExchanger[Heat Exchanger]
+    HeatExchanger --> TubeShellCooler[Tube and Shell Cooler]
+    CoolingWater[Cooling Water] --> CoolingTower[Cooling Tower]
+    FlashVessel --> VentGasScrubber[Vent Gas Scrubber (2)]
+    Caustic[Caustic] --> VentGasScrubber
+    FlashVessel --> RefractorySlurryCooling[Refractory Slurry Cooling]
+    RefractorySlurryCooling --> SurgeTankPO[Surge Tank]
+    SurgeTankPO --> TaurusMill
+
+    %% ===== Carbon-in-Leach =====
+    Lime[Lime] --> NeutralizationTanker[Neutralization Tanker (3)]
+    LimeSilo[Lime Silo] --> NeutralizationTanker
+    VentCIL[Vent]
+    NeutralizationTanker --> TaurusMill
+    ReturnWaterCIL[Return Water] --> TaurusMill
+    OILTank[OIL Tank (7)] --> TaurusMill
+    AirCIL[Air] --> TaurusMill
+    TaurusMill --> ScreenCIL[Screen]
+    ScreenCIL --> SubAerialDeposition[Sub Aerial Deposition]
+    SubAerialDeposition --> ReturnWaterPlant[Return Water to Plant]
+    SubAerialDeposition --> Tailings[Tailings]
+    ScreenCIL --> LoadedCarbonScreen[Loaded Carbon Screen]
+    LoadedCarbonScreen --> SurgeTankCIL[Surge Tank]
+    SurgeTankCIL --> AcidWashTank[Acid Wash Tank]
+    NitricAcid[Nitric Acid] --> AcidWashTank
+    AcidWashTank --> CarbonStripVessel[Carbon Strip Vessel (2)]
+    CarbonStripVessel --> CarbonTank[Carbon Tank]
+    CarbonTank --> TaurusMill
+    CarbonStripVessel --> PregnantSaltTank[Pregnant Salt Tank]
+
+    %% ===== Carbon Stripping, Reactivation, & Sizing =====
+    CarbonTank --> ReactivationKiln[Reactivation Kiln]
+    ReactivationKiln --> KilnFeedScreen[Kiln Feed Screen]
+    KilnFeedScreen --> QuenchTank[Quench Tank]
+    QuenchTank --> ScreenCS[Screen]
+    ScreenCS --> CarbonWash[Carbon Wash]
+    CarbonWash --> CarbonFilter[Carbon Filter]
+    CarbonFilter --> TailFilter[Tail Filter]
+    CarbonFilter --> ReactivationKiln
+    PregnantSaltTank --> ElectrorefiningCell[Electrorefining Cell (4)]
+    VentCS[Vent]
+    ElectrorefiningCell --> Rector[Rector]
+    Rector --> Furnace[Furnace]
+    Furnace --> GoldBullion[Gold Bullion]
+    ElectrorefiningCell --> BarrenSaltTank[Barren Salt Tank]

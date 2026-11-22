@@ -1,0 +1,197 @@
+{
+ "note": "The answer key, built by hand from each certificate before any model output was read (OREAS 902 excepted: its first test run came before the key, and its key follows its Table 1 line by line). 'fields' is the right entry for each database field; 'also' lists other entries accepted as right where the certificate itself gives two defensible numbers; 'where' says where each value is printed.",
+ "certificates": {
+  "oreas-902": {
+   "name": "OREAS 902",
+   "producer": "OREAS",
+   "url": "https://www.oreas.com/downloads/?fileId=1560",
+   "fields": {
+    "cu_4a_pct": 0.301,
+    "cu_4a_sd_pct": 0.008,
+    "cu_ar_pct": 0.308,
+    "cu_ar_sd_pct": 0.012,
+    "cu_h2so4_pct": 0.111,
+    "cu_h2so4_sd_pct": 0.011,
+    "cu_cn_pct": null,
+    "cu_cn_sd_pct": null,
+    "au_fa_ppm": null,
+    "au_fa_sd_ppm": null,
+    "au_ar_ppm": null,
+    "au_ar_sd_ppm": null
+   },
+   "also": {},
+   "where": {
+    "cu_4a_pct": "Table 1, 4 Acid Digestion, Cu wt.%",
+    "cu_ar_pct": "Table 1, Aqua Regia Digestion, Cu wt.%",
+    "cu_h2so4_pct": "Table 1, Acid Leach 5% H2SO4, Cu-Sol wt.%",
+    "au_fa_ppm": "Pb fire assay Au 46.6 ppb is indicative only (Table 2)",
+    "au_ar_ppm": "Aqua regia Au '< 10' ppb, SD 'IND': no number to file"
+   }
+  },
+  "oreas-905": {
+   "name": "OREAS 905",
+   "producer": "OREAS",
+   "url": "https://www.oreas.com/downloads/?fileId=884",
+   "fields": {
+    "cu_4a_pct": 0.1533,
+    "cu_4a_sd_pct": 0.0061,
+    "cu_ar_pct": 0.1562,
+    "cu_ar_sd_pct": 0.0047,
+    "cu_h2so4_pct": 0.1272,
+    "cu_h2so4_sd_pct": 0.0065,
+    "cu_cn_pct": null,
+    "cu_cn_sd_pct": null,
+    "au_fa_ppm": 0.391,
+    "au_fa_sd_ppm": 0.009,
+    "au_ar_ppm": 0.395,
+    "au_ar_sd_ppm": 0.019
+   },
+   "also": {},
+   "where": {
+    "cu_4a_pct": "Table 1, 4-Acid Digestion, Cu 1533 ppm (SD 61 ppm)",
+    "cu_ar_pct": "Table 1, Aqua Regia Digestion continued, Cu 1562 ppm (SD 47)",
+    "cu_h2so4_pct": "Table 1, Sulphuric Acid Leach (5%), Cu-Sol 1272 ppm (SD 65)",
+    "au_fa_ppm": "Table 1, Pb Fire Assay, Au 0.391 ppm",
+    "au_ar_ppm": "Table 1, Aqua Regia Digestion, Au 0.395 ppm",
+    "other": "Cu by borate/peroxide fusion 1571 ppm belongs in no field"
+   }
+  },
+  "oreas-501d": {
+   "name": "OREAS 501d",
+   "producer": "OREAS",
+   "url": "https://www.oreas.com/downloads/?fileId=2996",
+   "fields": {
+    "cu_4a_pct": 0.272,
+    "cu_4a_sd_pct": 0.009,
+    "cu_ar_pct": 0.27,
+    "cu_ar_sd_pct": 0.006,
+    "cu_h2so4_pct": null,
+    "cu_h2so4_sd_pct": null,
+    "cu_cn_pct": null,
+    "cu_cn_sd_pct": null,
+    "au_fa_ppm": 0.232,
+    "au_fa_sd_ppm": 0.011,
+    "au_ar_ppm": 0.232,
+    "au_ar_sd_ppm": 0.01
+   },
+   "also": {},
+   "where": {
+    "au_fa_ppm": "Table 1: Au 0.232, 1SD 0.011; its 2SD window 0.210-0.253 confirms 0.011",
+    "au_ar_ppm": "Table 1: Au 0.232, 1SD 0.010 (2SD window 0.213-0.252); Table 4 also gives 0.232",
+    "conflict": "The front-page summary prints aqua regia Au 0.230 with SD 0.011, and fire assay SD 0.010: SDs swapped and a value that Tables 1 and 4 contradict",
+    "cu_ar_pct": "Table 1, Aqua Regia Digestion, Cu 0.270 wt.%, 1SD 0.006"
+   }
+  },
+  "oreas-232b": {
+   "name": "OREAS 232b",
+   "producer": "OREAS",
+   "url": "https://www.oreas.com/downloads/?fileId=7192",
+   "fields": {
+    "cu_4a_pct": 0.00267,
+    "cu_4a_sd_pct": 0.000168,
+    "cu_ar_pct": 0.00254,
+    "cu_ar_sd_pct": 0.000141,
+    "cu_h2so4_pct": null,
+    "cu_h2so4_sd_pct": null,
+    "cu_cn_pct": null,
+    "cu_cn_sd_pct": null,
+    "au_fa_ppm": 0.946,
+    "au_fa_sd_ppm": 0.037,
+    "au_ar_ppm": 0.898,
+    "au_ar_sd_ppm": 0.052
+   },
+   "also": {},
+   "where": {
+    "au_fa_ppm": "Table 1, Pb Fire Assay, Au 0.946 ppm, 1SD 0.037",
+    "au_ar_ppm": "Table 1, Aqua Regia Digestion, Au 0.898, 1SD 0.052",
+    "cu_4a_pct": "Table 1, 4-Acid Digestion, Cu 26.7 ppm, 1SD 1.68",
+    "cu_ar_pct": "Table 1, Aqua Regia Digestion, Cu 25.4 ppm, 1SD 1.41",
+    "other": "Au by cyanide leach 0.810 and by PhotonAssay 0.965 belong in no field"
+   }
+  },
+  "amis0832": {
+   "name": "AMIS0832",
+   "producer": "AMIS",
+   "url": "https://amis.co.za/wp-content/uploads/AMIS0832-Certificate.pdf",
+   "fields": {
+    "cu_4a_pct": 1.87,
+    "cu_4a_sd_pct": 0.0385,
+    "cu_ar_pct": 1.91,
+    "cu_ar_sd_pct": 0.0115,
+    "cu_h2so4_pct": 1.55,
+    "cu_h2so4_sd_pct": 0.06,
+    "cu_cn_pct": null,
+    "cu_cn_sd_pct": null,
+    "au_fa_ppm": null,
+    "au_fa_sd_ppm": null,
+    "au_ar_ppm": null,
+    "au_ar_sd_ppm": null
+   },
+   "also": {
+    "cu_4a_sd_pct": [
+     0.038
+    ],
+    "cu_ar_sd_pct": [
+     0.012
+    ],
+    "cu_h2so4_sd_pct": [
+     0.059
+    ]
+   },
+   "where": {
+    "cu_4a_pct": "Table 1, Cu 4A_MICP (multi-acid digestion) 1.87 %, 2s 0.077, uc 0.038 (2s = 2 uc)",
+    "cu_ar_pct": "Table 1, Cu 2A_MICP (footnote 1: aqua regia digestion) 1.91 %, 2s 0.023, uc 0.012",
+    "cu_h2so4_pct": "Table 1, Cu SAL (footnote 6: sulphuric acid leach) 1.55 %, 2s 0.12, uc 0.059",
+    "other": "Cu AS (acid soluble, acid not named) 1.57 %, 3A_MICP 1.87 %, FUS 1.85 %, XRF 1.92 % belong in no field; Au 2A_MICP 0.02 g/t is uncertified (Table 3)"
+   }
+  },
+  "cdn-cm-54": {
+   "name": "CDN-CM-54",
+   "producer": "CDN Resource Laboratories",
+   "url": "https://cdnlabs.com/wp-content/uploads/CM-54-Certificate.pdf",
+   "fields": {
+    "cu_4a_pct": 0.356,
+    "cu_4a_sd_pct": 0.0075,
+    "cu_ar_pct": 0.363,
+    "cu_ar_sd_pct": 0.0075,
+    "cu_h2so4_pct": null,
+    "cu_h2so4_sd_pct": null,
+    "cu_cn_pct": null,
+    "cu_cn_sd_pct": null,
+    "au_fa_ppm": 1.682,
+    "au_fa_sd_ppm": 0.0685,
+    "au_ar_ppm": null,
+    "au_ar_sd_ppm": null
+   },
+   "also": {},
+   "where": {
+    "all": "Page 1: recommended values with 'Between Lab' two standard deviations, so each 1SD is half the printed \u00b1 value",
+    "au_fa_ppm": "Gold 1.682 gpt \u00b1 0.137 gpt, 30 g fire assay"
+   }
+  },
+  "se147": {
+   "name": "SE147",
+   "producer": "Rocklabs",
+   "url": "https://scottautomation.com/assets/Sectors/Mining/Products/Certified-Reference-Materials/certificates/SE147.pdf",
+   "fields": {
+    "cu_4a_pct": null,
+    "cu_4a_sd_pct": null,
+    "cu_ar_pct": null,
+    "cu_ar_sd_pct": null,
+    "cu_h2so4_pct": null,
+    "cu_h2so4_sd_pct": null,
+    "cu_cn_pct": null,
+    "cu_cn_sd_pct": null,
+    "au_fa_ppm": 0.623,
+    "au_fa_sd_ppm": 0.015,
+    "au_ar_ppm": null,
+    "au_ar_sd_ppm": null
+   },
+   "also": {},
+   "where": {
+    "au_fa_ppm": "Page 1: Au 0.623 ppm by fire assay; its \u00b1 0.01 is an expanded uncertainty (k = 2, about 95 % confidence) that the certificate says not to use for control limits",
+    "au_fa_sd_ppm": "Page 4: standard deviation of the 26 accepted laboratory sets, 0.015 ppm"
+   }
+  }
+ }
+}

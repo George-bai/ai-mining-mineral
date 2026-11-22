@@ -1,0 +1,8 @@
+{
+ "checked": "Claude, 16 Nov 2026",
+ "pairing": {},
+ "notes": [
+  "Test, no skill. Every unit box carries its drawing label; one WATER, one REAGENTS, one LIME and one CARO'S ACID box each stand for the inputs sharing that label (the scorer's rule for inputs). 'RESIDUE' is a stream label. The scorer's pairing stands.",
+  "Read: every box whose label is not exactly its key item's, or that pairs with nothing or with a set, and every box paired with a repeated key label, with its feeds (local/dev/repeats.py); both lists uncut, 16 Nov. Boxes whose label is exactly their key item's were not each read."
+ ]
+}

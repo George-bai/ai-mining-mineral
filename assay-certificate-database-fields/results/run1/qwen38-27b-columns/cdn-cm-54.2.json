@@ -1,0 +1,27 @@
+{
+ "fields": {
+  "cu_4a_pct": 0.356,
+  "cu_4a_sd_pct": 0.015,
+  "cu_ar_pct": 0.363,
+  "cu_ar_sd_pct": 0.015,
+  "cu_h2so4_pct": null,
+  "cu_h2so4_sd_pct": null,
+  "cu_cn_pct": null,
+  "cu_cn_sd_pct": null,
+  "au_fa_ppm": 1.682,
+  "au_fa_sd_ppm": 0.137,
+  "au_ar_ppm": null,
+  "au_ar_sd_ppm": null
+ },
+ "content": "\n\n{\"cu_4a_pct\":0.356,\"cu_4a_sd_pct\":0.015,\"cu_ar_pct\":0.363,\"cu_ar_sd_pct\":0.015,\"cu_h2so4_pct\":null,\"cu_h2so4_sd_pct\":null,\"cu_cn_pct\":null,\"cu_cn_sd_pct\":null,\"au_fa_ppm\":1.682,\"au_fa_sd_ppm\":0.137,\"au_ar_ppm\":null,\"au_ar_sd_ppm\":null}",
+ "reasoning": "Let me analyze the certificate of analysis for CDN-CM-54 to fill in the CRM standards table.\n\nThe columns I need to fill are:\n- cu_4a_pct: Copper by 4-acid digestion, in percent\n- cu_4a_sd_pct: Copper by 4-acid digestion, standard deviation, in percent\n- cu_ar_pct: Copper by aqua regia digestion, in percent\n- cu_ar_sd_pct: Copper by aqua regia digestion, standard deviation, in percent\n- cu_h2so4_pct: Copper by H2SO4 digestion, in percent\n- cu_h2so4_sd_pct: Copper by H2SO4 digestion, standard deviation, in percent\n- cu_cn_pct: Copper by cyanide (CN) digestion, in percent\n- cu_cn_sd_pct: Copper by cyanide digestion, standard deviation, in percent\n- au_fa_ppm: Gold by fire assay, in ppm\n- au_fa_sd_ppm: Gold by fire assay, standard deviation, in ppm\n- au_ar_ppm: Gold by aqua regia, in ppm\n- au_ar_sd_ppm: Gold by aqua regia, standard deviation, in ppm\n\nFrom the certificate:\n\n**Copper:**\n- 4 Acid digestion / ICP finish: 0.356% \u00b1 0.015%\n- Aqua regia digestion / ICP finish: 0.363% \u00b1 0.015%\n\nSo:\n- cu_4a_pct = 0.356\n- cu_4a_sd_pct = 0.015\n- cu_ar_pct = 0.363\n- cu_ar_sd_pct = 0.015\n- cu_h2so4_pct = null (no H2SO4 method listed)\n- cu_h2so4_sd_pct = null\n- cu_cn_pct = null (no cyanide method listed)\n- cu_cn_sd_pct = null\n\n**Gold:**\n- 30 g Fire Assay, ICP or AA finish: 1.682 gpt \u00b1 0.137 gpt\n\nNote: gpt = grams per tonne = ppm. So:\n- au_fa_ppm = 1.682\n- au_fa_sd_ppm = 0.137\n\nThere is no gold by aqua regia listed, so:\n- au_ar_ppm = null\n- au_ar_sd_ppm = null\n\nLet me double-check: The certificate lists Gold as \"1.682 gpt \u00b1 0.137 gpt\" with \"30 g Fire Assay, ICP or AA finish\". gpt is grams per tonne which is equivalent to ppm.\n\nSo my final answer:\n{\n  \"cu_4a_pct\": 0.356,\n  \"cu_4a_sd_pct\": 0.015,\n  \"cu_ar_pct\": 0.363,\n  \"cu_ar_sd_pct\": 0.015,\n  \"cu_h2so4_pct\": null,\n  \"cu_h2so4_sd_pct\": null,\n  \"cu_cn_pct\": null,\n  \"cu_cn_sd_pct\": null,\n  \"au_fa_ppm\": 1.682,\n  \"au_fa_sd_ppm\": 0.137,\n  \"au_ar_ppm\": null,\n  \"au_ar_sd_ppm\": null\n}\n",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 31098,
+  "total_tokens": 31970,
+  "completion_tokens": 872,
+  "prompt_tokens_details": null
+ },
+ "seconds": 18.6,
+ "model": "qwen38-27b"
+}

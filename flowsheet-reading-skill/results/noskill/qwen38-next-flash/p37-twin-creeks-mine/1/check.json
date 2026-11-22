@@ -1,0 +1,8 @@
+{
+ "checked": "Claude, 16 Nov 2026",
+ "pairing": {},
+ "notes": [
+  "Test, no skill. Not valid Mermaid as delivered: ten arrows written '--|\"label\"|' instead of '-->|\"label\"|' (lines 107 to 128). Under plan.md's test rule it counts as no chart in the headline. The frozen repair script (local/dev/repair.py) covers quote marks, brackets and subgraph id clashes, not this, so there is no repaired score either; raised for the review at the end of the test.",
+  "Not valid Mermaid: no chart to pair (16 Nov)."
+ ]
+}

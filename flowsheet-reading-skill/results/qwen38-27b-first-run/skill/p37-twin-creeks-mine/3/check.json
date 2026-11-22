@@ -1,0 +1,36 @@
+{
+ "checked": "Claude, 16 Nov 2026",
+ "pairing": {
+  "screen_refractory": {
+   "to": [
+    "ref_screen"
+   ],
+   "why": "the screen of the refractory SAG mill: the unlabelled refractory SAG discharge screen, not the oxide screen"
+  },
+  "refractory_cooling": {
+   "to": [],
+   "why": "'Refractory Slurry Cooling' names a section, not an item"
+  },
+  "sump_cil": {
+   "to": [
+    "tails_sump"
+   ],
+   "why": "the sump after the CIL screen: the tailings pump box, not a refractory cyclone feed sump"
+  },
+  "vent_gas": {
+   "to": [],
+   "why": "'Vent Gas' after the chart's own scrubber box: a box the drawing does not have, with another box for the scrubber (16 Nov, on the uncut list)"
+  },
+  "trash_screen_oxide": {
+   "to": [],
+   "why": "'Trash Screen' between the radial stacker and the oxide grinding hopper, on the oxide crushing line, where the drawing has no trash screen: a role the drawing does not have; the chart's position names no key item there. Pairs with nothing, its lines run through (call of 16 Nov 2026, 8:45 pm AEST)"
+  }
+ },
+ "notes": [
+  "Test, skill. hoppers, SAG mills, cyclones and trash screens by their ids and feeds, as the scorer has them. Misread labels kept: Cycloner, Acidulation Stage Tanker, Ta Atmosphere, Waste Gas Scrubber, Tauril Mill, OIL Tank, Barren/Pregnant Sal Tank, Tube and Shell Condenser, Carbon Fines Tail Filter. 'Sub Aerial Depoliter' is a stream label.",
+  "First run wrote the chart (17.5 minutes).",
+  "'Carbon-in-Leach' (the drawing's section name) takes the CIL tanks' lines: in from the neutralization tanks, air and carbon, out to the safety screen and the loaded carbon screen (rule 2). With 'OIL Tank (7)', the tanks' label misread, it is the CIL tanks drawn twice: both pair with them, as the scorer has it, and the same call stands in both conditions (16 Nov).",
+  "Read: every box whose label is not exactly its key item's, or that pairs with nothing or with a set, and every box paired with a repeated key label, with its feeds (local/dev/repeats.py); both lists uncut, 16 Nov. Boxes whose label is exactly their key item's were not each read.",
+  "Corrected 16 Nov 2026, 8:45 pm AEST: the crushing-line trash screen pairs with nothing (reference/README.md, the call added during the 27B rerun); before, it stood as the oxide trash screen, as the scorer paired it."
+ ]
+}

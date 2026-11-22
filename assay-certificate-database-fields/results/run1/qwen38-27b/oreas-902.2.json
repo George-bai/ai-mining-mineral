@@ -1,0 +1,27 @@
+{
+ "fields": {
+  "cu_4a_pct": 0.301,
+  "cu_4a_sd_pct": 0.008,
+  "cu_ar_pct": 0.308,
+  "cu_ar_sd_pct": 0.012,
+  "cu_h2so4_pct": 0.111,
+  "cu_h2so4_sd_pct": 0.011,
+  "cu_cn_pct": null,
+  "cu_cn_sd_pct": null,
+  "au_fa_ppm": null,
+  "au_fa_sd_ppm": null,
+  "au_ar_ppm": null,
+  "au_ar_sd_ppm": null
+ },
+ "content": "\n\n{\"cu_4a_pct\": 0.301, \"cu_4a_sd_pct\": 0.008, \"cu_ar_pct\": 0.308, \"cu_ar_sd_pct\": 0.012, \"cu_h2so4_pct\": 0.111, \"cu_h2so4_sd_pct\": 0.011, \"cu_cn_pct\": null, \"cu_cn_sd_pct\": null, \"au_fa_ppm\": null, \"au_fa_sd_ppm\": null, \"au_ar_ppm\": null, \"au_ar_sd_ppm\": null}",
+ "reasoning": "Let me analyze the certificate of analysis for OREAS 902 to fill in the required fields.\n\n**Copper by four-acid (near-total) digestion:**\nFrom Table 1, under \"4 Acid Digestion ICP-OES/MS\":\n- Cu, Copper (wt.%): Certified Value = 0.301, 1SD = 0.008\n- So `cu_4a_pct` = 0.301, `cu_4a_sd_pct` = 0.008\n\n**Copper by aqua regia digestion:**\nFrom Table 1, under \"Aqua Regia Digestion ICP-OES/MS\":\n- Cu, Copper (wt.%): Certified Value = 0.308, 1SD = 0.012\n- So `cu_ar_pct` = 0.308, `cu_ar_sd_pct` = 0.012\n\n**Acid-soluble copper by sulphuric acid (H2SO4) leach:**\nFrom Table 1, under \"Acid Leach 5% H2SO4\":\n- Copper Soluble, Cu-Sol (wt.%): Certified Value = 0.111, 1SD = 0.011\n- So `cu_h2so4_pct` = 0.111, `cu_h2so4_sd_pct` = 0.011\n\n**Cyanide-soluble copper by cyanide (NaCN) leach:**\nI don't see any cyanide leach method reported in this certificate. The methods listed are:\n- Four acid digestion with ICP-OES and ICP-MS\n- Aqua regia digestion with ICP-OES and ICP-MS\n- 5% H2SO4 acid leach with AAS or ICP-OES finish\n- Borate fusion XRF (indicative)\n- Laser ablation ICP-MS (indicative)\n- Pb Fire Assay (indicative)\n\nNo cyanide leach is reported. So `cu_cn_pct` = null, `cu_cn_sd_pct` = null.\n\n**Gold by lead-collection fire assay:**\nFrom Table 2 (Indicative Values):\n- Pb Fire Assay: Au, ppb = 46.6\nThis is an INDICATIVE value, not a certified value. The rules state: \"A value the certificate gives as indicative, provisional, informational or uncertified is left empty (null).\"\n- So `au_fa_ppm` = null, `au_fa_sd_ppm` = null\n\n**Gold by aqua regia digestion:**\nFrom Table 1, under \"Aqua Regia Digestion ICP-OES/MS\":\n- Au, Gold (ppb): < 10, 1SD = IND\nThis is a detection limit (less than 10 ppb), not a certified value. The 1SD is \"IND\" (indicative). This is not a certified value with a proper 1SD.\n- So `au_ar_ppm` = null, `au_ar_sd_ppm` = null\n\nWait, let me reconsider. The value is \"< 10\" ppb. This is a non-detect or below detection limit. It's not a certified value per se - it's a reporting limit. And the 1SD is \"IND\" (indicative). So this should be null.\n\nLet me double-check all my answers:\n\n1. `cu_4a_pct` = 0.301 (certified, wt.%)\n2. `cu_4a_sd_pct` = 0.008 (1SD, wt.%)\n3. `cu_ar_pct` = 0.308 (certified, wt.%)\n4. `cu_ar_sd_pct` = 0.012 (1SD, wt.%)\n5. `cu_h2so4_pct` = 0.111 (certified, wt.%)\n6. `cu_h2so4_sd_pct` = 0.011 (1SD, wt.%)\n7. `cu_cn_pct` = null (no cyanide leach method)\n8. `cu_cn_sd_pct` = null (no cyanide leach method)\n9. `au_fa_ppm` = null (only indicative value, not certified)\n10. `au_fa_sd_ppm` = null (only indicative value, not certified)\n11. `au_ar_ppm` = null (value is \"< 10\" ppb with IND 1SD - not a proper certified value)\n12. `au_ar_sd_ppm` = null (IND)\n\nAll looks correct.\n",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 16863,
+  "total_tokens": 18030,
+  "completion_tokens": 1167,
+  "prompt_tokens_details": null
+ },
+ "seconds": 31.2,
+ "model": "qwen38-27b"
+}

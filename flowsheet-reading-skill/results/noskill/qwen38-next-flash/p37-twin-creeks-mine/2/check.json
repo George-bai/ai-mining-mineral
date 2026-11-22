@@ -1,0 +1,25 @@
+{
+ "checked": "Claude, 16 Nov 2026",
+ "pairing": {
+  "screen_ref": {
+   "to": [
+    "ref_screen"
+   ],
+   "why": "the screen of the refractory SAG mill (id and feed): the unlabelled refractory SAG discharge screen, not the oxide screen"
+  },
+  "slurry_cooler": {
+   "to": [
+    "coolers"
+   ],
+   "why": "a 'Heat Exchanger' box with id slurry_cooler, fed by the slurry surge tank and cooled by the cooling tower (rule 1 and 2): the tube and shell slurry coolers, not the strip-solution heat exchanger"
+  },
+  "steam": {
+   "to": [],
+   "why": "'Steam' next to the chart's own Steam Generation Plant box: the key's stream label 'Steam' drawn as a box (it has no lines) (16 Nov, on the uncut list)"
+  }
+ },
+ "notes": [
+  "Test, no skill. Two 'CIL Train Tank' boxes stand for the one CIL Tanks (7) row. 'Pump' boxes are unlabelled pumps and pass through; 'Sub Aerial Deposition' is a stream label. Water, air and to-atmosphere boxes pair with their sets.",
+  "Read: every box whose label is not exactly its key item's, or that pairs with nothing or with a set, and every box paired with a repeated key label, with its feeds (local/dev/repeats.py); both lists uncut, 16 Nov. Boxes whose label is exactly their key item's were not each read."
+ ]
+}

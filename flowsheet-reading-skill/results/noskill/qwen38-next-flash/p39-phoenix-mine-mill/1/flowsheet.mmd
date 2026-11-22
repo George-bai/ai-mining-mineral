@@ -1,0 +1,146 @@
+flowchart LR
+    ORE["MINED ORE 12,264,000 TONS/YR 0.13% Cu 0.036 OZ/TON Au 0.270 OZ/TON Ag"]
+    PCRU["PRIMARY CRUSHER"]
+    COS["CRUSHED ORE STOCKPILE 33,000 TON (LIVE)"]
+    SAG["SAG MILL"]
+    SDS["SAG MILL DISCHARGE SCREEN"]
+    PEB["PEBBLE CRUSHER"]
+    BML["BALL MILLS"]
+    CFA["CONTACT FLOTATION"]
+    ROU["ROUGHER FLOTATION"]
+    DSC["DESLIME CYCLONES"]
+    TRS["TRASH SCREEN"]
+    TRH["TRASH"]
+    LEA["LEACH"]
+    CIP["CIP"]
+    CBIN["CARBON BIN"]
+    AWASH["ACID WASH"]
+    STRP["STRIP"]
+    BST["BARREN SOLUTION TANK"]
+    PST["PREGNANT SOLUTION TANK"]
+    REG["REGENERATION"]
+    EWS["PRECIOUS METAL EW SLUDGE TO REFINERY 231,800 OZ/YR Au 422,400 OZ/YR Ag"]
+    FTP["FINES THICKENER"]
+    MWT["MILL WATER"]
+    MWD["MILL WATER DIST'N"]
+    FWT["FRESH WATER"]
+    RGW["REAGENTS GLAND WATER"]
+    TRE["TREATED RECLAIM"]
+    MNW["MINE WATER"]
+    TAP["TAILINGS POND"]
+    RCW["RECLAIM WATER"]
+    CPL["CHLORIDE PLUME"]
+    HLC["HEAP LEACH CARBON"]
+    CTHL["CARBON TO HEAP LEACH"]
+    PGR["PRIMARY GRAVITY"]
+    FGR["FLOTATION GRAVITY"]
+    CGR["CLEANER GRAVITY (FUTURE)"]
+    PCC["PRIMARY CLEANER COLUMN"]
+    RGD["REGRIND"]
+    F1C["1st CLEANER FLOTATION"]
+    FCS["CLEANER/SCAVENGER FLOTATION"]
+    R2T["2ND CLEANER CONDITIONING TANK"]
+    MAG["MAGNETIC SEPARATION"]
+    MGC["MAGNETIC CONCENTRATE GRAVITY CONCENTRATOR"]
+    C2N["2ND CLEANER"]
+    C2S["2ND CLEANER SCAVENGER"]
+    CCT["COPPER CONCENTRATE THICKENER"]
+    CCF["COPPER CONCENTRATE FILTER"]
+    CCS["COPPER CONCENTRATE STOCKPILE 10,000 TONS (COVERED)"]
+    CTM["CONCENTRATE TO MARKET 39,900 TONS/YR (AVE @ 25% Cu) 19,934,000 LB/YR Cu 159,000 OZ/YR Au 1,418,100 OZ/YR Ag"]
+    RES["RESIDUE"]
+    ICY["INTENSIVE CYANIDATION"]
+    WAT["WATER"]
+    LIM["LIME"]
+    REA["REAGENTS"]
+    CYA["CYANIDE"]
+    FLO["FLOCULANT"]
+    CAC["CARO'S ACID"]
+
+    ORE --> PCRU
+    PCRU --> COS
+    COS --> SAG
+    WAT --> SAG
+    LIM --> SAG
+    SAG --> SDS
+    SDS -->|"oversize"| PEB
+    PEB --> COS
+    SDS -->|"undersize"| PGR
+    SDS -->|"undersize"| BML
+    SDS -->|"undersize"| CFA
+    REA --> BML
+    BML -->|"classifying cyclone underflow"| BML
+    BML -->|"classifying cyclone overflow"| ROU
+    CFA -->|"concentrate"| ROU
+    CFA -->|"tails"| BML
+    REA --> CFA
+    REA --> ROU
+    ROU -->|"concentrate"| DSC
+    ROU -->|"tails"| RES
+    CYA --> DSC
+    DSC -->|"underflow"| TRS
+    DSC -->|"overflow"| FTP
+    TRS --> TRH
+    TRS --> LEA
+    LEA --> CIP
+    CIP -->|"(LOADED CARBON)"| CBIN
+    CBIN --> AWASH
+    CBIN -->|"CARBON TO HEAP LEACH"| CTHL
+    HLC --> AWASH
+    CIP -->|"tails"| TAP
+    AWASH --> STRP
+    AWASH -->|"barren carbon"| CIP
+    STRP -->|"strip solution"| PST
+    STRP --> BST
+    PST --> REG
+    BST --> REG
+    REG -->|"barren solution"| BST
+    REG --> EWS
+    CAC --> TAP
+    FTP -->|"underflow"| TAP
+    FTP -->|"overflow"| MWT
+    FLO --> FTP
+    TRE --> FTP
+    MNW --> TRE
+    CAC --> TRE
+    LIM --> TRE
+    MWT --> MWD
+    MWT --> RGW
+    FWT --> MWT
+    FWT --> RGW
+    TAP --> RCW
+    RCW --> FWT
+    RCW --> CPL
+
+    PGR -->|"concentrate"| FGR
+    PGR -->|"tails"| RES
+    FGR -->|"concentrate"| CGR
+    FGR -->|"tails"| PCC
+    CGR -->|"concentrate"| PCC
+    CGR -->|"tails"| RES
+    PCC -->|"concentrate"| RGD
+    PCC -->|"tails"| RES
+    RGD --> F1C
+    LIM --> F1C
+    REA --> F1C
+    F1C -->|"concentrate"| R2T
+    F1C -->|"tails"| FCS
+    REA --> FCS
+    FCS -->|"concentrate"| F1C
+    FCS -->|"tails"| ROU
+    R2T --> MAG
+    REA --> R2T
+    MAG -->|"magnetic concentrate"| MGC
+    MAG -->|"non-magnetic"| FCS
+    MGC -->|"concentrate"| C2N
+    MGC -->|"tails"| FCS
+    C2N -->|"concentrate"| CCT
+    C2N -->|"tails"| C2S
+    C2S -->|"concentrate"| C2N
+    C2S -->|"tails"| FCS
+    CCT -->|"underflow"| CCF
+    CCT -->|"overflow"| F1C
+    CCF --> CCS
+    CCS --> CTM
+    RES --> ICY
+    ICY -->|"(PREG)"| PST

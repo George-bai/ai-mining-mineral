@@ -1,0 +1,210 @@
+flowchart TD
+  subgraph oxide_crushing["Oxide Crushing"]
+    rom_oxide_ore["ROM Oxide Ore"]
+    hopper_crushing["Hopper"]
+    jaw_crusher["Jaw Crusher"]
+    trash_screen_crushing["Trash Screen"]
+    radial_stacker["Radial Stacker"]
+    rom_refractory_ore["ROM Refractory Ore"]
+    ore_blend_stacker["Ore Blend Stacker"]
+  end
+
+  subgraph oxide_grinding["Oxide Grinding"]
+    hopper_oxide["Hopper"]
+    sag_mill_oxide["SAG Mill"]
+    cycloner_oxide["Cycloner"]
+    screen_oxide["Screen"]
+    sump_oxide["Sump"]
+    ball_mill_oxide["Ball Mill"]
+    trash_screen_oxide["Trash Screen"]
+    oxide_thickener["Oxide Thickener"]
+    water_tank_oxide["Water Tank"]
+    water_return_oxide["Water Return to Oxide Circuit"]
+  end
+
+  subgraph refractory_grinding["Refractory Grinding"]
+    front_end_loader["Front End Loader"]
+    hopper_refractory["Hopper"]
+    sag_mill_refractory["SAG Mill"]
+    screen_refractory["Screen"]
+    sump_refractory["Sump"]
+    primary_ball_mill["Primary Ball Mill"]
+    cycloner_refractory_left["Cycloner"]
+    trash_screen_refractory["Trash Screen"]
+    secondary_ball_mill["Secondary Ball Mill"]
+    cycloner_refractory_right["Cycloner"]
+    refractory_thickener["Refractory Thickener"]
+    return_water_refractory["Water Return To Refractory Circuit"]
+  end
+
+  subgraph cil["Carbon-in Leach"]
+    neutralization_tank["Neutralization Tank (3)"]
+    lime_silo["Lime Silo"]
+    lime["Lime"]
+    vent_neutralization["Vent"]
+    tailor_mill["Tailor Mill (2)"]
+    air_tailor["Air"]
+    return_water_tailor["Return Water"]
+    cil_tank["CIL Tank (7)"]
+    screen_cil["Screen"]
+    air_cil["Air"]
+    sub_aerial_deposition["Sub Aerial Deposition"]
+    tailings["Tailings"]
+    reclaim_water["Reclaim Water Return to Plant"]
+    loaded_carbon_screen["Loaded Carbon Screen"]
+    surge_tank_cil["Surge Tank"]
+    acid_wash_tank["Acid Wash Tank"]
+  end
+
+  subgraph pox["Pressure Oxidation"]
+    sulfuric_acid["Sulfuric Acid"]
+    vent_sulfuric["Vent"]
+    air_acidulation["Air"]
+    acidulation_starter_tank["Acidulation Starter Tank (3)"]
+    two_stage_slurry_heater["2 Stage Slurry Heater (2)"]
+    four_stage_autoclave["4 Stage Autoclave"]
+    autoclave_oxygen["4 Stage Autoclave Oxygen"]
+    steam["Steam"]
+    steam_generation_plant["Steam Generation Plant"]
+    natural_gas["Natural Gas"]
+    to_atmosphere_steam["To Atmosphere"]
+    to_atmosphere_sulfuric["To Atmosphere"]
+  end
+
+  subgraph cooling["Refractory Slurry Cooling"]
+    two_stage_flash_vessel["2 Stage Flash Vessel (2)"]
+    second_flash_vessel["2nd flash vessel"]
+    vent_gas_scrubber["Vent Gas Scrubber (2)"]
+    cooling_tower["Cooling Tower"]
+    cooling_water["Cooling Water"]
+    surge_tank_cooling["Surge Tank"]
+    to_atmosphere_scrubber["To Atmosphere"]
+    water_scrubber["Water"]
+  end
+
+  subgraph stripping["Carbon Stripping, Reactivation, & Sizing"]
+    carbon_strip_vessel["Carbon Strip Vessel (2)"]
+    nitric_acid["Nitric Acid"]
+    reactivation_kiln["Reactivation Kiln"]
+    kiln_feed_screen["Kiln Feed Screen"]
+    quench_tank["Quench Tank"]
+    carbon_wash_screen["Carbon Wash Screen"]
+    carbon_tank["Carbon Tank"]
+    heater["Heater"]
+    carbon_fines_tail_filter["Carbon Fines Tail Filter"]
+    tube_shell_cooler["Tube and Shell Cooler"]
+    heat_exchanger["Heat Exchanger"]
+    caustic["Caustic"]
+    barren_salt_tank["Barren Sal. Tank"]
+    pregnant_salt_tank["Pregnant Sal. Tank"]
+    electrorefining_cell["Electrorefining Cell (6)"]
+    vent_electrorefining["Vent"]
+    rotor["Rotor"]
+    furnace["Furnace"]
+    gold_bullion["Gold Bullion"]
+  end
+
+  %% Oxide Crushing
+  rom_oxide_ore --> hopper_crushing
+  hopper_crushing --> jaw_crusher
+  jaw_crusher --> trash_screen_crushing
+  trash_screen_crushing --> radial_stacker
+  radial_stacker --> hopper_oxide
+  rom_refractory_ore --> ore_blend_stacker
+  ore_blend_stacker --> front_end_loader
+  front_end_loader --> hopper_refractory
+  hopper_refractory --> sag_mill_refractory
+
+  %% Oxide Grinding
+  hopper_oxide --> sag_mill_oxide
+  sag_mill_oxide --> screen_oxide
+  screen_oxide --> sump_oxide
+  sump_oxide --> ball_mill_oxide
+  ball_mill_oxide --> cycloner_oxide
+  cycloner_oxide -->|"underflow"| ball_mill_oxide
+  cycloner_oxide -->|"overflow"| trash_screen_oxide
+  trash_screen_oxide --> oxide_thickener
+  oxide_thickener -->|"underflow"| neutralization_tank
+  oxide_thickener -->|"overflow"| water_tank_oxide
+  water_tank_oxide --> water_return_oxide
+
+  %% Refractory Grinding
+  sag_mill_refractory --> screen_refractory
+  screen_refractory --> sump_refractory
+  sump_refractory --> primary_ball_mill
+  primary_ball_mill --> cycloner_refractory_left
+  cycloner_refractory_left -->|"underflow"| primary_ball_mill
+  cycloner_refractory_left -->|"overflow"| trash_screen_refractory
+  trash_screen_refractory --> secondary_ball_mill
+  secondary_ball_mill --> cycloner_refractory_right
+  cycloner_refractory_right -->|"underflow"| secondary_ball_mill
+  cycloner_refractory_right -->|"overflow"| refractory_thickener
+  refractory_thickener -->|"underflow"| acidulation_starter_tank
+  refractory_thickener -->|"overflow"| return_water_refractory
+
+  %% Carbon-in Leach
+  lime --> lime_silo
+  lime_silo -->|"Lime"| neutralization_tank
+  neutralization_tank --> vent_neutralization
+  air_tailor --> tailor_mill
+  return_water_tailor --> tailor_mill
+  tailor_mill --> neutralization_tank
+  neutralization_tank --> cil_tank
+  cil_tank --> screen_cil
+  air_cil --> screen_cil
+  screen_cil --> sub_aerial_deposition
+  cil_tank --> sub_aerial_deposition
+  sub_aerial_deposition --> tailings
+  sub_aerial_deposition --> reclaim_water
+  cil_tank --> loaded_carbon_screen
+  loaded_carbon_screen --> surge_tank_cil
+  surge_tank_cil --> acid_wash_tank
+
+  %% Pressure Oxidation
+  sulfuric_acid --> acidulation_starter_tank
+  sulfuric_acid --> vent_sulfuric
+  sulfuric_acid --> to_atmosphere_sulfuric
+  air_acidulation --> acidulation_starter_tank
+  acidulation_starter_tank --> two_stage_slurry_heater
+  two_stage_slurry_heater --> four_stage_autoclave
+  four_stage_autoclave --> two_stage_flash_vessel
+  four_stage_autoclave --> autoclave_oxygen
+  four_stage_autoclave --> steam
+  steam --> steam_generation_plant
+  natural_gas --> steam_generation_plant
+  steam_generation_plant --> to_atmosphere_steam
+
+  %% Refractory Slurry Cooling
+  two_stage_flash_vessel --> second_flash_vessel
+  two_stage_flash_vessel --> vent_gas_scrubber
+  two_stage_flash_vessel -->|"recycle"| two_stage_slurry_heater
+  two_stage_flash_vessel -->|"recycle"| four_stage_autoclave
+  second_flash_vessel --> cooling_tower
+  second_flash_vessel --> tube_shell_cooler
+  water_scrubber --> vent_gas_scrubber
+  vent_gas_scrubber --> to_atmosphere_scrubber
+  cooling_water --> cooling_tower
+  cooling_tower --> surge_tank_cooling
+  surge_tank_cooling --> tube_shell_cooler
+
+  %% Carbon Stripping, Reactivation, & Sizing
+  nitric_acid --> acid_wash_tank
+  acid_wash_tank --> carbon_strip_vessel
+  carbon_strip_vessel --> carbon_tank
+  carbon_strip_vessel --> heat_exchanger
+  kiln_feed_screen --> reactivation_kiln
+  reactivation_kiln --> quench_tank
+  quench_tank --> carbon_wash_screen
+  carbon_wash_screen --> carbon_tank
+  carbon_wash_screen --> carbon_fines_tail_filter
+  carbon_wash_screen --> kiln_feed_screen
+  carbon_tank --> heater
+  heater --> heat_exchanger
+  heat_exchanger --> pregnant_salt_tank
+  heat_exchanger --> barren_salt_tank
+  caustic --> barren_salt_tank
+  pregnant_salt_tank --> electrorefining_cell
+  electrorefining_cell --> vent_electrorefining
+  electrorefining_cell --> rotor
+  rotor --> furnace
+  furnace --> gold_bullion

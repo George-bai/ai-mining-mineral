@@ -1,0 +1,7112 @@
+{
+"Abelsonite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Abelsonite",
+"property": "crystal_system",
+"gold": "Triclinic"
+},
+"Abelsonite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Abelsonite",
+"property": "specific_gravity",
+"gold": "1.40"
+},
+"Abhurite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Abhurite",
+"property": "specific_gravity",
+"gold": "4.35"
+},
+"Abswurmbachite/colour": {
+"task": "Mineral-Property",
+"mineral": "Abswurmbachite",
+"property": "colour",
+"gold": "Black, Dark brown"
+},
+"Actinolite/colour": {
+"task": "Mineral-Property",
+"mineral": "Actinolite",
+"property": "colour",
+"gold": "Green, Green black, Gray green, Black"
+},
+"Acuminite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Acuminite",
+"property": "crystal_system",
+"gold": "Monoclinic"
+},
+"Adamite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Adamite",
+"property": "hardness",
+"gold": "3.5"
+},
+"Adelite/colour": {
+"task": "Mineral-Property",
+"mineral": "Adelite",
+"property": "colour",
+"gold": "Blue gray, Green, Gray, Yellow, Light green"
+},
+"Adelite/streak": {
+"task": "Mineral-Property",
+"mineral": "Adelite",
+"property": "streak",
+"gold": "White"
+},
+"Aegirine/luster": {
+"task": "Mineral-Property",
+"mineral": "Aegirine",
+"property": "luster",
+"gold": "Vitreous - Resinous"
+},
+"Aenigmatite/streak": {
+"task": "Mineral-Property",
+"mineral": "Aenigmatite",
+"property": "streak",
+"gold": "Brown"
+},
+"Aerinite/luster": {
+"task": "Mineral-Property",
+"mineral": "Aerinite",
+"property": "luster",
+"gold": "Vitreous"
+},
+"Agardite-(Ce)/colour": {
+"task": "Mineral-Property",
+"mineral": "Agardite-(Ce)",
+"property": "colour",
+"gold": "Yellow green"
+},
+"Aguilarite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Aguilarite",
+"property": "element_list",
+"gold": "Ag, Se, S"
+},
+"Ahlfeldite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Ahlfeldite",
+"property": "cleavage",
+"gold": "{110} Distinct, {103} Distinct"
+},
+"Ahlfeldite/colour": {
+"task": "Mineral-Property",
+"mineral": "Ahlfeldite",
+"property": "colour",
+"gold": "Pink brown, Apple green, Red"
+},
+"Ahrensite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Ahrensite",
+"property": "crystal_system",
+"gold": "Cubic"
+},
+"Akaogiite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Akaogiite",
+"property": "crystal_system",
+"gold": "Monoclinic"
+},
+"Akatoreite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Akatoreite",
+"property": "element_list",
+"gold": "Mn, O, Si, Al, H"
+},
+"Akatoreite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Akatoreite",
+"property": "specific_gravity",
+"gold": "3.48"
+},
+"Akrochordite/colour": {
+"task": "Mineral-Property",
+"mineral": "Akrochordite",
+"property": "colour",
+"gold": "Reddish brown"
+},
+"Alacránite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Alacránite",
+"property": "element_list",
+"gold": "As, S"
+},
+"Alacránite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Alacránite",
+"property": "hardness",
+"gold": "1.5"
+},
+"Albite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Albite",
+"property": "element_list",
+"gold": "O, Si, Al, Na"
+},
+"Albrechtschraufite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Albrechtschraufite",
+"property": "hardness",
+"gold": "2.75"
+},
+"Aleksite/luster": {
+"task": "Mineral-Property",
+"mineral": "Aleksite",
+"property": "luster",
+"gold": "Metallic"
+},
+"Alforsite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Alforsite",
+"property": "specific_gravity",
+"gold": "4.57"
+},
+"Allanpringite/colour": {
+"task": "Mineral-Property",
+"mineral": "Allanpringite",
+"property": "colour",
+"gold": "Pale brownish yellow"
+},
+"Allargentum/element_list": {
+"task": "Mineral-Property",
+"mineral": "Allargentum",
+"property": "element_list",
+"gold": "Sb, Ag"
+},
+"Alloclasite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Alloclasite",
+"property": "crystal_system",
+"gold": "Monoclinic"
+},
+"Alloclasite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Alloclasite",
+"property": "hardness",
+"gold": "5"
+},
+"Alluaivite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Alluaivite",
+"property": "crystal_system",
+"gold": "Trigonal"
+},
+"Almandine/element_list": {
+"task": "Mineral-Property",
+"mineral": "Almandine",
+"property": "element_list",
+"gold": "O, Fe, Al, Si"
+},
+"Almandine/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Almandine",
+"property": "specific_gravity",
+"gold": "4.3"
+},
+"Altaite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Altaite",
+"property": "cleavage",
+"gold": "{001} Perfect, {010} Perfect, {100} Perfect"
+},
+"Altaite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Altaite",
+"property": "crystal_system",
+"gold": "Cubic"
+},
+"Alunite/colour": {
+"task": "Mineral-Property",
+"mineral": "Alunite",
+"property": "colour",
+"gold": "White, Gray, Yellowish gray, Reddish gray, Yellowish white"
+},
+"Amarantite/streak": {
+"task": "Mineral-Property",
+"mineral": "Amarantite",
+"property": "streak",
+"gold": "Lemon"
+},
+"Ameghinite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Ameghinite",
+"property": "cleavage",
+"gold": "Distinct, Imperfect"
+},
+"Amicite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Amicite",
+"property": "hardness",
+"gold": "4.5"
+},
+"Aminoffite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Aminoffite",
+"property": "crystal_system",
+"gold": "Tetragonal"
+},
+"Ammineite/streak": {
+"task": "Mineral-Property",
+"mineral": "Ammineite",
+"property": "streak",
+"gold": "Light blue"
+},
+"Analcime/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Analcime",
+"property": "cleavage",
+"gold": "{001} Indistinct, {010} Indistinct, {100} Indistinct"
+},
+"Analcime/luster": {
+"task": "Mineral-Property",
+"mineral": "Analcime",
+"property": "luster",
+"gold": "Vitreous"
+},
+"Anapaite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Anapaite",
+"property": "specific_gravity",
+"gold": "2.81"
+},
+"Anapaite/streak": {
+"task": "Mineral-Property",
+"mineral": "Anapaite",
+"property": "streak",
+"gold": "White"
+},
+"Anatase/streak": {
+"task": "Mineral-Property",
+"mineral": "Anatase",
+"property": "streak",
+"gold": "Pale yellowish white"
+},
+"Andalusite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Andalusite",
+"property": "cleavage",
+"gold": "{110} Distinct, {100} Indistinct, {010} Poor"
+},
+"Andradite/streak": {
+"task": "Mineral-Property",
+"mineral": "Andradite",
+"property": "streak",
+"gold": "White"
+},
+"Andreyivanovite/luster": {
+"task": "Mineral-Property",
+"mineral": "Andreyivanovite",
+"property": "luster",
+"gold": "Metallic"
+},
+"Andrémeyerite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Andrémeyerite",
+"property": "hardness",
+"gold": "5.5"
+},
+"Anglesite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Anglesite",
+"property": "hardness",
+"gold": "2.5"
+},
+"Anglesite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Anglesite",
+"property": "specific_gravity",
+"gold": "6.34"
+},
+"Anhydrite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Anhydrite",
+"property": "cleavage",
+"gold": "{010} Perfect, {100} Perfect, {001} Good"
+},
+"Anhydrite/luster": {
+"task": "Mineral-Property",
+"mineral": "Anhydrite",
+"property": "luster",
+"gold": "Vitreous - Pearly"
+},
+"Anhydrite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Anhydrite",
+"property": "specific_gravity",
+"gold": "2.98"
+},
+"Antigorite/luster": {
+"task": "Mineral-Property",
+"mineral": "Antigorite",
+"property": "luster",
+"gold": "Vitreous - Greasy"
+},
+"Antimonselite/luster": {
+"task": "Mineral-Property",
+"mineral": "Antimonselite",
+"property": "luster",
+"gold": "Metallic"
+},
+"Aragonite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Aragonite",
+"property": "hardness",
+"gold": "3.75"
+},
+"Aramayoite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Aramayoite",
+"property": "cleavage",
+"gold": "Perfect, Indistinct"
+},
+"Archerite/colour": {
+"task": "Mineral-Property",
+"mineral": "Archerite",
+"property": "colour",
+"gold": "Beige, White"
+},
+"Archerite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Archerite",
+"property": "hardness",
+"gold": "2"
+},
+"Arctite/streak": {
+"task": "Mineral-Property",
+"mineral": "Arctite",
+"property": "streak",
+"gold": "White"
+},
+"Arfvedsonite/streak": {
+"task": "Mineral-Property",
+"mineral": "Arfvedsonite",
+"property": "streak",
+"gold": "Bluish gray"
+},
+"Argentopyrite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Argentopyrite",
+"property": "element_list",
+"gold": "Fe, Ag, S"
+},
+"Arsenopyrite/luster": {
+"task": "Mineral-Property",
+"mineral": "Arsenopyrite",
+"property": "luster",
+"gold": "Metallic"
+},
+"Ashburtonite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Ashburtonite",
+"property": "crystal_system",
+"gold": "Tetragonal"
+},
+"Atheneite/colour": {
+"task": "Mineral-Property",
+"mineral": "Atheneite",
+"property": "colour",
+"gold": "Gray white"
+},
+"Aurichalcite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Aurichalcite",
+"property": "element_list",
+"gold": "O, Zn, Cu, C, H"
+},
+"Aurichalcite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Aurichalcite",
+"property": "specific_gravity",
+"gold": "3.77"
+},
+"Auricupride/hardness": {
+"task": "Mineral-Property",
+"mineral": "Auricupride",
+"property": "hardness",
+"gold": "2"
+},
+"Azoproite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Azoproite",
+"property": "cleavage",
+"gold": "{010} Good, {001} Distinct"
+},
+"Azoproite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Azoproite",
+"property": "hardness",
+"gold": "5.5"
+},
+"Baddeleyite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Baddeleyite",
+"property": "cleavage",
+"gold": "{001} Distinct"
+},
+"Baddeleyite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Baddeleyite",
+"property": "element_list",
+"gold": "Zr, O"
+},
+"Bahianite/streak": {
+"task": "Mineral-Property",
+"mineral": "Bahianite",
+"property": "streak",
+"gold": "White"
+},
+"Banalsite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Banalsite",
+"property": "cleavage",
+"gold": "{110} Good, {001} Good"
+},
+"Banalsite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Banalsite",
+"property": "crystal_system",
+"gold": "Orthorhombic"
+},
+"Banalsite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Banalsite",
+"property": "hardness",
+"gold": "6"
+},
+"Bandylite/colour": {
+"task": "Mineral-Property",
+"mineral": "Bandylite",
+"property": "colour",
+"gold": "Dark blue"
+},
+"Barnesite/streak": {
+"task": "Mineral-Property",
+"mineral": "Barnesite",
+"property": "streak",
+"gold": "Brownish red"
+},
+"Barstowite/streak": {
+"task": "Mineral-Property",
+"mineral": "Barstowite",
+"property": "streak",
+"gold": "White"
+},
+"Barylite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Barylite",
+"property": "cleavage",
+"gold": "{001} Perfect, {100} Perfect"
+},
+"Bassetite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Bassetite",
+"property": "crystal_system",
+"gold": "Monoclinic"
+},
+"Bastnäsite-(Nd)/streak": {
+"task": "Mineral-Property",
+"mineral": "Bastnäsite-(Nd)",
+"property": "streak",
+"gold": "White"
+},
+"Belovite-(Ce)/streak": {
+"task": "Mineral-Property",
+"mineral": "Belovite-(Ce)",
+"property": "streak",
+"gold": "White"
+},
+"Bementite/colour": {
+"task": "Mineral-Property",
+"mineral": "Bementite",
+"property": "colour",
+"gold": "Brown, Gray, Yellow, Yellow brown, Pink"
+},
+"Bementite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Bementite",
+"property": "specific_gravity",
+"gold": "2.98"
+},
+"Benitoite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Benitoite",
+"property": "element_list",
+"gold": "O, Ba, Si, Ti"
+},
+"Bernalite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Bernalite",
+"property": "specific_gravity",
+"gold": "3.28"
+},
+"Bernalite/streak": {
+"task": "Mineral-Property",
+"mineral": "Bernalite",
+"property": "streak",
+"gold": "Apple green"
+},
+"Bertrandite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Bertrandite",
+"property": "element_list",
+"gold": "O, Si, Be, H"
+},
+"Beryl/streak": {
+"task": "Mineral-Property",
+"mineral": "Beryl",
+"property": "streak",
+"gold": "White"
+},
+"Beryllonite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Beryllonite",
+"property": "cleavage",
+"gold": "Perfect, Good"
+},
+"Beryllonite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Beryllonite",
+"property": "element_list",
+"gold": "O, P, Na, Be"
+},
+"Bianchite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Bianchite",
+"property": "element_list",
+"gold": "O, Zn, S, H"
+},
+"Bieberite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Bieberite",
+"property": "hardness",
+"gold": "2"
+},
+"Biehlite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Biehlite",
+"property": "hardness",
+"gold": "1"
+},
+"Bikitaite/streak": {
+"task": "Mineral-Property",
+"mineral": "Bikitaite",
+"property": "streak",
+"gold": "White"
+},
+"Bilibinskite/luster": {
+"task": "Mineral-Property",
+"mineral": "Bilibinskite",
+"property": "luster",
+"gold": "Sub Metallic"
+},
+"Bismuth/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Bismuth",
+"property": "cleavage",
+"gold": "{0001} Perfect"
+},
+"Bismuthinite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Bismuthinite",
+"property": "cleavage",
+"gold": "{010} Perfect"
+},
+"Bismutite/colour": {
+"task": "Mineral-Property",
+"mineral": "Bismutite",
+"property": "colour",
+"gold": "Brown, Brownish yellow, Green, Gray, Yellow"
+},
+"Blatterite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Blatterite",
+"property": "specific_gravity",
+"gold": "4.70"
+},
+"Bonaccordite/luster": {
+"task": "Mineral-Property",
+"mineral": "Bonaccordite",
+"property": "luster",
+"gold": "Vitreous - Adamantine"
+},
+"Braggite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Braggite",
+"property": "crystal_system",
+"gold": "Tetragonal"
+},
+"Braggite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Braggite",
+"property": "hardness",
+"gold": "6"
+},
+"Brazilianite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Brazilianite",
+"property": "specific_gravity",
+"gold": "2.98"
+},
+"Breithauptite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Breithauptite",
+"property": "crystal_system",
+"gold": "Hexagonal"
+},
+"Brezinaite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Brezinaite",
+"property": "hardness",
+"gold": "3.5"
+},
+"Brianyoungite/luster": {
+"task": "Mineral-Property",
+"mineral": "Brianyoungite",
+"property": "luster",
+"gold": "Vitreous"
+},
+"Brodtkorbite/streak": {
+"task": "Mineral-Property",
+"mineral": "Brodtkorbite",
+"property": "streak",
+"gold": "Dark gray"
+},
+"Bromargyrite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Bromargyrite",
+"property": "element_list",
+"gold": "Ag, Br"
+},
+"Bromellite/colour": {
+"task": "Mineral-Property",
+"mineral": "Bromellite",
+"property": "colour",
+"gold": "White"
+},
+"Brookite/luster": {
+"task": "Mineral-Property",
+"mineral": "Brookite",
+"property": "luster",
+"gold": "Sub Metallic"
+},
+"Brucite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Brucite",
+"property": "specific_gravity",
+"gold": "2.46"
+},
+"Buchwaldite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Buchwaldite",
+"property": "hardness",
+"gold": "2"
+},
+"Bultfonteinite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Bultfonteinite",
+"property": "hardness",
+"gold": "4.5"
+},
+"Byströmite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Byströmite",
+"property": "crystal_system",
+"gold": "Tetragonal"
+},
+"Bílinite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Bílinite",
+"property": "element_list",
+"gold": "O, Fe, S, H"
+},
+"Bílinite/streak": {
+"task": "Mineral-Property",
+"mineral": "Bílinite",
+"property": "streak",
+"gold": "White"
+},
+"Böhmite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Böhmite",
+"property": "element_list",
+"gold": "O, Al, H"
+},
+"Cacoxenite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Cacoxenite",
+"property": "specific_gravity",
+"gold": "2.85"
+},
+"Cadmoselite/luster": {
+"task": "Mineral-Property",
+"mineral": "Cadmoselite",
+"property": "luster",
+"gold": "Adamantine - Resinous"
+},
+"Cadmoselite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Cadmoselite",
+"property": "specific_gravity",
+"gold": "5.48"
+},
+"Cahnite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Cahnite",
+"property": "cleavage",
+"gold": "Perfect"
+},
+"Calciborite/colour": {
+"task": "Mineral-Property",
+"mineral": "Calciborite",
+"property": "colour",
+"gold": "White"
+},
+"Calciborite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Calciborite",
+"property": "hardness",
+"gold": "3.5"
+},
+"Calciotantite/streak": {
+"task": "Mineral-Property",
+"mineral": "Calciotantite",
+"property": "streak",
+"gold": "White"
+},
+"Calcite/streak": {
+"task": "Mineral-Property",
+"mineral": "Calcite",
+"property": "streak",
+"gold": "White"
+},
+"Calomel/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Calomel",
+"property": "specific_gravity",
+"gold": "6.92"
+},
+"Calvertite/luster": {
+"task": "Mineral-Property",
+"mineral": "Calvertite",
+"property": "luster",
+"gold": "Metallic"
+},
+"Canaphite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Canaphite",
+"property": "cleavage",
+"gold": "{010} Perfect"
+},
+"Canaphite/luster": {
+"task": "Mineral-Property",
+"mineral": "Canaphite",
+"property": "luster",
+"gold": "Vitreous"
+},
+"Cancrinite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Cancrinite",
+"property": "cleavage",
+"gold": "{1010} Perfect"
+},
+"Cancrinite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Cancrinite",
+"property": "specific_gravity",
+"gold": "2.45"
+},
+"Cancrinite/streak": {
+"task": "Mineral-Property",
+"mineral": "Cancrinite",
+"property": "streak",
+"gold": "White"
+},
+"Canfieldite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Canfieldite",
+"property": "specific_gravity",
+"gold": "6.23"
+},
+"Carbocernaite/luster": {
+"task": "Mineral-Property",
+"mineral": "Carbocernaite",
+"property": "luster",
+"gold": "Vitreous - Greasy"
+},
+"Carbocernaite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Carbocernaite",
+"property": "specific_gravity",
+"gold": "3.62"
+},
+"Carbocernaite/streak": {
+"task": "Mineral-Property",
+"mineral": "Carbocernaite",
+"property": "streak",
+"gold": "White"
+},
+"Carnotite/streak": {
+"task": "Mineral-Property",
+"mineral": "Carnotite",
+"property": "streak",
+"gold": "Yellow"
+},
+"Cassidyite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Cassidyite",
+"property": "element_list",
+"gold": "O, Ca, Ni, P, H"
+},
+"Cassidyite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Cassidyite",
+"property": "specific_gravity",
+"gold": "3.15"
+},
+"Cassiterite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Cassiterite",
+"property": "hardness",
+"gold": "6.5"
+},
+"Caswellsilverite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Caswellsilverite",
+"property": "specific_gravity",
+"gold": "3.24"
+},
+"Celadonite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Celadonite",
+"property": "element_list",
+"gold": "O, Si, Fe, K, Mg, H"
+},
+"Celsian/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Celsian",
+"property": "cleavage",
+"gold": "{001} Perfect, {010} Good"
+},
+"Celsian/hardness": {
+"task": "Mineral-Property",
+"mineral": "Celsian",
+"property": "hardness",
+"gold": "6"
+},
+"Cerianite-(Ce)/colour": {
+"task": "Mineral-Property",
+"mineral": "Cerianite-(Ce)",
+"property": "colour",
+"gold": "Greenish yellow, Resin brown, Dark greenish brown"
+},
+"Cerussite/streak": {
+"task": "Mineral-Property",
+"mineral": "Cerussite",
+"property": "streak",
+"gold": "White"
+},
+"Cervantite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Cervantite",
+"property": "specific_gravity",
+"gold": "6.50"
+},
+"Cervantite/streak": {
+"task": "Mineral-Property",
+"mineral": "Cervantite",
+"property": "streak",
+"gold": "Light yellow"
+},
+"Cetineite/colour": {
+"task": "Mineral-Property",
+"mineral": "Cetineite",
+"property": "colour",
+"gold": "Yellow orange, Orange red"
+},
+"Chabournéite/colour": {
+"task": "Mineral-Property",
+"mineral": "Chabournéite",
+"property": "colour",
+"gold": "Black"
+},
+"Chabournéite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Chabournéite",
+"property": "crystal_system",
+"gold": "Triclinic"
+},
+"Chalcanthite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Chalcanthite",
+"property": "cleavage",
+"gold": "{110} Imperfect, {110} Indistinct, {111} Indistinct"
+},
+"Chalcophyllite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Chalcophyllite",
+"property": "element_list",
+"gold": "O, Cu, As, Al, S, H"
+},
+"Chalcopyrite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Chalcopyrite",
+"property": "hardness",
+"gold": "3.5"
+},
+"Chamosite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Chamosite",
+"property": "element_list",
+"gold": "Fe, O, Si, Al, H"
+},
+"Chamosite/luster": {
+"task": "Mineral-Property",
+"mineral": "Chamosite",
+"property": "luster",
+"gold": "Vitreous - Dull"
+},
+"Chamosite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Chamosite",
+"property": "specific_gravity",
+"gold": "3.13"
+},
+"Changbaiite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Changbaiite",
+"property": "cleavage",
+"gold": "{0001} Perfect, {1011} Distinct"
+},
+"Changchengite/streak": {
+"task": "Mineral-Property",
+"mineral": "Changchengite",
+"property": "streak",
+"gold": "Black"
+},
+"Chapmanite/luster": {
+"task": "Mineral-Property",
+"mineral": "Chapmanite",
+"property": "luster",
+"gold": "Adamantine"
+},
+"Cheremnykhite/streak": {
+"task": "Mineral-Property",
+"mineral": "Cheremnykhite",
+"property": "streak",
+"gold": "White"
+},
+"Chernovite-(Y)/hardness": {
+"task": "Mineral-Property",
+"mineral": "Chernovite-(Y)",
+"property": "hardness",
+"gold": "4"
+},
+"Chervetite/luster": {
+"task": "Mineral-Property",
+"mineral": "Chervetite",
+"property": "luster",
+"gold": "Adamantine"
+},
+"Chervetite/streak": {
+"task": "Mineral-Property",
+"mineral": "Chervetite",
+"property": "streak",
+"gold": "White"
+},
+"Chesterite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Chesterite",
+"property": "cleavage",
+"gold": "{110} Perfect"
+},
+"Chiolite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Chiolite",
+"property": "cleavage",
+"gold": "{001} Perfect, {111} Distinct"
+},
+"Chlorargyrite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Chlorargyrite",
+"property": "element_list",
+"gold": "Ag, Cl"
+},
+"Chrysoberyl/element_list": {
+"task": "Mineral-Property",
+"mineral": "Chrysoberyl",
+"property": "element_list",
+"gold": "O, Al, Be"
+},
+"Chrysotile/streak": {
+"task": "Mineral-Property",
+"mineral": "Chrysotile",
+"property": "streak",
+"gold": "White"
+},
+"Chvaleticeite/colour": {
+"task": "Mineral-Property",
+"mineral": "Chvaleticeite",
+"property": "colour",
+"gold": "Yellow green, White, Pink"
+},
+"Cinnabar/luster": {
+"task": "Mineral-Property",
+"mineral": "Cinnabar",
+"property": "luster",
+"gold": "Adamantine"
+},
+"Clino-ferro-suenoite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Clino-ferro-suenoite",
+"property": "cleavage",
+"gold": "{110}"
+},
+"Clinoatacamite/colour": {
+"task": "Mineral-Property",
+"mineral": "Clinoatacamite",
+"property": "colour",
+"gold": "Green, Dark greenish black, Greenish blue"
+},
+"Clinobisvanite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Clinobisvanite",
+"property": "specific_gravity",
+"gold": "7.07"
+},
+"Clinohumite/colour": {
+"task": "Mineral-Property",
+"mineral": "Clinohumite",
+"property": "colour",
+"gold": "Brown, Yellow, White, Orange, Reddish brown"
+},
+"Cobaltite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Cobaltite",
+"property": "specific_gravity",
+"gold": "6.26"
+},
+"Cobaltlotharmeyerite/colour": {
+"task": "Mineral-Property",
+"mineral": "Cobaltlotharmeyerite",
+"property": "colour",
+"gold": "Brown"
+},
+"Coccinite/colour": {
+"task": "Mineral-Property",
+"mineral": "Coccinite",
+"property": "colour",
+"gold": "Orange red, Reddish brown"
+},
+"Coccinite/streak": {
+"task": "Mineral-Property",
+"mineral": "Coccinite",
+"property": "streak",
+"gold": "Orange"
+},
+"Coesite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Coesite",
+"property": "element_list",
+"gold": "O, Si"
+},
+"Colemanite/streak": {
+"task": "Mineral-Property",
+"mineral": "Colemanite",
+"property": "streak",
+"gold": "White"
+},
+"Collinsite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Collinsite",
+"property": "crystal_system",
+"gold": "Triclinic"
+},
+"Collinsite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Collinsite",
+"property": "element_list",
+"gold": "O, Ca, P, Mg, H"
+},
+"Coloradoite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Coloradoite",
+"property": "crystal_system",
+"gold": "Cubic"
+},
+"Copper/luster": {
+"task": "Mineral-Property",
+"mineral": "Copper",
+"property": "luster",
+"gold": "Metallic"
+},
+"Coquimbite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Coquimbite",
+"property": "hardness",
+"gold": "2"
+},
+"Cordierite/streak": {
+"task": "Mineral-Property",
+"mineral": "Cordierite",
+"property": "streak",
+"gold": "White"
+},
+"Cornubite/colour": {
+"task": "Mineral-Property",
+"mineral": "Cornubite",
+"property": "colour",
+"gold": "Green, Apple green, Dark green"
+},
+"Coskrenite-(Ce)/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Coskrenite-(Ce)",
+"property": "crystal_system",
+"gold": "Triclinic"
+},
+"Coskrenite-(Ce)/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Coskrenite-(Ce)",
+"property": "specific_gravity",
+"gold": "2.88"
+},
+"Cotunnite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Cotunnite",
+"property": "crystal_system",
+"gold": "Orthorhombic"
+},
+"Cowlesite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Cowlesite",
+"property": "cleavage",
+"gold": "{010} Perfect"
+},
+"Coyoteite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Coyoteite",
+"property": "cleavage",
+"gold": "{111} Perfect"
+},
+"Coyoteite/colour": {
+"task": "Mineral-Property",
+"mineral": "Coyoteite",
+"property": "colour",
+"gold": "Black"
+},
+"Coyoteite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Coyoteite",
+"property": "specific_gravity",
+"gold": "2.88"
+},
+"Crandallite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Crandallite",
+"property": "cleavage",
+"gold": "{0001} Perfect"
+},
+"Crandallite/streak": {
+"task": "Mineral-Property",
+"mineral": "Crandallite",
+"property": "streak",
+"gold": "White"
+},
+"Cristobalite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Cristobalite",
+"property": "crystal_system",
+"gold": "Tetragonal"
+},
+"Crocoite/luster": {
+"task": "Mineral-Property",
+"mineral": "Crocoite",
+"property": "luster",
+"gold": "Adamantine"
+},
+"Cubanite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Cubanite",
+"property": "specific_gravity",
+"gold": "4.03"
+},
+"Cummingtonite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Cummingtonite",
+"property": "hardness",
+"gold": "5"
+},
+"Cummingtonite/luster": {
+"task": "Mineral-Property",
+"mineral": "Cummingtonite",
+"property": "luster",
+"gold": "Vitreous - Silky"
+},
+"Cylindrite/colour": {
+"task": "Mineral-Property",
+"mineral": "Cylindrite",
+"property": "colour",
+"gold": "Lead gray, Grayish black"
+},
+"Cylindrite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Cylindrite",
+"property": "crystal_system",
+"gold": "Triclinic"
+},
+"Cylindrite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Cylindrite",
+"property": "hardness",
+"gold": "2.5"
+},
+"Cymrite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Cymrite",
+"property": "crystal_system",
+"gold": "Monoclinic"
+},
+"Cyrilovite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Cyrilovite",
+"property": "hardness",
+"gold": "4"
+},
+"Danburite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Danburite",
+"property": "element_list",
+"gold": "O, Si, Ca, B"
+},
+"Danburite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Danburite",
+"property": "hardness",
+"gold": "7"
+},
+"Danburite/streak": {
+"task": "Mineral-Property",
+"mineral": "Danburite",
+"property": "streak",
+"gold": "White"
+},
+"Daomanite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Daomanite",
+"property": "specific_gravity",
+"gold": "7.39"
+},
+"Diaboleite/colour": {
+"task": "Mineral-Property",
+"mineral": "Diaboleite",
+"property": "colour",
+"gold": "Dark blue, Bright sky blue"
+},
+"Diaoyudaoite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Diaoyudaoite",
+"property": "specific_gravity",
+"gold": "3.22"
+},
+"Diaspore/luster": {
+"task": "Mineral-Property",
+"mineral": "Diaspore",
+"property": "luster",
+"gold": "Vitreous - Pearly"
+},
+"Diaspore/streak": {
+"task": "Mineral-Property",
+"mineral": "Diaspore",
+"property": "streak",
+"gold": "White"
+},
+"Dickite/colour": {
+"task": "Mineral-Property",
+"mineral": "Dickite",
+"property": "colour",
+"gold": "Blue"
+},
+"Dickite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Dickite",
+"property": "hardness",
+"gold": "1.5"
+},
+"Dickite/luster": {
+"task": "Mineral-Property",
+"mineral": "Dickite",
+"property": "luster",
+"gold": "Pearly"
+},
+"Dietrichite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Dietrichite",
+"property": "hardness",
+"gold": "2"
+},
+"Dimorphite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Dimorphite",
+"property": "element_list",
+"gold": "As, S"
+},
+"Diopside/luster": {
+"task": "Mineral-Property",
+"mineral": "Diopside",
+"property": "luster",
+"gold": "Vitreous"
+},
+"Diopside/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Diopside",
+"property": "specific_gravity",
+"gold": "3.15"
+},
+"Dioptase/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Dioptase",
+"property": "cleavage",
+"gold": "{1011} Good"
+},
+"Dioptase/luster": {
+"task": "Mineral-Property",
+"mineral": "Dioptase",
+"property": "luster",
+"gold": "Vitreous"
+},
+"Dravite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Dravite",
+"property": "cleavage",
+"gold": "Indistinct"
+},
+"Dufrénoysite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Dufrénoysite",
+"property": "crystal_system",
+"gold": "Monoclinic"
+},
+"Dugganite/streak": {
+"task": "Mineral-Property",
+"mineral": "Dugganite",
+"property": "streak",
+"gold": "White"
+},
+"Dundasite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Dundasite",
+"property": "element_list",
+"gold": "O, Pb, Al, C, H"
+},
+"Dzharkenite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Dzharkenite",
+"property": "element_list",
+"gold": "Se, Fe"
+},
+"Earlandite/streak": {
+"task": "Mineral-Property",
+"mineral": "Earlandite",
+"property": "streak",
+"gold": "White"
+},
+"Ebnerite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Ebnerite",
+"property": "crystal_system",
+"gold": "Hexagonal"
+},
+"Edenite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Edenite",
+"property": "cleavage",
+"gold": "{110}"
+},
+"Edgarite/luster": {
+"task": "Mineral-Property",
+"mineral": "Edgarite",
+"property": "luster",
+"gold": "Metallic"
+},
+"Efremovite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Efremovite",
+"property": "specific_gravity",
+"gold": "2.48"
+},
+"Eglestonite/colour": {
+"task": "Mineral-Property",
+"mineral": "Eglestonite",
+"property": "colour",
+"gold": "Brown, Brownish yellow, Yellow, Dark brown, Orange"
+},
+"Eglestonite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Eglestonite",
+"property": "crystal_system",
+"gold": "Cubic"
+},
+"Ellisite/colour": {
+"task": "Mineral-Property",
+"mineral": "Ellisite",
+"property": "colour",
+"gold": "Dark gray"
+},
+"Elpasolite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Elpasolite",
+"property": "specific_gravity",
+"gold": "2.86"
+},
+"Elpasolite/streak": {
+"task": "Mineral-Property",
+"mineral": "Elpasolite",
+"property": "streak",
+"gold": "White"
+},
+"Elpidite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Elpidite",
+"property": "hardness",
+"gold": "5"
+},
+"Emplectite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Emplectite",
+"property": "cleavage",
+"gold": "{001} Perfect"
+},
+"Enargite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Enargite",
+"property": "specific_gravity",
+"gold": "4.47"
+},
+"Eosphorite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Eosphorite",
+"property": "cleavage",
+"gold": "{100} Indistinct"
+},
+"Eosphorite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Eosphorite",
+"property": "element_list",
+"gold": "O, Mn, P, Al, H"
+},
+"Epsomite/colour": {
+"task": "Mineral-Property",
+"mineral": "Epsomite",
+"property": "colour",
+"gold": "Colorless, Grey, Pink, White"
+},
+"Epsomite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Epsomite",
+"property": "crystal_system",
+"gold": "Orthorhombic"
+},
+"Erniggliite/colour": {
+"task": "Mineral-Property",
+"mineral": "Erniggliite",
+"property": "colour",
+"gold": "Gray, Black gray, Black"
+},
+"Erniggliite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Erniggliite",
+"property": "hardness",
+"gold": "2"
+},
+"Eskebornite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Eskebornite",
+"property": "element_list",
+"gold": "Se, Cu, Fe"
+},
+"Eskebornite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Eskebornite",
+"property": "hardness",
+"gold": "3"
+},
+"Eskimoite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Eskimoite",
+"property": "crystal_system",
+"gold": "Monoclinic"
+},
+"Eskimoite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Eskimoite",
+"property": "specific_gravity",
+"gold": "7.10"
+},
+"Esseneite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Esseneite",
+"property": "cleavage",
+"gold": "{110} Perfect"
+},
+"Esseneite/colour": {
+"task": "Mineral-Property",
+"mineral": "Esseneite",
+"property": "colour",
+"gold": "Reddish brown"
+},
+"Esseneite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Esseneite",
+"property": "hardness",
+"gold": "6"
+},
+"Esseneite/luster": {
+"task": "Mineral-Property",
+"mineral": "Esseneite",
+"property": "luster",
+"gold": "Vitreous"
+},
+"Ettringite/streak": {
+"task": "Mineral-Property",
+"mineral": "Ettringite",
+"property": "streak",
+"gold": "White"
+},
+"Eucairite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Eucairite",
+"property": "element_list",
+"gold": "Ag, Se, Cu"
+},
+"Eucairite/streak": {
+"task": "Mineral-Property",
+"mineral": "Eucairite",
+"property": "streak",
+"gold": "Gray white"
+},
+"Euchlorine/colour": {
+"task": "Mineral-Property",
+"mineral": "Euchlorine",
+"property": "colour",
+"gold": "Dark green"
+},
+"Eulytine/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Eulytine",
+"property": "specific_gravity",
+"gold": "6.82"
+},
+"Evansite/streak": {
+"task": "Mineral-Property",
+"mineral": "Evansite",
+"property": "streak",
+"gold": "White"
+},
+"Fairfieldite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Fairfieldite",
+"property": "cleavage",
+"gold": "Perfect, Distinct"
+},
+"Fairfieldite/colour": {
+"task": "Mineral-Property",
+"mineral": "Fairfieldite",
+"property": "colour",
+"gold": "Greenish white, White, Light yellow"
+},
+"Falsterite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Falsterite",
+"property": "crystal_system",
+"gold": "Monoclinic"
+},
+"Famatinite/luster": {
+"task": "Mineral-Property",
+"mineral": "Famatinite",
+"property": "luster",
+"gold": "Metallic"
+},
+"Fangite/colour": {
+"task": "Mineral-Property",
+"mineral": "Fangite",
+"property": "colour",
+"gold": "Deep dark brown, Red"
+},
+"Fangite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Fangite",
+"property": "crystal_system",
+"gold": "Orthorhombic"
+},
+"Farringtonite/colour": {
+"task": "Mineral-Property",
+"mineral": "Farringtonite",
+"property": "colour",
+"gold": "White, Wax yellow"
+},
+"Fayalite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Fayalite",
+"property": "cleavage",
+"gold": "{010} Indistinct"
+},
+"Fedotovite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Fedotovite",
+"property": "element_list",
+"gold": "O, Cu, K, S"
+},
+"Ferchromide/colour": {
+"task": "Mineral-Property",
+"mineral": "Ferchromide",
+"property": "colour",
+"gold": "Gray white"
+},
+"Ferchromide/luster": {
+"task": "Mineral-Property",
+"mineral": "Ferchromide",
+"property": "luster",
+"gold": "Metallic"
+},
+"Fergusonite-(Y)/streak": {
+"task": "Mineral-Property",
+"mineral": "Fergusonite-(Y)",
+"property": "streak",
+"gold": "Brown"
+},
+"Ferrarisite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Ferrarisite",
+"property": "cleavage",
+"gold": "{001} Perfect"
+},
+"Ferrarisite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Ferrarisite",
+"property": "element_list",
+"gold": "O, Ca, As, H"
+},
+"Ferrisepiolite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Ferrisepiolite",
+"property": "crystal_system",
+"gold": "Orthorhombic"
+},
+"Ferro-ferri-fluoro-leakeite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Ferro-ferri-fluoro-leakeite",
+"property": "crystal_system",
+"gold": "Monoclinic"
+},
+"Ferrochiavennite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Ferrochiavennite",
+"property": "crystal_system",
+"gold": "Monoclinic"
+},
+"Ferrokentbrooksite/colour": {
+"task": "Mineral-Property",
+"mineral": "Ferrokentbrooksite",
+"property": "colour",
+"gold": "Reddish brown, Red"
+},
+"Ferrokentbrooksite/streak": {
+"task": "Mineral-Property",
+"mineral": "Ferrokentbrooksite",
+"property": "streak",
+"gold": "White"
+},
+"Filipstadite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Filipstadite",
+"property": "hardness",
+"gold": "6"
+},
+"Filipstadite/luster": {
+"task": "Mineral-Property",
+"mineral": "Filipstadite",
+"property": "luster",
+"gold": "Metallic"
+},
+"Florensovite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Florensovite",
+"property": "specific_gravity",
+"gold": "4.39"
+},
+"Fluoborite/luster": {
+"task": "Mineral-Property",
+"mineral": "Fluoborite",
+"property": "luster",
+"gold": "Vitreous - Silky"
+},
+"Fluoborite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Fluoborite",
+"property": "specific_gravity",
+"gold": "2.88"
+},
+"Fluorite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Fluorite",
+"property": "cleavage",
+"gold": "{111} Perfect"
+},
+"Fluorite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Fluorite",
+"property": "element_list",
+"gold": "Ca, F"
+},
+"Fluorite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Fluorite",
+"property": "hardness",
+"gold": "4"
+},
+"Fluornatromicrolite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Fluornatromicrolite",
+"property": "crystal_system",
+"gold": "Cubic"
+},
+"Fluoro-leakeite/streak": {
+"task": "Mineral-Property",
+"mineral": "Fluoro-leakeite",
+"property": "streak",
+"gold": "Blue"
+},
+"Fluoro-richterite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Fluoro-richterite",
+"property": "crystal_system",
+"gold": "Monoclinic"
+},
+"Fluoro-richterite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Fluoro-richterite",
+"property": "hardness",
+"gold": "5.5"
+},
+"Formicaite/luster": {
+"task": "Mineral-Property",
+"mineral": "Formicaite",
+"property": "luster",
+"gold": "Vitreous"
+},
+"Forsterite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Forsterite",
+"property": "specific_gravity",
+"gold": "3.24"
+},
+"Francevillite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Francevillite",
+"property": "cleavage",
+"gold": "{001} Perfect"
+},
+"Fritzscheite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Fritzscheite",
+"property": "crystal_system",
+"gold": "Tetragonal"
+},
+"Fritzscheite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Fritzscheite",
+"property": "specific_gravity",
+"gold": "3.5"
+},
+"Frondelite/luster": {
+"task": "Mineral-Property",
+"mineral": "Frondelite",
+"property": "luster",
+"gold": "Vitreous - Dull"
+},
+"Frondelite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Frondelite",
+"property": "specific_gravity",
+"gold": "3.48"
+},
+"Galena/streak": {
+"task": "Mineral-Property",
+"mineral": "Galena",
+"property": "streak",
+"gold": "Grayish black"
+},
+"Gallite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Gallite",
+"property": "hardness",
+"gold": "3"
+},
+"Gallobeudantite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Gallobeudantite",
+"property": "cleavage",
+"gold": "{001} Indistinct"
+},
+"Gallobeudantite/colour": {
+"task": "Mineral-Property",
+"mineral": "Gallobeudantite",
+"property": "colour",
+"gold": "Pale yellow, Slightly greenish yellow, Cream"
+},
+"Gedrite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Gedrite",
+"property": "element_list",
+"gold": "O, Si, Mg, Al, H"
+},
+"Geikielite/luster": {
+"task": "Mineral-Property",
+"mineral": "Geikielite",
+"property": "luster",
+"gold": "Sub Metallic"
+},
+"Georgbokiite/streak": {
+"task": "Mineral-Property",
+"mineral": "Georgbokiite",
+"property": "streak",
+"gold": "Yellowish brown"
+},
+"Gersdorffite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Gersdorffite",
+"property": "hardness",
+"gold": "5.5"
+},
+"Gersdorffite/streak": {
+"task": "Mineral-Property",
+"mineral": "Gersdorffite",
+"property": "streak",
+"gold": "Grayish black"
+},
+"Geversite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Geversite",
+"property": "element_list",
+"gold": "Sb, Pt"
+},
+"Giessenite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Giessenite",
+"property": "specific_gravity",
+"gold": "6.75"
+},
+"Glaucophane/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Glaucophane",
+"property": "cleavage",
+"gold": "{110} Good, {001} Good"
+},
+"Godlevskite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Godlevskite",
+"property": "crystal_system",
+"gold": "Orthorhombic"
+},
+"Goethite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Goethite",
+"property": "cleavage",
+"gold": "{010} Perfect, {100} Distinct"
+},
+"Goethite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Goethite",
+"property": "element_list",
+"gold": "Fe, O, H"
+},
+"Goslarite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Goslarite",
+"property": "crystal_system",
+"gold": "Orthorhombic"
+},
+"Grahampearsonite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Grahampearsonite",
+"property": "specific_gravity",
+"gold": "2.95"
+},
+"Grandidierite/luster": {
+"task": "Mineral-Property",
+"mineral": "Grandidierite",
+"property": "luster",
+"gold": "Vitreous"
+},
+"Grandreefite/luster": {
+"task": "Mineral-Property",
+"mineral": "Grandreefite",
+"property": "luster",
+"gold": "Subadamantine"
+},
+"Greenockite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Greenockite",
+"property": "cleavage",
+"gold": "{1120} Distinct, {0001} Imperfect"
+},
+"Greenockite/colour": {
+"task": "Mineral-Property",
+"mineral": "Greenockite",
+"property": "colour",
+"gold": "Honey yellow, Citron yellow, Orange yellow"
+},
+"Gregoryite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Gregoryite",
+"property": "specific_gravity",
+"gold": "2.65"
+},
+"Guettardite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Guettardite",
+"property": "crystal_system",
+"gold": "Monoclinic"
+},
+"Guettardite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Guettardite",
+"property": "element_list",
+"gold": "Pb, S, Sb, As"
+},
+"Guettardite/luster": {
+"task": "Mineral-Property",
+"mineral": "Guettardite",
+"property": "luster",
+"gold": "Metallic"
+},
+"Gunningite/streak": {
+"task": "Mineral-Property",
+"mineral": "Gunningite",
+"property": "streak",
+"gold": "White"
+},
+"Gustavite/colour": {
+"task": "Mineral-Property",
+"mineral": "Gustavite",
+"property": "colour",
+"gold": "Steel gray"
+},
+"Halotrichite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Halotrichite",
+"property": "element_list",
+"gold": "O, Fe, Al, S, H"
+},
+"Halotrichite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Halotrichite",
+"property": "specific_gravity",
+"gold": "1.95"
+},
+"Hanksite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Hanksite",
+"property": "element_list",
+"gold": "O, Na, K, Cl, S, C"
+},
+"Hashemite/colour": {
+"task": "Mineral-Property",
+"mineral": "Hashemite",
+"property": "colour",
+"gold": "Brown, Greenish brown, Yellow brown, Light yellow brown, Dark greenish brow"
+},
+"Hashemite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Hashemite",
+"property": "specific_gravity",
+"gold": "4.51"
+},
+"Hausmannite/colour": {
+"task": "Mineral-Property",
+"mineral": "Hausmannite",
+"property": "colour",
+"gold": "Brownish black, Grayish"
+},
+"Hausmannite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Hausmannite",
+"property": "hardness",
+"gold": "5.5"
+},
+"Hawleyite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Hawleyite",
+"property": "hardness",
+"gold": "3.5"
+},
+"Hechtsbergite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Hechtsbergite",
+"property": "element_list",
+"gold": "Bi, O, V, H"
+},
+"Hechtsbergite/streak": {
+"task": "Mineral-Property",
+"mineral": "Hechtsbergite",
+"property": "streak",
+"gold": "Yellow"
+},
+"Hectorfloresite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Hectorfloresite",
+"property": "specific_gravity",
+"gold": "2.83"
+},
+"Heinrichite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Heinrichite",
+"property": "cleavage",
+"gold": "{001} Perfect, {100} Distinct"
+},
+"Hematite/streak": {
+"task": "Mineral-Property",
+"mineral": "Hematite",
+"property": "streak",
+"gold": "Reddish brown"
+},
+"Hemimorphite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Hemimorphite",
+"property": "cleavage",
+"gold": "{110} Perfect"
+},
+"Hemimorphite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Hemimorphite",
+"property": "crystal_system",
+"gold": "Orthorhombic"
+},
+"Hemimorphite/luster": {
+"task": "Mineral-Property",
+"mineral": "Hemimorphite",
+"property": "luster",
+"gold": "Vitreous"
+},
+"Hemimorphite/streak": {
+"task": "Mineral-Property",
+"mineral": "Hemimorphite",
+"property": "streak",
+"gold": "White"
+},
+"Hessite/colour": {
+"task": "Mineral-Property",
+"mineral": "Hessite",
+"property": "colour",
+"gold": "Lead gray, Steel gray"
+},
+"Hidalgoite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Hidalgoite",
+"property": "hardness",
+"gold": "4.5"
+},
+"Hidalgoite/streak": {
+"task": "Mineral-Property",
+"mineral": "Hidalgoite",
+"property": "streak",
+"gold": "White"
+},
+"Hocartite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Hocartite",
+"property": "element_list",
+"gold": "Ag, S, Sn, Fe"
+},
+"Hoganite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Hoganite",
+"property": "element_list",
+"gold": "O, Cu, C, H"
+},
+"Holmquistite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Holmquistite",
+"property": "hardness",
+"gold": "5.5"
+},
+"Horváthite-(Y)/element_list": {
+"task": "Mineral-Property",
+"mineral": "Horváthite-(Y)",
+"property": "element_list",
+"gold": "Y, O, F, Na, C"
+},
+"Hydroniumpharmacoalumite/streak": {
+"task": "Mineral-Property",
+"mineral": "Hydroniumpharmacoalumite",
+"property": "streak",
+"gold": "White"
+},
+"Hydroxycalciopyrochlore/element_list": {
+"task": "Mineral-Property",
+"mineral": "Hydroxycalciopyrochlore",
+"property": "element_list",
+"gold": "U, O, Nb, Ti, Ca, Na, H"
+},
+"Hydroxylapatite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Hydroxylapatite",
+"property": "element_list",
+"gold": "O, Ca, P, H"
+},
+"Häggite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Häggite",
+"property": "element_list",
+"gold": "V, O, H"
+},
+"Ikaite/colour": {
+"task": "Mineral-Property",
+"mineral": "Ikaite",
+"property": "colour",
+"gold": "Chalky white"
+},
+"Ilinskite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Ilinskite",
+"property": "crystal_system",
+"gold": "Orthorhombic"
+},
+"Ilvaite/luster": {
+"task": "Mineral-Property",
+"mineral": "Ilvaite",
+"property": "luster",
+"gold": "Sub Metallic"
+},
+"Indialite/streak": {
+"task": "Mineral-Property",
+"mineral": "Indialite",
+"property": "streak",
+"gold": "White"
+},
+"Iyoite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Iyoite",
+"property": "hardness",
+"gold": "3"
+},
+"Jadeite/luster": {
+"task": "Mineral-Property",
+"mineral": "Jadeite",
+"property": "luster",
+"gold": "Vitreous"
+},
+"Kampfite/luster": {
+"task": "Mineral-Property",
+"mineral": "Kampfite",
+"property": "luster",
+"gold": "Vitreous"
+},
+"Kampfite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Kampfite",
+"property": "specific_gravity",
+"gold": "3.81"
+},
+"Kaolinite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Kaolinite",
+"property": "cleavage",
+"gold": "{001} Perfect"
+},
+"Kassite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Kassite",
+"property": "cleavage",
+"gold": "{010} Perfect, {101} Indistinct"
+},
+"Keiviite-(Yb)/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Keiviite-(Yb)",
+"property": "crystal_system",
+"gold": "Monoclinic"
+},
+"Keiviite-(Yb)/hardness": {
+"task": "Mineral-Property",
+"mineral": "Keiviite-(Yb)",
+"property": "hardness",
+"gold": "4"
+},
+"Kermesite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Kermesite",
+"property": "crystal_system",
+"gold": "Triclinic"
+},
+"Kidwellite/colour": {
+"task": "Mineral-Property",
+"mineral": "Kidwellite",
+"property": "colour",
+"gold": "Greenish-white, Light green, Yellow, Yellow-green"
+},
+"Kidwellite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Kidwellite",
+"property": "specific_gravity",
+"gold": "3.34"
+},
+"Kratochvílite/streak": {
+"task": "Mineral-Property",
+"mineral": "Kratochvílite",
+"property": "streak",
+"gold": "White"
+},
+"Kukharenkoite-(Ce)/luster": {
+"task": "Mineral-Property",
+"mineral": "Kukharenkoite-(Ce)",
+"property": "luster",
+"gold": "Vitreous - Greasy"
+},
+"Kyanite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Kyanite",
+"property": "crystal_system",
+"gold": "Triclinic"
+},
+"Laphamite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Laphamite",
+"property": "cleavage",
+"gold": "{010} Perfect"
+},
+"Laphamite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Laphamite",
+"property": "crystal_system",
+"gold": "Monoclinic"
+},
+"Larnite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Larnite",
+"property": "cleavage",
+"gold": "{100} Good"
+},
+"Lazerckerite/streak": {
+"task": "Mineral-Property",
+"mineral": "Lazerckerite",
+"property": "streak",
+"gold": "Grey"
+},
+"Lazurite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Lazurite",
+"property": "cleavage",
+"gold": "{110} Imperfect"
+},
+"Lazurite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Lazurite",
+"property": "hardness",
+"gold": "5.5"
+},
+"Lisitsynite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Lisitsynite",
+"property": "cleavage",
+"gold": "{010} Good"
+},
+"Lukrahnite/streak": {
+"task": "Mineral-Property",
+"mineral": "Lukrahnite",
+"property": "streak",
+"gold": "Light yellow"
+},
+"Magnesiotaaffeite-2N’2S/element_list": {
+"task": "Mineral-Property",
+"mineral": "Magnesiotaaffeite-2N’2S",
+"property": "element_list",
+"gold": "O, Al, Mg, Be"
+},
+"Magnesite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Magnesite",
+"property": "cleavage",
+"gold": "{1011} Perfect"
+},
+"Magnetite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Magnetite",
+"property": "hardness",
+"gold": "6"
+},
+"Mallestigite/streak": {
+"task": "Mineral-Property",
+"mineral": "Mallestigite",
+"property": "streak",
+"gold": "White"
+},
+"Manganite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Manganite",
+"property": "crystal_system",
+"gold": "Monoclinic"
+},
+"Manganokhomyakovite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Manganokhomyakovite",
+"property": "crystal_system",
+"gold": "Trigonal"
+},
+"Manganokhomyakovite/streak": {
+"task": "Mineral-Property",
+"mineral": "Manganokhomyakovite",
+"property": "streak",
+"gold": "White"
+},
+"Mauriziodiniite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Mauriziodiniite",
+"property": "crystal_system",
+"gold": "Hexagonal"
+},
+"Mayingite/colour": {
+"task": "Mineral-Property",
+"mineral": "Mayingite",
+"property": "colour",
+"gold": "Steel black"
+},
+"Miassite/colour": {
+"task": "Mineral-Property",
+"mineral": "Miassite",
+"property": "colour",
+"gold": "Gray"
+},
+"Moissanite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Moissanite",
+"property": "cleavage",
+"gold": "{0001} Indistinct"
+},
+"Moissanite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Moissanite",
+"property": "hardness",
+"gold": "9.25"
+},
+"Moschelite/luster": {
+"task": "Mineral-Property",
+"mineral": "Moschelite",
+"property": "luster",
+"gold": "Adamantine"
+},
+"Muscovite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Muscovite",
+"property": "cleavage",
+"gold": "{001} Perfect"
+},
+"Muscovite/luster": {
+"task": "Mineral-Property",
+"mineral": "Muscovite",
+"property": "luster",
+"gold": "Vitreous"
+},
+"Natrolite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Natrolite",
+"property": "crystal_system",
+"gold": "Orthorhombic"
+},
+"Natrolite/luster": {
+"task": "Mineral-Property",
+"mineral": "Natrolite",
+"property": "luster",
+"gold": "Vitreous - Silky"
+},
+"Natroxalate/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Natroxalate",
+"property": "cleavage",
+"gold": "{100} Perfect, {001} Indistinct"
+},
+"Nickellotharmeyerite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Nickellotharmeyerite",
+"property": "crystal_system",
+"gold": "Monoclinic"
+},
+"Nickellotharmeyerite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Nickellotharmeyerite",
+"property": "element_list",
+"gold": "O, Ni, As, Ca, H"
+},
+"Nierite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Nierite",
+"property": "hardness",
+"gold": "9"
+},
+"Nitratine/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Nitratine",
+"property": "cleavage",
+"gold": "Perfect"
+},
+"Oneillite/colour": {
+"task": "Mineral-Property",
+"mineral": "Oneillite",
+"property": "colour",
+"gold": "Yellowish brown"
+},
+"Oneillite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Oneillite",
+"property": "hardness",
+"gold": "5"
+},
+"Orthogersdorffite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Orthogersdorffite",
+"property": "crystal_system",
+"gold": "Orthorhombic"
+},
+"Oxy-schorl/element_list": {
+"task": "Mineral-Property",
+"mineral": "Oxy-schorl",
+"property": "element_list",
+"gold": "O, Al, Si, Fe, Na, B, H"
+},
+"Oxycalcioroméite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Oxycalcioroméite",
+"property": "specific_gravity",
+"gold": "5.16"
+},
+"Papagoite/luster": {
+"task": "Mineral-Property",
+"mineral": "Papagoite",
+"property": "luster",
+"gold": "Vitreous"
+},
+"Paracelsian/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Paracelsian",
+"property": "cleavage",
+"gold": "{110} Indistinct"
+},
+"Paracelsian/luster": {
+"task": "Mineral-Property",
+"mineral": "Paracelsian",
+"property": "luster",
+"gold": "Vitreous"
+},
+"Paramolybdomenite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Paramolybdomenite",
+"property": "element_list",
+"gold": "Pb, Se, O"
+},
+"Paraniite-(Y)/luster": {
+"task": "Mineral-Property",
+"mineral": "Paraniite-(Y)",
+"property": "luster",
+"gold": "Vitreous"
+},
+"Paravauxite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Paravauxite",
+"property": "element_list",
+"gold": "O, Fe, Al, P, H"
+},
+"Parisite-(Ce)/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Parisite-(Ce)",
+"property": "specific_gravity",
+"gold": "4.34"
+},
+"Penroseite/streak": {
+"task": "Mineral-Property",
+"mineral": "Penroseite",
+"property": "streak",
+"gold": "Black"
+},
+"Perovskite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Perovskite",
+"property": "crystal_system",
+"gold": "Orthorhombic"
+},
+"Petterdite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Petterdite",
+"property": "cleavage",
+"gold": "{100} Fair, {010} Poor"
+},
+"Petterdite/colour": {
+"task": "Mineral-Property",
+"mineral": "Petterdite",
+"property": "colour",
+"gold": "Pale gray, Pinkish violet"
+},
+"Petterdite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Petterdite",
+"property": "element_list",
+"gold": "O, Pb, Cr, C, H"
+},
+"Petterdite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Petterdite",
+"property": "hardness",
+"gold": "2"
+},
+"Phosphammite/streak": {
+"task": "Mineral-Property",
+"mineral": "Phosphammite",
+"property": "streak",
+"gold": "White"
+},
+"Phosphogartrellite/colour": {
+"task": "Mineral-Property",
+"mineral": "Phosphogartrellite",
+"property": "colour",
+"gold": "Bright green"
+},
+"Phosphogartrellite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Phosphogartrellite",
+"property": "specific_gravity",
+"gold": "5.05"
+},
+"Pinakiolite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Pinakiolite",
+"property": "cleavage",
+"gold": "{010} Good"
+},
+"Pinakiolite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Pinakiolite",
+"property": "crystal_system",
+"gold": "Monoclinic"
+},
+"Playfairite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Playfairite",
+"property": "hardness",
+"gold": "3.5"
+},
+"Plumbopalladinite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Plumbopalladinite",
+"property": "specific_gravity",
+"gold": "8.32"
+},
+"Polkovicite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Polkovicite",
+"property": "hardness",
+"gold": "3.5"
+},
+"Pollucite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Pollucite",
+"property": "specific_gravity",
+"gold": "2.9"
+},
+"Polyhalite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Polyhalite",
+"property": "cleavage",
+"gold": "{101} Perfect"
+},
+"Povondraite/colour": {
+"task": "Mineral-Property",
+"mineral": "Povondraite",
+"property": "colour",
+"gold": "Black"
+},
+"Pratesiite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Pratesiite",
+"property": "crystal_system",
+"gold": "Orthorhombic"
+},
+"Pratesiite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Pratesiite",
+"property": "hardness",
+"gold": "3"
+},
+"Prosopite/streak": {
+"task": "Mineral-Property",
+"mineral": "Prosopite",
+"property": "streak",
+"gold": "White"
+},
+"Proto-ferro-anthophyllite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Proto-ferro-anthophyllite",
+"property": "cleavage",
+"gold": "{210}"
+},
+"Proustite/luster": {
+"task": "Mineral-Property",
+"mineral": "Proustite",
+"property": "luster",
+"gold": "Sub Metallic"
+},
+"Pseudograndreefite/colour": {
+"task": "Mineral-Property",
+"mineral": "Pseudograndreefite",
+"property": "colour",
+"gold": "Color"
+},
+"Pseudograndreefite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Pseudograndreefite",
+"property": "hardness",
+"gold": "2.5"
+},
+"Pseudorutile/luster": {
+"task": "Mineral-Property",
+"mineral": "Pseudorutile",
+"property": "luster",
+"gold": "Sub Metallic"
+},
+"Pyrite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Pyrite",
+"property": "element_list",
+"gold": "S, Fe"
+},
+"Pyrophyllite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Pyrophyllite",
+"property": "cleavage",
+"gold": "{001} Perfect"
+},
+"Quadratite/luster": {
+"task": "Mineral-Property",
+"mineral": "Quadratite",
+"property": "luster",
+"gold": "Sub Metallic"
+},
+"Quartz/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Quartz",
+"property": "crystal_system",
+"gold": "Trigonal"
+},
+"Raadeite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Raadeite",
+"property": "crystal_system",
+"gold": "Monoclinic"
+},
+"Raite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Raite",
+"property": "crystal_system",
+"gold": "Orthorhombic"
+},
+"Raite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Raite",
+"property": "specific_gravity",
+"gold": "2.38"
+},
+"Rambergite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Rambergite",
+"property": "hardness",
+"gold": "4"
+},
+"Rambergite/streak": {
+"task": "Mineral-Property",
+"mineral": "Rambergite",
+"property": "streak",
+"gold": "Brown"
+},
+"Ramdohrite/colour": {
+"task": "Mineral-Property",
+"mineral": "Ramdohrite",
+"property": "colour",
+"gold": "Bluish black gray"
+},
+"Ramdohrite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Ramdohrite",
+"property": "crystal_system",
+"gold": "Monoclinic"
+},
+"Ramdohrite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Ramdohrite",
+"property": "element_list",
+"gold": "Sb, Pb, S, Ag, Cd, In, Fe, Mn"
+},
+"Ramsbeckite/colour": {
+"task": "Mineral-Property",
+"mineral": "Ramsbeckite",
+"property": "colour",
+"gold": "Green"
+},
+"Ramsbeckite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Ramsbeckite",
+"property": "hardness",
+"gold": "3.5"
+},
+"Rapidcreekite/streak": {
+"task": "Mineral-Property",
+"mineral": "Rapidcreekite",
+"property": "streak",
+"gold": "White"
+},
+"Rappoldite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Rappoldite",
+"property": "specific_gravity",
+"gold": "5.28"
+},
+"Raspite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Raspite",
+"property": "cleavage",
+"gold": "{100} Perfect"
+},
+"Rasvumite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Rasvumite",
+"property": "crystal_system",
+"gold": "Orthorhombic"
+},
+"Ravatite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Ravatite",
+"property": "crystal_system",
+"gold": "Monoclinic"
+},
+"Ravatite/luster": {
+"task": "Mineral-Property",
+"mineral": "Ravatite",
+"property": "luster",
+"gold": "Vitreous - Waxy"
+},
+"Realgar/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Realgar",
+"property": "cleavage",
+"gold": "{010} Good"
+},
+"Realgar/hardness": {
+"task": "Mineral-Property",
+"mineral": "Realgar",
+"property": "hardness",
+"gold": "1.5"
+},
+"Reevesite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Reevesite",
+"property": "hardness",
+"gold": "2"
+},
+"Reichenbachite/colour": {
+"task": "Mineral-Property",
+"mineral": "Reichenbachite",
+"property": "colour",
+"gold": "Dark green"
+},
+"Reidite/luster": {
+"task": "Mineral-Property",
+"mineral": "Reidite",
+"property": "luster",
+"gold": "Adamantine"
+},
+"Rheniite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Rheniite",
+"property": "specific_gravity",
+"gold": "7.11"
+},
+"Ringwoodite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Ringwoodite",
+"property": "element_list",
+"gold": "O, Fe, Si, Mg"
+},
+"Ringwoodite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Ringwoodite",
+"property": "specific_gravity",
+"gold": "3.24"
+},
+"Ronneburgite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Ronneburgite",
+"property": "specific_gravity",
+"gold": "2.66"
+},
+"Roquesite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Roquesite",
+"property": "hardness",
+"gold": "3.5"
+},
+"Rosasite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Rosasite",
+"property": "crystal_system",
+"gold": "Monoclinic"
+},
+"Roscoelite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Roscoelite",
+"property": "element_list",
+"gold": "O, V, Si, K, Al, H"
+},
+"Roscoelite/luster": {
+"task": "Mineral-Property",
+"mineral": "Roscoelite",
+"property": "luster",
+"gold": "Pearly"
+},
+"Rosiaite/luster": {
+"task": "Mineral-Property",
+"mineral": "Rosiaite",
+"property": "luster",
+"gold": "Resinous"
+},
+"Rossmanite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Rossmanite",
+"property": "element_list",
+"gold": "O, Al, Si, B, Li, H"
+},
+"Rossmanite/luster": {
+"task": "Mineral-Property",
+"mineral": "Rossmanite",
+"property": "luster",
+"gold": "Vitreous"
+},
+"Roterbärite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Roterbärite",
+"property": "element_list",
+"gold": "Se, Bi, Pd, Cu"
+},
+"Rozenite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Rozenite",
+"property": "element_list",
+"gold": "O, Fe, S, H"
+},
+"Rozenite/luster": {
+"task": "Mineral-Property",
+"mineral": "Rozenite",
+"property": "luster",
+"gold": "Earthy"
+},
+"Russellite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Russellite",
+"property": "crystal_system",
+"gold": "Orthorhombic"
+},
+"Rustenburgite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Rustenburgite",
+"property": "hardness",
+"gold": "5"
+},
+"Rutheniridosmine/hardness": {
+"task": "Mineral-Property",
+"mineral": "Rutheniridosmine",
+"property": "hardness",
+"gold": "6"
+},
+"Ruthenium/colour": {
+"task": "Mineral-Property",
+"mineral": "Ruthenium",
+"property": "colour",
+"gold": "Tin white"
+},
+"Ruthenium/element_list": {
+"task": "Mineral-Property",
+"mineral": "Ruthenium",
+"property": "element_list",
+"gold": "Ir, Ru"
+},
+"Rutherfordine/colour": {
+"task": "Mineral-Property",
+"mineral": "Rutherfordine",
+"property": "colour",
+"gold": "Brownish, Brownish yellow, White, Light brown orange, Light yellow"
+},
+"Rutile/colour": {
+"task": "Mineral-Property",
+"mineral": "Rutile",
+"property": "colour",
+"gold": "Blood red, Bluish, Brownish yellow, Brown red, Violet"
+},
+"Sanbornite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Sanbornite",
+"property": "crystal_system",
+"gold": "Orthorhombic"
+},
+"Sanmartinite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Sanmartinite",
+"property": "specific_gravity",
+"gold": "7.83"
+},
+"Saponite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Saponite",
+"property": "hardness",
+"gold": "1.5"
+},
+"Saponite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Saponite",
+"property": "specific_gravity",
+"gold": "2.30"
+},
+"Sartorite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Sartorite",
+"property": "cleavage",
+"gold": "{100} Good"
+},
+"Sartorite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Sartorite",
+"property": "element_list",
+"gold": "Pb, As, S"
+},
+"Schröckingerite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Schröckingerite",
+"property": "element_list",
+"gold": "O, U, Ca, S, Na, F, C, H"
+},
+"Schulenbergite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Schulenbergite",
+"property": "hardness",
+"gold": "2"
+},
+"Scolecite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Scolecite",
+"property": "specific_gravity",
+"gold": "2.28"
+},
+"Sederholmite/colour": {
+"task": "Mineral-Property",
+"mineral": "Sederholmite",
+"property": "colour",
+"gold": "Yellow, Orange yellow"
+},
+"Sederholmite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Sederholmite",
+"property": "specific_gravity",
+"gold": "7.24"
+},
+"Seligmannite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Seligmannite",
+"property": "element_list",
+"gold": "Pb, S, As, Cu"
+},
+"Semseyite/luster": {
+"task": "Mineral-Property",
+"mineral": "Semseyite",
+"property": "luster",
+"gold": "Metallic"
+},
+"Semseyite/streak": {
+"task": "Mineral-Property",
+"mineral": "Semseyite",
+"property": "streak",
+"gold": "Black"
+},
+"Senarmontite/luster": {
+"task": "Mineral-Property",
+"mineral": "Senarmontite",
+"property": "luster",
+"gold": "Adamantine"
+},
+"Sengierite/colour": {
+"task": "Mineral-Property",
+"mineral": "Sengierite",
+"property": "colour",
+"gold": "Green, Yellow green"
+},
+"Sengierite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Sengierite",
+"property": "element_list",
+"gold": "O, U, Cu, V, H"
+},
+"Sepiolite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Sepiolite",
+"property": "cleavage",
+"gold": "Perfect"
+},
+"Sepiolite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Sepiolite",
+"property": "crystal_system",
+"gold": "Orthorhombic"
+},
+"Serandite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Serandite",
+"property": "cleavage",
+"gold": "{100} Perfect, {001} Perfect"
+},
+"Serandite/colour": {
+"task": "Mineral-Property",
+"mineral": "Serandite",
+"property": "colour",
+"gold": "Light brown, Light pink, Orange red"
+},
+"Serandite/luster": {
+"task": "Mineral-Property",
+"mineral": "Serandite",
+"property": "luster",
+"gold": "Vitreous - Pearly"
+},
+"Serendibite/streak": {
+"task": "Mineral-Property",
+"mineral": "Serendibite",
+"property": "streak",
+"gold": "White"
+},
+"Serrabrancaite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Serrabrancaite",
+"property": "crystal_system",
+"gold": "Monoclinic"
+},
+"Sewardite/luster": {
+"task": "Mineral-Property",
+"mineral": "Sewardite",
+"property": "luster",
+"gold": "Vitreous"
+},
+"Shandite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Shandite",
+"property": "specific_gravity",
+"gold": "8.73"
+},
+"Shannonite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Shannonite",
+"property": "element_list",
+"gold": "Pb, O, C"
+},
+"Shannonite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Shannonite",
+"property": "hardness",
+"gold": "3"
+},
+"Shannonite/streak": {
+"task": "Mineral-Property",
+"mineral": "Shannonite",
+"property": "streak",
+"gold": "White"
+},
+"Shattuckite/luster": {
+"task": "Mineral-Property",
+"mineral": "Shattuckite",
+"property": "luster",
+"gold": "Vitreous"
+},
+"Shattuckite/streak": {
+"task": "Mineral-Property",
+"mineral": "Shattuckite",
+"property": "streak",
+"gold": "Blue"
+},
+"Sillimanite/colour": {
+"task": "Mineral-Property",
+"mineral": "Sillimanite",
+"property": "colour",
+"gold": "Bluish, Brownish greenish"
+},
+"Sillimanite/luster": {
+"task": "Mineral-Property",
+"mineral": "Sillimanite",
+"property": "luster",
+"gold": "Vitreous"
+},
+"Silver/hardness": {
+"task": "Mineral-Property",
+"mineral": "Silver",
+"property": "hardness",
+"gold": "2.5–2.75"
+},
+"Sklodowskite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Sklodowskite",
+"property": "element_list",
+"gold": "O, U, Si, Mg, H"
+},
+"Smithsonite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Smithsonite",
+"property": "hardness",
+"gold": "5"
+},
+"Sobolevskite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Sobolevskite",
+"property": "crystal_system",
+"gold": "Hexagonal"
+},
+"Sodalite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Sodalite",
+"property": "cleavage",
+"gold": "{110} Poor"
+},
+"Sodalite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Sodalite",
+"property": "specific_gravity",
+"gold": "2.29"
+},
+"Soddyite/colour": {
+"task": "Mineral-Property",
+"mineral": "Soddyite",
+"property": "colour",
+"gold": "Yellow, Canary yellow, Yellowish green"
+},
+"Sogdianite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Sogdianite",
+"property": "element_list",
+"gold": "O, Si, Zr, K, Li"
+},
+"Spherocobaltite/streak": {
+"task": "Mineral-Property",
+"mineral": "Spherocobaltite",
+"property": "streak",
+"gold": "Pink"
+},
+"Spinel/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Spinel",
+"property": "crystal_system",
+"gold": "Cubic"
+},
+"Spodumene/colour": {
+"task": "Mineral-Property",
+"mineral": "Spodumene",
+"property": "colour",
+"gold": "Grayish white, Pink, Violet, Emerald green, Yellow"
+},
+"Spodumene/element_list": {
+"task": "Mineral-Property",
+"mineral": "Spodumene",
+"property": "element_list",
+"gold": "O, Si, Al, Li"
+},
+"Spodumene/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Spodumene",
+"property": "specific_gravity",
+"gold": "3.15"
+},
+"Stannite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Stannite",
+"property": "cleavage",
+"gold": "{110} Imperfect"
+},
+"Stannite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Stannite",
+"property": "specific_gravity",
+"gold": "4.47"
+},
+"Stibioclaudetite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Stibioclaudetite",
+"property": "crystal_system",
+"gold": "Monoclinic"
+},
+"Stibioclaudetite/streak": {
+"task": "Mineral-Property",
+"mineral": "Stibioclaudetite",
+"property": "streak",
+"gold": "White"
+},
+"Stibnite/colour": {
+"task": "Mineral-Property",
+"mineral": "Stibnite",
+"property": "colour",
+"gold": "Lead gray, Bluish lead gray, Steel gray, Black"
+},
+"Sudovikovite/luster": {
+"task": "Mineral-Property",
+"mineral": "Sudovikovite",
+"property": "luster",
+"gold": "Metallic"
+},
+"Sugilite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Sugilite",
+"property": "specific_gravity",
+"gold": "2.74"
+},
+"Sylvite/colour": {
+"task": "Mineral-Property",
+"mineral": "Sylvite",
+"property": "colour",
+"gold": "White, Yellowish white, Reddish white, Bluish white, Brownish white"
+},
+"Tantalite-(Mg)/luster": {
+"task": "Mineral-Property",
+"mineral": "Tantalite-(Mg)",
+"property": "luster",
+"gold": "Sub Metallic"
+},
+"Tetrataenite/colour": {
+"task": "Mineral-Property",
+"mineral": "Tetrataenite",
+"property": "colour",
+"gold": "Gray white, Silver white"
+},
+"Tetrataenite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Tetrataenite",
+"property": "specific_gravity",
+"gold": "8.54"
+},
+"Thortveitite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Thortveitite",
+"property": "hardness",
+"gold": "6.5"
+},
+"Tischendorfite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Tischendorfite",
+"property": "crystal_system",
+"gold": "Orthorhombic"
+},
+"Titanite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Titanite",
+"property": "element_list",
+"gold": "O, Ti, Ca, Si"
+},
+"Toledoite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Toledoite",
+"property": "specific_gravity",
+"gold": "5.62"
+},
+"Tremolite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Tremolite",
+"property": "cleavage",
+"gold": "{110} Perfect, {010} Distinct"
+},
+"Tungsten/element_list": {
+"task": "Mineral-Property",
+"mineral": "Tungsten",
+"property": "element_list",
+"gold": "W"
+},
+"Ulexite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Ulexite",
+"property": "hardness",
+"gold": "2.5"
+},
+"Vandendriesscheite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Vandendriesscheite",
+"property": "cleavage",
+"gold": "{001} Perfect"
+},
+"Variscite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Variscite",
+"property": "cleavage",
+"gold": "{010} Perfect"
+},
+"Variscite/luster": {
+"task": "Mineral-Property",
+"mineral": "Variscite",
+"property": "luster",
+"gold": "Earthy"
+},
+"Wagnerite/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Wagnerite",
+"property": "cleavage",
+"gold": "{100} Imperfect, {120} Imperfect, {001} Poor"
+},
+"Wakefieldite-(La)/colour": {
+"task": "Mineral-Property",
+"mineral": "Wakefieldite-(La)",
+"property": "colour",
+"gold": "Light pink, Brown"
+},
+"Walfordite/streak": {
+"task": "Mineral-Property",
+"mineral": "Walfordite",
+"property": "streak",
+"gold": "Amber"
+},
+"Whitlockite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Whitlockite",
+"property": "crystal_system",
+"gold": "Trigonal"
+},
+"Wilhelmkleinite/luster": {
+"task": "Mineral-Property",
+"mineral": "Wilhelmkleinite",
+"property": "luster",
+"gold": "Adamantine"
+},
+"Wiluite/colour": {
+"task": "Mineral-Property",
+"mineral": "Wiluite",
+"property": "colour",
+"gold": "Dark green"
+},
+"Wulfenite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Wulfenite",
+"property": "hardness",
+"gold": "2.5–3"
+},
+"Wurtzite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Wurtzite",
+"property": "hardness",
+"gold": "3.5"
+},
+"Xanthoxenite/luster": {
+"task": "Mineral-Property",
+"mineral": "Xanthoxenite",
+"property": "luster",
+"gold": "Earthy"
+},
+"Yuanjiangite/colour": {
+"task": "Mineral-Property",
+"mineral": "Yuanjiangite",
+"property": "colour",
+"gold": "Silver white"
+},
+"Yulinite/specific_gravity": {
+"task": "Mineral-Property",
+"mineral": "Yulinite",
+"property": "specific_gravity",
+"gold": "5.04"
+},
+"Zaccariniite/element_list": {
+"task": "Mineral-Property",
+"mineral": "Zaccariniite",
+"property": "element_list",
+"gold": "Rh, As, Ni"
+},
+"Zincowoodwardite/luster": {
+"task": "Mineral-Property",
+"mineral": "Zincowoodwardite",
+"property": "luster",
+"gold": "Waxy"
+},
+"Zorite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Zorite",
+"property": "crystal_system",
+"gold": "Orthorhombic"
+},
+"Zorite/hardness": {
+"task": "Mineral-Property",
+"mineral": "Zorite",
+"property": "hardness",
+"gold": "3"
+},
+"Zugshunstite-(Ce)/cleavage": {
+"task": "Mineral-Property",
+"mineral": "Zugshunstite-(Ce)",
+"property": "cleavage",
+"gold": "{010} Poor"
+},
+"geoner-0000": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"chromitite",
+"chromititic dunite",
+"peridotite"
+]
+}
+},
+"geoner-0001": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"ROCK",
+"LOCATION",
+"TIMESCALE"
+],
+"gold": {
+"MINERAL": [
+"gold"
+],
+"ROCK": [
+"granite gneiss",
+"greenstones"
+],
+"LOCATION": [
+"lake barlee"
+],
+"TIMESCALE": [
+"archaean"
+]
+}
+},
+"geoner-0002": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"ROCK",
+"STRAT"
+],
+"gold": {
+"MINERAL": [
+"magnetite"
+],
+"ROCK": [
+"gabbro"
+],
+"STRAT": [
+"shephards discordant zone"
+]
+}
+},
+"geoner-0003": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL"
+],
+"gold": {
+"MINERAL": [
+"gold"
+]
+}
+},
+"geoner-0004": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"ROCK"
+],
+"gold": {
+"MINERAL": [
+"magnetite"
+],
+"ROCK": [
+"bif"
+]
+}
+},
+"geoner-0005": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"ROCK"
+],
+"gold": {
+"MINERAL": [
+"tremolite"
+],
+"ROCK": [
+"basalt",
+"talc chlorite schist"
+]
+}
+},
+"geoner-0006": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"gabbro",
+"peridotite"
+]
+}
+},
+"geoner-0007": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"banded iron formations",
+"cherts",
+"shales",
+"volcanics"
+]
+}
+},
+"geoner-0008": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION"
+],
+"gold": {
+"LOCATION": [
+"paynes find"
+]
+}
+},
+"geoner-0009": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"granite"
+]
+}
+},
+"geoner-0010": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"STRAT"
+],
+"gold": {
+"MINERAL": [
+"hematite"
+],
+"STRAT": [
+"kimberley group",
+"pentecost sandstone"
+]
+}
+},
+"geoner-0011": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"bif",
+"mafic ultramafic rocks"
+]
+}
+},
+"geoner-0012": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL"
+],
+"gold": {
+"MINERAL": [
+"goethite sulphide",
+"quartz"
+]
+}
+},
+"geoner-0013": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION"
+],
+"gold": {
+"LOCATION": [
+"pinjin fault",
+"pinjin king shear"
+]
+}
+},
+"geoner-0014": {
+"task": "Geo-NER",
+"labels": [
+"STRAT"
+],
+"gold": {
+"STRAT": [
+"boongal",
+"boongal formation",
+"bunjinah formation",
+"bunjinah formations",
+"fortescue group",
+"hardey formation",
+"jeerinah formation",
+"mount roe basalt",
+"pyradie formation"
+]
+}
+},
+"geoner-0015": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"LOCATION"
+],
+"gold": {
+"MINERAL": [
+"gold"
+],
+"LOCATION": [
+"carosue dam"
+]
+}
+},
+"geoner-0016": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION",
+"STRAT",
+"TIMESCALE"
+],
+"gold": {
+"LOCATION": [
+"eastern goldfields",
+"yilgarn craton"
+],
+"STRAT": [
+"kalgoorlie terrane"
+],
+"TIMESCALE": [
+"archaean"
+]
+}
+},
+"geoner-0017": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"bedrock",
+"granite",
+"metasedimentary",
+"metavolcanic"
+]
+}
+},
+"geoner-0018": {
+"task": "Geo-NER",
+"labels": [
+"STRAT"
+],
+"gold": {
+"STRAT": [
+"milgoo layered series"
+]
+}
+},
+"geoner-0019": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION"
+],
+"gold": {
+"LOCATION": [
+"hamersley iron province",
+"western australia"
+]
+}
+},
+"geoner-0020": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"agglomerate",
+"basalt",
+"chert",
+"dacite lava",
+"rhyolite",
+"tuff"
+]
+}
+},
+"geoner-0021": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"LOCATION",
+"STRAT",
+"TIMESCALE"
+],
+"gold": {
+"MINERAL": [
+"sulphide"
+],
+"LOCATION": [
+"whim creek"
+],
+"STRAT": [
+"greenstone belt"
+],
+"TIMESCALE": [
+"archaean"
+]
+}
+},
+"geoner-0022": {
+"task": "Geo-NER",
+"labels": [
+"ROCK",
+"STRAT"
+],
+"gold": {
+"ROCK": [
+"quartzite"
+],
+"STRAT": [
+"kylena"
+]
+}
+},
+"geoner-0023": {
+"task": "Geo-NER",
+"labels": [
+"ROCK",
+"LOCATION",
+"ORE_DEPOSIT"
+],
+"gold": {
+"ROCK": [
+"lamprophyre",
+"monzonite",
+"porphyry",
+"volcaniclastic sediments"
+],
+"LOCATION": [
+"whirling dervish"
+],
+"ORE_DEPOSIT": [
+"gold ore"
+]
+}
+},
+"geoner-0024": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"gabbro"
+]
+}
+},
+"geoner-0025": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION",
+"ORE_DEPOSIT"
+],
+"gold": {
+"LOCATION": [
+"karari",
+"luvironza"
+],
+"ORE_DEPOSIT": [
+"gold deposits"
+]
+}
+},
+"geoner-0026": {
+"task": "Geo-NER",
+"labels": [
+"ORE_DEPOSIT"
+],
+"gold": {
+"ORE_DEPOSIT": [
+"uranium"
+]
+}
+},
+"geoner-0027": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL"
+],
+"gold": {
+"MINERAL": [
+"quartz"
+]
+}
+},
+"geoner-0028": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"ROCK"
+],
+"gold": {
+"MINERAL": [
+"olivines"
+],
+"ROCK": [
+"dunites",
+"peridotites"
+]
+}
+},
+"geoner-0029": {
+"task": "Geo-NER",
+"labels": [
+"ROCK",
+"STRAT"
+],
+"gold": {
+"ROCK": [
+"felsic",
+"felsic volcanic rocks",
+"greenstone",
+"mafic intrusive rocks",
+"mafic volcanic rocks"
+],
+"STRAT": [
+"yerilgee greenstone belt"
+]
+}
+},
+"geoner-0030": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL"
+],
+"gold": {
+"MINERAL": [
+"gold"
+]
+}
+},
+"geoner-0031": {
+"task": "Geo-NER",
+"labels": [
+"STRAT"
+],
+"gold": {
+"STRAT": [
+"whim creek group"
+]
+}
+},
+"geoner-0032": {
+"task": "Geo-NER",
+"labels": [
+"ROCK",
+"STRAT",
+"TIMESCALE"
+],
+"gold": {
+"ROCK": [
+"sedimentary sequences"
+],
+"STRAT": [
+"pallinup siltstone"
+],
+"TIMESCALE": [
+"archaean",
+"proterozoic",
+"tertiary"
+]
+}
+},
+"geoner-0033": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"LOCATION"
+],
+"gold": {
+"MINERAL": [
+"gold"
+],
+"LOCATION": [
+"whirling dervish"
+]
+}
+},
+"geoner-0034": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL"
+],
+"gold": {
+"MINERAL": [
+"manganese"
+]
+}
+},
+"geoner-0035": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"ORE_DEPOSIT"
+],
+"gold": {
+"MINERAL": [
+"copper",
+"copper zinc",
+"nickel"
+],
+"ORE_DEPOSIT": [
+"gold deposits"
+]
+}
+},
+"geoner-0036": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"andesite",
+"basalt",
+"mafic intrusives",
+"sedimentary rocks",
+"siltstones",
+"tuffs",
+"volcanic sequence"
+]
+}
+},
+"geoner-0037": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"ORE_DEPOSIT"
+],
+"gold": {
+"MINERAL": [
+"hematite"
+],
+"ORE_DEPOSIT": [
+"dso"
+]
+}
+},
+"geoner-0038": {
+"task": "Geo-NER",
+"labels": [
+"ROCK",
+"STRAT"
+],
+"gold": {
+"ROCK": [
+"sediments",
+"ultramafic volcanics"
+],
+"STRAT": [
+"greenstone belt"
+]
+}
+},
+"geoner-0039": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL"
+],
+"gold": {
+"MINERAL": [
+"gold",
+"sulphides"
+]
+}
+},
+"geoner-0040": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION",
+"TIMESCALE"
+],
+"gold": {
+"LOCATION": [
+"capricorn orogen",
+"west australian craton",
+"yilgarn cratons"
+],
+"TIMESCALE": [
+"archaean",
+"palaeoproterozoic"
+]
+}
+},
+"geoner-0041": {
+"task": "Geo-NER",
+"labels": [
+"TIMESCALE"
+],
+"gold": {
+"TIMESCALE": [
+"archaean"
+]
+}
+},
+"geoner-0042": {
+"task": "Geo-NER",
+"labels": [
+"ROCK",
+"LOCATION",
+"STRAT"
+],
+"gold": {
+"ROCK": [
+"intrusive rocks",
+"volcaniclastic sedimentary rocks"
+],
+"LOCATION": [
+"eastern goldfields"
+],
+"STRAT": [
+"greenstone belts"
+]
+}
+},
+"geoner-0043": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL"
+],
+"gold": {
+"MINERAL": [
+"biotite",
+"k feldspar",
+"muscovite",
+"quartz",
+"tourmaline"
+]
+}
+},
+"geoner-0044": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"ORE_DEPOSIT"
+],
+"gold": {
+"MINERAL": [
+"galena",
+"marcasite",
+"pyrite",
+"sphalerite"
+],
+"ORE_DEPOSIT": [
+"base metal"
+]
+}
+},
+"geoner-0045": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION"
+],
+"gold": {
+"LOCATION": [
+"mount oscar",
+"roebourne",
+"western australia"
+]
+}
+},
+"geoner-0046": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL"
+],
+"gold": {
+"MINERAL": [
+"gold"
+]
+}
+},
+"geoner-0047": {
+"task": "Geo-NER",
+"labels": [
+"ORE_DEPOSIT"
+],
+"gold": {
+"ORE_DEPOSIT": [
+"base metal"
+]
+}
+},
+"geoner-0048": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"bif"
+]
+}
+},
+"geoner-0049": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL"
+],
+"gold": {
+"MINERAL": [
+"chalcopyrite",
+"pyrite",
+"pyrrhotite",
+"quartz"
+]
+}
+},
+"geoner-0050": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"ROCK"
+],
+"gold": {
+"MINERAL": [
+"carbonate"
+],
+"ROCK": [
+"greywacke",
+"quartzite",
+"sandstone",
+"siltstone"
+]
+}
+},
+"geoner-0051": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION"
+],
+"gold": {
+"LOCATION": [
+"perth"
+]
+}
+},
+"geoner-0052": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"ROCK"
+],
+"gold": {
+"MINERAL": [
+"gold"
+],
+"ROCK": [
+"soil"
+]
+}
+},
+"geoner-0053": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"STRAT"
+],
+"gold": {
+"MINERAL": [
+"zircon"
+],
+"STRAT": [
+"june hill volcanics"
+]
+}
+},
+"geoner-0054": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"LOCATION"
+],
+"gold": {
+"MINERAL": [
+"gold"
+],
+"LOCATION": [
+"karari pit"
+]
+}
+},
+"geoner-0055": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"LOCATION",
+"STRAT",
+"TIMESCALE"
+],
+"gold": {
+"MINERAL": [
+"gold"
+],
+"LOCATION": [
+"peak hill",
+"western australia"
+],
+"STRAT": [
+"telfer dome"
+],
+"TIMESCALE": [
+"proterozoic"
+]
+}
+},
+"geoner-0056": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL"
+],
+"gold": {
+"MINERAL": [
+"gold"
+]
+}
+},
+"geoner-0057": {
+"task": "Geo-NER",
+"labels": [
+"STRAT"
+],
+"gold": {
+"STRAT": [
+"bandalup ultramafics",
+"carlingup formation",
+"chester formation",
+"hatfield formation",
+"maydon basalt"
+]
+}
+},
+"geoner-0058": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL"
+],
+"gold": {
+"MINERAL": [
+"copper"
+]
+}
+},
+"geoner-0059": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION"
+],
+"gold": {
+"LOCATION": [
+"kundana"
+]
+}
+},
+"geoner-0060": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"granitoid intrusions",
+"sediments"
+]
+}
+},
+"geoner-0061": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"bif"
+]
+}
+},
+"geoner-0062": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL"
+],
+"gold": {
+"MINERAL": [
+"gold"
+]
+}
+},
+"geoner-0063": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"ROCK",
+"ORE_DEPOSIT"
+],
+"gold": {
+"MINERAL": [
+"iron"
+],
+"ROCK": [
+"amphibolites",
+"bif",
+"sedimentary rocks"
+],
+"ORE_DEPOSIT": [
+"gold deposit"
+]
+}
+},
+"geoner-0064": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"STRAT"
+],
+"gold": {
+"MINERAL": [
+"hematite"
+],
+"STRAT": [
+"brockman",
+"marra mamba",
+"wyloo dome"
+]
+}
+},
+"geoner-0065": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"ultramafic volcanics"
+]
+}
+},
+"geoner-0066": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"ROCK",
+"STRAT"
+],
+"gold": {
+"MINERAL": [
+"hematite"
+],
+"ROCK": [
+"banded iron formation",
+"chert",
+"granular iron formation",
+"laterite",
+"mafic ultramafic rocks",
+"meta sedimentary rocks"
+],
+"STRAT": [
+"padbury group",
+"robinson range formation"
+]
+}
+},
+"geoner-0067": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION",
+"TIMESCALE"
+],
+"gold": {
+"LOCATION": [
+"eastern goldfields province",
+"menzies",
+"yilgarn"
+],
+"TIMESCALE": [
+"archaean"
+]
+}
+},
+"geoner-0068": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"orthocumulate olivine dunite",
+"peridotite"
+]
+}
+},
+"geoner-0069": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"diorite"
+]
+}
+},
+"geoner-0070": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"ROCK"
+],
+"gold": {
+"MINERAL": [
+"quartz"
+],
+"ROCK": [
+"amygdales"
+]
+}
+},
+"geoner-0071": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"black shale"
+]
+}
+},
+"geoner-0072": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL"
+],
+"gold": {
+"MINERAL": [
+"gold"
+]
+}
+},
+"geoner-0073": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL"
+],
+"gold": {
+"MINERAL": [
+"biotite",
+"chlorite",
+"feldspar",
+"muscovite",
+"quartz"
+]
+}
+},
+"geoner-0074": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"schists",
+"shales"
+]
+}
+},
+"geoner-0075": {
+"task": "Geo-NER",
+"labels": [
+"TIMESCALE"
+],
+"gold": {
+"TIMESCALE": [
+"archaean"
+]
+}
+},
+"geoner-0076": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION"
+],
+"gold": {
+"LOCATION": [
+"western australia",
+"wyloo"
+]
+}
+},
+"geoner-0077": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"banded iron formations",
+"sedimentary rocks"
+]
+}
+},
+"geoner-0078": {
+"task": "Geo-NER",
+"labels": [
+"ROCK",
+"LOCATION"
+],
+"gold": {
+"ROCK": [
+"gossans",
+"porphyry"
+],
+"LOCATION": [
+"bottle creek"
+]
+}
+},
+"geoner-0079": {
+"task": "Geo-NER",
+"labels": [
+"ORE_DEPOSIT"
+],
+"gold": {
+"ORE_DEPOSIT": [
+"base metal"
+]
+}
+},
+"geoner-0080": {
+"task": "Geo-NER",
+"labels": [
+"STRAT"
+],
+"gold": {
+"STRAT": [
+"kalgoorlie",
+"norseman sequence"
+]
+}
+},
+"geoner-0081": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION"
+],
+"gold": {
+"LOCATION": [
+"meekatharra",
+"murchison region",
+"western australia"
+]
+}
+},
+"geoner-0082": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"ROCK"
+],
+"gold": {
+"MINERAL": [
+"sulfides"
+],
+"ROCK": [
+"bif"
+]
+}
+},
+"geoner-0083": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"bedrock",
+"soils"
+]
+}
+},
+"geoner-0084": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL"
+],
+"gold": {
+"MINERAL": [
+"sericite"
+]
+}
+},
+"geoner-0085": {
+"task": "Geo-NER",
+"labels": [
+"ROCK",
+"LOCATION",
+"ORE_DEPOSIT"
+],
+"gold": {
+"ROCK": [
+"calcrete"
+],
+"LOCATION": [
+"australia",
+"lake barlee"
+],
+"ORE_DEPOSIT": [
+"uranium"
+]
+}
+},
+"geoner-0086": {
+"task": "Geo-NER",
+"labels": [
+"ROCK",
+"LOCATION"
+],
+"gold": {
+"ROCK": [
+"komatiite"
+],
+"LOCATION": [
+"ravensthorpe synform"
+]
+}
+},
+"geoner-0087": {
+"task": "Geo-NER",
+"labels": [
+"STRAT"
+],
+"gold": {
+"STRAT": [
+"panton intrusion"
+]
+}
+},
+"geoner-0088": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"LOCATION"
+],
+"gold": {
+"MINERAL": [
+"cobalt",
+"gold",
+"nickel"
+],
+"LOCATION": [
+"menzies"
+]
+}
+},
+"geoner-0089": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"ROCK",
+"LOCATION",
+"STRAT"
+],
+"gold": {
+"MINERAL": [
+"quartz"
+],
+"ROCK": [
+"clastic sediments",
+"muscovite metasediments"
+],
+"LOCATION": [
+"forrestania"
+],
+"STRAT": [
+"greenstone belt"
+]
+}
+},
+"geoner-0090": {
+"task": "Geo-NER",
+"labels": [
+"ROCK",
+"STRAT"
+],
+"gold": {
+"ROCK": [
+"rhyodacite"
+],
+"STRAT": [
+"earaheedy group",
+"imbin inlier",
+"yelma formation"
+]
+}
+},
+"geoner-0091": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION",
+"STRAT"
+],
+"gold": {
+"LOCATION": [
+"forrestania"
+],
+"STRAT": [
+"greenstone belt"
+]
+}
+},
+"geoner-0092": {
+"task": "Geo-NER",
+"labels": [
+"ROCK",
+"LOCATION"
+],
+"gold": {
+"ROCK": [
+"granitoids",
+"sedimentary rocks"
+],
+"LOCATION": [
+"gascoyne province"
+]
+}
+},
+"geoner-0093": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION"
+],
+"gold": {
+"LOCATION": [
+"balfour downs"
+]
+}
+},
+"geoner-0094": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"ROCK",
+"STRAT"
+],
+"gold": {
+"MINERAL": [
+"fe"
+],
+"ROCK": [
+"schist"
+],
+"STRAT": [
+"cockatoo formation"
+]
+}
+},
+"geoner-0095": {
+"task": "Geo-NER",
+"labels": [
+"ROCK",
+"LOCATION"
+],
+"gold": {
+"ROCK": [
+"conglomerate",
+"iron formation"
+],
+"LOCATION": [
+"peak hill"
+]
+}
+},
+"geoner-0096": {
+"task": "Geo-NER",
+"labels": [
+"ROCK",
+"STRAT"
+],
+"gold": {
+"ROCK": [
+"granitoid"
+],
+"STRAT": [
+"greenstone belts"
+]
+}
+},
+"geoner-0097": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"ROCK"
+],
+"gold": {
+"MINERAL": [
+"biotite",
+"quartz"
+],
+"ROCK": [
+"andesites",
+"granite",
+"monzogranite",
+"porphyry"
+]
+}
+},
+"geoner-0098": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"ROCK"
+],
+"gold": {
+"MINERAL": [
+"iron"
+],
+"ROCK": [
+"hematite quartzites"
+]
+}
+},
+"geoner-0099": {
+"task": "Geo-NER",
+"labels": [
+"STRAT"
+],
+"gold": {
+"STRAT": [
+"panton intrusion"
+]
+}
+},
+"geoner-0100": {
+"task": "Geo-NER",
+"labels": [
+"STRAT"
+],
+"gold": {
+"STRAT": [
+"hamersley group",
+"wyloo dome"
+]
+}
+},
+"geoner-0101": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION",
+"STRAT",
+"TIMESCALE"
+],
+"gold": {
+"LOCATION": [
+"norseman",
+"wiluna"
+],
+"STRAT": [
+"greenstone belt"
+],
+"TIMESCALE": [
+"archaean"
+]
+}
+},
+"geoner-0102": {
+"task": "Geo-NER",
+"labels": [
+"STRAT"
+],
+"gold": {
+"STRAT": [
+"panton intrusion"
+]
+}
+},
+"geoner-0103": {
+"task": "Geo-NER",
+"labels": [
+"ROCK",
+"TIMESCALE"
+],
+"gold": {
+"ROCK": [
+"granitic rocks",
+"metasedimentary rocks",
+"volcanic"
+],
+"TIMESCALE": [
+"archaean",
+"proterozoic"
+]
+}
+},
+"geoner-0104": {
+"task": "Geo-NER",
+"labels": [
+"STRAT"
+],
+"gold": {
+"STRAT": [
+"scotty creek",
+"vivien sedimentary"
+]
+}
+},
+"geoner-0105": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL"
+],
+"gold": {
+"MINERAL": [
+"zinc"
+]
+}
+},
+"geoner-0106": {
+"task": "Geo-NER",
+"labels": [
+"ROCK",
+"STRAT"
+],
+"gold": {
+"ROCK": [
+"felsic tuff"
+],
+"STRAT": [
+"frere formation",
+"yelma formation"
+]
+}
+},
+"geoner-0107": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION",
+"ORE_DEPOSIT"
+],
+"gold": {
+"LOCATION": [
+"white foil"
+],
+"ORE_DEPOSIT": [
+"gold deposit"
+]
+}
+},
+"geoner-0108": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL"
+],
+"gold": {
+"MINERAL": [
+"gold",
+"quartz",
+"sulphide"
+]
+}
+},
+"geoner-0109": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"ROCK",
+"LOCATION",
+"ORE_DEPOSIT"
+],
+"gold": {
+"MINERAL": [
+"hematitic"
+],
+"ROCK": [
+"bif"
+],
+"LOCATION": [
+"kingfisher",
+"parrot"
+],
+"ORE_DEPOSIT": [
+"iron ore"
+]
+}
+},
+"geoner-0110": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"ROCK",
+"LOCATION"
+],
+"gold": {
+"MINERAL": [
+"gold"
+],
+"ROCK": [
+"metabasalt",
+"monzogranite"
+],
+"LOCATION": [
+"yundamindera"
+]
+}
+},
+"geoner-0111": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"chromitite",
+"dunite",
+"peridotite"
+]
+}
+},
+"geoner-0112": {
+"task": "Geo-NER",
+"labels": [
+"STRAT"
+],
+"gold": {
+"STRAT": [
+"cockatoo formation"
+]
+}
+},
+"geoner-0113": {
+"task": "Geo-NER",
+"labels": [
+"TIMESCALE"
+],
+"gold": {
+"TIMESCALE": [
+"archaean",
+"proterozoic"
+]
+}
+},
+"geoner-0114": {
+"task": "Geo-NER",
+"labels": [
+"STRAT"
+],
+"gold": {
+"STRAT": [
+"caines well granite",
+"whim creek group"
+]
+}
+},
+"geoner-0115": {
+"task": "Geo-NER",
+"labels": [
+"ROCK",
+"STRAT"
+],
+"gold": {
+"ROCK": [
+"schist"
+],
+"STRAT": [
+"cockatoo formation"
+]
+}
+},
+"geoner-0116": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION"
+],
+"gold": {
+"LOCATION": [
+"carnarvon basin"
+]
+}
+},
+"geoner-0117": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION",
+"STRAT"
+],
+"gold": {
+"LOCATION": [
+"earaheedy basin"
+],
+"STRAT": [
+"sweetwaters well member",
+"yelma formation"
+]
+}
+},
+"geoner-0118": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION",
+"STRAT"
+],
+"gold": {
+"LOCATION": [
+"eastern goldfields province",
+"norseman",
+"western australia",
+"wiluna",
+"yilgarn block"
+],
+"STRAT": [
+"greenstone belt"
+]
+}
+},
+"geoner-0119": {
+"task": "Geo-NER",
+"labels": [
+"ROCK",
+"STRAT"
+],
+"gold": {
+"ROCK": [
+"banded iron formations"
+],
+"STRAT": [
+"noganyer formation"
+]
+}
+},
+"geoner-0120": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"duricrust",
+"ironstone",
+"sediments"
+]
+}
+},
+"geoner-0121": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION",
+"ORE_DEPOSIT"
+],
+"gold": {
+"LOCATION": [
+"pilbara"
+],
+"ORE_DEPOSIT": [
+"nickel copper deposits"
+]
+}
+},
+"geoner-0122": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"shale"
+]
+}
+},
+"geoner-0123": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL"
+],
+"gold": {
+"MINERAL": [
+"quartz"
+]
+}
+},
+"geoner-0124": {
+"task": "Geo-NER",
+"labels": [
+"ORE_DEPOSIT"
+],
+"gold": {
+"ORE_DEPOSIT": [
+"iron ore"
+]
+}
+},
+"geoner-0125": {
+"task": "Geo-NER",
+"labels": [
+"ORE_DEPOSIT",
+"TIMESCALE"
+],
+"gold": {
+"ORE_DEPOSIT": [
+"gold deposits"
+],
+"TIMESCALE": [
+"archaean"
+]
+}
+},
+"geoner-0126": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"iron formation",
+"sandstones"
+]
+}
+},
+"geoner-0127": {
+"task": "Geo-NER",
+"labels": [
+"ORE_DEPOSIT"
+],
+"gold": {
+"ORE_DEPOSIT": [
+"iron ore"
+]
+}
+},
+"geoner-0128": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION"
+],
+"gold": {
+"LOCATION": [
+"balfour downs"
+]
+}
+},
+"geoner-0129": {
+"task": "Geo-NER",
+"labels": [
+"ORE_DEPOSIT"
+],
+"gold": {
+"ORE_DEPOSIT": [
+"uranium"
+]
+}
+},
+"geoner-0130": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION",
+"ORE_DEPOSIT"
+],
+"gold": {
+"LOCATION": [
+"whirling dervish"
+],
+"ORE_DEPOSIT": [
+"gold deposit"
+]
+}
+},
+"geoner-0131": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL"
+],
+"gold": {
+"MINERAL": [
+"plagioclase",
+"quartz"
+]
+}
+},
+"geoner-0132": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"ROCK"
+],
+"gold": {
+"MINERAL": [
+"quartz"
+],
+"ROCK": [
+"chloritic",
+"sandstone"
+]
+}
+},
+"geoner-0133": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION"
+],
+"gold": {
+"LOCATION": [
+"robinson ranges"
+]
+}
+},
+"geoner-0134": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION"
+],
+"gold": {
+"LOCATION": [
+"western australia"
+]
+}
+},
+"geoner-0135": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"basalts",
+"cherts",
+"shales"
+]
+}
+},
+"geoner-0136": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"gabbro"
+]
+}
+},
+"geoner-0137": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"bif",
+"felsic schists",
+"mafic basaltic",
+"sedimentary rocks",
+"ultramafic rocks"
+]
+}
+},
+"geoner-0138": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL"
+],
+"gold": {
+"MINERAL": [
+"biotite",
+"chlorite"
+]
+}
+},
+"geoner-0139": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION"
+],
+"gold": {
+"LOCATION": [
+"kalgoorlie",
+"wa"
+]
+}
+},
+"geoner-0140": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION",
+"TIMESCALE"
+],
+"gold": {
+"LOCATION": [
+"kimberley basin"
+],
+"TIMESCALE": [
+"archaean",
+"palaeoproterozoic"
+]
+}
+},
+"geoner-0141": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION"
+],
+"gold": {
+"LOCATION": [
+"kundana"
+]
+}
+},
+"geoner-0142": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"monzonite"
+]
+}
+},
+"geoner-0143": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"ORE_DEPOSIT"
+],
+"gold": {
+"MINERAL": [
+"gold",
+"manganese"
+],
+"ORE_DEPOSIT": [
+"base metals",
+"iron ores"
+]
+}
+},
+"geoner-0144": {
+"task": "Geo-NER",
+"labels": [
+"ROCK",
+"STRAT"
+],
+"gold": {
+"ROCK": [
+"felsic schists",
+"granitoid",
+"mafic schist",
+"ultramafic"
+],
+"STRAT": [
+"oliver twist granodiorite"
+]
+}
+},
+"geoner-0145": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"ROCK",
+"LOCATION"
+],
+"gold": {
+"MINERAL": [
+"actinolite talc",
+"chlorite"
+],
+"ROCK": [
+"dolerite",
+"dykes",
+"granite",
+"metagabbro",
+"schist",
+"tholeiitic metabasalt"
+],
+"LOCATION": [
+"proterozoic"
+]
+}
+},
+"geoner-0146": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION"
+],
+"gold": {
+"LOCATION": [
+"gindalbie",
+"kalgoorlie"
+]
+}
+},
+"geoner-0147": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"ORE_DEPOSIT"
+],
+"gold": {
+"MINERAL": [
+"magnetite"
+],
+"ORE_DEPOSIT": [
+"dso iron ores"
+]
+}
+},
+"geoner-0148": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"bif",
+"shale"
+]
+}
+},
+"geoner-0149": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"sandstone"
+]
+}
+},
+"geoner-0150": {
+"task": "Geo-NER",
+"labels": [
+"ROCK",
+"STRAT"
+],
+"gold": {
+"ROCK": [
+"basalt",
+"felsic volcanic",
+"komatiite",
+"polymictic conglomerate",
+"sedimentary"
+],
+"STRAT": [
+"kalgoorlie terrane"
+]
+}
+},
+"geoner-0151": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL"
+],
+"gold": {
+"MINERAL": [
+"carbonate"
+]
+}
+},
+"geoner-0152": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"chlorite schist",
+"sandstone"
+]
+}
+},
+"geoner-0153": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"LOCATION",
+"TIMESCALE"
+],
+"gold": {
+"MINERAL": [
+"gold"
+],
+"LOCATION": [
+"western australia"
+],
+"TIMESCALE": [
+"archaean"
+]
+}
+},
+"geoner-0154": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL"
+],
+"gold": {
+"MINERAL": [
+"gold"
+]
+}
+},
+"geoner-0155": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION",
+"STRAT",
+"TIMESCALE"
+],
+"gold": {
+"LOCATION": [
+"perth",
+"western australia",
+"yilgarn craton"
+],
+"STRAT": [
+"greenstone belt"
+],
+"TIMESCALE": [
+"archaean"
+]
+}
+},
+"geoner-0156": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION"
+],
+"gold": {
+"LOCATION": [
+"marble bar",
+"pilbara",
+"port hedland"
+]
+}
+},
+"geoner-0157": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"websterite"
+]
+}
+},
+"geoner-0158": {
+"task": "Geo-NER",
+"labels": [
+"ORE_DEPOSIT"
+],
+"gold": {
+"ORE_DEPOSIT": [
+"iron ore"
+]
+}
+},
+"geoner-0159": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"magnesian basalt",
+"metabasalt",
+"ultramafic intrusive rocks"
+]
+}
+},
+"geoner-0160": {
+"task": "Geo-NER",
+"labels": [
+"ROCK",
+"LOCATION",
+"STRAT"
+],
+"gold": {
+"ROCK": [
+"dacite",
+"rhyolite"
+],
+"LOCATION": [
+"bandalup",
+"kundip"
+],
+"STRAT": [
+"carlingup terrane"
+]
+}
+},
+"geoner-0161": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL"
+],
+"gold": {
+"MINERAL": [
+"gold"
+]
+}
+},
+"geoner-0162": {
+"task": "Geo-NER",
+"labels": [
+"ROCK",
+"ORE_DEPOSIT",
+"TIMESCALE"
+],
+"gold": {
+"ROCK": [
+"gneisses",
+"granites",
+"lacustrine sediments"
+],
+"ORE_DEPOSIT": [
+"uranium"
+],
+"TIMESCALE": [
+"archaean"
+]
+}
+},
+"geoner-0163": {
+"task": "Geo-NER",
+"labels": [
+"ROCK",
+"STRAT"
+],
+"gold": {
+"ROCK": [
+"granular iron formation"
+],
+"STRAT": [
+"frere formation"
+]
+}
+},
+"geoner-0164": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"ROCK"
+],
+"gold": {
+"MINERAL": [
+"biotite",
+"hornblende"
+],
+"ROCK": [
+"peridotites"
+]
+}
+},
+"geoner-0165": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION",
+"STRAT"
+],
+"gold": {
+"LOCATION": [
+"bryah basin",
+"earaheedy basin",
+"yilgarn craton"
+],
+"STRAT": [
+"yerrida basin mooloogool group"
+]
+}
+},
+"geoner-0166": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"granodiorite",
+"porphyry"
+]
+}
+},
+"geoner-0167": {
+"task": "Geo-NER",
+"labels": [
+"ROCK",
+"LOCATION"
+],
+"gold": {
+"ROCK": [
+"hematite arenite"
+],
+"LOCATION": [
+"cockatoo island"
+]
+}
+},
+"geoner-0168": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION"
+],
+"gold": {
+"LOCATION": [
+"gindalbie and pinjin pastoral",
+"kurnalpi district",
+"north coolgardie mineral field",
+"north east coolgardie mineral field",
+"yerilla district"
+]
+}
+},
+"geoner-0169": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"basaltic rocks",
+"dolomite",
+"quartzite"
+]
+}
+},
+"geoner-0170": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"ORE_DEPOSIT"
+],
+"gold": {
+"MINERAL": [
+"gold"
+],
+"ORE_DEPOSIT": [
+"base metal"
+]
+}
+},
+"geoner-0171": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"ORE_DEPOSIT"
+],
+"gold": {
+"MINERAL": [
+"amphibole",
+"marcasite",
+"pyrite",
+"pyrrhotite"
+],
+"ORE_DEPOSIT": [
+"pyrrhotite transitional ore"
+]
+}
+},
+"geoner-0172": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION",
+"ORE_DEPOSIT"
+],
+"gold": {
+"LOCATION": [
+"karari",
+"luvironza",
+"whirling dervish"
+],
+"ORE_DEPOSIT": [
+"gold deposits"
+]
+}
+},
+"geoner-0173": {
+"task": "Geo-NER",
+"labels": [
+"STRAT"
+],
+"gold": {
+"STRAT": [
+"kalgoorlie terrane"
+]
+}
+},
+"geoner-0174": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"quartz veins"
+]
+}
+},
+"geoner-0175": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL"
+],
+"gold": {
+"MINERAL": [
+"gold"
+]
+}
+},
+"geoner-0176": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION"
+],
+"gold": {
+"LOCATION": [
+"anglo saxon shear",
+"pinjin king shear"
+]
+}
+},
+"geoner-0177": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL"
+],
+"gold": {
+"MINERAL": [
+"nickel sulphide"
+]
+}
+},
+"geoner-0178": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL"
+],
+"gold": {
+"MINERAL": [
+"pyrite"
+]
+}
+},
+"geoner-0179": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL"
+],
+"gold": {
+"MINERAL": [
+"chlorite"
+]
+}
+},
+"geoner-0180": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"granite"
+]
+}
+},
+"geoner-0181": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"hematite"
+]
+}
+},
+"geoner-0182": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"ORE_DEPOSIT"
+],
+"gold": {
+"MINERAL": [
+"carbonate"
+],
+"ORE_DEPOSIT": [
+"limonite"
+]
+}
+},
+"geoner-0183": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"amphibolite",
+"greenschist",
+"greenstone"
+]
+}
+},
+"geoner-0184": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION"
+],
+"gold": {
+"LOCATION": [
+"dalwallinu",
+"ninghan",
+"oudabunna",
+"pulagaroo"
+]
+}
+},
+"geoner-0185": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"STRAT"
+],
+"gold": {
+"MINERAL": [
+"zircon"
+],
+"STRAT": [
+"penneshaw formation"
+]
+}
+},
+"geoner-0186": {
+"task": "Geo-NER",
+"labels": [
+"ORE_DEPOSIT"
+],
+"gold": {
+"ORE_DEPOSIT": [
+"pgm ore"
+]
+}
+},
+"geoner-0187": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"ROCK",
+"ORE_DEPOSIT"
+],
+"gold": {
+"MINERAL": [
+"hematite",
+"manganese"
+],
+"ROCK": [
+"banded iron formation"
+],
+"ORE_DEPOSIT": [
+"iron ore"
+]
+}
+},
+"geoner-0188": {
+"task": "Geo-NER",
+"labels": [
+"STRAT"
+],
+"gold": {
+"STRAT": [
+"boorara domain"
+]
+}
+},
+"geoner-0189": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION"
+],
+"gold": {
+"LOCATION": [
+"western australia",
+"wiluna"
+]
+}
+},
+"geoner-0190": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL"
+],
+"gold": {
+"MINERAL": [
+"gold"
+]
+}
+},
+"geoner-0191": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"amphibolite",
+"felsic schists",
+"granite"
+]
+}
+},
+"geoner-0192": {
+"task": "Geo-NER",
+"labels": [
+"ROCK"
+],
+"gold": {
+"ROCK": [
+"fine sand",
+"mudstone"
+]
+}
+},
+"geoner-0193": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"ORE_DEPOSIT"
+],
+"gold": {
+"MINERAL": [
+"sulphides"
+],
+"ORE_DEPOSIT": [
+"limonite"
+]
+}
+},
+"geoner-0194": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"ROCK"
+],
+"gold": {
+"MINERAL": [
+"quartz"
+],
+"ROCK": [
+"granulstone",
+"sandstone"
+]
+}
+},
+"geoner-0195": {
+"task": "Geo-NER",
+"labels": [
+"MINERAL",
+"LOCATION",
+"ORE_DEPOSIT"
+],
+"gold": {
+"MINERAL": [
+"gold"
+],
+"LOCATION": [
+"peak hill"
+],
+"ORE_DEPOSIT": [
+"base metal"
+]
+}
+},
+"geoner-0196": {
+"task": "Geo-NER",
+"labels": [
+"ROCK",
+"STRAT"
+],
+"gold": {
+"ROCK": [
+"granite greenstone"
+],
+"STRAT": [
+"mount roe basalt"
+]
+}
+},
+"geoner-0197": {
+"task": "Geo-NER",
+"labels": [
+"STRAT"
+],
+"gold": {
+"STRAT": [
+"norseman group"
+]
+}
+},
+"geoner-0198": {
+"task": "Geo-NER",
+"labels": [
+"ROCK",
+"TIMESCALE"
+],
+"gold": {
+"ROCK": [
+"granitoids"
+],
+"TIMESCALE": [
+"proterozoic"
+]
+}
+},
+"geoner-0199": {
+"task": "Geo-NER",
+"labels": [
+"LOCATION",
+"STRAT"
+],
+"gold": {
+"LOCATION": [
+"western australia"
+],
+"STRAT": [
+"sandstone greenstone belt"
+]
+}
+},
+"term-0000": {
+"task": "Mineral-Term",
+"gold": "acidic"
+},
+"term-0001": {
+"task": "Mineral-Term",
+"gold": "adiabatic compression"
+},
+"term-0002": {
+"task": "Mineral-Term",
+"gold": "alkali"
+},
+"term-0003": {
+"task": "Mineral-Term",
+"gold": "allochromatic mineral"
+},
+"term-0004": {
+"task": "Mineral-Term",
+"gold": "amorphous"
+},
+"term-0005": {
+"task": "Mineral-Term",
+"gold": "amygdaloid"
+},
+"term-0006": {
+"task": "Mineral-Term",
+"gold": "anemograph"
+},
+"term-0007": {
+"task": "Mineral-Term",
+"gold": "apex law"
+},
+"term-0008": {
+"task": "Mineral-Term",
+"gold": "apparent cohesion"
+},
+"term-0009": {
+"task": "Mineral-Term",
+"gold": "apparent dip"
+},
+"term-0010": {
+"task": "Mineral-Term",
+"gold": "apparent specific gravity"
+},
+"term-0011": {
+"task": "Mineral-Term",
+"gold": "apparent width"
+},
+"term-0012": {
+"task": "Mineral-Term",
+"gold": "arithmetic-mean particle diameter"
+},
+"term-0013": {
+"task": "Mineral-Term",
+"gold": "arizonite"
+},
+"term-0014": {
+"task": "Mineral-Term",
+"gold": "arsenate"
+},
+"term-0015": {
+"task": "Mineral-Term",
+"gold": "arsenite"
+},
+"term-0016": {
+"task": "Mineral-Term",
+"gold": "artificial brine"
+},
+"term-0017": {
+"task": "Mineral-Term",
+"gold": "attritious wear"
+},
+"term-0018": {
+"task": "Mineral-Term",
+"gold": "autogenous roasting"
+},
+"term-0019": {
+"task": "Mineral-Term",
+"gold": "balanced draft"
+},
+"term-0020": {
+"task": "Mineral-Term",
+"gold": "basement complex"
+},
+"term-0021": {
+"task": "Mineral-Term",
+"gold": "basin"
+},
+"term-0022": {
+"task": "Mineral-Term",
+"gold": "basining"
+},
+"term-0023": {
+"task": "Mineral-Term",
+"gold": "batch test"
+},
+"term-0024": {
+"task": "Mineral-Term",
+"gold": "batch treatment"
+},
+"term-0025": {
+"task": "Mineral-Term",
+"gold": "bate"
+},
+"term-0026": {
+"task": "Mineral-Term",
+"gold": "batholith"
+},
+"term-0027": {
+"task": "Mineral-Term",
+"gold": "belt capacity"
+},
+"term-0028": {
+"task": "Mineral-Term",
+"gold": "Bertrand lens"
+},
+"term-0029": {
+"task": "Mineral-Term",
+"gold": "biaxial stone"
+},
+"term-0030": {
+"task": "Mineral-Term",
+"gold": "bimagmatic"
+},
+"term-0031": {
+"task": "Mineral-Term",
+"gold": "black muck"
+},
+"term-0032": {
+"task": "Mineral-Term",
+"gold": "blue brittleness"
+},
+"term-0033": {
+"task": "Mineral-Term",
+"gold": "book mica"
+},
+"term-0034": {
+"task": "Mineral-Term",
+"gold": "botryoidal"
+},
+"term-0035": {
+"task": "Mineral-Term",
+"gold": "boudinage"
+},
+"term-0036": {
+"task": "Mineral-Term",
+"gold": "Buchner funnel"
+},
+"term-0037": {
+"task": "Mineral-Term",
+"gold": "bull wheel"
+},
+"term-0038": {
+"task": "Mineral-Term",
+"gold": "canvas table"
+},
+"term-0039": {
+"task": "Mineral-Term",
+"gold": "carbonate sand"
+},
+"term-0040": {
+"task": "Mineral-Term",
+"gold": "cast booster"
+},
+"term-0041": {
+"task": "Mineral-Term",
+"gold": "cementation"
+},
+"term-0042": {
+"task": "Mineral-Term",
+"gold": "cleft"
+},
+"term-0043": {
+"task": "Mineral-Term",
+"gold": "coal slime"
+},
+"term-0044": {
+"task": "Mineral-Term",
+"gold": "cobbing"
+},
+"term-0045": {
+"task": "Mineral-Term",
+"gold": "cobblestone"
+},
+"term-0046": {
+"task": "Mineral-Term",
+"gold": "competent bed"
+},
+"term-0047": {
+"task": "Mineral-Term",
+"gold": "concentration criterion"
+},
+"term-0048": {
+"task": "Mineral-Term",
+"gold": "cone-in-cone structure"
+},
+"term-0049": {
+"task": "Mineral-Term",
+"gold": "connecting wire"
+},
+"term-0050": {
+"task": "Mineral-Term",
+"gold": "constant error"
+},
+"term-0051": {
+"task": "Mineral-Term",
+"gold": "countercurrent principle"
+},
+"term-0052": {
+"task": "Mineral-Term",
+"gold": "craunch"
+},
+"term-0053": {
+"task": "Mineral-Term",
+"gold": "critical minerals"
+},
+"term-0054": {
+"task": "Mineral-Term",
+"gold": "crossed polars"
+},
+"term-0055": {
+"task": "Mineral-Term",
+"gold": "crush"
+},
+"term-0056": {
+"task": "Mineral-Term",
+"gold": "crystal settling"
+},
+"term-0057": {
+"task": "Mineral-Term",
+"gold": "dam"
+},
+"term-0058": {
+"task": "Mineral-Term",
+"gold": "decussate texture"
+},
+"term-0059": {
+"task": "Mineral-Term",
+"gold": "dedusting"
+},
+"term-0060": {
+"task": "Mineral-Term",
+"gold": "depression contour"
+},
+"term-0061": {
+"task": "Mineral-Term",
+"gold": "derrick"
+},
+"term-0062": {
+"task": "Mineral-Term",
+"gold": "derricking jib crane"
+},
+"term-0063": {
+"task": "Mineral-Term",
+"gold": "descensional ventilation"
+},
+"term-0064": {
+"task": "Mineral-Term",
+"gold": "desliming"
+},
+"term-0065": {
+"task": "Mineral-Term",
+"gold": "desliming screen"
+},
+"term-0066": {
+"task": "Mineral-Term",
+"gold": "detrital"
+},
+"term-0067": {
+"task": "Mineral-Term",
+"gold": "diabase"
+},
+"term-0068": {
+"task": "Mineral-Term",
+"gold": "diaphaneity"
+},
+"term-0069": {
+"task": "Mineral-Term",
+"gold": "diatomaceous"
+},
+"term-0070": {
+"task": "Mineral-Term",
+"gold": "diatreme"
+},
+"term-0071": {
+"task": "Mineral-Term",
+"gold": "differential curvature"
+},
+"term-0072": {
+"task": "Mineral-Term",
+"gold": "diffraction pattern"
+},
+"term-0073": {
+"task": "Mineral-Term",
+"gold": "diggings"
+},
+"term-0074": {
+"task": "Mineral-Term",
+"gold": "dimension stone"
+},
+"term-0075": {
+"task": "Mineral-Term",
+"gold": "district"
+},
+"term-0076": {
+"task": "Mineral-Term",
+"gold": "exposure"
+},
+"term-0077": {
+"task": "Mineral-Term",
+"gold": "fault"
+},
+"term-0078": {
+"task": "Mineral-Term",
+"gold": "fissure"
+},
+"term-0079": {
+"task": "Mineral-Term",
+"gold": "flat"
+},
+"term-0080": {
+"task": "Mineral-Term",
+"gold": "Flexlok"
+},
+"term-0081": {
+"task": "Mineral-Term",
+"gold": "Flodin process"
+},
+"term-0082": {
+"task": "Mineral-Term",
+"gold": "Forel scale"
+},
+"term-0083": {
+"task": "Mineral-Term",
+"gold": "formation"
+},
+"term-0084": {
+"task": "Mineral-Term",
+"gold": "fumarole"
+},
+"term-0085": {
+"task": "Mineral-Term",
+"gold": "Galloway stage"
+},
+"term-0086": {
+"task": "Mineral-Term",
+"gold": "gangue"
+},
+"term-0087": {
+"task": "Mineral-Term",
+"gold": "gap"
+},
+"term-0088": {
+"task": "Mineral-Term",
+"gold": "Gay-Lussac's tower"
+},
+"term-0089": {
+"task": "Mineral-Term",
+"gold": "gem"
+},
+"term-0090": {
+"task": "Mineral-Term",
+"gold": "German steel"
+},
+"term-0091": {
+"task": "Mineral-Term",
+"gold": "glacier"
+},
+"term-0092": {
+"task": "Mineral-Term",
+"gold": "Glover's tower"
+},
+"term-0093": {
+"task": "Mineral-Term",
+"gold": "Granby car"
+},
+"term-0094": {
+"task": "Mineral-Term",
+"gold": "Greenawalt process"
+},
+"term-0095": {
+"task": "Mineral-Term",
+"gold": "Greenburg-Smith impinger"
+},
+"term-0096": {
+"task": "Mineral-Term",
+"gold": "gulch"
+},
+"term-0097": {
+"task": "Mineral-Term",
+"gold": "Hardinge thickener"
+},
+"term-0098": {
+"task": "Mineral-Term",
+"gold": "Hauy's law"
+},
+"term-0099": {
+"task": "Mineral-Term",
+"gold": "hill"
+},
+"term-0100": {
+"task": "Mineral-Term",
+"gold": "Hoskold formula"
+},
+"term-0101": {
+"task": "Mineral-Term",
+"gold": "Hummer screen"
+},
+"term-0102": {
+"task": "Mineral-Term",
+"gold": "ima status"
+},
+"term-0103": {
+"task": "Mineral-Term",
+"gold": "impact crater"
+},
+"term-0104": {
+"task": "Mineral-Term",
+"gold": "intrusion"
+},
+"term-0105": {
+"task": "Mineral-Term",
+"gold": "island arc"
+},
+"term-0106": {
+"task": "Mineral-Term",
+"gold": "isthmus"
+},
+"term-0107": {
+"task": "Mineral-Term",
+"gold": "kimberlite"
+},
+"term-0108": {
+"task": "Mineral-Term",
+"gold": "landslide"
+},
+"term-0109": {
+"task": "Mineral-Term",
+"gold": "level"
+},
+"term-0110": {
+"task": "Mineral-Term",
+"gold": "lode"
+},
+"term-0111": {
+"task": "Mineral-Term",
+"gold": "Lueders line"
+},
+"term-0112": {
+"task": "Mineral-Term",
+"gold": "Man-Ten steel alloy"
+},
+"term-0113": {
+"task": "Mineral-Term",
+"gold": "massif"
+},
+"term-0114": {
+"task": "Mineral-Term",
+"gold": "mesa"
+},
+"term-0115": {
+"task": "Mineral-Term",
+"gold": "metallogenic province"
+},
+"term-0116": {
+"task": "Mineral-Term",
+"gold": "meteorite fall location"
+},
+"term-0117": {
+"task": "Mineral-Term",
+"gold": "mid-ocean ridge"
+},
+"term-0118": {
+"task": "Mineral-Term",
+"gold": "Miller indices"
+},
+"term-0119": {
+"task": "Mineral-Term",
+"gold": "Miller-Bravais indices"
+},
+"term-0120": {
+"task": "Mineral-Term",
+"gold": "mine"
+},
+"term-0121": {
+"task": "Mineral-Term",
+"gold": "mineral belt"
+},
+"term-0122": {
+"task": "Mineral-Term",
+"gold": "mineral province"
+},
+"term-0123": {
+"task": "Mineral-Term",
+"gold": "mining district"
+},
+"term-0124": {
+"task": "Mineral-Term",
+"gold": "Montana sapphire"
+},
+"term-0125": {
+"task": "Mineral-Term",
+"gold": "moon"
+},
+"term-0126": {
+"task": "Mineral-Term",
+"gold": "moor"
+},
+"term-0127": {
+"task": "Mineral-Term",
+"gold": "mountain range"
+},
+"term-0128": {
+"task": "Mineral-Term",
+"gold": "mud volcano"
+},
+"term-0129": {
+"task": "Mineral-Term",
+"gold": "nunatak"
+},
+"term-0130": {
+"task": "Mineral-Term",
+"gold": "ore deposit"
+},
+"term-0131": {
+"task": "Mineral-Term",
+"gold": "orogen"
+},
+"term-0132": {
+"task": "Mineral-Term",
+"gold": "outcrop"
+},
+"term-0133": {
+"task": "Mineral-Term",
+"gold": "park"
+},
+"term-0134": {
+"task": "Mineral-Term",
+"gold": "Parkes process"
+},
+"term-0135": {
+"task": "Mineral-Term",
+"gold": "Parr formula"
+},
+"term-0136": {
+"task": "Mineral-Term",
+"gold": "pass"
+},
+"term-0137": {
+"task": "Mineral-Term",
+"gold": "Pattinson process"
+},
+"term-0138": {
+"task": "Mineral-Term",
+"gold": "pegmatite"
+},
+"term-0139": {
+"task": "Mineral-Term",
+"gold": "Pilz furnace"
+},
+"term-0140": {
+"task": "Mineral-Term",
+"gold": "pipe"
+},
+"term-0141": {
+"task": "Mineral-Term",
+"gold": "pit"
+},
+"term-0142": {
+"task": "Mineral-Term",
+"gold": "placer"
+},
+"term-0143": {
+"task": "Mineral-Term",
+"gold": "plateau"
+},
+"term-0144": {
+"task": "Mineral-Term",
+"gold": "pluton"
+},
+"term-0145": {
+"task": "Mineral-Term",
+"gold": "pocket"
+},
+"term-0146": {
+"task": "Mineral-Term",
+"gold": "point"
+},
+"term-0147": {
+"task": "Mineral-Term",
+"gold": "Primacord"
+},
+"term-0148": {
+"task": "Mineral-Term",
+"gold": "Primacord-Bickford fuse"
+},
+"term-0149": {
+"task": "Mineral-Term",
+"gold": "Prins washer"
+},
+"term-0150": {
+"task": "Mineral-Term",
+"gold": "property"
+},
+"term-0151": {
+"task": "Mineral-Term",
+"gold": "prospect"
+},
+"term-0152": {
+"task": "Mineral-Term",
+"gold": "quarry"
+},
+"term-0153": {
+"task": "Mineral-Term",
+"gold": "quarter"
+},
+"term-0154": {
+"task": "Mineral-Term",
+"gold": "ravine"
+},
+"term-0155": {
+"task": "Mineral-Term",
+"gold": "reef"
+},
+"term-0156": {
+"task": "Mineral-Term",
+"gold": "Renn-Walz process"
+},
+"term-0157": {
+"task": "Mineral-Term",
+"gold": "ridge"
+},
+"term-0158": {
+"task": "Mineral-Term",
+"gold": "road"
+},
+"term-0159": {
+"task": "Mineral-Term",
+"gold": "S-P interval"
+},
+"term-0160": {
+"task": "Mineral-Term",
+"gold": "S.E.I. photometer"
+},
+"term-0161": {
+"task": "Mineral-Term",
+"gold": "sea"
+},
+"term-0162": {
+"task": "Mineral-Term",
+"gold": "seamount"
+},
+"term-0163": {
+"task": "Mineral-Term",
+"gold": "section"
+},
+"term-0164": {
+"task": "Mineral-Term",
+"gold": "shaft"
+},
+"term-0165": {
+"task": "Mineral-Term",
+"gold": "shield"
+},
+"term-0166": {
+"task": "Mineral-Term",
+"gold": "Siemens-Martin process"
+},
+"term-0167": {
+"task": "Mineral-Term",
+"gold": "sierra"
+},
+"term-0168": {
+"task": "Mineral-Term",
+"gold": "sill"
+},
+"term-0169": {
+"task": "Mineral-Term",
+"gold": "Silurian"
+},
+"term-0170": {
+"task": "Mineral-Term",
+"gold": "skarn"
+},
+"term-0171": {
+"task": "Mineral-Term",
+"gold": "slope"
+},
+"term-0172": {
+"task": "Mineral-Term",
+"gold": "smelter"
+},
+"term-0173": {
+"task": "Mineral-Term",
+"gold": "Soderberg electrode"
+},
+"term-0174": {
+"task": "Mineral-Term",
+"gold": "spring"
+},
+"term-0175": {
+"task": "Mineral-Term",
+"gold": "spur"
+},
+"term-0176": {
+"task": "Mineral-Term",
+"gold": "star"
+},
+"term-0177": {
+"task": "Mineral-Term",
+"gold": "system"
+},
+"term-0178": {
+"task": "Mineral-Term",
+"gold": "tectonic plate"
+},
+"term-0179": {
+"task": "Mineral-Term",
+"gold": "terrane"
+},
+"term-0180": {
+"task": "Mineral-Term",
+"gold": "tillite"
+},
+"term-0181": {
+"task": "Mineral-Term",
+"gold": "township"
+},
+"term-0182": {
+"task": "Mineral-Term",
+"gold": "Triger process"
+},
+"term-0183": {
+"task": "Mineral-Term",
+"gold": "tunnel"
+},
+"term-0184": {
+"task": "Mineral-Term",
+"gold": "V-cut"
+},
+"term-0185": {
+"task": "Mineral-Term",
+"gold": "vein"
+},
+"term-0186": {
+"task": "Mineral-Term",
+"gold": "volcano"
+},
+"term-0187": {
+"task": "Mineral-Term",
+"gold": "wadi"
+},
+"term-0188": {
+"task": "Mineral-Term",
+"gold": "wall rock"
+},
+"term-0189": {
+"task": "Mineral-Term",
+"gold": "Warren girder"
+},
+"term-0190": {
+"task": "Mineral-Term",
+"gold": "wash"
+},
+"term-0191": {
+"task": "Mineral-Term",
+"gold": "Weisbach triangle"
+},
+"term-0192": {
+"task": "Mineral-Term",
+"gold": "Weldon process"
+},
+"term-0193": {
+"task": "Mineral-Term",
+"gold": "well"
+},
+"term-0194": {
+"task": "Mineral-Term",
+"gold": "workings"
+},
+"term-0195": {
+"task": "Mineral-Term",
+"gold": "xenolith"
+},
+"term-0196": {
+"task": "Mineral-Term",
+"gold": "y-axis"
+},
+"term-0197": {
+"task": "Mineral-Term",
+"gold": "yttrialite"
+},
+"term-0198": {
+"task": "Mineral-Term",
+"gold": "zebra dolomite"
+},
+"term-0199": {
+"task": "Mineral-Term",
+"gold": "zone"
+},
+"Åkermanite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Åkermanite",
+"property": "crystal_system",
+"gold": "Tetragonal"
+},
+"Černýite/crystal_system": {
+"task": "Mineral-Property",
+"mineral": "Černýite",
+"property": "crystal_system",
+"gold": "Tetragonal"
+}
+}

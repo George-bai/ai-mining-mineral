@@ -1,0 +1,202 @@
+# Answer key for p37-twin-creeks-mine. Rules and procedure: README.md; how it was made: log.md.
+drawing: p37-twin-creeks-mine
+items:
+  - {id: "rom_oxide_ore", label: "ROM Oxide Ore", name: "run-of-mine oxide ore by truck", kind: "input", area: "oxide crushing"}
+  - {id: "ox_hopper", label: "Hopper", name: "jaw crusher feed hopper", kind: "unit", area: "oxide crushing"}
+  - {id: "jaw_crusher", label: "Jaw Crusher", name: "jaw crusher", kind: "unit", area: "oxide crushing"}
+  - {id: "radial_stacker", label: "Radial Stacker", name: "radial stacker", kind: "carrier", area: "oxide crushing"}
+  - {id: "ox_stockpile", label: "", name: "oxide ore stockpile", kind: "unit", area: "oxide crushing"}
+  - {id: "ox_sag_hopper", label: "Hopper", name: "oxide SAG mill feed hopper", kind: "unit", area: "oxide grinding"}
+  - {id: "return_water_ox", label: "Return Water", name: "return water to oxide grinding", kind: "input", area: "oxide grinding"}
+  - {id: "ox_sag_mill", label: "SAG Mill", name: "oxide SAG mill", kind: "unit", area: "oxide grinding"}
+  - {id: "ox_screen", label: "Screen", name: "oxide SAG discharge screen", kind: "unit", area: "oxide grinding"}
+  - {id: "ox_sump", label: "", name: "oxide cyclone feed sump", kind: "junction", area: "oxide grinding"}
+  - {id: "ox_cyclones", label: "Cyclones", name: "oxide cyclones", kind: "unit", area: "oxide grinding"}
+  - {id: "ox_ball_mill", label: "Ball Mill", name: "oxide ball mill", kind: "unit", area: "oxide grinding"}
+  - {id: "ox_trash_screen", label: "Trash Screen", name: "oxide trash screen", kind: "unit", area: "oxide grinding"}
+  - {id: "ox_thickener", label: "Oxide Thickener", name: "oxide thickener", kind: "unit", area: "oxide grinding"}
+  - {id: "ox_water_tank", label: "", name: "oxide thickener overflow tank", kind: "junction", area: "oxide grinding"}
+  - {id: "water_return_ox", label: "Water Return to Oxide Circuit", name: "water return to oxide circuit", kind: "output", area: "oxide grinding"}
+  - {id: "rom_refractory_ore", label: "ROM Refractory Ore", name: "run-of-mine refractory ore by truck", kind: "input", area: "refractory grinding"}
+  - {id: "ore_blend_stockpiles", label: "Ore Blend Stockpiles", name: "ore blend stockpiles", kind: "unit", area: "refractory grinding", count: 3}
+  - {id: "front_end_loader", label: "Front End Loader", name: "front end loader feeding the refractory hopper", kind: "carrier", area: "refractory grinding"}
+  - {id: "ref_hopper", label: "Hopper", name: "refractory SAG mill feed hopper", kind: "unit", area: "refractory grinding"}
+  - {id: "return_water_ref", label: "Return Water", name: "return water to refractory grinding", kind: "input", area: "refractory grinding"}
+  - {id: "ref_sag_mill", label: "SAG Mill", name: "refractory SAG mill", kind: "unit", area: "refractory grinding"}
+  - {id: "ref_screen", label: "", name: "refractory SAG discharge screen", kind: "unit", area: "refractory grinding"}
+  - {id: "ref_sump_1", label: "", name: "primary cyclone feed sump", kind: "junction", area: "refractory grinding"}
+  - {id: "ref_cyclones_1", label: "Cyclones", name: "primary cyclones", kind: "unit", area: "refractory grinding"}
+  - {id: "primary_ball_mill", label: "Primary Ball Mill", name: "primary ball mill", kind: "unit", area: "refractory grinding"}
+  - {id: "ref_trash_screen", label: "Trash Screen", name: "refractory trash screen", kind: "unit", area: "refractory grinding"}
+  - {id: "ref_sump_2", label: "", name: "secondary cyclone feed sump", kind: "junction", area: "refractory grinding"}
+  - {id: "ref_cyclones_2", label: "Cyclones", name: "secondary cyclones", kind: "unit", area: "refractory grinding"}
+  - {id: "secondary_ball_mill", label: "Secondary Ball Mill", name: "secondary ball mill", kind: "unit", area: "refractory grinding"}
+  - {id: "ref_thickener", label: "Refractory Thickener", name: "refractory thickener", kind: "unit", area: "refractory grinding"}
+  - {id: "ref_water_tank", label: "", name: "refractory thickener overflow tank", kind: "junction", area: "refractory grinding"}
+  - {id: "water_return_ref", label: "Water Return To Refractory Circuit", name: "water return to refractory circuit", kind: "output", area: "refractory grinding"}
+  - {id: "sulfuric_acid", label: "Sulfuric Acid", name: "sulfuric acid", kind: "input", area: "pressure oxidation"}
+  - {id: "air_acid", label: "Air", name: "air to acidulation tanks", kind: "input", area: "pressure oxidation"}
+  - {id: "acidulation_tanks", label: "Acidulation/ Storage Tanks (3)", name: "acidulation and storage tanks", kind: "unit", area: "pressure oxidation", count: 3}
+  - {id: "to_atm_acid", label: "To Atmosphere", name: "acidulation vent stack to atmosphere", kind: "output", area: "pressure oxidation"}
+  - {id: "slurry_heaters", label: "2 Stage Slurry Heaters (2)", name: "two-stage slurry heaters", kind: "unit", area: "pressure oxidation", count: 2}
+  - {id: "autoclave", label: "4 Stage Autoclave", name: "four-compartment autoclave", kind: "unit", area: "pressure oxidation"}
+  - {id: "oxygen", label: "Oxygen", name: "oxygen to autoclave", kind: "input", area: "pressure oxidation"}
+  - {id: "cooling_water_ac", label: "Cooling Water", name: "cooling water to autoclave", kind: "input", area: "pressure oxidation"}
+  - {id: "steam_plant", label: "Steam Generation Plant", name: "steam generation plant", kind: "unit", area: "pressure oxidation"}
+  - {id: "natural_gas", label: "Natural Gas", name: "natural gas", kind: "input", area: "pressure oxidation"}
+  - {id: "to_atm_steam", label: "To Atmosphere", name: "steam plant flue to atmosphere", kind: "output", area: "pressure oxidation"}
+  - {id: "flash_vessels", label: "2 Stage Flash Vessels (2)", name: "two-stage flash vessels", kind: "unit", area: "pressure oxidation", count: 2}
+  - {id: "scrubber", label: "Vent Gas Scrubber(2)", name: "vent gas scrubbers", kind: "unit", area: "pressure oxidation", count: 2}
+  - {id: "water_scrubber", label: "Water", name: "water to scrubber", kind: "input", area: "pressure oxidation"}
+  - {id: "to_atm_scrubber", label: "To Atmosphere", name: "scrubber stack to atmosphere", kind: "output", area: "pressure oxidation"}
+  - {id: "surge_tank_cooling", label: "Surge Tank", name: "oxidized slurry surge tank", kind: "unit", area: "slurry cooling"}
+  - {id: "coolers", label: "Tube and Shell Coolers", name: "tube and shell slurry coolers", kind: "unit", area: "slurry cooling"}
+  - {id: "cooling_tower", label: "Cooling Tower", name: "cooling tower", kind: "unit", area: "slurry cooling"}
+  - {id: "neutralization_tanks", label: "Neutralization Tanks (3)", name: "neutralization tanks", kind: "unit", area: "carbon-in-leach", count: 3}
+  - {id: "lime_silo", label: "Lime Silo", name: "lime silo", kind: "unit", area: "carbon-in-leach"}
+  - {id: "vent_lime", label: "Vent", name: "lime silo vent", kind: "output", area: "carbon-in-leach"}
+  - {id: "tower_mill", label: "Tower Mill(2)", name: "lime tower mills", kind: "unit", area: "carbon-in-leach", count: 2}
+  - {id: "return_water_tm", label: "Return Water", name: "return water to tower mill", kind: "input", area: "carbon-in-leach"}
+  - {id: "air_tm", label: "Air", name: "air to tower mill", kind: "input", area: "carbon-in-leach"}
+  - {id: "cil_tanks", label: "CIL Tanks (7)", name: "carbon-in-leach tanks", kind: "unit", area: "carbon-in-leach", count: 7}
+  - {id: "air_cil", label: "Air", name: "air to CIL tanks", kind: "input", area: "carbon-in-leach"}
+  - {id: "loaded_carbon_screen", label: "Loaded Carbon Screen", name: "loaded carbon screen", kind: "unit", area: "carbon-in-leach"}
+  - {id: "cil_screen", label: "Screen", name: "CIL tailings carbon safety screen", kind: "unit", area: "carbon-in-leach"}
+  - {id: "tails_sump", label: "", name: "tailings pump box", kind: "junction", area: "carbon-in-leach"}
+  - {id: "tailings", label: "Tailings", name: "tailings impoundment", kind: "unit", area: "carbon-in-leach"}
+  - {id: "reclaim_out", label: "Reclaim Water Return to Plant", name: "reclaim water return to plant", kind: "output", area: "carbon-in-leach"}
+  - {id: "surge_tank_carbon", label: "Surge Tank", name: "loaded carbon surge tank", kind: "unit", area: "carbon"}
+  - {id: "acid_wash_tank", label: "Acid Wash Tank", name: "acid wash tank", kind: "unit", area: "carbon"}
+  - {id: "nitric_acid", label: "Nitric Acid", name: "nitric acid", kind: "input", area: "carbon"}
+  - {id: "strip_vessel", label: "Carbon Strip Vessel (2)", name: "carbon strip vessels", kind: "unit", area: "carbon", count: 2}
+  - {id: "kiln_feed_screen", label: "Kiln Feed Screen", name: "kiln feed screens", kind: "unit", area: "carbon", count: 2, note: "one existing and one expansion screen, one label"}
+  - {id: "kiln", label: "Reactivation Kiln", name: "reactivation kilns", kind: "unit", area: "carbon", count: 2, note: "one existing and one expansion kiln, one label"}
+  - {id: "quench_tank", label: "Quench Tank", name: "quench tank", kind: "unit", area: "carbon"}
+  - {id: "carbon_wash_screen", label: "Carbon Wash Screen", name: "carbon wash screen", kind: "unit", area: "carbon"}
+  - {id: "carbon_tank", label: "Carbon Tank", name: "regenerated carbon tank", kind: "unit", area: "carbon"}
+  - {id: "carbon_fines", label: "Carbon Fines To Filter", name: "carbon fines to filter", kind: "output", area: "carbon"}
+  - {id: "heater", label: "Heater", name: "strip solution heater", kind: "unit", area: "gold"}
+  - {id: "heat_exchanger", label: "Heat Exchanger", name: "strip solution heat exchanger", kind: "unit", area: "gold"}
+  - {id: "caustic", label: "Caustic", name: "caustic", kind: "input", area: "gold"}
+  - {id: "barren_tank", label: "Barren Sol. Tank", name: "barren solution tank", kind: "unit", area: "gold"}
+  - {id: "pregnant_tank", label: "Pregnant Sol. Tank", name: "pregnant solution tank", kind: "unit", area: "gold"}
+  - {id: "ew_cells", label: "Electrowinning Cells (6)", name: "electrowinning cells", kind: "unit", area: "gold", count: 6}
+  - {id: "vent_ew", label: "Vent", name: "electrowinning vent", kind: "output", area: "gold"}
+  - {id: "retort", label: "Retort", name: "mercury retort", kind: "unit", area: "gold"}
+  - {id: "furnace", label: "Furnace", name: "smelting furnace", kind: "unit", area: "gold"}
+  - {id: "gold_bullion", label: "Gold Bullion", name: "gold bullion", kind: "output", area: "gold"}
+streams:
+  - {from: "rom_oxide_ore", to: "ox_hopper"}
+  - {from: "ox_hopper", to: "jaw_crusher"}
+  - {from: "jaw_crusher", to: "radial_stacker"}
+  - {from: "radial_stacker", to: "ox_stockpile"}
+  - {from: "ox_stockpile", to: "ox_sag_hopper", unsure: true, note: "no line; a loader is drawn between the pile and the hopper"}
+  - {from: "ox_sag_hopper", to: "ox_sag_mill", note: "by conveyor"}
+  - {from: "return_water_ox", to: "ox_sag_mill"}
+  - {from: "return_water_ox", to: "ox_screen"}
+  - {from: "ox_sag_mill", to: "ox_screen"}
+  - {from: "ox_screen", to: "ox_sag_mill", note: "oversize by conveyor onto the feed conveyor"}
+  - {from: "ox_screen", to: "ox_sump"}
+  - {from: "ox_ball_mill", to: "ox_sump"}
+  - {from: "ox_sump", to: "ox_cyclones"}
+  - {from: "ox_cyclones", to: "ox_ball_mill", note: "underflow"}
+  - {from: "ox_cyclones", to: "ox_trash_screen", note: "overflow"}
+  - {from: "ox_trash_screen", to: "ox_thickener"}
+  - {from: "ox_thickener", to: "ox_water_tank", note: "overflow"}
+  - {from: "ox_water_tank", to: "water_return_ox"}
+  - {from: "ox_thickener", to: "neutralization_tanks", note: "underflow, the dark red oxide slurry line"}
+  - {from: "rom_refractory_ore", to: "ore_blend_stockpiles", unsure: true, note: "shown only by a picture or by adjoining equipment, no line (Codex, stage 2)"}
+  - {from: "ore_blend_stockpiles", to: "front_end_loader", unsure: true, note: "no line drawn; the loader is drawn beside the hopper"}
+  - {from: "front_end_loader", to: "ref_hopper", unsure: true, note: "no line drawn"}
+  - {from: "ref_hopper", to: "ref_sag_mill", note: "by conveyor"}
+  - {from: "return_water_ref", to: "ref_sag_mill"}
+  - {from: "return_water_ref", to: "ref_screen"}
+  - {from: "return_water_ref", to: "ref_sump_2"}
+  - {from: "ref_sag_mill", to: "ref_screen"}
+  - {from: "ref_screen", to: "ref_sag_mill", note: "oversize by conveyor onto the feed conveyor"}
+  - {from: "ref_screen", to: "ref_sump_1"}
+  - {from: "primary_ball_mill", to: "ref_sump_1"}
+  - {from: "ref_sump_1", to: "ref_cyclones_1"}
+  - {from: "ref_cyclones_1", to: "primary_ball_mill", note: "underflow"}
+  - {from: "ref_cyclones_1", to: "ref_trash_screen", note: "overflow"}
+  - {from: "secondary_ball_mill", to: "ref_trash_screen"}
+  - {from: "ref_trash_screen", to: "ref_sump_2"}
+  - {from: "ref_sump_2", to: "ref_cyclones_2"}
+  - {from: "ref_cyclones_2", to: "secondary_ball_mill", note: "underflow"}
+  - {from: "ref_cyclones_2", to: "ref_thickener", note: "overflow"}
+  - {from: "scrubber", to: "ref_thickener", note: "blue line from the scrubber up to the thickener feed"}
+  - {from: "ref_thickener", to: "ref_water_tank", note: "overflow"}
+  - {from: "ref_water_tank", to: "water_return_ref"}
+  - {from: "ref_thickener", to: "acidulation_tanks", note: "underflow, black refractory slurry line"}
+  - {from: "sulfuric_acid", to: "acidulation_tanks"}
+  - {from: "air_acid", to: "acidulation_tanks"}
+  - {from: "acidulation_tanks", to: "to_atm_acid", label: "Vent", note: "through a fan and stack"}
+  - {from: "acidulation_tanks", to: "slurry_heaters"}
+  - {from: "slurry_heaters", to: "autoclave"}
+  - {from: "oxygen", to: "autoclave"}
+  - {from: "cooling_water_ac", to: "autoclave"}
+  - {from: "steam_plant", to: "autoclave", label: "Steam"}
+  - {from: "natural_gas", to: "steam_plant"}
+  - {from: "steam_plant", to: "to_atm_steam"}
+  - {from: "autoclave", to: "flash_vessels"}
+  - {from: "flash_vessels", to: "slurry_heaters", note: "flashed steam; first flash vessel to second heater, second flash vessel to first heater"}
+  - {from: "flash_vessels", to: "surge_tank_cooling"}
+  - {from: "slurry_heaters", to: "scrubber", note: "vent gas from both heaters"}
+  - {from: "autoclave", to: "scrubber", note: "autoclave vent gas"}
+  - {from: "water_scrubber", to: "scrubber"}
+  - {from: "scrubber", to: "to_atm_scrubber"}
+  - {from: "surge_tank_cooling", to: "coolers"}
+  - {from: "coolers", to: "neutralization_tanks", note: "red oxidized slurry line up the middle"}
+  - {from: "coolers", to: "cooling_tower"}
+  - {from: "cooling_tower", to: "coolers"}
+  - {from: "lime_silo", to: "tower_mill"}
+  - {from: "lime_silo", to: "vent_lime"}
+  - {from: "return_water_tm", to: "tower_mill"}
+  - {from: "air_tm", to: "tower_mill"}
+  - {from: "tower_mill", to: "neutralization_tanks", label: "Lime"}
+  - {from: "neutralization_tanks", to: "cil_tanks"}
+  - {from: "air_cil", to: "cil_tanks"}
+  - {from: "cil_tanks", to: "loaded_carbon_screen"}
+  - {from: "loaded_carbon_screen", to: "cil_tanks", note: "screen undersize slurry back to the first tank"}
+  - {from: "loaded_carbon_screen", to: "surge_tank_carbon", note: "loaded carbon"}
+  - {from: "cil_tanks", to: "cil_screen"}
+  - {from: "cil_screen", to: "tails_sump"}
+  - {from: "cil_screen", to: "carbon_tank", note: "grey carbon line"}
+  - {from: "tails_sump", to: "tailings", label: "Sub Aerial Deposition"}
+  - {from: "tailings", to: "reclaim_out"}
+  - {from: "carbon_tank", to: "cil_tanks"}
+  - {from: "surge_tank_carbon", to: "acid_wash_tank"}
+  - {from: "nitric_acid", to: "acid_wash_tank"}
+  - {from: "acid_wash_tank", to: "strip_vessel"}
+  - {from: "strip_vessel", to: "kiln_feed_screen"}
+  - {from: "kiln_feed_screen", to: "kiln"}
+  - {from: "kiln_feed_screen", to: "carbon_fines"}
+  - {from: "kiln", to: "quench_tank"}
+  - {from: "quench_tank", to: "carbon_wash_screen"}
+  - {from: "carbon_wash_screen", to: "carbon_tank"}
+  - {from: "carbon_wash_screen", to: "carbon_fines"}
+  - {from: "strip_vessel", to: "heat_exchanger"}
+  - {from: "heat_exchanger", to: "pregnant_tank"}
+  - {from: "pregnant_tank", to: "ew_cells"}
+  - {from: "ew_cells", to: "barren_tank"}
+  - {from: "ew_cells", to: "retort"}
+  - {from: "ew_cells", to: "vent_ew"}
+  - {from: "retort", to: "furnace"}
+  - {from: "furnace", to: "gold_bullion"}
+  - {from: "caustic", to: "barren_tank"}
+  - {from: "barren_tank", to: "heat_exchanger"}
+  - {from: "heat_exchanger", to: "heater"}
+  - {from: "heater", to: "strip_vessel"}
+loops:
+  - {name: "oxide SAG screen oversize back to the mill", path: [ox_sag_mill, ox_screen, ox_sag_mill]}
+  - {name: "oxide ball mill in closed circuit with cyclones", path: [ox_ball_mill, ox_sump, ox_cyclones, ox_ball_mill]}
+  - {name: "refractory SAG screen oversize back to the mill", path: [ref_sag_mill, ref_screen, ref_sag_mill]}
+  - {name: "primary ball mill in closed circuit with cyclones", path: [primary_ball_mill, ref_sump_1, ref_cyclones_1, primary_ball_mill]}
+  - {name: "secondary ball mill in closed circuit with cyclones", path: [secondary_ball_mill, ref_trash_screen, ref_sump_2, ref_cyclones_2, secondary_ball_mill]}
+  - {name: "flashed steam heats the autoclave feed", path: [slurry_heaters, autoclave, flash_vessels, slurry_heaters]}
+  - {name: "cooling water circuit", path: [coolers, cooling_tower, coolers]}
+  - {name: "loaded carbon screen undersize back to CIL", path: [cil_tanks, loaded_carbon_screen, cil_tanks]}
+  - {name: "carbon loop", path: [cil_tanks, loaded_carbon_screen, surge_tank_carbon, acid_wash_tank, strip_vessel, kiln_feed_screen, kiln, quench_tank, carbon_wash_screen, carbon_tank, cil_tanks]}
+  - {name: "CIL tailings screen carbon back to CIL", path: [cil_tanks, cil_screen, carbon_tank, cil_tanks]}
+  - {name: "strip solution loop", path: [strip_vessel, heat_exchanger, pregnant_tank, ew_cells, barren_tank, heat_exchanger, heater, strip_vessel]}
+  - {name: "Scrubber water returns to the refractory thickener and pressure-oxidation feed", path: [ref_thickener, acidulation_tanks, slurry_heaters, autoclave, scrubber, ref_thickener]}

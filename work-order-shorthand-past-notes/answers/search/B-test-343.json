@@ -1,0 +1,18 @@
+{
+ "id": "B-test-343",
+ "condition": "search",
+ "note": "GO8941 Windscreen washer button U/S",
+ "model": "qwen38-27b",
+ "prompt": "You help a maintenance planner at an Australian mine site read work orders. Work orders are short notes typed in a hurry by maintainers and planners, full of the site's shorthand: abbreviations, misspellings and words run together. Codes such as AB123 or XY45 are asset numbers.\n\nRewrite the work order below in plain English for a reader who does not know the site's shorthand.\n\n- Expand every abbreviation and correct every misspelling. Choose each meaning from the note's context.\n- Keep to what the note says. Do not add a cause, a diagnosis, a fault or an outcome that the note does not state.\n- Keep the note's tense. A request for work stays a request: say that work was done only if the note says so.\n- Keep the note's asset numbers, quantities, positions and timings as they are.\n- If you cannot read a piece of shorthand with confidence, keep it as written in \"plain\", so the reader can see it is unresolved, and list it under \"unsure\".\n\nEarlier work orders from this site, found by searching its own records, and what each meant. The same shorthand can mean something else at another site.\n\nGO8941 Wipers U/S PO = GO8941 wipers unserviceable PO\nGO8941 eng shutdown switch u/s shutdown = GO8941 engine shutdown switch unserviceable shutdown\nReplace windscreen = replace windscreen\nGO8941 Replace drivers window = GO8941 replace drivers window\nBG0988 Windscreen washer don't work = BG0988 windscreen washer don't work\nDB2637 Crack in windscreen = DB2637 crack in windscreen\nRT3290 - Window Washer doesnt work = RT3290 - window washer doesn't work\nDrivers door window elec adjt swt u/s = drivers door window electric adjustment switch unserviceable\nDB2637 C/O cracked windscreen = DB2637 change out cracked windscreen\nladder u/s = ladder unserviceable\nAnswer with a JSON object only, with three keys:\n- \"plain\": the work order in plain English.\n- \"terms\": one item for each piece of shorthand you expanded or corrected: {\"written\": \"<as written in the note>\", \"means\": \"<what it stands for>\"}.\n- \"unsure\": the shorthand you could not read with confidence, as written in the note.\n\nWork order: GO8941 Windscreen washer button U/S\n",
+ "started": "2026-11-21T16:27:09+1000",
+ "content": "\n\n{\n  \"plain\": \"GO8941 windscreen washer button unserviceable\",\n  \"terms\": [\n    {\"written\": \"U/S\", \"means\": \"unserviceable\"}\n  ],\n  \"unsure\": []\n}",
+ "reasoning": "Let me analyze this work order: \"GO8941 Windscreen washer button U/S\"\n\nBreaking it down:\n- GO8941 - asset number, keep as is\n- Windscreen washer button - this is clear, it's a windscreen washer button\n- U/S - from the earlier examples, U/S means \"unserviceable\" (seen in \"GO8941 Wipers U/S PO = GO8941 wipers unserviceable PO\" and \"GO8941 eng shutdown switch u/s shutdown = GO8941 engine shutdown switch unserviceable shutdown\")\n\nSo the plain English would be: \"GO8941 windscreen washer button unserviceable\"\n\nLet me check:\n- Abbreviations to expand: U/S → unserviceable\n- Misspellings: none that I can see\n- Words run together: none\n- Asset numbers: GO8941 - keep as is\n- The note doesn't say work was done, it's stating a condition (unserviceable). Keep the tense.\n\nTerms:\n- \"U/S\" means \"unserviceable\"\n\nUnsure: nothing I'm unsure about.\n\nLet me format the JSON response.\n",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 551,
+  "total_tokens": 870,
+  "completion_tokens": 319,
+  "prompt_tokens_details": null
+ },
+ "seconds": 5.3
+}

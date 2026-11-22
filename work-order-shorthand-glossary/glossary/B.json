@@ -1,0 +1,352 @@
+[
+ {
+  "key": "mech",
+  "means": [
+   "mechanical"
+  ],
+  "uses": 504
+ },
+ {
+  "key": "h",
+  "means": [
+   "hour"
+  ],
+  "uses": 499
+ },
+ {
+  "key": "insp",
+  "means": [
+   "inspection"
+  ],
+  "uses": 269
+ },
+ {
+  "key": "svce",
+  "means": [
+   "service"
+  ],
+  "uses": 218
+ },
+ {
+  "key": "u/s",
+  "means": [
+   "unserviceable"
+  ],
+  "uses": 184
+ },
+ {
+  "key": "pos",
+  "means": [
+   "position"
+  ],
+  "uses": 177
+ },
+ {
+  "key": "hyd",
+  "means": [
+   "hydraulic"
+  ],
+  "uses": 145
+ },
+ {
+  "key": "c/o",
+  "means": [
+   "change out"
+  ],
+  "uses": 142
+ },
+ {
+  "key": "&",
+  "means": [
+   "and"
+  ],
+  "uses": 130
+ },
+ {
+  "key": "cyl",
+  "means": [
+   "cylinder"
+  ],
+  "uses": 127
+ },
+ {
+  "key": "rh",
+  "means": [
+   "right hand"
+  ],
+  "uses": 115
+ },
+ {
+  "key": "hr",
+  "means": [
+   "hour"
+  ],
+  "uses": 112
+ },
+ {
+  "key": "lh",
+  "means": [
+   "left hand"
+  ],
+  "uses": 103
+ },
+ {
+  "key": "m",
+  "means": [
+   "month"
+  ],
+  "uses": 71
+ },
+ {
+  "key": "roll",
+  "means": [
+   "roller"
+  ],
+  "uses": 67
+ },
+ {
+  "key": "eng",
+  "means": [
+   "engine"
+  ],
+  "uses": 62
+ },
+ {
+  "key": "trk",
+  "means": [
+   "track"
+  ],
+  "uses": 59
+ },
+ {
+  "key": "a/c",
+  "means": [
+   "air conditioner"
+  ],
+  "uses": 57
+ },
+ {
+  "key": "cond",
+  "means": [
+   "condition"
+  ],
+  "uses": 55
+ },
+ {
+  "key": "rht",
+  "means": [
+   "right"
+  ],
+  "uses": 53
+ },
+ {
+  "key": "diff",
+  "means": [
+   "differential"
+  ],
+  "uses": 51
+ },
+ {
+  "key": "cab",
+  "means": [
+   "cabin"
+  ],
+  "uses": 48
+ },
+ {
+  "key": "stut",
+  "means": [
+   "stud"
+  ],
+  "uses": 46
+ },
+ {
+  "key": "lft",
+  "means": [
+   "left"
+  ],
+  "uses": 43
+ },
+ {
+  "key": "repl",
+  "means": [
+   "replace"
+  ],
+  "uses": 33
+ },
+ {
+  "key": "uni's",
+  "means": [
+   "universal joints"
+  ],
+  "uses": 32
+ },
+ {
+  "key": "drv",
+  "means": [
+   "drive"
+  ],
+  "uses": 28
+ },
+ {
+  "key": "eng-pump",
+  "means": [
+   "engine - pump"
+  ],
+  "uses": 28
+ },
+ {
+  "key": "frnt",
+  "means": [
+   "front"
+  ],
+  "uses": 28
+ },
+ {
+  "key": "no",
+  "means": [
+   "number"
+  ],
+  "uses": 25
+ },
+ {
+  "key": "temp",
+  "means": [
+   "temperature"
+  ],
+  "uses": 25
+ },
+ {
+  "key": "con",
+  "means": [
+   "conditioner"
+  ],
+  "uses": 23
+ },
+ {
+  "key": "r/h",
+  "means": [
+   "right hand"
+  ],
+  "uses": 23
+ },
+ {
+  "key": "l/h",
+  "means": [
+   "left hand"
+  ],
+  "uses": 22
+ },
+ {
+  "key": "err",
+  "means": [
+   "error"
+  ],
+  "uses": 21
+ },
+ {
+  "key": "c/out",
+  "means": [
+   "change out"
+  ],
+  "uses": 20
+ },
+ {
+  "key": "comp",
+  "means": [
+   "compressor"
+  ],
+  "uses": 18
+ },
+ {
+  "key": "po's",
+  "means": [
+   "POs"
+  ],
+  "uses": 18
+ },
+ {
+  "key": "trans",
+  "means": [
+   "transmission"
+  ],
+  "uses": 18
+ },
+ {
+  "key": "#",
+  "means": [
+   "number"
+  ],
+  "uses": 17
+ },
+ {
+  "key": "vlv",
+  "means": [
+   "valve"
+  ],
+  "uses": 17
+ },
+ {
+  "key": "rhs",
+  "means": [
+   "right hand side"
+  ],
+  "uses": 15
+ },
+ {
+  "key": "aircon",
+  "means": [
+   "air conditioner"
+  ],
+  "uses": 14
+ },
+ {
+  "key": "out/stding",
+  "means": [
+   "outstanding"
+  ],
+  "uses": 14
+ },
+ {
+  "key": "precleaner",
+  "means": [
+   "pre-cleaner"
+  ],
+  "uses": 14
+ },
+ {
+  "key": "wtr",
+  "means": [
+   "water"
+  ],
+  "uses": 13
+ },
+ {
+  "key": "brg",
+  "means": [
+   "bearing"
+  ],
+  "uses": 12
+ },
+ {
+  "key": "lhs",
+  "means": [
+   "left hand side"
+  ],
+  "uses": 11
+ },
+ {
+  "key": "press",
+  "means": [
+   "pressure"
+  ],
+  "uses": 11
+ },
+ {
+  "key": "tranny",
+  "means": [
+   "transmission"
+  ],
+  "uses": 11
+ }
+]

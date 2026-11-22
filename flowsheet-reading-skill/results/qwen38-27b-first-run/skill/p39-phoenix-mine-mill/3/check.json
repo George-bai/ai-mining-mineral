@@ -1,0 +1,51 @@
+{
+ "checked": "Claude, 16 Nov 2026",
+ "pairing": {
+  "sag_cyclone": {
+   "to": [],
+   "why": "'Cyclones' fed by the SAG screen and water and feeding the ball mills: where the drawing has the cyclone feed sump; the chart has another box for the ball mill cyclones (README rule for a role the drawing does not have)"
+  },
+  "ew_cell": {
+   "to": [
+    "ew_cells"
+   ],
+   "why": "'EW cell' between the pregnant tank and the sludge: the unlabelled electrowinning cells"
+  },
+  "lime_reagents_second": {
+   "to": [
+    "lime_sag",
+    "lime_regrind",
+    "lime_clsc_sump",
+    "lime_reclaim",
+    "reag_cyclone",
+    "reag_contact",
+    "reag_rougher",
+    "reag_regrind",
+    "reag_clsc",
+    "reag_clsc_sump",
+    "reag_cond"
+   ],
+   "why": "'LIME REAGENTS' names two inputs: pairs with both sets"
+  },
+  "loaded_carbon": {
+   "to": [],
+   "why": "'(LOADED CARBON)', a stream label drawn as a box"
+  },
+  "barren_carbon": {
+   "to": [],
+   "why": "'(BARREN CARBON)', a stream label drawn as a box"
+  },
+  "water_lime": {
+   "to": [
+    "water_sag",
+    "lime_sag"
+   ],
+   "why": "'WATER LIME' into the SAG mill names two items: pairs with both (README, 16 Nov) (16 Nov, on the uncut list)"
+  }
+ },
+ "notes": [
+  "Test, skill. Misread labels kept: CONDITIONING PANK, CHLORIDE FUME. Water, lime and reagent inputs pair with their sets; '(RESIDUE)' and '(PREG)' are stream labels.",
+  "First run wrote the chart (28.1 minutes).",
+  "Read: every box whose label is not exactly its key item's, or that pairs with nothing or with a set, and every box paired with a repeated key label, with its feeds (local/dev/repeats.py); both lists uncut, 16 Nov. Boxes whose label is exactly their key item's were not each read."
+ ]
+}

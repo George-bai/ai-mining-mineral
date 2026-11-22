@@ -1,0 +1,54 @@
+{
+ "checked": "Claude, 16 Nov 2026",
+ "pairing": {
+  "mineore": {
+   "to": [
+    "mined_ore"
+   ],
+   "why": "'MINE ORE': the MINED ORE input, label misread"
+  },
+  "waterlime": {
+   "to": [
+    "water_sag",
+    "lime_sag"
+   ],
+   "why": "'WATER LIME' into the SAG mill names two items: pairs with both"
+  },
+  "reagentsRG": {
+   "to": [
+    "lime_sag",
+    "lime_regrind",
+    "lime_clsc_sump",
+    "lime_reclaim",
+    "reag_cyclone",
+    "reag_contact",
+    "reag_rougher",
+    "reag_regrind",
+    "reag_clsc",
+    "reag_clsc_sump",
+    "reag_cond"
+   ],
+   "why": "'LIME REAGENTS' names two inputs: pairs with both sets"
+  },
+  "carbonRegen": {
+   "to": [],
+   "why": "'CARBON TO REGENERATION' between the carbon bin and regeneration: a stream label drawn as a box"
+  },
+  "thickTank": {
+   "to": [
+    "tails_tank"
+   ],
+   "why": "the unlabelled box between the fines thickener and the pond (rule 2): the tailings mixing box"
+  },
+  "rougherTank": {
+   "to": [
+    "rougher_tails_sump"
+   ],
+   "why": "the unlabelled box fed by the roughers and feeding the deslime cyclones (rule 2): the rougher tailings sump (16 Nov, on the uncut list)"
+  }
+ },
+ "notes": [
+  "Test, no skill. Misread labels kept: BARRN SOLUTION TANK, REAGENTS CLAND WATER, FROTH THICKENER (fines thickener), CONDITIONING PANK, INTENSIVE OXIDATION. Reagent and lime inputs pair with their sets; 'RESIDUE' is a stream label.",
+  "Read: every box whose label is not exactly its key item's, or that pairs with nothing or with a set, and every box paired with a repeated key label, with its feeds (local/dev/repeats.py); both lists uncut, 16 Nov. Boxes whose label is exactly their key item's were not each read."
+ ]
+}

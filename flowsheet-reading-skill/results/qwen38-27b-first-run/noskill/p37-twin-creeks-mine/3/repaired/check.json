@@ -1,0 +1,33 @@
+{
+ "checked": "Claude, 16 Nov 2026",
+ "pairing": {
+  "RefractorySlurryCooling": {
+   "to": [],
+   "why": "'Refractory Slurry Cooling' names a section, not an item"
+  },
+  "ScreenCS": {
+   "to": [
+    "carbon_wash_screen"
+   ],
+   "why": "'Screen' fed by the quench tank and feeding 'Carbon Wash' (rule 2): the Carbon Wash Screen drawn as two boxes"
+  },
+  "Steam": {
+   "to": [],
+   "why": "'Steam' next to the chart's own Steam Generation Plant box: the key's stream label 'Steam' drawn as a box (16 Nov, on the uncut list)"
+  },
+  "Lime": {
+   "to": [],
+   "why": "'Lime' on the line into the neutralization tanks, with the chart's own lime silo box beside it: the key's stream label 'Lime' drawn as a box (16 Nov, on the uncut list)"
+  },
+  "TrashScreenOx": {
+   "to": [],
+   "why": "'Trash Screen' between the jaw crusher and the radial stacker, on the oxide crushing line, where the drawing has no trash screen: a role the drawing does not have; the chart's position names no key item there. Pairs with nothing, its lines run through (call of 16 Nov 2026, 8:45 pm AEST)"
+  }
+ },
+ "notes": [
+  "Test, no skill. Not valid Mermaid as delivered (an unquoted label with brackets, 'Taurus Mill (2)'): counts as no chart in the headline; this score is on the repaired copy (local/dev/repair.py), reported beside it.",
+  "hoppers, SAG mills, cyclones and trash screens by their ids and feeds, as the scorer has them. Misread labels kept: Cycloner, Taurus Mill, Acidulation Starter Tanker, OIL Tank, Pregnant/Barren Salt Tank, Electrorefining Cell, Rector. 'Tail Filter' and 'Sub Aerial Deposition' pass through.",
+  "Read: every box whose label is not exactly its key item's, or that pairs with nothing or with a set, and every box paired with a repeated key label, with its feeds (local/dev/repeats.py); both lists uncut, 16 Nov. Boxes whose label is exactly their key item's were not each read.",
+  "Corrected 16 Nov 2026, 8:45 pm AEST: the crushing-line trash screen pairs with nothing (reference/README.md, the call added during the 27B rerun); before, it stood as the oxide trash screen, as the scorer paired it."
+ ]
+}

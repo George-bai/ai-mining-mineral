@@ -1,0 +1,27 @@
+{
+ "fields": {
+  "cu_4a_pct": 0.356,
+  "cu_4a_sd_pct": 0.0075,
+  "cu_ar_pct": 0.363,
+  "cu_ar_sd_pct": 0.0075,
+  "cu_h2so4_pct": null,
+  "cu_h2so4_sd_pct": null,
+  "cu_cn_pct": null,
+  "cu_cn_sd_pct": null,
+  "au_fa_ppm": 1.682,
+  "au_fa_sd_ppm": 0.0685,
+  "au_ar_ppm": null,
+  "au_ar_sd_ppm": null
+ },
+ "content": "\n\n{\"cu_4a_pct\":0.356,\"cu_4a_sd_pct\":0.0075,\"cu_ar_pct\":0.363,\"cu_ar_sd_pct\":0.0075,\"cu_h2so4_pct\":null,\"cu_h2so4_sd_pct\":null,\"cu_cn_pct\":null,\"cu_cn_sd_pct\":null,\"au_fa_ppm\":1.682,\"au_fa_sd_ppm\":0.0685,\"au_ar_ppm\":null,\"au_ar_sd_ppm\":null}",
+ "reasoning": "Let me analyze the certificate of analysis for CDN-CM-54 to fill in the required fields.\n\nFirst, let me identify the relevant values from the certificate:\n\n**Copper by four-acid (near-total) digestion:**\n- From the certificate: \"Copper 0.356 % \u00b1 0.015 % 4 Acid digestion / ICP finish Certified value\"\n- Certified value: 0.356 wt.% Cu\n- The \u00b1 value is 0.015%. The certificate title says \"Recommended values and the 'Between Lab' Two Standard Deviations\"\n- So the \u00b1 0.015% is 2SD (two standard deviations)\n- 1SD = 0.015 / 2 = 0.0075 wt.% Cu\n\n**Copper by aqua regia digestion:**\n- From the certificate: \"Copper 0.363 % \u00b1 0.015 % Aqua regia digestion / ICP finish Certified value\"\n- Certified value: 0.363 wt.% Cu\n- 2SD = 0.015%, so 1SD = 0.015 / 2 = 0.0075 wt.% Cu\n\n**Copper by H2SO4 leach:**\n- The certificate does not report any H2SO4 leach method for copper. This is null.\n\n**Copper by cyanide (NaCN) leach:**\n- The certificate does not report any cyanide leach method for copper. This is null.\n\n**Gold by fire assay:**\n- From the certificate: \"Gold 1.682 gpt \u00b1 0.137 gpt 30 g Fire Assay, ICP or AA finish Certified value\"\n- Certified value: 1.682 ppm (g/t) Au\n- 2SD = 0.137 ppm, so 1SD = 0.137 / 2 = 0.0685 ppm Au\n\n**Gold by aqua regia digestion:**\n- The certificate does not report gold by aqua regia digestion. The only gold method listed is \"30 g Fire Assay, ICP or AA finish\". So this is null.\n\nLet me double-check the certificate title: \"Recommended values and the 'Between Lab' Two Standard Deviations\"\n\nThis confirms that the \u00b1 values given are 2SD (two standard deviations), so I need to halve them to get 1SD.\n\nLet me verify my readings:\n- Cu 4-acid: 0.356%, \u00b1 0.015% \u2192 1SD = 0.0075%\n- Cu aqua regia: 0.363%, \u00b1 0.015% \u2192 1SD = 0.0075%\n- Au fire assay: 1.682 gpt, \u00b1 0.137 gpt \u2192 1SD = 0.0685 ppm\n\nAll are certified values (not provisional, indicated, or informational).\n\nNow let me construct the JSON:\n- cu_4a_pct: 0.356\n- cu_4a_sd_pct: 0.0075\n- cu_ar_pct: 0.363\n- cu_ar_sd_pct: 0.0075\n- cu_h2so4_pct: null\n- cu_h2so4_sd_pct: null\n- cu_cn_pct: null\n- cu_cn_sd_pct: null\n- au_fa_ppm: 1.682\n- au_fa_sd_ppm: 0.0685\n- au_ar_ppm: null\n- au_ar_sd_ppm: null\n",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 31529,
+  "total_tokens": 32470,
+  "completion_tokens": 941,
+  "prompt_tokens_details": null
+ },
+ "seconds": 21.9,
+ "model": "qwen38-27b"
+}

@@ -1,0 +1,9422 @@
+[
+ {
+  "id": "A-test-001",
+  "company": "A",
+  "split": "test",
+  "index": 1,
+  "text": "BF079 REPLACE AIR CON COMPRESSOR",
+  "tokens": [
+   [
+    "BF079",
+    "<id>"
+   ],
+   [
+    "REPLACE",
+    "replace"
+   ],
+   [
+    "AIR",
+    "air"
+   ],
+   [
+    "CON",
+    "conditioner"
+   ],
+   [
+    "COMPRESSOR",
+    "compressor"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-007",
+  "company": "A",
+  "split": "test",
+  "index": 7,
+  "text": "SV687 REPL US LINEAR SENSOR NEXT TBC",
+  "tokens": [
+   [
+    "SV687",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "US",
+    "unserviceable"
+   ],
+   [
+    "LINEAR",
+    "linear"
+   ],
+   [
+    "SENSOR",
+    "sensor"
+   ],
+   [
+    "NEXT",
+    "next"
+   ],
+   [
+    "TBC",
+    "TBC"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-021",
+  "company": "A",
+  "split": "test",
+  "index": 21,
+  "text": "WJ525 REPL BRAKE PRESSURE SWITCHES",
+  "tokens": [
+   [
+    "WJ525",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "BRAKE",
+    "brake"
+   ],
+   [
+    "PRESSURE",
+    "pressure"
+   ],
+   [
+    "SWITCHES",
+    "switches"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-022",
+  "company": "A",
+  "split": "test",
+  "index": 22,
+  "text": "XH531 Replace U/S diff drian plugs",
+  "tokens": [
+   [
+    "XH531",
+    "<id>"
+   ],
+   [
+    "Replace",
+    "replace"
+   ],
+   [
+    "U/S",
+    "unserviceable"
+   ],
+   [
+    "diff",
+    "differential"
+   ],
+   [
+    "drian",
+    "drain"
+   ],
+   [
+    "plugs",
+    "plugs"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-036",
+  "company": "A",
+  "split": "test",
+  "index": 36,
+  "text": "BF079 REPL POS 4 TYRE",
+  "tokens": [
+   [
+    "BF079",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "POS",
+    "position"
+   ],
+   [
+    "4",
+    "<num>"
+   ],
+   [
+    "TYRE",
+    "tyre"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-038",
+  "company": "A",
+  "split": "test",
+  "index": 38,
+  "text": "WJ525 REPL SEIZED GEAR SELECTOR",
+  "tokens": [
+   [
+    "WJ525",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "SEIZED",
+    "seized"
+   ],
+   [
+    "GEAR",
+    "gear"
+   ],
+   [
+    "SELECTOR",
+    "selector"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-039",
+  "company": "A",
+  "split": "test",
+  "index": 39,
+  "text": "NL323 REPLACE RUBBER HINGE L/H GAURD",
+  "tokens": [
+   [
+    "NL323",
+    "<id>"
+   ],
+   [
+    "REPLACE",
+    "replace"
+   ],
+   [
+    "RUBBER",
+    "rubber"
+   ],
+   [
+    "HINGE",
+    "hinge"
+   ],
+   [
+    "L/H",
+    "left hand"
+   ],
+   [
+    "GAURD",
+    "guard"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-040",
+  "company": "A",
+  "split": "test",
+  "index": 40,
+  "text": "BF079 REPAIR TRANS OVERHEATING FAULT",
+  "tokens": [
+   [
+    "BF079",
+    "<id>"
+   ],
+   [
+    "REPAIR",
+    "repair"
+   ],
+   [
+    "TRANS",
+    "transmission"
+   ],
+   [
+    "OVERHEATING",
+    "overheating"
+   ],
+   [
+    "FAULT",
+    "fault"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-044",
+  "company": "A",
+  "split": "test",
+  "index": 44,
+  "text": "XH531 REBUILD BUCKET SURF WORKSHOP",
+  "tokens": [
+   [
+    "XH531",
+    "<id>"
+   ],
+   [
+    "REBUILD",
+    "rebuild"
+   ],
+   [
+    "BUCKET",
+    "bucket"
+   ],
+   [
+    "SURF",
+    "surface"
+   ],
+   [
+    "WORKSHOP",
+    "workshop"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-045",
+  "company": "A",
+  "split": "test",
+  "index": 45,
+  "text": "CR871 - Changeout Pos# 3",
+  "tokens": [
+   [
+    "CR871",
+    "<id>"
+   ],
+   [
+    "-",
+    "-"
+   ],
+   [
+    "Changeout",
+    "change out"
+   ],
+   [
+    "Pos#",
+    "position"
+   ],
+   [
+    "3",
+    "<num>"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-050",
+  "company": "A",
+  "split": "test",
+  "index": 50,
+  "text": "CC708 REPL POS1 TYRE",
+  "tokens": [
+   [
+    "CC708",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "POS1",
+    "position <num>"
+   ],
+   [
+    "TYRE",
+    "tyre"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-053",
+  "company": "A",
+  "split": "test",
+  "index": 53,
+  "text": "GX376 YQM - rim to crack test & inspect",
+  "tokens": [
+   [
+    "GX376",
+    "<id>"
+   ],
+   [
+    "YQM",
+    ""
+   ],
+   [
+    "-",
+    "-"
+   ],
+   [
+    "rim",
+    "rim"
+   ],
+   [
+    "to",
+    "to"
+   ],
+   [
+    "crack",
+    "crack"
+   ],
+   [
+    "test",
+    "test"
+   ],
+   [
+    "&",
+    "and"
+   ],
+   [
+    "inspect",
+    "inspect"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-061",
+  "company": "A",
+  "split": "test",
+  "index": 61,
+  "text": "PH639 REP AIR CON FAULT",
+  "tokens": [
+   [
+    "PH639",
+    "<id>"
+   ],
+   [
+    "REP",
+    "repair"
+   ],
+   [
+    "AIR",
+    "air"
+   ],
+   [
+    "CON",
+    "conditioner"
+   ],
+   [
+    "FAULT",
+    "fault"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-062",
+  "company": "A",
+  "split": "test",
+  "index": 62,
+  "text": "BF079 2691 HR PREVENTATIVE MAINTENANCE",
+  "tokens": [
+   [
+    "BF079",
+    "<id>"
+   ],
+   [
+    "2691",
+    "<num>"
+   ],
+   [
+    "HR",
+    "hour"
+   ],
+   [
+    "PREVENTATIVE",
+    "preventative"
+   ],
+   [
+    "MAINTENANCE",
+    "maintenance"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-068",
+  "company": "A",
+  "split": "test",
+  "index": 68,
+  "text": "OU089 REP P/BRAKE FAULT",
+  "tokens": [
+   [
+    "OU089",
+    "<id>"
+   ],
+   [
+    "REP",
+    "repair"
+   ],
+   [
+    "P/BRAKE",
+    "park brake"
+   ],
+   [
+    "FAULT",
+    "fault"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-073",
+  "company": "A",
+  "split": "test",
+  "index": 73,
+  "text": "XH531 REPL CENTER HITCH PINS AND BEARING",
+  "tokens": [
+   [
+    "XH531",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "CENTER",
+    "centre"
+   ],
+   [
+    "HITCH",
+    "hitch"
+   ],
+   [
+    "PINS",
+    "pins"
+   ],
+   [
+    "AND",
+    "and"
+   ],
+   [
+    "BEARING",
+    "bearing"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-077",
+  "company": "A",
+  "split": "test",
+  "index": 77,
+  "text": "GS690 REPL FIRE EXTINGUISHER",
+  "tokens": [
+   [
+    "GS690",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "FIRE",
+    "fire"
+   ],
+   [
+    "EXTINGUISHER",
+    "extinguisher"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-080",
+  "company": "A",
+  "split": "test",
+  "index": 80,
+  "text": "OU089 REPLACE POS 2 TYRE",
+  "tokens": [
+   [
+    "OU089",
+    "<id>"
+   ],
+   [
+    "REPLACE",
+    "replace"
+   ],
+   [
+    "POS",
+    "position"
+   ],
+   [
+    "2",
+    "<num>"
+   ],
+   [
+    "TYRE",
+    "tyre"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-081",
+  "company": "A",
+  "split": "test",
+  "index": 81,
+  "text": "OU089 REPAIR LEAKING STEER CYLINDER",
+  "tokens": [
+   [
+    "OU089",
+    "<id>"
+   ],
+   [
+    "REPAIR",
+    "repair"
+   ],
+   [
+    "LEAKING",
+    "leaking"
+   ],
+   [
+    "STEER",
+    "steering"
+   ],
+   [
+    "CYLINDER",
+    "cylinder"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-083",
+  "company": "A",
+  "split": "test",
+  "index": 83,
+  "text": "CC708 MAKE UP TYRES & RETURN TO STOCK",
+  "tokens": [
+   [
+    "CC708",
+    "<id>"
+   ],
+   [
+    "MAKE",
+    "make"
+   ],
+   [
+    "UP",
+    "up"
+   ],
+   [
+    "TYRES",
+    "tyres"
+   ],
+   [
+    "&",
+    "and"
+   ],
+   [
+    "RETURN",
+    "return"
+   ],
+   [
+    "TO",
+    "to"
+   ],
+   [
+    "STOCK",
+    "stock"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-085",
+  "company": "A",
+  "split": "test",
+  "index": 85,
+  "text": "GU245 FRONT WIPER MOTER U/S",
+  "tokens": [
+   [
+    "GU245",
+    "<id>"
+   ],
+   [
+    "FRONT",
+    "front"
+   ],
+   [
+    "WIPER",
+    "wiper"
+   ],
+   [
+    "MOTER",
+    "motor"
+   ],
+   [
+    "U/S",
+    "unserviceable"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-097",
+  "company": "A",
+  "split": "test",
+  "index": 97,
+  "text": "XH531 REPL BLOWN TRANSMISSION O'RING",
+  "tokens": [
+   [
+    "XH531",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "BLOWN",
+    "blown"
+   ],
+   [
+    "TRANSMISSION",
+    "transmission"
+   ],
+   [
+    "O'RING",
+    "o-ring"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-105",
+  "company": "A",
+  "split": "test",
+  "index": 105,
+  "text": "AN426 REPL BUCKET PROFILE BAR AND REPS",
+  "tokens": [
+   [
+    "AN426",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "BUCKET",
+    "bucket"
+   ],
+   [
+    "PROFILE",
+    "profile"
+   ],
+   [
+    "BAR",
+    "bar"
+   ],
+   [
+    "AND",
+    "and"
+   ],
+   [
+    "REPS",
+    "reps"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-106",
+  "company": "A",
+  "split": "test",
+  "index": 106,
+  "text": "CC708 REPL AUTO GREASER PUMP",
+  "tokens": [
+   [
+    "CC708",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "AUTO",
+    "autogreaser"
+   ],
+   [
+    "GREASER",
+    ""
+   ],
+   [
+    "PUMP",
+    "pump"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-108",
+  "company": "A",
+  "split": "test",
+  "index": 108,
+  "text": "AN426 REPLACE ENGINE SEC SPEED SENSOR",
+  "tokens": [
+   [
+    "AN426",
+    "<id>"
+   ],
+   [
+    "REPLACE",
+    "replace"
+   ],
+   [
+    "ENGINE",
+    "engine"
+   ],
+   [
+    "SEC",
+    "secondary"
+   ],
+   [
+    "SPEED",
+    "speed"
+   ],
+   [
+    "SENSOR",
+    "sensor"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-110",
+  "company": "A",
+  "split": "test",
+  "index": 110,
+  "text": "XH531 REPLACE CONVERTER SHAFT UNIS",
+  "tokens": [
+   [
+    "XH531",
+    "<id>"
+   ],
+   [
+    "REPLACE",
+    "replace"
+   ],
+   [
+    "CONVERTER",
+    "converter"
+   ],
+   [
+    "SHAFT",
+    "shaft"
+   ],
+   [
+    "UNIS",
+    "universal joints"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-116",
+  "company": "A",
+  "split": "test",
+  "index": 116,
+  "text": "OU089 REPL HEEL BLOCKS",
+  "tokens": [
+   [
+    "OU089",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "HEEL",
+    "heel"
+   ],
+   [
+    "BLOCKS",
+    "blocks"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-120",
+  "company": "A",
+  "split": "test",
+  "index": 120,
+  "text": "PH639 198 HR PREVENTATIVE MAINTENANCE",
+  "tokens": [
+   [
+    "PH639",
+    "<id>"
+   ],
+   [
+    "198",
+    "<num>"
+   ],
+   [
+    "HR",
+    "hour"
+   ],
+   [
+    "PREVENTATIVE",
+    "preventative"
+   ],
+   [
+    "MAINTENANCE",
+    "maintenance"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-122",
+  "company": "A",
+  "split": "test",
+  "index": 122,
+  "text": "CR871 INV REP AUTO GREASER UNIT",
+  "tokens": [
+   [
+    "CR871",
+    "<id>"
+   ],
+   [
+    "INV",
+    "investigate"
+   ],
+   [
+    "REP",
+    "repair"
+   ],
+   [
+    "AUTO",
+    "auto-greaser"
+   ],
+   [
+    "GREASER",
+    ""
+   ],
+   [
+    "UNIT",
+    "unit"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-124",
+  "company": "A",
+  "split": "test",
+  "index": 124,
+  "text": "OU089 L/HS TOOTH NEEDS C/O",
+  "tokens": [
+   [
+    "OU089",
+    "<id>"
+   ],
+   [
+    "L/HS",
+    "left hand side"
+   ],
+   [
+    "TOOTH",
+    "tooth"
+   ],
+   [
+    "NEEDS",
+    "needs"
+   ],
+   [
+    "C/O",
+    "change out"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-126",
+  "company": "A",
+  "split": "test",
+  "index": 126,
+  "text": "XH531 AIR FRIEGHT FOR PUMP TBC",
+  "tokens": [
+   [
+    "XH531",
+    "<id>"
+   ],
+   [
+    "AIR",
+    "air"
+   ],
+   [
+    "FRIEGHT",
+    "freight"
+   ],
+   [
+    "FOR",
+    "for"
+   ],
+   [
+    "PUMP",
+    "pump"
+   ],
+   [
+    "TBC",
+    "TBC"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-127",
+  "company": "A",
+  "split": "test",
+  "index": 127,
+  "text": "MB119 INV OIL PRESS/ OVERHEATING FAULT",
+  "tokens": [
+   [
+    "MB119",
+    "<id>"
+   ],
+   [
+    "INV",
+    "investigate"
+   ],
+   [
+    "OIL",
+    "oil"
+   ],
+   [
+    "PRESS/",
+    "pressure /"
+   ],
+   [
+    "OVERHEATING",
+    "overheating"
+   ],
+   [
+    "FAULT",
+    "fault"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-130",
+  "company": "A",
+  "split": "test",
+  "index": 130,
+  "text": "XH531 CHANGE OUT POS 9 WHEEL END",
+  "tokens": [
+   [
+    "XH531",
+    "<id>"
+   ],
+   [
+    "CHANGE",
+    "change"
+   ],
+   [
+    "OUT",
+    "out"
+   ],
+   [
+    "POS",
+    "position"
+   ],
+   [
+    "9",
+    "<num>"
+   ],
+   [
+    "WHEEL",
+    "wheel"
+   ],
+   [
+    "END",
+    "end"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-138",
+  "company": "A",
+  "split": "test",
+  "index": 138,
+  "text": "PH639 REPLACE LHS LIFT CYL LEAK",
+  "tokens": [
+   [
+    "PH639",
+    "<id>"
+   ],
+   [
+    "REPLACE",
+    "replace"
+   ],
+   [
+    "LHS",
+    "left hand side"
+   ],
+   [
+    "LIFT",
+    "lift"
+   ],
+   [
+    "CYL",
+    "cylinder"
+   ],
+   [
+    "LEAK",
+    "leak"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-147",
+  "company": "A",
+  "split": "test",
+  "index": 147,
+  "text": "XH531 REP INT FORWARD GEAR FAULT",
+  "tokens": [
+   [
+    "XH531",
+    "<id>"
+   ],
+   [
+    "REP",
+    "repair"
+   ],
+   [
+    "INT",
+    "internal"
+   ],
+   [
+    "FORWARD",
+    "forward"
+   ],
+   [
+    "GEAR",
+    "gear"
+   ],
+   [
+    "FAULT",
+    "fault"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-148",
+  "company": "A",
+  "split": "test",
+  "index": 148,
+  "text": "XH531 REPL REAR ENG F/WHEEL HOSU SEE TEX",
+  "tokens": [
+   [
+    "XH531",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "REAR",
+    "rear"
+   ],
+   [
+    "ENG",
+    "engine"
+   ],
+   [
+    "F/WHEEL",
+    "flywheel"
+   ],
+   [
+    "HOSU",
+    "housing"
+   ],
+   [
+    "SEE",
+    "see"
+   ],
+   [
+    "TEX",
+    "text"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-149",
+  "company": "A",
+  "split": "test",
+  "index": 149,
+  "text": "MYOO7 REP OIL LEAK FROM TRANSMISSION",
+  "tokens": [
+   [
+    "MYOO7",
+    "<id>"
+   ],
+   [
+    "REP",
+    "repair"
+   ],
+   [
+    "OIL",
+    "oil"
+   ],
+   [
+    "LEAK",
+    "leak"
+   ],
+   [
+    "FROM",
+    "from"
+   ],
+   [
+    "TRANSMISSION",
+    "transmission"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-150",
+  "company": "A",
+  "split": "test",
+  "index": 150,
+  "text": "CR871 RECTIFY IMPLIMENT DRIFT",
+  "tokens": [
+   [
+    "CR871",
+    "<id>"
+   ],
+   [
+    "RECTIFY",
+    "rectify"
+   ],
+   [
+    "IMPLIMENT",
+    "implement"
+   ],
+   [
+    "DRIFT",
+    "drift"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-152",
+  "company": "A",
+  "split": "test",
+  "index": 152,
+  "text": "TQ598 REPLAC MAIN IMPLIMENT HOSE",
+  "tokens": [
+   [
+    "TQ598",
+    "<id>"
+   ],
+   [
+    "REPLAC",
+    "replace"
+   ],
+   [
+    "MAIN",
+    "main"
+   ],
+   [
+    "IMPLIMENT",
+    "implement"
+   ],
+   [
+    "HOSE",
+    "hose"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-154",
+  "company": "A",
+  "split": "test",
+  "index": 154,
+  "text": "BP504 C/O POS 5 TYRE DAMAGE",
+  "tokens": [
+   [
+    "BP504",
+    "<id>"
+   ],
+   [
+    "C/O",
+    "change out"
+   ],
+   [
+    "POS",
+    "position"
+   ],
+   [
+    "5",
+    "<num>"
+   ],
+   [
+    "TYRE",
+    "tyre"
+   ],
+   [
+    "DAMAGE",
+    "damage"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-155",
+  "company": "A",
+  "split": "test",
+  "index": 155,
+  "text": "XH531 REP LEAK AT REAR DIFF PINION",
+  "tokens": [
+   [
+    "XH531",
+    "<id>"
+   ],
+   [
+    "REP",
+    "repair"
+   ],
+   [
+    "LEAK",
+    "leak"
+   ],
+   [
+    "AT",
+    "at"
+   ],
+   [
+    "REAR",
+    "rear"
+   ],
+   [
+    "DIFF",
+    "differential"
+   ],
+   [
+    "PINION",
+    "pinion"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-156",
+  "company": "A",
+  "split": "test",
+  "index": 156,
+  "text": "AN426 REPL CAB SEAT SHOCKIE",
+  "tokens": [
+   [
+    "AN426",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "CAB",
+    "cabin"
+   ],
+   [
+    "SEAT",
+    "seat"
+   ],
+   [
+    "SHOCKIE",
+    "shock absorber"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-161",
+  "company": "A",
+  "split": "test",
+  "index": 161,
+  "text": "PH639 make up tele remote camera mounts",
+  "tokens": [
+   [
+    "PH639",
+    "<id>"
+   ],
+   [
+    "make",
+    "make"
+   ],
+   [
+    "up",
+    "up"
+   ],
+   [
+    "tele",
+    "Tele-Remote"
+   ],
+   [
+    "remote",
+    ""
+   ],
+   [
+    "camera",
+    "camera"
+   ],
+   [
+    "mounts",
+    "mounts"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-171",
+  "company": "A",
+  "split": "test",
+  "index": 171,
+  "text": "GS690 CLEANING OF MACHINE & AUDIT",
+  "tokens": [
+   [
+    "GS690",
+    "<id>"
+   ],
+   [
+    "CLEANING",
+    "cleaning"
+   ],
+   [
+    "OF",
+    "of"
+   ],
+   [
+    "MACHINE",
+    "machine"
+   ],
+   [
+    "&",
+    "and"
+   ],
+   [
+    "AUDIT",
+    "audit"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-183",
+  "company": "A",
+  "split": "test",
+  "index": 183,
+  "text": "NL323 INSP AIR INDUCTION FOR LEAKS",
+  "tokens": [
+   [
+    "NL323",
+    "<id>"
+   ],
+   [
+    "INSP",
+    "inspect"
+   ],
+   [
+    "AIR",
+    "air"
+   ],
+   [
+    "INDUCTION",
+    "induction"
+   ],
+   [
+    "FOR",
+    "for"
+   ],
+   [
+    "LEAKS",
+    "leaks"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-185",
+  "company": "A",
+  "split": "test",
+  "index": 185,
+  "text": "CC708 replace trans ECM see long text",
+  "tokens": [
+   [
+    "CC708",
+    "<id>"
+   ],
+   [
+    "replace",
+    "replace"
+   ],
+   [
+    "trans",
+    "transmission"
+   ],
+   [
+    "ECM",
+    "ECM"
+   ],
+   [
+    "see",
+    "see"
+   ],
+   [
+    "long",
+    "long"
+   ],
+   [
+    "text",
+    "text"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-206",
+  "company": "A",
+  "split": "test",
+  "index": 206,
+  "text": "AN426 REPL STEERING LOCKOUT SHAFT",
+  "tokens": [
+   [
+    "AN426",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "STEERING",
+    "steering"
+   ],
+   [
+    "LOCKOUT",
+    "lockout"
+   ],
+   [
+    "SHAFT",
+    "shaft"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-209",
+  "company": "A",
+  "split": "test",
+  "index": 209,
+  "text": "GS690 REPLACE U/S PARTS ON FRONT DOOR",
+  "tokens": [
+   [
+    "GS690",
+    "<id>"
+   ],
+   [
+    "REPLACE",
+    "replace"
+   ],
+   [
+    "U/S",
+    "unserviceable"
+   ],
+   [
+    "PARTS",
+    "parts"
+   ],
+   [
+    "ON",
+    "on"
+   ],
+   [
+    "FRONT",
+    "front"
+   ],
+   [
+    "DOOR",
+    "door"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-210",
+  "company": "A",
+  "split": "test",
+  "index": 210,
+  "text": "BF079 REPAIR HYD FAULT",
+  "tokens": [
+   [
+    "BF079",
+    "<id>"
+   ],
+   [
+    "REPAIR",
+    "repair"
+   ],
+   [
+    "HYD",
+    "hydraulic"
+   ],
+   [
+    "FAULT",
+    "fault"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-211",
+  "company": "A",
+  "split": "test",
+  "index": 211,
+  "text": "XH531 REPLACE MISSING 1/4 WINDOW",
+  "tokens": [
+   [
+    "XH531",
+    "<id>"
+   ],
+   [
+    "REPLACE",
+    "replace"
+   ],
+   [
+    "MISSING",
+    "missing"
+   ],
+   [
+    "1/4",
+    "quarter"
+   ],
+   [
+    "WINDOW",
+    "window"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-216",
+  "company": "A",
+  "split": "test",
+  "index": 216,
+  "text": "CC708 REPLACE DAMAGED POS 6 TYRE",
+  "tokens": [
+   [
+    "CC708",
+    "<id>"
+   ],
+   [
+    "REPLACE",
+    "replace"
+   ],
+   [
+    "DAMAGED",
+    "damaged"
+   ],
+   [
+    "POS",
+    "position"
+   ],
+   [
+    "6",
+    "<num>"
+   ],
+   [
+    "TYRE",
+    "tyre"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-222",
+  "company": "A",
+  "split": "test",
+  "index": 222,
+  "text": "OU089 AIRCON PARTS&REPAIRS",
+  "tokens": [
+   [
+    "OU089",
+    "<id>"
+   ],
+   [
+    "AIRCON",
+    "air conditioner"
+   ],
+   [
+    "PARTS&REPAIRS",
+    "parts and repairs"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-228",
+  "company": "A",
+  "split": "test",
+  "index": 228,
+  "text": "GU245 REPL LH STEER CYL PIN AND COLLETS",
+  "tokens": [
+   [
+    "GU245",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "LH",
+    "left hand"
+   ],
+   [
+    "STEER",
+    "steering"
+   ],
+   [
+    "CYL",
+    "cylinder"
+   ],
+   [
+    "PIN",
+    "pin"
+   ],
+   [
+    "AND",
+    "and"
+   ],
+   [
+    "COLLETS",
+    "collets"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-229",
+  "company": "A",
+  "split": "test",
+  "index": 229,
+  "text": "PH639 REPL NEUTRALIZER PEDAL",
+  "tokens": [
+   [
+    "PH639",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "NEUTRALIZER",
+    "neutralizer"
+   ],
+   [
+    "PEDAL",
+    "pedal"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-230",
+  "company": "A",
+  "split": "test",
+  "index": 230,
+  "text": "CR871 REPLACE HOSE TO TRANS FILTER",
+  "tokens": [
+   [
+    "CR871",
+    "<id>"
+   ],
+   [
+    "REPLACE",
+    "replace"
+   ],
+   [
+    "HOSE",
+    "hose"
+   ],
+   [
+    "TO",
+    "to"
+   ],
+   [
+    "TRANS",
+    "transmission"
+   ],
+   [
+    "FILTER",
+    "filter"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-231",
+  "company": "A",
+  "split": "test",
+  "index": 231,
+  "text": "BF079 Change rear drive line",
+  "tokens": [
+   [
+    "BF079",
+    "<id>"
+   ],
+   [
+    "Change",
+    "change"
+   ],
+   [
+    "rear",
+    "rear"
+   ],
+   [
+    "drive",
+    "driveline"
+   ],
+   [
+    "line",
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "A-test-232",
+  "company": "A",
+  "split": "test",
+  "index": 232,
+  "text": "ZW767 REPAIR AIR CON AND LIGHTS",
+  "tokens": [
+   [
+    "ZW767",
+    "<id>"
+   ],
+   [
+    "REPAIR",
+    "repair"
+   ],
+   [
+    "AIR",
+    "air"
+   ],
+   [
+    "CON",
+    "conditioner"
+   ],
+   [
+    "AND",
+    "and"
+   ],
+   [
+    "LIGHTS",
+    "lights"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-240",
+  "company": "A",
+  "split": "test",
+  "index": 240,
+  "text": "AN426 REPLACE A/C COMPRESSOR",
+  "tokens": [
+   [
+    "AN426",
+    "<id>"
+   ],
+   [
+    "REPLACE",
+    "replace"
+   ],
+   [
+    "A/C",
+    "air conditioner"
+   ],
+   [
+    "COMPRESSOR",
+    "compressor"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-244",
+  "company": "A",
+  "split": "test",
+  "index": 244,
+  "text": "KK489 WFZ QUOTE & REPAIR RIM",
+  "tokens": [
+   [
+    "KK489",
+    "<id>"
+   ],
+   [
+    "WFZ",
+    ""
+   ],
+   [
+    "QUOTE",
+    "quote"
+   ],
+   [
+    "&",
+    "and"
+   ],
+   [
+    "REPAIR",
+    "repair"
+   ],
+   [
+    "RIM",
+    "rim"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-250",
+  "company": "A",
+  "split": "test",
+  "index": 250,
+  "text": "JP367 REPLACE A/C COMPRESSOR AND R/D",
+  "tokens": [
+   [
+    "JP367",
+    "<id>"
+   ],
+   [
+    "REPLACE",
+    "replace"
+   ],
+   [
+    "A/C",
+    "air conditioner"
+   ],
+   [
+    "COMPRESSOR",
+    "compressor"
+   ],
+   [
+    "AND",
+    "and"
+   ],
+   [
+    "R/D",
+    "R/D"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-251",
+  "company": "A",
+  "split": "test",
+  "index": 251,
+  "text": "AN426 REPL BATTERIES",
+  "tokens": [
+   [
+    "AN426",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "BATTERIES",
+    "batteries"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-252",
+  "company": "A",
+  "split": "test",
+  "index": 252,
+  "text": "CC708 REPLACE L/H LIFT CYLINDER",
+  "tokens": [
+   [
+    "CC708",
+    "<id>"
+   ],
+   [
+    "REPLACE",
+    "replace"
+   ],
+   [
+    "L/H",
+    "left hand"
+   ],
+   [
+    "LIFT",
+    "lift"
+   ],
+   [
+    "CYLINDER",
+    "cylinder"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-256",
+  "company": "A",
+  "split": "test",
+  "index": 256,
+  "text": "AN426 REPLACE L/H CORNER BUCKET TOOTH",
+  "tokens": [
+   [
+    "AN426",
+    "<id>"
+   ],
+   [
+    "REPLACE",
+    "replace"
+   ],
+   [
+    "L/H",
+    "left hand"
+   ],
+   [
+    "CORNER",
+    "corner"
+   ],
+   [
+    "BUCKET",
+    "bucket"
+   ],
+   [
+    "TOOTH",
+    "tooth"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-259",
+  "company": "A",
+  "split": "test",
+  "index": 259,
+  "text": "MB119 REPL TOP CAB MOUNTS",
+  "tokens": [
+   [
+    "MB119",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "TOP",
+    "top"
+   ],
+   [
+    "CAB",
+    "cabin"
+   ],
+   [
+    "MOUNTS",
+    "mounts"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-262",
+  "company": "A",
+  "split": "test",
+  "index": 262,
+  "text": "WJ525 REPLACE POS 9 & 4 WHEEL ENDS",
+  "tokens": [
+   [
+    "WJ525",
+    "<id>"
+   ],
+   [
+    "REPLACE",
+    "replace"
+   ],
+   [
+    "POS",
+    "position"
+   ],
+   [
+    "9",
+    "<num>"
+   ],
+   [
+    "&",
+    "and"
+   ],
+   [
+    "4",
+    "<num>"
+   ],
+   [
+    "WHEEL",
+    "wheel"
+   ],
+   [
+    "ENDS",
+    "ends"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-267",
+  "company": "A",
+  "split": "test",
+  "index": 267,
+  "text": "AN426 TEMP REP TO TRANS DROP BOX LEAK",
+  "tokens": [
+   [
+    "AN426",
+    "<id>"
+   ],
+   [
+    "TEMP",
+    "temperature"
+   ],
+   [
+    "REP",
+    "repair"
+   ],
+   [
+    "TO",
+    "to"
+   ],
+   [
+    "TRANS",
+    "transmission"
+   ],
+   [
+    "DROP",
+    "dropbox"
+   ],
+   [
+    "BOX",
+    ""
+   ],
+   [
+    "LEAK",
+    "leak"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-268",
+  "company": "A",
+  "split": "test",
+  "index": 268,
+  "text": "CC708 C/O POS 6 TYRE",
+  "tokens": [
+   [
+    "CC708",
+    "<id>"
+   ],
+   [
+    "C/O",
+    "change out"
+   ],
+   [
+    "POS",
+    "position"
+   ],
+   [
+    "6",
+    "<num>"
+   ],
+   [
+    "TYRE",
+    "tyre"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-271",
+  "company": "A",
+  "split": "test",
+  "index": 271,
+  "text": "PH639 REPLACE HYD COOLER HOSES",
+  "tokens": [
+   [
+    "PH639",
+    "<id>"
+   ],
+   [
+    "REPLACE",
+    "replace"
+   ],
+   [
+    "HYD",
+    "hydraulic"
+   ],
+   [
+    "COOLER",
+    "cooler"
+   ],
+   [
+    "HOSES",
+    "hoses"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-273",
+  "company": "A",
+  "split": "test",
+  "index": 273,
+  "text": "PH639 REPL L/H STEERING CYL",
+  "tokens": [
+   [
+    "PH639",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "L/H",
+    "left hand"
+   ],
+   [
+    "STEERING",
+    "steering"
+   ],
+   [
+    "CYL",
+    "cylinder"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-275",
+  "company": "A",
+  "split": "test",
+  "index": 275,
+  "text": "PH639 REPL FRONT UNI AND CENTER BEARING",
+  "tokens": [
+   [
+    "PH639",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "FRONT",
+    "front"
+   ],
+   [
+    "UNI",
+    "universal joint"
+   ],
+   [
+    "AND",
+    "and"
+   ],
+   [
+    "CENTER",
+    "centre"
+   ],
+   [
+    "BEARING",
+    "bearing"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-278",
+  "company": "A",
+  "split": "test",
+  "index": 278,
+  "text": "CR871 INSP ENGINE OIL FILTER",
+  "tokens": [
+   [
+    "CR871",
+    "<id>"
+   ],
+   [
+    "INSP",
+    "inspect"
+   ],
+   [
+    "ENGINE",
+    "engine"
+   ],
+   [
+    "OIL",
+    "oil"
+   ],
+   [
+    "FILTER",
+    "filter"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-284",
+  "company": "A",
+  "split": "test",
+  "index": 284,
+  "text": "CC708 REPAIR BOTH REAR HAND RAILS",
+  "tokens": [
+   [
+    "CC708",
+    "<id>"
+   ],
+   [
+    "REPAIR",
+    "repair"
+   ],
+   [
+    "BOTH",
+    "both"
+   ],
+   [
+    "REAR",
+    "rear"
+   ],
+   [
+    "HAND",
+    "handrails"
+   ],
+   [
+    "RAILS",
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "A-test-285",
+  "company": "A",
+  "split": "test",
+  "index": 285,
+  "text": "PH639 REPL POS3 & 3 BRAKE PACKS",
+  "tokens": [
+   [
+    "PH639",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "POS3",
+    "position <num>"
+   ],
+   [
+    "&",
+    "and"
+   ],
+   [
+    "3",
+    "<num>"
+   ],
+   [
+    "BRAKE",
+    "brake"
+   ],
+   [
+    "PACKS",
+    "packs"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-286",
+  "company": "A",
+  "split": "test",
+  "index": 286,
+  "text": "PH639 REPL CENTER HITCH PINS AND BEARING",
+  "tokens": [
+   [
+    "PH639",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "CENTER",
+    "centre"
+   ],
+   [
+    "HITCH",
+    "hitch"
+   ],
+   [
+    "PINS",
+    "pins"
+   ],
+   [
+    "AND",
+    "and"
+   ],
+   [
+    "BEARING",
+    "bearing"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-287",
+  "company": "A",
+  "split": "test",
+  "index": 287,
+  "text": "AN426 REPL BUCKET",
+  "tokens": [
+   [
+    "AN426",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "BUCKET",
+    "bucket"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-289",
+  "company": "A",
+  "split": "test",
+  "index": 289,
+  "text": "XH531 REPL STEERING NEUTRALIZER SHAFT",
+  "tokens": [
+   [
+    "XH531",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "STEERING",
+    "steering"
+   ],
+   [
+    "NEUTRALIZER",
+    "neutralizer"
+   ],
+   [
+    "SHAFT",
+    "shaft"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-296",
+  "company": "A",
+  "split": "test",
+  "index": 296,
+  "text": "JP367 REPL MISSING TOOTH LOCK",
+  "tokens": [
+   [
+    "JP367",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "MISSING",
+    "missing"
+   ],
+   [
+    "TOOTH",
+    "tooth"
+   ],
+   [
+    "LOCK",
+    "lock"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-310",
+  "company": "A",
+  "split": "test",
+  "index": 310,
+  "text": "REAR DIFF YOKE",
+  "tokens": [
+   [
+    "REAR",
+    "rear"
+   ],
+   [
+    "DIFF",
+    "differential"
+   ],
+   [
+    "YOKE",
+    "yoke"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-312",
+  "company": "A",
+  "split": "test",
+  "index": 312,
+  "text": "CC708 786 HR PREVENTATIVE MAINTEN TBC",
+  "tokens": [
+   [
+    "CC708",
+    "<id>"
+   ],
+   [
+    "786",
+    "<num>"
+   ],
+   [
+    "HR",
+    "hour"
+   ],
+   [
+    "PREVENTATIVE",
+    "preventative"
+   ],
+   [
+    "MAINTEN",
+    "maintenance"
+   ],
+   [
+    "TBC",
+    "TBC"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-313",
+  "company": "A",
+  "split": "test",
+  "index": 313,
+  "text": "OU089 REPLACE DIFF OILS",
+  "tokens": [
+   [
+    "OU089",
+    "<id>"
+   ],
+   [
+    "REPLACE",
+    "replace"
+   ],
+   [
+    "DIFF",
+    "differential"
+   ],
+   [
+    "OILS",
+    "oils"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-314",
+  "company": "A",
+  "split": "test",
+  "index": 314,
+  "text": "XH531 REPL PROFILE BAR",
+  "tokens": [
+   [
+    "XH531",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "PROFILE",
+    "profile"
+   ],
+   [
+    "BAR",
+    "bar"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-317",
+  "company": "A",
+  "split": "test",
+  "index": 317,
+  "text": "CC708 RECHECK TRANS LEVEL",
+  "tokens": [
+   [
+    "CC708",
+    "<id>"
+   ],
+   [
+    "RECHECK",
+    "recheck"
+   ],
+   [
+    "TRANS",
+    "transmission"
+   ],
+   [
+    "LEVEL",
+    "level"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-325",
+  "company": "A",
+  "split": "test",
+  "index": 325,
+  "text": "MB119 BUCKET PINS NOT HOLING GREASE",
+  "tokens": [
+   [
+    "MB119",
+    "<id>"
+   ],
+   [
+    "BUCKET",
+    "bucket"
+   ],
+   [
+    "PINS",
+    "pins"
+   ],
+   [
+    "NOT",
+    "not"
+   ],
+   [
+    "HOLING",
+    "holding"
+   ],
+   [
+    "GREASE",
+    "grease"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-328",
+  "company": "A",
+  "split": "test",
+  "index": 328,
+  "text": "MB119 ENG/START FAULT",
+  "tokens": [
+   [
+    "MB119",
+    "<id>"
+   ],
+   [
+    "ENG/START",
+    "engine / start"
+   ],
+   [
+    "FAULT",
+    "fault"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-329",
+  "company": "A",
+  "split": "test",
+  "index": 329,
+  "text": "AN426 REPORTS TRANY OIL IS BLACK REPORT",
+  "tokens": [
+   [
+    "AN426",
+    "<id>"
+   ],
+   [
+    "REPORTS",
+    "reports"
+   ],
+   [
+    "TRANY",
+    "transmission"
+   ],
+   [
+    "OIL",
+    "oil"
+   ],
+   [
+    "IS",
+    "is"
+   ],
+   [
+    "BLACK",
+    "black"
+   ],
+   [
+    "REPORT",
+    "report"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-330",
+  "company": "A",
+  "split": "test",
+  "index": 330,
+  "text": "CR871 INV/REPAIR FUEL GAUGE FAULTY",
+  "tokens": [
+   [
+    "CR871",
+    "<id>"
+   ],
+   [
+    "INV/REPAIR",
+    "investigate / repair"
+   ],
+   [
+    "FUEL",
+    "fuel"
+   ],
+   [
+    "GAUGE",
+    "gauge"
+   ],
+   [
+    "FAULTY",
+    "faulty"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-333",
+  "company": "A",
+  "split": "test",
+  "index": 333,
+  "text": "GU245 REPL CUSHIONS IN CAB",
+  "tokens": [
+   [
+    "GU245",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "CUSHIONS",
+    "cushions"
+   ],
+   [
+    "IN",
+    "in"
+   ],
+   [
+    "CAB",
+    "cabin"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-335",
+  "company": "A",
+  "split": "test",
+  "index": 335,
+  "text": "XH531 REPL FAULTY SEAT",
+  "tokens": [
+   [
+    "XH531",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "FAULTY",
+    "faulty"
+   ],
+   [
+    "SEAT",
+    "seat"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-340",
+  "company": "A",
+  "split": "test",
+  "index": 340,
+  "text": "AN426 REPLACE STEERING LOCK OUT LEVER",
+  "tokens": [
+   [
+    "AN426",
+    "<id>"
+   ],
+   [
+    "REPLACE",
+    "replace"
+   ],
+   [
+    "STEERING",
+    "steering"
+   ],
+   [
+    "LOCK",
+    "lockout"
+   ],
+   [
+    "OUT",
+    ""
+   ],
+   [
+    "LEVER",
+    "lever"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-352",
+  "company": "A",
+  "split": "test",
+  "index": 352,
+  "text": "CR871 Replace Hydrolic Hose",
+  "tokens": [
+   [
+    "CR871",
+    "<id>"
+   ],
+   [
+    "Replace",
+    "replace"
+   ],
+   [
+    "Hydrolic",
+    "hydraulic"
+   ],
+   [
+    "Hose",
+    "hose"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-360",
+  "company": "A",
+  "split": "test",
+  "index": 360,
+  "text": "HF338 replace wiring harness to r term",
+  "tokens": [
+   [
+    "HF338",
+    "<id>"
+   ],
+   [
+    "replace",
+    "replace"
+   ],
+   [
+    "wiring",
+    "wiring"
+   ],
+   [
+    "harness",
+    "harness"
+   ],
+   [
+    "to",
+    "to"
+   ],
+   [
+    "r",
+    "right"
+   ],
+   [
+    "term",
+    "terminal"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-365",
+  "company": "A",
+  "split": "test",
+  "index": 365,
+  "text": "MB119 INV REP ENGINE SHUT DOWN FAULT",
+  "tokens": [
+   [
+    "MB119",
+    "<id>"
+   ],
+   [
+    "INV",
+    "investigate"
+   ],
+   [
+    "REP",
+    "repair"
+   ],
+   [
+    "ENGINE",
+    "engine"
+   ],
+   [
+    "SHUT",
+    "shutdown"
+   ],
+   [
+    "DOWN",
+    ""
+   ],
+   [
+    "FAULT",
+    "fault"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-369",
+  "company": "A",
+  "split": "test",
+  "index": 369,
+  "text": "BF079 REPL FAILED ALTERNATOR",
+  "tokens": [
+   [
+    "BF079",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "FAILED",
+    "failed"
+   ],
+   [
+    "ALTERNATOR",
+    "alternator"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-377",
+  "company": "A",
+  "split": "test",
+  "index": 377,
+  "text": "AN426 REPL L/H LIFT CYL",
+  "tokens": [
+   [
+    "AN426",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "L/H",
+    "left hand"
+   ],
+   [
+    "LIFT",
+    "lift"
+   ],
+   [
+    "CYL",
+    "cylinder"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-380",
+  "company": "A",
+  "split": "test",
+  "index": 380,
+  "text": "OU089 REPLACE TURBO PRES SENSOR",
+  "tokens": [
+   [
+    "OU089",
+    "<id>"
+   ],
+   [
+    "REPLACE",
+    "replace"
+   ],
+   [
+    "TURBO",
+    "turbo"
+   ],
+   [
+    "PRES",
+    "pressure"
+   ],
+   [
+    "SENSOR",
+    "sensor"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-387",
+  "company": "A",
+  "split": "test",
+  "index": 387,
+  "text": "GS690 REPA INTER FACE Q2895",
+  "tokens": [
+   [
+    "GS690",
+    "<id>"
+   ],
+   [
+    "REPA",
+    "repair"
+   ],
+   [
+    "INTER",
+    "internal"
+   ],
+   [
+    "FACE",
+    "face"
+   ],
+   [
+    "Q2895",
+    "<id>"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-391",
+  "company": "A",
+  "split": "test",
+  "index": 391,
+  "text": "qu978 park brake coming on intermittent",
+  "tokens": [
+   [
+    "qu978",
+    "<id>"
+   ],
+   [
+    "park",
+    "park"
+   ],
+   [
+    "brake",
+    "brake"
+   ],
+   [
+    "coming",
+    "coming"
+   ],
+   [
+    "on",
+    "on"
+   ],
+   [
+    "intermittent",
+    "intermittently"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-392",
+  "company": "A",
+  "split": "test",
+  "index": 392,
+  "text": "PH639 REPL R/H LIFT CYL CROSS OVER PIPE",
+  "tokens": [
+   [
+    "PH639",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "R/H",
+    "right hand"
+   ],
+   [
+    "LIFT",
+    "lift"
+   ],
+   [
+    "CYL",
+    "cylinder"
+   ],
+   [
+    "CROSS",
+    "crossover"
+   ],
+   [
+    "OVER",
+    ""
+   ],
+   [
+    "PIPE",
+    "pipe"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-393",
+  "company": "A",
+  "split": "test",
+  "index": 393,
+  "text": "CC708 REPL HYD TANK SIGHT GLASS",
+  "tokens": [
+   [
+    "CC708",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "HYD",
+    "hydraulic"
+   ],
+   [
+    "TANK",
+    "tank"
+   ],
+   [
+    "SIGHT",
+    "sight"
+   ],
+   [
+    "GLASS",
+    "glass"
+   ]
+  ]
+ },
+ {
+  "id": "A-test-399",
+  "company": "A",
+  "split": "test",
+  "index": 399,
+  "text": "CC708REPAIR TYRES OGA# 103416",
+  "tokens": [
+   [
+    "CC708REPAIR",
+    "<id> repair"
+   ],
+   [
+    "TYRES",
+    "tyres"
+   ],
+   [
+    "OGA#",
+    "OGA"
+   ],
+   [
+    "103416",
+    "<id>"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-002",
+  "company": "B",
+  "split": "test",
+  "index": 2,
+  "text": "BC4051 RH side carier roller",
+  "tokens": [
+   [
+    "BC4051",
+    "<id>"
+   ],
+   [
+    "RH",
+    "right hand"
+   ],
+   [
+    "side",
+    "side"
+   ],
+   [
+    "carier",
+    "carrier"
+   ],
+   [
+    "roller",
+    "roller"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-013",
+  "company": "B",
+  "split": "test",
+  "index": 13,
+  "text": "air con belt u/s",
+  "tokens": [
+   [
+    "air",
+    "air"
+   ],
+   [
+    "con",
+    "conditioner"
+   ],
+   [
+    "belt",
+    "belt"
+   ],
+   [
+    "u/s",
+    "unserviceable"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-021",
+  "company": "B",
+  "split": "test",
+  "index": 21,
+  "text": "UM4228-Inspect Hyd Cyl Blade Lift RHT",
+  "tokens": [
+   [
+    "UM4228-Inspect",
+    "<id> - inspect"
+   ],
+   [
+    "Hyd",
+    "hydraulic"
+   ],
+   [
+    "Cyl",
+    "cylinder"
+   ],
+   [
+    "Blade",
+    "blade"
+   ],
+   [
+    "Lift",
+    "lift"
+   ],
+   [
+    "RHT",
+    "right"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-022",
+  "company": "B",
+  "split": "test",
+  "index": 22,
+  "text": "RW7142 C/O U/S Cab light",
+  "tokens": [
+   [
+    "RW7142",
+    "<id>"
+   ],
+   [
+    "C/O",
+    "change out"
+   ],
+   [
+    "U/S",
+    "unserviceable"
+   ],
+   [
+    "Cab",
+    "cabin"
+   ],
+   [
+    "light",
+    "light"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-026",
+  "company": "B",
+  "split": "test",
+  "index": 26,
+  "text": "KI2123 BRAKE COOLING HOSE HAS DEVELOPEDy",
+  "tokens": [
+   [
+    "KI2123",
+    "<id>"
+   ],
+   [
+    "BRAKE",
+    "brake"
+   ],
+   [
+    "COOLING",
+    "cooling"
+   ],
+   [
+    "HOSE",
+    "hose"
+   ],
+   [
+    "HAS",
+    "has"
+   ],
+   [
+    "DEVELOPEDy",
+    "developed"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-027",
+  "company": "B",
+  "split": "test",
+  "index": 27,
+  "text": "QR0218-C/out Hyd Motor Swing RHT FRNTuri",
+  "tokens": [
+   [
+    "QR0218-C/out",
+    "<id> - change out"
+   ],
+   [
+    "Hyd",
+    "hydraulic"
+   ],
+   [
+    "Motor",
+    "motor"
+   ],
+   [
+    "Swing",
+    "swing"
+   ],
+   [
+    "RHT",
+    "right"
+   ],
+   [
+    "FRNTuri",
+    "front"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-030",
+  "company": "B",
+  "split": "test",
+  "index": 30,
+  "text": "JA0341 Cab Ladder Control Sw Mount U/S",
+  "tokens": [
+   [
+    "JA0341",
+    "<id>"
+   ],
+   [
+    "Cab",
+    "cabin"
+   ],
+   [
+    "Ladder",
+    "ladder"
+   ],
+   [
+    "Control",
+    "control"
+   ],
+   [
+    "Sw",
+    "switch"
+   ],
+   [
+    "Mount",
+    "mount"
+   ],
+   [
+    "U/S",
+    "unserviceable"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-034",
+  "company": "B",
+  "split": "test",
+  "index": 34,
+  "text": "1000H Mech Grader JD8905 PO",
+  "tokens": [
+   [
+    "1000H",
+    "<num> hour"
+   ],
+   [
+    "Mech",
+    "mechanical"
+   ],
+   [
+    "Grader",
+    "grader"
+   ],
+   [
+    "JD8905",
+    "<id>"
+   ],
+   [
+    "PO",
+    "PO"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-036",
+  "company": "B",
+  "split": "test",
+  "index": 36,
+  "text": "XF3996 1000hr Service & Inspection",
+  "tokens": [
+   [
+    "XF3996",
+    "<id>"
+   ],
+   [
+    "1000hr",
+    "<num> hour"
+   ],
+   [
+    "Service",
+    "service"
+   ],
+   [
+    "&",
+    "and"
+   ],
+   [
+    "Inspection",
+    "inspection"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-042",
+  "company": "B",
+  "split": "test",
+  "index": 42,
+  "text": "1000H Mech Svce Wtr Truck XK9760",
+  "tokens": [
+   [
+    "1000H",
+    "<num> hour"
+   ],
+   [
+    "Mech",
+    "mechanical"
+   ],
+   [
+    "Svce",
+    "service"
+   ],
+   [
+    "Wtr",
+    "water"
+   ],
+   [
+    "Truck",
+    "truck"
+   ],
+   [
+    "XK9760",
+    "<id>"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-044",
+  "company": "B",
+  "split": "test",
+  "index": 44,
+  "text": "TV3998 Leaking hyd hose at rockbraker",
+  "tokens": [
+   [
+    "TV3998",
+    "<id>"
+   ],
+   [
+    "Leaking",
+    "leaking"
+   ],
+   [
+    "hyd",
+    "hydraulic"
+   ],
+   [
+    "hose",
+    "hose"
+   ],
+   [
+    "at",
+    "at"
+   ],
+   [
+    "rockbraker",
+    "rockbreaker"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-045",
+  "company": "B",
+  "split": "test",
+  "index": 45,
+  "text": "LV7795 Electric horn u/s",
+  "tokens": [
+   [
+    "LV7795",
+    "<id>"
+   ],
+   [
+    "Electric",
+    "electric"
+   ],
+   [
+    "horn",
+    "horn"
+   ],
+   [
+    "u/s",
+    "unserviceable"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-048",
+  "company": "B",
+  "split": "test",
+  "index": 48,
+  "text": "AL6487 P/load scales at times don't work",
+  "tokens": [
+   [
+    "AL6487",
+    "<id>"
+   ],
+   [
+    "P/load",
+    "payload"
+   ],
+   [
+    "scales",
+    "scales"
+   ],
+   [
+    "at",
+    "at"
+   ],
+   [
+    "times",
+    "times"
+   ],
+   [
+    "don't",
+    "don't"
+   ],
+   [
+    "work",
+    "work"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-059",
+  "company": "B",
+  "split": "test",
+  "index": 59,
+  "text": "CZ6065 Middle/side tray light missing RH",
+  "tokens": [
+   [
+    "CZ6065",
+    "<id>"
+   ],
+   [
+    "Middle/side",
+    "middle / side"
+   ],
+   [
+    "tray",
+    "tray"
+   ],
+   [
+    "light",
+    "light"
+   ],
+   [
+    "missing",
+    "missing"
+   ],
+   [
+    "RH",
+    "right hand"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-073",
+  "company": "B",
+  "split": "test",
+  "index": 73,
+  "text": "1000H Mech Insp TRK Roll 3 RH OO9426",
+  "tokens": [
+   [
+    "1000H",
+    "<num> hour"
+   ],
+   [
+    "Mech",
+    "mechanical"
+   ],
+   [
+    "Insp",
+    "inspection"
+   ],
+   [
+    "TRK",
+    "track"
+   ],
+   [
+    "Roll",
+    "roller"
+   ],
+   [
+    "3",
+    "<num>"
+   ],
+   [
+    "RH",
+    "right hand"
+   ],
+   [
+    "OO9426",
+    "<id>"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-074",
+  "company": "B",
+  "split": "test",
+  "index": 74,
+  "text": "AM/FM radio faulty",
+  "tokens": [
+   [
+    "AM/FM",
+    "AM / FM"
+   ],
+   [
+    "radio",
+    "radio"
+   ],
+   [
+    "faulty",
+    "faulty"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-078",
+  "company": "B",
+  "split": "test",
+  "index": 78,
+  "text": "1000H Insp Hyd Cyl Rip Lift RH XS7870",
+  "tokens": [
+   [
+    "1000H",
+    "<num> hour"
+   ],
+   [
+    "Insp",
+    "inspection"
+   ],
+   [
+    "Hyd",
+    "hydraulic"
+   ],
+   [
+    "Cyl",
+    "cylinder"
+   ],
+   [
+    "Rip",
+    "rip"
+   ],
+   [
+    "Lift",
+    "lift"
+   ],
+   [
+    "RH",
+    "right hand"
+   ],
+   [
+    "XS7870",
+    "<id>"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-079",
+  "company": "B",
+  "split": "test",
+  "index": 79,
+  "text": "XH1714 R/Rear reverse light loose",
+  "tokens": [
+   [
+    "XH1714",
+    "<id>"
+   ],
+   [
+    "R/Rear",
+    "right rear"
+   ],
+   [
+    "reverse",
+    "reverse"
+   ],
+   [
+    "light",
+    "light"
+   ],
+   [
+    "loose",
+    "loose"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-080",
+  "company": "B",
+  "split": "test",
+  "index": 80,
+  "text": "UN7986- Diff lube Hose leaking",
+  "tokens": [
+   [
+    "UN7986-",
+    "<id> -"
+   ],
+   [
+    "Diff",
+    "differential"
+   ],
+   [
+    "lube",
+    "lube"
+   ],
+   [
+    "Hose",
+    "hose"
+   ],
+   [
+    "leaking",
+    "leaking"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-082",
+  "company": "B",
+  "split": "test",
+  "index": 82,
+  "text": "DO7053 - RHF blade RAM seal missing",
+  "tokens": [
+   [
+    "DO7053",
+    "<id>"
+   ],
+   [
+    "-",
+    "-"
+   ],
+   [
+    "RHF",
+    "right hand front"
+   ],
+   [
+    "blade",
+    "blade"
+   ],
+   [
+    "RAM",
+    "RAM"
+   ],
+   [
+    "seal",
+    "seal"
+   ],
+   [
+    "missing",
+    "missing"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-089",
+  "company": "B",
+  "split": "test",
+  "index": 89,
+  "text": "UM4228 Replace broken lower RH step",
+  "tokens": [
+   [
+    "UM4228",
+    "<id>"
+   ],
+   [
+    "Replace",
+    "replace"
+   ],
+   [
+    "broken",
+    "broken"
+   ],
+   [
+    "lower",
+    "lower"
+   ],
+   [
+    "RH",
+    "right hand"
+   ],
+   [
+    "step",
+    "step"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-093",
+  "company": "B",
+  "split": "test",
+  "index": 93,
+  "text": "WK1566 Install precleaner dust valve",
+  "tokens": [
+   [
+    "WK1566",
+    "<id>"
+   ],
+   [
+    "Install",
+    "install"
+   ],
+   [
+    "precleaner",
+    "pre-cleaner"
+   ],
+   [
+    "dust",
+    "dust"
+   ],
+   [
+    "valve",
+    "valve"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-094",
+  "company": "B",
+  "split": "test",
+  "index": 94,
+  "text": "Me9685 Grease Injector Mount Plate u/s",
+  "tokens": [
+   [
+    "Me9685",
+    "<id>"
+   ],
+   [
+    "Grease",
+    "grease"
+   ],
+   [
+    "Injector",
+    "injector"
+   ],
+   [
+    "Mount",
+    "mount"
+   ],
+   [
+    "Plate",
+    "plate"
+   ],
+   [
+    "u/s",
+    "unserviceable"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-095",
+  "company": "B",
+  "split": "test",
+  "index": 95,
+  "text": "1000H Insp Hyd Cyl Rip Lift LH CC0233",
+  "tokens": [
+   [
+    "1000H",
+    "<num> hour"
+   ],
+   [
+    "Insp",
+    "inspection"
+   ],
+   [
+    "Hyd",
+    "hydraulic"
+   ],
+   [
+    "Cyl",
+    "cylinder"
+   ],
+   [
+    "Rip",
+    "rip"
+   ],
+   [
+    "Lift",
+    "lift"
+   ],
+   [
+    "LH",
+    "left hand"
+   ],
+   [
+    "CC0233",
+    "<id>"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-102",
+  "company": "B",
+  "split": "test",
+  "index": 102,
+  "text": "JA0341 Minor ENG oil leak top rear eng",
+  "tokens": [
+   [
+    "JA0341",
+    "<id>"
+   ],
+   [
+    "Minor",
+    "minor"
+   ],
+   [
+    "ENG",
+    "engine"
+   ],
+   [
+    "oil",
+    "oil"
+   ],
+   [
+    "leak",
+    "leak"
+   ],
+   [
+    "top",
+    "top"
+   ],
+   [
+    "rear",
+    "rear"
+   ],
+   [
+    "eng",
+    "engine"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-109",
+  "company": "B",
+  "split": "test",
+  "index": 109,
+  "text": "Zk2486 Replace Alternator RH Eng",
+  "tokens": [
+   [
+    "Zk2486",
+    "<id>"
+   ],
+   [
+    "Replace",
+    "replace"
+   ],
+   [
+    "Alternator",
+    "alternator"
+   ],
+   [
+    "RH",
+    "right hand"
+   ],
+   [
+    "Eng",
+    "engine"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-110",
+  "company": "B",
+  "split": "test",
+  "index": 110,
+  "text": "XH1714 FIT NEW TYRES 7 & 8",
+  "tokens": [
+   [
+    "XH1714",
+    "<id>"
+   ],
+   [
+    "FIT",
+    "fit"
+   ],
+   [
+    "NEW",
+    "new"
+   ],
+   [
+    "TYRES",
+    "tyres"
+   ],
+   [
+    "7",
+    "<num>"
+   ],
+   [
+    "&",
+    "and"
+   ],
+   [
+    "8",
+    "<num>"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-113",
+  "company": "B",
+  "split": "test",
+  "index": 113,
+  "text": "MV3594 Oil leak from rotor chamber",
+  "tokens": [
+   [
+    "MV3594",
+    "<id>"
+   ],
+   [
+    "Oil",
+    "oil"
+   ],
+   [
+    "leak",
+    "leak"
+   ],
+   [
+    "from",
+    "from"
+   ],
+   [
+    "rotor",
+    "rotochamber"
+   ],
+   [
+    "chamber",
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "B-test-118",
+  "company": "B",
+  "split": "test",
+  "index": 118,
+  "text": "RW7142 Replace u/s bucket cyl hose",
+  "tokens": [
+   [
+    "RW7142",
+    "<id>"
+   ],
+   [
+    "Replace",
+    "replace"
+   ],
+   [
+    "u/s",
+    "unserviceable"
+   ],
+   [
+    "bucket",
+    "bucket"
+   ],
+   [
+    "cyl",
+    "cylinder"
+   ],
+   [
+    "hose",
+    "hose"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-119",
+  "company": "B",
+  "split": "test",
+  "index": 119,
+  "text": "500H Mech Svce Dozer M76S XS7870",
+  "tokens": [
+   [
+    "500H",
+    "<num> hour"
+   ],
+   [
+    "Mech",
+    "mechanical"
+   ],
+   [
+    "Svce",
+    "service"
+   ],
+   [
+    "Dozer",
+    "dozer"
+   ],
+   [
+    "M76S",
+    "<id>"
+   ],
+   [
+    "XS7870",
+    "<id>"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-121",
+  "company": "B",
+  "split": "test",
+  "index": 121,
+  "text": "DU7016 RT/LF Susp Cylinder fault err",
+  "tokens": [
+   [
+    "DU7016",
+    "<id>"
+   ],
+   [
+    "RT/LF",
+    "right / left"
+   ],
+   [
+    "Susp",
+    "suspension"
+   ],
+   [
+    "Cylinder",
+    "cylinder"
+   ],
+   [
+    "fault",
+    "fault"
+   ],
+   [
+    "err",
+    "error"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-122",
+  "company": "B",
+  "split": "test",
+  "index": 122,
+  "text": "GO8941 Replace U/S starter relay",
+  "tokens": [
+   [
+    "GO8941",
+    "<id>"
+   ],
+   [
+    "Replace",
+    "replace"
+   ],
+   [
+    "U/S",
+    "unserviceable"
+   ],
+   [
+    "starter",
+    "starter"
+   ],
+   [
+    "relay",
+    "relay"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-136",
+  "company": "B",
+  "split": "test",
+  "index": 136,
+  "text": "UF2558-Inspect Hyd Cyl Tong Break",
+  "tokens": [
+   [
+    "UF2558-Inspect",
+    "<id> - inspect"
+   ],
+   [
+    "Hyd",
+    "hydraulic"
+   ],
+   [
+    "Cyl",
+    "cylinder"
+   ],
+   [
+    "Tong",
+    "tong"
+   ],
+   [
+    "Break",
+    "break"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-143",
+  "company": "B",
+  "split": "test",
+  "index": 143,
+  "text": "JZ9248 Replace failed aux water pump",
+  "tokens": [
+   [
+    "JZ9248",
+    "<id>"
+   ],
+   [
+    "Replace",
+    "replace"
+   ],
+   [
+    "failed",
+    "failed"
+   ],
+   [
+    "aux",
+    "auxiliary"
+   ],
+   [
+    "water",
+    "water"
+   ],
+   [
+    "pump",
+    "pump"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-144",
+  "company": "B",
+  "split": "test",
+  "index": 144,
+  "text": "BG0988 RH door ceasing hard to open",
+  "tokens": [
+   [
+    "BG0988",
+    "<id>"
+   ],
+   [
+    "RH",
+    "right hand"
+   ],
+   [
+    "door",
+    "door"
+   ],
+   [
+    "ceasing",
+    "ceasing"
+   ],
+   [
+    "hard",
+    "hard"
+   ],
+   [
+    "to",
+    "to"
+   ],
+   [
+    "open",
+    "open"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-145",
+  "company": "B",
+  "split": "test",
+  "index": 145,
+  "text": "JA0341 1000hr Service & Inspection",
+  "tokens": [
+   [
+    "JA0341",
+    "<id>"
+   ],
+   [
+    "1000hr",
+    "<num> hour"
+   ],
+   [
+    "Service",
+    "service"
+   ],
+   [
+    "&",
+    "and"
+   ],
+   [
+    "Inspection",
+    "inspection"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-151",
+  "company": "B",
+  "split": "test",
+  "index": 151,
+  "text": "EZ7111 Trans pump leak",
+  "tokens": [
+   [
+    "EZ7111",
+    "<id>"
+   ],
+   [
+    "Trans",
+    "transmission"
+   ],
+   [
+    "pump",
+    "pump"
+   ],
+   [
+    "leak",
+    "leak"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-155",
+  "company": "B",
+  "split": "test",
+  "index": 155,
+  "text": "WK1566 CW Eng water pump snapped shaft",
+  "tokens": [
+   [
+    "WK1566",
+    "<id>"
+   ],
+   [
+    "CW",
+    "CW"
+   ],
+   [
+    "Eng",
+    "engine"
+   ],
+   [
+    "water",
+    "water"
+   ],
+   [
+    "pump",
+    "pump"
+   ],
+   [
+    "snapped",
+    "snapped"
+   ],
+   [
+    "shaft",
+    "shaft"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-165",
+  "company": "B",
+  "split": "test",
+  "index": 165,
+  "text": "3M Mech Cond Ball Stut Crack Test JZ9248",
+  "tokens": [
+   [
+    "3M",
+    "<num> month"
+   ],
+   [
+    "Mech",
+    "mechanical"
+   ],
+   [
+    "Cond",
+    "condition"
+   ],
+   [
+    "Ball",
+    "ball"
+   ],
+   [
+    "Stut",
+    "stud"
+   ],
+   [
+    "Crack",
+    "crack"
+   ],
+   [
+    "Test",
+    "test"
+   ],
+   [
+    "JZ9248",
+    "<id>"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-168",
+  "company": "B",
+  "split": "test",
+  "index": 168,
+  "text": "1000H Mech Insp EQL Bar CC0233",
+  "tokens": [
+   [
+    "1000H",
+    "<num> hour"
+   ],
+   [
+    "Mech",
+    "mechanical"
+   ],
+   [
+    "Insp",
+    "inspection"
+   ],
+   [
+    "EQL",
+    "equaliser"
+   ],
+   [
+    "Bar",
+    "bar"
+   ],
+   [
+    "CC0233",
+    "<id>"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-175",
+  "company": "B",
+  "split": "test",
+  "index": 175,
+  "text": "500H Mech Svce Haul Truck JZ9248",
+  "tokens": [
+   [
+    "500H",
+    "<num> hour"
+   ],
+   [
+    "Mech",
+    "mechanical"
+   ],
+   [
+    "Svce",
+    "service"
+   ],
+   [
+    "Haul",
+    "haul"
+   ],
+   [
+    "Truck",
+    "truck"
+   ],
+   [
+    "JZ9248",
+    "<id>"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-177",
+  "company": "B",
+  "split": "test",
+  "index": 177,
+  "text": "XF3996 c/o blown pos 3 tyre",
+  "tokens": [
+   [
+    "XF3996",
+    "<id>"
+   ],
+   [
+    "c/o",
+    "change out"
+   ],
+   [
+    "blown",
+    "blown"
+   ],
+   [
+    "pos",
+    "position"
+   ],
+   [
+    "3",
+    "<num>"
+   ],
+   [
+    "tyre",
+    "tyre"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-183",
+  "company": "B",
+  "split": "test",
+  "index": 183,
+  "text": "AI9714-C/out Turbo Primary RHT FRNT",
+  "tokens": [
+   [
+    "AI9714-C/out",
+    "<id> - change out"
+   ],
+   [
+    "Turbo",
+    "turbo"
+   ],
+   [
+    "Primary",
+    "primary"
+   ],
+   [
+    "RHT",
+    "right"
+   ],
+   [
+    "FRNT",
+    "front"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-193",
+  "company": "B",
+  "split": "test",
+  "index": 193,
+  "text": "DN9817-C/out Hyd Motor Engine Fan POS 1",
+  "tokens": [
+   [
+    "DN9817-C/out",
+    "<id> - change out"
+   ],
+   [
+    "Hyd",
+    "hydraulic"
+   ],
+   [
+    "Motor",
+    "motor"
+   ],
+   [
+    "Engine",
+    "engine"
+   ],
+   [
+    "Fan",
+    "fan"
+   ],
+   [
+    "POS",
+    "position"
+   ],
+   [
+    "1",
+    "<num>"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-194",
+  "company": "B",
+  "split": "test",
+  "index": 194,
+  "text": "SM2291 AM/FM not working",
+  "tokens": [
+   [
+    "SM2291",
+    "<id>"
+   ],
+   [
+    "AM/FM",
+    "AM / FM"
+   ],
+   [
+    "not",
+    "not"
+   ],
+   [
+    "working",
+    "working"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-197",
+  "company": "B",
+  "split": "test",
+  "index": 197,
+  "text": "MR0229 - AirCon blowing hot air",
+  "tokens": [
+   [
+    "MR0229",
+    "<id>"
+   ],
+   [
+    "-",
+    "-"
+   ],
+   [
+    "AirCon",
+    "air conditioner"
+   ],
+   [
+    "blowing",
+    "blowing"
+   ],
+   [
+    "hot",
+    "hot"
+   ],
+   [
+    "air",
+    "air"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-200",
+  "company": "B",
+  "split": "test",
+  "index": 200,
+  "text": "2000H Mech Svce Shovel DN9817",
+  "tokens": [
+   [
+    "2000H",
+    "<num> hour"
+   ],
+   [
+    "Mech",
+    "mechanical"
+   ],
+   [
+    "Svce",
+    "service"
+   ],
+   [
+    "Shovel",
+    "shovel"
+   ],
+   [
+    "DN9817",
+    "<id>"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-204",
+  "company": "B",
+  "split": "test",
+  "index": 204,
+  "text": "1000H Mech Insp Hyd Cyl Bucket LH TY8010",
+  "tokens": [
+   [
+    "1000H",
+    "<num> hour"
+   ],
+   [
+    "Mech",
+    "mechanical"
+   ],
+   [
+    "Insp",
+    "inspection"
+   ],
+   [
+    "Hyd",
+    "hydraulic"
+   ],
+   [
+    "Cyl",
+    "cylinder"
+   ],
+   [
+    "Bucket",
+    "bucket"
+   ],
+   [
+    "LH",
+    "left hand"
+   ],
+   [
+    "TY8010",
+    "<id>"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-205",
+  "company": "B",
+  "split": "test",
+  "index": 205,
+  "text": "6M Mech Insp Fire Suppression PD2335",
+  "tokens": [
+   [
+    "6M",
+    "<num> month"
+   ],
+   [
+    "Mech",
+    "mechanical"
+   ],
+   [
+    "Insp",
+    "inspection"
+   ],
+   [
+    "Fire",
+    "fire"
+   ],
+   [
+    "Suppression",
+    "suppression"
+   ],
+   [
+    "PD2335",
+    "<id>"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-211",
+  "company": "B",
+  "split": "test",
+  "index": 211,
+  "text": "WK1566 Replace leaking brake cooling hos",
+  "tokens": [
+   [
+    "WK1566",
+    "<id>"
+   ],
+   [
+    "Replace",
+    "replace"
+   ],
+   [
+    "leaking",
+    "leaking"
+   ],
+   [
+    "brake",
+    "brake"
+   ],
+   [
+    "cooling",
+    "cooling"
+   ],
+   [
+    "hos",
+    "hose"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-213",
+  "company": "B",
+  "split": "test",
+  "index": 213,
+  "text": "A/C not working very well",
+  "tokens": [
+   [
+    "A/C",
+    "air conditioner"
+   ],
+   [
+    "not",
+    "not"
+   ],
+   [
+    "working",
+    "working"
+   ],
+   [
+    "very",
+    "very"
+   ],
+   [
+    "well",
+    "well"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-215",
+  "company": "B",
+  "split": "test",
+  "index": 215,
+  "text": "CW SM2291 failed aux water pump PO",
+  "tokens": [
+   [
+    "CW",
+    "CW"
+   ],
+   [
+    "SM2291",
+    "<id>"
+   ],
+   [
+    "failed",
+    "failed"
+   ],
+   [
+    "aux",
+    "auxiliary"
+   ],
+   [
+    "water",
+    "water"
+   ],
+   [
+    "pump",
+    "pump"
+   ],
+   [
+    "PO",
+    "PO"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-217",
+  "company": "B",
+  "split": "test",
+  "index": 217,
+  "text": "RW7142 lower a/con comp alignment",
+  "tokens": [
+   [
+    "RW7142",
+    "<id>"
+   ],
+   [
+    "lower",
+    "lower"
+   ],
+   [
+    "a/con",
+    "air conditioner"
+   ],
+   [
+    "comp",
+    "compressor"
+   ],
+   [
+    "alignment",
+    "alignment"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-219",
+  "company": "B",
+  "split": "test",
+  "index": 219,
+  "text": "QR0218 - C/O HOSE AND REPAIR HOSE CLAMPS",
+  "tokens": [
+   [
+    "QR0218",
+    "<id>"
+   ],
+   [
+    "-",
+    "-"
+   ],
+   [
+    "C/O",
+    "change out"
+   ],
+   [
+    "HOSE",
+    "hose"
+   ],
+   [
+    "AND",
+    "and"
+   ],
+   [
+    "REPAIR",
+    "repair"
+   ],
+   [
+    "HOSE",
+    "hose"
+   ],
+   [
+    "CLAMPS",
+    "clamps"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-220",
+  "company": "B",
+  "split": "test",
+  "index": 220,
+  "text": "RW7142 Touch screen u/s",
+  "tokens": [
+   [
+    "RW7142",
+    "<id>"
+   ],
+   [
+    "Touch",
+    "touch"
+   ],
+   [
+    "screen",
+    "screen"
+   ],
+   [
+    "u/s",
+    "unserviceable"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-222",
+  "company": "B",
+  "split": "test",
+  "index": 222,
+  "text": "DO7053 - In Cab stop button missing",
+  "tokens": [
+   [
+    "DO7053",
+    "<id>"
+   ],
+   [
+    "-",
+    "-"
+   ],
+   [
+    "In",
+    "in"
+   ],
+   [
+    "Cab",
+    "cabin"
+   ],
+   [
+    "stop",
+    "stop"
+   ],
+   [
+    "button",
+    "button"
+   ],
+   [
+    "missing",
+    "missing"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-224",
+  "company": "B",
+  "split": "test",
+  "index": 224,
+  "text": "1000H Mech Svce Haul Truck MV3594",
+  "tokens": [
+   [
+    "1000H",
+    "<num> hour"
+   ],
+   [
+    "Mech",
+    "mechanical"
+   ],
+   [
+    "Svce",
+    "service"
+   ],
+   [
+    "Haul",
+    "haul"
+   ],
+   [
+    "Truck",
+    "truck"
+   ],
+   [
+    "MV3594",
+    "<id>"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-230",
+  "company": "B",
+  "split": "test",
+  "index": 230,
+  "text": "2000H Mech Svce Haul Truck WK1566",
+  "tokens": [
+   [
+    "2000H",
+    "<num> hour"
+   ],
+   [
+    "Mech",
+    "mechanical"
+   ],
+   [
+    "Svce",
+    "service"
+   ],
+   [
+    "Haul",
+    "haul"
+   ],
+   [
+    "Truck",
+    "truck"
+   ],
+   [
+    "WK1566",
+    "<id>"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-231",
+  "company": "B",
+  "split": "test",
+  "index": 231,
+  "text": "System Voltage Low/Isolator handle broke",
+  "tokens": [
+   [
+    "System",
+    "system"
+   ],
+   [
+    "Voltage",
+    "voltage"
+   ],
+   [
+    "Low/Isolator",
+    "low / isolator"
+   ],
+   [
+    "handle",
+    "handle"
+   ],
+   [
+    "broke",
+    "broke"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-233",
+  "company": "B",
+  "split": "test",
+  "index": 233,
+  "text": "BT0391 air con belt us",
+  "tokens": [
+   [
+    "BT0391",
+    "<id>"
+   ],
+   [
+    "air",
+    "air"
+   ],
+   [
+    "con",
+    "conditioner"
+   ],
+   [
+    "belt",
+    "belt"
+   ],
+   [
+    "us",
+    "unserviceable"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-235",
+  "company": "B",
+  "split": "test",
+  "index": 235,
+  "text": "AV0573 Rotate pos 4 4&5 tyre & 3&4 rims",
+  "tokens": [
+   [
+    "AV0573",
+    "<id>"
+   ],
+   [
+    "Rotate",
+    "rotate"
+   ],
+   [
+    "pos",
+    "position"
+   ],
+   [
+    "4",
+    "<num>"
+   ],
+   [
+    "4&5",
+    "<num> and <num>"
+   ],
+   [
+    "tyre",
+    "tyre"
+   ],
+   [
+    "&",
+    "and"
+   ],
+   [
+    "3&4",
+    "<num> and <num>"
+   ],
+   [
+    "rims",
+    "rims"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-237",
+  "company": "B",
+  "split": "test",
+  "index": 237,
+  "text": "LL3433 Send air compresor for repair REQ",
+  "tokens": [
+   [
+    "LL3433",
+    "<id>"
+   ],
+   [
+    "Send",
+    "send"
+   ],
+   [
+    "air",
+    "air"
+   ],
+   [
+    "compresor",
+    "compressor"
+   ],
+   [
+    "for",
+    "for"
+   ],
+   [
+    "repair",
+    "repair"
+   ],
+   [
+    "REQ",
+    "required"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-241",
+  "company": "B",
+  "split": "test",
+  "index": 241,
+  "text": "4000H Mech Svce Eng Tune SM2291",
+  "tokens": [
+   [
+    "4000H",
+    "<num> hour"
+   ],
+   [
+    "Mech",
+    "mechanical"
+   ],
+   [
+    "Svce",
+    "service"
+   ],
+   [
+    "Eng",
+    "engine"
+   ],
+   [
+    "Tune",
+    "tune"
+   ],
+   [
+    "SM2291",
+    "<id>"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-254",
+  "company": "B",
+  "split": "test",
+  "index": 254,
+  "text": "CC0233 Ripper bar cont creeping down",
+  "tokens": [
+   [
+    "CC0233",
+    "<id>"
+   ],
+   [
+    "Ripper",
+    "ripper"
+   ],
+   [
+    "bar",
+    "bar"
+   ],
+   [
+    "cont",
+    "continuously"
+   ],
+   [
+    "creeping",
+    "creeping"
+   ],
+   [
+    "down",
+    "down"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-257",
+  "company": "B",
+  "split": "test",
+  "index": 257,
+  "text": "UQ9701-C/out Turbo Primary RHT REAR",
+  "tokens": [
+   [
+    "UQ9701-C/out",
+    "<id> - change out"
+   ],
+   [
+    "Turbo",
+    "turbo"
+   ],
+   [
+    "Primary",
+    "primary"
+   ],
+   [
+    "RHT",
+    "right"
+   ],
+   [
+    "REAR",
+    "rear"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-261",
+  "company": "B",
+  "split": "test",
+  "index": 261,
+  "text": "LD3192 250hr Service",
+  "tokens": [
+   [
+    "LD3192",
+    "<id>"
+   ],
+   [
+    "250hr",
+    "<num> hour"
+   ],
+   [
+    "Service",
+    "service"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-263",
+  "company": "B",
+  "split": "test",
+  "index": 263,
+  "text": "UN7986 BRK/AIR System pressur",
+  "tokens": [
+   [
+    "UN7986",
+    "<id>"
+   ],
+   [
+    "BRK/AIR",
+    "brake / air"
+   ],
+   [
+    "System",
+    "system"
+   ],
+   [
+    "pressur",
+    "pressure"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-266",
+  "company": "B",
+  "split": "test",
+  "index": 266,
+  "text": "FW9593 - Install precleaner dust valves",
+  "tokens": [
+   [
+    "FW9593",
+    "<id>"
+   ],
+   [
+    "-",
+    "-"
+   ],
+   [
+    "Install",
+    "install"
+   ],
+   [
+    "precleaner",
+    "pre-cleaner"
+   ],
+   [
+    "dust",
+    "dust"
+   ],
+   [
+    "valves",
+    "valves"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-274",
+  "company": "B",
+  "split": "test",
+  "index": 274,
+  "text": "BT0391-C/out Turbo Primary RHT FRNT",
+  "tokens": [
+   [
+    "BT0391-C/out",
+    "<id> - change out"
+   ],
+   [
+    "Turbo",
+    "turbo"
+   ],
+   [
+    "Primary",
+    "primary"
+   ],
+   [
+    "RHT",
+    "right"
+   ],
+   [
+    "FRNT",
+    "front"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-275",
+  "company": "B",
+  "split": "test",
+  "index": 275,
+  "text": "PD2335 - L/H BOOM CYL HOSE LEAKING PO",
+  "tokens": [
+   [
+    "PD2335",
+    "<id>"
+   ],
+   [
+    "-",
+    "-"
+   ],
+   [
+    "L/H",
+    "left hand"
+   ],
+   [
+    "BOOM",
+    "boom"
+   ],
+   [
+    "CYL",
+    "cylinder"
+   ],
+   [
+    "HOSE",
+    "hose"
+   ],
+   [
+    "LEAKING",
+    "leaking"
+   ],
+   [
+    "PO",
+    "PO"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-276",
+  "company": "B",
+  "split": "test",
+  "index": 276,
+  "text": "1000H Insp Hyd Cyl Mast Raise LH UF2558",
+  "tokens": [
+   [
+    "1000H",
+    "<num> hour"
+   ],
+   [
+    "Insp",
+    "inspection"
+   ],
+   [
+    "Hyd",
+    "hydraulic"
+   ],
+   [
+    "Cyl",
+    "cylinder"
+   ],
+   [
+    "Mast",
+    "mast"
+   ],
+   [
+    "Raise",
+    "raise"
+   ],
+   [
+    "LH",
+    "left hand"
+   ],
+   [
+    "UF2558",
+    "<id>"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-281",
+  "company": "B",
+  "split": "test",
+  "index": 281,
+  "text": "1000H Mech Insp Operator Seat EZ7111",
+  "tokens": [
+   [
+    "1000H",
+    "<num> hour"
+   ],
+   [
+    "Mech",
+    "mechanical"
+   ],
+   [
+    "Insp",
+    "inspection"
+   ],
+   [
+    "Operator",
+    "operator"
+   ],
+   [
+    "Seat",
+    "seat"
+   ],
+   [
+    "EZ7111",
+    "<id>"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-282",
+  "company": "B",
+  "split": "test",
+  "index": 282,
+  "text": "BT0391 INJ ERR'S ON VIMS",
+  "tokens": [
+   [
+    "BT0391",
+    "<id>"
+   ],
+   [
+    "INJ",
+    "injector"
+   ],
+   [
+    "ERR'S",
+    "errors"
+   ],
+   [
+    "ON",
+    "on"
+   ],
+   [
+    "VIMS",
+    "VIMS"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-285",
+  "company": "B",
+  "split": "test",
+  "index": 285,
+  "text": "UN7986-C/out Turbo Primary LFT FRNT",
+  "tokens": [
+   [
+    "UN7986-C/out",
+    "<id> - change out"
+   ],
+   [
+    "Turbo",
+    "turbo"
+   ],
+   [
+    "Primary",
+    "primary"
+   ],
+   [
+    "LFT",
+    "left"
+   ],
+   [
+    "FRNT",
+    "front"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-295",
+  "company": "B",
+  "split": "test",
+  "index": 295,
+  "text": "1000H Mech Insp Control VLV LOW OO9426",
+  "tokens": [
+   [
+    "1000H",
+    "<num> hour"
+   ],
+   [
+    "Mech",
+    "mechanical"
+   ],
+   [
+    "Insp",
+    "inspection"
+   ],
+   [
+    "Control",
+    "control"
+   ],
+   [
+    "VLV",
+    "valve"
+   ],
+   [
+    "LOW",
+    "low"
+   ],
+   [
+    "OO9426",
+    "<id>"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-313",
+  "company": "B",
+  "split": "test",
+  "index": 313,
+  "text": "XK9760 R/side clearance light facingdown",
+  "tokens": [
+   [
+    "XK9760",
+    "<id>"
+   ],
+   [
+    "R/side",
+    "right side"
+   ],
+   [
+    "clearance",
+    "clearance"
+   ],
+   [
+    "light",
+    "light"
+   ],
+   [
+    "facingdown",
+    "facingdown"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-323",
+  "company": "B",
+  "split": "test",
+  "index": 323,
+  "text": "1000H Mech Svce Haul Truck AV0573",
+  "tokens": [
+   [
+    "1000H",
+    "<num> hour"
+   ],
+   [
+    "Mech",
+    "mechanical"
+   ],
+   [
+    "Svce",
+    "service"
+   ],
+   [
+    "Haul",
+    "haul"
+   ],
+   [
+    "Truck",
+    "truck"
+   ],
+   [
+    "AV0573",
+    "<id>"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-325",
+  "company": "B",
+  "split": "test",
+  "index": 325,
+  "text": "IU2450 - C/O leaking transmission hose",
+  "tokens": [
+   [
+    "IU2450",
+    "<id>"
+   ],
+   [
+    "-",
+    "-"
+   ],
+   [
+    "C/O",
+    "change out"
+   ],
+   [
+    "leaking",
+    "leaking"
+   ],
+   [
+    "transmission",
+    "transmission"
+   ],
+   [
+    "hose",
+    "hose"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-333",
+  "company": "B",
+  "split": "test",
+  "index": 333,
+  "text": "COMP AWAITING PARTS PO",
+  "tokens": [
+   [
+    "COMP",
+    "compressor"
+   ],
+   [
+    "AWAITING",
+    "awaiting"
+   ],
+   [
+    "PARTS",
+    "parts"
+   ],
+   [
+    "PO",
+    "PO"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-340",
+  "company": "B",
+  "split": "test",
+  "index": 340,
+  "text": "2721A Mech Repl Fuel Inject J4 DB2637",
+  "tokens": [
+   [
+    "2721A",
+    "<id>"
+   ],
+   [
+    "Mech",
+    "mechanical"
+   ],
+   [
+    "Repl",
+    "replace"
+   ],
+   [
+    "Fuel",
+    "fuel"
+   ],
+   [
+    "Inject",
+    "injector"
+   ],
+   [
+    "J4",
+    "<id>"
+   ],
+   [
+    "DB2637",
+    "<id>"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-343",
+  "company": "B",
+  "split": "test",
+  "index": 343,
+  "text": "GO8941 Windscreen washer button U/S",
+  "tokens": [
+   [
+    "GO8941",
+    "<id>"
+   ],
+   [
+    "Windscreen",
+    "windscreen"
+   ],
+   [
+    "washer",
+    "washer"
+   ],
+   [
+    "button",
+    "button"
+   ],
+   [
+    "U/S",
+    "unserviceable"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-345",
+  "company": "B",
+  "split": "test",
+  "index": 345,
+  "text": "AI9714 Blown A/C hose to radiator",
+  "tokens": [
+   [
+    "AI9714",
+    "<id>"
+   ],
+   [
+    "Blown",
+    "blown"
+   ],
+   [
+    "A/C",
+    "air conditioner"
+   ],
+   [
+    "hose",
+    "hose"
+   ],
+   [
+    "to",
+    "to"
+   ],
+   [
+    "radiator",
+    "radiator"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-346",
+  "company": "B",
+  "split": "test",
+  "index": 346,
+  "text": "LD3192-C/out Uni's Eng-Pump Drv",
+  "tokens": [
+   [
+    "LD3192-C/out",
+    "<id> - change out"
+   ],
+   [
+    "Uni's",
+    "universal joints"
+   ],
+   [
+    "Eng-Pump",
+    "engine - pump"
+   ],
+   [
+    "Drv",
+    "drive"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-347",
+  "company": "B",
+  "split": "test",
+  "index": 347,
+  "text": "broken grease line l/h/s",
+  "tokens": [
+   [
+    "broken",
+    "broken"
+   ],
+   [
+    "grease",
+    "grease"
+   ],
+   [
+    "line",
+    "line"
+   ],
+   [
+    "l/h/s",
+    "left hand side"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-350",
+  "company": "B",
+  "split": "test",
+  "index": 350,
+  "text": "Perspects to be replaced PO",
+  "tokens": [
+   [
+    "Perspects",
+    "Perspex"
+   ],
+   [
+    "to",
+    "to"
+   ],
+   [
+    "be",
+    "be"
+   ],
+   [
+    "replaced",
+    "replaced"
+   ],
+   [
+    "PO",
+    "PO"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-351",
+  "company": "B",
+  "split": "test",
+  "index": 351,
+  "text": "VA8190 A atercooler temp err",
+  "tokens": [
+   [
+    "VA8190",
+    "<id>"
+   ],
+   [
+    "A",
+    ""
+   ],
+   [
+    "atercooler",
+    "aftercooler"
+   ],
+   [
+    "temp",
+    "temperature"
+   ],
+   [
+    "err",
+    "error"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-352",
+  "company": "B",
+  "split": "test",
+  "index": 352,
+  "text": "XF3996 Re seal pump drive",
+  "tokens": [
+   [
+    "XF3996",
+    "<id>"
+   ],
+   [
+    "Re",
+    "reseal"
+   ],
+   [
+    "seal",
+    ""
+   ],
+   [
+    "pump",
+    "pump"
+   ],
+   [
+    "drive",
+    "drive"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-354",
+  "company": "B",
+  "split": "test",
+  "index": 354,
+  "text": "AL6487 engine spd sensor faults",
+  "tokens": [
+   [
+    "AL6487",
+    "<id>"
+   ],
+   [
+    "engine",
+    "engine"
+   ],
+   [
+    "spd",
+    "speed"
+   ],
+   [
+    "sensor",
+    "sensor"
+   ],
+   [
+    "faults",
+    "faults"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-358",
+  "company": "B",
+  "split": "test",
+  "index": 358,
+  "text": "LL3433 replace u/s fuel guns",
+  "tokens": [
+   [
+    "LL3433",
+    "<id>"
+   ],
+   [
+    "replace",
+    "replace"
+   ],
+   [
+    "u/s",
+    "unserviceable"
+   ],
+   [
+    "fuel",
+    "fuel"
+   ],
+   [
+    "guns",
+    "guns"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-359",
+  "company": "B",
+  "split": "test",
+  "index": 359,
+  "text": "AL6487 Rotate Pos 3 9 tyres",
+  "tokens": [
+   [
+    "AL6487",
+    "<id>"
+   ],
+   [
+    "Rotate",
+    "rotate"
+   ],
+   [
+    "Pos",
+    "position"
+   ],
+   [
+    "3",
+    "<num>"
+   ],
+   [
+    "9",
+    "<num>"
+   ],
+   [
+    "tyres",
+    "tyres"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-363",
+  "company": "B",
+  "split": "test",
+  "index": 363,
+  "text": "UY2435 C/O orings on coolant elbow rear",
+  "tokens": [
+   [
+    "UY2435",
+    "<id>"
+   ],
+   [
+    "C/O",
+    "change out"
+   ],
+   [
+    "orings",
+    "o-rings"
+   ],
+   [
+    "on",
+    "on"
+   ],
+   [
+    "coolant",
+    "coolant"
+   ],
+   [
+    "elbow",
+    "elbow"
+   ],
+   [
+    "rear",
+    "rear"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-364",
+  "company": "B",
+  "split": "test",
+  "index": 364,
+  "text": "WK1566 Cooling system pressurising REPL",
+  "tokens": [
+   [
+    "WK1566",
+    "<id>"
+   ],
+   [
+    "Cooling",
+    "cooling"
+   ],
+   [
+    "system",
+    "system"
+   ],
+   [
+    "pressurising",
+    "pressurising"
+   ],
+   [
+    "REPL",
+    "replace"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-365",
+  "company": "B",
+  "split": "test",
+  "index": 365,
+  "text": "XF3996 250hr Service - Out/stding",
+  "tokens": [
+   [
+    "XF3996",
+    "<id>"
+   ],
+   [
+    "250hr",
+    "<num> hour"
+   ],
+   [
+    "Service",
+    "service"
+   ],
+   [
+    "-",
+    "-"
+   ],
+   [
+    "Out/stding",
+    "outstanding"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-366",
+  "company": "B",
+  "split": "test",
+  "index": 366,
+  "text": "RW7142 Loose RHR Cab mounting Bolts",
+  "tokens": [
+   [
+    "RW7142",
+    "<id>"
+   ],
+   [
+    "Loose",
+    "loose"
+   ],
+   [
+    "RHR",
+    "right hand rear"
+   ],
+   [
+    "Cab",
+    "cabin"
+   ],
+   [
+    "mounting",
+    "mounting"
+   ],
+   [
+    "Bolts",
+    "bolts"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-379",
+  "company": "B",
+  "split": "test",
+  "index": 379,
+  "text": "LV7795 C/O Seat",
+  "tokens": [
+   [
+    "LV7795",
+    "<id>"
+   ],
+   [
+    "C/O",
+    "change out"
+   ],
+   [
+    "Seat",
+    "seat"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-381",
+  "company": "B",
+  "split": "test",
+  "index": 381,
+  "text": "1000H Mech Insp Operator Seat DU7016",
+  "tokens": [
+   [
+    "1000H",
+    "<num> hour"
+   ],
+   [
+    "Mech",
+    "mechanical"
+   ],
+   [
+    "Insp",
+    "inspection"
+   ],
+   [
+    "Operator",
+    "operator"
+   ],
+   [
+    "Seat",
+    "seat"
+   ],
+   [
+    "DU7016",
+    "<id>"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-382",
+  "company": "B",
+  "split": "test",
+  "index": 382,
+  "text": "RZ8994 c/o l/hand stick cylinder o'ring",
+  "tokens": [
+   [
+    "RZ8994",
+    "<id>"
+   ],
+   [
+    "c/o",
+    "change out"
+   ],
+   [
+    "l/hand",
+    "left hand"
+   ],
+   [
+    "stick",
+    "stick"
+   ],
+   [
+    "cylinder",
+    "cylinder"
+   ],
+   [
+    "o'ring",
+    "o-ring"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-383",
+  "company": "B",
+  "split": "test",
+  "index": 383,
+  "text": "GE2963 a/c not working",
+  "tokens": [
+   [
+    "GE2963",
+    "<id>"
+   ],
+   [
+    "a/c",
+    "air conditioner"
+   ],
+   [
+    "not",
+    "not"
+   ],
+   [
+    "working",
+    "working"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-397",
+  "company": "B",
+  "split": "test",
+  "index": 397,
+  "text": "FN5736 Cab window req's resealing",
+  "tokens": [
+   [
+    "FN5736",
+    "<id>"
+   ],
+   [
+    "Cab",
+    "cabin"
+   ],
+   [
+    "window",
+    "window"
+   ],
+   [
+    "req's",
+    "requires"
+   ],
+   [
+    "resealing",
+    "resealing"
+   ]
+  ]
+ },
+ {
+  "id": "B-test-399",
+  "company": "B",
+  "split": "test",
+  "index": 399,
+  "text": "VU1914Install precleaner dust valves PO",
+  "tokens": [
+   [
+    "VU1914Install",
+    "<id> install"
+   ],
+   [
+    "precleaner",
+    "pre-cleaner"
+   ],
+   [
+    "dust",
+    "dust"
+   ],
+   [
+    "valves",
+    "valves"
+   ],
+   [
+    "PO",
+    "PO"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-009",
+  "company": "C",
+  "split": "test",
+  "index": 9,
+  "text": "DMG L/H dump chain worn",
+  "tokens": [
+   [
+    "DMG",
+    "damage"
+   ],
+   [
+    "L/H",
+    "left hand"
+   ],
+   [
+    "dump",
+    "dump"
+   ],
+   [
+    "chain",
+    "chain"
+   ],
+   [
+    "worn",
+    "worn"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-011",
+  "company": "C",
+  "split": "test",
+  "index": 11,
+  "text": "5635 HV Maintenance Electrical",
+  "tokens": [
+   [
+    "5635",
+    "<id>"
+   ],
+   [
+    "HV",
+    "high voltage"
+   ],
+   [
+    "Maintenance",
+    "maintenance"
+   ],
+   [
+    "Electrical",
+    "electrical"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-015",
+  "company": "C",
+  "split": "test",
+  "index": 15,
+  "text": "Exhaust Fan #6 Tripping c/b",
+  "tokens": [
+   [
+    "Exhaust",
+    "exhaust"
+   ],
+   [
+    "Fan",
+    "fan"
+   ],
+   [
+    "#6",
+    "number <num>"
+   ],
+   [
+    "Tripping",
+    "tripping"
+   ],
+   [
+    "c/b",
+    "circuit breaker"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-020",
+  "company": "C",
+  "split": "test",
+  "index": 20,
+  "text": "mech protect wiring around engine",
+  "tokens": [
+   [
+    "mech",
+    "mechanical"
+   ],
+   [
+    "protect",
+    "protect"
+   ],
+   [
+    "wiring",
+    "wiring"
+   ],
+   [
+    "around",
+    "around"
+   ],
+   [
+    "engine",
+    "engine"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-025",
+  "company": "C",
+  "split": "test",
+  "index": 25,
+  "text": "Services MCC tripping on O/Load",
+  "tokens": [
+   [
+    "Services",
+    "services"
+   ],
+   [
+    "MCC",
+    "MCC"
+   ],
+   [
+    "tripping",
+    "tripping"
+   ],
+   [
+    "on",
+    "on"
+   ],
+   [
+    "O/Load",
+    "overload"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-026",
+  "company": "C",
+  "split": "test",
+  "index": 26,
+  "text": "Inspect Ropes Prior to Long Week End",
+  "tokens": [
+   [
+    "Inspect",
+    "inspect"
+   ],
+   [
+    "Ropes",
+    "ropes"
+   ],
+   [
+    "Prior",
+    "prior"
+   ],
+   [
+    "to",
+    "to"
+   ],
+   [
+    "Long",
+    "long"
+   ],
+   [
+    "Week",
+    "weekend"
+   ],
+   [
+    "End",
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "C-test-035",
+  "company": "C",
+  "split": "test",
+  "index": 35,
+  "text": "5635 Bucket Overhaul-Mechanical BKT # 1",
+  "tokens": [
+   [
+    "5635",
+    "<id>"
+   ],
+   [
+    "Bucket",
+    "bucket"
+   ],
+   [
+    "Overhaul-Mechanical",
+    "overhaul - mechanical"
+   ],
+   [
+    "BKT",
+    "bucket"
+   ],
+   [
+    "#",
+    "number"
+   ],
+   [
+    "1",
+    "<num>"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-037",
+  "company": "C",
+  "split": "test",
+  "index": 37,
+  "text": "replace invincible fitting over fridge &",
+  "tokens": [
+   [
+    "replace",
+    "replace"
+   ],
+   [
+    "invincible",
+    "invincible"
+   ],
+   [
+    "fitting",
+    "fitting"
+   ],
+   [
+    "over",
+    "over"
+   ],
+   [
+    "fridge",
+    "fridge"
+   ],
+   [
+    "&",
+    "and"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-038",
+  "company": "C",
+  "split": "test",
+  "index": 38,
+  "text": "Dragline 0 Shutdown AssistanceDragline 5",
+  "tokens": [
+   [
+    "Dragline",
+    "dragline"
+   ],
+   [
+    "0",
+    "<num>"
+   ],
+   [
+    "Shutdown",
+    "shutdown"
+   ],
+   [
+    "AssistanceDragline",
+    "assistance dragline"
+   ],
+   [
+    "5",
+    "<num>"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-040",
+  "company": "C",
+  "split": "test",
+  "index": 40,
+  "text": "RHS ballast board smoke detector U/S",
+  "tokens": [
+   [
+    "RHS",
+    "right hand side"
+   ],
+   [
+    "ballast",
+    "ballast"
+   ],
+   [
+    "board",
+    "board"
+   ],
+   [
+    "smoke",
+    "smoke"
+   ],
+   [
+    "detector",
+    "detector"
+   ],
+   [
+    "U/S",
+    "unserviceable"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-044",
+  "company": "C",
+  "split": "test",
+  "index": 44,
+  "text": "MOBILE 5H Internal Labour W44",
+  "tokens": [
+   [
+    "MOBILE",
+    "mobile"
+   ],
+   [
+    "5H",
+    "<id>"
+   ],
+   [
+    "Internal",
+    "internal"
+   ],
+   [
+    "Labour",
+    "labour"
+   ],
+   [
+    "W44",
+    "week <num>"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-045",
+  "company": "C",
+  "split": "test",
+  "index": 45,
+  "text": "ZH6907 C/out pos 2 tyre",
+  "tokens": [
+   [
+    "ZH6907",
+    "<id>"
+   ],
+   [
+    "C/out",
+    "change out"
+   ],
+   [
+    "pos",
+    "position"
+   ],
+   [
+    "2",
+    "<num>"
+   ],
+   [
+    "tyre",
+    "tyre"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-047",
+  "company": "C",
+  "split": "test",
+  "index": 47,
+  "text": "RHR tremmel wheel snapped off",
+  "tokens": [
+   [
+    "RHR",
+    "right hand rear"
+   ],
+   [
+    "tremmel",
+    "trammel"
+   ],
+   [
+    "wheel",
+    "wheel"
+   ],
+   [
+    "snapped",
+    "snapped"
+   ],
+   [
+    "off",
+    "off"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-048",
+  "company": "C",
+  "split": "test",
+  "index": 48,
+  "text": "drag rope slipping throgh socket",
+  "tokens": [
+   [
+    "drag",
+    "drag"
+   ],
+   [
+    "rope",
+    "rope"
+   ],
+   [
+    "slipping",
+    "slipping"
+   ],
+   [
+    "throgh",
+    "through"
+   ],
+   [
+    "socket",
+    "socket"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-055",
+  "company": "C",
+  "split": "test",
+  "index": 55,
+  "text": "trace & repair hyd oil leak RH steer ram",
+  "tokens": [
+   [
+    "trace",
+    "trace"
+   ],
+   [
+    "&",
+    "and"
+   ],
+   [
+    "repair",
+    "repair"
+   ],
+   [
+    "hyd",
+    "hydraulic"
+   ],
+   [
+    "oil",
+    "oil"
+   ],
+   [
+    "leak",
+    "leak"
+   ],
+   [
+    "RH",
+    "right hand"
+   ],
+   [
+    "steer",
+    "steering"
+   ],
+   [
+    "ram",
+    "ram"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-056",
+  "company": "C",
+  "split": "test",
+  "index": 56,
+  "text": "W/Place Insp Trucks Bays North & South",
+  "tokens": [
+   [
+    "W/Place",
+    "workplace"
+   ],
+   [
+    "Insp",
+    "inspection"
+   ],
+   [
+    "Trucks",
+    "trucks"
+   ],
+   [
+    "Bays",
+    "bays"
+   ],
+   [
+    "North",
+    "north"
+   ],
+   [
+    "&",
+    "and"
+   ],
+   [
+    "South",
+    "south"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-062",
+  "company": "C",
+  "split": "test",
+  "index": 62,
+  "text": "Right A frame lights out",
+  "tokens": [
+   [
+    "Right",
+    "right"
+   ],
+   [
+    "A",
+    "A-frame"
+   ],
+   [
+    "frame",
+    ""
+   ],
+   [
+    "lights",
+    "lights"
+   ],
+   [
+    "out",
+    "out"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-066",
+  "company": "C",
+  "split": "test",
+  "index": 66,
+  "text": "AM/FM radio faulty replacement required",
+  "tokens": [
+   [
+    "AM/FM",
+    "AM / FM"
+   ],
+   [
+    "radio",
+    "radio"
+   ],
+   [
+    "faulty",
+    "faulty"
+   ],
+   [
+    "replacement",
+    "replacement"
+   ],
+   [
+    "required",
+    "required"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-072",
+  "company": "C",
+  "split": "test",
+  "index": 72,
+  "text": "Coolant quick fill connector U/S Replac",
+  "tokens": [
+   [
+    "Coolant",
+    "coolant"
+   ],
+   [
+    "quick",
+    "quick"
+   ],
+   [
+    "fill",
+    "fill"
+   ],
+   [
+    "connector",
+    "connector"
+   ],
+   [
+    "U/S",
+    "unserviceable"
+   ],
+   [
+    "Replac",
+    "replace"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-083",
+  "company": "C",
+  "split": "test",
+  "index": 83,
+  "text": "`afe Fabricate winch rope bracket",
+  "tokens": [
+   [
+    "`afe",
+    "safe"
+   ],
+   [
+    "Fabricate",
+    "fabricate"
+   ],
+   [
+    "winch",
+    "winch"
+   ],
+   [
+    "rope",
+    "rope"
+   ],
+   [
+    "bracket",
+    "bracket"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-084",
+  "company": "C",
+  "split": "test",
+  "index": 84,
+  "text": "7897 Drag Drum Flame Hardening-Mech",
+  "tokens": [
+   [
+    "7897",
+    "<id>"
+   ],
+   [
+    "Drag",
+    "drag"
+   ],
+   [
+    "Drum",
+    "drum"
+   ],
+   [
+    "Flame",
+    "flame"
+   ],
+   [
+    "Hardening-Mech",
+    "hardening - mechanical"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-085",
+  "company": "C",
+  "split": "test",
+  "index": 85,
+  "text": "walking cam lube pump u/s",
+  "tokens": [
+   [
+    "walking",
+    "walking"
+   ],
+   [
+    "cam",
+    "cam"
+   ],
+   [
+    "lube",
+    "lube"
+   ],
+   [
+    "pump",
+    "pump"
+   ],
+   [
+    "u/s",
+    "unserviceable"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-087",
+  "company": "C",
+  "split": "test",
+  "index": 87,
+  "text": "cable re-route",
+  "tokens": [
+   [
+    "cable",
+    "cable"
+   ],
+   [
+    "re-route",
+    "reroute"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-090",
+  "company": "C",
+  "split": "test",
+  "index": 90,
+  "text": "oil leak from r/h final drive",
+  "tokens": [
+   [
+    "oil",
+    "oil"
+   ],
+   [
+    "leak",
+    "leak"
+   ],
+   [
+    "from",
+    "from"
+   ],
+   [
+    "r/h",
+    "right hand"
+   ],
+   [
+    "final",
+    "final"
+   ],
+   [
+    "drive",
+    "drive"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-094",
+  "company": "C",
+  "split": "test",
+  "index": 94,
+  "text": "5635 Drag Motor/Blower Connection Insp",
+  "tokens": [
+   [
+    "5635",
+    "<id>"
+   ],
+   [
+    "Drag",
+    "drag"
+   ],
+   [
+    "Motor/Blower",
+    "motor / blower"
+   ],
+   [
+    "Connection",
+    "connection"
+   ],
+   [
+    "Insp",
+    "inspection"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-096",
+  "company": "C",
+  "split": "test",
+  "index": 96,
+  "text": "heater hoses at bottom front of cab u/s",
+  "tokens": [
+   [
+    "heater",
+    "heater"
+   ],
+   [
+    "hoses",
+    "hoses"
+   ],
+   [
+    "at",
+    "at"
+   ],
+   [
+    "bottom",
+    "bottom"
+   ],
+   [
+    "front",
+    "front"
+   ],
+   [
+    "of",
+    "of"
+   ],
+   [
+    "cab",
+    "cabin"
+   ],
+   [
+    "u/s",
+    "unserviceable"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-100",
+  "company": "C",
+  "split": "test",
+  "index": 100,
+  "text": "track rollers 8 & 8 getting hot rhs",
+  "tokens": [
+   [
+    "track",
+    "track"
+   ],
+   [
+    "rollers",
+    "rollers"
+   ],
+   [
+    "8",
+    "<num>"
+   ],
+   [
+    "&",
+    "and"
+   ],
+   [
+    "8",
+    "<num>"
+   ],
+   [
+    "getting",
+    "getting"
+   ],
+   [
+    "hot",
+    "hot"
+   ],
+   [
+    "rhs",
+    "right hand side"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-101",
+  "company": "C",
+  "split": "test",
+  "index": 101,
+  "text": "No power in cab - reset",
+  "tokens": [
+   [
+    "No",
+    "no"
+   ],
+   [
+    "power",
+    "power"
+   ],
+   [
+    "in",
+    "in"
+   ],
+   [
+    "cab",
+    "cabin"
+   ],
+   [
+    "-",
+    "-"
+   ],
+   [
+    "reset",
+    "reset"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-106",
+  "company": "C",
+  "split": "test",
+  "index": 106,
+  "text": "Clean/Inspect PCR",
+  "tokens": [
+   [
+    "Clean/Inspect",
+    "clean / inspect"
+   ],
+   [
+    "PCR",
+    "PCR"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-109",
+  "company": "C",
+  "split": "test",
+  "index": 109,
+  "text": "RH TRACK ROLLERS FAILED",
+  "tokens": [
+   [
+    "RH",
+    "right hand"
+   ],
+   [
+    "TRACK",
+    "track"
+   ],
+   [
+    "ROLLERS",
+    "rollers"
+   ],
+   [
+    "FAILED",
+    "failed"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-111",
+  "company": "C",
+  "split": "test",
+  "index": 111,
+  "text": "Bolts missing r/h cam frame Nuts in 060",
+  "tokens": [
+   [
+    "Bolts",
+    "bolts"
+   ],
+   [
+    "missing",
+    "missing"
+   ],
+   [
+    "r/h",
+    "right hand"
+   ],
+   [
+    "cam",
+    "cam"
+   ],
+   [
+    "frame",
+    "frame"
+   ],
+   [
+    "Nuts",
+    "nuts"
+   ],
+   [
+    "in",
+    "in"
+   ],
+   [
+    "060",
+    "<id>"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-112",
+  "company": "C",
+  "split": "test",
+  "index": 112,
+  "text": "noise in swing pinon",
+  "tokens": [
+   [
+    "noise",
+    "noise"
+   ],
+   [
+    "in",
+    "in"
+   ],
+   [
+    "swing",
+    "swing"
+   ],
+   [
+    "pinon",
+    "pinion"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-121",
+  "company": "C",
+  "split": "test",
+  "index": 121,
+  "text": "RHR A-Frame leg & deformed gridmesh",
+  "tokens": [
+   [
+    "RHR",
+    "right hand rear"
+   ],
+   [
+    "A-Frame",
+    "A-frame"
+   ],
+   [
+    "leg",
+    "leg"
+   ],
+   [
+    "&",
+    "and"
+   ],
+   [
+    "deformed",
+    "deformed"
+   ],
+   [
+    "gridmesh",
+    "gridmesh"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-123",
+  "company": "C",
+  "split": "test",
+  "index": 123,
+  "text": "7897 Horiz Fairleads Sheave C/Out-Mech",
+  "tokens": [
+   [
+    "7897",
+    "<id>"
+   ],
+   [
+    "Horiz",
+    "horizontal"
+   ],
+   [
+    "Fairleads",
+    "fairleads"
+   ],
+   [
+    "Sheave",
+    "sheave"
+   ],
+   [
+    "C/Out-Mech",
+    "change out - mechanical"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-124",
+  "company": "C",
+  "split": "test",
+  "index": 124,
+  "text": "5635 Hoist Chain L/H/Upr Changeout-Mech",
+  "tokens": [
+   [
+    "5635",
+    "<id>"
+   ],
+   [
+    "Hoist",
+    "hoist"
+   ],
+   [
+    "Chain",
+    "chain"
+   ],
+   [
+    "L/H/Upr",
+    "left hand upper"
+   ],
+   [
+    "Changeout-Mech",
+    "change out - mechanical"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-125",
+  "company": "C",
+  "split": "test",
+  "index": 125,
+  "text": "Replace GET on Bkt # 6 526 D/line",
+  "tokens": [
+   [
+    "Replace",
+    "replace"
+   ],
+   [
+    "GET",
+    "GET"
+   ],
+   [
+    "on",
+    "on"
+   ],
+   [
+    "Bkt",
+    "bucket"
+   ],
+   [
+    "#",
+    "number"
+   ],
+   [
+    "6",
+    "<num>"
+   ],
+   [
+    "526",
+    "<id>"
+   ],
+   [
+    "D/line",
+    "dragline"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-127",
+  "company": "C",
+  "split": "test",
+  "index": 127,
+  "text": "Down with e-stop probs",
+  "tokens": [
+   [
+    "Down",
+    "down"
+   ],
+   [
+    "with",
+    "with"
+   ],
+   [
+    "e-stop",
+    "emergency-stop"
+   ],
+   [
+    "probs",
+    "problems"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-132",
+  "company": "C",
+  "split": "test",
+  "index": 132,
+  "text": "Hoist Gen N0 2 Noisy / Sparking",
+  "tokens": [
+   [
+    "Hoist",
+    "hoist"
+   ],
+   [
+    "Gen",
+    "generator"
+   ],
+   [
+    "N0",
+    "number"
+   ],
+   [
+    "2",
+    "<num>"
+   ],
+   [
+    "Noisy",
+    "noisy"
+   ],
+   [
+    "/",
+    "/"
+   ],
+   [
+    "Sparking",
+    "sparking"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-134",
+  "company": "C",
+  "split": "test",
+  "index": 134,
+  "text": "FO678 Boat Inspection & Prep",
+  "tokens": [
+   [
+    "FO678",
+    "<id>"
+   ],
+   [
+    "Boat",
+    "boat"
+   ],
+   [
+    "Inspection",
+    "inspection"
+   ],
+   [
+    "&",
+    "and"
+   ],
+   [
+    "Prep",
+    "preparation"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-136",
+  "company": "C",
+  "split": "test",
+  "index": 136,
+  "text": "I CM Wear Debris Analysis Dragline 526",
+  "tokens": [
+   [
+    "I",
+    "<id>"
+   ],
+   [
+    "CM",
+    "condition monitoring"
+   ],
+   [
+    "Wear",
+    "wear"
+   ],
+   [
+    "Debris",
+    "debris"
+   ],
+   [
+    "Analysis",
+    "analysis"
+   ],
+   [
+    "Dragline",
+    "dragline"
+   ],
+   [
+    "526",
+    "<id>"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-139",
+  "company": "C",
+  "split": "test",
+  "index": 139,
+  "text": "Swing motor temp alarm",
+  "tokens": [
+   [
+    "Swing",
+    "swing"
+   ],
+   [
+    "motor",
+    "motor"
+   ],
+   [
+    "temp",
+    "temperature"
+   ],
+   [
+    "alarm",
+    "alarm"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-144",
+  "company": "C",
+  "split": "test",
+  "index": 144,
+  "text": "078 - 500 Hr Service",
+  "tokens": [
+   [
+    "078",
+    "<id>"
+   ],
+   [
+    "-",
+    "-"
+   ],
+   [
+    "500",
+    "<num>"
+   ],
+   [
+    "Hr",
+    "hour"
+   ],
+   [
+    "Service",
+    "service"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-145",
+  "company": "C",
+  "split": "test",
+  "index": 145,
+  "text": "7897 Intake Fan No13 Overhaul-Elec/Mech",
+  "tokens": [
+   [
+    "7897",
+    "<id>"
+   ],
+   [
+    "Intake",
+    "intake"
+   ],
+   [
+    "Fan",
+    "fan"
+   ],
+   [
+    "No13",
+    "number <num>"
+   ],
+   [
+    "Overhaul-Elec/Mech",
+    "overhaul - electrical / mechanical"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-147",
+  "company": "C",
+  "split": "test",
+  "index": 147,
+  "text": "TIGHTEN LH STEER U-BOLTS",
+  "tokens": [
+   [
+    "TIGHTEN",
+    "tighten"
+   ],
+   [
+    "LH",
+    "left hand"
+   ],
+   [
+    "STEER",
+    "steering"
+   ],
+   [
+    "U-BOLTS",
+    "U-bolts"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-148",
+  "company": "C",
+  "split": "test",
+  "index": 148,
+  "text": "LR2095 Trans hose leaks",
+  "tokens": [
+   [
+    "LR2095",
+    "<id>"
+   ],
+   [
+    "Trans",
+    "transmission"
+   ],
+   [
+    "hose",
+    "hose"
+   ],
+   [
+    "leaks",
+    "leaks"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-164",
+  "company": "C",
+  "split": "test",
+  "index": 164,
+  "text": "DCS Boom press monitoring system improve",
+  "tokens": [
+   [
+    "DCS",
+    "DCS"
+   ],
+   [
+    "Boom",
+    "boom"
+   ],
+   [
+    "press",
+    "pressure"
+   ],
+   [
+    "monitoring",
+    "monitoring"
+   ],
+   [
+    "system",
+    "system"
+   ],
+   [
+    "improve",
+    "improve"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-168",
+  "company": "C",
+  "split": "test",
+  "index": 168,
+  "text": "NDT A Frame Clevis Weld & Pin VI MT UT",
+  "tokens": [
+   [
+    "NDT",
+    "NDT"
+   ],
+   [
+    "A",
+    "A-frame"
+   ],
+   [
+    "Frame",
+    ""
+   ],
+   [
+    "Clevis",
+    "clevis"
+   ],
+   [
+    "Weld",
+    "weld"
+   ],
+   [
+    "&",
+    "and"
+   ],
+   [
+    "Pin",
+    "pin"
+   ],
+   [
+    "VI",
+    "VI"
+   ],
+   [
+    "MT",
+    "MT"
+   ],
+   [
+    "UT",
+    "UT"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-170",
+  "company": "C",
+  "split": "test",
+  "index": 170,
+  "text": "replace torn mudflap LHF pos #1 wheel",
+  "tokens": [
+   [
+    "replace",
+    "replace"
+   ],
+   [
+    "torn",
+    "torn"
+   ],
+   [
+    "mudflap",
+    "mudflap"
+   ],
+   [
+    "LHF",
+    "left hand front"
+   ],
+   [
+    "pos",
+    "position"
+   ],
+   [
+    "#1",
+    "number <num>"
+   ],
+   [
+    "wheel",
+    "wheel"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-171",
+  "company": "C",
+  "split": "test",
+  "index": 171,
+  "text": "Pre Summer Audit A/Con units #348",
+  "tokens": [
+   [
+    "Pre",
+    "pre-summer"
+   ],
+   [
+    "Summer",
+    ""
+   ],
+   [
+    "Audit",
+    "audit"
+   ],
+   [
+    "A/Con",
+    "air conditioner"
+   ],
+   [
+    "units",
+    "units"
+   ],
+   [
+    "#348",
+    "number <num>"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-188",
+  "company": "C",
+  "split": "test",
+  "index": 188,
+  "text": "526 Audit air fittings for non compliant",
+  "tokens": [
+   [
+    "526",
+    "<id>"
+   ],
+   [
+    "Audit",
+    "audit"
+   ],
+   [
+    "air",
+    "air"
+   ],
+   [
+    "fittings",
+    "fittings"
+   ],
+   [
+    "for",
+    "for"
+   ],
+   [
+    "non",
+    "non-compliance"
+   ],
+   [
+    "compliant",
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "C-test-194",
+  "company": "C",
+  "split": "test",
+  "index": 194,
+  "text": "retarder lever very sloppy & u/s",
+  "tokens": [
+   [
+    "retarder",
+    "retarder"
+   ],
+   [
+    "lever",
+    "lever"
+   ],
+   [
+    "very",
+    "very"
+   ],
+   [
+    "sloppy",
+    "sloppy"
+   ],
+   [
+    "&",
+    "and"
+   ],
+   [
+    "u/s",
+    "unserviceable"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-205",
+  "company": "C",
+  "split": "test",
+  "index": 205,
+  "text": "r/h/s mirror loose",
+  "tokens": [
+   [
+    "r/h/s",
+    "right hand side"
+   ],
+   [
+    "mirror",
+    "mirror"
+   ],
+   [
+    "loose",
+    "loose"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-206",
+  "company": "C",
+  "split": "test",
+  "index": 206,
+  "text": "8664 NDT Susp Rope Radiography Locn 7",
+  "tokens": [
+   [
+    "8664",
+    "<id>"
+   ],
+   [
+    "NDT",
+    "NDT"
+   ],
+   [
+    "Susp",
+    "suspension"
+   ],
+   [
+    "Rope",
+    "rope"
+   ],
+   [
+    "Radiography",
+    "radiography"
+   ],
+   [
+    "Locn",
+    "location"
+   ],
+   [
+    "7",
+    "<num>"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-214",
+  "company": "C",
+  "split": "test",
+  "index": 214,
+  "text": "5H MOBILE LABOUR W/ START 4/8/8",
+  "tokens": [
+   [
+    "5H",
+    "<id>"
+   ],
+   [
+    "MOBILE",
+    "mobile"
+   ],
+   [
+    "LABOUR",
+    "labour"
+   ],
+   [
+    "W/",
+    "with"
+   ],
+   [
+    "START",
+    "start"
+   ],
+   [
+    "4/8/8",
+    "date"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-221",
+  "company": "C",
+  "split": "test",
+  "index": 221,
+  "text": "5635 Weekly Inspection-Electrical",
+  "tokens": [
+   [
+    "5635",
+    "<id>"
+   ],
+   [
+    "Weekly",
+    "weekly"
+   ],
+   [
+    "Inspection-Electrical",
+    "inspection - electrical"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-223",
+  "company": "C",
+  "split": "test",
+  "index": 223,
+  "text": "Cgantry chain broken",
+  "tokens": [
+   [
+    "Cgantry",
+    "gantry"
+   ],
+   [
+    "chain",
+    "chain"
+   ],
+   [
+    "broken",
+    "broken"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-231",
+  "company": "C",
+  "split": "test",
+  "index": 231,
+  "text": "remove & spray weeds at the sub for NR2",
+  "tokens": [
+   [
+    "remove",
+    "remove"
+   ],
+   [
+    "&",
+    "and"
+   ],
+   [
+    "spray",
+    "spray"
+   ],
+   [
+    "weeds",
+    "weeds"
+   ],
+   [
+    "at",
+    "at"
+   ],
+   [
+    "the",
+    "the"
+   ],
+   [
+    "sub",
+    "sub"
+   ],
+   [
+    "for",
+    "for"
+   ],
+   [
+    "NR2",
+    "<id>"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-232",
+  "company": "C",
+  "split": "test",
+  "index": 232,
+  "text": "EG0635 Pos 6 lip shroud come off bucket",
+  "tokens": [
+   [
+    "EG0635",
+    "<id>"
+   ],
+   [
+    "Pos",
+    "position"
+   ],
+   [
+    "6",
+    "<num>"
+   ],
+   [
+    "lip",
+    "lip"
+   ],
+   [
+    "shroud",
+    "shroud"
+   ],
+   [
+    "come",
+    "come"
+   ],
+   [
+    "off",
+    "off"
+   ],
+   [
+    "bucket",
+    "bucket"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-233",
+  "company": "C",
+  "split": "test",
+  "index": 233,
+  "text": "dummy receiver for the banlaw 721 u/s",
+  "tokens": [
+   [
+    "dummy",
+    "dummy"
+   ],
+   [
+    "receiver",
+    "receiver"
+   ],
+   [
+    "for",
+    "for"
+   ],
+   [
+    "the",
+    "the"
+   ],
+   [
+    "banlaw",
+    "Banlaw"
+   ],
+   [
+    "721",
+    "<num>"
+   ],
+   [
+    "u/s",
+    "unserviceable"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-235",
+  "company": "C",
+  "split": "test",
+  "index": 235,
+  "text": "Safety - Hatch covers for ext frame",
+  "tokens": [
+   [
+    "Safety",
+    "safety"
+   ],
+   [
+    "-",
+    "-"
+   ],
+   [
+    "Hatch",
+    "hatch"
+   ],
+   [
+    "covers",
+    "covers"
+   ],
+   [
+    "for",
+    "for"
+   ],
+   [
+    "ext",
+    "extinguisher"
+   ],
+   [
+    "frame",
+    "frame"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-236",
+  "company": "C",
+  "split": "test",
+  "index": 236,
+  "text": "Roof light #5 out on LHS of dragline",
+  "tokens": [
+   [
+    "Roof",
+    "roof"
+   ],
+   [
+    "light",
+    "light"
+   ],
+   [
+    "#5",
+    "number <num>"
+   ],
+   [
+    "out",
+    "out"
+   ],
+   [
+    "on",
+    "on"
+   ],
+   [
+    "LHS",
+    "left hand side"
+   ],
+   [
+    "of",
+    "of"
+   ],
+   [
+    "dragline",
+    "dragline"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-239",
+  "company": "C",
+  "split": "test",
+  "index": 239,
+  "text": "Elect MCC & Services Upgrade",
+  "tokens": [
+   [
+    "Elect",
+    "electrical"
+   ],
+   [
+    "MCC",
+    "MCC"
+   ],
+   [
+    "&",
+    "and"
+   ],
+   [
+    "Services",
+    "services"
+   ],
+   [
+    "Upgrade",
+    "upgrade"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-243",
+  "company": "C",
+  "split": "test",
+  "index": 243,
+  "text": "2 way cutting out",
+  "tokens": [
+   [
+    "2",
+    "two-way"
+   ],
+   [
+    "way",
+    ""
+   ],
+   [
+    "cutting",
+    "cutting"
+   ],
+   [
+    "out",
+    "out"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-244",
+  "company": "C",
+  "split": "test",
+  "index": 244,
+  "text": "Fire Alarm LH Transfer Cabinet BK9",
+  "tokens": [
+   [
+    "Fire",
+    "fire"
+   ],
+   [
+    "Alarm",
+    "alarm"
+   ],
+   [
+    "LH",
+    "left hand"
+   ],
+   [
+    "Transfer",
+    "transfer"
+   ],
+   [
+    "Cabinet",
+    "cabinet"
+   ],
+   [
+    "BK9",
+    "<id>"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-246",
+  "company": "C",
+  "split": "test",
+  "index": 246,
+  "text": "5635 Swing Motor/Blower Connect Inspect",
+  "tokens": [
+   [
+    "5635",
+    "<id>"
+   ],
+   [
+    "Swing",
+    "swing"
+   ],
+   [
+    "Motor/Blower",
+    "motor / blower"
+   ],
+   [
+    "Connect",
+    "connect"
+   ],
+   [
+    "Inspect",
+    "inspect"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-253",
+  "company": "C",
+  "split": "test",
+  "index": 253,
+  "text": "RHS tooth & adaptor missing",
+  "tokens": [
+   [
+    "RHS",
+    "right hand side"
+   ],
+   [
+    "tooth",
+    "tooth"
+   ],
+   [
+    "&",
+    "and"
+   ],
+   [
+    "adaptor",
+    "adaptor"
+   ],
+   [
+    "missing",
+    "missing"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-258",
+  "company": "C",
+  "split": "test",
+  "index": 258,
+  "text": "oil leaking down swing shafts 4 1 & 0",
+  "tokens": [
+   [
+    "oil",
+    "oil"
+   ],
+   [
+    "leaking",
+    "leaking"
+   ],
+   [
+    "down",
+    "down"
+   ],
+   [
+    "swing",
+    "swing"
+   ],
+   [
+    "shafts",
+    "shafts"
+   ],
+   [
+    "4",
+    "<num>"
+   ],
+   [
+    "1",
+    "<num>"
+   ],
+   [
+    "&",
+    "and"
+   ],
+   [
+    "0",
+    "<num>"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-262",
+  "company": "C",
+  "split": "test",
+  "index": 262,
+  "text": "7897 DRAG ROPE Changeout-Mechanical",
+  "tokens": [
+   [
+    "7897",
+    "<id>"
+   ],
+   [
+    "DRAG",
+    "drag"
+   ],
+   [
+    "ROPE",
+    "rope"
+   ],
+   [
+    "Changeout-Mechanical",
+    "change out - mechanical"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-266",
+  "company": "C",
+  "split": "test",
+  "index": 266,
+  "text": "Slack Rope Detectors Maint",
+  "tokens": [
+   [
+    "Slack",
+    "slack"
+   ],
+   [
+    "Rope",
+    "rope"
+   ],
+   [
+    "Detectors",
+    "detectors"
+   ],
+   [
+    "Maint",
+    "maintenance"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-269",
+  "company": "C",
+  "split": "test",
+  "index": 269,
+  "text": "Drag loop 9 Grd Fault",
+  "tokens": [
+   [
+    "Drag",
+    "drag"
+   ],
+   [
+    "loop",
+    "loop"
+   ],
+   [
+    "9",
+    "<num>"
+   ],
+   [
+    "Grd",
+    "ground"
+   ],
+   [
+    "Fault",
+    "fault"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-270",
+  "company": "C",
+  "split": "test",
+  "index": 270,
+  "text": "Inact 5635 Weekly Inspection-Mechanical",
+  "tokens": [
+   [
+    "Inact",
+    "inact"
+   ],
+   [
+    "5635",
+    "<id>"
+   ],
+   [
+    "Weekly",
+    "weekly"
+   ],
+   [
+    "Inspection-Mechanical",
+    "inspection - mechanical"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-286",
+  "company": "C",
+  "split": "test",
+  "index": 286,
+  "text": "Repair RHS top rail crack",
+  "tokens": [
+   [
+    "Repair",
+    "repair"
+   ],
+   [
+    "RHS",
+    "right hand side"
+   ],
+   [
+    "top",
+    "top"
+   ],
+   [
+    "rail",
+    "rail"
+   ],
+   [
+    "crack",
+    "crack"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-292",
+  "company": "C",
+  "split": "test",
+  "index": 292,
+  "text": "SAFE secure hyd pump trolley Gus",
+  "tokens": [
+   [
+    "SAFE",
+    "safe"
+   ],
+   [
+    "secure",
+    "secure"
+   ],
+   [
+    "hyd",
+    "hydraulic"
+   ],
+   [
+    "pump",
+    "pump"
+   ],
+   [
+    "trolley",
+    "trolley"
+   ],
+   [
+    "Gus",
+    "<sensitive>"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-293",
+  "company": "C",
+  "split": "test",
+  "index": 293,
+  "text": "set up for cable handleing",
+  "tokens": [
+   [
+    "set",
+    "set-up"
+   ],
+   [
+    "up",
+    ""
+   ],
+   [
+    "for",
+    "for"
+   ],
+   [
+    "cable",
+    "cable"
+   ],
+   [
+    "handleing",
+    "handling"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-294",
+  "company": "C",
+  "split": "test",
+  "index": 294,
+  "text": "Change seperators on both compressor",
+  "tokens": [
+   [
+    "Change",
+    "change"
+   ],
+   [
+    "seperators",
+    "separators"
+   ],
+   [
+    "on",
+    "on"
+   ],
+   [
+    "both",
+    "both"
+   ],
+   [
+    "compressor",
+    "compressor"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-295",
+  "company": "C",
+  "split": "test",
+  "index": 295,
+  "text": "coolent roll",
+  "tokens": [
+   [
+    "coolent",
+    "coolant"
+   ],
+   [
+    "roll",
+    "roll"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-299",
+  "company": "C",
+  "split": "test",
+  "index": 299,
+  "text": "Iov fault on sync motor package",
+  "tokens": [
+   [
+    "Iov",
+    "IOV"
+   ],
+   [
+    "fault",
+    "fault"
+   ],
+   [
+    "on",
+    "on"
+   ],
+   [
+    "sync",
+    "synchronous"
+   ],
+   [
+    "motor",
+    "motor"
+   ],
+   [
+    "package",
+    "package"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-306",
+  "company": "C",
+  "split": "test",
+  "index": 306,
+  "text": "Argon GI4 - 2000 Hr Service",
+  "tokens": [
+   [
+    "Argon",
+    "<sensitive>"
+   ],
+   [
+    "GI4",
+    "<id>"
+   ],
+   [
+    "-",
+    "-"
+   ],
+   [
+    "2000",
+    "<num>"
+   ],
+   [
+    "Hr",
+    "hour"
+   ],
+   [
+    "Service",
+    "service"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-307",
+  "company": "C",
+  "split": "test",
+  "index": 307,
+  "text": "RH Front Propel Gearbox oil sample",
+  "tokens": [
+   [
+    "RH",
+    "right hand"
+   ],
+   [
+    "Front",
+    "front"
+   ],
+   [
+    "Propel",
+    "propel"
+   ],
+   [
+    "Gearbox",
+    "gearbox"
+   ],
+   [
+    "oil",
+    "oil"
+   ],
+   [
+    "sample",
+    "sample"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-310",
+  "company": "C",
+  "split": "test",
+  "index": 310,
+  "text": "Hand rail post crack on A Frame platform",
+  "tokens": [
+   [
+    "Hand",
+    "handrail"
+   ],
+   [
+    "rail",
+    ""
+   ],
+   [
+    "post",
+    "post"
+   ],
+   [
+    "crack",
+    "crack"
+   ],
+   [
+    "on",
+    "on"
+   ],
+   [
+    "A",
+    "A-frame"
+   ],
+   [
+    "Frame",
+    ""
+   ],
+   [
+    "platform",
+    "platform"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-313",
+  "company": "C",
+  "split": "test",
+  "index": 313,
+  "text": "Air Conditioning 9 Wk Service",
+  "tokens": [
+   [
+    "Air",
+    "air"
+   ],
+   [
+    "Conditioning",
+    "conditioning"
+   ],
+   [
+    "9",
+    "<num>"
+   ],
+   [
+    "Wk",
+    "week"
+   ],
+   [
+    "Service",
+    "service"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-315",
+  "company": "C",
+  "split": "test",
+  "index": 315,
+  "text": "engine exh flex / pipe & rain cap u/s",
+  "tokens": [
+   [
+    "engine",
+    "engine"
+   ],
+   [
+    "exh",
+    "exhaust"
+   ],
+   [
+    "flex",
+    "flex"
+   ],
+   [
+    "/",
+    "/"
+   ],
+   [
+    "pipe",
+    "pipe"
+   ],
+   [
+    "&",
+    "and"
+   ],
+   [
+    "rain",
+    "rain"
+   ],
+   [
+    "cap",
+    "cap"
+   ],
+   [
+    "u/s",
+    "unserviceable"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-318",
+  "company": "C",
+  "split": "test",
+  "index": 318,
+  "text": "OR8 monitor flash clean up DMG",
+  "tokens": [
+   [
+    "OR8",
+    "<id>"
+   ],
+   [
+    "monitor",
+    "monitor"
+   ],
+   [
+    "flash",
+    "flash"
+   ],
+   [
+    "clean",
+    "clean"
+   ],
+   [
+    "up",
+    "up"
+   ],
+   [
+    "DMG",
+    "damage"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-320",
+  "company": "C",
+  "split": "test",
+  "index": 320,
+  "text": "Remove cover & inspect L/H Bearing",
+  "tokens": [
+   [
+    "Remove",
+    "remove"
+   ],
+   [
+    "cover",
+    "cover"
+   ],
+   [
+    "&",
+    "and"
+   ],
+   [
+    "inspect",
+    "inspect"
+   ],
+   [
+    "L/H",
+    "left hand"
+   ],
+   [
+    "Bearing",
+    "bearing"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-327",
+  "company": "C",
+  "split": "test",
+  "index": 327,
+  "text": "Motor is Missing-Fit new Motor",
+  "tokens": [
+   [
+    "Motor",
+    "motor"
+   ],
+   [
+    "is",
+    "is"
+   ],
+   [
+    "Missing-Fit",
+    "missing - fit"
+   ],
+   [
+    "new",
+    "new"
+   ],
+   [
+    "Motor",
+    "motor"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-329",
+  "company": "C",
+  "split": "test",
+  "index": 329,
+  "text": "Grease L/H & R/H propels",
+  "tokens": [
+   [
+    "Grease",
+    "grease"
+   ],
+   [
+    "L/H",
+    "left hand"
+   ],
+   [
+    "&",
+    "and"
+   ],
+   [
+    "R/H",
+    "right hand"
+   ],
+   [
+    "propels",
+    "propels"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-336",
+  "company": "C",
+  "split": "test",
+  "index": 336,
+  "text": "diesel quick fill leaking RH side",
+  "tokens": [
+   [
+    "diesel",
+    "diesel"
+   ],
+   [
+    "quick",
+    "quick"
+   ],
+   [
+    "fill",
+    "fill"
+   ],
+   [
+    "leaking",
+    "leaking"
+   ],
+   [
+    "RH",
+    "right hand"
+   ],
+   [
+    "side",
+    "side"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-347",
+  "company": "C",
+  "split": "test",
+  "index": 347,
+  "text": "replace rear cab latch assemblies",
+  "tokens": [
+   [
+    "replace",
+    "replace"
+   ],
+   [
+    "rear",
+    "rear"
+   ],
+   [
+    "cab",
+    "cabin"
+   ],
+   [
+    "latch",
+    "latch"
+   ],
+   [
+    "assemblies",
+    "assemblies"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-351",
+  "company": "C",
+  "split": "test",
+  "index": 351,
+  "text": "060 - LHS Boom Foot Crack Repair",
+  "tokens": [
+   [
+    "060",
+    "<id>"
+   ],
+   [
+    "-",
+    "-"
+   ],
+   [
+    "LHS",
+    "left hand side"
+   ],
+   [
+    "Boom",
+    "boom"
+   ],
+   [
+    "Foot",
+    "foot"
+   ],
+   [
+    "Crack",
+    "crack"
+   ],
+   [
+    "Repair",
+    "repair"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-355",
+  "company": "C",
+  "split": "test",
+  "index": 355,
+  "text": "no a/c fans",
+  "tokens": [
+   [
+    "no",
+    "no"
+   ],
+   [
+    "a/c",
+    "air conditioner"
+   ],
+   [
+    "fans",
+    "fans"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-357",
+  "company": "C",
+  "split": "test",
+  "index": 357,
+  "text": "blinker dipper switch n/w",
+  "tokens": [
+   [
+    "blinker",
+    "blinker"
+   ],
+   [
+    "dipper",
+    "dipper"
+   ],
+   [
+    "switch",
+    "switch"
+   ],
+   [
+    "n/w",
+    "not working"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-368",
+  "company": "C",
+  "split": "test",
+  "index": 368,
+  "text": "Air compressor outlet temp o/temp",
+  "tokens": [
+   [
+    "Air",
+    "air"
+   ],
+   [
+    "compressor",
+    "compressor"
+   ],
+   [
+    "outlet",
+    "outlet"
+   ],
+   [
+    "temp",
+    "temperature"
+   ],
+   [
+    "o/temp",
+    "overtemperature"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-374",
+  "company": "C",
+  "split": "test",
+  "index": 374,
+  "text": "526 # 3 air comp leaking from oil cooler",
+  "tokens": [
+   [
+    "526",
+    "<id>"
+   ],
+   [
+    "#",
+    "number"
+   ],
+   [
+    "3",
+    "<num>"
+   ],
+   [
+    "air",
+    "air"
+   ],
+   [
+    "comp",
+    "compressor"
+   ],
+   [
+    "leaking",
+    "leaking"
+   ],
+   [
+    "from",
+    "from"
+   ],
+   [
+    "oil",
+    "oil"
+   ],
+   [
+    "cooler",
+    "cooler"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-376",
+  "company": "C",
+  "split": "test",
+  "index": 376,
+  "text": "control room recirc fan mounting loose",
+  "tokens": [
+   [
+    "control",
+    "control"
+   ],
+   [
+    "room",
+    "room"
+   ],
+   [
+    "recirc",
+    "recirculation"
+   ],
+   [
+    "fan",
+    "fan"
+   ],
+   [
+    "mounting",
+    "mounting"
+   ],
+   [
+    "loose",
+    "loose"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-382",
+  "company": "C",
+  "split": "test",
+  "index": 382,
+  "text": "Fire ext requires service",
+  "tokens": [
+   [
+    "Fire",
+    "fire"
+   ],
+   [
+    "ext",
+    "extinguisher"
+   ],
+   [
+    "requires",
+    "requires"
+   ],
+   [
+    "service",
+    "service"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-385",
+  "company": "C",
+  "split": "test",
+  "index": 385,
+  "text": "Install wear package on BKT 0",
+  "tokens": [
+   [
+    "Install",
+    "install"
+   ],
+   [
+    "wear",
+    "wear"
+   ],
+   [
+    "package",
+    "package"
+   ],
+   [
+    "on",
+    "on"
+   ],
+   [
+    "BKT",
+    "bucket"
+   ],
+   [
+    "0",
+    "<num>"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-390",
+  "company": "C",
+  "split": "test",
+  "index": 390,
+  "text": "LHS rod end 1-2mm movement",
+  "tokens": [
+   [
+    "LHS",
+    "left hand side"
+   ],
+   [
+    "rod",
+    "rod"
+   ],
+   [
+    "end",
+    "end"
+   ],
+   [
+    "1-2mm",
+    "<num>-<num> mm"
+   ],
+   [
+    "movement",
+    "movement"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-393",
+  "company": "C",
+  "split": "test",
+  "index": 393,
+  "text": "Borken bolt on swing#5 pinion",
+  "tokens": [
+   [
+    "Borken",
+    "broken"
+   ],
+   [
+    "bolt",
+    "bolt"
+   ],
+   [
+    "on",
+    "on"
+   ],
+   [
+    "swing#5",
+    "swing number <num>"
+   ],
+   [
+    "pinion",
+    "pinion"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-396",
+  "company": "C",
+  "split": "test",
+  "index": 396,
+  "text": "replace bottom steer shaft universal",
+  "tokens": [
+   [
+    "replace",
+    "replace"
+   ],
+   [
+    "bottom",
+    "bottom"
+   ],
+   [
+    "steer",
+    "steering"
+   ],
+   [
+    "shaft",
+    "shaft"
+   ],
+   [
+    "universal",
+    "universal joint"
+   ]
+  ]
+ },
+ {
+  "id": "C-test-398",
+  "company": "C",
+  "split": "test",
+  "index": 398,
+  "text": "5635 Propel Coupling Lube & Inspection",
+  "tokens": [
+   [
+    "5635",
+    "<id>"
+   ],
+   [
+    "Propel",
+    "propel"
+   ],
+   [
+    "Coupling",
+    "coupling"
+   ],
+   [
+    "Lube",
+    "lube"
+   ],
+   [
+    "&",
+    "and"
+   ],
+   [
+    "Inspection",
+    "inspection"
+   ]
+  ]
+ }
+]

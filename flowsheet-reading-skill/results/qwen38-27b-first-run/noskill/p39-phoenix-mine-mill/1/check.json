@@ -1,0 +1,23 @@
+{
+ "checked": "Claude, 16 Nov 2026",
+ "pairing": {
+  "MINE": {
+   "to": [
+    "mined_ore"
+   ],
+   "why": "'MINE ORE' with its tonnages: the MINED ORE input, label misread (plan's rule)"
+  },
+  "W1": {
+   "to": [
+    "water_sag",
+    "lime_sag"
+   ],
+   "why": "'WATER LIME' into the SAG mill names two items: pairs with both (README, 16 Nov)"
+  }
+ },
+ "notes": [
+  "Test, no skill. Reagent, lime and Caro's acid boxes pair with the set of inputs sharing their label (the scorer's rule for inputs). Misread labels kept as the same items: PRECIPITANT SOLUTION TANK, CHLORIDE FUME, INTENSIVE OXIDATION, MILL WATER RETURN. 'RESIDUE' and 'RES' are stream labels.",
+  "No repeated unit labels on this chart besides inputs.",
+  "Read: every box whose label is not exactly its key item's, or that pairs with nothing or with a set, and every box paired with a repeated key label, with its feeds (local/dev/repeats.py); both lists uncut, 16 Nov. Boxes whose label is exactly their key item's were not each read."
+ ]
+}

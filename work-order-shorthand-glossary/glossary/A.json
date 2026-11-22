@@ -1,0 +1,354 @@
+[
+ {
+  "key": "repl",
+  "means": [
+   "replace"
+  ],
+  "uses": 418
+ },
+ {
+  "key": "pos",
+  "means": [
+   "position"
+  ],
+  "uses": 236
+ },
+ {
+  "key": "rep",
+  "means": [
+   "repair",
+   "replace"
+  ],
+  "uses": 142
+ },
+ {
+  "key": "hyd",
+  "means": [
+   "hydraulic"
+  ],
+  "uses": 103
+ },
+ {
+  "key": "&",
+  "means": [
+   "and"
+  ],
+  "uses": 95
+ },
+ {
+  "key": "cyl",
+  "means": [
+   "cylinder"
+  ],
+  "uses": 81
+ },
+ {
+  "key": "trans",
+  "means": [
+   "transmission"
+  ],
+  "uses": 74
+ },
+ {
+  "key": "l/h",
+  "means": [
+   "left hand"
+  ],
+  "uses": 57
+ },
+ {
+  "key": "con",
+  "means": [
+   "conditioner"
+  ],
+  "uses": 50
+ },
+ {
+  "key": "cab",
+  "means": [
+   "cabin"
+  ],
+  "uses": 47
+ },
+ {
+  "key": "r/h",
+  "means": [
+   "right hand"
+  ],
+  "uses": 47
+ },
+ {
+  "key": "a/c",
+  "means": [
+   "air conditioner"
+  ],
+  "uses": 45
+ },
+ {
+  "key": "hr",
+  "means": [
+   "hour"
+  ],
+  "uses": 40
+ },
+ {
+  "key": "c/o",
+  "means": [
+   "change out"
+  ],
+  "uses": 38
+ },
+ {
+  "key": "steer",
+  "means": [
+   "steering"
+  ],
+  "uses": 38
+ },
+ {
+  "key": "diff",
+  "means": [
+   "differential"
+  ],
+  "uses": 33
+ },
+ {
+  "key": "auto",
+  "means": [
+   "autogreaser"
+  ],
+  "uses": 29
+ },
+ {
+  "key": "assy",
+  "means": [
+   "assembly"
+  ],
+  "uses": 27
+ },
+ {
+  "key": "eng",
+  "means": [
+   "engine"
+  ],
+  "uses": 25
+ },
+ {
+  "key": "temp",
+  "means": [
+   "temperature"
+  ],
+  "uses": 24
+ },
+ {
+  "key": "1/4",
+  "means": [
+   "quarter"
+  ],
+  "uses": 21
+ },
+ {
+  "key": "w/shop",
+  "means": [
+   "workshop"
+  ],
+  "uses": 21
+ },
+ {
+  "key": "p/brake",
+  "means": [
+   "park brake"
+  ],
+  "uses": 20
+ },
+ {
+  "key": "drive",
+  "means": [
+   "driveline"
+  ],
+  "uses": 19
+ },
+ {
+  "key": "inv",
+  "means": [
+   "investigate"
+  ],
+  "uses": 17
+ },
+ {
+  "key": "rhs",
+  "means": [
+   "right hand side"
+  ],
+  "uses": 17
+ },
+ {
+  "key": "u/s",
+  "means": [
+   "unserviceable"
+  ],
+  "uses": 16
+ },
+ {
+  "key": "aircon",
+  "means": [
+   "air conditioner"
+  ],
+  "uses": 15
+ },
+ {
+  "key": "cond",
+  "means": [
+   "conditioner"
+  ],
+  "uses": 15
+ },
+ {
+  "key": "inv/rep",
+  "means": [
+   "investigate / repair"
+  ],
+  "uses": 15
+ },
+ {
+  "key": "imp",
+  "means": [
+   "implement"
+  ],
+  "uses": 12
+ },
+ {
+  "key": "lhs",
+  "means": [
+   "left hand side"
+  ],
+  "uses": 12
+ },
+ {
+  "key": "tele",
+  "means": [
+   "Tele-Remote",
+   "Tele-Remotes"
+  ],
+  "uses": 12
+ },
+ {
+  "key": "dog",
+  "means": [
+   "dogbone"
+  ],
+  "uses": 11
+ },
+ {
+  "key": "teleremote",
+  "means": [
+   "Tele-Remote"
+  ],
+  "uses": 11
+ },
+ {
+  "key": "tranny",
+  "means": [
+   "transmission"
+  ],
+  "uses": 11
+ },
+ {
+  "key": "press",
+  "means": [
+   "pressure"
+  ],
+  "uses": 10
+ },
+ {
+  "key": "#",
+  "means": [
+   "number"
+  ],
+  "uses": 8
+ },
+ {
+  "key": "batterys",
+  "means": [
+   "batteries"
+  ],
+  "uses": 8
+ },
+ {
+  "key": "boily",
+  "means": [
+   "boilermaker"
+  ],
+  "uses": 8
+ },
+ {
+  "key": "center",
+  "means": [
+   "centre"
+  ],
+  "uses": 8
+ },
+ {
+  "key": "insp",
+  "means": [
+   "inspect"
+  ],
+  "uses": 8
+ },
+ {
+  "key": "maint",
+  "means": [
+   "maintenance"
+  ],
+  "uses": 8
+ },
+ {
+  "key": "mob",
+  "means": [
+   "mobile"
+  ],
+  "uses": 8
+ },
+ {
+  "key": "oring",
+  "means": [
+   "o-ring"
+  ],
+  "uses": 8
+ },
+ {
+  "key": "@",
+  "means": [
+   "at"
+  ],
+  "uses": 7
+ },
+ {
+  "key": "fab",
+  "means": [
+   "fabricate"
+  ],
+  "uses": 7
+ },
+ {
+  "key": "impliment",
+  "means": [
+   "implement"
+  ],
+  "uses": 7
+ },
+ {
+  "key": "lh",
+  "means": [
+   "left hand"
+  ],
+  "uses": 7
+ },
+ {
+  "key": "lock",
+  "means": [
+   "lockout"
+  ],
+  "uses": 7
+ }
+]

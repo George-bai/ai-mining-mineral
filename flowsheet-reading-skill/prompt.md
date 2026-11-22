@@ -1,0 +1,1 @@
+The attached image is a mineral processing flowsheet. Convert it to a Mermaid flowchart and save it as flowsheet.mmd in the current directory. Include every unit and every stream shown, with the labels as written on the drawing, and arrows in the direction of flow. The file must hold only Mermaid code.

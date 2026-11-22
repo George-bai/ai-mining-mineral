@@ -1,0 +1,46 @@
+{
+ "checked": "Claude, 16 Nov 2026 (rerun)",
+ "pairing": {
+  "mineOre": {
+   "to": [
+    "mined_ore"
+   ],
+   "why": "'MINE ORE' with its tonnages into the primary crusher: the MINED ORE input, label misread"
+  },
+  "waterLime": {
+   "to": [
+    "water_sag",
+    "lime_sag"
+   ],
+   "why": "'WATER LIME' into the SAG mill names two items: pairs with both"
+  },
+  "limeReagents": {
+   "to": [
+    "lime_sag",
+    "lime_regrind",
+    "lime_clsc_sump",
+    "lime_reclaim",
+    "reag_cyclone",
+    "reag_contact",
+    "reag_rougher",
+    "reag_regrind",
+    "reag_clsc",
+    "reag_clsc_sump",
+    "reag_cond"
+   ],
+   "why": "'LIME REAGENTS' names two inputs: pairs with both sets"
+  },
+  "magneticConcentrateThickener": {
+   "to": [],
+   "why": "'MAGNETIC CONCENTRATE THICKENER' in the magnetic circuit, after the conditioning tank: a thickener the drawing does not have there; the chart has its own COPPER CONCENTRATE THICKENER box. Pairs with nothing, its lines run through"
+  },
+  "shearCarbon": {
+   "to": [],
+   "why": "'(SHEAR CARBON)', a stream label drawn as a box; the chart has its own HEAP LEACH CARBON box: pairs with nothing"
+  }
+ },
+ "notes": [
+  "Rerun, no skill. Misread labels kept as the same items: PEBBLE CRUSHED, INTENSIVE OXIDATION, BAREN SOLUTION TANK, FRES THICKENER (fines thickener), DIP (CIP), CHLORIDE FUME, MILL WATER DISTIN, 'MAGNETIC CONCENTRATE GRAVITY SEPARATION' (as the scorer pairs it, with the magnetic separation). Reagent, lime, water and Caro's acid inputs pair with their sets; 'RESIDUE', '(RES)' and '(LIQUID CARBON)' are stream labels.",
+  "Read: every box whose label is not exactly its key item's (local/dev/differs.py), or that pairs with nothing or with a set, and every box paired with a repeated key label, with its feeds (local/dev/repeats.py), 16 Nov. Boxes whose label is exactly their key item's were not each read."
+ ]
+}

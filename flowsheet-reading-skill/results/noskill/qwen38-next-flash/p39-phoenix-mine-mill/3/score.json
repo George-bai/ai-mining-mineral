@@ -1,0 +1,950 @@
+{
+ "items_found": 69,
+ "items_total": 72,
+ "extra_boxes": 5,
+ "streams_found": 50,
+ "streams_total": 90,
+ "lines_right": 49,
+ "lines_wrong": 37,
+ "lines_reversed": 2,
+ "loops_found": 4,
+ "loops_total": 11,
+ "missing_streams": [
+  [
+   "ball_mills",
+   "primary_gravity"
+  ],
+  [
+   "carbon_screen",
+   "carbon_bin"
+  ],
+  [
+   "carbon_screen",
+   "tailings_pond"
+  ],
+  [
+   "chloride_plume",
+   "reclaim_water"
+  ],
+  [
+   "cip",
+   "carbon_screen"
+  ],
+  [
+   "cleaner_scavenger",
+   "trash_screen"
+  ],
+  [
+   "contact_flotation",
+   "ball_mill_cyclones"
+  ],
+  [
+   "contact_flotation",
+   "flotation_gravity"
+  ],
+  [
+   "cu_thickener",
+   "filter_feed_tank"
+  ],
+  [
+   "cyanide",
+   "trash_screen"
+  ],
+  [
+   "deslime_cyclones",
+   "trash_screen"
+  ],
+  [
+   "filter_feed_tank",
+   "cu_filter"
+  ],
+  [
+   "fines_thickener",
+   "mill_water"
+  ],
+  [
+   "fines_thickener",
+   "tailings_pond"
+  ],
+  [
+   "fresh_water",
+   "mill_water"
+  ],
+  [
+   "intensive_cyanidation",
+   "ball_mill_cyclones"
+  ],
+  [
+   "intensive_cyanidation",
+   "pregnant_tank"
+  ],
+  [
+   "intensive_cyanidation",
+   "regrind_cyclone"
+  ],
+  [
+   "lime_clsc_sump",
+   "trash_screen"
+  ],
+  [
+   "lime_regrind",
+   "regrind_cyclone"
+  ],
+  [
+   "mag_gravity",
+   "fines_thickener"
+  ],
+  [
+   "mag_gravity",
+   "intensive_cyanidation"
+  ],
+  [
+   "magnetic_separation",
+   "second_cleaner"
+  ],
+  [
+   "mill_water",
+   "mill_water_distn"
+  ],
+  [
+   "primary_cleaner_column",
+   "cond_tank"
+  ],
+  [
+   "primary_cleaner_column",
+   "regrind_cyclone"
+  ],
+  [
+   "primary_gravity",
+   "contact_flotation"
+  ],
+  [
+   "reag_clsc_sump",
+   "trash_screen"
+  ],
+  [
+   "reag_cond",
+   "cond_tank"
+  ],
+  [
+   "reag_cyclone",
+   "ball_mills"
+  ],
+  [
+   "reag_regrind",
+   "regrind_cyclone"
+  ],
+  [
+   "regeneration",
+   "cip"
+  ],
+  [
+   "rougher_flotation",
+   "flotation_gravity"
+  ],
+  [
+   "rougher_flotation",
+   "regrind_cyclone"
+  ],
+  [
+   "sag_screen",
+   "ball_mill_cyclones"
+  ],
+  [
+   "second_cleaner_scavenger",
+   "first_cleaner"
+  ],
+  [
+   "trash_screen",
+   "leach"
+  ],
+  [
+   "trash_screen",
+   "trash"
+  ],
+  [
+   "treated_reclaim",
+   "fines_thickener"
+  ],
+  [
+   "water_sump",
+   "ball_mill_cyclones"
+  ]
+ ],
+ "wrong_lines": [
+  [
+   [
+    "carbon_bin"
+   ],
+   [
+    "cip"
+   ],
+   [
+    [
+     "cb",
+     "cip"
+    ]
+   ]
+  ],
+  [
+   [
+    "carbon_bin"
+   ],
+   [
+    "tailings_pond"
+   ],
+   [
+    [
+     "cb",
+     "tp"
+    ]
+   ]
+  ],
+  [
+   [
+    "caros_acid_reclaim",
+    "caros_acid_tails"
+   ],
+   [
+    "cip"
+   ],
+   [
+    [
+     "caro",
+     "cip"
+    ]
+   ]
+  ],
+  [
+   [
+    "chloride_plume"
+   ],
+   [
+    "fresh_water"
+   ],
+   [
+    [
+     "cp",
+     "fwt"
+    ]
+   ]
+  ],
+  [
+   [
+    "cip"
+   ],
+   [
+    "tailings_pond"
+   ],
+   [
+    [
+     "cip",
+     "tp"
+    ]
+   ]
+  ],
+  [
+   [
+    "cleaner_gravity"
+   ],
+   [
+    "primary_cleaner_column"
+   ],
+   [
+    [
+     "cgrav",
+     "pcol"
+    ]
+   ]
+  ],
+  [
+   [
+    "cleaner_scavenger"
+   ],
+   [
+    "cond_tank"
+   ],
+   [
+    [
+     "csfl",
+     "cond2"
+    ]
+   ]
+  ],
+  [
+   [
+    "cond_tank"
+   ],
+   [
+    "second_cleaner"
+   ],
+   [
+    [
+     "cond2",
+     "cl2"
+    ]
+   ]
+  ],
+  [
+   [
+    "contact_flotation"
+   ],
+   [
+    "primary_gravity"
+   ],
+   [
+    [
+     "cfl",
+     "pgrav"
+    ]
+   ]
+  ],
+  [
+   [
+    "contact_flotation"
+   ],
+   [
+    "rougher_flotation"
+   ],
+   [
+    [
+     "cfl",
+     "rfl"
+    ]
+   ]
+  ],
+  [
+   [
+    "cu_filter"
+   ],
+   [
+    "cu_thickener"
+   ],
+   [
+    [
+     "ccf",
+     "cct"
+    ]
+   ]
+  ],
+  [
+   [
+    "cu_thickener"
+   ],
+   [
+    "cu_filter"
+   ],
+   [
+    [
+     "cct",
+     "ccf"
+    ]
+   ]
+  ],
+  [
+   [
+    "cu_thickener"
+   ],
+   [
+    "mill_water_distn"
+   ],
+   [
+    [
+     "cct",
+     "mwdist"
+    ]
+   ]
+  ],
+  [
+   [
+    "cyanide"
+   ],
+   [
+    "deslime_cyclones"
+   ],
+   [
+    [
+     "cyanide",
+     "dcl"
+    ]
+   ]
+  ],
+  [
+   [
+    "deslime_cyclones"
+   ],
+   [
+    "leach"
+   ],
+   [
+    [
+     "dcl",
+     "leach"
+    ]
+   ]
+  ],
+  [
+   [
+    "deslime_cyclones"
+   ],
+   [
+    "trash"
+   ],
+   [
+    [
+     "dcl",
+     "trash"
+    ]
+   ]
+  ],
+  [
+   [
+    "fines_thickener"
+   ],
+   [
+    "cip"
+   ],
+   [
+    [
+     "ft",
+     "cip"
+    ]
+   ]
+  ],
+  [
+   [
+    "fresh_water"
+   ],
+   [
+    "mill_water_distn"
+   ],
+   [
+    [
+     "fwt",
+     "mwdist"
+    ]
+   ]
+  ],
+  [
+   [
+    "gland_water"
+   ],
+   [
+    "cip"
+   ],
+   [
+    [
+     "gland",
+     "cip"
+    ]
+   ]
+  ],
+  [
+   [
+    "intensive_cyanidation"
+   ],
+   [
+    "leach"
+   ],
+   [
+    [
+     "intcyn",
+     "leach"
+    ]
+   ]
+  ],
+  [
+   [
+    "intensive_cyanidation"
+   ],
+   [
+    "tailings_pond"
+   ],
+   [
+    [
+     "intcyn",
+     "tp"
+    ]
+   ]
+  ],
+  [
+   [
+    "lime_clsc_sump",
+    "lime_reclaim",
+    "lime_regrind",
+    "lime_sag"
+   ],
+   [
+    "regrind_mill"
+   ],
+   [
+    [
+     "lime",
+     "rg"
+    ]
+   ]
+  ],
+  [
+   [
+    "mag_gravity"
+   ],
+   [
+    "second_cleaner"
+   ],
+   [
+    [
+     "maggrav",
+     "cl2"
+    ]
+   ]
+  ],
+  [
+   [
+    "mag_gravity"
+   ],
+   [
+    "second_cleaner_scavenger"
+   ],
+   [
+    [
+     "maggrav",
+     "sc2"
+    ]
+   ]
+  ],
+  [
+   [
+    "magnetic_separation"
+   ],
+   [
+    "cleaner_scavenger"
+   ],
+   [
+    [
+     "magsep",
+     "csfl"
+    ]
+   ]
+  ],
+  [
+   [
+    "mill_water"
+   ],
+   [
+    "deslime_cyclones"
+   ],
+   [
+    [
+     "millw",
+     "dcl"
+    ]
+   ]
+  ],
+  [
+   [
+    "mill_water_distn"
+   ],
+   [
+    "mill_water"
+   ],
+   [
+    [
+     "mwdist",
+     "millw"
+    ]
+   ]
+  ],
+  [
+   [
+    "primary_cleaner_column"
+   ],
+   [
+    "cleaner_scavenger"
+   ],
+   [
+    [
+     "pcol",
+     "csfl"
+    ]
+   ]
+  ],
+  [
+   [
+    "primary_cleaner_column"
+   ],
+   [
+    "first_cleaner"
+   ],
+   [
+    [
+     "pcol",
+     "firstcl"
+    ]
+   ]
+  ],
+  [
+   [
+    "primary_gravity"
+   ],
+   [
+    "flotation_gravity"
+   ],
+   [
+    [
+     "pgrav",
+     "fgrav"
+    ]
+   ]
+  ],
+  [
+   [
+    "reag_clsc",
+    "reag_clsc_sump",
+    "reag_cond",
+    "reag_contact",
+    "reag_cyclone",
+    "reag_regrind",
+    "reag_rougher"
+   ],
+   [
+    "first_cleaner"
+   ],
+   [
+    [
+     "reagents",
+     "firstcl"
+    ]
+   ]
+  ],
+  [
+   [
+    "regeneration"
+   ],
+   [
+    "carbon_bin"
+   ],
+   [
+    [
+     "regen",
+     "cb"
+    ]
+   ]
+  ],
+  [
+   [
+    "rougher_flotation"
+   ],
+   [
+    "contact_flotation"
+   ],
+   [
+    [
+     "rfl",
+     "cfl"
+    ]
+   ]
+  ],
+  [
+   [
+    "sag_screen"
+   ],
+   [
+    "ball_mills"
+   ],
+   [
+    [
+     "sagscr",
+     "bm"
+    ]
+   ]
+  ],
+  [
+   [
+    "second_cleaner_scavenger"
+   ],
+   [
+    "cleaner_scavenger"
+   ],
+   [
+    [
+     "sc2",
+     "csfl"
+    ]
+   ]
+  ],
+  [
+   [
+    "treated_reclaim"
+   ],
+   [
+    "mill_water_distn"
+   ],
+   [
+    [
+     "tr",
+     "mwdist"
+    ]
+   ]
+  ],
+  [
+   [
+    "water_sag",
+    "water_sump"
+   ],
+   [
+    "rougher_flotation"
+   ],
+   [
+    [
+     "water",
+     "rfl"
+    ]
+   ]
+  ]
+ ],
+ "loops": [
+  {
+   "name": "pebble crusher on the SAG screen oversize",
+   "found": true
+  },
+  {
+   "name": "ball mills in closed circuit with cyclones",
+   "found": true
+  },
+  {
+   "name": "gravity concentrate residue back to grinding",
+   "found": false
+  },
+  {
+   "name": "regrind mill in closed circuit with its cyclone",
+   "found": true
+  },
+  {
+   "name": "second cleaner scavenger concentrate back to conditioning",
+   "found": false
+  },
+  {
+   "name": "second cleaner scavenger tailings back to first cleaner",
+   "found": false
+  },
+  {
+   "name": "carbon loop",
+   "found": false
+  },
+  {
+   "name": "strip solution loop",
+   "found": true
+  },
+  {
+   "name": "Primary gravity tails through contact flotation back to grinding",
+   "found": false
+  },
+  {
+   "name": "Magnetic gravity concentrate through intensive cyanidation with residue back through regrind",
+   "found": false
+  },
+  {
+   "name": "flotation gravity through future cleaner gravity and cyanidation, residue back to grinding",
+   "found": false
+  }
+ ],
+ "missing_items": [
+  "carbon_screen",
+  "filter_feed_tank",
+  "trash_screen"
+ ],
+ "pairing": {
+  "ore": [
+   "mined_ore"
+  ],
+  "pc": [
+   "primary_crusher"
+  ],
+  "stock": [
+   "crushed_ore_stockpile"
+  ],
+  "pbc": [
+   "pebble_crusher"
+  ],
+  "sag": [
+   "sag_mill"
+  ],
+  "sagscr": [
+   "sag_screen"
+  ],
+  "bm": [
+   "ball_mills"
+  ],
+  "bmcl": [
+   "ball_mill_cyclones"
+  ],
+  "ffs": [],
+  "water": [
+   "water_sag",
+   "water_sump"
+  ],
+  "lime": [
+   "lime_clsc_sump",
+   "lime_reclaim",
+   "lime_regrind",
+   "lime_sag"
+  ],
+  "reagents": [
+   "reag_clsc",
+   "reag_clsc_sump",
+   "reag_cond",
+   "reag_contact",
+   "reag_cyclone",
+   "reag_regrind",
+   "reag_rougher"
+  ],
+  "rfl": [
+   "rougher_flotation"
+  ],
+  "cfl": [
+   "contact_flotation"
+  ],
+  "dcl": [
+   "deslime_cyclones"
+  ],
+  "pgrav": [
+   "primary_gravity"
+  ],
+  "fgrav": [
+   "flotation_gravity"
+  ],
+  "cgrav": [
+   "cleaner_gravity"
+  ],
+  "pcol": [
+   "primary_cleaner_column"
+  ],
+  "intcyn": [
+   "intensive_cyanidation"
+  ],
+  "firstcl": [
+   "first_cleaner"
+  ],
+  "csfl": [
+   "cleaner_scavenger"
+  ],
+  "rg": [
+   "regrind_mill"
+  ],
+  "rgcl": [
+   "regrind_cyclone"
+  ],
+  "cond2": [
+   "cond_tank"
+  ],
+  "cl2": [
+   "second_cleaner"
+  ],
+  "sc2": [
+   "second_cleaner_scavenger"
+  ],
+  "cct": [
+   "cu_thickener"
+  ],
+  "magsep": [
+   "magnetic_separation"
+  ],
+  "maggrav": [
+   "mag_gravity"
+  ],
+  "ccf": [
+   "cu_filter"
+  ],
+  "ccstock": [
+   "cu_stockpile"
+  ],
+  "mkt": [
+   "conc_to_market"
+  ],
+  "mwdist": [
+   "mill_water_distn"
+  ],
+  "cyanide": [
+   "cyanide"
+  ],
+  "trash": [
+   "trash"
+  ],
+  "leach": [
+   "leach"
+  ],
+  "ft": [
+   "fines_thickener"
+  ],
+  "flocc": [
+   "flocculant"
+  ],
+  "cip": [
+   "cip"
+  ],
+  "caro": [
+   "caros_acid_reclaim",
+   "caros_acid_tails"
+  ],
+  "gland": [
+   "gland_water"
+  ],
+  "cb": [
+   "carbon_bin"
+  ],
+  "aw": [
+   "acid_wash"
+  ],
+  "strip": [
+   "strip"
+  ],
+  "regen": [
+   "regeneration"
+  ],
+  "hlc": [
+   "heap_leach_carbon"
+  ],
+  "lc": [],
+  "bc": [],
+  "c2hl": [
+   "carbon_to_heap_leach"
+  ],
+  "bst": [
+   "barren_tank"
+  ],
+  "pst": [
+   "pregnant_tank"
+  ],
+  "ew": [
+   "ew_cells"
+  ],
+  "ews": [
+   "ew_sludge"
+  ],
+  "millw": [
+   "mill_water"
+  ],
+  "fwt": [
+   "fresh_water"
+  ],
+  "minew": [
+   "mine_water"
+  ],
+  "tr": [
+   "treated_reclaim"
+  ],
+  "tp": [
+   "tailings_pond"
+  ],
+  "rc": [
+   "reclaim_water"
+  ],
+  "cp": [
+   "chloride_plume"
+  ],
+  "res": [],
+  "preg": []
+ },
+ "checked_by_hand": "Claude, 16 Nov 2026",
+ "hand_pairings": 3
+}

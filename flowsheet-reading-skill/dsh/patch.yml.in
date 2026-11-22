@@ -1,0 +1,85 @@
+# DeepSeek Harness (dsh) v0.2.2-rc.5, its SDK profile: the overlay for one attempt (`dsh --profile sdk --patch`); run.sh
+# fills @MODEL@, @PORT@, @CONTEXT@ and @SKILLDIRS@. Every row departs from dsh's defaults for a reason given beside it;
+# everything else is dsh as it ships. Three more settings come from the environment in run.sh: permission mode
+# danger-full-access, telemetry off, and the endpoint's placeholder key.
+
+# The endpoint: a custom provider at the proxy, the only way out of the fence; the model as in Pi's models.json (dsh's
+# provider layer is the same pi-ai library Pi uses): images in, Pi's window, Pi's output limit of 32,768 tokens.
+- id: llm-pi-ai
+  config:
+    providers:
+      fence:
+        api: openai-completions
+        baseURL: http://fsr-proxy:@PORT@/v1
+        apiKeyEnv: FENCE_API_KEY
+        # Both servers take at most two images a request. dsh's own limit (default 50) is set to two, one image
+        # replaced at a time, so dsh itself keeps the two newest and puts each older one's path in its place, and its own
+        # count of the request is the server's (Pi: image-limit.ts inside Pi). The proxy's cap of two then has nothing
+        # left to do. Without this the proxy removed the images unseen by dsh, which still counted each (1,200 tokens),
+        # cut the 27B's reply allowance to fit a window it took to be full, down to 10 tokens (first run, 19 Nov).
+        maxRequestImages: 2
+        imageOffloadCountQuantum: 1
+        models:
+          - id: "@MODEL@"
+            input: [text, image]
+            contextWindow: @CONTEXT@
+            maxTokens: 32768
+- id: agent-default-model
+  config:
+    provider: fence
+    model: "@MODEL@"
+
+# Compaction, for the 27B only. dsh compacts when the history passes min(0.8 W, W - O - B): window W, output cap O
+# (32,768) and an extra headroom B, 65,536 by default, which is also the summary's output cap. For the 27B's 96,000
+# window that is negative, and dsh refuses the route. So no extra headroom (B = 0), and the summary gets the same 32,768
+# output cap as every request: it compacts past 63,232 tokens (66 % of the window; Flash Next, on dsh's defaults, past
+# 163,840, 62.5 %), and a summary request still fits (63,232 + 32,768 = 96,000).
+- id: compaction-basic
+  config:
+    modelPolicies:
+      - {provider: fence, model: qwen38-27b, headroomTokens: 0, maxTokens: 32768}
+
+# Skills: only the one given (Pi: --no-skills --skill; Hermes: no stock skills, -s). No project, user or bundled roots.
+- id: skill-filesystem
+  config:
+    includeDefaultRoots: false
+    customSkillDirs: @SKILLDIRS@
+
+# Tools: the shell (bash, with its job tools), the file tools (read, read_image, write, edit), file search (glob, grep)
+# and the skill loader, as Pi has its read, bash, edit and write and Hermes was given its terminal, file and vision tools.
+# Off: the web tools (no route out; neither Pi nor Hermes had them), delegation to subagents, teams and workflows (Hermes
+# ran without its delegation tools; Pi has none), and the task-list, goal, plan-mode and directory tools.
+- {id: tool-web, disabled: true}
+- {id: tool-subagent, disabled: true}
+- {id: tool-subagent-fork, disabled: true}
+- {id: tool-subagent-control, disabled: true}
+- {id: tool-agent-team, disabled: true}
+- {id: tool-workflow, disabled: true}
+- {id: tool-todo, disabled: true}
+- {id: tool-goal, disabled: true}
+- {id: plan-mode, disabled: true}
+- {id: tool-working-directory, disabled: true}
+
+# What the SDK profile adds over dsh's one-task command-line profile (headless), which is the closest to Pi's -p and
+# Hermes's chat -Q: the SDK is used here only because it can attach an image to the prompt. Its extra tools (office,
+# schedule, ask the user, present, plugin manager), office skills and client rows are off, and the rows headless sets
+# itself are set as headless sets them (stored credentials and the DeepSeek account off, the session-title call on), so
+# the agent is the headless one.
+- {id: tool-plugin-manager, disabled: true}
+- {id: credentials, disabled: true}
+- {id: authorization, disabled: true}
+- {id: deepseek-account, disabled: true}
+- {id: session-title-llm, disabled: false}
+- {id: office-kit, disabled: true}
+- {id: tool-office, disabled: true}
+- {id: skill-office, disabled: true}
+- {id: tool-schedule, disabled: true}
+- {id: tool-ask-user, disabled: true}
+- {id: present, disabled: true}
+- {id: time-context, disabled: true}
+- {id: file-reference-local, disabled: true}
+- {id: deliverable-file-references, disabled: true}
+- {id: schedule, disabled: true}
+- {id: connection, disabled: true}
+- {id: file-upload, disabled: true}
+- {id: workspace, disabled: true}

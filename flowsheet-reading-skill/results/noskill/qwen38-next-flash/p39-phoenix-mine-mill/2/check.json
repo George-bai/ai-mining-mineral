@@ -1,0 +1,47 @@
+{
+ "checked": "Claude, 16 Nov 2026",
+ "pairing": {
+  "SSUMP": {
+   "to": [
+    "grinding_sump"
+   ],
+   "why": "'SAG SCREEN UNDERSIZE SUMP': the cyclone feed sump under the SAG screen (rule 1)"
+  },
+  "LRUMP": {
+   "to": [
+    "regrind_sump"
+   ],
+   "why": "'LIME AND REAGENTS SUMP', fed the cleaner-scavenger concentrate and feeding the regrind (rule 2): the regrind cyclone feed sump, not the lime input"
+  },
+  "CSUMP": {
+   "to": [
+    "filter_feed_tank"
+   ],
+   "why": "'COPPER CONCENTRATE SUMP' fed by the thickener underflow and feeding the filter (rule 2): the filter feed tank"
+  },
+  "CIPSUM": {
+   "to": [
+    "tails_tank"
+   ],
+   "why": "'CIP TAILINGS SUMP', fed by CIP tails and Caro's acid, feeding the pond (rule 1 and 2): the tailings mixing box"
+  },
+  "LDCARB": {
+   "to": [],
+   "why": "'(LOADED CARBON)', a stream label drawn as a box (the plan's example)"
+  },
+  "BRCARB": {
+   "to": [],
+   "why": "'(BARREN CARBON)', a stream label drawn as a box"
+  },
+  "FLOC": {
+   "to": [
+    "flocculant"
+   ],
+   "why": "'FLOC' into the fines thickener: the FLOCCULANT input, abbreviated"
+  }
+ },
+ "notes": [
+  "Test, no skill. Water, lime and reagent inputs pair with the set sharing their label. 'TO REFINERY' is the EW sludge to refinery outlet. '(RESIDUE)' and '(PREG)' are stream labels.",
+  "Read: every box whose label is not exactly its key item's, or that pairs with nothing or with a set, and every box paired with a repeated key label, with its feeds (local/dev/repeats.py); both lists uncut, 16 Nov. Boxes whose label is exactly their key item's were not each read."
+ ]
+}

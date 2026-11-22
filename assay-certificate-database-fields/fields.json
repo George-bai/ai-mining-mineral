@@ -1,0 +1,23 @@
+{
+  "note": "The database fields every reader fills from a certificate: one row per CRM in a site's standards table, holding the expected value and 1SD that the QAQC charts use for each lab method the site runs.",
+  "fields": {
+    "cu_4a_pct": "Copper by four-acid (near-total) digestion: certified value, in wt.% Cu.",
+    "cu_4a_sd_pct": "Copper by four-acid digestion: one standard deviation (1SD) of the certified value, in wt.% Cu.",
+    "cu_ar_pct": "Copper by aqua regia digestion: certified value, in wt.% Cu.",
+    "cu_ar_sd_pct": "Copper by aqua regia digestion: 1SD, in wt.% Cu.",
+    "cu_h2so4_pct": "Acid-soluble copper by sulphuric acid (H2SO4) leach: certified value, in wt.% Cu.",
+    "cu_h2so4_sd_pct": "Acid-soluble copper by sulphuric acid leach: 1SD, in wt.% Cu.",
+    "cu_cn_pct": "Cyanide-soluble copper by cyanide (NaCN) leach: certified value, in wt.% Cu.",
+    "cu_cn_sd_pct": "Cyanide-soluble copper: 1SD, in wt.% Cu.",
+    "au_fa_ppm": "Gold by lead-collection fire assay (any finish): certified value, in ppm (g/t) Au.",
+    "au_fa_sd_ppm": "Gold by fire assay: 1SD, in ppm (g/t) Au.",
+    "au_ar_ppm": "Gold by aqua regia digestion: certified value, in ppm (g/t) Au.",
+    "au_ar_sd_ppm": "Gold by aqua regia digestion: 1SD, in ppm (g/t) Au."
+  },
+  "rules": [
+    "Certified values only. A value the certificate gives as indicative, provisional, informational or uncertified is left empty (null).",
+    "A field whose method the certificate does not report is left empty (null). Never fill a field from a different method.",
+    "Convert to the field's unit: 1 wt.% = 10,000 ppm; 1 ppm = 1,000 ppb = 1 g/t.",
+    "The 1SD fields take one standard deviation. If the certificate gives 2SD, halve it; never use a confidence or tolerance interval."
+  ]
+}

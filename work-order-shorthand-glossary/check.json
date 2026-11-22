@@ -1,0 +1,4899 @@
+{
+ "A-test-001|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-001|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-001|y|3": {
+  "outcome": "right",
+  "why": "'air conditioning' compressor is the air conditioner's compressor (rule 1)"
+ },
+ "A-test-007|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-007|y": {
+  "meaning": false,
+  "why": "'US' read as 'use': 'Replace, use a linear sensor'",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-021|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-021|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-022|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-022|y": {
+  "meaning": false,
+  "why": "'U/S' read as 'upstream'",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-036|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-036|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-038|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-038|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-039|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-039|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-040|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-040|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-044|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-044|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-045|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-045|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-050|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-050|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-053|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-053|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-061|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-061|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-061|y|3": {
+  "outcome": "right",
+  "why": "'air conditioning' fault is the air conditioner's fault (rule 1)"
+ },
+ "A-test-062|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-062|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-068|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-068|y": {
+  "meaning": false,
+  "why": "'P/BRAKE' read as 'primary brake', not park brake",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-073|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-073|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-077|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-077|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-080|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-080|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-081|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-081|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-083|x": {
+  "meaning": false,
+  "why": "'make up tyres' (fit tyres to rims) read as 'inflate tyres'; not shorthand, but the task changes",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-083|y": {
+  "meaning": false,
+  "why": "'make up' glossed as '(repair)'; not shorthand, but the task changes",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-085|x": {
+  "meaning": false,
+  "why": "'U/S' read as 'under service'",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-085|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-097|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-097|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-105|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-105|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-106|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-106|x|2": {
+  "outcome": "right",
+  "why": "'automatic greaser' pump is the autogreaser pump (rule 1)"
+ },
+ "A-test-106|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-108|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-108|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-110|x": {
+  "meaning": false,
+  "why": "'CONVERTER SHAFT UNIS' (the shaft's universal joints) becomes 'Replace the converter shaft', with UNIS split off: the plain text names a different part to replace, and an unsure entry does not excuse it (changed at the second review, 20 Nov 2026, versions known)",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-110|y": {
+  "meaning": false,
+  "why": "'CONVERTER SHAFT UNIS' (the shaft's universal joints) becomes 'Replace the converter shaft', with UNIS split off: the plain text names a different part to replace, and an unsure entry does not excuse it (changed at the second review, 20 Nov 2026, versions known)",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-116|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-116|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-120|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-120|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-122|x": {
+  "meaning": false,
+  "diagnosis": true,
+  "why": "'INV' read as 'inverter': 'Repair the inverter on the automatic greaser unit' puts the fault in a part the note does not name (diagnosis added at the re-check after Codex pass 3)",
+  "done": false,
+  "added": false
+ },
+ "A-test-122|x|3": {
+  "outcome": "right",
+  "why": "'automatic greaser' unit is the auto-greaser unit (rule 1)"
+ },
+ "A-test-122|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-122|y|3": {
+  "outcome": "right",
+  "why": "'autogreaser' is the key's 'auto-greaser' (spelling only)"
+ },
+ "A-test-124|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-124|y": {
+  "meaning": false,
+  "why": "'L/HS' read as 'left headstock'",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-126|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-126|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-127|x": {
+  "meaning": false,
+  "diagnosis": true,
+  "why": "'INV' read as 'inverter': 'MB119, inverter, oil pressure / overheating fault' gives the fault to a part the note does not name (diagnosis added at the re-check after Codex pass 3)",
+  "done": false,
+  "added": false
+ },
+ "A-test-127|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-130|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-130|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-138|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-138|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-147|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-147|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-148|x": {
+  "meaning": false,
+  "why": "'F/WHEEL' read as 'front wheel', not flywheel",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-148|y": {
+  "meaning": false,
+  "why": "'F/WHEEL' read as 'front wheel' and 'HOSU' as 'hose'",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-149|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-149|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-150|x": {
+  "meaning": false,
+  "why": "'implement drift' read as 'the implement in the drift' (a tunnel); not shorthand",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-150|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-152|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-152|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-154|x": {
+  "meaning": false,
+  "why": "'C/O' read as 'check over', not change out",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-154|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-155|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-155|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-156|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-156|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-161|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-161|y": {
+  "meaning": false,
+  "why": "'tele remote' read as 'television remote'",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-171|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-171|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-183|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-183|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-185|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-185|y": {
+  "meaning": false,
+  "added": true,
+  "why": "'trans ECM' (the transmission's control module) read as 'replace the transmission and the Engine Control Module': a second task added",
+  "diagnosis": false,
+  "done": false
+ },
+ "A-test-206|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-206|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-209|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-209|y": {
+  "meaning": false,
+  "why": "'U/S' read as 'used'",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-210|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-210|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-211|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-211|x|3": {
+  "outcome": "right",
+  "why": "'1/4 window' reads as quarter window to anyone (rule 4: written form already says it)"
+ },
+ "A-test-211|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-216|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-216|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-222|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-222|x|1": {
+  "outcome": "right",
+  "why": "'air conditioning' parts are the air conditioner's parts (rule 1)"
+ },
+ "A-test-222|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-228|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-228|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-229|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-229|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-230|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-230|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-231|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-231|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-232|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-232|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-232|y|3": {
+  "outcome": "right",
+  "why": "'air conditioning' is the air conditioner here (rule 1)"
+ },
+ "A-test-240|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-240|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-240|y|2": {
+  "outcome": "right",
+  "why": "'air conditioning' compressor (rule 1)"
+ },
+ "A-test-244|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-244|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-250|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-250|x|2": {
+  "outcome": "right",
+  "why": "'air conditioning' compressor (rule 1)"
+ },
+ "A-test-250|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-251|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-251|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-252|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-252|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-256|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-256|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-259|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-259|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-262|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-262|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-267|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-267|x|5": {
+  "outcome": "right",
+  "why": "'drop box' is the key's 'dropbox' (spacing only)"
+ },
+ "A-test-267|y": {
+  "meaning": false,
+  "why": "'TEMP REP' read as 'temperature repair'; the note means a temporary repair (the key says temperature, logged as a doubt)",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-267|y|5": {
+  "outcome": "right",
+  "why": "'drop box' is the key's 'dropbox' (spacing only)"
+ },
+ "A-test-268|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-268|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-271|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-271|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-273|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-273|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-275|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-275|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-275|y|5": {
+  "outcome": "right",
+  "why": "'center' is the same word as 'centre' (rule 3)"
+ },
+ "A-test-278|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-278|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-284|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-284|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-285|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-285|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-286|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-286|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-286|y|2": {
+  "outcome": "right",
+  "why": "'center' is the same word as 'centre' (rule 3)"
+ },
+ "A-test-287|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-287|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-289|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-289|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-296|x": {
+  "meaning": false,
+  "why": "'TOOTH LOCK' (the tooth's retaining lock) read as 'tooth lockout'; not scored as shorthand, the key leaves 'lock'",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-296|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-310|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-310|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-312|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-312|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-313|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-313|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-314|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-314|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-317|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-317|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-325|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-325|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-328|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-328|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-329|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-329|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-330|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-330|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-333|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-333|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-333|y|4": {
+  "outcome": "right",
+  "why": "'cab' is an everyday word for the cabin (rule 4)"
+ },
+ "A-test-335|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-335|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-340|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-340|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-352|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-352|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-360|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-360|y": {
+  "meaning": false,
+  "why": "'r term' read as 'remote terminal', not right terminal",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-365|x": {
+  "meaning": false,
+  "diagnosis": true,
+  "why": "'INV' read as 'inverter', then 'Repair the inverter ... due to an engine shutdown fault': blames a part the note does not name",
+  "done": false,
+  "added": false
+ },
+ "A-test-365|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-365|y|4": {
+  "outcome": "right",
+  "why": "'shut down' is the key's 'shutdown' (spacing only)"
+ },
+ "A-test-369|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-369|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-377|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-377|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-380|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-380|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-387|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-387|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-391|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-391|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-392|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-392|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-393|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-393|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-399|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "A-test-399|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-002|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-002|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-013|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-013|x|1": {
+  "outcome": "right",
+  "why": "'air conditioning' belt (rule 1)"
+ },
+ "B-test-013|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-021|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-021|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-022|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-022|y": {
+  "meaning": false,
+  "why": "'C/O' read as 'check on', not change out",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-022|y|3": {
+  "outcome": "right",
+  "why": "'cab' is an everyday word for the cabin (rule 4)"
+ },
+ "B-test-026|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-026|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-027|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-027|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-030|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-030|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-034|x": {
+  "meaning": false,
+  "why": "'1000H' read as 10:00; 'PO' expanded to 'Planned Overhaul' without basis",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-034|x|0": {
+  "outcome": "wrong",
+  "why": "'1000H' (a 1,000-hour service) read as the clock time 10:00"
+ },
+ "B-test-034|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-036|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-036|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-042|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-042|y": {
+  "meaning": false,
+  "why": "'1000H' read as 10:00",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-042|y|0": {
+  "outcome": "wrong",
+  "why": "'1000H' read as the clock time 10:00"
+ },
+ "B-test-044|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-044|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-045|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-045|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-048|x": {
+  "meaning": false,
+  "why": "'P/load' read as 'pneumatic load', not payload",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-048|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-059|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-059|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-073|x": {
+  "meaning": false,
+  "why": "'1000H' read as 10:00",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-073|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-074|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-074|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-074|y|0": {
+  "outcome": "right",
+  "why": "'amplitude modulation / frequency modulation' is what AM / FM stands for (rule 1)"
+ },
+ "B-test-078|x": {
+  "meaning": false,
+  "why": "'1000H' read as 10:00",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-078|x|0": {
+  "outcome": "wrong",
+  "why": "'1000H' read as the clock time 10:00"
+ },
+ "B-test-078|x|1": {
+  "outcome": "right",
+  "why": "'inspect' for 'inspection' (rule 1)"
+ },
+ "B-test-078|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-079|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-079|y": {
+  "meaning": false,
+  "why": "'R/Rear' read as 'rear': the side is dropped",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-080|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-080|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-082|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-082|y": {
+  "meaning": false,
+  "why": "'RHF' read as 'Rougher Head Fan', not right hand front",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-089|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-089|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-093|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-093|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-094|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-094|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-095|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-095|y": {
+  "meaning": false,
+  "why": "'1000H' read as 10:00",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-102|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-102|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-109|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-109|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-110|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-110|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-113|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-113|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-118|x": {
+  "meaning": false,
+  "why": "'u/s' read as 'underside'",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-118|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-119|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-119|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-121|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-121|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-122|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-122|y": {
+  "meaning": false,
+  "why": "'U/S' read as 'upstream'",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-136|x": {
+  "meaning": false,
+  "why": "'Tong' (a drill's breakout tong; the key keeps it) changed to 'tongue'; not shorthand",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-136|y": {
+  "meaning": false,
+  "why": "'Tong' (a drill's breakout tong; the key keeps it) changed to 'tongue'; not shorthand",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-143|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-143|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-144|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-144|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-145|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-145|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-151|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-151|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-155|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-155|y": {
+  "meaning": false,
+  "why": "'Eng' read as 'Engineering' and 'CW' expanded to 'Circuit Water'; the asset number read as a work order number",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-165|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-165|x|0": {
+  "outcome": "right",
+  "why": "'3-monthly' is the 3 month interval (rule 1)"
+ },
+ "B-test-165|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-168|x": {
+  "meaning": false,
+  "why": "'1000H' read as 10:00",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-168|x|3": {
+  "outcome": "right",
+  "why": "'Equalizer' is the same word as 'equaliser' (rule 3)"
+ },
+ "B-test-168|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-168|y|3": {
+  "outcome": "right",
+  "why": "'equalizer' is the same word as 'equaliser' (rule 3)"
+ },
+ "B-test-175|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-175|y": {
+  "meaning": false,
+  "why": "'500H' made the truck's designation; the service interval is lost",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-175|y|0": {
+  "outcome": "wrong",
+  "why": "'500H' presented as the truck's designation ('the 500H haul truck'); the 500-hour interval is lost"
+ },
+ "B-test-177|x": {
+  "meaning": false,
+  "why": "'c/o' read as 'cause of': 'cause of a blown position 3 tyre' replaces the change-out task",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-177|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-183|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-183|y": {
+  "meaning": false,
+  "why": "'C/out' read as 'check out', not change out (part of the asset token, so not scored as an item)",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-193|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-193|y": {
+  "meaning": false,
+  "why": "'C/out' read as 'cut out', not change out (part of the asset token, so not scored as an item)",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-194|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-194|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-197|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-197|x|2": {
+  "outcome": "right",
+  "why": "'air conditioning' (rule 1)"
+ },
+ "B-test-197|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-200|x": {
+  "meaning": false,
+  "why": "'2000H' read as 20:00",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-200|x|0": {
+  "outcome": "wrong",
+  "why": "'2000H' read as the clock time 20:00"
+ },
+ "B-test-200|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-204|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-204|y": {
+  "meaning": false,
+  "why": "'1000H' read as 10:00",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-205|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-205|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-205|y|0": {
+  "outcome": "right",
+  "why": "'6-monthly' is the 6 month interval (rule 1)"
+ },
+ "B-test-211|x": {
+  "meaning": false,
+  "why": "the asset number 'WK1566' becomes 'Work order 1566': the asset number is changed, as in B-test-155 (changed at the second review, 20 Nov 2026, versions known)",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-211|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-213|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-213|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-213|y|0": {
+  "outcome": "right",
+  "why": "'air conditioning' (rule 1)"
+ },
+ "B-test-215|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-215|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-217|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-217|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-217|y|2": {
+  "outcome": "right",
+  "why": "'air conditioning' compressor (rule 1)"
+ },
+ "B-test-219|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-219|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-220|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-220|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-222|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-222|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-222|y|3": {
+  "outcome": "right",
+  "why": "'operator's cab' is the cabin (rule 4)"
+ },
+ "B-test-224|x": {
+  "meaning": false,
+  "why": "'1000H' read as 10:00",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-224|x|0": {
+  "outcome": "wrong",
+  "why": "'1000H' read as the clock time 10:00"
+ },
+ "B-test-224|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-230|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-230|y": {
+  "meaning": false,
+  "why": "'2000H' read as 20:00",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-230|y|0": {
+  "outcome": "wrong",
+  "why": "'2000H' read as the clock time 20:00"
+ },
+ "B-test-231|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-231|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-231|y|2": {
+  "outcome": "right",
+  "why": "'isolating switch' is the isolator; 'low' kept (rule 1)"
+ },
+ "B-test-233|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-233|x|2": {
+  "outcome": "right",
+  "why": "'air conditioning' belt (rule 1)"
+ },
+ "B-test-233|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-235|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-235|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-237|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-237|x|6": {
+  "outcome": "right",
+  "why": "'request to send ... for repair' says what 'for repair REQ' (required) says (rule 1)"
+ },
+ "B-test-237|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-237|y|6": {
+  "outcome": "right",
+  "why": "'request to send ... for repair' says what 'for repair REQ' (required) says (rule 1)"
+ },
+ "B-test-241|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-241|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-254|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-254|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-257|x": {
+  "meaning": false,
+  "why": "'RHT' read as 'right hand top'",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-257|x|3": {
+  "outcome": "wrong",
+  "why": "'RHT' (right, at this site) read as 'right hand top': adds a position"
+ },
+ "B-test-257|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-261|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-261|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-263|x": {
+  "meaning": false,
+  "why": "'pressur' read as 'pressurise': a pressure fault becomes a task",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-263|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-266|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-266|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-274|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-274|y": {
+  "meaning": false,
+  "why": "'RHT' read as 'right hand top'",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-274|y|3": {
+  "outcome": "wrong",
+  "why": "'RHT' (right, at this site) read as 'right hand top': adds a position"
+ },
+ "B-test-275|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-275|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-276|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-276|x|1": {
+  "outcome": "right",
+  "why": "'inspect' for 'inspection' (rule 1)"
+ },
+ "B-test-276|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-281|x": {
+  "meaning": false,
+  "why": "'1000H' read as 10:00",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-281|x|0": {
+  "outcome": "wrong",
+  "why": "'1000H' read as the clock time 10:00"
+ },
+ "B-test-281|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-282|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-282|y": {
+  "meaning": false,
+  "why": "'INJ' read as 'injection', not injector",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-285|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-285|y": {
+  "meaning": false,
+  "why": "'C/out' read as 'check out' (part of the asset token, so not scored as an item)",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-295|x": {
+  "meaning": false,
+  "why": "'1000H' read as 10:00",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-295|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-313|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-313|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-323|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-323|y": {
+  "meaning": false,
+  "why": "'1000H' read as 10:00",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-325|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-325|y": {
+  "meaning": false,
+  "why": "'C/O' read as 'check over', not change out",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-333|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-333|y": {
+  "meaning": false,
+  "why": "'COMP' read as 'component', not compressor",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-340|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-340|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-343|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-343|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-345|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-345|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-345|y|2": {
+  "outcome": "right",
+  "why": "'air conditioning' hose (rule 1)"
+ },
+ "B-test-346|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-346|y": {
+  "meaning": false,
+  "why": "'C/out' read as 'C is out' and 'Uni's' as 'Unions': 'Asset LD3192-C is out. Unions on the engine pump drive.'",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-347|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-347|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-350|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-350|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-351|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-351|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-352|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-352|x|1": {
+  "outcome": "right",
+  "why": "'Re-seal' is the key's 'reseal' (rule 3)"
+ },
+ "B-test-352|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-352|y|1": {
+  "outcome": "right",
+  "why": "'Re-seal' is the key's 'reseal' (rule 3)"
+ },
+ "B-test-354|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-354|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-358|x": {
+  "meaning": false,
+  "why": "'u/s' read as 'underground'",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-358|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-359|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-359|y": {
+  "meaning": false,
+  "why": "'Pos 3 9 tyres' (positions 3 and 9) read as 'the 9 tyres at position 3'",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-363|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-363|y": {
+  "meaning": false,
+  "why": "the asset number 'UY2435' is dropped (changed at the second review, 20 Nov 2026, versions known)",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-364|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-364|x|4": {
+  "outcome": "right",
+  "why": "the plain text says 'Replace' (the terms entry's 'replacement' is not what the reader sees)"
+ },
+ "B-test-364|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-365|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-365|y": {
+  "meaning": false,
+  "why": "'Out/stding' read as 'out of staging', not outstanding",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-366|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-366|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-366|y|3": {
+  "outcome": "right",
+  "why": "'cab' is an everyday word for the cabin (rule 4)"
+ },
+ "B-test-379|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-379|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-381|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-381|y": {
+  "meaning": false,
+  "why": "'1000H' read as 10:00",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-381|y|0": {
+  "outcome": "wrong",
+  "why": "'1000H' read as the clock time 10:00"
+ },
+ "B-test-382|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-382|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-383|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-383|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-383|y|1": {
+  "outcome": "right",
+  "why": "'air conditioning' (rule 1)"
+ },
+ "B-test-397|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-397|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-399|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "B-test-399|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-009|x": {
+  "meaning": false,
+  "why": "'DMG' made an asset name; the damage report is lost",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-009|x|0": {
+  "outcome": "wrong",
+  "why": "'DMG' (damage) presented as an asset ('Asset DMG'), not left visibly unresolved"
+ },
+ "C-test-009|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-011|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-011|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-015|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-015|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-015|y|2": {
+  "outcome": "right",
+  "why": "'#6' already says number 6 (rule 4)"
+ },
+ "C-test-020|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-020|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-020|y|0": {
+  "outcome": "right",
+  "why": "'Mechanically protect' (rule 1; the same plain text as the other answer)"
+ },
+ "C-test-025|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-025|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-026|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-026|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-035|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-035|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-037|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-037|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-038|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-038|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-040|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-040|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-044|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-044|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-045|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-045|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-047|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-047|y": {
+  "meaning": false,
+  "why": "'tremmel' kept as 'Tremmel', a brand name, not the trammel wheel",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-048|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-048|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-055|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-055|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-056|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-056|y": {
+  "meaning": false,
+  "why": "'W/Place' split into 'Work' and 'at Place'; workplace inspection lost",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-056|y|1": {
+  "outcome": "right",
+  "why": "'Inspect' for 'inspection' (rule 1)"
+ },
+ "C-test-062|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-062|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-066|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-066|x|0": {
+  "outcome": "right",
+  "why": "'Amplitude Modulation / Frequency Modulation' is what AM / FM stands for (rule 1)"
+ },
+ "C-test-066|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-072|x": {
+  "meaning": false,
+  "why": "'U/S' read as 'Under/Surface'",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-072|y": {
+  "meaning": false,
+  "why": "'quick fill connector' turned into a 'Kwik fill connector', a brand; not shorthand, the key keeps 'quick'",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-083|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-083|x|0": {
+  "outcome": "unsure",
+  "why": "''afe' kept as written and listed unsure (rule 4)"
+ },
+ "C-test-083|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-083|y|0": {
+  "outcome": "unsure",
+  "why": "''afe' kept as written and listed unsure (rule 4)"
+ },
+ "C-test-084|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-084|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-085|x": {
+  "meaning": false,
+  "why": "'u/s' read as 'unserviced'",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-085|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-087|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-087|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-087|y|1": {
+  "outcome": "right",
+  "why": "'Re-route' is the key's 'reroute' (rule 3)"
+ },
+ "C-test-090|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-090|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-094|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-094|x|4": {
+  "outcome": "right",
+  "why": "'Inspect' for 'inspection' (rule 1)"
+ },
+ "C-test-094|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-096|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-096|y": {
+  "meaning": false,
+  "why": "'u/s' read as 'used'",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-096|y|6": {
+  "outcome": "right",
+  "why": "'cab' is an everyday word for the cabin (rule 4)"
+ },
+ "C-test-100|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-100|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-101|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-101|y": {
+  "meaning": false,
+  "added": true,
+  "diagnosis": true,
+  "why": "'reset' becomes 'Reset the circuit breaker': names a part the note does not, and implies a tripped breaker as the cause of no power (diagnosis added at the re-check after Codex pass 3)",
+  "done": false
+ },
+ "C-test-101|y|3": {
+  "outcome": "right",
+  "why": "'operator's cab' is the cabin (rule 4)"
+ },
+ "C-test-106|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-106|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-109|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-109|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-111|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-111|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-112|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-112|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-121|x": {
+  "meaning": false,
+  "why": "'RHR' (right hand rear) read as 'Repair': a defect report becomes a repair task",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-121|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-123|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-123|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-124|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-124|x|4": {
+  "outcome": "right",
+  "why": "'Replace ... Mechanical' says change out - mechanical (rule 1)"
+ },
+ "C-test-124|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-125|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-125|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-125|y|7": {
+  "outcome": "kept",
+  "why": "'D/line' written as 'D line', not read and not a different thing"
+ },
+ "C-test-127|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-127|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-132|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-132|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-134|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-134|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-136|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-136|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-139|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-139|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-144|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-144|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-145|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-145|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-147|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-147|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-148|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-148|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-164|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-164|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-168|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-168|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-170|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-170|x|5": {
+  "outcome": "right",
+  "why": "'#1' already says number 1 (rule 4)"
+ },
+ "C-test-170|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-171|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-171|x|3": {
+  "outcome": "right",
+  "why": "'air conditioning' units (rule 1)"
+ },
+ "C-test-171|x|5": {
+  "outcome": "right",
+  "why": "'#348' already says number 348 (rule 4)"
+ },
+ "C-test-171|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-188|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-188|x|5": {
+  "outcome": "right",
+  "why": "the plain text says 'non-compliance'"
+ },
+ "C-test-188|y": {
+  "meaning": false,
+  "why": "'526' (an asset code, masked in the key) read as a quantity, 'Audit 526 air fittings', as '5H' in C-test-214 (changed at the second review, 20 Nov 2026, versions known)",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-188|y|5": {
+  "outcome": "right",
+  "why": "the plain text says 'non-compliance'"
+ },
+ "C-test-194|x": {
+  "meaning": false,
+  "why": "'u/s' read as 'unserviced'",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-194|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-205|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-205|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-206|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-206|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-214|x": {
+  "meaning": false,
+  "why": "'5H' (an asset code, masked in the key) read as '5 hours'",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-214|x|5": {
+  "outcome": "right",
+  "why": "'4/8/8' already reads as a date (rule 4)"
+ },
+ "C-test-214|y": {
+  "meaning": false,
+  "why": "'5H' (an asset code, masked in the key) read as '5 hours'",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-221|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-221|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-223|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-223|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-231|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-231|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-232|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-232|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-233|x": {
+  "meaning": false,
+  "why": "'u/s' read as 'used (second-hand)': 'A used dummy receiver is required'",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-233|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-235|x": {
+  "meaning": false,
+  "why": "'ext' read as 'external', not extinguisher",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-235|y": {
+  "meaning": false,
+  "why": "'ext' read as 'external', not extinguisher",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-236|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-236|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-239|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-239|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-243|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-243|y": {
+  "meaning": false,
+  "why": "'cutting out' becomes 'Isolating the two-way'",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-243|y|0": {
+  "outcome": "right",
+  "why": "the plain text says 'two-way'"
+ },
+ "C-test-244|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-244|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-246|x": {
+  "meaning": false,
+  "why": "'Connect Inspect' (inspect the connection) read as two tasks, 'Connect and inspect'",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-246|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-253|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-253|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-258|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-258|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-262|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-262|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-266|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-266|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-269|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-269|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-270|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-270|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-286|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-286|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-292|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-292|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-293|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-293|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-294|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-294|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-295|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-295|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-299|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-299|y": {
+  "meaning": false,
+  "why": "'Iov' (an unexpanded code; the key keeps IOV) read as 'Overcurrent'",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-306|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-306|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-307|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-307|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-310|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-310|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-313|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-313|y": {
+  "meaning": false,
+  "why": "'9 Wk Service' (a 9-week service) read as 'Weekly service for Air Conditioning 9'",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-315|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-315|y": {
+  "meaning": false,
+  "why": "'u/s' read as 'use': 'Use a flexible pipe and rain cap'",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-318|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-318|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-320|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-320|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-327|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-327|x|2": {
+  "outcome": "right",
+  "why": "'missing ... to be installed' says missing - fit (rule 1)"
+ },
+ "C-test-327|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-327|y|2": {
+  "outcome": "right",
+  "why": "'missing. Install a new motor' says missing - fit (rule 1)"
+ },
+ "C-test-329|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-329|y": {
+  "meaning": false,
+  "why": "'propels' (a dragline's propel units) read as 'propeller shafts'",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-336|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-336|y": {
+  "meaning": false,
+  "why": "'quick fill' turned into 'Kwik fill', a brand; not shorthand, the key keeps 'quick'",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-347|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-347|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-351|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-351|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-355|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-355|x|1": {
+  "outcome": "right",
+  "why": "'air conditioning' fans (rule 1)"
+ },
+ "C-test-355|y": {
+  "meaning": false,
+  "why": "'no a/c fans' read as 'Number air conditioner fans': 'no' (none) taken as number",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-357|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-357|y": {
+  "meaning": false,
+  "why": "'n/w' read as 'new': a fault report becomes 'Fit a new indicator switch on the excavator'",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-368|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-368|x|4": {
+  "outcome": "right",
+  "why": "'over temperature' is the key's 'overtemperature' (spacing only)"
+ },
+ "C-test-368|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-368|y|4": {
+  "outcome": "right",
+  "why": "'over temperature' is the key's 'overtemperature' (spacing only)"
+ },
+ "C-test-374|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-374|y": {
+  "meaning": false,
+  "why": "'# 3 air comp' (the number 3 compressor) read as 'item 3' of a work order",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-376|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-376|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-382|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-382|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-385|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-385|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-390|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-390|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-393|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-393|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-396|x": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-396|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-398|x": {
+  "meaning": false,
+  "why": "'Propel coupling' read as 'propeller coupling'",
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "C-test-398|y": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false
+ },
+ "_key_doubts": {
+  "A-test-267|1": "'TEMP REP TO TRANS DROP BOX LEAK' is keyed 'temperature repair'; on a leak it reads as a temporary repair. Item kept on the key",
+  "A-test-387|2": "'REPA INTER FACE' is keyed 'repair internal face'; 'interface' is as likely. Item kept on the key in both answers"
+ },
+ "_read": [
+  "A-test-001",
+  "A-test-007",
+  "A-test-021",
+  "A-test-022",
+  "A-test-036",
+  "A-test-038",
+  "A-test-039",
+  "A-test-040",
+  "A-test-044",
+  "A-test-045",
+  "A-test-050",
+  "A-test-053",
+  "A-test-061",
+  "A-test-062",
+  "A-test-068",
+  "A-test-073",
+  "A-test-077",
+  "A-test-080",
+  "A-test-081",
+  "A-test-083",
+  "A-test-085",
+  "A-test-097",
+  "A-test-105",
+  "A-test-106",
+  "A-test-108",
+  "A-test-110",
+  "A-test-116",
+  "A-test-120",
+  "A-test-122",
+  "A-test-124",
+  "A-test-126",
+  "A-test-127",
+  "A-test-130",
+  "A-test-138",
+  "A-test-147",
+  "A-test-148",
+  "A-test-149",
+  "A-test-150",
+  "A-test-152",
+  "A-test-154",
+  "A-test-155",
+  "A-test-156",
+  "A-test-161",
+  "A-test-171",
+  "A-test-183",
+  "A-test-185",
+  "A-test-206",
+  "A-test-209",
+  "A-test-210",
+  "A-test-211",
+  "A-test-216",
+  "A-test-222",
+  "A-test-228",
+  "A-test-229",
+  "A-test-230",
+  "A-test-231",
+  "A-test-232",
+  "A-test-240",
+  "A-test-244",
+  "A-test-250",
+  "A-test-251",
+  "A-test-252",
+  "A-test-256",
+  "A-test-259",
+  "A-test-262",
+  "A-test-267",
+  "A-test-268",
+  "A-test-271",
+  "A-test-273",
+  "A-test-275",
+  "A-test-278",
+  "A-test-284",
+  "A-test-285",
+  "A-test-286",
+  "A-test-287",
+  "A-test-289",
+  "A-test-296",
+  "A-test-310",
+  "A-test-312",
+  "A-test-313",
+  "A-test-314",
+  "A-test-317",
+  "A-test-325",
+  "A-test-328",
+  "A-test-329",
+  "A-test-330",
+  "A-test-333",
+  "A-test-335",
+  "A-test-340",
+  "A-test-352",
+  "A-test-360",
+  "A-test-365",
+  "A-test-369",
+  "A-test-377",
+  "A-test-380",
+  "A-test-387",
+  "A-test-391",
+  "A-test-392",
+  "A-test-393",
+  "A-test-399",
+  "B-test-002",
+  "B-test-013",
+  "B-test-021",
+  "B-test-022",
+  "B-test-026",
+  "B-test-027",
+  "B-test-030",
+  "B-test-034",
+  "B-test-036",
+  "B-test-042",
+  "B-test-044",
+  "B-test-045",
+  "B-test-048",
+  "B-test-059",
+  "B-test-073",
+  "B-test-074",
+  "B-test-078",
+  "B-test-079",
+  "B-test-080",
+  "B-test-082",
+  "B-test-089",
+  "B-test-093",
+  "B-test-094",
+  "B-test-095",
+  "B-test-102",
+  "B-test-109",
+  "B-test-110",
+  "B-test-113",
+  "B-test-118",
+  "B-test-119",
+  "B-test-121",
+  "B-test-122",
+  "B-test-136",
+  "B-test-143",
+  "B-test-144",
+  "B-test-145",
+  "B-test-151",
+  "B-test-155",
+  "B-test-165",
+  "B-test-168",
+  "B-test-175",
+  "B-test-177",
+  "B-test-183",
+  "B-test-193",
+  "B-test-194",
+  "B-test-197",
+  "B-test-200",
+  "B-test-204",
+  "B-test-205",
+  "B-test-211",
+  "B-test-213",
+  "B-test-215",
+  "B-test-217",
+  "B-test-219",
+  "B-test-220",
+  "B-test-222",
+  "B-test-224",
+  "B-test-230",
+  "B-test-231",
+  "B-test-233",
+  "B-test-235",
+  "B-test-237",
+  "B-test-241",
+  "B-test-254",
+  "B-test-257",
+  "B-test-261",
+  "B-test-263",
+  "B-test-266",
+  "B-test-274",
+  "B-test-275",
+  "B-test-276",
+  "B-test-281",
+  "B-test-282",
+  "B-test-285",
+  "B-test-295",
+  "B-test-313",
+  "B-test-323",
+  "B-test-325",
+  "B-test-333",
+  "B-test-340",
+  "B-test-343",
+  "B-test-345",
+  "B-test-346",
+  "B-test-347",
+  "B-test-350",
+  "B-test-351",
+  "B-test-352",
+  "B-test-354",
+  "B-test-358",
+  "B-test-359",
+  "B-test-363",
+  "B-test-364",
+  "B-test-365",
+  "B-test-366",
+  "B-test-379",
+  "B-test-381",
+  "B-test-382",
+  "B-test-383",
+  "B-test-397",
+  "B-test-399",
+  "C-test-009",
+  "C-test-011",
+  "C-test-015",
+  "C-test-020",
+  "C-test-025",
+  "C-test-026",
+  "C-test-035",
+  "C-test-037",
+  "C-test-038",
+  "C-test-040",
+  "C-test-044",
+  "C-test-045",
+  "C-test-047",
+  "C-test-048",
+  "C-test-055",
+  "C-test-056",
+  "C-test-062",
+  "C-test-066",
+  "C-test-072",
+  "C-test-083",
+  "C-test-084",
+  "C-test-085",
+  "C-test-087",
+  "C-test-090",
+  "C-test-094",
+  "C-test-096",
+  "C-test-100",
+  "C-test-101",
+  "C-test-106",
+  "C-test-109",
+  "C-test-111",
+  "C-test-112",
+  "C-test-121",
+  "C-test-123",
+  "C-test-124",
+  "C-test-125",
+  "C-test-127",
+  "C-test-132",
+  "C-test-134",
+  "C-test-136",
+  "C-test-139",
+  "C-test-144",
+  "C-test-145",
+  "C-test-147",
+  "C-test-148",
+  "C-test-164",
+  "C-test-168",
+  "C-test-170",
+  "C-test-171",
+  "C-test-188",
+  "C-test-194",
+  "C-test-205",
+  "C-test-206",
+  "C-test-214",
+  "C-test-221",
+  "C-test-223",
+  "C-test-231",
+  "C-test-232",
+  "C-test-233",
+  "C-test-235",
+  "C-test-236",
+  "C-test-239",
+  "C-test-243",
+  "C-test-244",
+  "C-test-246",
+  "C-test-253",
+  "C-test-258",
+  "C-test-262",
+  "C-test-266",
+  "C-test-269",
+  "C-test-270",
+  "C-test-286",
+  "C-test-292",
+  "C-test-293",
+  "C-test-294",
+  "C-test-295",
+  "C-test-299",
+  "C-test-306",
+  "C-test-307",
+  "C-test-310",
+  "C-test-313",
+  "C-test-315",
+  "C-test-318",
+  "C-test-320",
+  "C-test-327",
+  "C-test-329",
+  "C-test-336",
+  "C-test-347",
+  "C-test-351",
+  "C-test-355",
+  "C-test-357",
+  "C-test-368",
+  "C-test-374",
+  "C-test-376",
+  "C-test-382",
+  "C-test-385",
+  "C-test-390",
+  "C-test-393",
+  "C-test-396",
+  "C-test-398"
+ ],
+ "_answers": {
+  "A-test-001|x": "d14fe01682398436",
+  "A-test-001|y": "77689e5043530801",
+  "A-test-007|x": "7497a25110c94a78",
+  "A-test-007|y": "3c023daa9b9147f0",
+  "A-test-021|x": "8dbd08d81e2d314c",
+  "A-test-021|y": "be86ffe8b66ab6dd",
+  "A-test-022|x": "f2f7d92aa510768b",
+  "A-test-022|y": "7cd31ae0d0fd7345",
+  "A-test-036|x": "706a04e10e95b445",
+  "A-test-036|y": "9eea3d50909fa0c9",
+  "A-test-038|x": "ba78dbceb91072ad",
+  "A-test-038|y": "ba78dbceb91072ad",
+  "A-test-039|x": "4c27431ad6d6a770",
+  "A-test-039|y": "cb77ab1e8949a52b",
+  "A-test-040|x": "9c1caeffd2a8da14",
+  "A-test-040|y": "960af8745bbc5185",
+  "A-test-044|x": "bc9cfdb614d677da",
+  "A-test-044|y": "f2aa0420c01ec6a3",
+  "A-test-045|x": "a695cfc31824f121",
+  "A-test-045|y": "38a6fc13e4c23276",
+  "A-test-050|x": "009fef1e19b370c7",
+  "A-test-050|y": "9dfbf364ae9a4cea",
+  "A-test-053|x": "a065b14dcb24e133",
+  "A-test-053|y": "4818b00b475879ad",
+  "A-test-061|x": "14f5da8448bf13cc",
+  "A-test-061|y": "98a0a65d8f5f7fde",
+  "A-test-062|x": "6758e49e5a8bf4d8",
+  "A-test-062|y": "303eddd910b859b7",
+  "A-test-068|x": "32cb4e7fedf49112",
+  "A-test-068|y": "ba9ff0dab601f286",
+  "A-test-073|x": "f54bc41c770fc722",
+  "A-test-073|y": "6e50d9503f47430a",
+  "A-test-077|x": "db56520f8235036c",
+  "A-test-077|y": "590824259237a34d",
+  "A-test-080|x": "a3a9afe65e5896b2",
+  "A-test-080|y": "dd88fa1c08adff6d",
+  "A-test-081|x": "5e17c8f418911e03",
+  "A-test-081|y": "46b870bb44bb74cf",
+  "A-test-083|x": "725e24828df83f14",
+  "A-test-083|y": "e1b7431c575c6637",
+  "A-test-085|x": "5975b9fe9dde82c2",
+  "A-test-085|y": "a3847df456793ec6",
+  "A-test-097|x": "b2df6c18f0616f9c",
+  "A-test-097|y": "6f298adcdf1c2f13",
+  "A-test-105|x": "b855af2f58731f40",
+  "A-test-105|y": "07749e57b2bbae12",
+  "A-test-106|x": "8043a9bcc2c9f157",
+  "A-test-106|y": "4a231b62ea28226d",
+  "A-test-108|x": "ba19ff8f3627cae1",
+  "A-test-108|y": "5991a7d31214bb82",
+  "A-test-110|x": "afee1e6272e3712c",
+  "A-test-110|y": "73800e03b4a4624b",
+  "A-test-116|x": "8bafe90962352b73",
+  "A-test-116|y": "8bafe90962352b73",
+  "A-test-120|x": "8fdb4b58416dc18f",
+  "A-test-120|y": "c7dd22cea8a8ff10",
+  "A-test-122|x": "6d5f9ec6acea171a",
+  "A-test-122|y": "8802b995422345d5",
+  "A-test-124|x": "15cc4572c65420d4",
+  "A-test-124|y": "b10deb8d395b4b31",
+  "A-test-126|x": "eb9d438e3f7f316f",
+  "A-test-126|y": "0777bce0b62c95fb",
+  "A-test-127|x": "0dd4f45099ace6b7",
+  "A-test-127|y": "57064966c6a17490",
+  "A-test-130|x": "f0f9870678726ce3",
+  "A-test-130|y": "3e8189f44958279b",
+  "A-test-138|x": "115bdc2852f4fe29",
+  "A-test-138|y": "87c9dccb355ac160",
+  "A-test-147|x": "171b618e7fda1661",
+  "A-test-147|y": "39b5331c3e010ed5",
+  "A-test-148|x": "1f8fbf4befa2b862",
+  "A-test-148|y": "18f78cd579659185",
+  "A-test-149|x": "5302f910117564e5",
+  "A-test-149|y": "44e58684f5688499",
+  "A-test-150|x": "5f96caeaff08d7e3",
+  "A-test-150|y": "11b295739f1c3e79",
+  "A-test-152|x": "1abdc13e7659c93b",
+  "A-test-152|y": "c1a6de74af70b749",
+  "A-test-154|x": "bdd2d140777489e6",
+  "A-test-154|y": "03c8ec658135ecde",
+  "A-test-155|x": "b94b4126042666da",
+  "A-test-155|y": "2382e85c2397f631",
+  "A-test-156|x": "288ab40de05474ea",
+  "A-test-156|y": "288ab40de05474ea",
+  "A-test-161|x": "987c908d4433c337",
+  "A-test-161|y": "4f2545f412a6098e",
+  "A-test-171|x": "f4832e626f90c319",
+  "A-test-171|y": "a7cd8a6d83f4325a",
+  "A-test-183|x": "267f170fc67434d5",
+  "A-test-183|y": "67911e53be0aa9e9",
+  "A-test-185|x": "4046d9735f4a4894",
+  "A-test-185|y": "7f8d7568452698f5",
+  "A-test-206|x": "29816386aaa54107",
+  "A-test-206|y": "29816386aaa54107",
+  "A-test-209|x": "8e2aa7aed7925a45",
+  "A-test-209|y": "6e8a8b4efb68d359",
+  "A-test-210|x": "15da9e902496a763",
+  "A-test-210|y": "5b70cc88b6104a0e",
+  "A-test-211|x": "25c486b98fe1e2a1",
+  "A-test-211|y": "9d3b277401ba37da",
+  "A-test-216|x": "997798347805549a",
+  "A-test-216|y": "5a041ce7bb2ac066",
+  "A-test-222|x": "e682b65a7327b92f",
+  "A-test-222|y": "ec9d2828800219cb",
+  "A-test-228|x": "50e69246a573e4f3",
+  "A-test-228|y": "78c9f4bd387ece8c",
+  "A-test-229|x": "5a94280745ad0759",
+  "A-test-229|y": "5a94280745ad0759",
+  "A-test-230|x": "dd806b6e61735768",
+  "A-test-230|y": "6d7394869407595e",
+  "A-test-231|x": "43e242d535575c14",
+  "A-test-231|y": "f44079615c4ce45c",
+  "A-test-232|x": "ce68bd672f397029",
+  "A-test-232|y": "46b555ab5231a429",
+  "A-test-240|x": "9fe116d1b1fb4374",
+  "A-test-240|y": "effc923de58d7b16",
+  "A-test-244|x": "ca02b0e544cc29d6",
+  "A-test-244|y": "523b933bf5688a2c",
+  "A-test-250|x": "f7aa0dacf9aa0652",
+  "A-test-250|y": "66ea327aed84d4e5",
+  "A-test-251|x": "f480494370166acf",
+  "A-test-251|y": "f480494370166acf",
+  "A-test-252|x": "71f33c023430210f",
+  "A-test-252|y": "36125b4ddb54ccca",
+  "A-test-256|x": "3aa4a87905082d79",
+  "A-test-256|y": "9e5233cad0c5526e",
+  "A-test-259|x": "86f9f4e357542ca0",
+  "A-test-259|y": "31e90274d91161df",
+  "A-test-262|x": "e17533337db062f6",
+  "A-test-262|y": "dcce0b2ee85fead2",
+  "A-test-267|x": "7b94309e1d7c42c0",
+  "A-test-267|y": "2d7f4f9c1b1dc906",
+  "A-test-268|x": "9cb1ce6c3e6ca636",
+  "A-test-268|y": "4c906f5fcb0e1d63",
+  "A-test-271|x": "28cfcc937348e8f5",
+  "A-test-271|y": "28cfcc937348e8f5",
+  "A-test-273|x": "784a4250d209fa9e",
+  "A-test-273|y": "4a3ab90b1fe47fe2",
+  "A-test-275|x": "2408da20b67dd889",
+  "A-test-275|y": "ae3d9aadf41b2b33",
+  "A-test-278|x": "454c3a9ec5e38f93",
+  "A-test-278|y": "454c3a9ec5e38f93",
+  "A-test-284|x": "b432f60ea2b176ac",
+  "A-test-284|y": "ddac39f77c339b37",
+  "A-test-285|x": "b73159907b67b25a",
+  "A-test-285|y": "d972fbb40d8393a6",
+  "A-test-286|x": "17f9016f5f68696a",
+  "A-test-286|y": "75a69a98435991d5",
+  "A-test-287|x": "8bdd50f46557a86d",
+  "A-test-287|y": "8bdd50f46557a86d",
+  "A-test-289|x": "940a74eb0daeb985",
+  "A-test-289|y": "940a74eb0daeb985",
+  "A-test-296|x": "bb799c6d2ad6c71b",
+  "A-test-296|y": "d4a2da1081b1bb95",
+  "A-test-310|x": "a2b1840be38c0210",
+  "A-test-310|y": "a2b1840be38c0210",
+  "A-test-312|x": "b5bd405f1697ed88",
+  "A-test-312|y": "d9c152a047e6dcf9",
+  "A-test-313|x": "b29bbaf1efb5357a",
+  "A-test-313|y": "b29bbaf1efb5357a",
+  "A-test-314|x": "9aa5e43cd6dd64a1",
+  "A-test-314|y": "9aa5e43cd6dd64a1",
+  "A-test-317|x": "6f721de6307cc694",
+  "A-test-317|y": "eb9e7a41ab019bcd",
+  "A-test-325|x": "65470e54edb93b8d",
+  "A-test-325|y": "26d40316a1ec1c5a",
+  "A-test-328|x": "bed6c380f08ce6dd",
+  "A-test-328|y": "bed6c380f08ce6dd",
+  "A-test-329|x": "2f7cdfd7725345a2",
+  "A-test-329|y": "33cf54db1a0d9ac2",
+  "A-test-330|x": "f42bfed2a6f7f654",
+  "A-test-330|y": "dad037744b1f8faf",
+  "A-test-333|x": "d8c52cb0e2fe0143",
+  "A-test-333|y": "7b0b77835f7134f2",
+  "A-test-335|x": "a74b302902345547",
+  "A-test-335|y": "a74b302902345547",
+  "A-test-340|x": "e22c69f3db0a3315",
+  "A-test-340|y": "e22c69f3db0a3315",
+  "A-test-352|x": "551b241936e0b289",
+  "A-test-352|y": "6c87e6678a94d72c",
+  "A-test-360|x": "444a0fa727ab9188",
+  "A-test-360|y": "226780975a0f2e0c",
+  "A-test-365|x": "422313d3681a82c0",
+  "A-test-365|y": "4fa0cc2238f99d4c",
+  "A-test-369|x": "a30102ef2797df9b",
+  "A-test-369|y": "e553f4fc9d48a679",
+  "A-test-377|x": "29d76b5f8498026d",
+  "A-test-377|y": "4c12776ac0102cf5",
+  "A-test-380|x": "da072b14a4805bd6",
+  "A-test-380|y": "0ce1b0dc57bf6bc3",
+  "A-test-387|x": "37a5a8ce619ef350",
+  "A-test-387|y": "8691604311315df6",
+  "A-test-391|x": "7d710f6b82e4954e",
+  "A-test-391|y": "1b06b35b4764533e",
+  "A-test-392|x": "ae4766d056ab4e30",
+  "A-test-392|y": "d66e149135aedb94",
+  "A-test-393|x": "8ec63ae13ed474f7",
+  "A-test-393|y": "c45915321449e986",
+  "A-test-399|x": "9e5df4be8e1166a5",
+  "A-test-399|y": "9213025cb364cb21",
+  "B-test-002|x": "7d8432e47b1761bc",
+  "B-test-002|y": "84c8212641ef6e13",
+  "B-test-013|x": "6fe6887224773961",
+  "B-test-013|y": "08db43a88c0b3775",
+  "B-test-021|x": "3e3b43b8d79ca879",
+  "B-test-021|y": "278d91727ae77da8",
+  "B-test-022|x": "b7542d1e7be00d05",
+  "B-test-022|y": "f70bf0e734b129f0",
+  "B-test-026|x": "204986eca578071e",
+  "B-test-026|y": "4908f749f2a4dea8",
+  "B-test-027|x": "b2d9d741c88febd6",
+  "B-test-027|y": "bf7c203a6d8a3029",
+  "B-test-030|x": "1dfa913963e89c8f",
+  "B-test-030|y": "0e9cc0bfaa92fdfb",
+  "B-test-034|x": "72df4a2c91bdc374",
+  "B-test-034|y": "1022e58f5551f7a4",
+  "B-test-036|x": "4800f74680833e1f",
+  "B-test-036|y": "ef7bbcb7bec85ef1",
+  "B-test-042|x": "a0308488c93da0e7",
+  "B-test-042|y": "ac7fa8dff3e42468",
+  "B-test-044|x": "acab48f05c8b4974",
+  "B-test-044|y": "6687b7f269fa875d",
+  "B-test-045|x": "f3c98953e98741a9",
+  "B-test-045|y": "f3c98953e98741a9",
+  "B-test-048|x": "3723a831e3733859",
+  "B-test-048|y": "6a63a48d6dbb8b31",
+  "B-test-059|x": "c91ee9b8f51b1f88",
+  "B-test-059|y": "970d858189525784",
+  "B-test-073|x": "121e41c2149e3fa7",
+  "B-test-073|y": "d4051e65e5ec7918",
+  "B-test-074|x": "f5fd6ed96850521b",
+  "B-test-074|y": "637132ee088ab050",
+  "B-test-078|x": "32a5b9f7a99e8bab",
+  "B-test-078|y": "28a225dd3257fed4",
+  "B-test-079|x": "c387308c598e9f2a",
+  "B-test-079|y": "4fd7a7d83e2bcaac",
+  "B-test-080|x": "762e4f8e6043314c",
+  "B-test-080|y": "4fe58857a5f25739",
+  "B-test-082|x": "6fabcb24a6cb75cc",
+  "B-test-082|y": "a95163890dedf37e",
+  "B-test-089|x": "b99b6a64d76aef30",
+  "B-test-089|y": "86cc5947b93a5d2f",
+  "B-test-093|x": "a28bedbb960ffee6",
+  "B-test-093|y": "10337f75a429e0ea",
+  "B-test-094|x": "e7946e25c57b8f54",
+  "B-test-094|y": "e4a4442eaa0782ed",
+  "B-test-095|x": "ed1a4d15c71e8676",
+  "B-test-095|y": "469359856cf032ef",
+  "B-test-102|x": "4be9b32cfadc055a",
+  "B-test-102|y": "9d550cb20157517a",
+  "B-test-109|x": "e2a3621c4016f3fd",
+  "B-test-109|y": "62db9696cd698474",
+  "B-test-110|x": "e76700124f6f3d22",
+  "B-test-110|y": "97fb74a65408b868",
+  "B-test-113|x": "09bd16698c470cd5",
+  "B-test-113|y": "0370e3702c08d801",
+  "B-test-118|x": "36b57082afb3c317",
+  "B-test-118|y": "686feb81c487600b",
+  "B-test-119|x": "db51c8d36b444442",
+  "B-test-119|y": "0fe46fd0ed071db7",
+  "B-test-121|x": "69281f686e3c7599",
+  "B-test-121|y": "f98c70d943bcf134",
+  "B-test-122|x": "8d8fea30da3292a0",
+  "B-test-122|y": "baf26bc31eb93297",
+  "B-test-136|x": "cf5650221c017813",
+  "B-test-136|y": "149f9af861d1148d",
+  "B-test-143|x": "95d92926b0b1e28c",
+  "B-test-143|y": "95d92926b0b1e28c",
+  "B-test-144|x": "5097986cc01d4935",
+  "B-test-144|y": "3542acecafbc74cf",
+  "B-test-145|x": "06cfd438dc3944d7",
+  "B-test-145|y": "1e09908fad65b780",
+  "B-test-151|x": "9aecf5005cff951a",
+  "B-test-151|y": "483de7b7a9b3a2f1",
+  "B-test-155|x": "f214c58f11a5febc",
+  "B-test-155|y": "feeb1aa37bf99af1",
+  "B-test-165|x": "449760e05787cca5",
+  "B-test-165|y": "9895e41144d1fa88",
+  "B-test-168|x": "db1ea3d615a36efd",
+  "B-test-168|y": "ba2e9e1608401d57",
+  "B-test-175|x": "619758d910c46f53",
+  "B-test-175|y": "271ef1912779de49",
+  "B-test-177|x": "81533f1a9496a6cb",
+  "B-test-177|y": "8830e13cacb5a0cc",
+  "B-test-183|x": "1636a38a02a7984a",
+  "B-test-183|y": "0c34e8ea1b250fba",
+  "B-test-193|x": "96113254c956c558",
+  "B-test-193|y": "907109a0a2820830",
+  "B-test-194|x": "65472056d34da74b",
+  "B-test-194|y": "a0ac8fc21bfb32fd",
+  "B-test-197|x": "b425e2a9257d6751",
+  "B-test-197|y": "d026eddca847053a",
+  "B-test-200|x": "101230bee20305d0",
+  "B-test-200|y": "fa9677934e515768",
+  "B-test-204|x": "87cb2a538973b6a9",
+  "B-test-204|y": "8f9d99ad1bf16c07",
+  "B-test-205|x": "fc0246fb080ac487",
+  "B-test-205|y": "4bb0080296acc005",
+  "B-test-211|x": "08d0499de68810cd",
+  "B-test-211|y": "fc60567f88d26f45",
+  "B-test-213|x": "8177b88300f26f90",
+  "B-test-213|y": "f5b1b240ff9cac0e",
+  "B-test-215|x": "a55bd250af618db5",
+  "B-test-215|y": "5a2a0116e8c14f22",
+  "B-test-217|x": "1aea412cfddb8221",
+  "B-test-217|y": "669af94fd1963a41",
+  "B-test-219|x": "65d965d514e8faca",
+  "B-test-219|y": "edac0d22990ae177",
+  "B-test-220|x": "4d3f3f052560fe92",
+  "B-test-220|y": "4d3f3f052560fe92",
+  "B-test-222|x": "fc6e3d1b901a9383",
+  "B-test-222|y": "91137d217294719c",
+  "B-test-224|x": "997a390a8244e418",
+  "B-test-224|y": "a1b5072aeb7f2c82",
+  "B-test-230|x": "05b57322da06e03a",
+  "B-test-230|y": "07e0bb30687cc2d4",
+  "B-test-231|x": "42312c872af0b592",
+  "B-test-231|y": "15f561b7a3f25101",
+  "B-test-233|x": "5291b50ebaa2b316",
+  "B-test-233|y": "e1ffe6e455b063db",
+  "B-test-235|x": "652b13cc54739abb",
+  "B-test-235|y": "31f72958d771bfb9",
+  "B-test-237|x": "5477a5344dc438dd",
+  "B-test-237|y": "55e7a1b284b3120f",
+  "B-test-241|x": "af11e46c0e54d20e",
+  "B-test-241|y": "421db821bfd76803",
+  "B-test-254|x": "0386355d7e3d7f5e",
+  "B-test-254|y": "e2fd89f84bdd841e",
+  "B-test-257|x": "7079aaab1c187e41",
+  "B-test-257|y": "ce8637b1b73944b6",
+  "B-test-261|x": "995acc11201524bf",
+  "B-test-261|y": "615b1be68dc542cd",
+  "B-test-263|x": "29f2058b523b8e40",
+  "B-test-263|y": "d999f6cfc2cb4cc6",
+  "B-test-266|x": "8a39d8f2cc3828af",
+  "B-test-266|y": "847faafb88076aa5",
+  "B-test-274|x": "305dce5f2fe2bad3",
+  "B-test-274|y": "6f22ea0edcd1ad41",
+  "B-test-275|x": "396306cdd246d9c8",
+  "B-test-275|y": "a311ec0c32fd2212",
+  "B-test-276|x": "b7b11c75204d2562",
+  "B-test-276|y": "2f805e227022d330",
+  "B-test-281|x": "876913139c28cefa",
+  "B-test-281|y": "40d58dc149ddccc6",
+  "B-test-282|x": "d2a1d83ba880312c",
+  "B-test-282|y": "1306e06aacc08465",
+  "B-test-285|x": "8247e721fd030bcc",
+  "B-test-285|y": "952d17eb27ca8209",
+  "B-test-295|x": "693a582b604f1eb0",
+  "B-test-295|y": "77d5077d3a6a4ab4",
+  "B-test-313|x": "73563ac460dcfe3d",
+  "B-test-313|y": "e55cb1310e47f634",
+  "B-test-323|x": "7cfcd0f5e5370449",
+  "B-test-323|y": "b60ed79c3efe2ae5",
+  "B-test-325|x": "f6efbcf3687b332f",
+  "B-test-325|y": "decd35a3d4a22281",
+  "B-test-333|x": "040b8b370c089ede",
+  "B-test-333|y": "c4850ec0a56e3999",
+  "B-test-340|x": "4be407b5c32a5058",
+  "B-test-340|y": "265955fe7beb2779",
+  "B-test-343|x": "fc27b7643f1280e2",
+  "B-test-343|y": "6b57d843ec9b78e8",
+  "B-test-345|x": "1e219a818853a6de",
+  "B-test-345|y": "865c3e47f92a8af0",
+  "B-test-346|x": "a419ce5c7fe0ee41",
+  "B-test-346|y": "052e2a715f267f87",
+  "B-test-347|x": "5672227875a766e3",
+  "B-test-347|y": "fb23f8ec9597cdbc",
+  "B-test-350|x": "8c81fe495c5db9bf",
+  "B-test-350|y": "20ddbd8e9c217d48",
+  "B-test-351|x": "7d86c7fa96a79b21",
+  "B-test-351|y": "b2a761658d63b324",
+  "B-test-352|x": "aa5de293ec74b8a0",
+  "B-test-352|y": "0e29bd13a8db093d",
+  "B-test-354|x": "998d1670ea7f3cb3",
+  "B-test-354|y": "5cf78405b4ea8b6a",
+  "B-test-358|x": "5d605185c26742ee",
+  "B-test-358|y": "77414aca38491036",
+  "B-test-359|x": "5687962a672e990e",
+  "B-test-359|y": "97343af88a28bf19",
+  "B-test-363|x": "72c4ce191850818a",
+  "B-test-363|y": "1d4a2afbec96a7e3",
+  "B-test-364|x": "5ec293e2d4e556c0",
+  "B-test-364|y": "4fda19596e14193d",
+  "B-test-365|x": "6eb576cc9a704e43",
+  "B-test-365|y": "948829ddf956e380",
+  "B-test-366|x": "15104d87e750ea2c",
+  "B-test-366|y": "18a8865ca17a8e3f",
+  "B-test-379|x": "680387409ea72051",
+  "B-test-379|y": "5e4b0e2b3c6bc9e0",
+  "B-test-381|x": "294b3e8440753495",
+  "B-test-381|y": "ec82cc36c7e80a20",
+  "B-test-382|x": "5db2fd0104bac14b",
+  "B-test-382|y": "31d7f80885bd070a",
+  "B-test-383|x": "8d9ac7f2ac94b688",
+  "B-test-383|y": "ea44a05489d0e761",
+  "B-test-397|x": "de531602a522303e",
+  "B-test-397|y": "42056070f728d4e4",
+  "B-test-399|x": "b75c0971f9918086",
+  "B-test-399|y": "ab90b4577a0ec668",
+  "C-test-009|x": "649bf4bca0fad55e",
+  "C-test-009|y": "b520170ea90484cd",
+  "C-test-011|x": "a27b24e92e5c6891",
+  "C-test-011|y": "02060108e8c60b0b",
+  "C-test-015|x": "dbb561ffb2cb6e0c",
+  "C-test-015|y": "476d4f584fde7765",
+  "C-test-020|x": "68b86ede362bd89c",
+  "C-test-020|y": "bcf4367f3471a2e0",
+  "C-test-025|x": "0be794f1925a0301",
+  "C-test-025|y": "0db648508d774575",
+  "C-test-026|x": "5a7640923c50c6b5",
+  "C-test-026|y": "39ccb0f98f56bc5f",
+  "C-test-035|x": "5c2a32f046b544c0",
+  "C-test-035|y": "996040503547029a",
+  "C-test-037|x": "dd63c19bd6874146",
+  "C-test-037|y": "5d199170f6f6fd0f",
+  "C-test-038|x": "e49ec211c956925c",
+  "C-test-038|y": "4b36a31a61e0767f",
+  "C-test-040|x": "bf0feacaa4bb4aa4",
+  "C-test-040|y": "03d93f6bd15a7b4e",
+  "C-test-044|x": "ee37fe871a484a19",
+  "C-test-044|y": "c849484235ce8ef7",
+  "C-test-045|x": "b6fa39bdb50b0d0f",
+  "C-test-045|y": "57b2900677fc12c4",
+  "C-test-047|x": "107aff88bad771a1",
+  "C-test-047|y": "895dcddff4467bec",
+  "C-test-048|x": "d1812df0ac939e00",
+  "C-test-048|y": "0a1fd881675ea46b",
+  "C-test-055|x": "c83a50875194ef07",
+  "C-test-055|y": "40a8cd67d9e226dc",
+  "C-test-056|x": "7518ba52eba229e2",
+  "C-test-056|y": "8e3cee0c7c39561b",
+  "C-test-062|x": "8b71f5839280249b",
+  "C-test-062|y": "a6f601e58457a972",
+  "C-test-066|x": "6324c437266b6803",
+  "C-test-066|y": "bc188e1e6ac0153f",
+  "C-test-072|x": "ca2a8f43f7b431d0",
+  "C-test-072|y": "7eec94a461e0fe14",
+  "C-test-083|x": "2ae23b60c56bd913",
+  "C-test-083|y": "19eba23a36715aaa",
+  "C-test-084|x": "6b83de5a00067e3f",
+  "C-test-084|y": "a5276fdaf2a10ef4",
+  "C-test-085|x": "877622627f293361",
+  "C-test-085|y": "8da14ec7a0cde9df",
+  "C-test-087|x": "71525eab4e3e1227",
+  "C-test-087|y": "b52adc0425bc008e",
+  "C-test-090|x": "bbfe4f38d4eaecbc",
+  "C-test-090|y": "1e2b970e74b0fd8f",
+  "C-test-094|x": "7ddc1a2140c3ac55",
+  "C-test-094|y": "578ca27fa364f96c",
+  "C-test-096|x": "3c9179a31d887c84",
+  "C-test-096|y": "bbf5ab2543bc78ef",
+  "C-test-100|x": "8538d27c1443ce4d",
+  "C-test-100|y": "6b36e166fc69f8e6",
+  "C-test-101|x": "76de8d43ed1b6748",
+  "C-test-101|y": "539ca259503983e6",
+  "C-test-106|x": "667696600fe97374",
+  "C-test-106|y": "ffc43cd3111f8ee5",
+  "C-test-109|x": "e721906b7d688805",
+  "C-test-109|y": "8d8e3295b60349b3",
+  "C-test-111|x": "41dcb662c5e9cde8",
+  "C-test-111|y": "f3b3d454aa2cde48",
+  "C-test-112|x": "832fb13fbbcd7e7d",
+  "C-test-112|y": "51f999e4a9935c7d",
+  "C-test-121|x": "a776e43983320668",
+  "C-test-121|y": "46f1c19b5708e804",
+  "C-test-123|x": "f020526141afc3e5",
+  "C-test-123|y": "f8e5f90d4298449b",
+  "C-test-124|x": "ab3a13b5659353be",
+  "C-test-124|y": "66079fa82334fe43",
+  "C-test-125|x": "4a151b63675397b1",
+  "C-test-125|y": "782ef2d556c06fa0",
+  "C-test-127|x": "1e8ac9583aba2008",
+  "C-test-127|y": "d49d7078e3196b5d",
+  "C-test-132|x": "284a00da17e3b05a",
+  "C-test-132|y": "69d19b92cb321875",
+  "C-test-134|x": "6cbaf26179ab061a",
+  "C-test-134|y": "f8e523bdb17c1f97",
+  "C-test-136|x": "2d96a50dde16eb4f",
+  "C-test-136|y": "03ba7529a415f268",
+  "C-test-139|x": "7b9b10233276a9c0",
+  "C-test-139|y": "869c0ebf9a6c57be",
+  "C-test-144|x": "a98c75c24d6d9044",
+  "C-test-144|y": "df3eb119632a29c3",
+  "C-test-145|x": "7e6f9aa8ac86c5aa",
+  "C-test-145|y": "b561d7b374e99ab2",
+  "C-test-147|x": "58e659db117299b9",
+  "C-test-147|y": "6abeafbe2c98e17e",
+  "C-test-148|x": "5520286e3cbd5a93",
+  "C-test-148|y": "9bf9ae1ca8a6ab8e",
+  "C-test-164|x": "f19ffb17525ec284",
+  "C-test-164|y": "ff5862001d6207e4",
+  "C-test-168|x": "a12b2dbfe3c928fc",
+  "C-test-168|y": "a0ec86a57484cf8b",
+  "C-test-170|x": "29d6f8e1dc6507d4",
+  "C-test-170|y": "06654c6773140360",
+  "C-test-171|x": "741e7290570e8a2b",
+  "C-test-171|y": "94c5c7c423cac0a0",
+  "C-test-188|x": "66693e83600c82e9",
+  "C-test-188|y": "617278bba8230397",
+  "C-test-194|x": "b546bd8ba06ad76c",
+  "C-test-194|y": "9ccfd501bd4bd819",
+  "C-test-205|x": "6afedf44d70db64e",
+  "C-test-205|y": "6afedf44d70db64e",
+  "C-test-206|x": "1ba30a2dfe8a1e3f",
+  "C-test-206|y": "425bbb8fe54a6344",
+  "C-test-214|x": "9b265145047355de",
+  "C-test-214|y": "bb92831867f0b2e3",
+  "C-test-221|x": "6deed2ccd75e163b",
+  "C-test-221|y": "3e22da69c7297a6f",
+  "C-test-223|x": "5a5742902ec1b3d4",
+  "C-test-223|y": "527c99105f2052d2",
+  "C-test-231|x": "4fd529dfcab8433d",
+  "C-test-231|y": "2f1d3a7ccb684968",
+  "C-test-232|x": "f66488470f623eae",
+  "C-test-232|y": "b07d01725037c349",
+  "C-test-233|x": "828c4c3c3fb8824e",
+  "C-test-233|y": "87d9d8fcc95cef9f",
+  "C-test-235|x": "2c7cf4fadf6cce5c",
+  "C-test-235|y": "f97019f5624705b5",
+  "C-test-236|x": "bf48b1546042e65a",
+  "C-test-236|y": "0bd5f1e475e947f8",
+  "C-test-239|x": "96a0db6a825154d2",
+  "C-test-239|y": "34dda0efce136e2c",
+  "C-test-243|x": "e7db9b24a759de1b",
+  "C-test-243|y": "0700c65a5d5c89e2",
+  "C-test-244|x": "25624270595591d4",
+  "C-test-244|y": "987fb6aeacbd11ed",
+  "C-test-246|x": "1a36960b128df517",
+  "C-test-246|y": "d5a63ea0d9f1d7f2",
+  "C-test-253|x": "21c3a30a3fb13a5d",
+  "C-test-253|y": "94a5c20947ad1bd2",
+  "C-test-258|x": "f0fbea66bf4f0645",
+  "C-test-258|y": "1979efa8e6e7a94d",
+  "C-test-262|x": "9c38354e6599bdae",
+  "C-test-262|y": "dd09af6e1e94a4a2",
+  "C-test-266|x": "cad890b163e99f0e",
+  "C-test-266|y": "779b19c518d472e1",
+  "C-test-269|x": "35f8e718aa6b053c",
+  "C-test-269|y": "fe9c9512e6008bfb",
+  "C-test-270|x": "166cc1d8c6cac5a8",
+  "C-test-270|y": "c170000fd076d348",
+  "C-test-286|x": "1d432d370d24bb2c",
+  "C-test-286|y": "1d432d370d24bb2c",
+  "C-test-292|x": "f5cc446f450b4a41",
+  "C-test-292|y": "192ea2eee6fa096a",
+  "C-test-293|x": "b313e1173da05f1a",
+  "C-test-293|y": "b313e1173da05f1a",
+  "C-test-294|x": "a6a706f9215d73e1",
+  "C-test-294|y": "f0e48d8585720098",
+  "C-test-295|x": "a2f3725f293babbd",
+  "C-test-295|y": "ca1fba90ccb8570e",
+  "C-test-299|x": "e37959650cda7973",
+  "C-test-299|y": "75845d2d7ba37def",
+  "C-test-306|x": "787aaf13ef6f84d9",
+  "C-test-306|y": "fa53279ad23005ee",
+  "C-test-307|x": "62193bd01ebd1dd1",
+  "C-test-307|y": "78b5850d5de046e4",
+  "C-test-310|x": "3778baa1bcfecc70",
+  "C-test-310|y": "700bfc34d4ebfc32",
+  "C-test-313|x": "cadd3b49df32ed94",
+  "C-test-313|y": "c956c2b97000bc69",
+  "C-test-315|x": "034279c24c8c7459",
+  "C-test-315|y": "9ed59c277889132c",
+  "C-test-318|x": "09bfd2accf11531d",
+  "C-test-318|y": "6e35eed314f83f0d",
+  "C-test-320|x": "56a3d84c67e6d204",
+  "C-test-320|y": "01af68c3773383c1",
+  "C-test-327|x": "863a3242021e2142",
+  "C-test-327|y": "07041d011b78882b",
+  "C-test-329|x": "53358cc6ced8249d",
+  "C-test-329|y": "1fef1aac65a6137e",
+  "C-test-336|x": "8f69e526e726e77c",
+  "C-test-336|y": "2c44b65cfafbacf1",
+  "C-test-347|x": "5d2268a5287c35f0",
+  "C-test-347|y": "74fb0d8cda6bd622",
+  "C-test-351|x": "461ea5c7f5825948",
+  "C-test-351|y": "2371cec05e8a1de9",
+  "C-test-355|x": "ac70d950b2596441",
+  "C-test-355|y": "7729e083a3a923a4",
+  "C-test-357|x": "096eb3505ec8c855",
+  "C-test-357|y": "62777db1f3f1408e",
+  "C-test-368|x": "627967d901cc52a6",
+  "C-test-368|y": "d24bc603f989380a",
+  "C-test-374|x": "ccbc229f3f525fc9",
+  "C-test-374|y": "b5d93f925e1cf8a2",
+  "C-test-376|x": "3c969f14bac27c1e",
+  "C-test-376|y": "3c969f14bac27c1e",
+  "C-test-382|x": "67e03df612bcfb2b",
+  "C-test-382|y": "9a95ab1c9aca487a",
+  "C-test-385|x": "d9ef9dd974c95cfb",
+  "C-test-385|y": "b2c6b9a69ce9a72f",
+  "C-test-390|x": "4c3b659f23cd272e",
+  "C-test-390|y": "fb26be25c599f153",
+  "C-test-393|x": "25b0fd5c0c06288e",
+  "C-test-393|y": "0adc2e47f6c8ee1b",
+  "C-test-396|x": "ecd513ddc2e2eee7",
+  "C-test-396|y": "f496ceb0945e3657",
+  "C-test-398|x": "ec4c7aa69be7dd60",
+  "C-test-398|y": "7985181fdc72b13c"
+ }
+}

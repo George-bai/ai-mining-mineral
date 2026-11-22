@@ -1,0 +1,161 @@
+flowchart LR
+    %% ===== Crushing =====
+    mineore["MINE ORE\n12,254,000 TONS/YR\n0.135 Cu\n0.155 OZ/TON Au\n0.270 OZ/TON Ag"]
+    pcrusher["PRIMARY CRUSHER"]
+    stockpile["CRUSHED ORE STOCKPILE\n33,500 TDM (LIVE)"]
+    pebble["PEBBLE CRUSHER"]
+
+    mineore --> pcrusher
+    pcrusher --> stockpile
+    stockpile --> pebble
+    stockpile --> sagmill
+    pebble --> sagmill
+
+    %% ===== Grinding =====
+    waterlime["WATER\nLIME"]
+    sagmill["SAG MILL"]
+    sagscreen["SAG MILL DISCHARGE SCREEN"]
+    ballmills["BALL MILLS"]
+    reagentsBM["REAGENTS"]
+
+    waterlime --> sagmill
+    sagmill --> sagscreen
+    sagscreen -->|cyclone return| sagmill
+    sagscreen --> ballmills
+    reagentsBM --> ballmills
+
+    %% ===== Rougher flotation =====
+    rougher["ROUGHER FLOTATION"]
+    reagentsR["REAGENTS"]
+    rougherTank[" "]
+
+    ballmills --> rougher
+    reagentsR --> rougher
+    rougher --> rougherTank
+    rougherTank --> deslime
+    rougher --> primaryCleanerCol
+
+    %% ===== Deslime / Leach / CIP =====
+    deslime["DESLIME CYCLONES"]
+    cyanide["CYANIDE"]
+    trash["TRASH"]
+    leach["LEACH"]
+    cip["CIP"]
+    carbonbin["CARBON BIN"]
+    carbonbin2["CARBON BIN\n(SMELT CARBON)"]
+    tailingspond["TAILINGS POND"]
+    chlorideplume["CHLORIDE PLUME"]
+    carbonHeap["CARBON TO HEAP LEACH"]
+    carbonRegen["CARBON TO REGENERATION"]
+    regen["REGENERATION"]
+    heapLeachCarbon["HEAP LEACH CARBON"]
+    acidwash["ACID WASH"]
+    strip["STRIP"]
+    barren["BARRN SOLUTION TANK"]
+    pregnant["PREGNANT SOLUTION TANK"]
+    ew["PRECIOUS METAL\nEW SLUDGE\nTO REFINERY\n231,000 OZ/YR Au\n422,000 OZ/YR Ag"]
+    caros["CARO'S ACID"]
+
+    cyanide --> deslime
+    deslime --> trash
+    deslime --> leach
+    leach --> cip
+    cip --> carbonbin
+    carbonbin --> carbonbin2
+    carbonbin2 --> tailingspond
+    caros --> carbonbin
+    carbonbin --> carbonHeap
+    carbonbin --> carbonRegen
+    carbonRegen --> regen
+    regen --> cip
+    heapLeachCarbon --> acidwash
+    acidwash --> strip
+    strip --> barren
+    strip --> pregnant
+    barren --> ew
+    pregnant --> ew
+
+    %% ===== Water / tailings =====
+    mineWater["MINE WATER"]
+    limeTR["LIME"]
+    treatedReclaim["TREATED RECLAIM"]
+    millWaterReclaim["MILL WATER RECLAIM"]
+    millWaterDist["MILL WATER DIST N"]
+    freshWater["FRESH WATER"]
+    reagentsCland["REAGENTS CLAND WATER"]
+    frothThick["FROTH THICKENER"]
+    thickTank[" "]
+    reclaimWater["RECLAIM WATER"]
+
+    mineWater --> treatedReclaim
+    limeTR --> treatedReclaim
+    caros --> treatedReclaim
+    treatedReclaim --> deslime
+    rougher --> frothThick
+    reagentsCland --> frothThick
+    freshWater --> frothThick
+    frothThick --> millWaterReclaim
+    millWaterReclaim --> millWaterDist
+    millWaterDist --> sagmill
+    frothThick --> thickTank
+    thickTank --> tailingspond
+    tailingspond --> reclaimWater
+    reclaimWater --> frothThick
+    tailingspond --> chlorideplume
+    condPank --> frothThick
+
+    %% ===== Gravity =====
+    primaryGrav["PRIMARY GRAVITY"]
+    intensiveOx["INTENSIVE OXIDATION"]
+    residue["RESIDUE"]
+    flotationGrav["FLOTATION GRAVITY"]
+    cleanerGrav["CLEANER GRAVITY (FUTURE)"]
+
+    ballmills --> primaryGrav
+    primaryGrav --> intensiveOx
+    intensiveOx --> residue
+    primaryGrav --> flotationGrav
+    flotationGrav --> cleanerGrav
+
+    %% ===== Flotation / cleaning =====
+    primaryCleanerCol["PRIMARY CLEANER COLUMN"]
+    cleaner1["1st CLEANER FLOTATION"]
+    reagentsC1["REAGENTS"]
+    limeC1["LIME"]
+    cleanerScav["CLEANER/SCAVENGER FLOTATION"]
+    condPank["2ND CLEANER CONDITIONING PANK"]
+    reagentsCP["REAGENTS"]
+    regrind["REGRIND"]
+    reagentsRG["LIME\nREAGENTS"]
+    cleaner2["2ND CLEANER FLOTATION"]
+    reagentsC2["REAGENTS"]
+    scav2["2ND CLEANER SCAVENGER"]
+
+    primaryCleanerCol --> cleaner1
+    reagentsC1 --> cleaner1
+    limeC1 --> cleaner1
+    cleaner1 --> cleanerScav
+    cleaner1 --> regrind
+    reagentsRG --> regrind
+    regrind --> cleaner2
+    reagentsC2 --> cleaner2
+    cleaner2 --> scav2
+    scav2 -->|recycle| regrind
+    cleanerScav --> condPank
+    reagentsCP --> condPank
+
+    %% ===== Copper concentrate =====
+    cuThick["COPPER CONCENTRATE THICKENER"]
+    magConc["MAGNETIC CONCENTRATE\nGRAVITY CONCENTRATOR"]
+    magSep["MAGNETIC SEPARATION"]
+    cuFilter["COPPER CONCENTRATE\nFILTER"]
+    cuStockpile["COPPER CONCENTRATE STOCKPILE\n10,000 TONS (COVERED)"]
+    concMarket["CONCENTRATE TO MARKET\n38,800 TONS/YR (AVG @ 25% Cu)\n19,934,000 LB/YR Cu\n150,000 OZ/YR Au\n1,410,100 OZ/YR Ag"]
+
+    cleanerScav --> cuThick
+    cleaner2 --> cuThick
+    cuThick --> magConc
+    magConc --> magSep
+    magSep --> cuFilter
+    cuFilter --> cuStockpile
+    cuStockpile --> concMarket

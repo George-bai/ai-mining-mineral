@@ -1,0 +1,1106 @@
+[
+ {
+  "id": "A-val-009",
+  "company": "A",
+  "split": "val",
+  "index": 9,
+  "text": "MB119 REPL ALL BUCKET TEETH",
+  "tokens": [
+   [
+    "MB119",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "ALL",
+    "all"
+   ],
+   [
+    "BUCKET",
+    "bucket"
+   ],
+   [
+    "TEETH",
+    "teeth"
+   ]
+  ]
+ },
+ {
+  "id": "A-val-073",
+  "company": "A",
+  "split": "val",
+  "index": 73,
+  "text": "CC708 REPL CRACKED PIPE ON IMPLEMENT VLV",
+  "tokens": [
+   [
+    "CC708",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "CRACKED",
+    "cracked"
+   ],
+   [
+    "PIPE",
+    "pipe"
+   ],
+   [
+    "ON",
+    "on"
+   ],
+   [
+    "IMPLEMENT",
+    "implement"
+   ],
+   [
+    "VLV",
+    "valve"
+   ]
+  ]
+ },
+ {
+  "id": "A-val-084",
+  "company": "A",
+  "split": "val",
+  "index": 84,
+  "text": "CJ3174 - teleremote issues",
+  "tokens": [
+   [
+    "CJ3174",
+    "<id>"
+   ],
+   [
+    "-",
+    "-"
+   ],
+   [
+    "teleremote",
+    "Tele-Remote"
+   ],
+   [
+    "issues",
+    "issues"
+   ]
+  ]
+ },
+ {
+  "id": "A-val-108",
+  "company": "A",
+  "split": "val",
+  "index": 108,
+  "text": "OU089 REP POS2 BRAKE PACK",
+  "tokens": [
+   [
+    "OU089",
+    "<id>"
+   ],
+   [
+    "REP",
+    "replace"
+   ],
+   [
+    "POS2",
+    "position <num>"
+   ],
+   [
+    "BRAKE",
+    "brake"
+   ],
+   [
+    "PACK",
+    "pack"
+   ]
+  ]
+ },
+ {
+  "id": "A-val-263",
+  "company": "A",
+  "split": "val",
+  "index": 263,
+  "text": "CR871 REPL POS 8 TYRE",
+  "tokens": [
+   [
+    "CR871",
+    "<id>"
+   ],
+   [
+    "REPL",
+    "replace"
+   ],
+   [
+    "POS",
+    "position"
+   ],
+   [
+    "8",
+    "<num>"
+   ],
+   [
+    "TYRE",
+    "tyre"
+   ]
+  ]
+ },
+ {
+  "id": "A-val-267",
+  "company": "A",
+  "split": "val",
+  "index": 267,
+  "text": "CR871 REPAIR TRANS OIL LEAK",
+  "tokens": [
+   [
+    "CR871",
+    "<id>"
+   ],
+   [
+    "REPAIR",
+    "repair"
+   ],
+   [
+    "TRANS",
+    "transmission"
+   ],
+   [
+    "OIL",
+    "oil"
+   ],
+   [
+    "LEAK",
+    "leak"
+   ]
+  ]
+ },
+ {
+  "id": "A-val-291",
+  "company": "A",
+  "split": "val",
+  "index": 291,
+  "text": "OQ524 TRANS OIL BURNT",
+  "tokens": [
+   [
+    "OQ524",
+    "<id>"
+   ],
+   [
+    "TRANS",
+    "transmission"
+   ],
+   [
+    "OIL",
+    "oil"
+   ],
+   [
+    "BURNT",
+    "burnt"
+   ]
+  ]
+ },
+ {
+  "id": "A-val-329",
+  "company": "A",
+  "split": "val",
+  "index": 329,
+  "text": "CR871 REPAIR HYD LEAK",
+  "tokens": [
+   [
+    "CR871",
+    "<id>"
+   ],
+   [
+    "REPAIR",
+    "repair"
+   ],
+   [
+    "HYD",
+    "hydraulic"
+   ],
+   [
+    "LEAK",
+    "leak"
+   ]
+  ]
+ },
+ {
+  "id": "A-val-358",
+  "company": "A",
+  "split": "val",
+  "index": 358,
+  "text": "CR871 TEST FOR ENG/OIL PRESSURE FAULT",
+  "tokens": [
+   [
+    "CR871",
+    "<id>"
+   ],
+   [
+    "TEST",
+    "test"
+   ],
+   [
+    "FOR",
+    "for"
+   ],
+   [
+    "ENG/OIL",
+    "engine / oil"
+   ],
+   [
+    "PRESSURE",
+    "pressure"
+   ],
+   [
+    "FAULT",
+    "fault"
+   ]
+  ]
+ },
+ {
+  "id": "A-val-371",
+  "company": "A",
+  "split": "val",
+  "index": 371,
+  "text": "CR871 REP ELECTRICAL FAULT",
+  "tokens": [
+   [
+    "CR871",
+    "<id>"
+   ],
+   [
+    "REP",
+    "repair"
+   ],
+   [
+    "ELECTRICAL",
+    "electrical"
+   ],
+   [
+    "FAULT",
+    "fault"
+   ]
+  ]
+ },
+ {
+  "id": "A-val-381",
+  "company": "A",
+  "split": "val",
+  "index": 381,
+  "text": "OU089 REPAIR AIR/CON UNIT",
+  "tokens": [
+   [
+    "OU089",
+    "<id>"
+   ],
+   [
+    "REPAIR",
+    "repair"
+   ],
+   [
+    "AIR/CON",
+    "air conditioner"
+   ],
+   [
+    "UNIT",
+    "unit"
+   ]
+  ]
+ },
+ {
+  "id": "A-val-394",
+  "company": "A",
+  "split": "val",
+  "index": 394,
+  "text": "XH531 REPLACE CRNR TEETH",
+  "tokens": [
+   [
+    "XH531",
+    "<id>"
+   ],
+   [
+    "REPLACE",
+    "replace"
+   ],
+   [
+    "CRNR",
+    "corner"
+   ],
+   [
+    "TEETH",
+    "teeth"
+   ]
+  ]
+ },
+ {
+  "id": "B-val-005",
+  "company": "B",
+  "split": "val",
+  "index": 5,
+  "text": "RT3290 Pos 8 tyre u/s",
+  "tokens": [
+   [
+    "RT3290",
+    "<id>"
+   ],
+   [
+    "Pos",
+    "position"
+   ],
+   [
+    "8",
+    "<num>"
+   ],
+   [
+    "tyre",
+    "tyre"
+   ],
+   [
+    "u/s",
+    "unserviceable"
+   ]
+  ]
+ },
+ {
+  "id": "B-val-048",
+  "company": "B",
+  "split": "val",
+  "index": 48,
+  "text": "2000H Mech Svce Haul Truck AL6487",
+  "tokens": [
+   [
+    "2000H",
+    "<num> hour"
+   ],
+   [
+    "Mech",
+    "mechanical"
+   ],
+   [
+    "Svce",
+    "service"
+   ],
+   [
+    "Haul",
+    "haul"
+   ],
+   [
+    "Truck",
+    "truck"
+   ],
+   [
+    "AL6487",
+    "<id>"
+   ]
+  ]
+ },
+ {
+  "id": "B-val-081",
+  "company": "B",
+  "split": "val",
+  "index": 81,
+  "text": "250H Mech Svce Drill HR950 YC UF2558",
+  "tokens": [
+   [
+    "250H",
+    "<num> hour"
+   ],
+   [
+    "Mech",
+    "mechanical"
+   ],
+   [
+    "Svce",
+    "service"
+   ],
+   [
+    "Drill",
+    "drill"
+   ],
+   [
+    "HR950",
+    "<id>"
+   ],
+   [
+    "YC",
+    "<id>"
+   ],
+   [
+    "UF2558",
+    "<id>"
+   ]
+  ]
+ },
+ {
+  "id": "B-val-175",
+  "company": "B",
+  "split": "val",
+  "index": 175,
+  "text": "MV3594 low steer pressure",
+  "tokens": [
+   [
+    "MV3594",
+    "<id>"
+   ],
+   [
+    "low",
+    "low"
+   ],
+   [
+    "steer",
+    "steering"
+   ],
+   [
+    "pressure",
+    "pressure"
+   ]
+  ]
+ },
+ {
+  "id": "B-val-180",
+  "company": "B",
+  "split": "val",
+  "index": 180,
+  "text": "CC0233 C/O BROKEN STABILIZER BAR",
+  "tokens": [
+   [
+    "CC0233",
+    "<id>"
+   ],
+   [
+    "C/O",
+    "change out"
+   ],
+   [
+    "BROKEN",
+    "broken"
+   ],
+   [
+    "STABILIZER",
+    "stabilizer"
+   ],
+   [
+    "BAR",
+    "bar"
+   ]
+  ]
+ },
+ {
+  "id": "B-val-184",
+  "company": "B",
+  "split": "val",
+  "index": 184,
+  "text": "MR0229 C/O Jack water pump",
+  "tokens": [
+   [
+    "MR0229",
+    "<id>"
+   ],
+   [
+    "C/O",
+    "change out"
+   ],
+   [
+    "Jack",
+    "jacket"
+   ],
+   [
+    "water",
+    "water"
+   ],
+   [
+    "pump",
+    "pump"
+   ]
+  ]
+ },
+ {
+  "id": "B-val-195",
+  "company": "B",
+  "split": "val",
+  "index": 195,
+  "text": "QR0218-Insp Carrier RHT Roller No 4 LFT",
+  "tokens": [
+   [
+    "QR0218-Insp",
+    "<id> - inspection"
+   ],
+   [
+    "Carrier",
+    "carrier"
+   ],
+   [
+    "RHT",
+    "right"
+   ],
+   [
+    "Roller",
+    "roller"
+   ],
+   [
+    "No",
+    "number"
+   ],
+   [
+    "4",
+    "<num>"
+   ],
+   [
+    "LFT",
+    "left"
+   ]
+  ]
+ },
+ {
+  "id": "B-val-229",
+  "company": "B",
+  "split": "val",
+  "index": 229,
+  "text": "CZ6065 Dash Backlight U/S",
+  "tokens": [
+   [
+    "CZ6065",
+    "<id>"
+   ],
+   [
+    "Dash",
+    "dash"
+   ],
+   [
+    "Backlight",
+    "backlight"
+   ],
+   [
+    "U/S",
+    "unserviceable"
+   ]
+  ]
+ },
+ {
+  "id": "B-val-249",
+  "company": "B",
+  "split": "val",
+  "index": 249,
+  "text": "LV7795 Strg accumulators not bleeding",
+  "tokens": [
+   [
+    "LV7795",
+    "<id>"
+   ],
+   [
+    "Strg",
+    "storage"
+   ],
+   [
+    "accumulators",
+    "accumulators"
+   ],
+   [
+    "not",
+    "not"
+   ],
+   [
+    "bleeding",
+    "bleeding"
+   ]
+  ]
+ },
+ {
+  "id": "B-val-251",
+  "company": "B",
+  "split": "val",
+  "index": 251,
+  "text": "QR0218 - Change out R/H Track pins",
+  "tokens": [
+   [
+    "QR0218",
+    "<id>"
+   ],
+   [
+    "-",
+    "-"
+   ],
+   [
+    "Change",
+    "change"
+   ],
+   [
+    "out",
+    "out"
+   ],
+   [
+    "R/H",
+    "right hand"
+   ],
+   [
+    "Track",
+    "track"
+   ],
+   [
+    "pins",
+    "pins"
+   ]
+  ]
+ },
+ {
+  "id": "B-val-321",
+  "company": "B",
+  "split": "val",
+  "index": 321,
+  "text": "VU1914 Pos 6 missing valve cap",
+  "tokens": [
+   [
+    "VU1914",
+    "<id>"
+   ],
+   [
+    "Pos",
+    "position"
+   ],
+   [
+    "6",
+    "<num>"
+   ],
+   [
+    "missing",
+    "missing"
+   ],
+   [
+    "valve",
+    "valve"
+   ],
+   [
+    "cap",
+    "cap"
+   ]
+  ]
+ },
+ {
+  "id": "B-val-333",
+  "company": "B",
+  "split": "val",
+  "index": 333,
+  "text": "1000H Mech Insp Carry Roll No 2 LH QR0218",
+  "tokens": [
+   [
+    "1000H",
+    "<num> hour"
+   ],
+   [
+    "Mech",
+    "mechanical"
+   ],
+   [
+    "Insp",
+    "inspection"
+   ],
+   [
+    "Carry",
+    "carry"
+   ],
+   [
+    "Roll",
+    "roller"
+   ],
+   [
+    "No",
+    "number"
+   ],
+   [
+    "2",
+    "<num>"
+   ],
+   [
+    "LH",
+    "left hand"
+   ],
+   [
+    "QR0218",
+    "<id>"
+   ]
+  ]
+ },
+ {
+  "id": "C-val-014",
+  "company": "C",
+  "split": "val",
+  "index": 14,
+  "text": "replace short steer U-bolts",
+  "tokens": [
+   [
+    "replace",
+    "replace"
+   ],
+   [
+    "short",
+    "short"
+   ],
+   [
+    "steer",
+    "steering"
+   ],
+   [
+    "U-bolts",
+    "U-bolts"
+   ]
+  ]
+ },
+ {
+  "id": "C-val-016",
+  "company": "C",
+  "split": "val",
+  "index": 16,
+  "text": "cab insulation fallen down onto exhaust",
+  "tokens": [
+   [
+    "cab",
+    "cabin"
+   ],
+   [
+    "insulation",
+    "insulation"
+   ],
+   [
+    "fallen",
+    "fallen"
+   ],
+   [
+    "down",
+    "down"
+   ],
+   [
+    "onto",
+    "onto"
+   ],
+   [
+    "exhaust",
+    "exhaust"
+   ]
+  ]
+ },
+ {
+  "id": "C-val-020",
+  "company": "C",
+  "split": "val",
+  "index": 20,
+  "text": "060 Air reg/drain/filter assy leaking",
+  "tokens": [
+   [
+    "060",
+    "<id>"
+   ],
+   [
+    "Air",
+    "air"
+   ],
+   [
+    "reg/drain/filter",
+    "regulator / drain / filter"
+   ],
+   [
+    "assy",
+    "assembly"
+   ],
+   [
+    "leaking",
+    "leaking"
+   ]
+  ]
+ },
+ {
+  "id": "C-val-038",
+  "company": "C",
+  "split": "val",
+  "index": 38,
+  "text": "Machine wont take fuel",
+  "tokens": [
+   [
+    "Machine",
+    "machine"
+   ],
+   [
+    "wont",
+    "won't"
+   ],
+   [
+    "take",
+    "take"
+   ],
+   [
+    "fuel",
+    "fuel"
+   ]
+  ]
+ },
+ {
+  "id": "C-val-072",
+  "company": "C",
+  "split": "val",
+  "index": 72,
+  "text": "Clar 5172R - Machine Service 500hr",
+  "tokens": [
+   [
+    "Clar",
+    "<sensitive>"
+   ],
+   [
+    "5172R",
+    "<id>"
+   ],
+   [
+    "-",
+    "-"
+   ],
+   [
+    "Machine",
+    "machine"
+   ],
+   [
+    "Service",
+    "service"
+   ],
+   [
+    "500hr",
+    "<num> hour"
+   ]
+  ]
+ },
+ {
+  "id": "C-val-129",
+  "company": "C",
+  "split": "val",
+  "index": 129,
+  "text": "earrth continuity fault",
+  "tokens": [
+   [
+    "earrth",
+    "earth"
+   ],
+   [
+    "continuity",
+    "continuity"
+   ],
+   [
+    "fault",
+    "fault"
+   ]
+  ]
+ },
+ {
+  "id": "C-val-133",
+  "company": "C",
+  "split": "val",
+  "index": 133,
+  "text": "trace and repair air gauges n/w",
+  "tokens": [
+   [
+    "trace",
+    "trace"
+   ],
+   [
+    "and",
+    "and"
+   ],
+   [
+    "repair",
+    "repair"
+   ],
+   [
+    "air",
+    "air"
+   ],
+   [
+    "gauges",
+    "gauges"
+   ],
+   [
+    "n/w",
+    "not working"
+   ]
+  ]
+ },
+ {
+  "id": "C-val-302",
+  "company": "C",
+  "split": "val",
+  "index": 302,
+  "text": "Crack repair LHS back of the arch",
+  "tokens": [
+   [
+    "Crack",
+    "crack"
+   ],
+   [
+    "repair",
+    "repair"
+   ],
+   [
+    "LHS",
+    "left hand side"
+   ],
+   [
+    "back",
+    "back"
+   ],
+   [
+    "of",
+    "of"
+   ],
+   [
+    "the",
+    "the"
+   ],
+   [
+    "arch",
+    "arch"
+   ]
+  ]
+ },
+ {
+  "id": "C-val-349",
+  "company": "C",
+  "split": "val",
+  "index": 349,
+  "text": "filter housing off RH chassis rail",
+  "tokens": [
+   [
+    "filter",
+    "filter"
+   ],
+   [
+    "housing",
+    "housing"
+   ],
+   [
+    "off",
+    "off"
+   ],
+   [
+    "RH",
+    "right hand"
+   ],
+   [
+    "chassis",
+    "chassis"
+   ],
+   [
+    "rail",
+    "rail"
+   ]
+  ]
+ },
+ {
+  "id": "C-val-351",
+  "company": "C",
+  "split": "val",
+  "index": 351,
+  "text": "front diff filter mount and pipe leaking",
+  "tokens": [
+   [
+    "front",
+    "front"
+   ],
+   [
+    "diff",
+    "differential"
+   ],
+   [
+    "filter",
+    "filter"
+   ],
+   [
+    "mount",
+    "mount"
+   ],
+   [
+    "and",
+    "and"
+   ],
+   [
+    "pipe",
+    "pipe"
+   ],
+   [
+    "leaking",
+    "leaking"
+   ]
+  ]
+ },
+ {
+  "id": "C-val-382",
+  "company": "C",
+  "split": "val",
+  "index": 382,
+  "text": "swing loop #2 ground fault",
+  "tokens": [
+   [
+    "swing",
+    "swing"
+   ],
+   [
+    "loop",
+    "loop"
+   ],
+   [
+    "#2",
+    "number <num>"
+   ],
+   [
+    "ground",
+    "ground"
+   ],
+   [
+    "fault",
+    "fault"
+   ]
+  ]
+ },
+ {
+  "id": "C-val-398",
+  "company": "C",
+  "split": "val",
+  "index": 398,
+  "text": "Crack in boom at # 4 Bchord on 060",
+  "tokens": [
+   [
+    "Crack",
+    "crack"
+   ],
+   [
+    "in",
+    "in"
+   ],
+   [
+    "boom",
+    "boom"
+   ],
+   [
+    "at",
+    "at"
+   ],
+   [
+    "#",
+    "number"
+   ],
+   [
+    "4",
+    "<num>"
+   ],
+   [
+    "Bchord",
+    "<id> chord"
+   ],
+   [
+    "on",
+    "on"
+   ],
+   [
+    "060",
+    "<id>"
+   ]
+  ]
+ }
+]

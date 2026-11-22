@@ -1,0 +1,194 @@
+{
+ "note": "When each model the paper (MineralBench, Table 3) and this re-run used first became public, weights or API, a preview included, and whether its weights are open. Gathered 20 Nov 2026 from each developer's model card, release notes or announcement (sources below). The paper reached its online models through an API and does not say which revision it was served, so a date marks when that model family first appeared, not when the tested revision did. Parameter counts are the developer's count for the main model.",
+ "models": [
+  {
+   "model": "Qwen3-max",
+   "name": "Qwen3-Max",
+   "open": false,
+   "licence": "API only",
+   "released": "2025-09-05",
+   "date_is": "preview API launch (full launch 2025-09-24)",
+   "params": "over 1 trillion parameters",
+   "sources": [
+    "https://www.alibabacloud.com/help/en/model-studio/newly-released-models"
+   ]
+  },
+  {
+   "model": "Qwen3.5-35B-A3B",
+   "name": "Qwen3.5-35B-A3B",
+   "open": true,
+   "licence": "Apache-2.0",
+   "released": "2026-02-24",
+   "date_is": "weights released",
+   "params": "35 billion parameters, 3 billion active",
+   "sources": [
+    "https://huggingface.co/Qwen/Qwen3.5-35B-A3B"
+   ]
+  },
+  {
+   "model": "GLM-5",
+   "name": "GLM-5",
+   "open": true,
+   "licence": "MIT",
+   "released": "2026-02-11",
+   "date_is": "first weights commit (API launch 2026-02-12)",
+   "params": "744 billion parameters, 40 billion active",
+   "sources": [
+    "https://huggingface.co/zai-org/GLM-5",
+    "https://docs.z.ai/release-notes/new-released"
+   ]
+  },
+  {
+   "model": "GLM-4.5-Air",
+   "name": "GLM-4.5-Air",
+   "open": true,
+   "licence": "MIT",
+   "released": "2025-07-28",
+   "date_is": "first weights upload",
+   "params": "106 billion parameters, 12 billion active",
+   "sources": [
+    "https://huggingface.co/zai-org/GLM-4.5-Air"
+   ]
+  },
+  {
+   "model": "DeepSeek V4 Pro",
+   "name": "DeepSeek-V4-Pro",
+   "open": true,
+   "licence": "MIT",
+   "released": "2026-04-24",
+   "date_is": "preview weights and API (final Pro-0813 on 2026-08-13)",
+   "params": "1.6 trillion parameters, 49 billion active",
+   "sources": [
+    "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+    "https://api-docs.deepseek.com/news/news260424/"
+   ]
+  },
+  {
+   "model": "DeepSeek V4 Flash",
+   "name": "DeepSeek-V4-Flash",
+   "open": true,
+   "licence": "MIT",
+   "released": "2026-04-24",
+   "date_is": "preview weights and API (final Flash-0731 on 2026-07-31)",
+   "params": "284 billion parameters, 13 billion active",
+   "sources": [
+    "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+    "https://api-docs.deepseek.com/news/news260424/"
+   ]
+  },
+  {
+   "model": "DeepSeek V3.2",
+   "name": "DeepSeek-V3.2",
+   "open": true,
+   "licence": "MIT",
+   "released": "2025-12-01",
+   "date_is": "weights and API (not V3.2-Exp)",
+   "params": "671 billion parameters, 37 billion active",
+   "sources": [
+    "https://huggingface.co/deepseek-ai/DeepSeek-V3.2",
+    "https://api-docs.deepseek.com/news/news251201/"
+   ]
+  },
+  {
+   "model": "Kimi K2 Instruct",
+   "name": "Kimi-K2-Instruct",
+   "open": true,
+   "licence": "Modified MIT",
+   "released": "2025-07-11",
+   "date_is": "0711 weights and API; the paper does not say which revision (0905 released 2025-09-05)",
+   "params": "1 trillion parameters, 32 billion active",
+   "sources": [
+    "https://huggingface.co/moonshotai/Kimi-K2-Instruct",
+    "https://platform.kimi.com/blog/posts/kimi-k2-0905"
+   ]
+  },
+  {
+   "model": "Qwen3-32B-AWQ",
+   "name": "Qwen3-32B",
+   "open": true,
+   "licence": "Apache-2.0",
+   "released": "2025-04-29",
+   "date_is": "announced release (weights committed 2025-04-28)",
+   "params": "32.8 billion parameters",
+   "sources": [
+    "https://huggingface.co/Qwen/Qwen3-32B",
+    "https://qwenlm.github.io/blog/qwen3/"
+   ]
+  },
+  {
+   "model": "Qwen3.5-27B-AWQ",
+   "name": "Qwen3.5-27B",
+   "open": true,
+   "licence": "Apache-2.0",
+   "released": "2026-02-24",
+   "date_is": "weights released",
+   "params": "27 billion parameters",
+   "sources": [
+    "https://huggingface.co/Qwen/Qwen3.5-27B"
+   ]
+  },
+  {
+   "model": "Qwen3-14B-AWQ",
+   "name": "Qwen3-14B",
+   "open": true,
+   "licence": "Apache-2.0",
+   "released": "2025-04-29",
+   "date_is": "announced release (weights committed 2025-04-28)",
+   "params": "14.8 billion parameters",
+   "sources": [
+    "https://huggingface.co/Qwen/Qwen3-14B",
+    "https://qwenlm.github.io/blog/qwen3/"
+   ]
+  },
+  {
+   "model": "DeepSeek-R1-32B-AWQ",
+   "name": "DeepSeek-R1-Distill-Qwen-32B",
+   "open": true,
+   "licence": "MIT",
+   "released": "2025-01-20",
+   "date_is": "weights upload",
+   "params": "32.8 billion parameters",
+   "sources": [
+    "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B"
+   ]
+  },
+  {
+   "model": "DeepSeek-R1-14B-AWQ",
+   "name": "DeepSeek-R1-Distill-Qwen-14B",
+   "open": true,
+   "licence": "MIT",
+   "released": "2025-01-20",
+   "date_is": "weights upload",
+   "params": "14.8 billion parameters",
+   "sources": [
+    "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B"
+   ]
+  },
+  {
+   "model": "qwen38-27b",
+   "name": "Qwen3.8-27B",
+   "open": true,
+   "licence": "Apache-2.0",
+   "released": "2026-08-14",
+   "date_is": "announced release (weights uploaded 2026-08-13)",
+   "params": "27 billion parameters",
+   "sources": [
+    "https://huggingface.co/Qwen/Qwen3.8-27B",
+    "https://github.com/QwenLM/Qwen3.8#news"
+   ]
+  },
+  {
+   "model": "qwen38-next-flash",
+   "name": "Qwen3.8-Flash-Next",
+   "open": true,
+   "licence": "Qwen Community License 1.0",
+   "released": "2026-08-26",
+   "date_is": "announced release and first weights commit",
+   "params": "125 billion parameters, 6 billion active",
+   "sources": [
+    "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+    "https://github.com/QwenLM/Qwen3.8-Flash-Next#news"
+   ]
+  }
+ ]
+}

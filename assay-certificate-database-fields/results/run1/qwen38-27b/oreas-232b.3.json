@@ -1,0 +1,27 @@
+{
+ "fields": {
+  "cu_4a_pct": 0.00267,
+  "cu_4a_sd_pct": 0.000168,
+  "cu_ar_pct": 0.00254,
+  "cu_ar_sd_pct": 0.000141,
+  "cu_h2so4_pct": null,
+  "cu_h2so4_sd_pct": null,
+  "cu_cn_pct": null,
+  "cu_cn_sd_pct": null,
+  "au_fa_ppm": 0.946,
+  "au_fa_sd_ppm": 0.037,
+  "au_ar_ppm": 0.898,
+  "au_ar_sd_ppm": 0.052
+ },
+ "content": "\n\n{\"cu_4a_pct\": 0.00267, \"cu_4a_sd_pct\": 0.000168, \"cu_ar_pct\": 0.00254, \"cu_ar_sd_pct\": 0.000141, \"cu_h2so4_pct\": null, \"cu_h2so4_sd_pct\": null, \"cu_cn_pct\": null, \"cu_cn_sd_pct\": null, \"au_fa_ppm\": 0.946, \"au_fa_sd_ppm\": 0.037, \"au_ar_ppm\": 0.898, \"au_ar_sd_ppm\": 0.052}",
+ "reasoning": "Let me analyze the certificate of analysis for OREAS 232b to fill in the required fields.\n\nI need to find:\n1. `cu_4a_pct`: Copper by four-acid digestion, certified value in wt.% Cu\n2. `cu_4a_sd_pct`: 1SD for Cu by 4-acid in wt.% Cu\n3. `cu_ar_pct`: Copper by aqua regia digestion, certified value in wt.% Cu\n4. `cu_ar_sd_pct`: 1SD for Cu by aqua regia in wt.% Cu\n5. `cu_h2so4_pct`: Acid-soluble copper by H2SO4 leach - certified value in wt.% Cu\n6. `cu_h2so4_sd_pct`: 1SD for Cu by H2SO4 leach in wt.% Cu\n7. `cu_cn_pct`: Cyanide-soluble copper by NaCN leach - certified value in wt.% Cu\n8. `cu_cn_sd_pct`: 1SD for Cu by cyanide leach in wt.% Cu\n9. `au_fa_ppm`: Gold by fire assay, certified value in ppm\n10. `au_fa_sd_ppm`: 1SD for Au by fire assay in ppm\n11. `au_ar_ppm`: Gold by aqua regia digestion, certified value in ppm\n12. `au_ar_sd_ppm`: 1SD for Au by aqua regia in ppm\n\nLet me look through the certificate:\n\n**Copper by 4-Acid Digestion:**\nFrom Table 1: \"Cu, ppm 26.7 1.68 23.3 30.1 21.7 31.7 6.29% 12.59% 18.88% 25.4 28.0\"\n\nThe certified value is 26.7 ppm. The 1SD is 1.68 ppm.\n\nNow I need to convert to wt.%:\n- 26.7 ppm = 26.7 / 10,000 wt.% = 0.00267 wt.%\n- 1.68 ppm = 1.68 / 10,000 wt.% = 0.000168 wt.%\n\nSo:\n- `cu_4a_pct` = 0.00267\n- `cu_4a_sd_pct` = 0.000168\n\n**Copper by Aqua Regia Digestion:**\nFrom Table 1: \"Cu, ppm 25.4 1.41 22.6 28.2 21.2 29.6 5.57% 11.14% 16.70% 24.1 26.7\"\n\nThe certified value is 25.4 ppm. The 1SD is 1.41 ppm.\n\nConvert to wt.%:\n- 25.4 ppm = 25.4 / 10,000 wt.% = 0.00254 wt.%\n- 1.41 ppm = 1.41 / 10,000 wt.% = 0.000141 wt.%\n\nSo:\n- `cu_ar_pct` = 0.00254\n- `cu_ar_sd_pct` = 0.000141\n\n**Copper by H2SO4 leach:**\nLooking through the certificate, I don't see any H2SO4 leach method reported. The methods listed are:\n- Pb Fire Assay (Au)\n- Aqua Regia Digestion (Au)\n- Cyanide Leach (Au)\n- X-ray Photon Assay (Au)\n- 4-Acid Digestion (elements)\n- Aqua Regia Digestion (elements)\n- Borate Fusion XRF\n- Thermogravimetry\n- Infrared Combustion\n- Laser Ablation ICP-MS\n- Neutron Activation Analysis (Au)\n\nThere is no H2SO4 leach method reported. So:\n- `cu_h2so4_pct` = null\n- `cu_h2so4_sd_pct` = null\n\n**Copper by Cyanide (NaCN) leach:**\nLooking through the certificate, the Cyanide Leach section only reports Au (gold). There's no copper by cyanide leach. So:\n- `cu_cn_pct` = null\n- `cu_cn_sd_pct` = null\n\n**Gold by Fire Assay:**\nFrom Table 1: \"Pb Fire Assay Au, ppm 0.946 0.037 0.871 1.021 0.833 1.058 3.96% 7.92% 11.88% 0.898 0.993\"\n\nThe certified value is 0.946 ppm. The 1SD is 0.037 ppm.\n\nSo:\n- `au_fa_ppm` = 0.946\n- `au_fa_sd_ppm` = 0.037\n\n**Gold by Aqua Regia Digestion:**\nFrom Table 1: \"Aqua Regia Digestion (sample mass 10-50g) Au, ppm 0.898 0.052 0.794 1.002 0.742 1.054 5.79% 11.58% 17.37% 0.853 0.943\"\n\nThe certified value is 0.898 ppm. The 1SD is 0.052 ppm.\n\nSo:\n- `au_ar_ppm` = 0.898\n- `au_ar_sd_ppm` = 0.052\n\nLet me double-check the 1SD values. The table header says \"1SD\" under \"Absolute Standard Deviations\" and then \"2SD Low\" and \"2SD High\" and \"3SD Low\" and \"3SD High\". So the first column after the certified value is indeed 1SD.\n\nFor Cu 4-acid: certified = 26.7 ppm, 1SD = 1.68 ppm\n- 26.7 ppm = 0.00267 wt.%\n- 1.68 ppm = 0.000168 wt.%\n\nFor Cu AR: certified = 25.4 ppm, 1SD = 1.41 ppm\n- 25.4 ppm = 0.00254 wt.%\n- 1.41 ppm = 0.000141 wt.%\n\nFor Au FA: certified = 0.946 ppm, 1SD = 0.037 ppm\nFor Au AR: certified = 0.898 ppm, 1SD = 0.052 ppm\n\nAll values are certified (in Table 1), not indicative (Table 2). Good.\n\nLet me verify the conversion: 1 wt.% = 10,000 ppm, so 1 ppm = 0.0001 wt.%.\n- 26.7 ppm \u00d7 0.0001 = 0.00267 wt.% \u2713\n- 1.68 ppm \u00d7 0.0001 = 0.000168 wt.% \u2713\n- 25.4 ppm \u00d7 0.0001 = 0.00254 wt.% \u2713\n- 1.41 ppm \u00d7 0.0001 = 0.000141 wt.% \u2713\n\nAll looks correct.\n",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 25777,
+  "total_tokens": 27677,
+  "completion_tokens": 1900,
+  "prompt_tokens_details": null
+ },
+ "seconds": 38.4,
+ "model": "qwen38-27b"
+}

@@ -1,0 +1,67 @@
+{
+ "note": "Written on 21 Nov 2026 before any search run on these questions, from reading the pages that name the molybdenum plant; revised the same day after the protocol review (q05, q08, q09, q12 worded more exactly; each page now lists every phrase that must be visible). A fact is shown when the excerpts displayed from one of its pages together contain all of that page's phrases. 'strict' means only the named edition counts; the same sentence from the other edition is recorded as the right fact from the wrong edition. 'partial' pages say part of the answer and earn no credit. q04 has no answer in these records by design.",
+ "facts": {
+  "feed": {"says": "The plant takes its feed from the overland pipeline carrying copper concentrate slurry from the concentrators to the Blayney filter plant.",
+           "evidence": [
+            {"doc": "newmont-cadia-trs-2026", "page": "Page 14-3", "need": ["receives feed from the overland copper concentrate pipeline", "Blayney concentrate filter plant"]},
+            {"doc": "newmont-cadia-trs-2024", "page": "Page 14-4", "need": ["receives feed from the overland copper concentrate pipeline", "Blayney concentrate filter plant"]}],
+           "partial": [["newmont-cadia-trs-2024", "Page 1-20"], ["newmont-cadia-trs-2026", "Page 1-18"], ["newmont-cadia-trs-2026", "Page 10-1"]]},
+  "filtered-2021": {"says": "The December-quarter report, released 28 January 2022, says a filtered moly concentrate had been produced and commissioning was continuing.",
+           "note": "Corrected 22 Nov 2026, after the runs. The key first said this happened 'by the December 2021 quarter'. Newcrest's half-year results presentation (17 Feb 2022, slide 11) dates the start of filtered-concentrate production to January 2022, after the quarter. No record in the archive says what had been achieved by 31 December 2021, so the second half of q01-q03, as worded, has no answer in the records; the key credits the passage that reports the milestone, and the scores measure finding it. The fact keeps its id.",
+           "evidence": [
+            {"doc": "newcrest-2021-12-quarterly", "page": "Page 3", "need": ["Commissioning of the Molybdenum Plant is continuing", "producing a filtered moly concentrate achieved"]}]},
+  "commissioned": {"says": "Commissioning was completed in the March 2022 quarter.",
+           "evidence": [
+            {"doc": "newcrest-2022-03-quarterly", "page": "Page 3", "need": ["Commissioning of the Molybdenum Plant was completed during the period"]}],
+           "partial": [["newmont-cadia-trs-2024", "Page 1-21"], ["newmont-cadia-trs-2024", "Page 14-4"], ["newmont-cadia-trs-2024", "Page 16-2"], ["newmont-cadia-trs-2026", "Page 14-3"]]},
+  "first-shipment": {"says": "The first molybdenum concentrate shipment was delivered in June 2022.",
+           "evidence": [
+            {"doc": "newcrest-2022-06-quarterly", "page": "Page 3", "need": ["first molybdenum concentrate shipment delivered in June 2022"]}],
+           "partial": [["newcrest-2022-03-quarterly", "Page 3"]]},
+  "copper-tails": {"says": "The copper-rich rougher tails go back into the copper concentrate pipeline to Blayney (after thickening, says section 14.3.3).",
+           "evidence": [
+            {"doc": "newmont-cadia-trs-2026", "page": "Page 14-4", "need": ["Copper-rich tails from the molybdenum plant rougher flotation stage", "returned to the existing copper concentrate transport system"]},
+            {"doc": "newmont-cadia-trs-2024", "page": "Page 14-4", "need": ["Copper-rich tails from the molybdenum plant rougher flotation stage", "returned to the existing copper concentrate transport system"]},
+            {"doc": "newmont-cadia-trs-2026", "page": "Page 1-19", "need": ["rougher tails are sent to rejoin the Blayney copper concentrate slurry pipeline"]},
+            {"doc": "newmont-cadia-trs-2024", "page": "Page 1-20", "need": ["rougher tails are sent to rejoin the Blayney copper concentrate slurry pipeline"]}]},
+  "capacity": {"says": "Design: 300,000–400,000 t of concentrate a year in, about 3,500–4,000 t of molybdenum concentrate out.",
+           "evidence": [
+            {"doc": "newmont-cadia-trs-2026", "page": "Page 14-3", "need": ["300,000-400,000 t of Cadia concentrate", "3,500-4,000 t of molybdenum concentrate"]},
+            {"doc": "newmont-cadia-trs-2024", "page": "Page 14-4", "need": ["300,000-400,000 t of Cadia concentrate", "3,500-4,000 t of molybdenum concentrate"]}],
+           "partial": [["newmont-cadia-trs-2024", "Page 22-6"]]},
+  "grade": {"says": "The molybdenum concentrate will grade 48–52 % Mo with under 2 % Cu.",
+           "evidence": [
+            {"doc": "newmont-cadia-trs-2026", "page": "Page 16-2", "need": ["grade ranging from 48-52% Mo"]},
+            {"doc": "newmont-cadia-trs-2024", "page": "Page 1-21", "need": ["grade ranging from 48-52% Mo"]},
+            {"doc": "newmont-cadia-trs-2024", "page": "Page 16-2", "need": ["grade ranging from 48-52% Mo"]}]},
+  "reagents": {"says": "Sodium hydrosulfide, sodium hypochlorite, caustic soda, frother, carbon dioxide, defoaming agents and emulsified diesel.",
+           "evidence": [
+            {"doc": "newmont-cadia-trs-2026", "page": "Page 14-7", "need": ["molybdenum plant uses a suite of consumable products", "sodium hydrosulfide", "sodium hypochlorite", "caustic soda", "frother", "carbon dioxide", "defoaming agents", "emulsified diesel"]},
+            {"doc": "newmont-cadia-trs-2024", "page": "Page 14-9", "need": ["molybdenum plant uses a suite of consumable products", "sodium hydrosulfide", "sodium hypochlorite", "caustic soda", "frother", "carbon dioxide", "defoaming agents", "emulsified diesel"]}]},
+  "packing": {"says": "The concentrate is thickened, filtered and dried, then packed into bulk bags for transport.",
+           "evidence": [
+            {"doc": "newmont-cadia-trs-2026", "page": "Page 14-3", "need": ["thickened, filtered", "dried", "bulk bags"]},
+            {"doc": "newmont-cadia-trs-2024", "page": "Page 14-4", "need": ["thickened, filtered", "dried", "bulk bags"]},
+            {"doc": "newmont-cadia-trs-2026", "page": "Page 1-19", "need": ["thickened, filtered", "dried", "bulk bags"]},
+            {"doc": "newmont-cadia-trs-2024", "page": "Page 1-20", "need": ["thickened, filtered", "dried", "bulk bags"]}],
+           "partial": [["newmont-cadia-trs-2024", "Page 16-2"], ["newmont-cadia-trs-2026", "Page 16-2"]]}
+ },
+ "questions": [
+  {"id": "q01", "text": "According to Newmont's February 2026 technical report and Newcrest's December 2021 quarterly report, where does Cadia's molybdenum plant get its feed, and what had been achieved at the plant by the end of 2021?",
+   "needs": ["feed", "filtered-2021"], "strict": {"feed": "newmont-cadia-trs-2026"}, "form": "precise"},
+  {"id": "q02", "text": "Where does the moly plant get its feed, and what had been achieved by the end of 2021?",
+   "needs": ["feed", "filtered-2021"], "form": "shorthand"},
+  {"id": "q03", "text": "Using the February 2026 technical report for the plant design: where does the moly plant get its feed, and what had been achieved by the end of 2021?",
+   "needs": ["feed", "filtered-2021"], "strict": {"feed": "newmont-cadia-trs-2026"}, "form": "edition"},
+  {"id": "q04", "text": "What was molybdenum recovery on day shift on 14 March 2022?",
+   "needs": [], "form": "missing"},
+  {"id": "q05", "text": "In which quarter was commissioning of the moly plant completed?", "needs": ["commissioned"], "form": "single"},
+  {"id": "q06", "text": "When was the first molybdenum concentrate shipped?", "needs": ["first-shipment"], "form": "single"},
+  {"id": "q07", "text": "What happens to the copper-rich tails from the moly plant rougher flotation?", "needs": ["copper-tails"], "form": "single"},
+  {"id": "q08", "text": "What is the moly plant's design capacity: how much concentrate is it scheduled to treat each year, and how much moly concentrate should it make?", "needs": ["capacity"], "form": "single"},
+  {"id": "q09", "text": "What grade range is the plant's molybdenum concentrate expected to have?", "needs": ["grade"], "form": "single"},
+  {"id": "q10", "text": "Which reagents and consumables does the moly plant use?", "needs": ["reagents"], "form": "single"},
+  {"id": "q11", "text": "How is the moly concentrate dewatered and packed for transport?", "needs": ["packing"], "form": "single"},
+  {"id": "q12", "text": "In which quarter did moly plant commissioning finish, and when was the first concentrate shipment delivered?", "needs": ["commissioned", "first-shipment"], "form": "two-part"}
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "checked": "Claude, 16 Nov 2026",
+ "pairing": {
+  "ffs": {
+   "to": [],
+   "why": "'FLOTATION FEED SUMP', fed by the cyclone overflow and feeding the roughers: a sump the drawing does not have there; its lines pass through"
+  },
+  "lc": {
+   "to": [],
+   "why": "'(LOADED CARBON)', a stream label drawn as a box"
+  },
+  "bc": {
+   "to": [],
+   "why": "'(BARREN CARBON)', a stream label drawn as a box"
+  }
+ },
+ "notes": [
+  "Test, no skill. Misread labels kept: PEBCBLE CRUSHER, BALL MILS, ROUGHER FLDTATION. Water, lime and reagent inputs pair with their sets; '(RESIDUE)' and '(PREG)' are stream labels.",
+  "Read: every box whose label is not exactly its key item's, or that pairs with nothing or with a set, and every box paired with a repeated key label, with its feeds (local/dev/repeats.py); both lists uncut, 16 Nov. Boxes whose label is exactly their key item's were not each read."
+ ]
+}

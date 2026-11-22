@@ -1,0 +1,7431 @@
+{
+ "items": {
+  "n": 508,
+  "glossary": 369,
+  "search": 373,
+  "both": 327,
+  "only_search": 46,
+  "only_glossary": 42
+ },
+ "by_company": {
+  "A": {
+   "n": 157,
+   "glossary": 118,
+   "search": 111,
+   "both": 103,
+   "only_search": 8,
+   "only_glossary": 15
+  },
+  "B": {
+   "n": 203,
+   "glossary": 162,
+   "search": 164,
+   "both": 154,
+   "only_search": 10,
+   "only_glossary": 8
+  },
+  "C": {
+   "n": 148,
+   "glossary": 89,
+   "search": 98,
+   "both": 70,
+   "only_search": 28,
+   "only_glossary": 19
+  }
+ },
+ "prompt_chars_median": {
+  "search": 2193.0,
+  "glossary": 2364.0
+ },
+ "prompt_chars_range": {
+  "search": [
+   1898,
+   2559
+  ],
+  "glossary": [
+   2259,
+   2421
+  ]
+ },
+ "near_duplicates": {
+  "n": 47,
+  "ids": [
+   "A-test-001",
+   "A-test-036",
+   "A-test-050",
+   "A-test-068",
+   "A-test-080",
+   "A-test-083",
+   "A-test-106",
+   "A-test-116",
+   "A-test-130",
+   "A-test-171",
+   "A-test-210",
+   "A-test-216",
+   "A-test-240",
+   "A-test-251",
+   "A-test-252",
+   "A-test-259",
+   "A-test-273",
+   "A-test-287",
+   "A-test-310",
+   "A-test-369",
+   "A-test-377",
+   "A-test-392",
+   "B-test-036",
+   "B-test-042",
+   "B-test-095",
+   "B-test-119",
+   "B-test-145",
+   "B-test-165",
+   "B-test-168",
+   "B-test-175",
+   "B-test-204",
+   "B-test-205",
+   "B-test-224",
+   "B-test-230",
+   "B-test-241",
+   "B-test-261",
+   "B-test-266",
+   "B-test-281",
+   "B-test-295",
+   "B-test-323",
+   "B-test-333",
+   "B-test-340",
+   "B-test-381",
+   "B-test-383",
+   "C-test-144",
+   "C-test-221",
+   "C-test-306"
+  ]
+ },
+ "near_duplicates_broad": {
+  "n": 55,
+  "ids": [
+   "A-test-001",
+   "A-test-036",
+   "A-test-050",
+   "A-test-068",
+   "A-test-080",
+   "A-test-083",
+   "A-test-106",
+   "A-test-116",
+   "A-test-130",
+   "A-test-171",
+   "A-test-210",
+   "A-test-216",
+   "A-test-240",
+   "A-test-251",
+   "A-test-252",
+   "A-test-259",
+   "A-test-273",
+   "A-test-287",
+   "A-test-310",
+   "A-test-369",
+   "A-test-377",
+   "A-test-392",
+   "A-test-399",
+   "B-test-021",
+   "B-test-036",
+   "B-test-042",
+   "B-test-095",
+   "B-test-119",
+   "B-test-136",
+   "B-test-145",
+   "B-test-165",
+   "B-test-168",
+   "B-test-175",
+   "B-test-183",
+   "B-test-204",
+   "B-test-205",
+   "B-test-224",
+   "B-test-230",
+   "B-test-241",
+   "B-test-257",
+   "B-test-261",
+   "B-test-266",
+   "B-test-274",
+   "B-test-281",
+   "B-test-285",
+   "B-test-295",
+   "B-test-323",
+   "B-test-333",
+   "B-test-340",
+   "B-test-346",
+   "B-test-381",
+   "B-test-383",
+   "C-test-144",
+   "C-test-221",
+   "C-test-306"
+  ]
+ },
+ "per_item": [
+  {
+   "id": "A-test-001",
+   "company": "A",
+   "i": 3,
+   "raw": "CON",
+   "meaning": "conditioner",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    7
+   ]
+  },
+  {
+   "id": "A-test-007",
+   "company": "A",
+   "i": 1,
+   "raw": "REPL",
+   "meaning": "replace",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    4
+   ]
+  },
+  {
+   "id": "A-test-007",
+   "company": "A",
+   "i": 2,
+   "raw": "US",
+   "meaning": "unserviceable",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-021",
+   "company": "A",
+   "i": 1,
+   "raw": "REPL",
+   "meaning": "replace",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    8,
+    10
+   ]
+  },
+  {
+   "id": "A-test-022",
+   "company": "A",
+   "i": 2,
+   "raw": "U/S",
+   "meaning": "unserviceable",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2
+   ]
+  },
+  {
+   "id": "A-test-022",
+   "company": "A",
+   "i": 3,
+   "raw": "diff",
+   "meaning": "differential",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    4,
+    5,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "A-test-022",
+   "company": "A",
+   "i": 4,
+   "raw": "drian",
+   "meaning": "drain",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-036",
+   "company": "A",
+   "i": 1,
+   "raw": "REPL",
+   "meaning": "replace",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    4,
+    5,
+    6,
+    7
+   ]
+  },
+  {
+   "id": "A-test-036",
+   "company": "A",
+   "i": 2,
+   "raw": "POS",
+   "meaning": "position",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "A-test-038",
+   "company": "A",
+   "i": 1,
+   "raw": "REPL",
+   "meaning": "replace",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "A-test-039",
+   "company": "A",
+   "i": 4,
+   "raw": "L/H",
+   "meaning": "left hand",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    9,
+    10
+   ]
+  },
+  {
+   "id": "A-test-039",
+   "company": "A",
+   "i": 5,
+   "raw": "GAURD",
+   "meaning": "guard",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    1,
+    4,
+    6,
+    7
+   ]
+  },
+  {
+   "id": "A-test-040",
+   "company": "A",
+   "i": 2,
+   "raw": "TRANS",
+   "meaning": "transmission",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    7
+   ]
+  },
+  {
+   "id": "A-test-044",
+   "company": "A",
+   "i": 3,
+   "raw": "SURF",
+   "meaning": "surface",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    5,
+    6,
+    8
+   ]
+  },
+  {
+   "id": "A-test-045",
+   "company": "A",
+   "i": 2,
+   "raw": "Changeout",
+   "meaning": "change out",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-045",
+   "company": "A",
+   "i": 3,
+   "raw": "Pos#",
+   "meaning": "position",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    8
+   ]
+  },
+  {
+   "id": "A-test-050",
+   "company": "A",
+   "i": 1,
+   "raw": "REPL",
+   "meaning": "replace",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    7
+   ]
+  },
+  {
+   "id": "A-test-050",
+   "company": "A",
+   "i": 2,
+   "raw": "POS1",
+   "meaning": "position",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "A-test-053",
+   "company": "A",
+   "i": 7,
+   "raw": "&",
+   "meaning": "and",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "A-test-061",
+   "company": "A",
+   "i": 1,
+   "raw": "REP",
+   "meaning": "repair",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    7
+   ]
+  },
+  {
+   "id": "A-test-061",
+   "company": "A",
+   "i": 3,
+   "raw": "CON",
+   "meaning": "conditioner",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "A-test-062",
+   "company": "A",
+   "i": 2,
+   "raw": "HR",
+   "meaning": "hour",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "A-test-068",
+   "company": "A",
+   "i": 1,
+   "raw": "REP",
+   "meaning": "repair",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    6
+   ]
+  },
+  {
+   "id": "A-test-068",
+   "company": "A",
+   "i": 2,
+   "raw": "P/BRAKE",
+   "meaning": "park brake",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    6,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "A-test-073",
+   "company": "A",
+   "i": 1,
+   "raw": "REPL",
+   "meaning": "replace",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-073",
+   "company": "A",
+   "i": 2,
+   "raw": "CENTER",
+   "meaning": "centre",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    8
+   ]
+  },
+  {
+   "id": "A-test-077",
+   "company": "A",
+   "i": 1,
+   "raw": "REPL",
+   "meaning": "replace",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    4,
+    5,
+    6,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "A-test-080",
+   "company": "A",
+   "i": 2,
+   "raw": "POS",
+   "meaning": "position",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "A-test-081",
+   "company": "A",
+   "i": 3,
+   "raw": "STEER",
+   "meaning": "steering",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    3,
+    4,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "A-test-083",
+   "company": "A",
+   "i": 4,
+   "raw": "&",
+   "meaning": "and",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-085",
+   "company": "A",
+   "i": 3,
+   "raw": "MOTER",
+   "meaning": "motor",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-085",
+   "company": "A",
+   "i": 4,
+   "raw": "U/S",
+   "meaning": "unserviceable",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    8
+   ]
+  },
+  {
+   "id": "A-test-097",
+   "company": "A",
+   "i": 1,
+   "raw": "REPL",
+   "meaning": "replace",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    3,
+    8,
+    10
+   ]
+  },
+  {
+   "id": "A-test-097",
+   "company": "A",
+   "i": 4,
+   "raw": "O'RING",
+   "meaning": "o-ring",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    1,
+    3
+   ]
+  },
+  {
+   "id": "A-test-105",
+   "company": "A",
+   "i": 1,
+   "raw": "REPL",
+   "meaning": "replace",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    10
+   ]
+  },
+  {
+   "id": "A-test-106",
+   "company": "A",
+   "i": 1,
+   "raw": "REPL",
+   "meaning": "replace",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "A-test-106",
+   "company": "A",
+   "i": 2,
+   "raw": "AUTO",
+   "meaning": "autogreaser",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    9
+   ]
+  },
+  {
+   "id": "A-test-108",
+   "company": "A",
+   "i": 3,
+   "raw": "SEC",
+   "meaning": "secondary",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-110",
+   "company": "A",
+   "i": 4,
+   "raw": "UNIS",
+   "meaning": "universal joints",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-116",
+   "company": "A",
+   "i": 1,
+   "raw": "REPL",
+   "meaning": "replace",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    4,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "A-test-120",
+   "company": "A",
+   "i": 2,
+   "raw": "HR",
+   "meaning": "hour",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "A-test-122",
+   "company": "A",
+   "i": 1,
+   "raw": "INV",
+   "meaning": "investigate",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-122",
+   "company": "A",
+   "i": 2,
+   "raw": "REP",
+   "meaning": "repair",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-122",
+   "company": "A",
+   "i": 3,
+   "raw": "AUTO",
+   "meaning": "auto-greaser",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    10
+   ]
+  },
+  {
+   "id": "A-test-124",
+   "company": "A",
+   "i": 1,
+   "raw": "L/HS",
+   "meaning": "left hand side",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-124",
+   "company": "A",
+   "i": 4,
+   "raw": "C/O",
+   "meaning": "change out",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3
+   ]
+  },
+  {
+   "id": "A-test-126",
+   "company": "A",
+   "i": 2,
+   "raw": "FRIEGHT",
+   "meaning": "freight",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-127",
+   "company": "A",
+   "i": 1,
+   "raw": "INV",
+   "meaning": "investigate",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    10
+   ]
+  },
+  {
+   "id": "A-test-130",
+   "company": "A",
+   "i": 3,
+   "raw": "POS",
+   "meaning": "position",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    3,
+    4,
+    5,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "A-test-138",
+   "company": "A",
+   "i": 2,
+   "raw": "LHS",
+   "meaning": "left hand side",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1
+   ]
+  },
+  {
+   "id": "A-test-138",
+   "company": "A",
+   "i": 4,
+   "raw": "CYL",
+   "meaning": "cylinder",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    4,
+    6,
+    8
+   ]
+  },
+  {
+   "id": "A-test-147",
+   "company": "A",
+   "i": 1,
+   "raw": "REP",
+   "meaning": "repair",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "A-test-147",
+   "company": "A",
+   "i": 2,
+   "raw": "INT",
+   "meaning": "internal",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    5
+   ]
+  },
+  {
+   "id": "A-test-148",
+   "company": "A",
+   "i": 1,
+   "raw": "REPL",
+   "meaning": "replace",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-148",
+   "company": "A",
+   "i": 3,
+   "raw": "ENG",
+   "meaning": "engine",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-148",
+   "company": "A",
+   "i": 4,
+   "raw": "F/WHEEL",
+   "meaning": "flywheel",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-148",
+   "company": "A",
+   "i": 5,
+   "raw": "HOSU",
+   "meaning": "housing",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-148",
+   "company": "A",
+   "i": 7,
+   "raw": "TEX",
+   "meaning": "text",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-149",
+   "company": "A",
+   "i": 1,
+   "raw": "REP",
+   "meaning": "repair",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    4,
+    8,
+    10
+   ]
+  },
+  {
+   "id": "A-test-150",
+   "company": "A",
+   "i": 2,
+   "raw": "IMPLIMENT",
+   "meaning": "implement",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    3
+   ]
+  },
+  {
+   "id": "A-test-152",
+   "company": "A",
+   "i": 1,
+   "raw": "REPLAC",
+   "meaning": "replace",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-152",
+   "company": "A",
+   "i": 3,
+   "raw": "IMPLIMENT",
+   "meaning": "implement",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    7,
+    8
+   ]
+  },
+  {
+   "id": "A-test-154",
+   "company": "A",
+   "i": 1,
+   "raw": "C/O",
+   "meaning": "change out",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-154",
+   "company": "A",
+   "i": 2,
+   "raw": "POS",
+   "meaning": "position",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    3,
+    5,
+    7,
+    8,
+    10
+   ]
+  },
+  {
+   "id": "A-test-155",
+   "company": "A",
+   "i": 1,
+   "raw": "REP",
+   "meaning": "repair",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    6,
+    9
+   ]
+  },
+  {
+   "id": "A-test-155",
+   "company": "A",
+   "i": 5,
+   "raw": "DIFF",
+   "meaning": "differential",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    7,
+    8
+   ]
+  },
+  {
+   "id": "A-test-156",
+   "company": "A",
+   "i": 1,
+   "raw": "REPL",
+   "meaning": "replace",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    6,
+    7
+   ]
+  },
+  {
+   "id": "A-test-156",
+   "company": "A",
+   "i": 2,
+   "raw": "CAB",
+   "meaning": "cabin",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    4,
+    5,
+    6,
+    7,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "A-test-156",
+   "company": "A",
+   "i": 4,
+   "raw": "SHOCKIE",
+   "meaning": "shock absorber",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-161",
+   "company": "A",
+   "i": 3,
+   "raw": "tele",
+   "meaning": "Tele-Remote",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1
+   ]
+  },
+  {
+   "id": "A-test-171",
+   "company": "A",
+   "i": 4,
+   "raw": "&",
+   "meaning": "and",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    9
+   ]
+  },
+  {
+   "id": "A-test-183",
+   "company": "A",
+   "i": 1,
+   "raw": "INSP",
+   "meaning": "inspect",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1
+   ]
+  },
+  {
+   "id": "A-test-185",
+   "company": "A",
+   "i": 2,
+   "raw": "trans",
+   "meaning": "transmission",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-206",
+   "company": "A",
+   "i": 1,
+   "raw": "REPL",
+   "meaning": "replace",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    5,
+    6
+   ]
+  },
+  {
+   "id": "A-test-209",
+   "company": "A",
+   "i": 2,
+   "raw": "U/S",
+   "meaning": "unserviceable",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    4
+   ]
+  },
+  {
+   "id": "A-test-210",
+   "company": "A",
+   "i": 2,
+   "raw": "HYD",
+   "meaning": "hydraulic",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    5,
+    6,
+    9
+   ]
+  },
+  {
+   "id": "A-test-211",
+   "company": "A",
+   "i": 3,
+   "raw": "1/4",
+   "meaning": "quarter",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    5,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "A-test-216",
+   "company": "A",
+   "i": 3,
+   "raw": "POS",
+   "meaning": "position",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "A-test-222",
+   "company": "A",
+   "i": 1,
+   "raw": "AIRCON",
+   "meaning": "air conditioner",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    5,
+    8
+   ]
+  },
+  {
+   "id": "A-test-222",
+   "company": "A",
+   "i": 2,
+   "raw": "PARTS&REPAIRS",
+   "meaning": "parts and repairs",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-228",
+   "company": "A",
+   "i": 1,
+   "raw": "REPL",
+   "meaning": "replace",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    4,
+    6,
+    8
+   ]
+  },
+  {
+   "id": "A-test-228",
+   "company": "A",
+   "i": 2,
+   "raw": "LH",
+   "meaning": "left hand",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-228",
+   "company": "A",
+   "i": 3,
+   "raw": "STEER",
+   "meaning": "steering",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    5,
+    7,
+    9
+   ]
+  },
+  {
+   "id": "A-test-228",
+   "company": "A",
+   "i": 4,
+   "raw": "CYL",
+   "meaning": "cylinder",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    3,
+    9
+   ]
+  },
+  {
+   "id": "A-test-229",
+   "company": "A",
+   "i": 1,
+   "raw": "REPL",
+   "meaning": "replace",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "A-test-230",
+   "company": "A",
+   "i": 4,
+   "raw": "TRANS",
+   "meaning": "transmission",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    5
+   ]
+  },
+  {
+   "id": "A-test-231",
+   "company": "A",
+   "i": 3,
+   "raw": "drive",
+   "meaning": "driveline",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "A-test-232",
+   "company": "A",
+   "i": 3,
+   "raw": "CON",
+   "meaning": "conditioner",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    3,
+    4,
+    6,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "A-test-240",
+   "company": "A",
+   "i": 2,
+   "raw": "A/C",
+   "meaning": "air conditioner",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    3,
+    6,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "A-test-244",
+   "company": "A",
+   "i": 3,
+   "raw": "&",
+   "meaning": "and",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    5,
+    6,
+    7,
+    9
+   ]
+  },
+  {
+   "id": "A-test-250",
+   "company": "A",
+   "i": 2,
+   "raw": "A/C",
+   "meaning": "air conditioner",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    4,
+    5,
+    7,
+    8
+   ]
+  },
+  {
+   "id": "A-test-251",
+   "company": "A",
+   "i": 1,
+   "raw": "REPL",
+   "meaning": "replace",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    5,
+    7
+   ]
+  },
+  {
+   "id": "A-test-252",
+   "company": "A",
+   "i": 2,
+   "raw": "L/H",
+   "meaning": "left hand",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "A-test-256",
+   "company": "A",
+   "i": 2,
+   "raw": "L/H",
+   "meaning": "left hand",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    5,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "A-test-259",
+   "company": "A",
+   "i": 1,
+   "raw": "REPL",
+   "meaning": "replace",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    10
+   ]
+  },
+  {
+   "id": "A-test-259",
+   "company": "A",
+   "i": 3,
+   "raw": "CAB",
+   "meaning": "cabin",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "A-test-262",
+   "company": "A",
+   "i": 2,
+   "raw": "POS",
+   "meaning": "position",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "A-test-262",
+   "company": "A",
+   "i": 4,
+   "raw": "&",
+   "meaning": "and",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "A-test-267",
+   "company": "A",
+   "i": 1,
+   "raw": "TEMP",
+   "meaning": "temperature",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-267",
+   "company": "A",
+   "i": 2,
+   "raw": "REP",
+   "meaning": "repair",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-267",
+   "company": "A",
+   "i": 4,
+   "raw": "TRANS",
+   "meaning": "transmission",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    3,
+    10
+   ]
+  },
+  {
+   "id": "A-test-267",
+   "company": "A",
+   "i": 5,
+   "raw": "DROP",
+   "meaning": "dropbox",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-268",
+   "company": "A",
+   "i": 1,
+   "raw": "C/O",
+   "meaning": "change out",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-268",
+   "company": "A",
+   "i": 2,
+   "raw": "POS",
+   "meaning": "position",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "A-test-271",
+   "company": "A",
+   "i": 2,
+   "raw": "HYD",
+   "meaning": "hydraulic",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "A-test-273",
+   "company": "A",
+   "i": 1,
+   "raw": "REPL",
+   "meaning": "replace",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    4,
+    5,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "A-test-273",
+   "company": "A",
+   "i": 2,
+   "raw": "L/H",
+   "meaning": "left hand",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "A-test-273",
+   "company": "A",
+   "i": 4,
+   "raw": "CYL",
+   "meaning": "cylinder",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    5,
+    6,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "A-test-275",
+   "company": "A",
+   "i": 1,
+   "raw": "REPL",
+   "meaning": "replace",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    7
+   ]
+  },
+  {
+   "id": "A-test-275",
+   "company": "A",
+   "i": 3,
+   "raw": "UNI",
+   "meaning": "universal joint",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-275",
+   "company": "A",
+   "i": 5,
+   "raw": "CENTER",
+   "meaning": "centre",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-278",
+   "company": "A",
+   "i": 1,
+   "raw": "INSP",
+   "meaning": "inspect",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    6
+   ]
+  },
+  {
+   "id": "A-test-284",
+   "company": "A",
+   "i": 4,
+   "raw": "HAND",
+   "meaning": "handrails",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-285",
+   "company": "A",
+   "i": 1,
+   "raw": "REPL",
+   "meaning": "replace",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    7,
+    8
+   ]
+  },
+  {
+   "id": "A-test-285",
+   "company": "A",
+   "i": 2,
+   "raw": "POS3",
+   "meaning": "position",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    6
+   ]
+  },
+  {
+   "id": "A-test-285",
+   "company": "A",
+   "i": 3,
+   "raw": "&",
+   "meaning": "and",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1
+   ]
+  },
+  {
+   "id": "A-test-286",
+   "company": "A",
+   "i": 1,
+   "raw": "REPL",
+   "meaning": "replace",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3
+   ]
+  },
+  {
+   "id": "A-test-286",
+   "company": "A",
+   "i": 2,
+   "raw": "CENTER",
+   "meaning": "centre",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    5,
+    7
+   ]
+  },
+  {
+   "id": "A-test-287",
+   "company": "A",
+   "i": 1,
+   "raw": "REPL",
+   "meaning": "replace",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    4
+   ]
+  },
+  {
+   "id": "A-test-289",
+   "company": "A",
+   "i": 1,
+   "raw": "REPL",
+   "meaning": "replace",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    7,
+    9
+   ]
+  },
+  {
+   "id": "A-test-296",
+   "company": "A",
+   "i": 1,
+   "raw": "REPL",
+   "meaning": "replace",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    6,
+    8,
+    10
+   ]
+  },
+  {
+   "id": "A-test-310",
+   "company": "A",
+   "i": 1,
+   "raw": "DIFF",
+   "meaning": "differential",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    4,
+    6,
+    7,
+    9
+   ]
+  },
+  {
+   "id": "A-test-312",
+   "company": "A",
+   "i": 2,
+   "raw": "HR",
+   "meaning": "hour",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "A-test-312",
+   "company": "A",
+   "i": 4,
+   "raw": "MAINTEN",
+   "meaning": "maintenance",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    4,
+    6,
+    7
+   ]
+  },
+  {
+   "id": "A-test-313",
+   "company": "A",
+   "i": 2,
+   "raw": "DIFF",
+   "meaning": "differential",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    4,
+    7
+   ]
+  },
+  {
+   "id": "A-test-314",
+   "company": "A",
+   "i": 1,
+   "raw": "REPL",
+   "meaning": "replace",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "A-test-317",
+   "company": "A",
+   "i": 2,
+   "raw": "TRANS",
+   "meaning": "transmission",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    5,
+    6,
+    7,
+    8
+   ]
+  },
+  {
+   "id": "A-test-325",
+   "company": "A",
+   "i": 4,
+   "raw": "HOLING",
+   "meaning": "holding",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-328",
+   "company": "A",
+   "i": 1,
+   "raw": "ENG/START",
+   "meaning": "engine / start",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-329",
+   "company": "A",
+   "i": 2,
+   "raw": "TRANY",
+   "meaning": "transmission",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-330",
+   "company": "A",
+   "i": 1,
+   "raw": "INV/REPAIR",
+   "meaning": "investigate / repair",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-333",
+   "company": "A",
+   "i": 1,
+   "raw": "REPL",
+   "meaning": "replace",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    4,
+    5,
+    6,
+    7,
+    10
+   ]
+  },
+  {
+   "id": "A-test-333",
+   "company": "A",
+   "i": 4,
+   "raw": "CAB",
+   "meaning": "cabin",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1
+   ]
+  },
+  {
+   "id": "A-test-335",
+   "company": "A",
+   "i": 1,
+   "raw": "REPL",
+   "meaning": "replace",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    4,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "A-test-340",
+   "company": "A",
+   "i": 3,
+   "raw": "LOCK",
+   "meaning": "lockout",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    4,
+    7
+   ]
+  },
+  {
+   "id": "A-test-352",
+   "company": "A",
+   "i": 2,
+   "raw": "Hydrolic",
+   "meaning": "hydraulic",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-360",
+   "company": "A",
+   "i": 5,
+   "raw": "r",
+   "meaning": "right",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-360",
+   "company": "A",
+   "i": 6,
+   "raw": "term",
+   "meaning": "terminal",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-365",
+   "company": "A",
+   "i": 1,
+   "raw": "INV",
+   "meaning": "investigate",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-365",
+   "company": "A",
+   "i": 2,
+   "raw": "REP",
+   "meaning": "repair",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    4,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "A-test-365",
+   "company": "A",
+   "i": 4,
+   "raw": "SHUT",
+   "meaning": "shutdown",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "A-test-369",
+   "company": "A",
+   "i": 1,
+   "raw": "REPL",
+   "meaning": "replace",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    4,
+    5
+   ]
+  },
+  {
+   "id": "A-test-377",
+   "company": "A",
+   "i": 1,
+   "raw": "REPL",
+   "meaning": "replace",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    6,
+    7,
+    8
+   ]
+  },
+  {
+   "id": "A-test-377",
+   "company": "A",
+   "i": 2,
+   "raw": "L/H",
+   "meaning": "left hand",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    3,
+    4,
+    6
+   ]
+  },
+  {
+   "id": "A-test-377",
+   "company": "A",
+   "i": 4,
+   "raw": "CYL",
+   "meaning": "cylinder",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    4,
+    6,
+    7,
+    10
+   ]
+  },
+  {
+   "id": "A-test-380",
+   "company": "A",
+   "i": 3,
+   "raw": "PRES",
+   "meaning": "pressure",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-387",
+   "company": "A",
+   "i": 1,
+   "raw": "REPA",
+   "meaning": "repair",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-387",
+   "company": "A",
+   "i": 2,
+   "raw": "INTER",
+   "meaning": "internal",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-391",
+   "company": "A",
+   "i": 5,
+   "raw": "intermittent",
+   "meaning": "intermittently",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-392",
+   "company": "A",
+   "i": 1,
+   "raw": "REPL",
+   "meaning": "replace",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    7,
+    9
+   ]
+  },
+  {
+   "id": "A-test-392",
+   "company": "A",
+   "i": 2,
+   "raw": "R/H",
+   "meaning": "right hand",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    6,
+    7,
+    9
+   ]
+  },
+  {
+   "id": "A-test-392",
+   "company": "A",
+   "i": 4,
+   "raw": "CYL",
+   "meaning": "cylinder",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    5,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "A-test-392",
+   "company": "A",
+   "i": 5,
+   "raw": "CROSS",
+   "meaning": "crossover",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-393",
+   "company": "A",
+   "i": 1,
+   "raw": "REPL",
+   "meaning": "replace",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-393",
+   "company": "A",
+   "i": 2,
+   "raw": "HYD",
+   "meaning": "hydraulic",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    3,
+    4,
+    5,
+    7,
+    9
+   ]
+  },
+  {
+   "id": "A-test-399",
+   "company": "A",
+   "i": 0,
+   "raw": "CC708REPAIR",
+   "meaning": "repair",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "A-test-399",
+   "company": "A",
+   "i": 2,
+   "raw": "OGA#",
+   "meaning": "OGA",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-002",
+   "company": "B",
+   "i": 1,
+   "raw": "RH",
+   "meaning": "right hand",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10
+   ]
+  },
+  {
+   "id": "B-test-002",
+   "company": "B",
+   "i": 3,
+   "raw": "carier",
+   "meaning": "carrier",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-013",
+   "company": "B",
+   "i": 1,
+   "raw": "con",
+   "meaning": "conditioner",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-013",
+   "company": "B",
+   "i": 3,
+   "raw": "u/s",
+   "meaning": "unserviceable",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-021",
+   "company": "B",
+   "i": 1,
+   "raw": "Hyd",
+   "meaning": "hydraulic",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-021",
+   "company": "B",
+   "i": 2,
+   "raw": "Cyl",
+   "meaning": "cylinder",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-021",
+   "company": "B",
+   "i": 5,
+   "raw": "RHT",
+   "meaning": "right",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    5,
+    10
+   ]
+  },
+  {
+   "id": "B-test-022",
+   "company": "B",
+   "i": 1,
+   "raw": "C/O",
+   "meaning": "change out",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    7,
+    10
+   ]
+  },
+  {
+   "id": "B-test-022",
+   "company": "B",
+   "i": 2,
+   "raw": "U/S",
+   "meaning": "unserviceable",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8
+   ]
+  },
+  {
+   "id": "B-test-022",
+   "company": "B",
+   "i": 3,
+   "raw": "Cab",
+   "meaning": "cabin",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    5,
+    6,
+    9
+   ]
+  },
+  {
+   "id": "B-test-026",
+   "company": "B",
+   "i": 5,
+   "raw": "DEVELOPEDy",
+   "meaning": "developed",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-027",
+   "company": "B",
+   "i": 1,
+   "raw": "Hyd",
+   "meaning": "hydraulic",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    4,
+    6
+   ]
+  },
+  {
+   "id": "B-test-027",
+   "company": "B",
+   "i": 4,
+   "raw": "RHT",
+   "meaning": "right",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    6
+   ]
+  },
+  {
+   "id": "B-test-027",
+   "company": "B",
+   "i": 5,
+   "raw": "FRNTuri",
+   "meaning": "front",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-030",
+   "company": "B",
+   "i": 1,
+   "raw": "Cab",
+   "meaning": "cabin",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    4,
+    5,
+    7
+   ]
+  },
+  {
+   "id": "B-test-030",
+   "company": "B",
+   "i": 4,
+   "raw": "Sw",
+   "meaning": "switch",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-030",
+   "company": "B",
+   "i": 6,
+   "raw": "U/S",
+   "meaning": "unserviceable",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    3,
+    4,
+    7,
+    9
+   ]
+  },
+  {
+   "id": "B-test-034",
+   "company": "B",
+   "i": 0,
+   "raw": "1000H",
+   "meaning": "hour",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    10
+   ]
+  },
+  {
+   "id": "B-test-034",
+   "company": "B",
+   "i": 1,
+   "raw": "Mech",
+   "meaning": "mechanical",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    4,
+    5,
+    7,
+    8,
+    10
+   ]
+  },
+  {
+   "id": "B-test-036",
+   "company": "B",
+   "i": 1,
+   "raw": "1000hr",
+   "meaning": "hour",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    6
+   ]
+  },
+  {
+   "id": "B-test-036",
+   "company": "B",
+   "i": 3,
+   "raw": "&",
+   "meaning": "and",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    6
+   ]
+  },
+  {
+   "id": "B-test-042",
+   "company": "B",
+   "i": 0,
+   "raw": "1000H",
+   "meaning": "hour",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-042",
+   "company": "B",
+   "i": 1,
+   "raw": "Mech",
+   "meaning": "mechanical",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-042",
+   "company": "B",
+   "i": 2,
+   "raw": "Svce",
+   "meaning": "service",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-042",
+   "company": "B",
+   "i": 3,
+   "raw": "Wtr",
+   "meaning": "water",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7
+   ]
+  },
+  {
+   "id": "B-test-044",
+   "company": "B",
+   "i": 2,
+   "raw": "hyd",
+   "meaning": "hydraulic",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    3,
+    9
+   ]
+  },
+  {
+   "id": "B-test-044",
+   "company": "B",
+   "i": 5,
+   "raw": "rockbraker",
+   "meaning": "rockbreaker",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-045",
+   "company": "B",
+   "i": 3,
+   "raw": "u/s",
+   "meaning": "unserviceable",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    5,
+    7
+   ]
+  },
+  {
+   "id": "B-test-048",
+   "company": "B",
+   "i": 1,
+   "raw": "P/load",
+   "meaning": "payload",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-059",
+   "company": "B",
+   "i": 1,
+   "raw": "Middle/side",
+   "meaning": "middle / side",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-059",
+   "company": "B",
+   "i": 5,
+   "raw": "RH",
+   "meaning": "right hand",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-073",
+   "company": "B",
+   "i": 0,
+   "raw": "1000H",
+   "meaning": "hour",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-073",
+   "company": "B",
+   "i": 1,
+   "raw": "Mech",
+   "meaning": "mechanical",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-073",
+   "company": "B",
+   "i": 2,
+   "raw": "Insp",
+   "meaning": "inspection",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-073",
+   "company": "B",
+   "i": 3,
+   "raw": "TRK",
+   "meaning": "track",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "id": "B-test-073",
+   "company": "B",
+   "i": 4,
+   "raw": "Roll",
+   "meaning": "roller",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    4,
+    9
+   ]
+  },
+  {
+   "id": "B-test-073",
+   "company": "B",
+   "i": 6,
+   "raw": "RH",
+   "meaning": "right hand",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "B-test-074",
+   "company": "B",
+   "i": 0,
+   "raw": "AM/FM",
+   "meaning": "AM / FM",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    1
+   ]
+  },
+  {
+   "id": "B-test-078",
+   "company": "B",
+   "i": 0,
+   "raw": "1000H",
+   "meaning": "hour",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-078",
+   "company": "B",
+   "i": 1,
+   "raw": "Insp",
+   "meaning": "inspection",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-078",
+   "company": "B",
+   "i": 2,
+   "raw": "Hyd",
+   "meaning": "hydraulic",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-078",
+   "company": "B",
+   "i": 3,
+   "raw": "Cyl",
+   "meaning": "cylinder",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-078",
+   "company": "B",
+   "i": 6,
+   "raw": "RH",
+   "meaning": "right hand",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    3,
+    7,
+    8
+   ]
+  },
+  {
+   "id": "B-test-079",
+   "company": "B",
+   "i": 1,
+   "raw": "R/Rear",
+   "meaning": "right rear",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-080",
+   "company": "B",
+   "i": 1,
+   "raw": "Diff",
+   "meaning": "differential",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    8
+   ]
+  },
+  {
+   "id": "B-test-082",
+   "company": "B",
+   "i": 2,
+   "raw": "RHF",
+   "meaning": "right hand front",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-089",
+   "company": "B",
+   "i": 4,
+   "raw": "RH",
+   "meaning": "right hand",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    4,
+    9
+   ]
+  },
+  {
+   "id": "B-test-093",
+   "company": "B",
+   "i": 2,
+   "raw": "precleaner",
+   "meaning": "pre-cleaner",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-094",
+   "company": "B",
+   "i": 5,
+   "raw": "u/s",
+   "meaning": "unserviceable",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    4,
+    5,
+    8
+   ]
+  },
+  {
+   "id": "B-test-095",
+   "company": "B",
+   "i": 0,
+   "raw": "1000H",
+   "meaning": "hour",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-095",
+   "company": "B",
+   "i": 1,
+   "raw": "Insp",
+   "meaning": "inspection",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-095",
+   "company": "B",
+   "i": 2,
+   "raw": "Hyd",
+   "meaning": "hydraulic",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-095",
+   "company": "B",
+   "i": 3,
+   "raw": "Cyl",
+   "meaning": "cylinder",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-095",
+   "company": "B",
+   "i": 6,
+   "raw": "LH",
+   "meaning": "left hand",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    7
+   ]
+  },
+  {
+   "id": "B-test-102",
+   "company": "B",
+   "i": 2,
+   "raw": "ENG",
+   "meaning": "engine",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    3,
+    5,
+    9
+   ]
+  },
+  {
+   "id": "B-test-102",
+   "company": "B",
+   "i": 7,
+   "raw": "eng",
+   "meaning": "engine",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    3,
+    5,
+    9
+   ]
+  },
+  {
+   "id": "B-test-109",
+   "company": "B",
+   "i": 3,
+   "raw": "RH",
+   "meaning": "right hand",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    10
+   ]
+  },
+  {
+   "id": "B-test-109",
+   "company": "B",
+   "i": 4,
+   "raw": "Eng",
+   "meaning": "engine",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    8,
+    10
+   ]
+  },
+  {
+   "id": "B-test-110",
+   "company": "B",
+   "i": 5,
+   "raw": "&",
+   "meaning": "and",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    5,
+    9
+   ]
+  },
+  {
+   "id": "B-test-113",
+   "company": "B",
+   "i": 4,
+   "raw": "rotor",
+   "meaning": "rotochamber",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-118",
+   "company": "B",
+   "i": 2,
+   "raw": "u/s",
+   "meaning": "unserviceable",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    6
+   ]
+  },
+  {
+   "id": "B-test-118",
+   "company": "B",
+   "i": 4,
+   "raw": "cyl",
+   "meaning": "cylinder",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    6,
+    10
+   ]
+  },
+  {
+   "id": "B-test-119",
+   "company": "B",
+   "i": 0,
+   "raw": "500H",
+   "meaning": "hour",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-119",
+   "company": "B",
+   "i": 1,
+   "raw": "Mech",
+   "meaning": "mechanical",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-119",
+   "company": "B",
+   "i": 2,
+   "raw": "Svce",
+   "meaning": "service",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-121",
+   "company": "B",
+   "i": 1,
+   "raw": "RT/LF",
+   "meaning": "right / left",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-121",
+   "company": "B",
+   "i": 2,
+   "raw": "Susp",
+   "meaning": "suspension",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    9
+   ]
+  },
+  {
+   "id": "B-test-121",
+   "company": "B",
+   "i": 5,
+   "raw": "err",
+   "meaning": "error",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "B-test-122",
+   "company": "B",
+   "i": 2,
+   "raw": "U/S",
+   "meaning": "unserviceable",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8
+   ]
+  },
+  {
+   "id": "B-test-136",
+   "company": "B",
+   "i": 1,
+   "raw": "Hyd",
+   "meaning": "hydraulic",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-136",
+   "company": "B",
+   "i": 2,
+   "raw": "Cyl",
+   "meaning": "cylinder",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-143",
+   "company": "B",
+   "i": 3,
+   "raw": "aux",
+   "meaning": "auxiliary",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "B-test-144",
+   "company": "B",
+   "i": 1,
+   "raw": "RH",
+   "meaning": "right hand",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3
+   ]
+  },
+  {
+   "id": "B-test-145",
+   "company": "B",
+   "i": 1,
+   "raw": "1000hr",
+   "meaning": "hour",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    9
+   ]
+  },
+  {
+   "id": "B-test-145",
+   "company": "B",
+   "i": 3,
+   "raw": "&",
+   "meaning": "and",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-151",
+   "company": "B",
+   "i": 1,
+   "raw": "Trans",
+   "meaning": "transmission",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    4,
+    5
+   ]
+  },
+  {
+   "id": "B-test-155",
+   "company": "B",
+   "i": 2,
+   "raw": "Eng",
+   "meaning": "engine",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-165",
+   "company": "B",
+   "i": 0,
+   "raw": "3M",
+   "meaning": "month",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-165",
+   "company": "B",
+   "i": 1,
+   "raw": "Mech",
+   "meaning": "mechanical",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-165",
+   "company": "B",
+   "i": 2,
+   "raw": "Cond",
+   "meaning": "condition",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-165",
+   "company": "B",
+   "i": 4,
+   "raw": "Stut",
+   "meaning": "stud",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-168",
+   "company": "B",
+   "i": 0,
+   "raw": "1000H",
+   "meaning": "hour",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-168",
+   "company": "B",
+   "i": 1,
+   "raw": "Mech",
+   "meaning": "mechanical",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    6,
+    10
+   ]
+  },
+  {
+   "id": "B-test-168",
+   "company": "B",
+   "i": 2,
+   "raw": "Insp",
+   "meaning": "inspection",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-168",
+   "company": "B",
+   "i": 3,
+   "raw": "EQL",
+   "meaning": "equaliser",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    10
+   ]
+  },
+  {
+   "id": "B-test-175",
+   "company": "B",
+   "i": 0,
+   "raw": "500H",
+   "meaning": "hour",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-175",
+   "company": "B",
+   "i": 1,
+   "raw": "Mech",
+   "meaning": "mechanical",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-175",
+   "company": "B",
+   "i": 2,
+   "raw": "Svce",
+   "meaning": "service",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-177",
+   "company": "B",
+   "i": 1,
+   "raw": "c/o",
+   "meaning": "change out",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    4,
+    6
+   ]
+  },
+  {
+   "id": "B-test-177",
+   "company": "B",
+   "i": 3,
+   "raw": "pos",
+   "meaning": "position",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-183",
+   "company": "B",
+   "i": 3,
+   "raw": "RHT",
+   "meaning": "right",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-183",
+   "company": "B",
+   "i": 4,
+   "raw": "FRNT",
+   "meaning": "front",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-193",
+   "company": "B",
+   "i": 1,
+   "raw": "Hyd",
+   "meaning": "hydraulic",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "B-test-193",
+   "company": "B",
+   "i": 5,
+   "raw": "POS",
+   "meaning": "position",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    3,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-194",
+   "company": "B",
+   "i": 1,
+   "raw": "AM/FM",
+   "meaning": "AM / FM",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    9
+   ]
+  },
+  {
+   "id": "B-test-197",
+   "company": "B",
+   "i": 2,
+   "raw": "AirCon",
+   "meaning": "air conditioner",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    7,
+    9
+   ]
+  },
+  {
+   "id": "B-test-200",
+   "company": "B",
+   "i": 0,
+   "raw": "2000H",
+   "meaning": "hour",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-200",
+   "company": "B",
+   "i": 1,
+   "raw": "Mech",
+   "meaning": "mechanical",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-200",
+   "company": "B",
+   "i": 2,
+   "raw": "Svce",
+   "meaning": "service",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    9
+   ]
+  },
+  {
+   "id": "B-test-204",
+   "company": "B",
+   "i": 0,
+   "raw": "1000H",
+   "meaning": "hour",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-204",
+   "company": "B",
+   "i": 1,
+   "raw": "Mech",
+   "meaning": "mechanical",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ]
+  },
+  {
+   "id": "B-test-204",
+   "company": "B",
+   "i": 2,
+   "raw": "Insp",
+   "meaning": "inspection",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-204",
+   "company": "B",
+   "i": 3,
+   "raw": "Hyd",
+   "meaning": "hydraulic",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-204",
+   "company": "B",
+   "i": 4,
+   "raw": "Cyl",
+   "meaning": "cylinder",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9
+   ]
+  },
+  {
+   "id": "B-test-204",
+   "company": "B",
+   "i": 6,
+   "raw": "LH",
+   "meaning": "left hand",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    6,
+    7,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-205",
+   "company": "B",
+   "i": 0,
+   "raw": "6M",
+   "meaning": "month",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-205",
+   "company": "B",
+   "i": 1,
+   "raw": "Mech",
+   "meaning": "mechanical",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-205",
+   "company": "B",
+   "i": 2,
+   "raw": "Insp",
+   "meaning": "inspection",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-211",
+   "company": "B",
+   "i": 5,
+   "raw": "hos",
+   "meaning": "hose",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-213",
+   "company": "B",
+   "i": 0,
+   "raw": "A/C",
+   "meaning": "air conditioner",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    4
+   ]
+  },
+  {
+   "id": "B-test-215",
+   "company": "B",
+   "i": 3,
+   "raw": "aux",
+   "meaning": "auxiliary",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    4,
+    5
+   ]
+  },
+  {
+   "id": "B-test-217",
+   "company": "B",
+   "i": 2,
+   "raw": "a/con",
+   "meaning": "air conditioner",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    7
+   ]
+  },
+  {
+   "id": "B-test-217",
+   "company": "B",
+   "i": 3,
+   "raw": "comp",
+   "meaning": "compressor",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-219",
+   "company": "B",
+   "i": 2,
+   "raw": "C/O",
+   "meaning": "change out",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    7
+   ]
+  },
+  {
+   "id": "B-test-220",
+   "company": "B",
+   "i": 3,
+   "raw": "u/s",
+   "meaning": "unserviceable",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-222",
+   "company": "B",
+   "i": 3,
+   "raw": "Cab",
+   "meaning": "cabin",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    4,
+    7
+   ]
+  },
+  {
+   "id": "B-test-224",
+   "company": "B",
+   "i": 0,
+   "raw": "1000H",
+   "meaning": "hour",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-224",
+   "company": "B",
+   "i": 1,
+   "raw": "Mech",
+   "meaning": "mechanical",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-224",
+   "company": "B",
+   "i": 2,
+   "raw": "Svce",
+   "meaning": "service",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-230",
+   "company": "B",
+   "i": 0,
+   "raw": "2000H",
+   "meaning": "hour",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-230",
+   "company": "B",
+   "i": 1,
+   "raw": "Mech",
+   "meaning": "mechanical",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-230",
+   "company": "B",
+   "i": 2,
+   "raw": "Svce",
+   "meaning": "service",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-231",
+   "company": "B",
+   "i": 2,
+   "raw": "Low/Isolator",
+   "meaning": "low / isolator",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-233",
+   "company": "B",
+   "i": 2,
+   "raw": "con",
+   "meaning": "conditioner",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    5,
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "B-test-233",
+   "company": "B",
+   "i": 4,
+   "raw": "us",
+   "meaning": "unserviceable",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-235",
+   "company": "B",
+   "i": 2,
+   "raw": "pos",
+   "meaning": "position",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-235",
+   "company": "B",
+   "i": 4,
+   "raw": "4&5",
+   "meaning": "and",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    4,
+    5,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "B-test-235",
+   "company": "B",
+   "i": 6,
+   "raw": "&",
+   "meaning": "and",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    4,
+    5,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "B-test-235",
+   "company": "B",
+   "i": 7,
+   "raw": "3&4",
+   "meaning": "and",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    4,
+    5,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "B-test-237",
+   "company": "B",
+   "i": 3,
+   "raw": "compresor",
+   "meaning": "compressor",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-237",
+   "company": "B",
+   "i": 6,
+   "raw": "REQ",
+   "meaning": "required",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-241",
+   "company": "B",
+   "i": 0,
+   "raw": "4000H",
+   "meaning": "hour",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-241",
+   "company": "B",
+   "i": 1,
+   "raw": "Mech",
+   "meaning": "mechanical",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-241",
+   "company": "B",
+   "i": 2,
+   "raw": "Svce",
+   "meaning": "service",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-241",
+   "company": "B",
+   "i": 3,
+   "raw": "Eng",
+   "meaning": "engine",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "B-test-254",
+   "company": "B",
+   "i": 3,
+   "raw": "cont",
+   "meaning": "continuously",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-257",
+   "company": "B",
+   "i": 3,
+   "raw": "RHT",
+   "meaning": "right",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-261",
+   "company": "B",
+   "i": 1,
+   "raw": "250hr",
+   "meaning": "hour",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-263",
+   "company": "B",
+   "i": 1,
+   "raw": "BRK/AIR",
+   "meaning": "brake / air",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-263",
+   "company": "B",
+   "i": 3,
+   "raw": "pressur",
+   "meaning": "pressure",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-266",
+   "company": "B",
+   "i": 3,
+   "raw": "precleaner",
+   "meaning": "pre-cleaner",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-274",
+   "company": "B",
+   "i": 3,
+   "raw": "RHT",
+   "meaning": "right",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-274",
+   "company": "B",
+   "i": 4,
+   "raw": "FRNT",
+   "meaning": "front",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-275",
+   "company": "B",
+   "i": 2,
+   "raw": "L/H",
+   "meaning": "left hand",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-275",
+   "company": "B",
+   "i": 4,
+   "raw": "CYL",
+   "meaning": "cylinder",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    4
+   ]
+  },
+  {
+   "id": "B-test-276",
+   "company": "B",
+   "i": 0,
+   "raw": "1000H",
+   "meaning": "hour",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-276",
+   "company": "B",
+   "i": 1,
+   "raw": "Insp",
+   "meaning": "inspection",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-276",
+   "company": "B",
+   "i": 2,
+   "raw": "Hyd",
+   "meaning": "hydraulic",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-276",
+   "company": "B",
+   "i": 3,
+   "raw": "Cyl",
+   "meaning": "cylinder",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-276",
+   "company": "B",
+   "i": 6,
+   "raw": "LH",
+   "meaning": "left hand",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    4
+   ]
+  },
+  {
+   "id": "B-test-281",
+   "company": "B",
+   "i": 0,
+   "raw": "1000H",
+   "meaning": "hour",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-281",
+   "company": "B",
+   "i": 1,
+   "raw": "Mech",
+   "meaning": "mechanical",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-281",
+   "company": "B",
+   "i": 2,
+   "raw": "Insp",
+   "meaning": "inspection",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-282",
+   "company": "B",
+   "i": 1,
+   "raw": "INJ",
+   "meaning": "injector",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-282",
+   "company": "B",
+   "i": 2,
+   "raw": "ERR'S",
+   "meaning": "errors",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-285",
+   "company": "B",
+   "i": 3,
+   "raw": "LFT",
+   "meaning": "left",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "B-test-285",
+   "company": "B",
+   "i": 4,
+   "raw": "FRNT",
+   "meaning": "front",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-295",
+   "company": "B",
+   "i": 0,
+   "raw": "1000H",
+   "meaning": "hour",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-295",
+   "company": "B",
+   "i": 1,
+   "raw": "Mech",
+   "meaning": "mechanical",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-295",
+   "company": "B",
+   "i": 2,
+   "raw": "Insp",
+   "meaning": "inspection",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-295",
+   "company": "B",
+   "i": 4,
+   "raw": "VLV",
+   "meaning": "valve",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    7,
+    10
+   ]
+  },
+  {
+   "id": "B-test-313",
+   "company": "B",
+   "i": 1,
+   "raw": "R/side",
+   "meaning": "right side",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-323",
+   "company": "B",
+   "i": 0,
+   "raw": "1000H",
+   "meaning": "hour",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-323",
+   "company": "B",
+   "i": 1,
+   "raw": "Mech",
+   "meaning": "mechanical",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-323",
+   "company": "B",
+   "i": 2,
+   "raw": "Svce",
+   "meaning": "service",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-325",
+   "company": "B",
+   "i": 2,
+   "raw": "C/O",
+   "meaning": "change out",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    9
+   ]
+  },
+  {
+   "id": "B-test-333",
+   "company": "B",
+   "i": 0,
+   "raw": "COMP",
+   "meaning": "compressor",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-340",
+   "company": "B",
+   "i": 1,
+   "raw": "Mech",
+   "meaning": "mechanical",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "B-test-340",
+   "company": "B",
+   "i": 2,
+   "raw": "Repl",
+   "meaning": "replace",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "B-test-340",
+   "company": "B",
+   "i": 4,
+   "raw": "Inject",
+   "meaning": "injector",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "B-test-343",
+   "company": "B",
+   "i": 4,
+   "raw": "U/S",
+   "meaning": "unserviceable",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    8,
+    10
+   ]
+  },
+  {
+   "id": "B-test-345",
+   "company": "B",
+   "i": 2,
+   "raw": "A/C",
+   "meaning": "air conditioner",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    3,
+    5
+   ]
+  },
+  {
+   "id": "B-test-346",
+   "company": "B",
+   "i": 1,
+   "raw": "Uni's",
+   "meaning": "universal joints",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    3,
+    4,
+    6,
+    8,
+    10
+   ]
+  },
+  {
+   "id": "B-test-346",
+   "company": "B",
+   "i": 2,
+   "raw": "Eng-Pump",
+   "meaning": "engine - pump",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    3,
+    4,
+    6,
+    8,
+    10
+   ]
+  },
+  {
+   "id": "B-test-346",
+   "company": "B",
+   "i": 3,
+   "raw": "Drv",
+   "meaning": "drive",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    4,
+    6,
+    8,
+    10
+   ]
+  },
+  {
+   "id": "B-test-347",
+   "company": "B",
+   "i": 3,
+   "raw": "l/h/s",
+   "meaning": "left hand side",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-350",
+   "company": "B",
+   "i": 0,
+   "raw": "Perspects",
+   "meaning": "Perspex",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-351",
+   "company": "B",
+   "i": 2,
+   "raw": "atercooler",
+   "meaning": "aftercooler",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-351",
+   "company": "B",
+   "i": 3,
+   "raw": "temp",
+   "meaning": "temperature",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-351",
+   "company": "B",
+   "i": 4,
+   "raw": "err",
+   "meaning": "error",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    4,
+    6,
+    7,
+    9
+   ]
+  },
+  {
+   "id": "B-test-352",
+   "company": "B",
+   "i": 1,
+   "raw": "Re",
+   "meaning": "reseal",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-354",
+   "company": "B",
+   "i": 2,
+   "raw": "spd",
+   "meaning": "speed",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-358",
+   "company": "B",
+   "i": 2,
+   "raw": "u/s",
+   "meaning": "unserviceable",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    4
+   ]
+  },
+  {
+   "id": "B-test-359",
+   "company": "B",
+   "i": 2,
+   "raw": "Pos",
+   "meaning": "position",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-363",
+   "company": "B",
+   "i": 1,
+   "raw": "C/O",
+   "meaning": "change out",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    5,
+    6
+   ]
+  },
+  {
+   "id": "B-test-363",
+   "company": "B",
+   "i": 2,
+   "raw": "orings",
+   "meaning": "o-rings",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-364",
+   "company": "B",
+   "i": 4,
+   "raw": "REPL",
+   "meaning": "replace",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-365",
+   "company": "B",
+   "i": 1,
+   "raw": "250hr",
+   "meaning": "hour",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    5,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "B-test-365",
+   "company": "B",
+   "i": 4,
+   "raw": "Out/stding",
+   "meaning": "outstanding",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    5
+   ]
+  },
+  {
+   "id": "B-test-366",
+   "company": "B",
+   "i": 2,
+   "raw": "RHR",
+   "meaning": "right hand rear",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-366",
+   "company": "B",
+   "i": 3,
+   "raw": "Cab",
+   "meaning": "cabin",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    3
+   ]
+  },
+  {
+   "id": "B-test-379",
+   "company": "B",
+   "i": 1,
+   "raw": "C/O",
+   "meaning": "change out",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-381",
+   "company": "B",
+   "i": 0,
+   "raw": "1000H",
+   "meaning": "hour",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-381",
+   "company": "B",
+   "i": 1,
+   "raw": "Mech",
+   "meaning": "mechanical",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-381",
+   "company": "B",
+   "i": 2,
+   "raw": "Insp",
+   "meaning": "inspection",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "B-test-382",
+   "company": "B",
+   "i": 1,
+   "raw": "c/o",
+   "meaning": "change out",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    3,
+    4,
+    10
+   ]
+  },
+  {
+   "id": "B-test-382",
+   "company": "B",
+   "i": 2,
+   "raw": "l/hand",
+   "meaning": "left hand",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    3,
+    8
+   ]
+  },
+  {
+   "id": "B-test-382",
+   "company": "B",
+   "i": 5,
+   "raw": "o'ring",
+   "meaning": "o-ring",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    1
+   ]
+  },
+  {
+   "id": "B-test-383",
+   "company": "B",
+   "i": 1,
+   "raw": "a/c",
+   "meaning": "air conditioner",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "B-test-397",
+   "company": "B",
+   "i": 1,
+   "raw": "Cab",
+   "meaning": "cabin",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    6
+   ]
+  },
+  {
+   "id": "B-test-397",
+   "company": "B",
+   "i": 3,
+   "raw": "req's",
+   "meaning": "requires",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-399",
+   "company": "B",
+   "i": 0,
+   "raw": "VU1914Install",
+   "meaning": "install",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "B-test-399",
+   "company": "B",
+   "i": 1,
+   "raw": "precleaner",
+   "meaning": "pre-cleaner",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "C-test-009",
+   "company": "C",
+   "i": 0,
+   "raw": "DMG",
+   "meaning": "damage",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    6
+   ]
+  },
+  {
+   "id": "C-test-009",
+   "company": "C",
+   "i": 1,
+   "raw": "L/H",
+   "meaning": "left hand",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    3
+   ]
+  },
+  {
+   "id": "C-test-011",
+   "company": "C",
+   "i": 1,
+   "raw": "HV",
+   "meaning": "high voltage",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2
+   ]
+  },
+  {
+   "id": "C-test-015",
+   "company": "C",
+   "i": 2,
+   "raw": "#6",
+   "meaning": "number",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-015",
+   "company": "C",
+   "i": 4,
+   "raw": "c/b",
+   "meaning": "circuit breaker",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-020",
+   "company": "C",
+   "i": 0,
+   "raw": "mech",
+   "meaning": "mechanical",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-025",
+   "company": "C",
+   "i": 4,
+   "raw": "O/Load",
+   "meaning": "overload",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-026",
+   "company": "C",
+   "i": 5,
+   "raw": "Week",
+   "meaning": "weekend",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-035",
+   "company": "C",
+   "i": 2,
+   "raw": "Overhaul-Mechanical",
+   "meaning": "overhaul - mechanical",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "C-test-035",
+   "company": "C",
+   "i": 3,
+   "raw": "BKT",
+   "meaning": "bucket",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    5,
+    6,
+    7
+   ]
+  },
+  {
+   "id": "C-test-035",
+   "company": "C",
+   "i": 4,
+   "raw": "#",
+   "meaning": "number",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    5,
+    6,
+    7
+   ]
+  },
+  {
+   "id": "C-test-037",
+   "company": "C",
+   "i": 5,
+   "raw": "&",
+   "meaning": "and",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-038",
+   "company": "C",
+   "i": 3,
+   "raw": "AssistanceDragline",
+   "meaning": "assistance dragline",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-040",
+   "company": "C",
+   "i": 0,
+   "raw": "RHS",
+   "meaning": "right hand side",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "C-test-040",
+   "company": "C",
+   "i": 5,
+   "raw": "U/S",
+   "meaning": "unserviceable",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    5,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "C-test-044",
+   "company": "C",
+   "i": 4,
+   "raw": "W44",
+   "meaning": "week",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "C-test-045",
+   "company": "C",
+   "i": 1,
+   "raw": "C/out",
+   "meaning": "change out",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-045",
+   "company": "C",
+   "i": 2,
+   "raw": "pos",
+   "meaning": "position",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    5,
+    8,
+    10
+   ]
+  },
+  {
+   "id": "C-test-047",
+   "company": "C",
+   "i": 0,
+   "raw": "RHR",
+   "meaning": "right hand rear",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    1,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "C-test-047",
+   "company": "C",
+   "i": 1,
+   "raw": "tremmel",
+   "meaning": "trammel",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    2
+   ]
+  },
+  {
+   "id": "C-test-048",
+   "company": "C",
+   "i": 3,
+   "raw": "throgh",
+   "meaning": "through",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-055",
+   "company": "C",
+   "i": 1,
+   "raw": "&",
+   "meaning": "and",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    7
+   ]
+  },
+  {
+   "id": "C-test-055",
+   "company": "C",
+   "i": 3,
+   "raw": "hyd",
+   "meaning": "hydraulic",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    5,
+    7
+   ]
+  },
+  {
+   "id": "C-test-055",
+   "company": "C",
+   "i": 6,
+   "raw": "RH",
+   "meaning": "right hand",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    6,
+    8,
+    10
+   ]
+  },
+  {
+   "id": "C-test-055",
+   "company": "C",
+   "i": 7,
+   "raw": "steer",
+   "meaning": "steering",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-056",
+   "company": "C",
+   "i": 0,
+   "raw": "W/Place",
+   "meaning": "workplace",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "C-test-056",
+   "company": "C",
+   "i": 1,
+   "raw": "Insp",
+   "meaning": "inspection",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "C-test-056",
+   "company": "C",
+   "i": 5,
+   "raw": "&",
+   "meaning": "and",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "C-test-062",
+   "company": "C",
+   "i": 1,
+   "raw": "A",
+   "meaning": "A-frame",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "C-test-066",
+   "company": "C",
+   "i": 0,
+   "raw": "AM/FM",
+   "meaning": "AM / FM",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    7
+   ]
+  },
+  {
+   "id": "C-test-072",
+   "company": "C",
+   "i": 4,
+   "raw": "U/S",
+   "meaning": "unserviceable",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    3,
+    5,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "C-test-072",
+   "company": "C",
+   "i": 5,
+   "raw": "Replac",
+   "meaning": "replace",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-083",
+   "company": "C",
+   "i": 0,
+   "raw": "`afe",
+   "meaning": "safe",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-084",
+   "company": "C",
+   "i": 4,
+   "raw": "Hardening-Mech",
+   "meaning": "hardening - mechanical",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-085",
+   "company": "C",
+   "i": 4,
+   "raw": "u/s",
+   "meaning": "unserviceable",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    4,
+    7,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "C-test-087",
+   "company": "C",
+   "i": 1,
+   "raw": "re-route",
+   "meaning": "reroute",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    1,
+    4,
+    10
+   ]
+  },
+  {
+   "id": "C-test-090",
+   "company": "C",
+   "i": 3,
+   "raw": "r/h",
+   "meaning": "right hand",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-094",
+   "company": "C",
+   "i": 2,
+   "raw": "Motor/Blower",
+   "meaning": "motor / blower",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    1,
+    3,
+    7,
+    8
+   ]
+  },
+  {
+   "id": "C-test-094",
+   "company": "C",
+   "i": 4,
+   "raw": "Insp",
+   "meaning": "inspection",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3
+   ]
+  },
+  {
+   "id": "C-test-096",
+   "company": "C",
+   "i": 6,
+   "raw": "cab",
+   "meaning": "cabin",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    3,
+    6
+   ]
+  },
+  {
+   "id": "C-test-096",
+   "company": "C",
+   "i": 7,
+   "raw": "u/s",
+   "meaning": "unserviceable",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    5,
+    7,
+    9
+   ]
+  },
+  {
+   "id": "C-test-100",
+   "company": "C",
+   "i": 3,
+   "raw": "&",
+   "meaning": "and",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    6,
+    9
+   ]
+  },
+  {
+   "id": "C-test-100",
+   "company": "C",
+   "i": 7,
+   "raw": "rhs",
+   "meaning": "right hand side",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-101",
+   "company": "C",
+   "i": 3,
+   "raw": "cab",
+   "meaning": "cabin",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    3,
+    5,
+    6,
+    7
+   ]
+  },
+  {
+   "id": "C-test-106",
+   "company": "C",
+   "i": 0,
+   "raw": "Clean/Inspect",
+   "meaning": "clean / inspect",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    5
+   ]
+  },
+  {
+   "id": "C-test-109",
+   "company": "C",
+   "i": 0,
+   "raw": "RH",
+   "meaning": "right hand",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    7,
+    10
+   ]
+  },
+  {
+   "id": "C-test-111",
+   "company": "C",
+   "i": 2,
+   "raw": "r/h",
+   "meaning": "right hand",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2
+   ]
+  },
+  {
+   "id": "C-test-112",
+   "company": "C",
+   "i": 3,
+   "raw": "pinon",
+   "meaning": "pinion",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-121",
+   "company": "C",
+   "i": 0,
+   "raw": "RHR",
+   "meaning": "right hand rear",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-121",
+   "company": "C",
+   "i": 3,
+   "raw": "&",
+   "meaning": "and",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-123",
+   "company": "C",
+   "i": 1,
+   "raw": "Horiz",
+   "meaning": "horizontal",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    3
+   ]
+  },
+  {
+   "id": "C-test-123",
+   "company": "C",
+   "i": 4,
+   "raw": "C/Out-Mech",
+   "meaning": "change out - mechanical",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    5,
+    6,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "C-test-124",
+   "company": "C",
+   "i": 3,
+   "raw": "L/H/Upr",
+   "meaning": "left hand upper",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-124",
+   "company": "C",
+   "i": 4,
+   "raw": "Changeout-Mech",
+   "meaning": "change out - mechanical",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    3
+   ]
+  },
+  {
+   "id": "C-test-125",
+   "company": "C",
+   "i": 3,
+   "raw": "Bkt",
+   "meaning": "bucket",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    5
+   ]
+  },
+  {
+   "id": "C-test-125",
+   "company": "C",
+   "i": 4,
+   "raw": "#",
+   "meaning": "number",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    5,
+    10
+   ]
+  },
+  {
+   "id": "C-test-125",
+   "company": "C",
+   "i": 7,
+   "raw": "D/line",
+   "meaning": "dragline",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    6
+   ]
+  },
+  {
+   "id": "C-test-127",
+   "company": "C",
+   "i": 2,
+   "raw": "e-stop",
+   "meaning": "emergency-stop",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    2
+   ]
+  },
+  {
+   "id": "C-test-127",
+   "company": "C",
+   "i": 3,
+   "raw": "probs",
+   "meaning": "problems",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    4
+   ]
+  },
+  {
+   "id": "C-test-132",
+   "company": "C",
+   "i": 1,
+   "raw": "Gen",
+   "meaning": "generator",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    8
+   ]
+  },
+  {
+   "id": "C-test-132",
+   "company": "C",
+   "i": 2,
+   "raw": "N0",
+   "meaning": "number",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-134",
+   "company": "C",
+   "i": 3,
+   "raw": "&",
+   "meaning": "and",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1
+   ]
+  },
+  {
+   "id": "C-test-134",
+   "company": "C",
+   "i": 4,
+   "raw": "Prep",
+   "meaning": "preparation",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-136",
+   "company": "C",
+   "i": 1,
+   "raw": "CM",
+   "meaning": "condition monitoring",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    6,
+    8
+   ]
+  },
+  {
+   "id": "C-test-139",
+   "company": "C",
+   "i": 2,
+   "raw": "temp",
+   "meaning": "temperature",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    1,
+    5,
+    10
+   ]
+  },
+  {
+   "id": "C-test-144",
+   "company": "C",
+   "i": 3,
+   "raw": "Hr",
+   "meaning": "hour",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "C-test-145",
+   "company": "C",
+   "i": 3,
+   "raw": "No13",
+   "meaning": "number",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "C-test-145",
+   "company": "C",
+   "i": 4,
+   "raw": "Overhaul-Elec/Mech",
+   "meaning": "overhaul - electrical / mechanical",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    9
+   ]
+  },
+  {
+   "id": "C-test-147",
+   "company": "C",
+   "i": 1,
+   "raw": "LH",
+   "meaning": "left hand",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    5,
+    6,
+    8,
+    10
+   ]
+  },
+  {
+   "id": "C-test-147",
+   "company": "C",
+   "i": 2,
+   "raw": "STEER",
+   "meaning": "steering",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    6,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "C-test-148",
+   "company": "C",
+   "i": 1,
+   "raw": "Trans",
+   "meaning": "transmission",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    2
+   ]
+  },
+  {
+   "id": "C-test-164",
+   "company": "C",
+   "i": 2,
+   "raw": "press",
+   "meaning": "pressure",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    3
+   ]
+  },
+  {
+   "id": "C-test-168",
+   "company": "C",
+   "i": 1,
+   "raw": "A",
+   "meaning": "A-frame",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-168",
+   "company": "C",
+   "i": 5,
+   "raw": "&",
+   "meaning": "and",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    4,
+    6,
+    7,
+    9
+   ]
+  },
+  {
+   "id": "C-test-170",
+   "company": "C",
+   "i": 3,
+   "raw": "LHF",
+   "meaning": "left hand front",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    3,
+    5
+   ]
+  },
+  {
+   "id": "C-test-170",
+   "company": "C",
+   "i": 4,
+   "raw": "pos",
+   "meaning": "position",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    6
+   ]
+  },
+  {
+   "id": "C-test-170",
+   "company": "C",
+   "i": 5,
+   "raw": "#1",
+   "meaning": "number",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    6,
+    7
+   ]
+  },
+  {
+   "id": "C-test-171",
+   "company": "C",
+   "i": 0,
+   "raw": "Pre",
+   "meaning": "pre-summer",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    9
+   ]
+  },
+  {
+   "id": "C-test-171",
+   "company": "C",
+   "i": 3,
+   "raw": "A/Con",
+   "meaning": "air conditioner",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    3,
+    7,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "C-test-171",
+   "company": "C",
+   "i": 5,
+   "raw": "#348",
+   "meaning": "number",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    9
+   ]
+  },
+  {
+   "id": "C-test-188",
+   "company": "C",
+   "i": 5,
+   "raw": "non",
+   "meaning": "non-compliance",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-194",
+   "company": "C",
+   "i": 4,
+   "raw": "&",
+   "meaning": "and",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-194",
+   "company": "C",
+   "i": 5,
+   "raw": "u/s",
+   "meaning": "unserviceable",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    3,
+    6,
+    8,
+    10
+   ]
+  },
+  {
+   "id": "C-test-205",
+   "company": "C",
+   "i": 0,
+   "raw": "r/h/s",
+   "meaning": "right hand side",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    9
+   ]
+  },
+  {
+   "id": "C-test-206",
+   "company": "C",
+   "i": 2,
+   "raw": "Susp",
+   "meaning": "suspension",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "C-test-206",
+   "company": "C",
+   "i": 5,
+   "raw": "Locn",
+   "meaning": "location",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "C-test-214",
+   "company": "C",
+   "i": 3,
+   "raw": "W/",
+   "meaning": "with",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    5
+   ]
+  },
+  {
+   "id": "C-test-214",
+   "company": "C",
+   "i": 5,
+   "raw": "4/8/8",
+   "meaning": "date",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-221",
+   "company": "C",
+   "i": 2,
+   "raw": "Inspection-Electrical",
+   "meaning": "inspection - electrical",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    5
+   ]
+  },
+  {
+   "id": "C-test-223",
+   "company": "C",
+   "i": 0,
+   "raw": "Cgantry",
+   "meaning": "gantry",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-231",
+   "company": "C",
+   "i": 1,
+   "raw": "&",
+   "meaning": "and",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-232",
+   "company": "C",
+   "i": 1,
+   "raw": "Pos",
+   "meaning": "position",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-233",
+   "company": "C",
+   "i": 6,
+   "raw": "u/s",
+   "meaning": "unserviceable",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    5,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "C-test-235",
+   "company": "C",
+   "i": 5,
+   "raw": "ext",
+   "meaning": "extinguisher",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-236",
+   "company": "C",
+   "i": 2,
+   "raw": "#5",
+   "meaning": "number",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-236",
+   "company": "C",
+   "i": 5,
+   "raw": "LHS",
+   "meaning": "left hand side",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    8
+   ]
+  },
+  {
+   "id": "C-test-239",
+   "company": "C",
+   "i": 0,
+   "raw": "Elect",
+   "meaning": "electrical",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    8
+   ]
+  },
+  {
+   "id": "C-test-239",
+   "company": "C",
+   "i": 2,
+   "raw": "&",
+   "meaning": "and",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    8
+   ]
+  },
+  {
+   "id": "C-test-243",
+   "company": "C",
+   "i": 0,
+   "raw": "2",
+   "meaning": "two-way",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    4
+   ]
+  },
+  {
+   "id": "C-test-244",
+   "company": "C",
+   "i": 2,
+   "raw": "LH",
+   "meaning": "left hand",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-246",
+   "company": "C",
+   "i": 2,
+   "raw": "Motor/Blower",
+   "meaning": "motor / blower",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    3,
+    4
+   ]
+  },
+  {
+   "id": "C-test-253",
+   "company": "C",
+   "i": 0,
+   "raw": "RHS",
+   "meaning": "right hand side",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-253",
+   "company": "C",
+   "i": 2,
+   "raw": "&",
+   "meaning": "and",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "C-test-258",
+   "company": "C",
+   "i": 7,
+   "raw": "&",
+   "meaning": "and",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-262",
+   "company": "C",
+   "i": 3,
+   "raw": "Changeout-Mechanical",
+   "meaning": "change out - mechanical",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    7
+   ]
+  },
+  {
+   "id": "C-test-266",
+   "company": "C",
+   "i": 3,
+   "raw": "Maint",
+   "meaning": "maintenance",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-269",
+   "company": "C",
+   "i": 3,
+   "raw": "Grd",
+   "meaning": "ground",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-270",
+   "company": "C",
+   "i": 3,
+   "raw": "Inspection-Mechanical",
+   "meaning": "inspection - mechanical",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-286",
+   "company": "C",
+   "i": 1,
+   "raw": "RHS",
+   "meaning": "right hand side",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    7,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "C-test-292",
+   "company": "C",
+   "i": 2,
+   "raw": "hyd",
+   "meaning": "hydraulic",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    3,
+    4,
+    8
+   ]
+  },
+  {
+   "id": "C-test-293",
+   "company": "C",
+   "i": 0,
+   "raw": "set",
+   "meaning": "set-up",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    10
+   ]
+  },
+  {
+   "id": "C-test-293",
+   "company": "C",
+   "i": 4,
+   "raw": "handleing",
+   "meaning": "handling",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-294",
+   "company": "C",
+   "i": 1,
+   "raw": "seperators",
+   "meaning": "separators",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-295",
+   "company": "C",
+   "i": 0,
+   "raw": "coolent",
+   "meaning": "coolant",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-299",
+   "company": "C",
+   "i": 3,
+   "raw": "sync",
+   "meaning": "synchronous",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    10
+   ]
+  },
+  {
+   "id": "C-test-306",
+   "company": "C",
+   "i": 4,
+   "raw": "Hr",
+   "meaning": "hour",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "C-test-307",
+   "company": "C",
+   "i": 0,
+   "raw": "RH",
+   "meaning": "right hand",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "C-test-310",
+   "company": "C",
+   "i": 0,
+   "raw": "Hand",
+   "meaning": "handrail",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-310",
+   "company": "C",
+   "i": 5,
+   "raw": "A",
+   "meaning": "A-frame",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-313",
+   "company": "C",
+   "i": 3,
+   "raw": "Wk",
+   "meaning": "week",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    6
+   ]
+  },
+  {
+   "id": "C-test-315",
+   "company": "C",
+   "i": 1,
+   "raw": "exh",
+   "meaning": "exhaust",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-315",
+   "company": "C",
+   "i": 5,
+   "raw": "&",
+   "meaning": "and",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    3,
+    8
+   ]
+  },
+  {
+   "id": "C-test-315",
+   "company": "C",
+   "i": 8,
+   "raw": "u/s",
+   "meaning": "unserviceable",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    4,
+    6,
+    8
+   ]
+  },
+  {
+   "id": "C-test-318",
+   "company": "C",
+   "i": 5,
+   "raw": "DMG",
+   "meaning": "damage",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    2,
+    3,
+    4,
+    5,
+    8
+   ]
+  },
+  {
+   "id": "C-test-320",
+   "company": "C",
+   "i": 2,
+   "raw": "&",
+   "meaning": "and",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    9,
+    10
+   ]
+  },
+  {
+   "id": "C-test-320",
+   "company": "C",
+   "i": 4,
+   "raw": "L/H",
+   "meaning": "left hand",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    5,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "C-test-327",
+   "company": "C",
+   "i": 2,
+   "raw": "Missing-Fit",
+   "meaning": "missing - fit",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-329",
+   "company": "C",
+   "i": 1,
+   "raw": "L/H",
+   "meaning": "left hand",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3
+   ]
+  },
+  {
+   "id": "C-test-329",
+   "company": "C",
+   "i": 2,
+   "raw": "&",
+   "meaning": "and",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-329",
+   "company": "C",
+   "i": 3,
+   "raw": "R/H",
+   "meaning": "right hand",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2
+   ]
+  },
+  {
+   "id": "C-test-336",
+   "company": "C",
+   "i": 4,
+   "raw": "RH",
+   "meaning": "right hand",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    5,
+    6
+   ]
+  },
+  {
+   "id": "C-test-347",
+   "company": "C",
+   "i": 2,
+   "raw": "cab",
+   "meaning": "cabin",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "C-test-351",
+   "company": "C",
+   "i": 2,
+   "raw": "LHS",
+   "meaning": "left hand side",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    9
+   ]
+  },
+  {
+   "id": "C-test-355",
+   "company": "C",
+   "i": 1,
+   "raw": "a/c",
+   "meaning": "air conditioner",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    9
+   ]
+  },
+  {
+   "id": "C-test-357",
+   "company": "C",
+   "i": 3,
+   "raw": "n/w",
+   "meaning": "not working",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    5,
+    7,
+    8
+   ]
+  },
+  {
+   "id": "C-test-368",
+   "company": "C",
+   "i": 3,
+   "raw": "temp",
+   "meaning": "temperature",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    1,
+    10
+   ]
+  },
+  {
+   "id": "C-test-368",
+   "company": "C",
+   "i": 4,
+   "raw": "o/temp",
+   "meaning": "overtemperature",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-374",
+   "company": "C",
+   "i": 1,
+   "raw": "#",
+   "meaning": "number",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    4
+   ]
+  },
+  {
+   "id": "C-test-374",
+   "company": "C",
+   "i": 4,
+   "raw": "comp",
+   "meaning": "compressor",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-376",
+   "company": "C",
+   "i": 2,
+   "raw": "recirc",
+   "meaning": "recirculation",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-382",
+   "company": "C",
+   "i": 1,
+   "raw": "ext",
+   "meaning": "extinguisher",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    1,
+    8
+   ]
+  },
+  {
+   "id": "C-test-385",
+   "company": "C",
+   "i": 4,
+   "raw": "BKT",
+   "meaning": "bucket",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    3,
+    4,
+    5,
+    8
+   ]
+  },
+  {
+   "id": "C-test-390",
+   "company": "C",
+   "i": 0,
+   "raw": "LHS",
+   "meaning": "left hand side",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    2,
+    6,
+    9
+   ]
+  },
+  {
+   "id": "C-test-393",
+   "company": "C",
+   "i": 0,
+   "raw": "Borken",
+   "meaning": "broken",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-393",
+   "company": "C",
+   "i": 3,
+   "raw": "swing#5",
+   "meaning": "swing number",
+   "glossary": false,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-396",
+   "company": "C",
+   "i": 2,
+   "raw": "steer",
+   "meaning": "steering",
+   "glossary": true,
+   "search": false,
+   "search_places": []
+  },
+  {
+   "id": "C-test-396",
+   "company": "C",
+   "i": 4,
+   "raw": "universal",
+   "meaning": "universal joint",
+   "glossary": false,
+   "search": true,
+   "search_places": [
+    1,
+    5,
+    9
+   ]
+  },
+  {
+   "id": "C-test-398",
+   "company": "C",
+   "i": 4,
+   "raw": "&",
+   "meaning": "and",
+   "glossary": true,
+   "search": true,
+   "search_places": [
+    1,
+    2,
+    3,
+    8
+   ]
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+# Hermes Agent v0.23.0 configuration for one attempt; run.sh fills @MODEL@, @PORT@ and @CONTEXT@.
+# Every key here departs from Hermes's defaults for a reason given beside it; everything else is Hermes as it ships.
+providers:
+  fence:                                  # a named custom endpoint: the proxy, the only way out of the fence
+    base_url: "http://fsr-proxy:@PORT@/v1"
+    api_key: none
+    extra_body:
+      max_tokens: 32768                   # Pi's output limit (models.json maxTokens), which Pi sends with every request
+model:
+  default: "@MODEL@"
+  provider: fence
+  context_length: @CONTEXT@               # the same windows as Pi's models.json: 96,000 (27B), 262,144 (Flash Next)
+  supports_vision: true                   # both models are vision models; as in George's own Hermes config
+agent:
+  image_input_mode: native                # the model sees the drawing and each zoom itself, as in Pi; not a text description
+auxiliary:                                # side calls (summaries, titles, images) go to the same model, never elsewhere
+  vision: {provider: main}
+  compression: {provider: main}
+  title_generation: {provider: main}
+memory:                                   # no memory between attempts (Pi had none)
+  memory_enabled: false
+  user_profile_enabled: false
+updates:
+  check: false                            # no update check (the fence has no route out)

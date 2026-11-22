@@ -1,0 +1,262 @@
+[
+ {
+  "model": "qwen27b__qwen38-27b",
+  "model_name": "Qwen 3.8 27B",
+  "attempt": 1,
+  "seconds": 31,
+  "turns": 2,
+  "tool_calls": {
+   "bash": 1
+  },
+  "tokens_in": 8070,
+  "tokens_out": 834,
+  "ended": "stop"
+ },
+ {
+  "model": "qwen27b__qwen38-27b",
+  "model_name": "Qwen 3.8 27B",
+  "attempt": 2,
+  "seconds": 25,
+  "turns": 2,
+  "tool_calls": {
+   "bash": 1
+  },
+  "tokens_in": 8216,
+  "tokens_out": 901,
+  "ended": "stop"
+ },
+ {
+  "model": "qwen27b__qwen38-27b",
+  "model_name": "Qwen 3.8 27B",
+  "attempt": 3,
+  "seconds": 24,
+  "turns": 2,
+  "tool_calls": {
+   "bash": 1
+  },
+  "tokens_in": 8160,
+  "tokens_out": 1049,
+  "ended": "stop"
+ },
+ {
+  "model": "qwen27b__qwen38-27b",
+  "model_name": "Qwen 3.8 27B",
+  "attempt": 4,
+  "seconds": 28,
+  "turns": 2,
+  "tool_calls": {
+   "bash": 1
+  },
+  "tokens_in": 8083,
+  "tokens_out": 789,
+  "ended": "stop"
+ },
+ {
+  "model": "qwen27b__qwen38-27b",
+  "model_name": "Qwen 3.8 27B",
+  "attempt": 5,
+  "seconds": 32,
+  "turns": 2,
+  "tool_calls": {
+   "bash": 1
+  },
+  "tokens_in": 8183,
+  "tokens_out": 896,
+  "ended": "stop"
+ },
+ {
+  "model": "qwen27b__qwen38-27b",
+  "model_name": "Qwen 3.8 27B",
+  "attempt": 6,
+  "seconds": 39,
+  "turns": 2,
+  "tool_calls": {
+   "bash": 1
+  },
+  "tokens_in": 8126,
+  "tokens_out": 801,
+  "ended": "stop"
+ },
+ {
+  "model": "qwen27b__qwen38-27b",
+  "model_name": "Qwen 3.8 27B",
+  "attempt": 7,
+  "seconds": 47,
+  "turns": 2,
+  "tool_calls": {
+   "bash": 1
+  },
+  "tokens_in": 7941,
+  "tokens_out": 780,
+  "ended": "stop"
+ },
+ {
+  "model": "qwen27b__qwen38-27b",
+  "model_name": "Qwen 3.8 27B",
+  "attempt": 8,
+  "seconds": 53,
+  "turns": 2,
+  "tool_calls": {
+   "bash": 1
+  },
+  "tokens_in": 8171,
+  "tokens_out": 1052,
+  "ended": "stop"
+ },
+ {
+  "model": "qwen27b__qwen38-27b",
+  "model_name": "Qwen 3.8 27B",
+  "attempt": 9,
+  "seconds": 57,
+  "turns": 2,
+  "tool_calls": {
+   "bash": 1
+  },
+  "tokens_in": 8044,
+  "tokens_out": 806,
+  "ended": "stop"
+ },
+ {
+  "model": "qwen27b__qwen38-27b",
+  "model_name": "Qwen 3.8 27B",
+  "attempt": 10,
+  "seconds": 75,
+  "turns": 2,
+  "tool_calls": {
+   "bash": 1
+  },
+  "tokens_in": 8086,
+  "tokens_out": 869,
+  "ended": "stop"
+ },
+ {
+  "model": "flashnext__qwen38-next-flash",
+  "model_name": "Qwen 3.8 Flash Next",
+  "attempt": 1,
+  "seconds": 13,
+  "turns": 2,
+  "tool_calls": {
+   "bash": 1
+  },
+  "tokens_in": 8093,
+  "tokens_out": 1307,
+  "ended": "stop"
+ },
+ {
+  "model": "flashnext__qwen38-next-flash",
+  "model_name": "Qwen 3.8 Flash Next",
+  "attempt": 2,
+  "seconds": 18,
+  "turns": 4,
+  "tool_calls": {
+   "bash": 3
+  },
+  "tokens_in": 19460,
+  "tokens_out": 1919,
+  "ended": "stop"
+ },
+ {
+  "model": "flashnext__qwen38-next-flash",
+  "model_name": "Qwen 3.8 Flash Next",
+  "attempt": 3,
+  "seconds": 13,
+  "turns": 2,
+  "tool_calls": {
+   "bash": 1
+  },
+  "tokens_in": 8280,
+  "tokens_out": 1418,
+  "ended": "stop"
+ },
+ {
+  "model": "flashnext__qwen38-next-flash",
+  "model_name": "Qwen 3.8 Flash Next",
+  "attempt": 4,
+  "seconds": 21,
+  "turns": 3,
+  "tool_calls": {
+   "bash": 2
+  },
+  "tokens_in": 15128,
+  "tokens_out": 2483,
+  "ended": "stop"
+ },
+ {
+  "model": "flashnext__qwen38-next-flash",
+  "model_name": "Qwen 3.8 Flash Next",
+  "attempt": 5,
+  "seconds": 12,
+  "turns": 2,
+  "tool_calls": {
+   "bash": 1
+  },
+  "tokens_in": 8134,
+  "tokens_out": 1150,
+  "ended": "stop"
+ },
+ {
+  "model": "flashnext__qwen38-next-flash",
+  "model_name": "Qwen 3.8 Flash Next",
+  "attempt": 6,
+  "seconds": 17,
+  "turns": 3,
+  "tool_calls": {
+   "bash": 2
+  },
+  "tokens_in": 13464,
+  "tokens_out": 1962,
+  "ended": "stop"
+ },
+ {
+  "model": "flashnext__qwen38-next-flash",
+  "model_name": "Qwen 3.8 Flash Next",
+  "attempt": 7,
+  "seconds": 13,
+  "turns": 2,
+  "tool_calls": {
+   "bash": 1
+  },
+  "tokens_in": 8091,
+  "tokens_out": 1237,
+  "ended": "stop"
+ },
+ {
+  "model": "flashnext__qwen38-next-flash",
+  "model_name": "Qwen 3.8 Flash Next",
+  "attempt": 8,
+  "seconds": 13,
+  "turns": 2,
+  "tool_calls": {
+   "bash": 1
+  },
+  "tokens_in": 8349,
+  "tokens_out": 1466,
+  "ended": "stop"
+ },
+ {
+  "model": "flashnext__qwen38-next-flash",
+  "model_name": "Qwen 3.8 Flash Next",
+  "attempt": 9,
+  "seconds": 12,
+  "turns": 2,
+  "tool_calls": {
+   "bash": 1
+  },
+  "tokens_in": 8047,
+  "tokens_out": 1332,
+  "ended": "stop"
+ },
+ {
+  "model": "flashnext__qwen38-next-flash",
+  "model_name": "Qwen 3.8 Flash Next",
+  "attempt": 10,
+  "seconds": 18,
+  "turns": 2,
+  "tool_calls": {
+   "bash": 1
+  },
+  "tokens_in": 8804,
+  "tokens_out": 1975,
+  "ended": "stop"
+ }
+]

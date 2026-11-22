@@ -1,0 +1,195 @@
+# Answer key for p39-phoenix-mine-mill. Rules and procedure: README.md; how it was made: log.md.
+drawing: p39-phoenix-mine-mill
+items:
+  - {id: "mined_ore", label: "MINED ORE", name: "run-of-mine ore by truck", kind: "input", area: "crushing"}
+  - {id: "primary_crusher", label: "PRIMARY CRUSHER", name: "primary gyratory crusher", kind: "unit", area: "crushing"}
+  - {id: "crushed_ore_stockpile", label: "CRUSHED ORE STOCKPILE", name: "crushed ore stockpile", kind: "unit", area: "crushing"}
+  - {id: "water_sag", label: "WATER", name: "water to SAG mill feed", kind: "input", area: "grinding"}
+  - {id: "lime_sag", label: "LIME", name: "lime to SAG mill feed", kind: "input", area: "grinding"}
+  - {id: "sag_mill", label: "SAG MILL", name: "SAG mill", kind: "unit", area: "grinding"}
+  - {id: "sag_screen", label: "SAG MILL DISCHARGE SCREEN", name: "SAG mill discharge screen", kind: "unit", area: "grinding"}
+  - {id: "pebble_crusher", label: "PEBBLE CRUSHER", name: "pebble crusher", kind: "unit", area: "grinding"}
+  - {id: "ball_mills", label: "BALL MILLS", name: "ball mills", kind: "unit", area: "grinding"}
+  - {id: "grinding_sump", label: "", name: "cyclone feed sump under the SAG screen", kind: "junction", area: "grinding"}
+  - {id: "water_sump", label: "WATER", name: "water to cyclone feed sump", kind: "input", area: "grinding"}
+  - {id: "ball_mill_cyclones", label: "", name: "ball mill cyclones", kind: "unit", area: "grinding", note: "unlabelled cyclone above the ball mill"}
+  - {id: "reag_cyclone", label: "REAGENTS", name: "reagents to cyclone overflow and underflow", kind: "input", area: "grinding"}
+  - {id: "primary_gravity", label: "PRIMARY GRAVITY", name: "primary gravity concentrator", kind: "unit", area: "gravity"}
+  - {id: "flotation_gravity", label: "FLOTATION GRAVITY", name: "flotation gravity concentrator", kind: "unit", area: "gravity"}
+  - {id: "cleaner_gravity", label: "CLEANER GRAVITY (FUTURE)", name: "cleaner gravity concentrator", kind: "unit", area: "gravity", note: "future"}
+  - {id: "intensive_cyanidation", label: "INTENSIVE CYANIDATION", name: "intensive cyanidation reactor", kind: "unit", area: "gravity"}
+  - {id: "reag_contact", label: "REAGENTS", name: "reagents to contact flotation", kind: "input", area: "flotation"}
+  - {id: "contact_flotation", label: "CONTACT FLOTATION", name: "contact flotation column", kind: "unit", area: "flotation"}
+  - {id: "reag_rougher", label: "REAGENTS", name: "reagents to rougher flotation", kind: "input", area: "flotation"}
+  - {id: "rougher_flotation", label: "ROUGHER FLOTATION", name: "rougher flotation banks", kind: "unit", area: "flotation", count: 2}
+  - {id: "rougher_conc_sump", label: "", name: "rougher concentrate sump", kind: "junction", area: "flotation"}
+  - {id: "rougher_tails_sump", label: "", name: "rougher tailings sump", kind: "junction", area: "flotation"}
+  - {id: "primary_cleaner_column", label: "PRIMARY CLEANER COLUMN", name: "primary cleaner column", kind: "unit", area: "flotation"}
+  - {id: "regrind_sump", label: "", name: "regrind cyclone feed sump", kind: "junction", area: "flotation"}
+  - {id: "lime_regrind", label: "LIME", name: "lime to regrind sump", kind: "input", area: "flotation"}
+  - {id: "reag_regrind", label: "REAGENTS", name: "reagents to regrind sump", kind: "input", area: "flotation"}
+  - {id: "regrind_cyclone", label: "", name: "regrind cyclone", kind: "unit", area: "flotation", note: "unlabelled cyclone above the regrind mill"}
+  - {id: "regrind_mill", label: "REGRIND", name: "regrind (tower) mill", kind: "unit", area: "flotation"}
+  - {id: "first_cleaner", label: "1st CLEANER FLOTATION", name: "first cleaner flotation", kind: "unit", area: "flotation"}
+  - {id: "reag_clsc", label: "REAGENTS", name: "reagents to cleaner/scavenger flotation", kind: "input", area: "flotation"}
+  - {id: "cleaner_scavenger", label: "CLEANER/ SCAVENGER FLOTATION", name: "cleaner scavenger flotation", kind: "unit", area: "flotation"}
+  - {id: "clsc_tails_sump", label: "", name: "cleaner scavenger tailings sump", kind: "junction", area: "flotation"}
+  - {id: "reag_clsc_sump", label: "REAGENTS", name: "reagents to cleaner scavenger tailings sump", kind: "input", area: "flotation"}
+  - {id: "lime_clsc_sump", label: "LIME", name: "lime to cleaner scavenger tailings sump", kind: "input", area: "flotation"}
+  - {id: "cond_tank", label: "2ND CLEANER CONDITIONING TANK", name: "second cleaner conditioning tank", kind: "unit", area: "flotation"}
+  - {id: "reag_cond", label: "REAGENTS", name: "reagents to conditioning tank", kind: "input", area: "flotation"}
+  - {id: "magnetic_separation", label: "MAGNETIC SEPARATION", name: "magnetic separator", kind: "unit", area: "flotation"}
+  - {id: "mag_gravity", label: "MAGNETIC CONCENTRATE GRAVITY CONCENTRATOR", name: "magnetic concentrate gravity concentrator", kind: "unit", area: "flotation"}
+  - {id: "second_cleaner", label: "2ND CLEANER", name: "second cleaner column", kind: "unit", area: "flotation"}
+  - {id: "second_cleaner_scavenger", label: "2ND CLEANER SCAVENGER", name: "second cleaner scavenger column", kind: "unit", area: "flotation"}
+  - {id: "cu_thickener", label: "COPPER CONCENTRATE THICKENER", name: "copper concentrate thickener", kind: "unit", area: "concentrate"}
+  - {id: "filter_feed_tank", label: "", name: "filter feed tank", kind: "unit", area: "concentrate", note: "unlabelled agitated tank under the thickener"}
+  - {id: "cu_filter", label: "COPPER CONCENTRATE FILTER", name: "copper concentrate filter", kind: "unit", area: "concentrate"}
+  - {id: "cu_stockpile", label: "COPPER CONCENTRATE STOCKPILE", name: "copper concentrate stockpile", kind: "unit", area: "concentrate"}
+  - {id: "conc_to_market", label: "CONCENTRATE TO MARKET", name: "concentrate to market by truck", kind: "output", area: "concentrate"}
+  - {id: "deslime_cyclones", label: "DESLIME CYCLONES", name: "deslime cyclones", kind: "unit", area: "leach"}
+  - {id: "cyanide", label: "CYANIDE", name: "cyanide", kind: "input", area: "leach"}
+  - {id: "trash_screen", label: "", name: "leach feed trash screen", kind: "unit", area: "leach", note: "unlabelled screen; its oversize goes to TRASH"}
+  - {id: "trash", label: "TRASH", name: "trash", kind: "output", area: "leach"}
+  - {id: "leach", label: "LEACH", name: "leach tanks", kind: "unit", area: "leach", count: 2, note: "two tanks before carbon moves between the tanks (Codex, double check)"}
+  - {id: "cip", label: "CIP", name: "carbon-in-pulp tanks", kind: "unit", area: "leach", count: 5}
+  - {id: "carbon_screen", label: "", name: "CIP tailings carbon safety screen", kind: "unit", area: "leach"}
+  - {id: "carbon_bin", label: "CARBON BIN", name: "carbon bin", kind: "output", area: "leach"}
+  - {id: "heap_leach_carbon", label: "HEAP LEACH CARBON", name: "loaded carbon from heap leach", kind: "input", area: "carbon"}
+  - {id: "acid_wash", label: "ACID WASH", name: "acid wash vessel", kind: "unit", area: "carbon"}
+  - {id: "strip", label: "STRIP", name: "strip vessel", kind: "unit", area: "carbon"}
+  - {id: "regeneration", label: "REGENERATION", name: "carbon regeneration kiln", kind: "unit", area: "carbon"}
+  - {id: "carbon_to_heap_leach", label: "CARBON TO HEAP LEACH", name: "carbon to heap leach", kind: "output", area: "carbon"}
+  - {id: "barren_tank", label: "BARREN SOLUTION TANK", name: "barren solution tank", kind: "unit", area: "gold"}
+  - {id: "pregnant_tank", label: "PREGNANT SOLUTION TANK", name: "pregnant solution tank", kind: "unit", area: "gold"}
+  - {id: "ew_cells", label: "", name: "electrowinning cells", kind: "unit", area: "gold", note: "unlabelled cell; the label beside it names its product"}
+  - {id: "ew_sludge", label: "PRECIOUS METAL EW SLUDGE TO REFINERY", name: "precious metal sludge to refinery", kind: "output", area: "gold"}
+  - {id: "fines_thickener", label: "FINES THICKENER", name: "fines thickener", kind: "unit", area: "water"}
+  - {id: "flocculant", label: "FLOCCULANT", name: "flocculant", kind: "input", area: "water"}
+  - {id: "tails_tank", label: "", name: "tailings mixing box before the pond", kind: "junction", area: "water"}
+  - {id: "caros_acid_tails", label: "CARO'S ACID", name: "Caro's acid to tailings tank", kind: "input", area: "water"}
+  - {id: "tailings_pond", label: "TAILINGS POND", name: "tailings pond", kind: "unit", area: "water"}
+  - {id: "reclaim_water", label: "RECLAIM WATER", name: "reclaim water sump", kind: "unit", area: "water"}
+  - {id: "chloride_plume", label: "CHLORIDE PLUME", name: "chloride plume interception well", kind: "input", area: "water"}
+  - {id: "treated_reclaim", label: "TREATED RECLAIM", name: "treated reclaim water tank", kind: "unit", area: "water"}
+  - {id: "mine_water", label: "MINE WATER", name: "mine water", kind: "input", area: "water"}
+  - {id: "caros_acid_reclaim", label: "CARO'S ACID", name: "Caro's acid to treated reclaim", kind: "input", area: "water"}
+  - {id: "lime_reclaim", label: "LIME", name: "lime to treated reclaim", kind: "input", area: "water"}
+  - {id: "mill_water", label: "MILL WATER", name: "mill water tank", kind: "unit", area: "water"}
+  - {id: "mill_water_distn", label: "MILL WATER DIST'N", name: "mill water distribution", kind: "output", area: "water"}
+  - {id: "fresh_water", label: "FRESH WATER", name: "fresh water tank", kind: "unit", area: "water"}
+  - {id: "gland_water", label: "REAGENTS GLAND WATER", name: "water to reagents and gland service", kind: "output", area: "water"}
+streams:
+  - {from: "mined_ore", to: "primary_crusher"}
+  - {from: "primary_crusher", to: "crushed_ore_stockpile"}
+  - {from: "crushed_ore_stockpile", to: "sag_mill"}
+  - {from: "water_sag", to: "sag_mill"}
+  - {from: "lime_sag", to: "sag_mill"}
+  - {from: "sag_mill", to: "sag_screen"}
+  - {from: "sag_screen", to: "pebble_crusher", note: "oversize by two conveyors"}
+  - {from: "pebble_crusher", to: "sag_mill", note: "onto the SAG feed conveyor"}
+  - {from: "sag_screen", to: "grinding_sump", note: "undersize"}
+  - {from: "ball_mills", to: "grinding_sump"}
+  - {from: "ball_mills", to: "primary_gravity", note: "branch of the ball mill discharge through a pump"}
+  - {from: "water_sump", to: "grinding_sump"}
+  - {from: "intensive_cyanidation", to: "grinding_sump", label: "(RESIDUE)"}
+  - {from: "intensive_cyanidation", to: "regrind_sump", label: "(RESIDUE)", note: "branch of the residue line at the corner left of the gravity units"}
+  - {from: "contact_flotation", to: "grinding_sump", note: "contact flotation tailings"}
+  - {from: "grinding_sump", to: "ball_mill_cyclones"}
+  - {from: "ball_mill_cyclones", to: "ball_mills", note: "underflow"}
+  - {from: "ball_mill_cyclones", to: "rougher_flotation", note: "overflow"}
+  - {from: "reag_cyclone", to: "rougher_flotation", note: "joins the cyclone overflow line"}
+  - {from: "reag_cyclone", to: "ball_mills", note: "joins the cyclone underflow line"}
+  - {from: "primary_gravity", to: "contact_flotation", note: "gravity tailings"}
+  - {from: "primary_gravity", to: "intensive_cyanidation", note: "gravity concentrate"}
+  - {from: "reag_contact", to: "contact_flotation"}
+  - {from: "contact_flotation", to: "rougher_conc_sump"}
+  - {from: "reag_rougher", to: "rougher_flotation"}
+  - {from: "rougher_flotation", to: "rougher_conc_sump", note: "first bank concentrate"}
+  - {from: "rougher_flotation", to: "regrind_sump", note: "second bank concentrate"}
+  - {from: "rougher_flotation", to: "rougher_tails_sump"}
+  - {from: "rougher_tails_sump", to: "deslime_cyclones"}
+  - {from: "rougher_conc_sump", to: "flotation_gravity"}
+  - {from: "flotation_gravity", to: "primary_cleaner_column"}
+  - {from: "flotation_gravity", to: "cleaner_gravity"}
+  - {from: "cleaner_gravity", to: "intensive_cyanidation"}
+  - {from: "primary_cleaner_column", to: "cond_tank", note: "column concentrate"}
+  - {from: "primary_cleaner_column", to: "regrind_sump", note: "column tailings"}
+  - {from: "lime_regrind", to: "regrind_sump"}
+  - {from: "reag_regrind", to: "regrind_sump"}
+  - {from: "regrind_mill", to: "regrind_sump"}
+  - {from: "cleaner_scavenger", to: "regrind_sump", note: "cleaner scavenger concentrate"}
+  - {from: "regrind_sump", to: "regrind_cyclone"}
+  - {from: "regrind_cyclone", to: "regrind_mill", note: "underflow"}
+  - {from: "regrind_cyclone", to: "first_cleaner", note: "overflow"}
+  - {from: "second_cleaner_scavenger", to: "first_cleaner", note: "scavenger tailings, long line up the middle"}
+  - {from: "first_cleaner", to: "cleaner_scavenger", note: "first cleaner tailings; shown only by a picture or by adjoining equipment, no line (Codex, stage 2)", unsure: true}
+  - {from: "first_cleaner", to: "cond_tank", note: "first cleaner concentrate"}
+  - {from: "reag_clsc", to: "cleaner_scavenger"}
+  - {from: "cleaner_scavenger", to: "clsc_tails_sump"}
+  - {from: "reag_clsc_sump", to: "clsc_tails_sump"}
+  - {from: "lime_clsc_sump", to: "clsc_tails_sump"}
+  - {from: "clsc_tails_sump", to: "trash_screen"}
+  - {from: "reag_cond", to: "cond_tank"}
+  - {from: "second_cleaner_scavenger", to: "cond_tank", note: "scavenger concentrate"}
+  - {from: "cond_tank", to: "magnetic_separation"}
+  - {from: "magnetic_separation", to: "mag_gravity", note: "magnetics"}
+  - {from: "magnetic_separation", to: "second_cleaner", note: "non-magnetics"}
+  - {from: "mag_gravity", to: "intensive_cyanidation"}
+  - {from: "mag_gravity", to: "fines_thickener", note: "long line up to the thickener feed"}
+  - {from: "second_cleaner", to: "cu_thickener"}
+  - {from: "second_cleaner", to: "second_cleaner_scavenger", note: "tailings through a pump"}
+  - {from: "cu_thickener", to: "filter_feed_tank"}
+  - {from: "filter_feed_tank", to: "cu_filter"}
+  - {from: "cu_filter", to: "cu_stockpile"}
+  - {from: "cu_stockpile", to: "conc_to_market", unsure: true, note: "shown only by a picture or by adjoining equipment, no line (Codex, stage 2)"}
+  - {from: "intensive_cyanidation", to: "pregnant_tank", label: "(PREG)"}
+  - {from: "deslime_cyclones", to: "fines_thickener", note: "overflow"}
+  - {from: "deslime_cyclones", to: "trash_screen", note: "underflow"}
+  - {from: "cyanide", to: "trash_screen"}
+  - {from: "trash_screen", to: "trash"}
+  - {from: "trash_screen", to: "leach"}
+  - {from: "leach", to: "cip"}
+  - {from: "cip", to: "carbon_screen"}
+  - {from: "carbon_screen", to: "carbon_bin"}
+  - {from: "carbon_screen", to: "tails_tank"}
+  - {from: "cip", to: "acid_wash", label: "(LOADED CARBON)"}
+  - {from: "heap_leach_carbon", to: "acid_wash"}
+  - {from: "acid_wash", to: "strip"}
+  - {from: "strip", to: "pregnant_tank"}
+  - {from: "strip", to: "regeneration"}
+  - {from: "barren_tank", to: "strip"}
+  - {from: "regeneration", to: "cip", label: "(BARREN CARBON)"}
+  - {from: "regeneration", to: "carbon_to_heap_leach"}
+  - {from: "pregnant_tank", to: "ew_cells"}
+  - {from: "ew_cells", to: "barren_tank"}
+  - {from: "ew_cells", to: "ew_sludge"}
+  - {from: "flocculant", to: "fines_thickener"}
+  - {from: "treated_reclaim", to: "fines_thickener"}
+  - {from: "fines_thickener", to: "mill_water", note: "overflow"}
+  - {from: "fines_thickener", to: "tails_tank", note: "underflow"}
+  - {from: "caros_acid_tails", to: "tails_tank"}
+  - {from: "tails_tank", to: "tailings_pond"}
+  - {from: "tailings_pond", to: "reclaim_water"}
+  - {from: "chloride_plume", to: "reclaim_water"}
+  - {from: "reclaim_water", to: "treated_reclaim", unsure: true, note: "both lines run off the right edge of the figure; the joining line is not visible"}
+  - {from: "mine_water", to: "treated_reclaim"}
+  - {from: "caros_acid_reclaim", to: "treated_reclaim"}
+  - {from: "lime_reclaim", to: "treated_reclaim"}
+  - {from: "fresh_water", to: "mill_water"}
+  - {from: "fresh_water", to: "gland_water"}
+  - {from: "mill_water", to: "mill_water_distn"}
+loops:
+  - {name: "pebble crusher on the SAG screen oversize", path: [sag_mill, sag_screen, pebble_crusher, sag_mill]}
+  - {name: "ball mills in closed circuit with cyclones", path: [ball_mills, grinding_sump, ball_mill_cyclones, ball_mills]}
+  - {name: "gravity concentrate residue back to grinding", path: [ball_mills, primary_gravity, intensive_cyanidation, grinding_sump, ball_mill_cyclones, ball_mills]}
+  - {name: "regrind mill in closed circuit with its cyclone", path: [regrind_sump, regrind_cyclone, regrind_mill, regrind_sump]}
+  - {name: "cleaner scavenger concentrate back to regrind", path: [regrind_sump, regrind_cyclone, first_cleaner, cleaner_scavenger, regrind_sump], unsure: true}
+  - {name: "second cleaner scavenger concentrate back to conditioning", path: [cond_tank, magnetic_separation, second_cleaner, second_cleaner_scavenger, cond_tank]}
+  - {name: "second cleaner scavenger tailings back to first cleaner", path: [first_cleaner, cond_tank, magnetic_separation, second_cleaner, second_cleaner_scavenger, first_cleaner]}
+  - {name: "carbon loop", path: [cip, acid_wash, strip, regeneration, cip]}
+  - {name: "strip solution loop", path: [strip, pregnant_tank, ew_cells, barren_tank, strip]}
+  - {name: "Primary gravity tails through contact flotation back to grinding", path: [ball_mills, primary_gravity, contact_flotation, grinding_sump, ball_mill_cyclones, ball_mills]}
+  - {name: "Magnetic gravity concentrate through intensive cyanidation with residue back through regrind", path: [mag_gravity, intensive_cyanidation, regrind_sump, regrind_cyclone, first_cleaner, cond_tank, magnetic_separation, mag_gravity]}
+  - {name: "Tailings water reclaimed and treated back to fines thickening", path: [fines_thickener, tails_tank, tailings_pond, reclaim_water, treated_reclaim, fines_thickener], unsure: true}
+  - {name: "flotation gravity through future cleaner gravity and cyanidation, residue back to grinding", path: [grinding_sump, ball_mill_cyclones, rougher_flotation, rougher_conc_sump, flotation_gravity, cleaner_gravity, intensive_cyanidation, grinding_sump]}

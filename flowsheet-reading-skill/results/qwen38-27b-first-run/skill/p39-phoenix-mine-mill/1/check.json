@@ -1,0 +1,45 @@
+{
+ "checked": "Claude, 16 Nov 2026",
+ "pairing": {
+  "mine_ore": {
+   "to": [
+    "mined_ore"
+   ],
+   "why": "'MINE ORE' with its tonnages: the MINED ORE input, label misread"
+  },
+  "water_lime": {
+   "to": [
+    "water_sag",
+    "lime_sag"
+   ],
+   "why": "'WATER / LIME' into the SAG mill names two items: pairs with both"
+  },
+  "grinding_sump": {
+   "to": [
+    "grinding_sump"
+   ],
+   "why": "the sump under the SAG screen (id and its feed from the screen, rule 1 and 2): the cyclone feed sump, not the rougher concentrate sump"
+  },
+  "lime_reagents_cleaner2": {
+   "to": [
+    "lime_sag",
+    "lime_regrind",
+    "lime_clsc_sump",
+    "lime_reclaim",
+    "reag_cyclone",
+    "reag_contact",
+    "reag_rougher",
+    "reag_regrind",
+    "reag_clsc",
+    "reag_clsc_sump",
+    "reag_cond"
+   ],
+   "why": "'LIME / REAGENTS' names two inputs: pairs with both, each as the set of inputs sharing that label"
+  }
+ },
+ "notes": [
+  "Test, skill. Reagent, lime, water and Caro's acid inputs pair with the set sharing their label. 'LIME / REAGENTS' pairs with both input sets. Two '2ND CLEANER SCRAVENGER' boxes are the scavenger drawn twice. 'RESIDUE', 'PREG' and 'DRYER CARBON' are stream labels or not on the drawing and pass through.",
+  "First run wrote the chart (14.4 minutes): 19 zooms made, 1 given back.",
+  "Read: every box whose label is not exactly its key item's, or that pairs with nothing or with a set, and every box paired with a repeated key label, with its feeds (local/dev/repeats.py); both lists uncut, 16 Nov. Boxes whose label is exactly their key item's were not each read."
+ ]
+}

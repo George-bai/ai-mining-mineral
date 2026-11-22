@@ -1,0 +1,186 @@
+flowchart LR
+
+%% ================= ORE HANDLING / COMMINUTION =================
+ore["MINED ORE<br/>12,264,000 TONS/YR<br/>0.13% Cu<br/>0.335 OZ/TON Au<br/>0.270 OZ/TON Ag"]
+pc["PRIMARY CRUSHER"]
+stock["CRUSHED ORE STOCKPILE<br/>33,000 TON (LIVE)"]
+pbc["PEBCBLE CRUSHER"]
+sag["SAG MILL"]
+sagscr["SAG MILL DISCHARGE SCREEN"]
+bm["BALL MILS"]
+bmcl["BALL MILL CYCLONE"]
+ffs["FLOTATION FEED SUMP"]
+
+water["WATER"]
+lime["LIME"]
+
+ore -->|"mine ore"| pc
+pc -->|"crushed product"| stock
+stock -->|"conveyor"| sag
+water -->|"WATER"| sag
+lime -->|"LIME"| sag
+sag -->|"discharge"| sagscr
+sagscr -->|"oversize"| pbc
+pbc -->|"pebble crusher product"| sag
+sagscr -->|"undersize"| bm
+bm -->|"mill discharge"| bmcl
+bmcl -->|"underflow (sand return)"| bm
+bmcl -->|"overflow"| ffs
+water -->|"WATER"| ffs
+
+%% ================= ROUGHING / CONTACT FLOTATION =================
+reagents["REAGENTS"]
+rfl["ROUGHER FLDTATION"]
+cfl["CONTACT FLOTATION"]
+
+reagents -->|"REAGENTS"| rfl
+ffs -->|"pump feed"| rfl
+rfl -->|"concentrate launder"| dcl
+rfl -->|"underflow (tails)"| cfl
+reagents -->|"REAGENTS"| cfl
+cfl -->|"concentrate"| pgrav
+cfl -->|"tails (back to sump)"| ffs
+
+%% ================= GRAVITY CIRCUIT =================
+pgrav["PRIMARY GRAVITY"]
+fgrav["FLOTATION GRAVITY"]
+cgrav["CLEANER GRAVITY (FUTURE)"]
+pcol["PRIMARY CLEANER COLUMN"]
+intcyn["INTENSIVE CYANIDATION"]
+
+pgrav -->|"concentrate"| fgrav
+pgrav -->|"tails"| intcyn
+fgrav -->|"concentrate"| cgrav
+fgrav -->|"tails"| pcol
+cgrav -->|"concentrate"| intcyn
+cgrav -->|"tails"| pcol
+pcol -->|"concentrate"| firstcl
+pcol -->|"tails"| csfl
+
+%% ================= CLEANER / REGRIND FLOTATION =================
+firstcl["1st CLEANER FLOTATION"]
+csfl["CLEANER/SCAVENGER FLOTATION"]
+rg["REGRIND"]
+rgcl["REGRIND CYCLONE"]
+cond2["2ND CLEANER CONDITIONING TANK"]
+cl2["2ND CLEANER"]
+sc2["2ND CLEANER SCAVENGER"]
+
+reagents -->|"REAGENTS"| firstcl
+reagents -->|"REAGENTS"| csfl
+lime -->|"LIME"| rg
+firstcl -->|"concentrate"| cond2
+firstcl -->|"tails"| csfl
+csfl -->|"concentrate"| cond2
+csfl -->|"tails"| rgcl
+rgcl -->|"underflow feed"| rg
+rg -->|"mill discharge"| rgcl
+rgcl -->|"overflow (regraded feed)"| firstcl
+cond2 -->|"feed"| cl2
+cl2 -->|"concentrate"| cct
+cl2 -->|"tails"| sc2
+sc2 -->|"concentrate"| cond2
+sc2 -->|"tails"| csfl
+
+%% ================= MAGNETIC / FINAL CONCENTRATE =================
+magsep["MAGNETIC SEPARATION"]
+maggrav["MAGNETIC CONCENTRATE GRAVITY CONCENTRATOR"]
+cct["COPPER CONCENTRATE THICKENER"]
+ccf["COPPER CONCENTRATE FILTER"]
+ccstock["COPPER CONCENTRATE STOCKPILE<br/>10,000 TONS (COVERED)"]
+mkt["CONCENTRATE TO MARKET<br/>39,900 TONS/YR (AVE. 25% Cu)<br/>19,934,000 LB/YR Cu<br/>159,000 OZ/YR Au<br/>1,418,100 OZ/YR Ag"]
+
+cond2 -->|"feed"| magsep
+magsep -->|"magnetic concentrate"| maggrav
+magsep -->|"non-magnetic tails (recycle)"| csfl
+maggrav -->|"concentrate"| cl2
+maggrav -->|"tails"| sc2
+cct -->|"underflow"| ccf
+cct -->|"overflow (mill water)"| mwdist
+ccf -->|"filter cake"| ccstock
+ccf -->|"filtrate"| cct
+ccstock -->|"truck"| mkt
+
+%% ================= DESLIMING / LEACH =================
+dcl["DESLIME CYCLONES"]
+cyanide["CYANIDE"]
+trash["TRASH"]
+leach["LEACH"]
+ft["FINES THICKENER"]
+flocc["FLOCCULANT"]
+
+cyanide -->|"CYANIDE"| dcl
+dcl -->|"underflow (+ cyanide)"| leach
+dcl -->|"screen oversize"| trash
+dcl -->|"overflow"| ft
+flocc -->|"FLOCCULANT"| ft
+ft -->|"underflow (fines)"| cip
+leach -->|"leach pulp"| cip
+
+%% ================= CIP / CARBON CIRCUIT =================
+cip["CIP"]
+caro["CARO'S ACID"]
+gland["REAGENTS GLAND WATER"]
+cb["CARBON BIN"]
+aw["ACID WASH"]
+strip["STRIP"]
+regen["REGENERATION"]
+hlc["HEAP LEACH CARBON"]
+lc["(LOADED CARBON)"]
+bc["(BARREN CARBON)"]
+c2hl["CARBON TO HEAP LEACH"]
+
+caro -->|"CARO'S ACID"| cip
+gland -->|"REAGENTS GLAND WATER"| cip
+cb -->|"barren carbon feed"| cip
+cip -->|"loaded carbon"| lc
+lc -->|"loaded carbon"| aw
+hlc -->|"HEAP LEACH CARBON"| lc
+aw -->|"washed carbon"| strip
+strip -->|"stripped carbon"| regen
+regen -->|"(BARREN CARBON)"| bc
+bc -->|"barren carbon"| cb
+regen -->|"CARBON TO HEAP LEACH"| c2hl
+
+%% ================= SOLUTION / ELECTROWINNING =================
+bst["BARREN SOLUTION TANK"]
+pst["PREGNANT SOLUTION TANK"]
+ew["ELECTROWINNING CELLS"]
+ews["PRECIOUS METAL EW SLUDGE TO REFINERY<br/>231,800 OZ/YR Au<br/>422,400 OZ/YR Ag"]
+
+strip -->|"pregnant solution"| pst
+pst -->|"to electrowinning"| ew
+ew -->|"barren solution"| bst
+bst -->|"barren solution back to strip"| strip
+ew -->|"EW sludge"| ews
+
+%% ================= WATER / TAILINGS =================
+mwdist["MILL WATER DIST'N"]
+millw["MILL WATER"]
+fwt["FRESH WATER"]
+minew["MINE WATER"]
+tr["TREATED RECLAIM"]
+tp["TAILINGS POND"]
+rc["RECLAIM WATER"]
+cp["CHLORIDE PLUME"]
+res["(RESIDUE)"]
+preg["(PREG)"]
+
+mwdist -->|"MILL WATER"| millw
+millw -->|"mill water dilution"| dcl
+minew -->|"MINE WATER"| tr
+caro -->|"CARO'S ACID"| tr
+lime -->|"LIME"| tr
+tr -->|"treated reclaim"| mwdist
+tp -->|"pond water"| rc
+rc -->|"reclaim water"| tr
+cp -->|"plume water"| fwt
+fwt -->|"fresh water"| gland
+fwt -->|"fresh water"| mwdist
+intcyn -->|"pregnant solution"| preg
+preg -->|"(PREG) to leach circuit"| leach
+intcyn -->|"(RESIDUE)"| res
+res -->|"residue to tailings"| tp
+cip -->|"CIP tailings"| tp
+cb -->|"carbon bin overflow"| tp
+caro -->|"CARO'S ACID"| tp

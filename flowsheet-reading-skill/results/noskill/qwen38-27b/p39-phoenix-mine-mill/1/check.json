@@ -1,0 +1,58 @@
+{
+ "checked": "Claude, 16 Nov 2026 (rerun)",
+ "pairing": {
+  "MINE_ORE": {
+   "to": [
+    "mined_ore"
+   ],
+   "why": "'MINE ORE' with its tonnages into the primary crusher: the MINED ORE input, label misread"
+  },
+  "WATER_LIME": {
+   "to": [
+    "water_sag",
+    "lime_sag"
+   ],
+   "why": "'WATER, LIME' into the SAG mill names two items: pairs with both"
+  },
+  "REAGENTS_CS": {
+   "to": [
+    "reag_cyclone",
+    "reag_contact",
+    "reag_rougher",
+    "reag_regrind",
+    "reag_clsc",
+    "reag_clsc_sump",
+    "reag_cond",
+    "lime_sag",
+    "lime_regrind",
+    "lime_clsc_sump",
+    "lime_reclaim"
+   ],
+   "why": "'REAGENTS, LIME' names two inputs: pairs with both, each as the set of inputs sharing that label (as single REAGENTS and LIME boxes do)"
+  },
+  "LIME_REAG": {
+   "to": [
+    "lime_sag",
+    "lime_regrind",
+    "lime_clsc_sump",
+    "lime_reclaim",
+    "reag_cyclone",
+    "reag_contact",
+    "reag_rougher",
+    "reag_regrind",
+    "reag_clsc",
+    "reag_clsc_sump",
+    "reag_cond"
+   ],
+   "why": "'LIME REAGENTS' names two inputs: pairs with both sets, as above"
+  },
+  "CARBON_DISS": {
+   "to": [],
+   "why": "'CARBON (DISSOLVED)' is not on the drawing; the chart has its own CARBON BIN box: pairs with nothing, its lines run through"
+  }
+ },
+ "notes": [
+  "Rerun, no skill. Misread labels kept as the same items: PEBBLE CRUSHED, FROTH THICKENER (fines thickener), INTENSIVE OXIDATION, DIP (CIP), BAREN and PRECIPITANT SOLUTION TANK, MILL WATER DISTIN, REAGENTS, CLEAN WATER (the REAGENTS GLAND WATER outlet, no lines). Reagent, lime and Caro's acid inputs pair with their sets; 'RESIDUE' is a stream label.",
+  "Read: every box whose label is not exactly its key item's, or that pairs with nothing or with a set, and every box paired with a repeated key label, with its feeds (local/dev/repeats.py), 16 Nov. Boxes whose label is exactly their key item's were not each read."
+ ]
+}

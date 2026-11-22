@@ -1,0 +1,27 @@
+{
+ "fields": {
+  "cu_4a_pct": 0.272,
+  "cu_4a_sd_pct": 0.009,
+  "cu_ar_pct": 0.27,
+  "cu_ar_sd_pct": 0.006,
+  "cu_h2so4_pct": null,
+  "cu_h2so4_sd_pct": null,
+  "cu_cn_pct": null,
+  "cu_cn_sd_pct": null,
+  "au_fa_ppm": 0.232,
+  "au_fa_sd_ppm": 0.011,
+  "au_ar_ppm": 0.232,
+  "au_ar_sd_ppm": 0.01
+ },
+ "content": "\n\n{\"cu_4a_pct\":0.272,\"cu_4a_sd_pct\":0.009,\"cu_ar_pct\":0.27,\"cu_ar_sd_pct\":0.006,\"cu_h2so4_pct\":null,\"cu_h2so4_sd_pct\":null,\"cu_cn_pct\":null,\"cu_cn_sd_pct\":null,\"au_fa_ppm\":0.232,\"au_fa_sd_ppm\":0.011,\"au_ar_ppm\":0.232,\"au_ar_sd_ppm\":0.01}",
+ "reasoning": "Let me extract the values from the certificate of analysis for OREAS 501d.\n\nI need to fill in these columns:\n- cu_4a_pct: Cu by 4-Acid Digestion (wt.%)\n- cu_4a_sd_pct: 1SD for Cu by 4-Acid\n- cu_ar_pct: Cu by Aqua Regia Digestion (wt.%)\n- cu_ar_sd_pct: 1SD for Cu by Aqua Regia\n- cu_h2so4_pct: Cu by H2SO4 (not present in this certificate)\n- cu_h2so4_sd_pct: 1SD for Cu by H2SO4\n- cu_cn_pct: Cu by Cyanide (not present in this certificate)\n- cu_cn_sd_pct: 1SD for Cu by Cyanide\n- au_fa_ppm: Au by Fire Assay (ppm)\n- au_fa_sd_ppm: 1SD for Au by Fire Assay\n- au_ar_ppm: Au by Aqua Regia Digestion (ppm)\n- au_ar_sd_ppm: 1SD for Au by Aqua Regia\n\nFrom Table 1:\n\n**4-Acid Digestion:**\n- Cu, wt.%: Certified Value = 0.272, 1SD = 0.009\n\n**Aqua Regia Digestion:**\n- Cu, wt.%: Certified Value = 0.270, 1SD = 0.006\n\n**Pb Fire Assay:**\n- Au, ppm: Certified Value = 0.232, 1SD = 0.011\n\n**Aqua Regia Digestion:**\n- Au, ppm: Certified Value = 0.232, 1SD = 0.010\n\nWait, let me re-check. In the summary statistics at the top:\n- Pb Fire Assay: Au, Gold (ppm) = 0.232, 1SD = 0.010\n- Aqua Regia Digestion: Au, Gold (ppm) = 0.230, 1SD = 0.011\n\nBut in Table 1:\n- Pb Fire Assay: Au, ppm = 0.232, 1SD = 0.011\n- Aqua Regia Digestion: Au, ppm = 0.232, 1SD = 0.010\n\nThere's a discrepancy. Let me look more carefully.\n\nIn the summary statistics page:\n\"Pb Fire Assay\nAu, Gold (ppm)                       0.232         0.010\"\n\"Aqua Regia Digestion (sample weights 10-50g)\nAu, Gold (ppm)                       0.230         0.011\"\n\nIn Table 1:\n\"Pb Fire Assay\nAu, ppm            0.232    0.011\"\n\"Aqua Regia Digestion (sample weights 10-50g)\nAu, ppm            0.232    0.010\"\n\nThese are inconsistent between the summary and Table 1. The summary shows Au FA = 0.232 with 1SD = 0.010, and Au AR = 0.230 with 1SD = 0.011. Table 1 shows Au FA = 0.232 with 1SD = 0.011, and Au AR = 0.232 with 1SD = 0.010.\n\nI'll go with Table 1 as it's the more detailed and authoritative table:\n- Au FA: 0.232 ppm, 1SD = 0.011\n- Au AR: 0.232 ppm, 1SD = 0.010\n\nWait, actually let me re-read the summary statistics more carefully:\n\n\"Pb Fire Assay\nAu, Gold (ppm)                       0.232         0.010        0.228            0.235               0.230*         0.233*\nAqua Regia Digestion (sample weights 10-50g)\nAu, Gold (ppm)                       0.230         0.011        0.228            0.237               0.231*         0.234*\"\n\nAnd Table 1:\n\"Pb Fire Assay\nAu, ppm            0.232    0.011    0.210     0.253    0.200      0.264   4.61%      9.22%     13.83%     0.220      0.243\nAqua Regia Digestion (sample weights 10-50g)\nAu, ppm            0.232    0.010    0.213     0.252    0.204      0.261   4.10%      8.19%     12.29%     0.221      0.244\"\n\nSo in the summary:\n- Au FA: certified 0.232, 1SD 0.010\n- Au AR: certified 0.230, 1SD 0.011\n\nIn Table 1:\n- Au FA: certified 0.232, 1SD 0.011\n- Au AR: certified 0.232, 1SD 0.010\n\nThese are contradictory. I'll use Table 1 values as they are the full detailed table. Actually, wait - let me look at Table 4 for confirmation:\n\nTable 4:\n\"Pb Fire Assay\nAu, Gold (ppm)                  0.232            0.228            0.235           0.230*           0.233*\nAqua Regia Digestion (sample weights 10-50g)\nAu, Gold (ppm)                  0.232            0.228            0.237           0.231*           0.234*\"\n\nTable 4 shows both Au FA and Au AR as 0.232. This matches Table 1.\n\nSo the summary statistics page seems to have a typo (Au AR listed as 0.230 instead of 0.232). I'll go with Table 1 and Table 4:\n- Au FA: 0.232 ppm, 1SD = 0.011\n- Au AR: 0.232 ppm, 1SD = 0.010\n\nNow for the columns:\n- cu_4a_pct: 0.272\n- cu_4a_sd_pct: 0.009\n- cu_ar_pct: 0.270\n- cu_ar_sd_pct: 0.006\n- cu_h2so4_pct: null (no H2SO4 method in this CRM)\n- cu_h2so4_sd_pct: null\n- cu_cn_pct: null (no cyanide method in this CRM)\n- cu_cn_sd_pct: null\n- au_fa_ppm: 0.232\n- au_fa_sd_ppm: 0.011\n- au_ar_ppm: 0.232\n- au_ar_sd_ppm: 0.010\n",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 24564,
+  "total_tokens": 26425,
+  "completion_tokens": 1861,
+  "prompt_tokens_details": null
+ },
+ "seconds": 28.9,
+ "model": "qwen38-27b"
+}

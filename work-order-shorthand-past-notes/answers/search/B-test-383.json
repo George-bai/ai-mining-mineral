@@ -1,0 +1,18 @@
+{
+ "id": "B-test-383",
+ "condition": "search",
+ "note": "GE2963 a/c not working",
+ "model": "qwen38-27b",
+ "prompt": "You help a maintenance planner at an Australian mine site read work orders. Work orders are short notes typed in a hurry by maintainers and planners, full of the site's shorthand: abbreviations, misspellings and words run together. Codes such as AB123 or XY45 are asset numbers.\n\nRewrite the work order below in plain English for a reader who does not know the site's shorthand.\n\n- Expand every abbreviation and correct every misspelling. Choose each meaning from the note's context.\n- Keep to what the note says. Do not add a cause, a diagnosis, a fault or an outcome that the note does not state.\n- Keep the note's tense. A request for work stays a request: say that work was done only if the note says so.\n- Keep the note's asset numbers, quantities, positions and timings as they are.\n- If you cannot read a piece of shorthand with confidence, keep it as written in \"plain\", so the reader can see it is unresolved, and list it under \"unsure\".\n\nEarlier work orders from this site, found by searching its own records, and what each meant. The same shorthand can mean something else at another site.\n\nGE2963 Access Ladder not working = GE2963 access ladder not working\nAE2918 A/C not working = AE2918 air conditioner not working\nAE2918 a/c not working O/R = AE2918 air conditioner not working O/R\nCC0233 Air cond fan motors N/W = CC0233 air conditioner fan motors not working\nGE2963-C/out Alternator = GE2963 - change out alternator\nRear Air Con not cold = rear air conditioner not cold\nGE2963-C/out Battery LFT = GE2963 - change out battery left\ninterier light & elec horn not working = interior light and electric horn not working\nmain isolator not working = main isolator not working\nDiagnose R/H Air Con Repair L/H A/Con = diagnose right hand air conditioner repair left hand air conditioner\nAnswer with a JSON object only, with three keys:\n- \"plain\": the work order in plain English.\n- \"terms\": one item for each piece of shorthand you expanded or corrected: {\"written\": \"<as written in the note>\", \"means\": \"<what it stands for>\"}.\n- \"unsure\": the shorthand you could not read with confidence, as written in the note.\n\nWork order: GE2963 a/c not working\n",
+ "started": "2026-11-21T16:31:18+1000",
+ "content": "\n\n{\n  \"plain\": \"GE2963 air conditioner not working\",\n  \"terms\": [\n    {\n      \"written\": \"a/c\",\n      \"means\": \"air conditioner\"\n    }\n  ],\n  \"unsure\": []\n}",
+ "reasoning": "Let me analyze this work order: \"GE2963 a/c not working\"\n\nLooking at the earlier work orders from this site:\n- \"AE2918 A/C not working = AE2918 air conditioner not working\"\n- \"AE2918 a/c not working O/R = AE2918 air conditioner not working O/R\"\n- \"CC0233 Air cond fan motors N/W = CC0233 air conditioner fan motors not working\"\n\nSo \"a/c\" or \"A/C\" in this context means \"air conditioner\".\n\nThe work order is: \"GE2963 a/c not working\"\n\n- GE2963 is an asset number (keep as is)\n- a/c = air conditioner\n- \"not working\" is already plain English\n\nThe plain English version would be: \"GE2963 air conditioner not working\"\n\nTerms to expand:\n- \"a/c\" → \"air conditioner\"\n\nNo misspellings to correct. No unclear shorthand. The note is a statement that the air conditioner is not working - it's describing a fault/issue, not requesting work. I should keep the tense as is.\n\nLet me format the JSON response.\n",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 554,
+  "total_tokens": 880,
+  "completion_tokens": 326,
+  "prompt_tokens_details": null
+ },
+ "seconds": 5.4
+}

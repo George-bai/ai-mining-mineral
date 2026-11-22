@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 import demo
 
-INK, MUTED, GRID, PAPER = "#1A1816", "#6B655E", "#E6E1D9", "#FAF9F7"
+INK, MUTED, GRID, PAPER = "#1A1816", "#55504A", "#E6E1D9", "#FAF9F7"
 RUST, GREY, BAND = "#B84F33", "#8F8981", "#EFE7DA"
 FONT = "'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif"
 num = lambda v: f"{v:,.0f}".replace("-", "−")
@@ -19,10 +19,10 @@ class Fig:
     def __init__(self, w, h, title, desc):
         self.w, self.h = w, h
         self.out = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" role="img" '
-                    f'font-family="{FONT}" font-size="12" fill="{INK}"><title>{title}</title><desc>{desc}</desc>']
+                    f'font-family="{FONT}" font-size="13" fill="{INK}"><title>{title}</title><desc>{desc}</desc>']
         self.clips = 0
 
-    def text(self, x, y, s, anchor="start", fill=INK, size=12, weight=400):
+    def text(self, x, y, s, anchor="start", fill=INK, size=13, weight=400):
         self.out.append(f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{anchor}" fill="{fill}" font-size="{size}" font-weight="{weight}">{s}</text>')
 
     def line(self, x1, y1, x2, y2, stroke=GRID, width=1, cap="butt"):
@@ -60,7 +60,7 @@ class Panel:
     def axes(self, yticks, xticks, yfmt=num, xfmt=num, xlabel=None, title=None):
         f = self.f
         if title:
-            f.text(self.x, self.y - 12, title, size=13, weight=600)
+            f.text(self.x, self.y - 12, title, size=14, weight=600)
         for v in yticks:
             f.line(self.x, self.Y(v), self.x + self.w, self.Y(v), INK if v == 0 and self.yd[0] <= 0 else GRID)
             f.text(self.x - 8, self.Y(v) + 4, yfmt(v), "end", MUTED)
@@ -144,7 +144,7 @@ def fig2(d, narrow):
     f = Fig(w, ph + 150 + (36 if narrow else 0), "Hourly averages of the same shift, from raw records",
             "Twelve hourly averages. Nine match the true average. The hour with one spike reads 1,187 t/h against a true 1,050, "
             "inside the 1,500 t/h span. The hours with three spikes and one large spike read 3,266 and 1,946 t/h.")
-    f.text(L, 22, "Hourly average from raw records (t/h)", size=13, weight=600)
+    f.text(L, 22, "Hourly average from raw records (t/h)", size=14, weight=600)
     ly = f.legend(L, 44, [("swatch", GREY, "No spike in the hour"), ("swatch", RUST, "Hour holds a spike"), ("tick", INK, "True average")],
                   stacked=narrow)
     top = (ly if narrow else 44) + 22
@@ -161,7 +161,7 @@ def fig2(d, narrow):
         f.line(cx - bw / 2 - 3, ty, cx + bw / 2 + 3, ty, PAPER, 5)
         f.line(cx - bw / 2 - 3, ty, cx + bw / 2 + 3, ty, INK, 2.5)
         if h["spikes"]:
-            f.text(cx, y - 7, num(h["raw"]), "middle", size=12, weight=600)
+            f.text(cx, y - 7, num(h["raw"]), "middle", size=13, weight=600)
         f.text(cx, p.y + p.h + 17, str(h["hour"] + 1), "middle", MUTED)
     f.text(L + p.w / 2, p.y + p.h + 36, "Hour of the shift", "middle", MUTED)
     return f
@@ -199,22 +199,24 @@ def fig4(d, narrow):
     L, R, ph = 46, 12, 210 if narrow else 240
     lo, hi = d["thr"]["1.5 x IQR after hard limit"]
     s_lo, s_hi = d["thr"]["3-sigma after hard limit"]
-    f = Fig(w, ph + 176, "Four days of cleaned feed rate, with what two statistical rules would keep",
+    lift = 16 if narrow else 0                    # phone: labels on two rows, so 13 px text does not overlap
+    f = Fig(w, ph + 176 + lift, "Four days of cleaned feed rate, with what two statistical rules would keep",
             f"The box-plot rule keeps only {num(lo)} to {num(hi)} t/h, so it flags the surge, the trip, the shutdown, the empty belt and "
             f"a real low-feed hour. Three-sigma limits of {num(s_lo)} and {num(s_hi)} t/h flag the stops and almost none of the surge.")
-    f.text(L, 22, "Cleaned records over four days (t/h)", size=13, weight=600)
+    f.text(L, 22, "Cleaned records over four days (t/h)", size=14, weight=600)
     ly = f.legend(L, 44, [("thin", RUST, "Cleaned records"), ("swatch", BAND, f"Box-plot rule keeps {num(lo)} to {num(hi)}"),
                           ("line", INK, f"3-sigma limits, {num(s_lo)} and {num(s_hi)}")], stacked=True)
-    top = ly + 26
+    top = ly + 26 + lift
     p = Panel(f, L, top, w - L - R, ph, (0, 96), (0, 1400))
     f.out.append(f'<rect x="{L}" y="{p.Y(hi):.1f}" width="{p.w}" height="{p.Y(lo) - p.Y(hi):.1f}" fill="{BAND}"/>')
     p.axes([0, 500, 1000], [0, 24, 48, 72, 96], xlabel="Hours")
     for v in (s_lo, s_hi):
         f.line(L, p.Y(v), L + p.w, p.Y(v), INK, 1.2)
     p.path(d["ch"], d["cx"], RUST, 1.1, gaps=d["ck"])
-    for hr, label, dy in ((20.25, "Surge", 0), (30.5, "Trip", 0), (43.5, "Shutdown", 0), (58.5, "Empty belt", 0), (8.5, "Low hour", 0)):
-        f.text(p.X(hr), top - 6, label if not narrow or label != "Empty belt" else "Empty", "middle", MUTED, size=11)
-        f.line(p.X(hr), top - 2, p.X(hr), top + 6, MUTED, 1)
+    for hr, label, up in ((20.25, "Surge", 1), (30.5, "Trip", 0), (43.5, "Shutdown", 1), (58.5, "Empty belt", 0), (8.5, "Low hour", 0)):
+        dy = lift if up else 0
+        f.text(p.X(hr), top - 6 - dy, label if not narrow or label != "Empty belt" else "Empty", "middle", MUTED)
+        f.line(p.X(hr), top - 2 - dy, p.X(hr), top + 6, MUTED, 1)
     return f
 
 

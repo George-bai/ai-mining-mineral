@@ -1,0 +1,27 @@
+{
+ "fields": {
+  "cu_4a_pct": null,
+  "cu_4a_sd_pct": null,
+  "cu_ar_pct": null,
+  "cu_ar_sd_pct": null,
+  "cu_h2so4_pct": null,
+  "cu_h2so4_sd_pct": null,
+  "cu_cn_pct": null,
+  "cu_cn_sd_pct": null,
+  "au_fa_ppm": 0.623,
+  "au_fa_sd_ppm": 0.005,
+  "au_ar_ppm": null,
+  "au_ar_sd_ppm": null
+ },
+ "content": "\n\n{\n  \"cu_4a_pct\": null,\n  \"cu_4a_sd_pct\": null,\n  \"cu_ar_pct\": null,\n  \"cu_ar_sd_pct\": null,\n  \"cu_h2so4_pct\": null,\n  \"cu_h2so4_sd_pct\": null,\n  \"cu_cn_pct\": null,\n  \"cu_cn_sd_pct\": null,\n  \"au_fa_ppm\": 0.623,\n  \"au_fa_sd_ppm\": 0.005,\n  \"au_ar_ppm\": null,\n  \"au_ar_sd_ppm\": null\n}",
+ "reasoning": "The certificate is for CRM SE147 \u2013 Gold Au. Let me analyze what's provided:\n\n**Certified value:**\n- Au: 0.623 ppm (this is the certified value)\n- Expanded Uncertainty (U): \u00b10.01 ppm with coverage factor k=2\n\n**Method used for certification:**\n- Fire assay (with various finishes - gravimetric, AAS, or ICP)\n- The certificate states: \"Gold analysis was conducted by all participating laboratories using fire assay followed by either gravimetric or instrument finish (AAS or ICP).\"\n\nNow let me map to the fields:\n\n- `cu_4a_pct`: Copper by four-acid digestion - NOT reported in this certificate. This is a gold CRM. \u2192 null\n- `cu_4a_sd_pct`: \u2192 null\n- `cu_ar_pct`: Copper by aqua regia - NOT reported. \u2192 null\n- `cu_ar_sd_pct`: \u2192 null\n- `cu_h2so4_pct`: Acid-soluble copper by H2SO4 - NOT reported. \u2192 null\n- `cu_h2so4_sd_pct`: \u2192 null\n- `cu_cn_pct`: Cyanide-soluble copper - NOT reported. \u2192 null\n- `cu_cn_sd_pct`: \u2192 null\n- `au_fa_ppm`: Gold by lead-collection fire assay - The certified value is 0.623 ppm. The method is fire assay. The certificate says \"fire assay\" with various finishes. The field says \"any finish\" so this applies. \u2192 0.623\n- `au_fa_sd_ppm`: The expanded uncertainty is \u00b10.01 ppm with k=2. This is a 2SD (expanded uncertainty at 95% confidence with k=2). To get 1SD, I halve it: 0.01/2 = 0.005 ppm. \u2192 0.005\n- `au_ar_ppm`: Gold by aqua regia digestion - NOT reported. The certificate only reports fire assay. \u2192 null\n- `au_ar_sd_ppm`: \u2192 null\n\nWait, let me re-read the rules: \"The 1SD fields take one standard deviation. If the certificate gives 2SD, halve it; never use a confidence or tolerance interval.\"\n\nThe expanded uncertainty U = \u00b10.01 ppm with k=2. This is the expanded uncertainty at 95% confidence level with coverage factor k=2. This means U = k \u00d7 u_c, where u_c is the combined standard uncertainty. So 1SD = U/k = 0.01/2 = 0.005 ppm.\n\nYes, that's correct. The expanded uncertainty with k=2 is equivalent to 2SD, so 1SD = 0.01/2 = 0.005 ppm.\n\nLet me finalize:\n- cu_4a_pct: null\n- cu_4a_sd_pct: null\n- cu_ar_pct: null\n- cu_ar_sd_pct: null\n- cu_h2so4_pct: null\n- cu_h2so4_sd_pct: null\n- cu_cn_pct: null\n- cu_cn_sd_pct: null\n- au_fa_ppm: 0.623\n- au_fa_sd_ppm: 0.005\n- au_ar_ppm: null\n- au_ar_sd_ppm: null\n",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 5129,
+  "total_tokens": 6003,
+  "completion_tokens": 874,
+  "prompt_tokens_details": null
+ },
+ "seconds": 18.8,
+ "model": "qwen38-27b"
+}

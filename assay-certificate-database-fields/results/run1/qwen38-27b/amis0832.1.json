@@ -1,0 +1,27 @@
+{
+ "fields": {
+  "cu_4a_pct": 1.87,
+  "cu_4a_sd_pct": 0.0385,
+  "cu_ar_pct": 1.91,
+  "cu_ar_sd_pct": 0.0115,
+  "cu_h2so4_pct": 1.55,
+  "cu_h2so4_sd_pct": 0.06,
+  "cu_cn_pct": null,
+  "cu_cn_sd_pct": null,
+  "au_fa_ppm": null,
+  "au_fa_sd_ppm": null,
+  "au_ar_ppm": null,
+  "au_ar_sd_ppm": null
+ },
+ "content": "\n\n{\"cu_4a_pct\":1.87,\"cu_4a_sd_pct\":0.0385,\"cu_ar_pct\":1.91,\"cu_ar_sd_pct\":0.0115,\"cu_h2so4_pct\":1.55,\"cu_h2so4_sd_pct\":0.06,\"cu_cn_pct\":null,\"cu_cn_sd_pct\":null,\"au_fa_ppm\":null,\"au_fa_sd_ppm\":null,\"au_ar_ppm\":null,\"au_ar_sd_ppm\":null}",
+ "reasoning": "Let me analyze the certificate of analysis for AMIS0832 (Copper Ore, Copperbelt, DRC) to fill in the standards table.\n\nLet me go through each field:\n\n**cu_4a_pct**: Copper by four-acid (near-total) digestion: certified value, in wt.% Cu.\n- From Table 1: Cu, 4A_MICP, certified value (\u00b5) = 1.87 %\n- This is a certified value. \u2713\n- cu_4a_pct = 1.87\n\n**cu_4a_sd_pct**: Copper by four-acid digestion: 1SD, in wt.% Cu.\n- From Table 1: Cu, 4A_MICP, 2s = 0.077 %\n- 1SD = 2s/2 = 0.077/2 = 0.0385\n- cu_4a_sd_pct = 0.0385\n\n**cu_ar_pct**: Copper by aqua regia digestion: certified value, in wt.% Cu.\n- From Table 1: Cu, 2A_MICP, certified value (\u00b5) = 1.91 %\n- 2A_MICP is \"aqua regia digestion with either ICPOES/ICPMS/AAS finish\"\n- This is a certified value. \u2713\n- cu_ar_pct = 1.91\n\n**cu_ar_sd_pct**: Copper by aqua regia digestion: 1SD, in wt.% Cu.\n- From Table 1: Cu, 2A_MICP, 2s = 0.023 %\n- 1SD = 0.023/2 = 0.0115\n- cu_ar_sd_pct = 0.0115\n\n**cu_h2so4_pct**: Acid-soluble copper by sulphuric acid (H2SO4) leach: certified value, in wt.% Cu.\n- From Table 1: Cu, SAL, certified value (\u00b5) = 1.55 %\n- SAL is \"sulphuric acid leach\"\n- This is a certified value. \u2713\n- cu_h2so4_pct = 1.55\n\n**cu_h2so4_sd_pct**: Acid-soluble copper by sulphuric acid leach: 1SD, in wt.% Cu.\n- From Table 1: Cu, SAL, 2s = 0.12 %\n- 1SD = 0.12/2 = 0.06\n- cu_h2so4_sd_pct = 0.06\n\n**cu_cn_pct**: Cyanide-soluble copper by cyanide (NaCN) leach: certified value, in wt.% Cu.\n- Looking through the certificate, I don't see any cyanide (NaCN) leach method for Cu. The methods listed are: 2A_MICP, 3A_MICP, 4A_MICP, AS (acid soluble), FUS (Fusion), SAL (sulphuric acid leach), XRF.\n- There is no cyanide leach method reported.\n- cu_cn_pct = null\n\n**cu_cn_sd_pct**: Cyanide-soluble copper: 1SD, in wt.% Cu.\n- Not reported.\n- cu_cn_sd_pct = null\n\n**au_fa_ppm**: Gold by lead-collection fire assay (any finish): certified value, in ppm (g/t) Au.\n- Looking through the certificate for Gold (Au) by fire assay...\n- In Table 3 (Uncertified element statistics), I see: Au, 2A_MICP, n=8, Mean=0.02, SD=0.001, g/t\n- But this is in the UNCERTIFIED table (Table 3), not in the certified values (Table 1).\n- Also, 2A_MICP is aqua regia digestion, not fire assay.\n- There's no certified gold by fire assay in this certificate.\n- Wait, let me re-check. The methods requested in section 17 don't include fire assay for gold. The methods are: Acid Soluble Cu, 4 Acid Digest, 3 Acid Digest, 2 Acid Digest, Multi-element scan by Peroxide Fusion, Major oxides & LOI by XRF, C & S Combustion/LECO, SG, Moisture.\n- No fire assay for gold is listed.\n- au_fa_ppm = null\n\n**au_fa_sd_ppm**: Gold by fire assay: 1SD, in ppm (g/t) Au.\n- Not reported.\n- au_fa_sd_ppm = null\n\n**au_ar_ppm**: Gold by aqua regia digestion: certified value, in ppm (g/t) Au.\n- In Table 3 (Uncertified element statistics): Au, 2A_MICP, n=8, Mean=0.02, SD=0.001, g/t\n- This is in the UNCERTIFIED table, not the certified table.\n- The rule says: \"A value the certificate gives as indicative, provisional, informational or uncertified is left empty (null).\"\n- So this should be null.\n- au_ar_ppm = null\n\n**au_ar_sd_ppm**: Gold by aqua regia digestion: 1SD, in ppm (g/t) Au.\n- Not certified, so null.\n- au_ar_sd_ppm = null\n\nWait, let me double-check. Table 3 is titled \"Uncertified element concentrations statistics (Before the removal of outliers).\" The Au entry there is: Au, 2A_MICP, n=8, Mean=0.02, SD=0.001, g/t. This is explicitly uncertified.\n\nAlso, I notice that Table 10 mentions \"mean gold values obtained by fire assay lead collection\" but this is just an example in the methodology section (section 23), not a certified value for this CRM.\n\nSo my final answers:\n- cu_4a_pct: 1.87\n- cu_4a_sd_pct: 0.0385\n- cu_ar_pct: 1.91\n- cu_ar_sd_pct: 0.0115\n- cu_h2so4_pct: 1.55\n- cu_h2so4_sd_pct: 0.06\n- cu_cn_pct: null\n- cu_cn_sd_pct: null\n- au_fa_ppm: null\n- au_fa_sd_ppm: null\n- au_ar_ppm: null\n- au_ar_sd_ppm: null\n",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 45276,
+  "total_tokens": 46833,
+  "completion_tokens": 1557,
+  "prompt_tokens_details": null
+ },
+ "seconds": 53.5,
+ "model": "qwen38-27b"
+}

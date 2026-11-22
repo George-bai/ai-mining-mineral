@@ -4,6 +4,12 @@
 The data is the shared dataset in data/feed-rate-raw-style-v1 (see its README): real hourly averages
 (anonymised and scaled) with generated records, faults and events inside them. This shows how each rule
 behaves on that data, not how real plants behave. Standard library only.
+
+ASSUMPTION, read before reusing on a real tag: clean() sets a small negative reading (down to LOW) to zero
+when belt_running is 1, treating it as zero drift on an empty belt. That holds here only because the one such
+stretch in this dataset is an inserted hour of empty running belt. A running belt does not show that the belt
+is empty: a loaded belt can read negative too (a fault, a calibration error). Set a negative to zero only
+with separate evidence of no load, such as a belt-loaded signal or the upstream feeder stopped; otherwise flag it.
 Run:  python3 demo.py <dataset folder> [output folder]     writes results.json and cleaned-base.csv
 """
 import csv, json, math, statistics, sys
@@ -13,7 +19,7 @@ from pathlib import Path
 HOURS = 96
 SHIFT = 12 * 3600
 SPAN = 1500.0                # instrument span, t/h
-LOW = -0.01 * SPAN           # below this a negative is a fault, not zero drift
+LOW = -0.01 * SPAN           # below this a negative is a fault, not zero drift (see ASSUMPTION above)
 GAP = 60                     # removed records are bridged when the good records around them are this close, seconds
 
 
@@ -57,12 +63,14 @@ def rules(t, read):
 def clean(t, read, run, hard):
     """Drop records outside the hard limit; set small negatives on a running belt to 0.
 
-    ponytail: a negative no lower than LOW on a running belt is taken as zero drift on an empty belt. That holds
-    in this dataset, where the only such records are the inserted empty-belt hour. A real tag needs evidence
-    that the belt is empty (a belt-loaded signal, upstream feeder state) before a negative is set to zero.
+    Valid for this dataset only: see ASSUMPTION at the top. On a real tag, replace `run[i]` with evidence that
+    the belt is empty.
 
     Returns the cleaned records as (seconds, value, known): known is False when the stretch up to the next
     record lost more than GAP seconds to dropped records, so it counts as missing, not interpolated.
+    A gap with no records at all is interpolated, however long: historian silence is trusted as compression.
+    So the same two good records are bridged or not depending on whether faults were dropped between them.
+    On a real tag, mark outages from the historian's quality flags or a confirmed outage log instead.
     """
     out, repaired, dropped = [], 0, False
     for i in range(len(t)):
@@ -70,7 +78,7 @@ def clean(t, read, run, hard):
             dropped = True
             continue
         x = read[i]
-        if x < 0 and run[i]:
+        if x < 0 and run[i]:                             # ASSUMPTION: running belt = empty belt, true here only
             x, repaired = 0.0, repaired + 1
         if out and dropped and t[i] - out[-1][0] > GAP:
             out[-1] = (out[-1][0], out[-1][1], False)

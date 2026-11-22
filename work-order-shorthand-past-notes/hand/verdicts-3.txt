@@ -1,0 +1,18 @@
+# read r7172 to r2429, all 160 entries
+r9313 meaning=0 | "198 HR PREVENTATIVE MAINTENANCE" (the 198-hour PM) read as "198 hours of preventive maintenance", a duration: interval lost
+r7403 meaning=0 | RHR read as "right hand": rear dropped
+r3490 meaning=0 | "propels" (the propel drives) read as "propellers", a different part
+r7310 meaning=0 | "blinker dipper switch" (indicator and headlight dip switch) read as "the indicator switch on the dipper": dipper made a location
+r5456 meaning=0 | "Pos 3 9 tyres" (positions 3 and 9) read as "the 9 tyres at Position 3": a position number made a quantity
+r5843 meaning=0 added=1 | "bucket" added before "tooth lock"; not in the note
+r7759 meaning=0 | "BRAKE PACKS" read as "brake pads", a different part
+r2219 meaning=0 | "Replace the converter shaft." asserts the shaft is replaced; the note replaces the shaft's UNIS (universal joints), which is only listed unsure
+r9049 meaning=0 | "req's" (requires) read as "requests"
+r1758 meaning=0 | "TEMP REP" is a temporary repair; "Temperature repair" is a confident wrong reading (the key reads temperature too, see doubt)
+doubt r1758|1 | TEMP REP in this note is a temporary repair, not temperature
+r1758|5 right | plain text "drop box" is the dropbox written as two words, same meaning (as "set up" for set-up)
+r2052|5 right | the plain text says "non-compliance", the key's own word
+r9880 meaning=0 | "Drag Motor" (the drag motion motor) read as "dragline motor", a different part
+r1769 meaning=0 | "`afe" (safe) read as "After"
+r6283 meaning=0 | "no" read as "Number": the plain text no longer says the fans are missing or off
+r7031 meaning=0 | "Turbo Primary" (the primary turbo) read as "the turbo at the primary": primary made a location

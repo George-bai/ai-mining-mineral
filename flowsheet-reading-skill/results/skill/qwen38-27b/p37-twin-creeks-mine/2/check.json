@@ -1,0 +1,17 @@
+{
+ "checked": "Claude, 16 Nov 2026 (rerun)",
+ "pairing": {
+  "refractory_slurry_cooling": {
+   "to": [],
+   "why": "'Refractory Slurry Cooling' names a section, not an item (the scorer had matched it to the refractory SAG mill)"
+  },
+  "steam": {
+   "to": [],
+   "why": "'Steam' with one line in, gas from the autoclave, beside the chart's own Steam Generation Plant box: not the steam plant; the stream label 'Steam' drawn as a box. Pairs with nothing"
+  }
+ },
+ "notes": [
+  "Rerun (void attempt run again alone), skill. Hoppers, SAG mills, screens, cyclones (one refractory cyclone box, fed by the primary ball mill: the primary cyclones), trash screens (both fed by cyclones) and surge tanks by their ids and feeds, as the scorer has them. 'OIL Tank (7)' and 'CIL Tank(7)' are the CIL tanks drawn as two boxes. Misread labels kept as the same items: Ore Blend Stacker, Cycloner, Acidulation Starter Tank, Neutralisation Tank, Tails Mill (the tower mill), Barren and Pregnant Sal. Tank, Electrofinning Cell, Carbon Finer To Filter. Return water, air, vent, water and to-atmosphere boxes pair with their sets; 'Sub Aerial Depasitiser' is a stream label.",
+  "Read: every box whose label is not exactly its key item's (local/dev/differs.py), or that pairs with nothing or with a set, every box paired with a repeated key label, with its feeds (local/dev/repeats.py), and items paired with two boxes (local/dev/dupes.py), 16 Nov. Other boxes whose label is exactly their key item's were not each read."
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "checked": "Claude, 16 Nov 2026",
+ "pairing": {
+  "refractory_sag_screen": {
+   "to": [
+    "ref_screen"
+   ],
+   "why": "the screen of the refractory SAG mill: the unlabelled refractory SAG discharge screen, not the oxide screen"
+  },
+  "oxide_return_water_tank": {
+   "to": [
+    "ox_water_tank"
+   ],
+   "why": "'Return water tank' on the oxide thickener overflow: the oxide thickener overflow tank, not a Return Water input"
+  },
+  "refractory_return_water_tank": {
+   "to": [
+    "ref_water_tank"
+   ],
+   "why": "'Return water tank' on the refractory thickener overflow: the refractory thickener overflow tank"
+  },
+  "cil_sump": {
+   "to": [
+    "tails_sump"
+   ],
+   "why": "the sump after the CIL screen, feeding the tailings: the tailings pump box"
+  },
+  "vent_scrubber_column": {
+   "to": [],
+   "why": "a 'Vent scrubber column' on the acidulation tanks' vent, which the drawing does not have (the vent goes through a fan and stack; the chart has the real Vent Gas Scrubber as another box)"
+  },
+  "rotary": {
+   "to": [
+    "retort"
+   ],
+   "why": "'Rotary' between the electrowinning cells and the furnace (rule 2): the Retort, misread"
+  }
+ },
+ "notes": [
+  "Test, skill. the cyclone feed sumps, hoppers, cyclones and trash screens by their ids and feeds, as the scorer has them. 'Lime Slurry' stands for the lime silo; 'Cautic' is the caustic; the wheel loader passes through. Water, air, vent and to-atmosphere boxes pair with their sets.",
+  "First run wrote the chart (26.5 minutes).",
+  "'CIL tank (unlabelled)' is the CIL tanks drawn a second time: it pairs with them, as the scorer has it (16 Nov).",
+  "Read: every box whose label is not exactly its key item's, or that pairs with nothing or with a set, and every box paired with a repeated key label, with its feeds (local/dev/repeats.py); both lists uncut, 16 Nov. Boxes whose label is exactly their key item's were not each read."
+ ]
+}

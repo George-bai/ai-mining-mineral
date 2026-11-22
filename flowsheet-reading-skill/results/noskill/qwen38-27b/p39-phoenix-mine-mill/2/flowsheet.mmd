@@ -1,0 +1,79 @@
+flowchart TD
+    %% ===================== Crushing =====================
+    MinedOre["MINED ORE<br/>12,254,000 TONS/YR<br/>0.135% Cu<br/>0.355 OZ/TON Au<br/>0.270 OZ/TON Ag"] --> PrimaryCrusher["PRIMARY CRUSHER"]
+    PrimaryCrusher --> CrushedOreStockpile["CRUSHED ORE STOCKPILE<br/>(LIVE)<br/>33,000 TON"]
+    CrushedOreStockpile --> SAGMill["SAG MILL"]
+    WaterLime1["WATER<br/>LIME"] --> SAGMill
+    SAGMill --> SAGMillScreen["SAG MILL DISCHARGE SCREEN"]
+    SAGMillScreen -->|oversize| PebbleCrusher["PEBBLE CRUSHER"]
+    PebbleCrusher --> SAGMill
+    SAGMillScreen --> BallMills["BALL MILLS"]
+
+    %% ===================== Grinding / Flotation =====================
+    Reactants1["REACTANTS"] --> BallMills
+    BallMills --> RougherFlotation["ROUGHER FLOTATION"]
+    Reactants2["REACTANTS"] --> RougherFlotation
+    RougherFlotation --> ContactFlotation["CONTACT FLOTATION"]
+    Reactants3["REACTANTS"] --> ContactFlotation
+    ContactFlotation --> PrimaryCleanerColumn["PRIMARY CLEANER COLUMN"]
+
+    %% Gravity circuits
+    SAGMillScreen --> PrimaryGravity["PRIMARY GRAVITY"]
+    PrimaryGravity --> FlotationGravity["FLOTATION GRAVITY"]
+    FlotationGravity --> CleanerGravity["CLEANER GRAVITY (FUTURE)"]
+    FlotationGravity --> IntensiveOxidation["INTENSIVE OXIDATION"]
+    PrimaryCleanerColumn --> Regrind["REGRIND"]
+    Regrind --> FirstCleanerFlotation["1ST CLEANER FLOTATION"]
+    Reactants4["REACTANTS"] --> FirstCleanerFlotation
+    FirstCleanerFlotation --> CleanerScavengerFlotation["CLEANER/SCAVENGER FLOTATION"]
+    Reactants5["REACTANTS"] --> CleanerScavengerFlotation
+    Lime1["LIME"] --> CleanerScavengerFlotation
+    CleanerScavengerFlotation --> SecondCleanerConditioning["2ND CLEANER CONDITIONING TANK"]
+    Reactants6["REACTANTS"] --> SecondCleanerConditioning
+
+    %% Residue / Intensive oxidation
+    PrimaryGravity --> Residue["(RESIDUE)"]
+    Residue --> IntensiveOxidation
+    IntensiveOxidation -->|RES| SecondCleanerConditioning
+    LimeReactants2["LIME<br/>REACTANTS"] --> SecondCleanerConditioning
+
+    %% ===================== Concentrate product =====================
+    PrimaryCleanerColumn --> CopperConcThickener["COPPER CONCENTRATE THICKENER"]
+    CopperConcThickener --> CopperConcFilter["COPPER CONCENTRATE FILTER"]
+    CopperConcFilter --> CopperConcStockpile["COPPER CONCENTRATE STOCKPILE<br/>10,000 TONS (COVERED)"]
+    CopperConcStockpile --> ConcentrateToMarket["CONCENTRATE TO MARKET<br/>39,800 TONS/YR (AVG @ 25% Cu)<br/>19,934,000 LB/WR Cu<br/>150,000 OZ/WR Au<br/>1,418,100 OZ/YR Ag"]
+
+    %% ===================== Gold circuit (CIP/IX) =====================
+    SecondCleanerConditioning --> DeslimeCyclones["DESIME CYCLONES"]
+    Cyanide["CYANIDE"] --> DeslimeCyclones
+    DeslimeCyclones -->|trash| Trash["TRASH"]
+    DeslimeCyclones --> Leach["LEACH"]
+    Leach --> DIP["DIP"]
+    DIP --> CarbonBin["CARBON BIN"]
+    CarbonBin --> AcidWash["ACID WASH"]
+    AcidWash --> Strip["STRIP"]
+    Strip --> Regeneration["REGENERATION"]
+    Regeneration -->|"CARBON TO HEAP LEACH"| HeapLeachCarbon["HEAP LEACH CARBON"]
+    ReactantsClandWater["REACTANTS<br/>CLAND WATER"] --> FinesThickener
+    FinesThickener["FINES THICKENER"] --> TreatedReclaim["TREATED RECLAIM"]
+    FinesThickener --> MillWaterDistn["MILL WATER DIST'N"]
+    Floculant["FLOCCULANT"] --> FinesThickener
+    MineWater["MINE WATER"] --> TreatedReclaim
+    CarosAcidLime["CARO'S ACID<br/>LIME"] --> TreatedReclaim
+    MillWaterDistn -->|MILL WATER| SAGMill
+    FreshWater["FRESH WATER"] --> MillWaterDistn
+    Regeneration --> BarrenSolutionTank["BARREN SOLUTION TANK"]
+    BarrenSolutionTank --> PrecipitantSolutionTank["PRECIPITANT SOLUTION TANK"]
+    PrecipitantSolutionTank --> PreciousMetalSludge["PRECIOUS METAL EW SLUDGE TO REFINERY<br/>231,000 OZ/YR Au<br/>422,000 OZ/YR Ag"]
+
+    %% ===================== Magnetic / scavenger =====================
+    SecondCleanerConditioning --> MagneticConcGravConc["MAGNETIC CONCENTRATE GRAVITY CONCENTRATOR"]
+    MagneticConcGravConc --> MagneticSeparation["MAGNETIC SEPARATION"]
+    MagneticSeparation --> SecondCleanerScavenger["2ND CLEANER SCAVENGER"]
+    SecondCleanerScavenger --> CopperConcThickener
+
+    %% ===================== Tailings =====================
+    CarbonBin -->|"CARBON (CARBON)"| TailingsPond["TAILINGS POND"]
+    CarosAcid["CARO'S ACID"] --> TailingsPond
+    TailingsPond --> ReclaimWater["RECLAIM WATER"]
+    ReclaimWater --> ChlorideFlume["CHLORIDE FLUME"]

@@ -1,0 +1,55 @@
+{
+ "object": "list",
+ "data": [
+  {
+   "id": "qwen38-27b",
+   "object": "model",
+   "created": 1795239906,
+   "owned_by": "vllm",
+   "root": "RadixArk/Qwen3.8-27B-NVFP4-BF16-LMHead",
+   "parent": null,
+   "max_model_len": 165000,
+   "permission": [
+    {
+     "id": "modelperm-a0aba381f6e4119d",
+     "object": "model_permission",
+     "created": 1795239906,
+     "allow_create_engine": false,
+     "allow_sampling": true,
+     "allow_logprobs": true,
+     "allow_search_indices": false,
+     "allow_view": true,
+     "allow_fine_tuning": false,
+     "organization": "*",
+     "group": null,
+     "is_blocking": false
+    }
+   ]
+  },
+  {
+   "id": "qwen38-27b-bf16-lmhead",
+   "object": "model",
+   "created": 1795239906,
+   "owned_by": "vllm",
+   "root": "RadixArk/Qwen3.8-27B-NVFP4-BF16-LMHead",
+   "parent": null,
+   "max_model_len": 165000,
+   "permission": [
+    {
+     "id": "modelperm-b4cea2b6148b7549",
+     "object": "model_permission",
+     "created": 1795239906,
+     "allow_create_engine": false,
+     "allow_sampling": true,
+     "allow_logprobs": true,
+     "allow_search_indices": false,
+     "allow_view": true,
+     "allow_fine_tuning": false,
+     "organization": "*",
+     "group": null,
+     "is_blocking": false
+    }
+   ]
+  }
+ ]
+}

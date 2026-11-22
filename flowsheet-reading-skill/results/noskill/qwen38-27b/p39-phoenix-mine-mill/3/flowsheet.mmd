@@ -1,0 +1,140 @@
+flowchart TD
+    mineOre["MINE ORE<br/>12,254,000 TONS/YR<br/>0.135 Cu<br/>0.335 OZ/TON Au<br/>0.270 OZ/TON Ag"]
+    primaryCrusher["PRIMARY CRUSHER"]
+    crushedOreStockpile["CRUSHED ORE STOCKPILE<br/>33,000 T/D (LIVE)"]
+    pebbleCrushed["PEBBLE CRUSHED"]
+    waterLime["WATER<br/>LIME"]
+    sagMill["SAG MILL"]
+    sagDischargeScreen["SAG MILL DISCHARGE SCREEN"]
+    ballMills["BALL MILLS"]
+    reagentsBall["REAGENTS"]
+    waterMill["WATER"]
+    contactFlotation["CONTACT FLOTATION"]
+    rougherFlotation["ROUGHER FLOTATION"]
+    reagentsRougher["REAGENTS"]
+    primaryGravity["PRIMARY GRAVITY"]
+    flotationGravity["FLOTATION GRAVITY"]
+    cleanerGravity["CLEANER GRAVITY (FUTURE)"]
+    primaryCleanerColumn["PRIMARY CLEANER COLUMN"]
+    intensiveOxidation["INTENSIVE OXIDATION"]
+    residue["RESIDUE"]
+    res["(RES)"]
+    copperConcentrateThickener["COPPER CONCENTRATE THICKENER"]
+    copperConcentrateFilter["COPPER CONCENTRATE FILTER"]
+    copperConcentrateStockpile["COPPER CONCENTRATE STOCKPILE<br/>10,000 TONS (COVERED)"]
+    concentrateToMarket["CONCENTRATE TO MARKET<br/>39,800 TONS/YR (AVE @ 23% Cu)<br/>19,934,000 LB/YR Cu<br/>150,000 OZ/YR Au<br/>1,418,100 OZ/YR Ag"]
+    firstCleanerFlotation["1st CLEANER FLOTATION"]
+    cleanerScavengerFlotation["CLEANER/SCAVENGER FLOTATION"]
+    reagentsCleaner["REAGENTS"]
+    limeCleaner["LIME"]
+    regrind["REGRIND"]
+    limeReagents["LIME REAGENTS"]
+    secondCleanerConditioningTank["2ND CLEANER CONDITIONING TANK"]
+    magneticConcentrateThickener["MAGNETIC CONCENTRATE THICKENER"]
+    magneticConcentrateGravitySeparation["MAGNETIC CONCENTRATE GRAVITY SEPARATION"]
+    secondCleanerScavenger["2ND CLEANER SCAVENGER"]
+    barenSolutionTank["BAREN SOLUTION TANK"]
+    pregnantSolutionTank["PREGNANT SOLUTION TANK"]
+    preciousMetalSludge["PRECIOUS METAL EW SLUDGE TO REFINERY<br/>231,800 OZ/YR Au<br/>422,400 OZ/YR Ag"]
+    mineWater["MINE WATER"]
+    carosAcid["CARO'S ACID"]
+    lime["LIME"]
+    treatedReclaim["TREATED RECLAIM"]
+    millWaterDistin["MILL WATER DISTIN"]
+    millWater["MILL WATER"]
+    floculant["FLOCCULANT"]
+    fresThickener["FRES THICKENER"]
+    reagentsGlandWater["REAGENTS GLAND WATER"]
+    freshWater["FRESH WATER"]
+    deslimeCyclones["DESLIME CYCLONES"]
+    cyanide["CYANIDE"]
+    trash["TRASH"]
+    leach["LEACH"]
+    dip["DIP"]
+    carbonBin["CARBON BIN"]
+    carosAcidBin["CARO'S ACID"]
+    tailingsPond["TAILINGS POND"]
+    reclaimWater["RECLAIM WATER"]
+    chlorideFume["CHLORIDE FUME"]
+    liquidCarbon["(LIQUID CARBON)"]
+    heapLeachCarbon["HEAP LEACH CARBON"]
+    acidWash["ACID WASH"]
+    strip["STRIP"]
+    regeneration["REGENERATION"]
+    carbonToHeapLeach["CARBON TO HEAP LEACH"]
+    shearCarbon["(SHEAR CARBON)"]
+
+    mineOre --> primaryCrusher
+    primaryCrusher --> crushedOreStockpile
+    crushedOreStockpile --> pebbleCrushed
+    pebbleCrushed --> sagMill
+    waterLime --> sagMill
+    sagMill --> sagDischargeScreen
+    sagDischargeScreen --> ballMills
+    reagentsBall --> ballMills
+    waterMill --> ballMills
+    ballMills --> contactFlotation
+    contactFlotation --> rougherFlotation
+    reagentsRougher --> rougherFlotation
+
+    rougherFlotation --> primaryGravity
+    rougherFlotation --> flotationGravity
+    rougherFlotation --> primaryCleanerColumn
+    primaryCleanerColumn --> cleanerGravity
+    primaryGravity --> residue
+    flotationGravity --> residue
+    residue --> intensiveOxidation
+    intensiveOxidation --> res
+    intensiveOxidation --> copperConcentrateThickener
+    cleanerGravity --> copperConcentrateThickener
+    primaryCleanerColumn --> copperConcentrateThickener
+    copperConcentrateThickener --> copperConcentrateFilter
+    copperConcentrateFilter --> copperConcentrateStockpile
+    copperConcentrateStockpile --> concentrateToMarket
+
+    rougherFlotation --> firstCleanerFlotation
+    firstCleanerFlotation --> cleanerScavengerFlotation
+    reagentsCleaner --> cleanerScavengerFlotation
+    limeCleaner --> cleanerScavengerFlotation
+    cleanerScavengerFlotation --> regrind
+    limeReagents --> regrind
+    regrind --> secondCleanerConditioningTank
+    secondCleanerConditioningTank --> magneticConcentrateThickener
+    magneticConcentrateThickener --> magneticConcentrateGravitySeparation
+    magneticConcentrateGravitySeparation --> secondCleanerScavenger
+    secondCleanerScavenger --> barenSolutionTank
+    secondCleanerScavenger --> pregnantSolutionTank
+    barenSolutionTank --> pregnantSolutionTank
+    pregnantSolutionTank --> preciousMetalSludge
+
+    rougherFlotation --> deslimeCyclones
+    cyanide --> deslimeCyclones
+    deslimeCyclones --> trash
+    deslimeCyclones --> leach
+    leach --> dip
+    dip --> carbonBin
+    carosAcidBin --> carbonBin
+    carbonBin --> strip
+    acidWash --> strip
+    strip --> regeneration
+    regeneration --> carbonToHeapLeach
+    carbonToHeapLeach --> heapLeachCarbon
+    heapLeachCarbon --> leach
+    liquidCarbon --> leach
+    shearCarbon --> carbonBin
+    leach --> tailingsPond
+    carosAcidBin --> tailingsPond
+    tailingsPond --> reclaimWater
+    tailingsPond --> chlorideFume
+    reclaimWater --> treatedReclaim
+
+    mineWater --> treatedReclaim
+    carosAcid --> treatedReclaim
+    lime --> treatedReclaim
+    treatedReclaim --> millWaterDistin
+    millWaterDistin --> millWater
+    millWater --> floculant
+    floculant --> fresThickener
+    reagentsGlandWater --> fresThickener
+    freshWater --> fresThickener
+    fresThickener --> tailingsPond

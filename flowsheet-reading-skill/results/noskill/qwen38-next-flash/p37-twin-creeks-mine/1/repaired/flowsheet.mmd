@@ -1,0 +1,208 @@
+---
+title: SAGE MILL FLOWSHEET
+---
+flowchart LR
+%% SAGE MILL FLOWSHEET - Twin Creeks / Sage Mill
+%% Stream colours follow the drawing legend:
+%%   dark red = Oxide Ore/Slurry | black = Refractory Ore/Slurry | red = Oxidized Slurry
+%%   green = Reagent/Oxygen/Steam/Propane | purple = Flash Steam/Vent Gas | magenta = Air Emissions
+%%   blue = Water | gray = Carbon | yellow = Gold
+
+  subgraph OC["Oxide Crushing"]
+    rom_ox["ROM Oxide Ore"]
+    hop_ox["Hopper"]
+    jaw["Jaw Crusher"]
+    stack["Radial Stacker"]
+    pile_ox["Oxide Stockpile"]
+    hop_ox2["Hopper"]
+  end
+  subgraph OG["Oxide Grinding"]
+    sag_ox["SAG Mill"]
+    scr_ox["Screen"]
+    cycl_ox["Cyclones"]
+    mill_ox["Ball Mill"]
+    trash_ox["Trash Screen"]
+    thk_ox["Oxide Thickener"]
+  end
+  subgraph RGr["Refractory Crushing and Grinding"]
+    rom_ref["ROM Refractory Ore"]
+    pile_ref["Ore Blend Stockpiler"]
+    loader["Front End Loader"]
+    hop_ref["Hopper"]
+    sag_ref["SAG Mill"]
+    scr_ref["Screen"]
+    cycl_pri["Cyclones"]
+    mill_pri["Primary Ball Mill"]
+    trash_ref["Trash Screen"]
+    mill_sec["Secondary Ball Mill"]
+    cycl_sec["Cyclones"]
+    thk_ref["Refractory Thickener"]
+  end
+  subgraph POX["Pressure Oxidation"]
+    acid_tank["Acid Dilution/Storage Tank (3)"]
+    heaters["2 Stage Slurry Heaters (2)"]
+    autoclave["4 Stage Autoclave"]
+    flash1["Flash Vessel 1"]
+    flash2["Flash Vessel 2"]
+    surge_po["Surge Tank"]
+    steam_plant["Steam Generation Plant"]
+    ng["Natural Gas"]
+    o2["Oxygen"]
+    h2so4["Sulfuric Acid"]
+  end
+  subgraph RSC["Refractory Slurry Cooling"]
+    coolers["Tube and Shell Coolers"]
+    ctower["Cooling Tower"]
+    scrubber["Vent Gas Scrubber (2)"]
+  end
+  subgraph CILC["Carbon-in-Leach"]
+    neut["Neutralization Tank (3)"]
+    lime_silo["Lime Silo"]
+    tower_mill["Tower Mill (2)"]
+    air["Air"]
+    ret_water["Return Water"]
+    cil1["CIL Tank (7)"]
+    cil2["CIL Tank (7)"]
+    lcs["Loaded Carbon Screen"]
+    scr_cil["Screen"]
+    subair["Sub Aerial Deposition"]
+    tailings["Tailings"]
+  end
+  subgraph CSRS["Carbon Stripping, Reactivation and Sizing"]
+    csurge["Surge Tank"]
+    awash["Acid Wash Tank"]
+    strip["Carbon Strip Vessel (2)"]
+    ctank["Carbon Tank"]
+    heater["Heater"]
+    hex["Heat Exchanger"]
+    cfs["Carbon Feed Screen"]
+    kiln_screen["Kiln Feed Screen"]
+    kiln["Re-Activation Kiln"]
+    quench["Quench Tank"]
+    cwash["Carbon Wash Screen"]
+    barren["Barren Sol. Tank"]
+    preg["Pregnant Sol. Tank"]
+    cells["Electrowinning Cells (6)"]
+    retort["Retort"]
+    furnace["Furnace"]
+    bullion["Gold Bullion"]
+    hno3["Nitric Acid"]
+    caustic["Caustic"]
+  end
+  atm_acid["To Atmosphere"]
+  atm_scr["To Atmosphere"]
+  atm_steam["To Atmosphere"]
+  vent_lime["Vent"]
+  vent_cells["Vent"]
+  cfines["Carbon Fines to Filter"]
+  ret_plant["Return to Plant"]
+
+  rom_ox --> hop_ox
+  hop_ox --> jaw
+  jaw --> stack
+  stack --> pile_ox
+  pile_ox --> hop_ox2
+  hop_ox2 --> sag_ox
+  sag_ox --> scr_ox
+  scr_ox --|"oversize"| sag_ox
+  scr_ox --> cycl_ox
+  cycl_ox --|"underflow"| mill_ox
+  mill_ox --> scr_ox
+  cycl_ox --|"overflow"| trash_ox
+  trash_ox --> thk_ox
+  thk_ox --> neut
+  rom_ref --> pile_ref
+  pile_ref --> loader
+  loader --> hop_ref
+  hop_ref --> sag_ref
+  sag_ref --> scr_ref
+  scr_ref --|"oversize"| sag_ref
+  scr_ref --> cycl_pri
+  cycl_pri --|"underflow"| mill_pri
+  mill_pri --> scr_ref
+  cycl_pri --|"overflow"| trash_ref
+  trash_ref --|"oversize"| mill_sec
+  mill_sec --> trash_ref
+  trash_ref --|"undersize"| cycl_sec
+  cycl_sec --|"underflow"| mill_sec
+  cycl_sec --|"overflow"| thk_ref
+  thk_ref --> acid_tank
+  acid_tank --> heaters
+  heaters --> autoclave
+  autoclave --> flash1
+  flash1 --> flash2
+  flash2 --> surge_po
+  surge_po --> coolers
+  coolers --> neut
+  neut --> cil1
+  neut --> lcs
+  lcs --> cil1
+  cil1 --> cil2
+  cil2 --> scr_cil
+  scr_cil --> subair
+  subair --> tailings
+  thk_ox --|"Return Water"| sag_ox
+  thk_ox --|"Water Return to Oxide Circuit"| scr_ox
+  thk_ref --|"Return Water"| sag_ref
+  thk_ref --|"Water Return to Refractory Circuit"| trash_ref
+  thk_ref --|"Water Return to Refractory Circuit"| scrubber
+  coolers --> ctower
+  ctower --|"Cooling Water"| coolers
+  ctower --|"Water"| scrubber
+  surge_po --|"Cooling Water"| autoclave
+  tailings --|"Reclaim Water"| ret_plant
+  autoclave --|"Flash Steam"| heaters
+  flash1 --|"Flash Steam"| heaters
+  flash1 --> scrubber
+  flash2 --> scrubber
+  h2so4 --> acid_tank
+  air --> acid_tank
+  ng --> steam_plant
+  steam_plant --|"Steam"| autoclave
+  o2 --> autoclave
+  lime_silo --|"Lime"| neut
+  lime_silo --> tower_mill
+  air --> tower_mill
+  ret_water --> tower_mill
+  tower_mill --> cil1
+  air --> cil2
+  hno3 --> awash
+  caustic --> barren
+  acid_tank --|"Vent"| atm_acid
+  scrubber --> atm_scr
+  steam_plant --> atm_steam
+  lime_silo --> vent_lime
+  cells --> vent_cells
+  lcs --> csurge
+  csurge --> awash
+  awash --> strip
+  strip --> ctank
+  ctank --> heater
+  heater --> hex
+  hex --> cfs
+  cfs --> kiln_screen
+  kiln_screen --> kiln
+  kiln --> quench
+  quench --> cwash
+  quench --|"Carbon Fines"| cfines
+  cwash --> scr_cil
+  scr_cil --|"Carbon"| cil1
+  strip --> preg
+  preg --> hex
+  hex --> barren
+  barren --> hex
+  hex --> strip
+  preg --> cells
+  cells --> retort
+  retort --> furnace
+  furnace --> bullion
+
+linkStyle 0,1,2,3,4,5,6,7,8,9,10,11,12,13 stroke:#8b0000,stroke-width:2px
+linkStyle 14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31 stroke:#000000,stroke-width:2px
+linkStyle 32,33,34,35,36,37,38,39,40,41,42,43 stroke:#ff0000,stroke-width:2px
+linkStyle 44,45,46,47,48,49,50,51,52,53 stroke:#0000ff,stroke-width:2px
+linkStyle 54,55,56,57 stroke:#800080,stroke-width:2px
+linkStyle 58,59,60,61,62,63,64,65,66,67,68,69,70 stroke:#008000,stroke-width:2px
+linkStyle 71,72,73,74,75 stroke:#ff00ff,stroke-width:2px
+linkStyle 76,77,78,79,80,81,82,83,84,85,86,87,88,89 stroke:#808080,stroke-width:2px
+linkStyle 90,91,92,93,94,95,96,97,98 stroke:#e6c300,stroke-width:2px

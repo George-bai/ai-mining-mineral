@@ -1,0 +1,27 @@
+{
+ "fields": {
+  "cu_4a_pct": 0.301,
+  "cu_4a_sd_pct": 0.008,
+  "cu_ar_pct": 0.308,
+  "cu_ar_sd_pct": 0.012,
+  "cu_h2so4_pct": 0.111,
+  "cu_h2so4_sd_pct": 0.011,
+  "cu_cn_pct": null,
+  "cu_cn_sd_pct": null,
+  "au_fa_ppm": null,
+  "au_fa_sd_ppm": null,
+  "au_ar_ppm": null,
+  "au_ar_sd_ppm": null
+ },
+ "content": "\n\n{\"cu_4a_pct\": 0.301, \"cu_4a_sd_pct\": 0.008, \"cu_ar_pct\": 0.308, \"cu_ar_sd_pct\": 0.012, \"cu_h2so4_pct\": 0.111, \"cu_h2so4_sd_pct\": 0.011, \"cu_cn_pct\": null, \"cu_cn_sd_pct\": null, \"au_fa_ppm\": null, \"au_fa_sd_ppm\": null, \"au_ar_ppm\": null, \"au_ar_sd_ppm\": null}",
+ "reasoning": "Let me analyze the certificate of analysis for OREAS 902 to fill in the required fields.\n\n**cu_4a_pct**: Copper by four-acid (near-total) digestion: certified value, in wt.% Cu.\nFrom Table 1, under \"4 Acid Digestion ICP-OES/MS\": Cu, Copper (wt.%) = 0.301\nSo cu_4a_pct = 0.301\n\n**cu_4a_sd_pct**: Copper by four-acid digestion: 1SD, in wt.% Cu.\nFrom Table 1: 1SD = 0.008\nSo cu_4a_sd_pct = 0.008\n\n**cu_ar_pct**: Copper by aqua regia digestion: certified value, in wt.% Cu.\nFrom Table 1, under \"Aqua Regia Digestion ICP-OES/MS\": Cu, Copper (wt.%) = 0.308\nSo cu_ar_pct = 0.308\n\n**cu_ar_sd_pct**: Copper by aqua regia digestion: 1SD, in wt.% Cu.\nFrom Table 1: 1SD = 0.012\nSo cu_ar_sd_pct = 0.012\n\n**cu_h2so4_pct**: Acid-soluble copper by sulphuric acid (H2SO4) leach: certified value, in wt.% Cu.\nFrom Table 1, under \"Acid Leach 5% H2SO4\": Copper Soluble, Cu-Sol (wt.%) = 0.111\nSo cu_h2so4_pct = 0.111\n\n**cu_h2so4_sd_pct**: Acid-soluble copper by sulphuric acid leach: 1SD, in wt.% Cu.\nFrom Table 1: 1SD = 0.011\nSo cu_h2so4_sd_pct = 0.011\n\n**cu_cn_pct**: Cyanide-soluble copper by cyanide (NaCN) leach: certified value, in wt.% Cu.\nThe certificate does not report any cyanide leach method. So this is null.\n\n**cu_cn_sd_pct**: Cyanide-soluble copper: 1SD, in wt.% Cu.\nNot reported. null.\n\n**au_fa_ppm**: Gold by lead-collection fire assay (any finish): certified value, in ppm (g/t) Au.\nLooking at the certificate... I see in Table 2 (Indicative Values) under \"Pb Fire Assay\": Au, ppb = 46.6. But this is in Table 2 which is \"Indicative Values\" - these are uncertified. The rules state: \"A value the certificate gives as indicative, provisional, informational or uncertified is left empty (null).\"\n\nSo au_fa_ppm = null\n\n**au_fa_sd_ppm**: Gold by fire assay: 1SD, in ppm (g/t) Au.\nNot reported as certified. null.\n\n**au_ar_ppm**: Gold by aqua regia digestion: certified value, in ppm (g/t) Au.\nFrom Table 1, under \"Aqua Regia Digestion ICP-OES/MS\": Au, Gold (ppb) = < 10, with 1SD = IND.\nThis is a detection limit, not a certified value. The value is \"< 10\" which means it's below detection. This is not a certified value - it's a non-detection. So this should be null.\n\nWait, let me re-read. The certificate says \"Au, Gold (ppb) < 10 IND IND IND IND IND IND\". The certified value is \"< 10\" which is a detection limit, not an actual certified value. And the 1SD is \"IND\" (indicative). So this is not a proper certified value. I'll leave it as null.\n\n**au_ar_sd_ppm**: Gold by aqua regia digestion: 1SD, in ppm (g/t) Au.\nThe 1SD is \"IND\" - not a certified value. null.\n\nLet me double-check: The rules say \"Certified values only. A value the certificate gives as indicative, provisional, informational or uncertified is left empty (null).\" The Au by aqua regia has a value of \"< 10\" which is a non-detection (below detection limit), and the SD is \"IND\". This is not a proper certified value. So both au_ar_ppm and au_ar_sd_ppm should be null.\n\nFinal answer:\n- cu_4a_pct: 0.301\n- cu_4a_sd_pct: 0.008\n- cu_ar_pct: 0.308\n- cu_ar_sd_pct: 0.012\n- cu_h2so4_pct: 0.111\n- cu_h2so4_sd_pct: 0.011\n- cu_cn_pct: null\n- cu_cn_sd_pct: null\n- au_fa_ppm: null\n- au_fa_sd_ppm: null\n- au_ar_ppm: null\n- au_ar_sd_ppm: null\n",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 16863,
+  "total_tokens": 18122,
+  "completion_tokens": 1259,
+  "prompt_tokens_details": null
+ },
+ "seconds": 33.5,
+ "model": "qwen38-27b"
+}

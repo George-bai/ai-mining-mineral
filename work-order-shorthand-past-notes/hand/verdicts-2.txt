@@ -1,0 +1,29 @@
+# read r3238 to r1646, all 160 entries
+r8996 meaning=0 | "cutting out" (the fault) read as the action "Isolating"; the note's symptom is lost
+r8996|0 right | plain text reads "2 way" as "two-way", the key's meaning
+r4872 meaning=0 | INJ read as "injection errors", key and note mean injector errors
+r2739|1 right | "Re-route" is the everyday word with the key's meaning (reroute)
+r3895|4 right | "hand rails" is the everyday word with the key's meaning (handrails)
+r1816|3 right | "is continuing to creep down" means the same as continuously creeping down
+r7415|0 right | "hand rail" is the everyday word with the key's meaning (handrail)
+r8087 meaning=0 | F/WHEEL HOSU read as "front wheel hose"; note means flywheel housing
+r7912|4 right | "hand rails" is the everyday word with the key's meaning (handrails)
+r3422|3 right | "swing 5" keeps the number and means swing number 5
+r9261|1 right | "Re-seal" is a spelling of reseal, same meaning
+doubt r3123|0 | key gives 5H as an asset id; read with the sheet's other "<num>H" notes it is 5 hours, as the plain text has it
+doubt r4189|0 | key gives 5H as an asset id; read with the sheet's other "<num>H" notes it is 5 hours, as the plain text has it
+r1949|1 right | "replace" a tyre means the same as change out
+r1264 meaning=0 | tremmel presented as a brand name "Tremmel", not read as trammel and not marked unsure
+r5915 meaning=0 | asset WK1566 made "Work order 1566", the WK prefix lost
+r1198|4 right | "shut down" is the everyday word with the key's meaning (shutdown)
+r9750 meaning=0 | the action "protect wiring" turned into "protective wiring"; the work asked for is lost
+r8245|5 right | "rock breaker" is a spelling of rockbreaker, same meaning
+r6938|0 unsure | "afe" kept as typed in the plain text and listed as unsure
+r3297 meaning=0 | the note's last word "REPORT" is dropped
+r4564|3 right | "equalizer" is a spelling of equaliser
+r5253 meaning=0 | MCC asserted as "Main Control Centre"; an MCC is a motor control centre
+r7231|7 right | "steer ram" is the everyday term with the key's meaning (steering ram)
+r9015 meaning=0 | "TOOTH LOCK" read as "tooth lockout", a different part
+r1042 meaning=0 | "ext frame" read as "external frame"; key means extinguisher frame
+r3123 meaning=0 | 5H, keyed as an asset, read as 5 hours; No. 13 recorded this reading of this note as meaning lost (settled before unblinding, 21 Nov 2026; the doubt stays logged)
+r4189 meaning=0 | 5H, keyed as an asset, read as 5 hours; No. 13 recorded this reading of this note as meaning lost (settled before unblinding, 21 Nov 2026; the doubt stays logged)

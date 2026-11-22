@@ -1,0 +1,18 @@
+{
+ "id": "B-test-151",
+ "condition": "search",
+ "note": "EZ7111 Trans pump leak",
+ "model": "qwen38-27b",
+ "prompt": "You help a maintenance planner at an Australian mine site read work orders. Work orders are short notes typed in a hurry by maintainers and planners, full of the site's shorthand: abbreviations, misspellings and words run together. Codes such as AB123 or XY45 are asset numbers.\n\nRewrite the work order below in plain English for a reader who does not know the site's shorthand.\n\n- Expand every abbreviation and correct every misspelling. Choose each meaning from the note's context.\n- Keep to what the note says. Do not add a cause, a diagnosis, a fault or an outcome that the note does not state.\n- Keep the note's tense. A request for work stays a request: say that work was done only if the note says so.\n- Keep the note's asset numbers, quantities, positions and timings as they are.\n- If you cannot read a piece of shorthand with confidence, keep it as written in \"plain\", so the reader can see it is unresolved, and list it under \"unsure\".\n\nEarlier work orders from this site, found by searching its own records, and what each meant. The same shorthand can mean something else at another site.\n\nEZ7111 Minor fuel leak from tank = EZ7111 minor fuel leak from tank\nEZ7111 Hydraulic oil leak = EZ7111 hydraulic oil leak\nPW Trans charge pump mount leakingg fr = PW transmission charge pump mount leaking from\nEZ7111 Minor oil leak near Trans = EZ7111 minor oil leak near transmission\nEZ7111 replace trans hose = EZ7111 replace transmission hose\nEZ7111 -Pos 9 oil leak inside hub = EZ7111 - position 9 oil leak inside hub\nEZ7111 REPAIR OIL LEAK AT L/H STEER VALV = EZ7111 repair oil leak at left hand steering valve\nEZ7111 - Cooling system flush and change = EZ7111 - cooling system flush and change\nEZ7111 = EZ7111\nEZ7111 oil fiters pluged = EZ7111 oil filters plugged\nAnswer with a JSON object only, with three keys:\n- \"plain\": the work order in plain English.\n- \"terms\": one item for each piece of shorthand you expanded or corrected: {\"written\": \"<as written in the note>\", \"means\": \"<what it stands for>\"}.\n- \"unsure\": the shorthand you could not read with confidence, as written in the note.\n\nWork order: EZ7111 Trans pump leak\n",
+ "started": "2026-11-21T16:16:40+1000",
+ "content": "\n\n{\n  \"plain\": \"EZ7111 transmission pump leak\",\n  \"terms\": [\n    {\"written\": \"Trans\", \"means\": \"transmission\"}\n  ],\n  \"unsure\": []\n}",
+ "reasoning": "Let me analyze the work order: \"EZ7111 Trans pump leak\"\n\nLooking at the earlier work orders for context:\n- \"PW Trans charge pump mount leakingg fr = PW transmission charge pump mount leaking from\"\n- \"EZ7111 Minor oil leak near Trans = EZ7111 minor oil leak near transmission\"\n- \"EZ7111 replace trans hose = EZ7111 replace transmission hose\"\n\nSo \"Trans\" = \"transmission\" at this site.\n\n\"Trans pump leak\" = \"transmission pump leak\"\n\nThe asset number is EZ7111.\n\nLet me construct the plain English version:\n- EZ7111 transmission pump leak\n\nThis is a straightforward note. It's stating a leak at the transmission pump on asset EZ7111. It doesn't say work was done - it's just noting a leak (could be a request or an observation). I'll keep it as stated.\n\nTerms:\n- \"Trans\" → \"transmission\"\n\nThat's the only shorthand/abbreviation here. \"pump\" and \"leak\" are already plain English.\n\nUnsure: nothing I can't read with confidence.\n\nLet me format the JSON response.\n",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 568,
+  "total_tokens": 882,
+  "completion_tokens": 314,
+  "prompt_tokens_details": null
+ },
+ "seconds": 5.2
+}

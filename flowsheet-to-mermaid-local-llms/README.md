@@ -6,8 +6,9 @@ SVGs, the measured numbers and the review notes. It is enough to repeat the proc
 models; it does not pin down every setting of the two used here. The article is at https://eleticle.com/articles/flowsheet-to-mermaid-local-llms/.
 
 **A first test, not a benchmark:** one attempt per model and drawing in the reported run, following earlier
-exploratory runs, judged by eye and checked by a second reviewer. There is no
-reference answer yet, so there are verdicts and no scores.
+exploratory runs, judged by eye and checked by a second reviewer. This first test has no
+answer key, so there are verdicts and no scores. [No. 08](../flowsheet-reading-skill/) scores the two plant drawings against
+answer keys.
 
 ## Result
 
@@ -24,15 +25,18 @@ reference answer yet, so there are verdicts and no scores.
 - **Poor connections:** most units found, most lines wrong.
 
 On the two plant flowsheets the 27B model looked at the drawing, opened it once more, and wrote a chart
-drawn largely in single file. Flash Next cut the drawing into pieces with a shell command, read 26 to 32
-of them, and recovered more of the plant's loops, with some lines still routed wrongly.
+drawn largely in single file. Flash Next cut the drawing into pieces with a shell command, enlarged them, read 26 to 32
+of them, and recovered more of the plant's loops, with some lines still routed wrongly. The raw logs
+show that every extra image it read was one of its own crops: 32 on Phoenix, 26 on Twin Creeks.
 
 | | Phoenix | Twin Creeks |
 |---|---|---|
 | Input tokens, Flash Next against 27B | 138 times | 153 times |
 | Elapsed time, Flash Next against 27B | 5.3 times | 11.3 times |
 
-Input tokens are summed over every request, so they count the same conversation many times.
+Input tokens are summed over every request, and each request resends the conversation so far, so the
+same history is counted many times. Times compare the two complete setups (model, weights, serving
+software and hardware together), not the two models alone.
 Box and line counts describe a chart; they do not show that its connections are right.
 
 The notes behind each verdict are in [`results/run3/review.json`](results/run3/review.json).
@@ -85,7 +89,9 @@ A run writes the drawings, your model configuration and Pi's raw logs (which con
 |---|---|
 | Agent software | Pi coding agent 1.5.2, print mode, standard tools (read, bash, edit, write) |
 | Qwen 3.8 27B | `RadixArk/Qwen3.8-27B-NVFP4-BF16-LMHead`, revision `009632fef96dd349150baa780c984e62e70e91fe` (4-bit NVFP4 weights). Served with vLLM 0.27.1 across 2 × RTX 5080 (16 GB each): context 200,000 tokens, temperature 0.6, top-p 0.95, top-k 20, thinking on at medium effort, at most 2 images per request |
-| Qwen 3.8 Flash Next | The [GSQ-RCO GGUF release](https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF) of `Qwen/Qwen3.8-Flash-Next`, IQ3_S quantisation (mixed precision, averaging 3.5 bits per weight), with its BF16 vision projector. Served with Strata 0.1.48 as two copies of the model, each on 2 × RTX 3090 (24 GB each), behind one gateway: context 262,144 tokens, the engine's default sampling, at most 2 images per request |
+| Qwen 3.8 Flash Next | `ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF`, revision `ed59f92082b1e93c0e96d60a8b11aab089b52f09`: the IQ3_S files (`Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-0000{1,2}-of-00002.gguf`, mixed precision averaging 3.5 bits per weight) and the vision projector `mmproj-Qwen3.8-Flash-Next-BF16.gguf`, both from that revision. Served with Strata 0.1.48 (build `5c8dd32`) as two copies of the model behind one gateway: context 262,144 tokens, at most 2 images per request |
+| Flash Next sampling | None set. Pi sends no sampling settings and the server configuration sets no defaults, so Strata decodes greedily. If a reply starts repeating itself, Strata retries it with temperature at least 1.0 and presence penalty at least 1.5. Speculative decoding with the model's own MTP layer, verify window 4 |
+| Flash Next hardware and offload | Server: AMD EPYC 7302 (16 cores), about 250 GB of RAM, 4 × RTX 3090 (24 GB each). Each copy uses 2 GPUs (layers split at layer 24) and is pinned to 8 cores (16 threads). The dense weights sit on the GPUs; the expert weights are held in RAM and computed on the CPU, with as many experts as fit cached on the GPUs. KV cache in 8 bits: 32,768 cells per layer on the GPUs, the whole cache in pinned RAM. Up to 24 GiB of RAM per copy keeps recent conversations for reuse |
 | Input | One image (the cropped drawing, 200 dpi) attached to the instruction |
 | Date | 14 November 2026 |
 

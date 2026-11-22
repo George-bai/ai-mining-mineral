@@ -1,0 +1,27 @@
+{
+ "fields": {
+  "cu_4a_pct": 0.1533,
+  "cu_4a_sd_pct": 0.0061,
+  "cu_ar_pct": 0.1562,
+  "cu_ar_sd_pct": 0.0047,
+  "cu_h2so4_pct": 0.1272,
+  "cu_h2so4_sd_pct": 0.0065,
+  "cu_cn_pct": null,
+  "cu_cn_sd_pct": null,
+  "au_fa_ppm": 0.391,
+  "au_fa_sd_ppm": 0.009,
+  "au_ar_ppm": 0.395,
+  "au_ar_sd_ppm": 0.019
+ },
+ "content": "\n\n{\"cu_4a_pct\":0.1533,\"cu_4a_sd_pct\":0.0061,\"cu_ar_pct\":0.1562,\"cu_ar_sd_pct\":0.0047,\"cu_h2so4_pct\":0.1272,\"cu_h2so4_sd_pct\":0.0065,\"cu_cn_pct\":null,\"cu_cn_sd_pct\":null,\"au_fa_ppm\":0.391,\"au_fa_sd_ppm\":0.009,\"au_ar_ppm\":0.395,\"au_ar_sd_ppm\":0.019}",
+ "reasoning": "Let me analyze the certificate of analysis for OREAS 905 and extract the relevant values for the CRM standards table.\n\nThe columns I need to fill are:\n- cu_4a_pct: Copper from 4-Acid Digestion, in percent (wt.%)\n- cu_4a_sd_pct: Standard deviation for Cu 4-Acid, in percent\n- cu_ar_pct: Copper from Aqua Regia Digestion, in percent (wt.%)\n- cu_ar_sd_pct: Standard deviation for Cu Aqua Regia, in percent\n- cu_h2so4_pct: Copper from H2SO4 (Sulphuric Acid) Leach, in percent\n- cu_h2so4_sd_pct: Standard deviation for Cu H2SO4, in percent\n- cu_cn_pct: Copper from CN (cyanide) leach, in percent\n- cu_cn_sd_pct: Standard deviation for Cu CN, in percent\n- au_fa_ppm: Gold from Fire Assay, in ppm\n- au_fa_sd_ppm: Standard deviation for Au Fire Assay, in ppm\n- au_ar_ppm: Gold from Aqua Regia, in ppm\n- au_ar_sd_ppm: Standard deviation for Au Aqua Regia, in ppm\n\nNow let me look at the certificate:\n\nFrom the Summary Statistics and Table 1:\n\n**Cu, Copper (4-Acid Digestion):**\n- Certified Value: 1533 ppm\n- 1SD: 61 ppm\n\nThe column asks for \"pct\" (percent/wt.%). 1533 ppm = 0.1533 wt.%. 61 ppm = 0.0061 wt.%.\n\nWait, let me reconsider. The column names say \"pct\" - does this mean the value should be expressed as a percentage? 1533 ppm = 1533/10000 = 0.1533%. And 61 ppm = 61/10000 = 0.0061%.\n\n**Cu, Copper (Aqua Regia Digestion):**\n- Certified Value: 1562 ppm\n- 1SD: 47 ppm\n\nIn percent: 1562 ppm = 0.1562%, 47 ppm = 0.0047%\n\n**Cu-Sol, Copper Soluble (Sulphuric Acid Leach 5%):**\n- Certified Value: 1272 ppm\n- 1SD: 65 ppm\n\nIn percent: 1272 ppm = 0.1272%, 65 ppm = 0.0065%\n\n**Cu from CN (Cyanide) leach:**\nLooking through the certificate, I don't see any cyanide leach method listed. The methods are:\n- Pb Fire Assay\n- 4-Acid Digestion\n- Borate/Peroxide Fusion ICP\n- Aqua Regia Digestion\n- Sulphuric Acid Leach (5%)\n- Gas/Liquid Pycnometry\n\nThere is no CN (cyanide) leach. So cu_cn_pct and cu_cn_sd_pct should be null.\n\n**Au, Gold (Pb Fire Assay):**\n- Certified Value: 0.391 ppm\n- 1SD: 0.009 ppm\n\n**Au, Gold (Aqua Regia Digestion):**\n- Certified Value: 0.395 ppm\n- 1SD: 0.019 ppm\n\nNow let me convert the copper values to percent:\n- cu_4a_pct: 1533 ppm = 0.1533%\n- cu_4a_sd_pct: 61 ppm = 0.0061%\n- cu_ar_pct: 1562 ppm = 0.1562%\n- cu_ar_sd_pct: 47 ppm = 0.0047%\n- cu_h2so4_pct: 1272 ppm = 0.1272%\n- cu_h2so4_sd_pct: 65 ppm = 0.0065%\n- cu_cn_pct: null\n- cu_cn_sd_pct: null\n- au_fa_ppm: 0.391\n- au_fa_sd_ppm: 0.009\n- au_ar_ppm: 0.395\n- au_ar_sd_ppm: 0.019\n\nLet me double-check the conversions:\n- 1533 ppm / 10000 = 0.1533 wt.%\n- 61 ppm / 10000 = 0.0061 wt.%\n- 1562 ppm / 10000 = 0.1562 wt.%\n- 47 ppm / 10000 = 0.0047 wt.%\n- 1272 ppm / 10000 = 0.1272 wt.%\n- 65 ppm / 10000 = 0.0065 wt.%\n\nThese look correct.\n",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 28259,
+  "total_tokens": 29541,
+  "completion_tokens": 1282,
+  "prompt_tokens_details": null
+ },
+ "seconds": 20.0,
+ "model": "qwen38-27b"
+}

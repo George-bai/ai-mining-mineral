@@ -1,0 +1,27 @@
+{
+ "fields": {
+  "cu_4a_pct": 0.356,
+  "cu_4a_sd_pct": 0.0075,
+  "cu_ar_pct": 0.363,
+  "cu_ar_sd_pct": 0.0075,
+  "cu_h2so4_pct": null,
+  "cu_h2so4_sd_pct": null,
+  "cu_cn_pct": null,
+  "cu_cn_sd_pct": null,
+  "au_fa_ppm": 1.682,
+  "au_fa_sd_ppm": 0.0685,
+  "au_ar_ppm": null,
+  "au_ar_sd_ppm": null
+ },
+ "content": "\n\n{\"cu_4a_pct\": 0.356, \"cu_4a_sd_pct\": 0.0075, \"cu_ar_pct\": 0.363, \"cu_ar_sd_pct\": 0.0075, \"cu_h2so4_pct\": null, \"cu_h2so4_sd_pct\": null, \"cu_cn_pct\": null, \"cu_cn_sd_pct\": null, \"au_fa_ppm\": 1.682, \"au_fa_sd_ppm\": 0.0685, \"au_ar_ppm\": null, \"au_ar_sd_ppm\": null}",
+ "reasoning": "Let me analyze the certificate of analysis for CDN-CM-54 to fill in the required fields.\n\nThe certificate title says: \"Recommended values and the 'Between Lab' Two Standard Deviations\"\n\nThis is critical - the \u00b1 values given in the certificate are TWO standard deviations (2SD), not 1SD. The rules state: \"If the certificate gives 2SD, halve it; never use a confidence or tolerance interval.\"\n\nSo I need to halve all the \u00b1 values to get 1SD.\n\nLet me go through each field:\n\n**Copper by four-acid (near-total) digestion:**\n- Certified value: 0.356 % (Certified value)\n- 2SD: \u00b1 0.015 %\n- 1SD: 0.015 / 2 = 0.0075 %\n\n**Copper by aqua regia digestion:**\n- Certified value: 0.363 % (Certified value)\n- 2SD: \u00b1 0.015 %\n- 1SD: 0.015 / 2 = 0.0075 %\n\n**Acid-soluble copper by sulphuric acid (H2SO4) leach:**\n- The certificate does not report this method. No H2SO4 leach data. \u2192 null\n\n**Cyanide-soluble copper by cyanide (NaCN) leach:**\n- The certificate does not report this method. No NaCN leach data. \u2192 null\n\n**Gold by lead-collection fire assay:**\n- Certified value: 1.682 gpt (Certified value)\n- 2SD: \u00b1 0.137 gpt\n- 1SD: 0.137 / 2 = 0.0685 gpt (ppm)\n\n**Gold by aqua regia digestion:**\n- The certificate does not report gold by aqua regia. The only gold method listed is \"30 g Fire Assay, ICP or AA finish.\" \u2192 null\n\nLet me double-check the certificate:\n- Gold: 1.682 gpt \u00b1 0.137 gpt, 30 g Fire Assay, ICP or AA finish, Certified value\n- Silver: 55 ppm \u00b1 6 ppm, 4 Acid digestion / ICP finish, Certified value\n- Silver: 55 ppm \u00b1 4 ppm, Aqua regia digestion / ICP finish, Certified value\n- Copper: 0.356 % \u00b1 0.015 %, 4 Acid digestion / ICP finish, Certified value\n- Copper: 0.363 % \u00b1 0.015 %, Aqua regia digestion / ICP finish, Certified value\n\nNo gold by aqua regia is listed. No H2SO4 leach. No NaCN leach.\n\nSo my final answers:\n- cu_4a_pct: 0.356\n- cu_4a_sd_pct: 0.0075\n- cu_ar_pct: 0.363\n- cu_ar_sd_pct: 0.0075\n- cu_h2so4_pct: null\n- cu_h2so4_sd_pct: null\n- cu_cn_pct: null\n- cu_cn_sd_pct: null\n- au_fa_ppm: 1.682\n- au_fa_sd_ppm: 0.0685\n- au_ar_ppm: null\n- au_ar_sd_ppm: null\n",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 31529,
+  "total_tokens": 32435,
+  "completion_tokens": 906,
+  "prompt_tokens_details": null
+ },
+ "seconds": 20.0,
+ "model": "qwen38-27b"
+}

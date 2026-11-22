@@ -1,0 +1,64 @@
+{
+ "checked": "Claude, 16 Nov 2026 (rerun)",
+ "pairing": {
+  "hopper_grind": {
+   "to": [
+    "ox_sag_hopper"
+   ],
+   "why": "the 'Hopper' in the chart's Oxide Grinding subgraph, fed by the radial stacker and feeding its oxide SAG mill (rules 1 and 2): the oxide SAG feed hopper (the scorer's tie-break had it as the refractory hopper)"
+  },
+  "sag_oxide": {
+   "to": [
+    "ox_sag_mill"
+   ],
+   "why": "'SAG Mill' with id sag_oxide in the Oxide Grinding subgraph, fed by the oxide grinding hopper (rules 1 and 2): the oxide SAG mill (the scorer's tie-break had it as the refractory one)"
+  },
+  "hopper_ref": {
+   "to": [
+    "ref_hopper"
+   ],
+   "why": "'Hopper' in the Refractory Grinding subgraph, fed by the front end loader (rules 1 and 2): the refractory hopper"
+  },
+  "sag_ref": {
+   "to": [
+    "ref_sag_mill"
+   ],
+   "why": "'SAG Mill' with id sag_ref, fed by the refractory hopper and 'Water Return To Refractory Circuit' (rules 1 and 2): the refractory SAG mill"
+  },
+  "cycloner_ref2": {
+   "to": [
+    "ref_cyclones_2"
+   ],
+   "why": "the cyclones fed by the secondary ball mill (rule 2): the secondary cyclones (the scorer had both refractory cyclone boxes as the primary ones)"
+  },
+  "refractory_slurry_cooling": {
+   "to": [],
+   "why": "'Refractory Slurry Cooling' names a section, not an item (the scorer had matched it to the refractory SAG mill)"
+  },
+  "tube_shell": {
+   "to": [
+    "coolers",
+    "heat_exchanger"
+   ],
+   "why": "'Tube and Shell Condenser / Heat Exchanger' names two items: pairs with both"
+  },
+  "grey_funnel_top": {
+   "to": [],
+   "why": "'Screen (existing equipment)' feeding the reactivation kiln, with no line in, beside the chart's own Kiln Feed Screen and CIL Screen boxes: a screen the drawing does not have there. Pairs with nothing"
+  },
+  "grey_funnel_cf": {
+   "to": [],
+   "why": "'Screen (existing equipment)' between the carbon wash screen and the heater: a screen the drawing does not have there (the chart has its own CIL screen box). Pairs with nothing, its lines run through"
+  },
+  "carbon_filter_tailings": {
+   "to": [
+    "carbon_fines"
+   ],
+   "why": "'Carbon Filter Tailings' after the carbon wash screen: the Carbon Fines To Filter outlet, label misread (not the tailings impoundment)"
+  }
+ },
+ "notes": [
+  "Rerun (void attempt run again alone), skill. Screens, oxide cyclones, trash screens and surge tanks by their subgraphs and feeds, as the scorer has them; hoppers, SAG mills and the secondary cyclones set by their subgraphs, ids and feeds. 'OIL Tank (7)' is the CIL tanks. Misread labels kept as the same items: Ore Blend & Stackpilers, Cycloner, Oxide Thickner, Refractory Thickner, Acidulation Storage Tanker, Neutralisation Tanker, Tailor Mill, Barron Sol. Tank, Electrowinning Cell (x), Rotor (the retort). Return water, air, vent, water and to-atmosphere boxes pair with their sets; 'Sub Aerial Deposition' is a stream label.",
+  "Read: every box whose label is not exactly its key item's (local/dev/differs.py), or that pairs with nothing or with a set, every box paired with a repeated key label, with its feeds (local/dev/repeats.py), and items paired with two boxes (local/dev/dupes.py), 16 Nov. Other boxes whose label is exactly their key item's were not each read."
+ ]
+}

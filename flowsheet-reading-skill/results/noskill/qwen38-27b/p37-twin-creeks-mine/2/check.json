@@ -1,0 +1,34 @@
+{
+ "checked": "Claude, 16 Nov 2026 (rerun)",
+ "pairing": {
+  "TrachScreenOx": {
+   "to": [],
+   "why": "'Trach Screen' fed only by the radial stacker and feeding the oxide grinding hopper, on the oxide crushing line, where the drawing has no trash screen: a role the drawing does not have. Pairs with nothing, its lines run through (call of 16 Nov 2026, 8:45 pm AEST)"
+  },
+  "Steam": {
+   "to": [],
+   "why": "'Steam' between the chart's own Steam Generation Plant box and the slurry heaters: the key's stream label 'Steam' drawn as a box"
+  },
+  "Lime": {
+   "to": [],
+   "why": "'Lime' between the chart's own Lime Silo box and the neutralization tanks: the key's stream label 'Lime' drawn as a box"
+  },
+  "TubeShellCooler": {
+   "to": [
+    "coolers",
+    "heat_exchanger"
+   ],
+   "why": "'Tube and Shell Cooler / Heat Exchanger' names two items: pairs with both"
+  },
+  "CarbonFinesTailings": {
+   "to": [
+    "carbon_fines"
+   ],
+   "why": "'Carbon/Fines Tailings' after the carbon wash screen: the Carbon Fines To Filter outlet, label misread (not the tailings impoundment)"
+  }
+ },
+ "notes": [
+  "Rerun (void attempt run again alone), no skill. Hoppers, SAG mills, screens, cyclones (oxide; refractory primary and secondary by their feeds), the refractory trash screen and surge tanks by their ids and feeds, as the scorer has them. 'Carbon-in-Leach' and 'OIL Tank (7)' are the CIL tanks drawn as two boxes; 'Refractory Slurry Cooling / Cooling Tower' names a section and the cooling tower, and pairs with the tower. Misread labels kept as the same items: Trach Screen, Cycloner, Ore Blend Stacker, Acidulation Slurry Tank, Waste Gas Scrubber, Tailor Mill, Barron and Pregnant Salt Tank, Electrorotinning Cell, Rostart (the retort). Return water, air, vent, water and to-atmosphere boxes pair with their sets; 'Sub Aerial Deposition' is a stream label.",
+  "Read: every box whose label is not exactly its key item's (local/dev/differs.py), or that pairs with nothing or with a set, every box paired with a repeated key label, with its feeds (local/dev/repeats.py), and items paired with two boxes (local/dev/dupes.py), 16 Nov. Other boxes whose label is exactly their key item's were not each read."
+ ]
+}

@@ -1,0 +1,178 @@
+read A-test-001 A-test-108
+A-test-001|y|3 right | 'air conditioning' compressor is the air conditioner's compressor (rule 1)
+A-test-007|y meaning=0 | 'US' read as 'use': 'Replace, use a linear sensor'
+A-test-022|y meaning=0 | 'U/S' read as 'upstream'
+A-test-061|y|3 right | 'air conditioning' fault is the air conditioner's fault (rule 1)
+A-test-068|y meaning=0 | 'P/BRAKE' read as 'primary brake', not park brake
+A-test-083|x meaning=0 | 'make up tyres' (fit tyres to rims) read as 'inflate tyres'; not shorthand, but the task changes
+A-test-083|y meaning=0 | 'make up' glossed as '(repair)'; not shorthand, but the task changes
+A-test-085|x meaning=0 | 'U/S' read as 'under service'
+A-test-106|x|2 right | 'automatic greaser' pump is the autogreaser pump (rule 1)
+read A-test-110 A-test-211
+A-test-110|x meaning=0 | 'CONVERTER SHAFT UNIS' (the shaft's universal joints) becomes 'Replace the converter shaft', with UNIS split off: the plain text names a different part to replace, and an unsure entry does not excuse it (changed at the second review, 20 Nov 2026, versions known)
+A-test-110|y meaning=0 | 'CONVERTER SHAFT UNIS' (the shaft's universal joints) becomes 'Replace the converter shaft', with UNIS split off: the plain text names a different part to replace, and an unsure entry does not excuse it (changed at the second review, 20 Nov 2026, versions known)
+A-test-122|x meaning=0 diagnosis=1 | 'INV' read as 'inverter': 'Repair the inverter on the automatic greaser unit' puts the fault in a part the note does not name (diagnosis added at the re-check after Codex pass 3)
+A-test-122|x|3 right | 'automatic greaser' unit is the auto-greaser unit (rule 1)
+A-test-122|y|3 right | 'autogreaser' is the key's 'auto-greaser' (spelling only)
+A-test-124|y meaning=0 | 'L/HS' read as 'left headstock'
+A-test-127|x meaning=0 diagnosis=1 | 'INV' read as 'inverter': 'MB119, inverter, oil pressure / overheating fault' gives the fault to a part the note does not name (diagnosis added at the re-check after Codex pass 3)
+A-test-148|x meaning=0 | 'F/WHEEL' read as 'front wheel', not flywheel
+A-test-148|y meaning=0 | 'F/WHEEL' read as 'front wheel' and 'HOSU' as 'hose'
+A-test-150|x meaning=0 | 'implement drift' read as 'the implement in the drift' (a tunnel); not shorthand
+A-test-154|x meaning=0 | 'C/O' read as 'check over', not change out
+A-test-161|y meaning=0 | 'tele remote' read as 'television remote'
+A-test-185|y meaning=0 added=1 | 'trans ECM' (the transmission's control module) read as 'replace the transmission and the Engine Control Module': a second task added
+A-test-209|y meaning=0 | 'U/S' read as 'used'
+A-test-211|x|3 right | '1/4 window' reads as quarter window to anyone (rule 4: written form already says it)
+read A-test-216 A-test-287
+A-test-222|x|1 right | 'air conditioning' parts are the air conditioner's parts (rule 1)
+A-test-232|y|3 right | 'air conditioning' is the air conditioner here (rule 1)
+A-test-240|y|2 right | 'air conditioning' compressor (rule 1)
+A-test-250|x|2 right | 'air conditioning' compressor (rule 1)
+doubt A-test-267|1 | 'TEMP REP TO TRANS DROP BOX LEAK' is keyed 'temperature repair'; on a leak it reads as a temporary repair. Item kept on the key
+A-test-267|y meaning=0 | 'TEMP REP' read as 'temperature repair'; the note means a temporary repair (the key says temperature, logged as a doubt)
+A-test-267|x|5 right | 'drop box' is the key's 'dropbox' (spacing only)
+A-test-267|y|5 right | 'drop box' is the key's 'dropbox' (spacing only)
+A-test-275|y|5 right | 'center' is the same word as 'centre' (rule 3)
+A-test-286|y|2 right | 'center' is the same word as 'centre' (rule 3)
+read A-test-289 A-test-399
+A-test-296|x meaning=0 | 'TOOTH LOCK' (the tooth's retaining lock) read as 'tooth lockout'; not scored as shorthand, the key leaves 'lock'
+A-test-333|y|4 right | 'cab' is an everyday word for the cabin (rule 4)
+A-test-360|y meaning=0 | 'r term' read as 'remote terminal', not right terminal
+A-test-365|x meaning=0 diagnosis=1 | 'INV' read as 'inverter', then 'Repair the inverter ... due to an engine shutdown fault': blames a part the note does not name
+A-test-365|y|4 right | 'shut down' is the key's 'shutdown' (spacing only)
+doubt A-test-387|2 | 'REPA INTER FACE' is keyed 'repair internal face'; 'interface' is as likely. Item kept on the key in both answers
+read B-test-002 B-test-102
+B-test-013|x|1 right | 'air conditioning' belt (rule 1)
+B-test-022|y meaning=0 | 'C/O' read as 'check on', not change out
+B-test-022|y|3 right | 'cab' is an everyday word for the cabin (rule 4)
+B-test-034|x|0 wrong | '1000H' (a 1,000-hour service) read as the clock time 10:00
+B-test-034|x meaning=0 | '1000H' read as 10:00; 'PO' expanded to 'Planned Overhaul' without basis
+B-test-042|y|0 wrong | '1000H' read as the clock time 10:00
+B-test-042|y meaning=0 | '1000H' read as 10:00
+B-test-048|x meaning=0 | 'P/load' read as 'pneumatic load', not payload
+B-test-073|x meaning=0 | '1000H' read as 10:00
+B-test-074|y|0 right | 'amplitude modulation / frequency modulation' is what AM / FM stands for (rule 1)
+B-test-078|x|0 wrong | '1000H' read as the clock time 10:00
+B-test-078|x|1 right | 'inspect' for 'inspection' (rule 1)
+B-test-078|x meaning=0 | '1000H' read as 10:00
+B-test-079|y meaning=0 | 'R/Rear' read as 'rear': the side is dropped
+B-test-082|y meaning=0 | 'RHF' read as 'Rougher Head Fan', not right hand front
+B-test-095|y meaning=0 | '1000H' read as 10:00
+read B-test-109 B-test-211
+B-test-118|x meaning=0 | 'u/s' read as 'underside'
+B-test-122|y meaning=0 | 'U/S' read as 'upstream'
+B-test-136|x meaning=0 | 'Tong' (a drill's breakout tong; the key keeps it) changed to 'tongue'; not shorthand
+B-test-136|y meaning=0 | 'Tong' (a drill's breakout tong; the key keeps it) changed to 'tongue'; not shorthand
+B-test-155|y meaning=0 | 'Eng' read as 'Engineering' and 'CW' expanded to 'Circuit Water'; the asset number read as a work order number
+B-test-165|x|0 right | '3-monthly' is the 3 month interval (rule 1)
+B-test-168|x|3 right | 'Equalizer' is the same word as 'equaliser' (rule 3)
+B-test-168|y|3 right | 'equalizer' is the same word as 'equaliser' (rule 3)
+B-test-168|x meaning=0 | '1000H' read as 10:00
+B-test-175|y|0 wrong | '500H' presented as the truck's designation ('the 500H haul truck'); the 500-hour interval is lost
+B-test-175|y meaning=0 | '500H' made the truck's designation; the service interval is lost
+B-test-177|x meaning=0 | 'c/o' read as 'cause of': 'cause of a blown position 3 tyre' replaces the change-out task
+B-test-183|y meaning=0 | 'C/out' read as 'check out', not change out (part of the asset token, so not scored as an item)
+B-test-193|y meaning=0 | 'C/out' read as 'cut out', not change out (part of the asset token, so not scored as an item)
+B-test-197|x|2 right | 'air conditioning' (rule 1)
+B-test-200|x|0 wrong | '2000H' read as the clock time 20:00
+B-test-200|x meaning=0 | '2000H' read as 20:00
+B-test-204|y meaning=0 | '1000H' read as 10:00
+B-test-205|y|0 right | '6-monthly' is the 6 month interval (rule 1)
+B-test-211|x meaning=0 | the asset number 'WK1566' becomes 'Work order 1566': the asset number is changed, as in B-test-155 (changed at the second review, 20 Nov 2026, versions known)
+read B-test-213 B-test-295
+B-test-213|y|0 right | 'air conditioning' (rule 1)
+B-test-217|y|2 right | 'air conditioning' compressor (rule 1)
+B-test-222|y|3 right | 'operator's cab' is the cabin (rule 4)
+B-test-224|x|0 wrong | '1000H' read as the clock time 10:00
+B-test-224|x meaning=0 | '1000H' read as 10:00
+B-test-230|y|0 wrong | '2000H' read as the clock time 20:00
+B-test-230|y meaning=0 | '2000H' read as 20:00
+B-test-231|y|2 right | 'isolating switch' is the isolator; 'low' kept (rule 1)
+B-test-233|x|2 right | 'air conditioning' belt (rule 1)
+B-test-237|x|6 right | 'request to send ... for repair' says what 'for repair REQ' (required) says (rule 1)
+B-test-237|y|6 right | 'request to send ... for repair' says what 'for repair REQ' (required) says (rule 1)
+B-test-257|x|3 wrong | 'RHT' (right, at this site) read as 'right hand top': adds a position
+B-test-257|x meaning=0 | 'RHT' read as 'right hand top'
+B-test-263|x meaning=0 | 'pressur' read as 'pressurise': a pressure fault becomes a task
+B-test-274|y|3 wrong | 'RHT' (right, at this site) read as 'right hand top': adds a position
+B-test-274|y meaning=0 | 'RHT' read as 'right hand top'
+B-test-276|x|1 right | 'inspect' for 'inspection' (rule 1)
+B-test-281|x|0 wrong | '1000H' read as the clock time 10:00
+B-test-281|x meaning=0 | '1000H' read as 10:00
+B-test-282|y meaning=0 | 'INJ' read as 'injection', not injector
+B-test-285|y meaning=0 | 'C/out' read as 'check out' (part of the asset token, so not scored as an item)
+B-test-295|x meaning=0 | '1000H' read as 10:00
+read B-test-313 B-test-399
+B-test-323|y meaning=0 | '1000H' read as 10:00
+B-test-325|y meaning=0 | 'C/O' read as 'check over', not change out
+B-test-333|y meaning=0 | 'COMP' read as 'component', not compressor
+B-test-345|y|2 right | 'air conditioning' hose (rule 1)
+B-test-346|y meaning=0 | 'C/out' read as 'C is out' and 'Uni's' as 'Unions': 'Asset LD3192-C is out. Unions on the engine pump drive.'
+B-test-352|x|1 right | 'Re-seal' is the key's 'reseal' (rule 3)
+B-test-352|y|1 right | 'Re-seal' is the key's 'reseal' (rule 3)
+B-test-358|x meaning=0 | 'u/s' read as 'underground'
+B-test-359|y meaning=0 | 'Pos 3 9 tyres' (positions 3 and 9) read as 'the 9 tyres at position 3'
+B-test-363|y meaning=0 | the asset number 'UY2435' is dropped (changed at the second review, 20 Nov 2026, versions known)
+B-test-364|x|4 right | the plain text says 'Replace' (the terms entry's 'replacement' is not what the reader sees)
+B-test-365|y meaning=0 | 'Out/stding' read as 'out of staging', not outstanding
+B-test-366|y|3 right | 'cab' is an everyday word for the cabin (rule 4)
+B-test-381|y|0 wrong | '1000H' read as the clock time 10:00
+B-test-381|y meaning=0 | '1000H' read as 10:00
+B-test-383|y|1 right | 'air conditioning' (rule 1)
+read C-test-009 C-test-094
+C-test-009|x|0 wrong | 'DMG' (damage) presented as an asset ('Asset DMG'), not left visibly unresolved
+C-test-009|x meaning=0 | 'DMG' made an asset name; the damage report is lost
+C-test-015|y|2 right | '#6' already says number 6 (rule 4)
+C-test-020|y|0 right | 'Mechanically protect' (rule 1; the same plain text as the other answer)
+C-test-047|y meaning=0 | 'tremmel' kept as 'Tremmel', a brand name, not the trammel wheel
+C-test-056|y meaning=0 | 'W/Place' split into 'Work' and 'at Place'; workplace inspection lost
+C-test-056|y|1 right | 'Inspect' for 'inspection' (rule 1)
+C-test-066|x|0 right | 'Amplitude Modulation / Frequency Modulation' is what AM / FM stands for (rule 1)
+C-test-072|x meaning=0 | 'U/S' read as 'Under/Surface'
+C-test-072|y meaning=0 | 'quick fill connector' turned into a 'Kwik fill connector', a brand; not shorthand, the key keeps 'quick'
+C-test-083|x|0 unsure | ''afe' kept as written and listed unsure (rule 4)
+C-test-083|y|0 unsure | ''afe' kept as written and listed unsure (rule 4)
+C-test-085|x meaning=0 | 'u/s' read as 'unserviced'
+C-test-087|y|1 right | 'Re-route' is the key's 'reroute' (rule 3)
+C-test-094|x|4 right | 'Inspect' for 'inspection' (rule 1)
+read C-test-096 C-test-188
+C-test-096|y meaning=0 | 'u/s' read as 'used'
+C-test-096|y|6 right | 'cab' is an everyday word for the cabin (rule 4)
+C-test-101|y|3 right | 'operator's cab' is the cabin (rule 4)
+C-test-101|y meaning=0 added=1 diagnosis=1 | 'reset' becomes 'Reset the circuit breaker': names a part the note does not, and implies a tripped breaker as the cause of no power (diagnosis added at the re-check after Codex pass 3)
+C-test-121|x meaning=0 | 'RHR' (right hand rear) read as 'Repair': a defect report becomes a repair task
+C-test-124|x|4 right | 'Replace ... Mechanical' says change out - mechanical (rule 1)
+C-test-125|y|7 kept | 'D/line' written as 'D line', not read and not a different thing
+C-test-170|x|5 right | '#1' already says number 1 (rule 4)
+C-test-171|x|3 right | 'air conditioning' units (rule 1)
+C-test-171|x|5 right | '#348' already says number 348 (rule 4)
+C-test-188|x|5 right | the plain text says 'non-compliance'
+C-test-188|y|5 right | the plain text says 'non-compliance'
+C-test-188|y meaning=0 | '526' (an asset code, masked in the key) read as a quantity, 'Audit 526 air fittings', as '5H' in C-test-214 (changed at the second review, 20 Nov 2026, versions known)
+read C-test-194 C-test-294
+C-test-194|x meaning=0 | 'u/s' read as 'unserviced'
+C-test-214|x|5 right | '4/8/8' already reads as a date (rule 4)
+C-test-214|x meaning=0 | '5H' (an asset code, masked in the key) read as '5 hours'
+C-test-214|y meaning=0 | '5H' (an asset code, masked in the key) read as '5 hours'
+C-test-233|x meaning=0 | 'u/s' read as 'used (second-hand)': 'A used dummy receiver is required'
+C-test-235|x meaning=0 | 'ext' read as 'external', not extinguisher
+C-test-235|y meaning=0 | 'ext' read as 'external', not extinguisher
+C-test-243|y|0 right | the plain text says 'two-way'
+C-test-243|y meaning=0 | 'cutting out' becomes 'Isolating the two-way'
+C-test-246|x meaning=0 | 'Connect Inspect' (inspect the connection) read as two tasks, 'Connect and inspect'
+read C-test-295 C-test-398
+C-test-299|y meaning=0 | 'Iov' (an unexpanded code; the key keeps IOV) read as 'Overcurrent'
+C-test-313|y meaning=0 | '9 Wk Service' (a 9-week service) read as 'Weekly service for Air Conditioning 9'
+C-test-315|y meaning=0 | 'u/s' read as 'use': 'Use a flexible pipe and rain cap'
+C-test-327|x|2 right | 'missing ... to be installed' says missing - fit (rule 1)
+C-test-327|y|2 right | 'missing. Install a new motor' says missing - fit (rule 1)
+C-test-329|y meaning=0 | 'propels' (a dragline's propel units) read as 'propeller shafts'
+C-test-336|y meaning=0 | 'quick fill' turned into 'Kwik fill', a brand; not shorthand, the key keeps 'quick'
+C-test-355|x|1 right | 'air conditioning' fans (rule 1)
+C-test-355|y meaning=0 | 'no a/c fans' read as 'Number air conditioner fans': 'no' (none) taken as number
+C-test-357|y meaning=0 | 'n/w' read as 'new': a fault report becomes 'Fit a new indicator switch on the excavator'
+C-test-368|x|4 right | 'over temperature' is the key's 'overtemperature' (spacing only)
+C-test-368|y|4 right | 'over temperature' is the key's 'overtemperature' (spacing only)
+C-test-374|y meaning=0 | '# 3 air comp' (the number 3 compressor) read as 'item 3' of a work order
+C-test-398|x meaning=0 | 'Propel coupling' read as 'propeller coupling'

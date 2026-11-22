@@ -1,0 +1,35 @@
+{
+  "$schema": "https://pi.dev/schemas/models.schema.json",
+  "providers": {
+    "qwen27b": {
+      "baseUrl": "http://localhost:8001/v1",
+      "api": "openai-completions",
+      "apiKey": "none",
+      "models": [
+        {
+          "id": "qwen38-27b",
+          "input": [
+            "text"
+          ],
+          "contextWindow": 96000,
+          "maxTokens": 32768
+        }
+      ]
+    },
+    "flashnext": {
+      "baseUrl": "http://localhost:8002/v1",
+      "api": "openai-completions",
+      "apiKey": "none",
+      "models": [
+        {
+          "id": "qwen38-next-flash",
+          "input": [
+            "text"
+          ],
+          "contextWindow": 262144,
+          "maxTokens": 32768
+        }
+      ]
+    }
+  }
+}

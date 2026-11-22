@@ -1,0 +1,3827 @@
+{
+ "rules": "hand-check-rules.md",
+ "read": {
+  "answers": 3274,
+  "ner_samples": 138,
+  "ner_unmatched_spans": 484
+ },
+ "excluded": [
+  {
+   "q": "Pseudograndreefite/colour",
+   "why": "the colour key is the word 'Color', which names no colour"
+  }
+ ],
+ "answers": [
+  {
+   "q": "Ahlfeldite/cleavage",
+   "answer": "Good",
+   "gold": "{110} Distinct, {103} Distinct",
+   "script": 0,
+   "hand": 1,
+   "note": "good = distinct; key has {110} and {103} Distinct"
+  },
+  {
+   "q": "Altaite/cleavage",
+   "answer": "Perfect on {010",
+   "gold": "{001} Perfect, {010} Perfect, {100} Perfect",
+   "script": 0,
+   "hand": 1,
+   "note": "perfect {010} is in key"
+  },
+  {
+   "q": "Altaite/cleavage",
+   "answer": "010",
+   "gold": "{001} Perfect, {010} Perfect, {100} Perfect",
+   "script": 1,
+   "hand": 0,
+   "note": "index only, states no quality"
+  },
+  {
+   "q": "Ameghinite/cleavage",
+   "answer": "Good; two directions",
+   "gold": "Distinct, Imperfect",
+   "script": 0,
+   "hand": 1,
+   "note": "good = distinct, in key; key has no indices, so two directions cannot be shown to contradict"
+  },
+  {
+   "q": "Ameghinite/cleavage",
+   "answer": "Indistinct",
+   "gold": "Distinct, Imperfect",
+   "script": 0,
+   "hand": 1,
+   "note": "indistinct = imperfect (poor), in key"
+  },
+  {
+   "q": "Ameghinite/cleavage",
+   "answer": "Imperfect in one direction",
+   "gold": "Distinct, Imperfect",
+   "script": 0,
+   "hand": 1,
+   "note": "imperfect is in key; one cleavage correctly named"
+  },
+  {
+   "q": "Ameghinite/cleavage",
+   "answer": "Perfect",
+   "gold": "Distinct, Imperfect",
+   "script": 1,
+   "hand": 0,
+   "note": "perfect not in key (Distinct, Imperfect); script matched substring of Imperfect"
+  },
+  {
+   "q": "Analcime/cleavage",
+   "answer": "Poor",
+   "gold": "{001} Indistinct, {010} Indistinct, {100} Indistinct",
+   "script": 0,
+   "hand": 1,
+   "note": "poor = indistinct, matches key"
+  },
+  {
+   "q": "Andalusite/cleavage",
+   "answer": "Poor; indistinct",
+   "gold": "{110} Distinct, {100} Indistinct, {010} Poor",
+   "script": 0,
+   "hand": 1,
+   "note": "poor and indistinct both in key"
+  },
+  {
+   "q": "Anhydrite/cleavage",
+   "answer": "Perfect on {010}, good on {100} and {001",
+   "gold": "{010} Perfect, {100} Perfect, {001} Good",
+   "script": 1,
+   "hand": 0,
+   "note": "good on {100} contradicts key {100} Perfect"
+  },
+  {
+   "q": "Anhydrite/cleavage",
+   "answer": "Perfect on {010}; good on {100} and {001",
+   "gold": "{010} Perfect, {100} Perfect, {001} Good",
+   "script": 1,
+   "hand": 0,
+   "note": "good on {100} contradicts key {100} Perfect"
+  },
+  {
+   "q": "Anhydrite/cleavage",
+   "answer": "Perfect on {001}, good on {100} and {010",
+   "gold": "{010} Perfect, {100} Perfect, {001} Good",
+   "script": 1,
+   "hand": 0,
+   "note": "perfect on {001} and good on {010} contradict key ({001} Good, {010} Perfect)"
+  },
+  {
+   "q": "Aramayoite/cleavage",
+   "answer": "Perfect {001",
+   "gold": "Perfect, Indistinct",
+   "script": 0,
+   "hand": 1,
+   "note": "perfect in key; key has no indices so {001} not checked"
+  },
+  {
+   "q": "Aramayoite/cleavage",
+   "answer": "001} perfect",
+   "gold": "Perfect, Indistinct",
+   "script": 0,
+   "hand": 1,
+   "note": "perfect in key; key has no indices"
+  },
+  {
+   "q": "Aramayoite/cleavage",
+   "answer": "Perfect cleavage on {010",
+   "gold": "Perfect, Indistinct",
+   "script": 0,
+   "hand": 1,
+   "note": "perfect in key; key has no indices"
+  },
+  {
+   "q": "Baddeleyite/cleavage",
+   "answer": "Distinct on {010} and {001}; imperfect on {011} and {002",
+   "gold": "{001} Distinct",
+   "script": 1,
+   "hand": 0,
+   "note": "adds {010}, {011}, {002} not in key ({001} Distinct only)"
+  },
+  {
+   "q": "Barylite/cleavage",
+   "answer": "Perfect {001",
+   "gold": "{001} Perfect, {100} Perfect",
+   "script": 0,
+   "hand": 1,
+   "note": "perfect {001} is in key"
+  },
+  {
+   "q": "Beryllonite/cleavage",
+   "answer": "Perfect on {010",
+   "gold": "Perfect, Good",
+   "script": 0,
+   "hand": 1,
+   "note": "perfect in key; key has no indices"
+  },
+  {
+   "q": "Bismuth/cleavage",
+   "answer": "Perfect basal cleavage",
+   "gold": "{0001} Perfect",
+   "script": 0,
+   "hand": 1,
+   "note": "perfect basal = {0001} Perfect"
+  },
+  {
+   "q": "Bismuthinite/cleavage",
+   "answer": "Perfect cleavage",
+   "gold": "{010} Perfect",
+   "script": 0,
+   "hand": 1,
+   "note": "perfect matches key"
+  },
+  {
+   "q": "Canaphite/cleavage",
+   "answer": "Perfectly cleavable",
+   "gold": "{010} Perfect",
+   "script": 0,
+   "hand": 1,
+   "note": "perfectly cleavable = perfect"
+  },
+  {
+   "q": "Celsian/cleavage",
+   "answer": "Perfect cleavage on {001",
+   "gold": "{001} Perfect, {010} Good",
+   "script": 0,
+   "hand": 1,
+   "note": "perfect {001} in key"
+  },
+  {
+   "q": "Celsian/cleavage",
+   "answer": "Perfect basal cleavage",
+   "gold": "{001} Perfect, {010} Good",
+   "script": 0,
+   "hand": 1,
+   "note": "perfect basal = {001} Perfect"
+  },
+  {
+   "q": "Celsian/cleavage",
+   "answer": "Good on {010",
+   "gold": "{001} Perfect, {010} Good",
+   "script": 0,
+   "hand": 1,
+   "note": "good {010} in key"
+  },
+  {
+   "q": "Chalcanthite/cleavage",
+   "answer": "Perfect",
+   "gold": "{110} Imperfect, {110} Indistinct, {111} Indistinct",
+   "script": 1,
+   "hand": 0,
+   "note": "perfect not in key (all imperfect/indistinct); script matched substring of Imperfect"
+  },
+  {
+   "q": "Changbaiite/cleavage",
+   "answer": "Perfect on {001",
+   "gold": "{0001} Perfect, {1011} Distinct",
+   "script": 0,
+   "hand": 1,
+   "note": "{001} = {0001}, perfect matches"
+  },
+  {
+   "q": "Changbaiite/cleavage",
+   "answer": "Perfect {001",
+   "gold": "{0001} Perfect, {1011} Distinct",
+   "script": 0,
+   "hand": 1,
+   "note": "{001} = {0001}, perfect matches"
+  },
+  {
+   "q": "Chesterite/cleavage",
+   "answer": "Perfect cleavage",
+   "gold": "{110} Perfect",
+   "script": 0,
+   "hand": 1,
+   "note": "perfect matches key"
+  },
+  {
+   "q": "Chiolite/cleavage",
+   "answer": "Good",
+   "gold": "{001} Perfect, {111} Distinct",
+   "script": 0,
+   "hand": 1,
+   "note": "good = distinct, in key"
+  },
+  {
+   "q": "Clino-ferro-suenoite/cleavage",
+   "answer": "Perfect on {010} and {110}; indistinct on {100",
+   "gold": "{110}",
+   "script": 1,
+   "hand": 0,
+   "note": "adds {010} and {100}, not in key ({110} only)"
+  },
+  {
+   "q": "Clino-ferro-suenoite/cleavage",
+   "answer": "Perfect cleavage",
+   "gold": "{110}",
+   "script": 0,
+   "hand": 0,
+   "note": "key gives only {110}; answer names no plane",
+   "key_issue": "key has no quality, only {110}; amphibole cleavage is perfect {110}, so a correct quality-only answer cannot score"
+  },
+  {
+   "q": "Cowlesite/cleavage",
+   "answer": "Perfect in one direction",
+   "gold": "{010} Perfect",
+   "script": 0,
+   "hand": 1,
+   "note": "perfect, one direction, consistent with {010} Perfect"
+  },
+  {
+   "q": "Crandallite/cleavage",
+   "answer": "Perfect basal {001",
+   "gold": "{0001} Perfect",
+   "script": 0,
+   "hand": 1,
+   "note": "perfect basal {001} = {0001} Perfect"
+  },
+  {
+   "q": "Crandallite/cleavage",
+   "answer": "Perfect basal (001",
+   "gold": "{0001} Perfect",
+   "script": 0,
+   "hand": 1,
+   "note": "perfect basal (001) = {0001} Perfect"
+  },
+  {
+   "q": "Crandallite/cleavage",
+   "answer": "Perfect parallelism",
+   "gold": "{0001} Perfect",
+   "script": 0,
+   "hand": 1,
+   "note": "quality perfect matches; nothing contradicts"
+  },
+  {
+   "q": "Dioptase/cleavage",
+   "answer": "Perfect",
+   "gold": "{1011} Good",
+   "script": 0,
+   "hand": 0,
+   "note": "",
+   "key_issue": "sources differ: Handbook of Mineralogy gives dioptase {10-11} perfect; key has Good"
+  },
+  {
+   "q": "Dioptase/cleavage",
+   "answer": "Distinct",
+   "gold": "{1011} Good",
+   "script": 0,
+   "hand": 1,
+   "note": "distinct = good"
+  },
+  {
+   "q": "Dravite/cleavage",
+   "answer": "Poor",
+   "gold": "Indistinct",
+   "script": 0,
+   "hand": 1,
+   "note": "poor = indistinct"
+  },
+  {
+   "q": "Fairfieldite/cleavage",
+   "answer": "Perfect on {010}; good on {011",
+   "gold": "Perfect, Distinct",
+   "script": 0,
+   "hand": 1,
+   "note": "perfect and good (= distinct) both in key; key has no indices"
+  },
+  {
+   "q": "Fairfieldite/cleavage",
+   "answer": "Perfect on {001",
+   "gold": "Perfect, Distinct",
+   "script": 0,
+   "hand": 1,
+   "note": "perfect in key; key has no indices"
+  },
+  {
+   "q": "Fairfieldite/cleavage",
+   "answer": "Perfect on {010",
+   "gold": "Perfect, Distinct",
+   "script": 0,
+   "hand": 1,
+   "note": "perfect in key; key has no indices"
+  },
+  {
+   "q": "Fairfieldite/cleavage",
+   "answer": "Perfect basal",
+   "gold": "Perfect, Distinct",
+   "script": 0,
+   "hand": 1,
+   "note": "perfect in key; key has no indices"
+  },
+  {
+   "q": "Fayalite/cleavage",
+   "answer": "Poor",
+   "gold": "{010} Indistinct",
+   "script": 0,
+   "hand": 1,
+   "note": "poor = indistinct"
+  },
+  {
+   "q": "Fluorite/cleavage",
+   "answer": "Perfect octahedral",
+   "gold": "{111} Perfect",
+   "script": 0,
+   "hand": 1,
+   "note": "perfect octahedral = {111} Perfect"
+  },
+  {
+   "q": "Fluorite/cleavage",
+   "answer": "Perfect octahedral cleavage",
+   "gold": "{111} Perfect",
+   "script": 0,
+   "hand": 1,
+   "note": "perfect octahedral = {111} Perfect"
+  },
+  {
+   "q": "Gallobeudantite/cleavage",
+   "answer": "001",
+   "gold": "{001} Indistinct",
+   "script": 1,
+   "hand": 0,
+   "note": "index only, states no quality"
+  },
+  {
+   "q": "Goethite/cleavage",
+   "answer": "Perfect to good",
+   "gold": "{010} Perfect, {100} Distinct",
+   "script": 0,
+   "hand": 1,
+   "note": "perfect and good (= distinct) both in key"
+  },
+  {
+   "q": "Greenockite/cleavage",
+   "answer": "Perfect",
+   "gold": "{1120} Distinct, {0001} Imperfect",
+   "script": 1,
+   "hand": 0,
+   "note": "perfect not in key (Distinct, Imperfect); script matched substring of Imperfect"
+  },
+  {
+   "q": "Heinrichite/cleavage",
+   "answer": "Perfect {001",
+   "gold": "{001} Perfect, {100} Distinct",
+   "script": 0,
+   "hand": 1,
+   "note": "perfect {001} in key"
+  },
+  {
+   "q": "Heinrichite/cleavage",
+   "answer": "Good",
+   "gold": "{001} Perfect, {100} Distinct",
+   "script": 0,
+   "hand": 1,
+   "note": "good = distinct, in key"
+  },
+  {
+   "q": "Hemimorphite/cleavage",
+   "answer": "Perfect cleavage on {001}, imperfect on {110",
+   "gold": "{110} Perfect",
+   "script": 1,
+   "hand": 0,
+   "note": "imperfect {110} contradicts key {110} Perfect; {001} not in key"
+  },
+  {
+   "q": "Kaolinite/cleavage",
+   "answer": "Perfect basal cleavage",
+   "gold": "{001} Perfect",
+   "script": 0,
+   "hand": 1,
+   "note": "perfect basal = {001} Perfect"
+  },
+  {
+   "q": "Kaolinite/cleavage",
+   "answer": "001",
+   "gold": "{001} Perfect",
+   "script": 1,
+   "hand": 0,
+   "note": "index only, states no quality"
+  },
+  {
+   "q": "Kassite/cleavage",
+   "answer": "Perfect {010",
+   "gold": "{010} Perfect, {101} Indistinct",
+   "script": 0,
+   "hand": 1,
+   "note": "perfect {010} in key"
+  },
+  {
+   "q": "Larnite/cleavage",
+   "answer": "Distinct",
+   "gold": "{100} Good",
+   "script": 0,
+   "hand": 1,
+   "note": "distinct = good"
+  },
+  {
+   "q": "Lazurite/cleavage",
+   "answer": "Indistinct",
+   "gold": "{110} Imperfect",
+   "script": 0,
+   "hand": 1,
+   "note": "indistinct = imperfect"
+  },
+  {
+   "q": "Lazurite/cleavage",
+   "answer": "Poor",
+   "gold": "{110} Imperfect",
+   "script": 0,
+   "hand": 1,
+   "note": "poor = imperfect"
+  },
+  {
+   "q": "Magnesite/cleavage",
+   "answer": "Perfect rhombohedral",
+   "gold": "{1011} Perfect",
+   "script": 0,
+   "hand": 1,
+   "note": "perfect rhombohedral = {10-11} Perfect"
+  },
+  {
+   "q": "Moissanite/cleavage",
+   "answer": "Distinct",
+   "gold": "{0001} Indistinct",
+   "script": 1,
+   "hand": 0,
+   "note": "distinct (good class) vs key Indistinct; script matched substring"
+  },
+  {
+   "q": "Muscovite/cleavage",
+   "answer": "Perfect basal cleavage",
+   "gold": "{001} Perfect",
+   "script": 0,
+   "hand": 1,
+   "note": "perfect basal = {001} Perfect"
+  },
+  {
+   "q": "Natroxalate/cleavage",
+   "answer": "Imperfect",
+   "gold": "{100} Perfect, {001} Indistinct",
+   "script": 0,
+   "hand": 1,
+   "note": "imperfect = indistinct, in key"
+  },
+  {
+   "q": "Proto-ferro-anthophyllite/cleavage",
+   "answer": "Perfect cleavage",
+   "gold": "{210}",
+   "script": 0,
+   "hand": 0,
+   "note": "key gives only {210}; answer names no plane",
+   "key_issue": "key has no quality, only {210}; anthophyllite-group cleavage is perfect {210}, so a correct quality-only answer cannot score"
+  },
+  {
+   "q": "Pyrophyllite/cleavage",
+   "answer": "Perfect basal",
+   "gold": "{001} Perfect",
+   "script": 0,
+   "hand": 1,
+   "note": "perfect basal = {001} Perfect"
+  },
+  {
+   "q": "Pyrophyllite/cleavage",
+   "answer": "Perfectly basal",
+   "gold": "{001} Perfect",
+   "script": 0,
+   "hand": 1,
+   "note": "perfectly basal = {001} Perfect"
+  },
+  {
+   "q": "Pyrophyllite/cleavage",
+   "answer": "Perfect basal cleavage",
+   "gold": "{001} Perfect",
+   "script": 0,
+   "hand": 1,
+   "note": "perfect basal = {001} Perfect"
+  },
+  {
+   "q": "Realgar/cleavage",
+   "answer": "Poor to good on {100}, {010}, and {001",
+   "gold": "{010} Good",
+   "script": 1,
+   "hand": 0,
+   "note": "poor and {100}/{001} contradict key ({010} Good only)"
+  },
+  {
+   "q": "Sartorite/cleavage",
+   "answer": "Good cleavage",
+   "gold": "{100} Good",
+   "script": 0,
+   "hand": 1,
+   "note": "good matches key"
+  },
+  {
+   "q": "Sartorite/cleavage",
+   "answer": "Distinct",
+   "gold": "{100} Good",
+   "script": 0,
+   "hand": 1,
+   "note": "distinct = good"
+  },
+  {
+   "q": "Serandite/cleavage",
+   "answer": "Perfect on {001",
+   "gold": "{100} Perfect, {001} Perfect",
+   "script": 0,
+   "hand": 1,
+   "note": "perfect {001} in key"
+  },
+  {
+   "q": "Serandite/cleavage",
+   "answer": "Perfect cleavage",
+   "gold": "{100} Perfect, {001} Perfect",
+   "script": 0,
+   "hand": 1,
+   "note": "perfect matches key"
+  },
+  {
+   "q": "Stannite/cleavage",
+   "answer": "Poor",
+   "gold": "{110} Imperfect",
+   "script": 0,
+   "hand": 1,
+   "note": "poor = imperfect"
+  },
+  {
+   "q": "Tremolite/cleavage",
+   "answer": "Two perfect cleavages at 56° and 124°",
+   "gold": "{110} Perfect, {010} Distinct",
+   "script": 0,
+   "hand": 1,
+   "note": "two perfect directions at 56/124 = the {110} prism, Perfect in key"
+  },
+  {
+   "q": "Tremolite/cleavage",
+   "answer": "Perfect cleavage parallel to {110}, forming a 124° angle",
+   "gold": "{110} Perfect, {010} Distinct",
+   "script": 0,
+   "hand": 1,
+   "note": "perfect {110} in key"
+  },
+  {
+   "q": "Tremolite/cleavage",
+   "answer": "Perfect cleavage parallel to {110",
+   "gold": "{110} Perfect, {010} Distinct",
+   "script": 0,
+   "hand": 1,
+   "note": "perfect {110} in key"
+  },
+  {
+   "q": "Wagnerite/cleavage",
+   "answer": "Poor on {100",
+   "gold": "{100} Imperfect, {120} Imperfect, {001} Poor",
+   "script": 0,
+   "hand": 1,
+   "note": "poor = imperfect on {100}, in key"
+  },
+  {
+   "q": "Actinolite/colour",
+   "answer": "Green (ranging from pale green to dark green",
+   "gold": "Green, Green black, Gray green, Black",
+   "script": 0,
+   "hand": 1,
+   "note": "all values are shades of green; key has Green"
+  },
+  {
+   "q": "Actinolite/colour",
+   "answer": "Pale green to dark green",
+   "gold": "Green, Green black, Gray green, Black",
+   "script": 0,
+   "hand": 1,
+   "note": "pale/dark green = green (shade qualifier); key has Green"
+  },
+  {
+   "q": "Actinolite/colour",
+   "answer": "Pale to dark green",
+   "gold": "Green, Green black, Gray green, Black",
+   "script": 0,
+   "hand": 1,
+   "note": "pale/dark green = green (shade qualifier); key has Green"
+  },
+  {
+   "q": "Adelite/colour",
+   "answer": "Pale green to yellowish-green",
+   "gold": "Blue gray, Green, Gray, Yellow, Light green",
+   "script": 0,
+   "hand": 1,
+   "note": "pale green = green; yellowish-green compound matches key Green"
+  },
+  {
+   "q": "Akrochordite/colour",
+   "answer": "Reddish-brown",
+   "gold": "Reddish brown",
+   "script": 0,
+   "hand": 1,
+   "note": "reddish-brown = key Reddish brown (hyphen)"
+  },
+  {
+   "q": "Akrochordite/colour",
+   "answer": "Pale brown",
+   "gold": "Reddish brown",
+   "script": 0,
+   "hand": 1,
+   "note": "pale brown = brown, base hue of key compound Reddish brown"
+  },
+  {
+   "q": "Allanpringite/colour",
+   "answer": "Brown",
+   "gold": "Pale brownish yellow",
+   "script": 1,
+   "hand": 0,
+   "note": "key Pale brownish yellow is a yellow; brown is only its modifier"
+  },
+  {
+   "q": "Allanpringite/colour",
+   "answer": "Pale yellow",
+   "gold": "Pale brownish yellow",
+   "script": 0,
+   "hand": 1,
+   "note": "pale yellow = yellow, base hue of key compound Pale brownish yellow"
+  },
+  {
+   "q": "Bandylite/colour",
+   "answer": "Pale to medium blue",
+   "gold": "Dark blue",
+   "script": 0,
+   "hand": 1,
+   "note": "pale/medium blue = blue = key Dark blue (shade qualifiers)"
+  },
+  {
+   "q": "Bismutite/colour",
+   "answer": "Pale yellow to greenish yellow",
+   "gold": "Brown, Brownish yellow, Green, Gray, Yellow",
+   "script": 0,
+   "hand": 1,
+   "note": "pale yellow = yellow; greenish yellow compound matches key Yellow"
+  },
+  {
+   "q": "Bismutite/colour",
+   "answer": "Pale yellow",
+   "gold": "Brown, Brownish yellow, Green, Gray, Yellow",
+   "script": 0,
+   "hand": 1,
+   "note": "pale yellow = key Yellow (shade qualifier)"
+  },
+  {
+   "q": "Bromellite/colour",
+   "answer": "White to pale yellow",
+   "gold": "White",
+   "script": 1,
+   "hand": 0,
+   "note": "pale yellow not in key (White only)"
+  },
+  {
+   "q": "Bromellite/colour",
+   "answer": "Colourless to pale green; white in massive form",
+   "gold": "White",
+   "script": 1,
+   "hand": 0,
+   "note": "colourless and pale green not in key (White only)"
+  },
+  {
+   "q": "Calciborite/colour",
+   "answer": "Colourless; white to greyish-white in bulk",
+   "gold": "White",
+   "script": 1,
+   "hand": 0,
+   "note": "colourless not in key (White only)"
+  },
+  {
+   "q": "Cerianite-(Ce)/colour",
+   "answer": "Pale yellow",
+   "gold": "Greenish yellow, Resin brown, Dark greenish brown",
+   "script": 0,
+   "hand": 1,
+   "note": "pale yellow = yellow, base hue of key compound Greenish yellow"
+  },
+  {
+   "q": "Chvaleticeite/colour",
+   "answer": "Pale green",
+   "gold": "Yellow green, White, Pink",
+   "script": 0,
+   "hand": 1,
+   "note": "pale green = green, base hue of key compound Yellow green"
+  },
+  {
+   "q": "Chvaleticeite/colour",
+   "answer": "Pale pink",
+   "gold": "Yellow green, White, Pink",
+   "script": 0,
+   "hand": 1,
+   "note": "pale pink = key Pink (shade qualifier)"
+  },
+  {
+   "q": "Clinoatacamite/colour",
+   "answer": "Yellowish-green to green",
+   "gold": "Green, Dark greenish black, Greenish blue",
+   "script": 0,
+   "hand": 1,
+   "note": "yellowish-green compound and green both match key Green"
+  },
+  {
+   "q": "Clinoatacamite/colour",
+   "answer": "Pale to dark green",
+   "gold": "Green, Dark greenish black, Greenish blue",
+   "script": 0,
+   "hand": 1,
+   "note": "pale/dark green = key Green (shade qualifier)"
+  },
+  {
+   "q": "Clinoatacamite/colour",
+   "answer": "Pale to medium green",
+   "gold": "Green, Dark greenish black, Greenish blue",
+   "script": 0,
+   "hand": 1,
+   "note": "pale/medium green = key Green (shade qualifier)"
+  },
+  {
+   "q": "Clinohumite/colour",
+   "answer": "Yellow, pale yellow, greenish-yellow",
+   "gold": "Brown, Yellow, White, Orange, Reddish brown",
+   "script": 0,
+   "hand": 1,
+   "note": "yellow, pale yellow, greenish-yellow all match key Yellow"
+  },
+  {
+   "q": "Clinohumite/colour",
+   "answer": "Yellowish-brown to golden-yellow",
+   "gold": "Brown, Yellow, White, Orange, Reddish brown",
+   "script": 0,
+   "hand": 1,
+   "note": "yellowish-brown matches key Brown; golden-yellow matches key Yellow"
+  },
+  {
+   "q": "Clinohumite/colour",
+   "answer": "Yellowish-brown",
+   "gold": "Brown, Yellow, White, Orange, Reddish brown",
+   "script": 0,
+   "hand": 1,
+   "note": "yellowish-brown compound matches key Brown"
+  },
+  {
+   "q": "Coyoteite/colour",
+   "answer": "Deep green to black",
+   "gold": "Black",
+   "script": 1,
+   "hand": 0,
+   "note": "deep green not in key (Black only)"
+  },
+  {
+   "q": "Cylindrite/colour",
+   "answer": "Silver-gray",
+   "gold": "Lead gray, Grayish black",
+   "script": 0,
+   "hand": 1,
+   "note": "silver-gray = gray = key Lead gray (silver, lead are shade qualifiers on gray)"
+  },
+  {
+   "q": "Diaboleite/colour",
+   "answer": "Pale blue",
+   "gold": "Dark blue, Bright sky blue",
+   "script": 0,
+   "hand": 1,
+   "note": "pale blue = blue = key Dark blue (shade qualifier)"
+  },
+  {
+   "q": "Dickite/colour",
+   "answer": "White, gray, blue-gray, yellowish, brownish; colorless in thin section",
+   "gold": "Blue",
+   "script": 1,
+   "hand": 0,
+   "note": "white, gray, yellowish, brownish, colorless not in key (Blue only)"
+  },
+  {
+   "q": "Dickite/colour",
+   "answer": "White, grey, blue-grey, greenish, or yellowish",
+   "gold": "Blue",
+   "script": 1,
+   "hand": 0,
+   "note": "white, grey, greenish, yellowish not in key (Blue only)"
+  },
+  {
+   "q": "Dickite/colour",
+   "answer": "White",
+   "gold": "Blue",
+   "script": 0,
+   "hand": 0,
+   "note": "",
+   "key_issue": "dickite is usually white to colourless; a key of Blue alone looks incomplete"
+  },
+  {
+   "q": "Eglestonite/colour",
+   "answer": "Pale yellow",
+   "gold": "Brown, Brownish yellow, Yellow, Dark brown, Orange",
+   "script": 0,
+   "hand": 1,
+   "note": "pale yellow = key Yellow (shade qualifier)"
+  },
+  {
+   "q": "Eglestonite/colour",
+   "answer": "Pale yellow to greenish-yellow",
+   "gold": "Brown, Brownish yellow, Yellow, Dark brown, Orange",
+   "script": 0,
+   "hand": 1,
+   "note": "pale yellow = yellow; greenish-yellow compound matches key Yellow"
+  },
+  {
+   "q": "Epsomite/colour",
+   "answer": "Colorless to white; often tinted greenish-gray due to impurities",
+   "gold": "Colorless, Grey, Pink, White",
+   "script": 0,
+   "hand": 1,
+   "note": "colorless, white in key; greenish-gray compound matches key Grey"
+  },
+  {
+   "q": "Epsomite/colour",
+   "answer": "Colourless to white",
+   "gold": "Colorless, Grey, Pink, White",
+   "script": 0,
+   "hand": 1,
+   "note": "colourless and white both in key"
+  },
+  {
+   "q": "Erniggliite/colour",
+   "answer": "Grey",
+   "gold": "Gray, Black gray, Black",
+   "script": 0,
+   "hand": 1,
+   "note": "grey = gray (spelling)"
+  },
+  {
+   "q": "Esseneite/colour",
+   "answer": "Dark brown",
+   "gold": "Reddish brown",
+   "script": 0,
+   "hand": 1,
+   "note": "dark brown = brown, base hue of key compound Reddish brown"
+  },
+  {
+   "q": "Euchlorine/colour",
+   "answer": "Dark green to black",
+   "gold": "Dark green",
+   "script": 1,
+   "hand": 0,
+   "note": "black not in key (Dark green only)"
+  },
+  {
+   "q": "Euchlorine/colour",
+   "answer": "Pale green to yellowish-green",
+   "gold": "Dark green",
+   "script": 0,
+   "hand": 1,
+   "note": "pale green = key Dark green (shade); yellowish-green compound matches green"
+  },
+  {
+   "q": "Euchlorine/colour",
+   "answer": "Pale green",
+   "gold": "Dark green",
+   "script": 0,
+   "hand": 1,
+   "note": "pale green = key Dark green (shade qualifier)"
+  },
+  {
+   "q": "Fairfieldite/colour",
+   "answer": "Brownish yellow",
+   "gold": "Greenish white, White, Light yellow",
+   "script": 0,
+   "hand": 1,
+   "note": "brownish yellow compound matches key Light yellow (= yellow)"
+  },
+  {
+   "q": "Ferrokentbrooksite/colour",
+   "answer": "Dark brown",
+   "gold": "Reddish brown, Red",
+   "script": 0,
+   "hand": 1,
+   "note": "dark brown = brown, base hue of key compound Reddish brown"
+  },
+  {
+   "q": "Greenockite/colour",
+   "answer": "Pale yellow",
+   "gold": "Honey yellow, Citron yellow, Orange yellow",
+   "script": 0,
+   "hand": 1,
+   "note": "pale yellow = yellow, base hue of key Honey/Citron/Orange yellow"
+  },
+  {
+   "q": "Gustavite/colour",
+   "answer": "Dark grey",
+   "gold": "Steel gray",
+   "script": 0,
+   "hand": 1,
+   "note": "dark grey = grey = key Steel gray (shade qualifiers)"
+  },
+  {
+   "q": "Hausmannite/colour",
+   "answer": "Black; sometimes brownish-black",
+   "gold": "Brownish black, Grayish",
+   "script": 0,
+   "hand": 1,
+   "note": "brownish-black = key; black = its base hue"
+  },
+  {
+   "q": "Hausmannite/colour",
+   "answer": "Iron-black",
+   "gold": "Brownish black, Grayish",
+   "script": 0,
+   "hand": 1,
+   "note": "iron-black = black (iron is a shade qualifier) = base hue of key Brownish black"
+  },
+  {
+   "q": "Hausmannite/colour",
+   "answer": "Dark brownish-black",
+   "gold": "Brownish black, Grayish",
+   "script": 0,
+   "hand": 1,
+   "note": "dark brownish-black = key Brownish black (shade qualifier)"
+  },
+  {
+   "q": "Hessite/colour",
+   "answer": "Native tellurium; metallic gray to steel-gray",
+   "gold": "Lead gray, Steel gray",
+   "script": 0,
+   "hand": 1,
+   "note": "metallic gray and steel-gray match key Lead/Steel gray; 'native tellurium' is not a colour value"
+  },
+  {
+   "q": "Hessite/colour",
+   "answer": "Steel-gray",
+   "gold": "Lead gray, Steel gray",
+   "script": 0,
+   "hand": 1,
+   "note": "steel-gray = key Steel gray (hyphen)"
+  },
+  {
+   "q": "Ikaite/colour",
+   "answer": "White; blue-white when fresh",
+   "gold": "Chalky white",
+   "script": 0,
+   "hand": 1,
+   "note": "key Chalky white = white (chalky is a shade qualifier); blue-white compound matches white"
+  },
+  {
+   "q": "Kidwellite/colour",
+   "answer": "Greenish yellow",
+   "gold": "Greenish-white, Light green, Yellow, Yellow-green",
+   "script": 0,
+   "hand": 1,
+   "note": "greenish yellow compound matches key Yellow"
+  },
+  {
+   "q": "Kidwellite/colour",
+   "answer": "Pale yellow",
+   "gold": "Greenish-white, Light green, Yellow, Yellow-green",
+   "script": 0,
+   "hand": 1,
+   "note": "pale yellow = key Yellow (shade qualifier)"
+  },
+  {
+   "q": "Kidwellite/colour",
+   "answer": "Pale yellow to golden yellow",
+   "gold": "Greenish-white, Light green, Yellow, Yellow-green",
+   "script": 0,
+   "hand": 1,
+   "note": "pale yellow and golden yellow both = key Yellow"
+  },
+  {
+   "q": "Miassite/colour",
+   "answer": "Grey",
+   "gold": "Gray",
+   "script": 0,
+   "hand": 1,
+   "note": "grey = gray (spelling)"
+  },
+  {
+   "q": "Oneillite/colour",
+   "answer": "Pale brown",
+   "gold": "Yellowish brown",
+   "script": 0,
+   "hand": 1,
+   "note": "pale brown = brown, base hue of key compound Yellowish brown"
+  },
+  {
+   "q": "Oneillite/colour",
+   "answer": "Light brown",
+   "gold": "Yellowish brown",
+   "script": 0,
+   "hand": 1,
+   "note": "light brown = brown, base hue of key compound Yellowish brown"
+  },
+  {
+   "q": "Phosphogartrellite/colour",
+   "answer": "Green to brownish-green",
+   "gold": "Bright green",
+   "script": 0,
+   "hand": 1,
+   "note": "green = key Bright green (shade); brownish-green compound matches green"
+  },
+  {
+   "q": "Povondraite/colour",
+   "answer": "Dark green to black",
+   "gold": "Black",
+   "script": 1,
+   "hand": 0,
+   "note": "dark green not in key (Black only)"
+  },
+  {
+   "q": "Pseudograndreefite/colour",
+   "answer": "Pale yellowish-green to colorless",
+   "gold": "Color",
+   "script": 1,
+   "hand": 0,
+   "note": "key 'Color' names no colour; yellowish-green and colorless do not match it",
+   "key_issue": "key 'Color' is not a colour value, probably a truncated 'Colorless'"
+  },
+  {
+   "q": "Pseudograndreefite/colour",
+   "answer": "Green to brown",
+   "gold": "Color",
+   "script": 0,
+   "hand": 0,
+   "note": "",
+   "key_issue": "key 'Color' is not a colour value, probably a truncated 'Colorless'"
+  },
+  {
+   "q": "Pseudograndreefite/colour",
+   "answer": "Green",
+   "gold": "Color",
+   "script": 0,
+   "hand": 0,
+   "note": "",
+   "key_issue": "key 'Color' is not a colour value, probably a truncated 'Colorless'"
+  },
+  {
+   "q": "Pseudograndreefite/colour",
+   "answer": "Colourless",
+   "gold": "Color",
+   "script": 0,
+   "hand": 0,
+   "note": "graded against literal key 'Color'",
+   "key_issue": "key 'Color' is not a colour value, probably a truncated 'Colorless'; this answer would then be right"
+  },
+  {
+   "q": "Pseudograndreefite/colour",
+   "answer": "Colorless",
+   "gold": "Color",
+   "script": 1,
+   "hand": 0,
+   "note": "script matched the substring 'Color'; key names no colour",
+   "key_issue": "key 'Color' is not a colour value, probably a truncated 'Colorless'; this answer would then be right"
+  },
+  {
+   "q": "Ramdohrite/colour",
+   "answer": "Grey",
+   "gold": "Bluish black gray",
+   "script": 0,
+   "hand": 1,
+   "note": "grey = gray, base hue of key compound Bluish black gray"
+  },
+  {
+   "q": "Ramdohrite/colour",
+   "answer": "steel-grey",
+   "gold": "Bluish black gray",
+   "script": 0,
+   "hand": 1,
+   "note": "steel-grey = grey (steel is a shade qualifier), base hue of key Bluish black gray"
+  },
+  {
+   "q": "Ramdohrite/colour",
+   "answer": "Lead-grey",
+   "gold": "Bluish black gray",
+   "script": 0,
+   "hand": 1,
+   "note": "lead-grey = grey (lead is a shade qualifier), base hue of key Bluish black gray"
+  },
+  {
+   "q": "Reichenbachite/colour",
+   "answer": "Green to brownish green",
+   "gold": "Dark green",
+   "script": 0,
+   "hand": 1,
+   "note": "green = key Dark green (shade); brownish green compound matches green"
+  },
+  {
+   "q": "Reichenbachite/colour",
+   "answer": "Pale green",
+   "gold": "Dark green",
+   "script": 0,
+   "hand": 1,
+   "note": "pale green = key Dark green (shade qualifier)"
+  },
+  {
+   "q": "Ruthenium/colour",
+   "answer": "Silvery-white",
+   "gold": "Tin white",
+   "script": 0,
+   "hand": 1,
+   "note": "silvery-white = white = key Tin white (silver, tin are shade qualifiers on white)"
+  },
+  {
+   "q": "Ruthenium/colour",
+   "answer": "Bluish-white",
+   "gold": "Tin white",
+   "script": 0,
+   "hand": 1,
+   "note": "bluish-white compound matches white = key Tin white"
+  },
+  {
+   "q": "Ruthenium/colour",
+   "answer": "Bluish white",
+   "gold": "Tin white",
+   "script": 0,
+   "hand": 1,
+   "note": "bluish white compound matches white = key Tin white"
+  },
+  {
+   "q": "Rutherfordine/colour",
+   "answer": "Pale yellow",
+   "gold": "Brownish, Brownish yellow, White, Light brown orange, Light yellow",
+   "script": 0,
+   "hand": 1,
+   "note": "pale yellow = key Light yellow (shade qualifier)"
+  },
+  {
+   "q": "Sederholmite/colour",
+   "answer": "Pale yellow",
+   "gold": "Yellow, Orange yellow",
+   "script": 0,
+   "hand": 1,
+   "note": "pale yellow = key Yellow (shade qualifier)"
+  },
+  {
+   "q": "Sengierite/colour",
+   "answer": "Copper-green to bluish green",
+   "gold": "Green, Yellow green",
+   "script": 0,
+   "hand": 1,
+   "note": "copper-green and bluish green are greens; key has Green"
+  },
+  {
+   "q": "Sillimanite/colour",
+   "answer": "White, green, yellow, brown, blue, or colorless",
+   "gold": "Bluish, Brownish greenish",
+   "script": 0,
+   "hand": 0,
+   "note": "",
+   "key_issue": "sillimanite is commonly white, grey, brown or greenish; key 'Bluish, Brownish greenish' looks garbled and incomplete"
+  },
+  {
+   "q": "Soddyite/colour",
+   "answer": "Pale yellow to deep yellow",
+   "gold": "Yellow, Canary yellow, Yellowish green",
+   "script": 0,
+   "hand": 1,
+   "note": "pale/deep yellow = key Yellow (shade qualifiers)"
+  },
+  {
+   "q": "Soddyite/colour",
+   "answer": "Pale yellow",
+   "gold": "Yellow, Canary yellow, Yellowish green",
+   "script": 0,
+   "hand": 1,
+   "note": "pale yellow = key Yellow (shade qualifier)"
+  },
+  {
+   "q": "Stibnite/colour",
+   "answer": "Lead-grey to steel-grey",
+   "gold": "Lead gray, Bluish lead gray, Steel gray, Black",
+   "script": 0,
+   "hand": 1,
+   "note": "lead-grey, steel-grey = key Lead gray, Steel gray (spelling, hyphen)"
+  },
+  {
+   "q": "Stibnite/colour",
+   "answer": "Grey (lead-grey",
+   "gold": "Lead gray, Bluish lead gray, Steel gray, Black",
+   "script": 0,
+   "hand": 1,
+   "note": "grey and lead-grey match key Lead gray"
+  },
+  {
+   "q": "Stibnite/colour",
+   "answer": "Grey to lead-grey; often iridescent on fresh surfaces due to tarnishing",
+   "gold": "Lead gray, Bluish lead gray, Steel gray, Black",
+   "script": 0,
+   "hand": 1,
+   "note": "grey and lead-grey match key Lead gray; iridescence is a tarnish effect, not a colour value"
+  },
+  {
+   "q": "Stibnite/colour",
+   "answer": "Lead-grey",
+   "gold": "Lead gray, Bluish lead gray, Steel gray, Black",
+   "script": 0,
+   "hand": 1,
+   "note": "lead-grey = key Lead gray (spelling, hyphen)"
+  },
+  {
+   "q": "Stibnite/colour",
+   "answer": "Plumbaginous gray",
+   "gold": "Lead gray, Bluish lead gray, Steel gray, Black",
+   "script": 0,
+   "hand": 1,
+   "note": "plumbaginous (lead-like) gray = key Lead gray"
+  },
+  {
+   "q": "Stibnite/colour",
+   "answer": "Steel-gray",
+   "gold": "Lead gray, Bluish lead gray, Steel gray, Black",
+   "script": 0,
+   "hand": 1,
+   "note": "steel-gray = key Steel gray (hyphen)"
+  },
+  {
+   "q": "Tetrataenite/colour",
+   "answer": "Silvery white",
+   "gold": "Gray white, Silver white",
+   "script": 0,
+   "hand": 1,
+   "note": "silvery white = key Silver white"
+  },
+  {
+   "q": "Wakefieldite-(La)/colour",
+   "answer": "Reddish-brown",
+   "gold": "Light pink, Brown",
+   "script": 0,
+   "hand": 1,
+   "note": "reddish-brown compound matches key Brown"
+  },
+  {
+   "q": "Raite/crystal_system",
+   "answer": "Monoclinic",
+   "gold": "Orthorhombic",
+   "script": 0,
+   "hand": 0,
+   "note": "",
+   "key_issue": "raite is usually given as monoclinic (C2/m, Pluth et al. 1997 structure; mindat); orthorhombic looks outdated"
+  },
+  {
+   "q": "Raite/crystal_system",
+   "answer": "Orthorhombic",
+   "gold": "Orthorhombic",
+   "script": 1,
+   "hand": 1,
+   "note": "",
+   "key_issue": "raite is usually given as monoclinic (C2/m); key orthorhombic looks outdated"
+  },
+  {
+   "q": "Albite/element_list",
+   "answer": "NaAlSi3O8",
+   "gold": "O, Si, Al, Na",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Albite/element_list",
+   "answer": "Na2O·Al2O3·6SiO2",
+   "gold": "O, Si, Al, Na",
+   "script": 0,
+   "hand": 1,
+   "note": "oxide formula gives Na, Al, Si, O"
+  },
+  {
+   "q": "Almandine/element_list",
+   "answer": "Al2O3 · 3Fe2+(SiO4",
+   "gold": "O, Fe, Al, Si",
+   "script": 0,
+   "hand": 1,
+   "note": "oxide-style formula gives Al, O, Fe, Si"
+  },
+  {
+   "q": "Almandine/element_list",
+   "answer": "Fe3Al2Si3O12",
+   "gold": "O, Fe, Al, Si",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Argentopyrite/element_list",
+   "answer": "Ag2FeS2",
+   "gold": "Fe, Ag, S",
+   "script": 0,
+   "hand": 1,
+   "note": "stoichiometry wrong but element set matches"
+  },
+  {
+   "q": "Argentopyrite/element_list",
+   "answer": "AgFeS2",
+   "gold": "Fe, Ag, S",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Aurichalcite/element_list",
+   "answer": "Zinc, Copper, Carbon, Hydrogen, Oxygen",
+   "gold": "O, Zn, Cu, C, H",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Baddeleyite/element_list",
+   "answer": "ZrO2",
+   "gold": "Zr, O",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Baddeleyite/element_list",
+   "answer": "Zirconium, Oxygen",
+   "gold": "Zr, O",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Benitoite/element_list",
+   "answer": "BaTiSi3O9",
+   "gold": "O, Ba, Si, Ti",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Benitoite/element_list",
+   "answer": "Barium, Titanium, Silicon, Oxygen",
+   "gold": "O, Ba, Si, Ti",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Bertrandite/element_list",
+   "answer": "H2BeSi2O7",
+   "gold": "O, Si, Be, H",
+   "script": 0,
+   "hand": 1,
+   "note": "formula gives H, Be, Si, O"
+  },
+  {
+   "q": "Bertrandite/element_list",
+   "answer": "Beryllium, Silicon, Oxygen, Hydrogen",
+   "gold": "O, Si, Be, H",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Beryllonite/element_list",
+   "answer": "NaBePO4",
+   "gold": "O, P, Na, Be",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Bromargyrite/element_list",
+   "answer": "AgBr",
+   "gold": "Ag, Br",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Bromargyrite/element_list",
+   "answer": "Silver, Bromine",
+   "gold": "Ag, Br",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Böhmite/element_list",
+   "answer": "Aluminium, Hydrogen, Oxygen",
+   "gold": "O, Al, H",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Chlorargyrite/element_list",
+   "answer": "AgCl",
+   "gold": "Ag, Cl",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Chlorargyrite/element_list",
+   "answer": "Silver chloride",
+   "gold": "Ag, Cl",
+   "script": 0,
+   "hand": 1,
+   "note": "chemical name silver chloride = AgCl, element set Ag, Cl; parser does not read compound names"
+  },
+  {
+   "q": "Chrysoberyl/element_list",
+   "answer": "BeAl2O4",
+   "gold": "O, Al, Be",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Chrysoberyl/element_list",
+   "answer": "Beryllium, Oxygen, Aluminum",
+   "gold": "O, Al, Be",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Chrysoberyl/element_list",
+   "answer": "Aluminum, Beryllium, Oxygen",
+   "gold": "O, Al, Be",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Coesite/element_list",
+   "answer": "SiO2",
+   "gold": "O, Si",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Danburite/element_list",
+   "answer": "CaB2SiO6",
+   "gold": "O, Si, Ca, B",
+   "script": 0,
+   "hand": 1,
+   "note": "stoichiometry off but element set Ca, B, Si, O matches"
+  },
+  {
+   "q": "Danburite/element_list",
+   "answer": "CaB2Si2O8",
+   "gold": "O, Si, Ca, B",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Danburite/element_list",
+   "answer": "Calcium, Boron, Silicon, Oxygen",
+   "gold": "O, Si, Ca, B",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Eskebornite/element_list",
+   "answer": "CuFeSe2",
+   "gold": "Se, Cu, Fe",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Ferrarisite/element_list",
+   "answer": "Ca5(AsO3OH)2(AsO3OH)(OH",
+   "gold": "O, Ca, As, H",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Ferrarisite/element_list",
+   "answer": "Ca5(AsO4)2(AsO3OH)2·9H2O",
+   "gold": "O, Ca, As, H",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Ferrarisite/element_list",
+   "answer": "Ca5(AsO4)4(OH)2·9H2O",
+   "gold": "O, Ca, As, H",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Fluorite/element_list",
+   "answer": "Calcium, Fluorine",
+   "gold": "Ca, F",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Fluorite/element_list",
+   "answer": "CaF2",
+   "gold": "Ca, F",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Fluorite/element_list",
+   "answer": "Fluorine, Calcium",
+   "gold": "Ca, F",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Goethite/element_list",
+   "answer": "Iron, Oxygen, Hydrogen",
+   "gold": "Fe, O, H",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Hanksite/element_list",
+   "answer": "Sodium, potassium, carbonate, sulfate, chlorine",
+   "gold": "O, Na, K, Cl, S, C",
+   "script": 0,
+   "hand": 1,
+   "note": "carbonate and sulfate name CO3 and SO4, so the set is Na, K, C, S, O, Cl = key; parser does not read anion names"
+  },
+  {
+   "q": "Hydroxylapatite/element_list",
+   "answer": "Ca5(PO4)3OH",
+   "gold": "O, Ca, P, H",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Hydroxylapatite/element_list",
+   "answer": "Ca5(PO4)3(OH",
+   "gold": "O, Ca, P, H",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Nickellotharmeyerite/element_list",
+   "answer": "Ca2Ni(AsO4)2·2H2O",
+   "gold": "O, Ni, As, Ca, H",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Paravauxite/element_list",
+   "answer": "Iron, aluminum, phosphorus, hydrogen, oxygen",
+   "gold": "O, Fe, Al, P, H",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Pyrite/element_list",
+   "answer": "FeS2",
+   "gold": "S, Fe",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Pyrite/element_list",
+   "answer": "Iron, sulfur",
+   "gold": "S, Fe",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Pyrite/element_list",
+   "answer": "Iron, Sulfur",
+   "gold": "S, Fe",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Pyrite/element_list",
+   "answer": "Iron and sulfur",
+   "gold": "S, Fe",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Pyrite/element_list",
+   "answer": "iron disulfide",
+   "gold": "S, Fe",
+   "script": 0,
+   "hand": 1,
+   "note": "chemical name iron disulfide = FeS2, element set Fe, S; parser does not read compound names"
+  },
+  {
+   "q": "Ramdohrite/element_list",
+   "answer": "Pb, Ag, Sb, S",
+   "gold": "Sb, Pb, S, Ag, Cd, In, Fe, Mn",
+   "script": 0,
+   "hand": 0,
+   "note": "missing Cd, In, Fe, Mn of the key",
+   "key_issue": "key takes minor Cd, In, Fe, Mn (0.1-0.2 apfu) from an empirical formula; the ideal ramdohrite formula Ag3Pb6Sb11S24 has only Ag, Pb, Sb, S, which this answer gives"
+  },
+  {
+   "q": "Ringwoodite/element_list",
+   "answer": "Mg2SiO4",
+   "gold": "O, Fe, Si, Mg",
+   "script": 0,
+   "hand": 0,
+   "note": "missing Fe of the key",
+   "key_issue": "IMA formula of ringwoodite is Mg2SiO4; Fe is only a substituent (the Fe2SiO4 analogue is ahrensite), so this answer matches the species formula"
+  },
+  {
+   "q": "Roscoelite/element_list",
+   "answer": "Vanadium, Potassium, Aluminum, Silicon, Oxygen, Hydrogen",
+   "gold": "O, V, Si, K, Al, H",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Ruthenium/element_list",
+   "answer": "Ruthenium (Ru",
+   "gold": "Ir, Ru",
+   "script": 0,
+   "hand": 0,
+   "note": "missing Ir of the key",
+   "key_issue": "native ruthenium is Ru (Ir only substitutes, as in (Ru,Ir)); Ru alone matches the species"
+  },
+  {
+   "q": "Ruthenium/element_list",
+   "answer": "Ruthenium",
+   "gold": "Ir, Ru",
+   "script": 0,
+   "hand": 0,
+   "note": "missing Ir of the key",
+   "key_issue": "native ruthenium is Ru (Ir only substitutes, as in (Ru,Ir)); Ru alone matches the species"
+  },
+  {
+   "q": "Ruthenium/element_list",
+   "answer": "ruthenium",
+   "gold": "Ir, Ru",
+   "script": 0,
+   "hand": 0,
+   "note": "missing Ir of the key",
+   "key_issue": "native ruthenium is Ru (Ir only substitutes, as in (Ru,Ir)); Ru alone matches the species"
+  },
+  {
+   "q": "Sartorite/element_list",
+   "answer": "PbAs2S4",
+   "gold": "Pb, As, S",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Spodumene/element_list",
+   "answer": "LiAlSi2O6",
+   "gold": "O, Si, Al, Li",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Spodumene/element_list",
+   "answer": "LiAl(SiO3)2",
+   "gold": "O, Si, Al, Li",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Titanite/element_list",
+   "answer": "CaTiSiO5",
+   "gold": "O, Ti, Ca, Si",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Tungsten/element_list",
+   "answer": "Tungsten",
+   "gold": "W",
+   "script": 0,
+   "hand": 1,
+   "note": "element name for native element W"
+  },
+  {
+   "q": "Aegirine/luster",
+   "answer": "Vitreous (occasionally resinous",
+   "gold": "Vitreous - Resinous",
+   "script": 0,
+   "hand": 1,
+   "note": "vitreous and resinous both in key"
+  },
+  {
+   "q": "Aleksite/luster",
+   "answer": "Metallic to submetallic",
+   "gold": "Metallic",
+   "script": 1,
+   "hand": 0,
+   "note": "submetallic not in key (submetallic is not metallic)"
+  },
+  {
+   "q": "Aleksite/luster",
+   "answer": "Sub-metallic",
+   "gold": "Metallic",
+   "script": 1,
+   "hand": 0,
+   "note": "submetallic is not metallic"
+  },
+  {
+   "q": "Analcime/luster",
+   "answer": "Vitreous to pearly; resinous on fracture surfaces",
+   "gold": "Vitreous",
+   "script": 1,
+   "hand": 0,
+   "note": "pearly and resinous not in key"
+  },
+  {
+   "q": "Analcime/luster",
+   "answer": "Vitreous to pearly",
+   "gold": "Vitreous",
+   "script": 1,
+   "hand": 0,
+   "note": "pearly not in key"
+  },
+  {
+   "q": "Andreyivanovite/luster",
+   "answer": "Submetallic",
+   "gold": "Metallic",
+   "script": 1,
+   "hand": 0,
+   "note": "submetallic is not metallic"
+  },
+  {
+   "q": "Anhydrite/luster",
+   "answer": "Vitreous; pearly on cleavage surfaces",
+   "gold": "Vitreous - Pearly",
+   "script": 0,
+   "hand": 1,
+   "note": "vitreous and pearly both in key"
+  },
+  {
+   "q": "Anhydrite/luster",
+   "answer": "Pearly to vitreous",
+   "gold": "Vitreous - Pearly",
+   "script": 0,
+   "hand": 1,
+   "note": "pearly and vitreous both in key"
+  },
+  {
+   "q": "Anhydrite/luster",
+   "answer": "Vitreous to pearly",
+   "gold": "Vitreous - Pearly",
+   "script": 0,
+   "hand": 1,
+   "note": "vitreous and pearly both in key"
+  },
+  {
+   "q": "Antimonselite/luster",
+   "answer": "Sub-metallic",
+   "gold": "Metallic",
+   "script": 1,
+   "hand": 0,
+   "note": "submetallic is not metallic"
+  },
+  {
+   "q": "Antimonselite/luster",
+   "answer": "Adamantine to metallic",
+   "gold": "Metallic",
+   "script": 1,
+   "hand": 0,
+   "note": "adamantine not in key"
+  },
+  {
+   "q": "Antimonselite/luster",
+   "answer": "Metallic to submetallic",
+   "gold": "Metallic",
+   "script": 1,
+   "hand": 0,
+   "note": "submetallic not in key"
+  },
+  {
+   "q": "Bilibinskite/luster",
+   "answer": "Metallic",
+   "gold": "Sub Metallic",
+   "script": 1,
+   "hand": 0,
+   "note": "metallic is not submetallic"
+  },
+  {
+   "q": "Bilibinskite/luster",
+   "answer": "Submetallic",
+   "gold": "Sub Metallic",
+   "script": 0,
+   "hand": 1,
+   "note": "submetallic = Sub Metallic (spacing)"
+  },
+  {
+   "q": "Brianyoungite/luster",
+   "answer": "Submetallic to vitreous",
+   "gold": "Vitreous",
+   "script": 1,
+   "hand": 0,
+   "note": "submetallic not in key"
+  },
+  {
+   "q": "Brianyoungite/luster",
+   "answer": "Vitreous to subvitreous",
+   "gold": "Vitreous",
+   "script": 1,
+   "hand": 0,
+   "note": "subvitreous not in key"
+  },
+  {
+   "q": "Calvertite/luster",
+   "answer": "Submetallic to metallic",
+   "gold": "Metallic",
+   "script": 1,
+   "hand": 0,
+   "note": "submetallic not in key"
+  },
+  {
+   "q": "Chervetite/luster",
+   "answer": "Adamantine to resinous",
+   "gold": "Adamantine",
+   "script": 1,
+   "hand": 0,
+   "note": "resinous not in key"
+  },
+  {
+   "q": "Cinnabar/luster",
+   "answer": "Adamantine to metallic",
+   "gold": "Adamantine",
+   "script": 1,
+   "hand": 0,
+   "note": "metallic not in key"
+  },
+  {
+   "q": "Cinnabar/luster",
+   "answer": "Adamantine to metallic luster",
+   "gold": "Adamantine",
+   "script": 1,
+   "hand": 0,
+   "note": "metallic not in key"
+  },
+  {
+   "q": "Cinnabar/luster",
+   "answer": "Adamantine to silky",
+   "gold": "Adamantine",
+   "script": 1,
+   "hand": 0,
+   "note": "silky not in key"
+  },
+  {
+   "q": "Crocoite/luster",
+   "answer": "Adamantine to resinous",
+   "gold": "Adamantine",
+   "script": 1,
+   "hand": 0,
+   "note": "resinous not in key"
+  },
+  {
+   "q": "Diaspore/luster",
+   "answer": "Vitreous, with pearly luster on cleavage surfaces",
+   "gold": "Vitreous - Pearly",
+   "script": 0,
+   "hand": 1,
+   "note": "vitreous and pearly both in key"
+  },
+  {
+   "q": "Diaspore/luster",
+   "answer": "Vitreous to pearly",
+   "gold": "Vitreous - Pearly",
+   "script": 0,
+   "hand": 1,
+   "note": "vitreous and pearly both in key"
+  },
+  {
+   "q": "Dickite/luster",
+   "answer": "Pearly to vitreous",
+   "gold": "Pearly",
+   "script": 1,
+   "hand": 0,
+   "note": "vitreous not in key"
+  },
+  {
+   "q": "Dickite/luster",
+   "answer": "Vitreous to pearly",
+   "gold": "Pearly",
+   "script": 1,
+   "hand": 0,
+   "note": "vitreous not in key"
+  },
+  {
+   "q": "Diopside/luster",
+   "answer": "Vitreous to pearly",
+   "gold": "Vitreous",
+   "script": 1,
+   "hand": 0,
+   "note": "pearly not in key"
+  },
+  {
+   "q": "Diopside/luster",
+   "answer": "Vitreous to resinous",
+   "gold": "Vitreous",
+   "script": 1,
+   "hand": 0,
+   "note": "resinous not in key"
+  },
+  {
+   "q": "Dioptase/luster",
+   "answer": "Adamantine to vitreous",
+   "gold": "Vitreous",
+   "script": 1,
+   "hand": 0,
+   "note": "adamantine not in key"
+  },
+  {
+   "q": "Edgarite/luster",
+   "answer": "Submetallic",
+   "gold": "Metallic",
+   "script": 1,
+   "hand": 0,
+   "note": "submetallic is not metallic"
+  },
+  {
+   "q": "Famatinite/luster",
+   "answer": "Submetallic",
+   "gold": "Metallic",
+   "script": 1,
+   "hand": 0,
+   "note": "submetallic is not metallic"
+  },
+  {
+   "q": "Famatinite/luster",
+   "answer": "Adamantine to metallic",
+   "gold": "Metallic",
+   "script": 1,
+   "hand": 0,
+   "note": "adamantine not in key"
+  },
+  {
+   "q": "Ferchromide/luster",
+   "answer": "Dull to earthy; metallic in fresh fractures",
+   "gold": "Metallic",
+   "script": 1,
+   "hand": 0,
+   "note": "dull and earthy not in key"
+  },
+  {
+   "q": "Filipstadite/luster",
+   "answer": "Sub-metallic",
+   "gold": "Metallic",
+   "script": 1,
+   "hand": 0,
+   "note": "submetallic is not metallic"
+  },
+  {
+   "q": "Frondelite/luster",
+   "answer": "Vitrous",
+   "gold": "Vitreous - Dull",
+   "script": 0,
+   "hand": 1,
+   "note": "Vitrous is a misspelling of vitreous, which is in key"
+  },
+  {
+   "q": "Grandidierite/luster",
+   "answer": "Diamantine to vitreous",
+   "gold": "Vitreous",
+   "script": 1,
+   "hand": 0,
+   "note": "diamantine (adamantine) not in key"
+  },
+  {
+   "q": "Hemimorphite/luster",
+   "answer": "Vitreous to pearly",
+   "gold": "Vitreous",
+   "script": 1,
+   "hand": 0,
+   "note": "pearly not in key"
+  },
+  {
+   "q": "Hemimorphite/luster",
+   "answer": "Vitreous to pearly (on basal faces",
+   "gold": "Vitreous",
+   "script": 1,
+   "hand": 0,
+   "note": "pearly not in key"
+  },
+  {
+   "q": "Hemimorphite/luster",
+   "answer": "Vitreous to resinous",
+   "gold": "Vitreous",
+   "script": 1,
+   "hand": 0,
+   "note": "resinous not in key"
+  },
+  {
+   "q": "Hemimorphite/luster",
+   "answer": "Vitreous, resinous, or pearly",
+   "gold": "Vitreous",
+   "script": 1,
+   "hand": 0,
+   "note": "resinous and pearly not in key"
+  },
+  {
+   "q": "Ilvaite/luster",
+   "answer": "Metallic",
+   "gold": "Sub Metallic",
+   "script": 1,
+   "hand": 0,
+   "note": "metallic is not submetallic"
+  },
+  {
+   "q": "Ilvaite/luster",
+   "answer": "Sub-metallic",
+   "gold": "Sub Metallic",
+   "script": 0,
+   "hand": 1,
+   "note": "sub-metallic = Sub Metallic (spacing/hyphen)"
+  },
+  {
+   "q": "Muscovite/luster",
+   "answer": "Vitreous to pearly",
+   "gold": "Vitreous",
+   "script": 1,
+   "hand": 0,
+   "note": "pearly not in key"
+  },
+  {
+   "q": "Muscovite/luster",
+   "answer": "Vitreous (with sub-vitreous to pearly on cleavage surfaces",
+   "gold": "Vitreous",
+   "script": 1,
+   "hand": 0,
+   "note": "sub-vitreous and pearly not in key"
+  },
+  {
+   "q": "Paracelsian/luster",
+   "answer": "Vitreous to submetallic",
+   "gold": "Vitreous",
+   "script": 1,
+   "hand": 0,
+   "note": "submetallic not in key"
+  },
+  {
+   "q": "Paraniite-(Y)/luster",
+   "answer": "Vitresous",
+   "gold": "Vitreous",
+   "script": 0,
+   "hand": 1,
+   "note": "Vitresous is a misspelling of vitreous, which is the key"
+  },
+  {
+   "q": "Proustite/luster",
+   "answer": "Metallic",
+   "gold": "Sub Metallic",
+   "script": 1,
+   "hand": 0,
+   "note": "metallic is not submetallic"
+  },
+  {
+   "q": "Proustite/luster",
+   "answer": "Adamantine",
+   "gold": "Sub Metallic",
+   "script": 0,
+   "hand": 0,
+   "note": "",
+   "key_issue": "proustite is usually described as adamantine (to submetallic); key gives only submetallic"
+  },
+  {
+   "q": "Pseudorutile/luster",
+   "answer": "Submetallic",
+   "gold": "Sub Metallic",
+   "script": 0,
+   "hand": 1,
+   "note": "submetallic = Sub Metallic (spacing)"
+  },
+  {
+   "q": "Reidite/luster",
+   "answer": "Adamantine to vitreous",
+   "gold": "Adamantine",
+   "script": 1,
+   "hand": 0,
+   "note": "vitreous not in key"
+  },
+  {
+   "q": "Roscoelite/luster",
+   "answer": "Pearly to vitreous",
+   "gold": "Pearly",
+   "script": 1,
+   "hand": 0,
+   "note": "vitreous not in key"
+  },
+  {
+   "q": "Roscoelite/luster",
+   "answer": "Silky to pearly",
+   "gold": "Pearly",
+   "script": 1,
+   "hand": 0,
+   "note": "silky not in key"
+  },
+  {
+   "q": "Rossmanite/luster",
+   "answer": "Resinous to vitreous",
+   "gold": "Vitreous",
+   "script": 1,
+   "hand": 0,
+   "note": "resinous not in key"
+  },
+  {
+   "q": "Semseyite/luster",
+   "answer": "Submetallic",
+   "gold": "Metallic",
+   "script": 1,
+   "hand": 0,
+   "note": "submetallic is not metallic"
+  },
+  {
+   "q": "Semseyite/luster",
+   "answer": "Adamantine to metallic",
+   "gold": "Metallic",
+   "script": 1,
+   "hand": 0,
+   "note": "adamantine not in key"
+  },
+  {
+   "q": "Semseyite/luster",
+   "answer": "Adamantine to sub-metallic",
+   "gold": "Metallic",
+   "script": 1,
+   "hand": 0,
+   "note": "adamantine and submetallic not in key"
+  },
+  {
+   "q": "Semseyite/luster",
+   "answer": "Adamantine to metallic luster",
+   "gold": "Metallic",
+   "script": 1,
+   "hand": 0,
+   "note": "adamantine not in key"
+  },
+  {
+   "q": "Senarmontite/luster",
+   "answer": "Adamantine to submetallic",
+   "gold": "Adamantine",
+   "script": 1,
+   "hand": 0,
+   "note": "submetallic not in key"
+  },
+  {
+   "q": "Senarmontite/luster",
+   "answer": "Adamantine to sub-metallic",
+   "gold": "Adamantine",
+   "script": 1,
+   "hand": 0,
+   "note": "submetallic not in key"
+  },
+  {
+   "q": "Senarmontite/luster",
+   "answer": "Adamantine to semimetallic",
+   "gold": "Adamantine",
+   "script": 1,
+   "hand": 0,
+   "note": "semimetallic not in key"
+  },
+  {
+   "q": "Shattuckite/luster",
+   "answer": "Vitreous to silky",
+   "gold": "Vitreous",
+   "script": 1,
+   "hand": 0,
+   "note": "silky not in key"
+  },
+  {
+   "q": "Shattuckite/luster",
+   "answer": "Vitreous, dull",
+   "gold": "Vitreous",
+   "script": 1,
+   "hand": 0,
+   "note": "dull not in key"
+  },
+  {
+   "q": "Sillimanite/luster",
+   "answer": "Pearly to vitreous",
+   "gold": "Vitreous",
+   "script": 1,
+   "hand": 0,
+   "note": "pearly not in key"
+  },
+  {
+   "q": "Sillimanite/luster",
+   "answer": "Vitreous to pearly",
+   "gold": "Vitreous",
+   "script": 1,
+   "hand": 0,
+   "note": "pearly not in key"
+  },
+  {
+   "q": "Sillimanite/luster",
+   "answer": "Vitreous to silky",
+   "gold": "Vitreous",
+   "script": 1,
+   "hand": 0,
+   "note": "silky not in key"
+  },
+  {
+   "q": "Sudovikovite/luster",
+   "answer": "Submetallic to pearly",
+   "gold": "Metallic",
+   "script": 1,
+   "hand": 0,
+   "note": "submetallic and pearly not in key"
+  },
+  {
+   "q": "Sudovikovite/luster",
+   "answer": "Adamantine to submetallic",
+   "gold": "Metallic",
+   "script": 1,
+   "hand": 0,
+   "note": "adamantine and submetallic not in key"
+  },
+  {
+   "q": "Tantalite-(Mg)/luster",
+   "answer": "Submetallic",
+   "gold": "Sub Metallic",
+   "script": 0,
+   "hand": 1,
+   "note": "submetallic = Sub Metallic (spacing)"
+  },
+  {
+   "q": "Tantalite-(Mg)/luster",
+   "answer": "Sub-metallic",
+   "gold": "Sub Metallic",
+   "script": 0,
+   "hand": 1,
+   "note": "sub-metallic = Sub Metallic (hyphen/spacing)"
+  },
+  {
+   "q": "Variscite/luster",
+   "answer": "Vitreous",
+   "gold": "Earthy",
+   "script": 0,
+   "hand": 0,
+   "note": "",
+   "key_issue": "variscite is standardly described as vitreous to waxy; earthy alone looks wrong"
+  },
+  {
+   "q": "Variscite/luster",
+   "answer": "Vitreous to waxy",
+   "gold": "Earthy",
+   "script": 0,
+   "hand": 0,
+   "note": "",
+   "key_issue": "variscite is standardly described as vitreous to waxy; earthy alone looks wrong"
+  },
+  {
+   "q": "Wilhelmkleinite/luster",
+   "answer": "Adamantine to resinous",
+   "gold": "Adamantine",
+   "script": 1,
+   "hand": 0,
+   "note": "resinous not in key"
+  },
+  {
+   "q": "Aenigmatite/streak",
+   "answer": "Brownish black",
+   "gold": "Brown",
+   "script": 1,
+   "hand": 0,
+   "note": "brownish black is a black; key is brown"
+  },
+  {
+   "q": "Andradite/streak",
+   "answer": "White to pale gray",
+   "gold": "White",
+   "script": 1,
+   "hand": 0,
+   "note": "gray not in key"
+  },
+  {
+   "q": "Arctite/streak",
+   "answer": "White to pale yellowish-green",
+   "gold": "White",
+   "script": 1,
+   "hand": 0,
+   "note": "yellowish-green not in key"
+  },
+  {
+   "q": "Belovite-(Ce)/streak",
+   "answer": "White to pale yellow",
+   "gold": "White",
+   "script": 1,
+   "hand": 0,
+   "note": "pale yellow not in key"
+  },
+  {
+   "q": "Beryl/streak",
+   "answer": "Colorless",
+   "gold": "White",
+   "script": 0,
+   "hand": 1,
+   "note": "streak: colourless matches white"
+  },
+  {
+   "q": "Cervantite/streak",
+   "answer": "Pale yellow",
+   "gold": "Light yellow",
+   "script": 0,
+   "hand": 1,
+   "note": "pale yellow = light yellow (shade qualifiers)"
+  },
+  {
+   "q": "Chrysotile/streak",
+   "answer": "White to gray",
+   "gold": "White",
+   "script": 1,
+   "hand": 0,
+   "note": "gray not in key"
+  },
+  {
+   "q": "Cordierite/streak",
+   "answer": "White to pale lilac-gray",
+   "gold": "White",
+   "script": 1,
+   "hand": 0,
+   "note": "lilac-gray not in key"
+  },
+  {
+   "q": "Crandallite/streak",
+   "answer": "White to pale blue",
+   "gold": "White",
+   "script": 1,
+   "hand": 0,
+   "note": "pale blue not in key"
+  },
+  {
+   "q": "Fergusonite-(Y)/streak",
+   "answer": "Light brown to gray",
+   "gold": "Brown",
+   "script": 1,
+   "hand": 0,
+   "note": "gray not in key"
+  },
+  {
+   "q": "Fergusonite-(Y)/streak",
+   "answer": "Pale brownish gray",
+   "gold": "Brown",
+   "script": 1,
+   "hand": 0,
+   "note": "brownish gray is a gray; key is brown"
+  },
+  {
+   "q": "Gersdorffite/streak",
+   "answer": "Grayish-black",
+   "gold": "Grayish black",
+   "script": 0,
+   "hand": 1,
+   "note": "grayish-black = Grayish black (hyphen)"
+  },
+  {
+   "q": "Hematite/streak",
+   "answer": "Red",
+   "gold": "Reddish brown",
+   "script": 1,
+   "hand": 0,
+   "note": "red is not reddish brown (a brown)"
+  },
+  {
+   "q": "Hematite/streak",
+   "answer": "Redish-brown",
+   "gold": "Reddish brown",
+   "script": 0,
+   "hand": 1,
+   "note": "Redish-brown is a misspelling of reddish brown"
+  },
+  {
+   "q": "Kratochvílite/streak",
+   "answer": "Colorless",
+   "gold": "White",
+   "script": 0,
+   "hand": 1,
+   "note": "streak: colourless matches white"
+  },
+  {
+   "q": "Semseyite/streak",
+   "answer": "Grey to black",
+   "gold": "Black",
+   "script": 1,
+   "hand": 0,
+   "note": "grey not in key"
+  },
+  {
+   "q": "Spherocobaltite/streak",
+   "answer": "Rose-red to pink",
+   "gold": "Pink",
+   "script": 1,
+   "hand": 0,
+   "note": "rose-red not in key"
+  },
+  {
+   "q": "Alacránite/hardness",
+   "answer": "Mohs hardness 2",
+   "gold": "1.5",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Amicite/hardness",
+   "answer": "Mohs hardness: 5",
+   "gold": "4.5",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Amicite/hardness",
+   "answer": "Mohs hardness of 5",
+   "gold": "4.5",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Andrémeyerite/hardness",
+   "answer": "Approximately 5 on the Mohs scale of mineral hardness",
+   "gold": "5.5",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Andrémeyerite/hardness",
+   "answer": "5",
+   "gold": "5.5",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Anglesite/hardness",
+   "answer": "Mohs hardness of 3",
+   "gold": "2.5",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Anglesite/hardness",
+   "answer": "Mohs hardness 3",
+   "gold": "2.5",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Anglesite/hardness",
+   "answer": "3.0",
+   "gold": "2.5",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Aragonite/hardness",
+   "answer": "Mohs hardness 3.5",
+   "gold": "3.75",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Aragonite/hardness",
+   "answer": "Mohs hardness of 3.5",
+   "gold": "3.75",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Auricupride/hardness",
+   "answer": "Mohs hardness of 2.5",
+   "gold": "2",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Auricupride/hardness",
+   "answer": "Mohs hardness 2.5",
+   "gold": "2",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Banalsite/hardness",
+   "answer": "5 to 51⁄2 (Mohs scale",
+   "gold": "6",
+   "script": 1,
+   "hand": 0,
+   "note": "5–5.5 midpoint 5.25, 0.75 below key 6"
+  },
+  {
+   "q": "Braggite/hardness",
+   "answer": "5.5",
+   "gold": "6",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Bultfonteinite/hardness",
+   "answer": "Approximately 5",
+   "gold": "4.5",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Bultfonteinite/hardness",
+   "answer": "Approximately 5 (Mohs scale",
+   "gold": "4.5",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Bultfonteinite/hardness",
+   "answer": "4",
+   "gold": "4.5",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Calciborite/hardness",
+   "answer": "Mohs hardness 4",
+   "gold": "3.5",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Calciborite/hardness",
+   "answer": "Mohs hardness of 3",
+   "gold": "3.5",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Calciborite/hardness",
+   "answer": "4.0",
+   "gold": "3.5",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Calciborite/hardness",
+   "answer": "4",
+   "gold": "3.5",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Cassiterite/hardness",
+   "answer": "6",
+   "gold": "6.5",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Cylindrite/hardness",
+   "answer": "Mohs hardness of 2",
+   "gold": "2.5",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Cyrilovite/hardness",
+   "answer": "Mohs hardness of 3.5",
+   "gold": "4",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Fluoro-richterite/hardness",
+   "answer": "5",
+   "gold": "5.5",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Hawleyite/hardness",
+   "answer": "4 (Mohs scale",
+   "gold": "3.5",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Hawleyite/hardness",
+   "answer": "Mohs hardness of 4",
+   "gold": "3.5",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Hidalgoite/hardness",
+   "answer": "5",
+   "gold": "4.5",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Holmquistite/hardness",
+   "answer": "5",
+   "gold": "5.5",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Moissanite/hardness",
+   "answer": "9.5 on the Mohs hardness scale",
+   "gold": "9.25",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Moissanite/hardness",
+   "answer": "9.5 on the Mohs scale",
+   "gold": "9.25",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Playfairite/hardness",
+   "answer": "Mohs hardness 3",
+   "gold": "3.5",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Pseudograndreefite/hardness",
+   "answer": "Mohs hardness of 3",
+   "gold": "2.5",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Pseudograndreefite/hardness",
+   "answer": "Mohs hardness of 2",
+   "gold": "2.5",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Ramsbeckite/hardness",
+   "answer": "Mohs hardness 4",
+   "gold": "3.5",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Roquesite/hardness",
+   "answer": "Mohs hardness of 3",
+   "gold": "3.5",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Roquesite/hardness",
+   "answer": "Mohs hardness 4",
+   "gold": "3.5",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Rustenburgite/hardness",
+   "answer": "Mohs hardness of 5.5",
+   "gold": "5",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Rustenburgite/hardness",
+   "answer": "Mohs hardness 4.5",
+   "gold": "5",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Saponite/hardness",
+   "answer": "Hardness of 2 (Mohs scale",
+   "gold": "1.5",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Smithsonite/hardness",
+   "answer": "4–5 (Mohs scale",
+   "gold": "5",
+   "script": 1,
+   "hand": 1,
+   "note": "",
+   "key_issue": "Smithsonite is usually given as Mohs 4–4.5 (4.5 in the Handbook of Mineralogy); key 5 is high"
+  },
+  {
+   "q": "Smithsonite/hardness",
+   "answer": "4.5–5 on the Mohs scale of mineral hardness",
+   "gold": "5",
+   "script": 1,
+   "hand": 1,
+   "note": "",
+   "key_issue": "Smithsonite is usually given as Mohs 4–4.5 (4.5 in the Handbook of Mineralogy); key 5 is high"
+  },
+  {
+   "q": "Smithsonite/hardness",
+   "answer": "4–4.5 (Mohs scale",
+   "gold": "5",
+   "script": 0,
+   "hand": 0,
+   "note": "",
+   "key_issue": "Smithsonite is usually given as Mohs 4–4.5 (4.5 in the Handbook of Mineralogy); key 5 is high"
+  },
+  {
+   "q": "Smithsonite/hardness",
+   "answer": "Mohs hardness 3.5 to 4.5",
+   "gold": "5",
+   "script": 0,
+   "hand": 0,
+   "note": "",
+   "key_issue": "Smithsonite is usually given as Mohs 4–4.5 (4.5 in the Handbook of Mineralogy); key 5 is high"
+  },
+  {
+   "q": "Smithsonite/hardness",
+   "answer": "Mohs hardness 3.5–4.5",
+   "gold": "5",
+   "script": 0,
+   "hand": 0,
+   "note": "",
+   "key_issue": "Smithsonite is usually given as Mohs 4–4.5 (4.5 in the Handbook of Mineralogy); key 5 is high"
+  },
+  {
+   "q": "Smithsonite/hardness",
+   "answer": "Mohs hardness of 3.5 to 4.5",
+   "gold": "5",
+   "script": 0,
+   "hand": 0,
+   "note": "",
+   "key_issue": "Smithsonite is usually given as Mohs 4–4.5 (4.5 in the Handbook of Mineralogy); key 5 is high"
+  },
+  {
+   "q": "Alforsite/specific_gravity",
+   "answer": "4.7",
+   "gold": "4.57",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Anglesite/specific_gravity",
+   "answer": "5.6–6.4",
+   "gold": "6.34",
+   "script": 1,
+   "hand": 0,
+   "note": ""
+  },
+  {
+   "q": "Brucite/specific_gravity",
+   "answer": "2.39",
+   "gold": "2.46",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Calomel/specific_gravity",
+   "answer": "6.8",
+   "gold": "6.92",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Calomel/specific_gravity",
+   "answer": "5.8–7.0",
+   "gold": "6.92",
+   "script": 1,
+   "hand": 0,
+   "note": "range contains key but midpoint 6.4 is 7.5% low"
+  },
+  {
+   "q": "Chamosite/specific_gravity",
+   "answer": "3.0–3.5",
+   "gold": "3.13",
+   "script": 1,
+   "hand": 0,
+   "note": "range 3.0–3.5 contains key but midpoint 3.25 is 3.8% above 3.13"
+  },
+  {
+   "q": "Chamosite/specific_gravity",
+   "answer": "2.6–3.3",
+   "gold": "3.13",
+   "script": 1,
+   "hand": 0,
+   "note": "range 2.6–3.3 contains key but midpoint 2.95 is 5.8% low"
+  },
+  {
+   "q": "Diopside/specific_gravity",
+   "answer": "Specific gravity: 3.29–3.47",
+   "gold": "3.15",
+   "script": 0,
+   "hand": 0,
+   "note": "",
+   "key_issue": "Diopside SG is usually 3.22–3.38 (about 3.28 for the end member); key 3.15 is low"
+  },
+  {
+   "q": "Diopside/specific_gravity",
+   "answer": "Specific gravity of diopside: 3.28–3.35",
+   "gold": "3.15",
+   "script": 0,
+   "hand": 0,
+   "note": "",
+   "key_issue": "Diopside SG is usually 3.22–3.38 (about 3.28 for the end member); key 3.15 is low"
+  },
+  {
+   "q": "Diopside/specific_gravity",
+   "answer": "3.30–3.45",
+   "gold": "3.15",
+   "script": 0,
+   "hand": 0,
+   "note": "",
+   "key_issue": "Diopside SG is usually 3.22–3.38 (about 3.28 for the end member); key 3.15 is low"
+  },
+  {
+   "q": "Diopside/specific_gravity",
+   "answer": "3.2–3.3",
+   "gold": "3.15",
+   "script": 0,
+   "hand": 0,
+   "note": "midpoint 3.25 just over the 3% band (3.2445)",
+   "key_issue": "Diopside SG is usually 3.22–3.38 (about 3.28 for the end member); key 3.15 is low"
+  },
+  {
+   "q": "Diopside/specific_gravity",
+   "answer": "3.22–3.36",
+   "gold": "3.15",
+   "script": 0,
+   "hand": 0,
+   "note": "",
+   "key_issue": "Diopside SG is usually 3.22–3.38 (about 3.28 for the end member); key 3.15 is low"
+  },
+  {
+   "q": "Diopside/specific_gravity",
+   "answer": "Diopside exhibits a specific gravity ranging from 3.2 to 3.3",
+   "gold": "3.15",
+   "script": 0,
+   "hand": 0,
+   "note": "midpoint 3.25 just over the 3% band (3.2445)",
+   "key_issue": "Diopside SG is usually 3.22–3.38 (about 3.28 for the end member); key 3.15 is low"
+  },
+  {
+   "q": "Elpasolite/specific_gravity",
+   "answer": "5.0–5.4",
+   "gold": "2.86",
+   "script": 0,
+   "hand": 0,
+   "note": "",
+   "key_issue": "Elpasolite SG is usually given as about 2.99–3.0 (measured 2.995); key 2.86 looks low"
+  },
+  {
+   "q": "Elpasolite/specific_gravity",
+   "answer": "2.60",
+   "gold": "2.86",
+   "script": 0,
+   "hand": 0,
+   "note": "",
+   "key_issue": "Elpasolite SG is usually given as about 2.99–3.0 (measured 2.995); key 2.86 looks low"
+  },
+  {
+   "q": "Elpasolite/specific_gravity",
+   "answer": "2.85",
+   "gold": "2.86",
+   "script": 1,
+   "hand": 1,
+   "note": "",
+   "key_issue": "Elpasolite SG is usually given as about 2.99–3.0 (measured 2.995); key 2.86 looks low"
+  },
+  {
+   "q": "Elpasolite/specific_gravity",
+   "answer": "Approximately 3.6",
+   "gold": "2.86",
+   "script": 0,
+   "hand": 0,
+   "note": "",
+   "key_issue": "Elpasolite SG is usually given as about 2.99–3.0 (measured 2.995); key 2.86 looks low"
+  },
+  {
+   "q": "Elpasolite/specific_gravity",
+   "answer": "The specific gravity of Elpasolite is approximately 3.04",
+   "gold": "2.86",
+   "script": 0,
+   "hand": 0,
+   "note": "",
+   "key_issue": "Elpasolite SG is usually given as about 2.99–3.0 (measured 2.995); key 2.86 looks low"
+  },
+  {
+   "q": "Florensovite/specific_gravity",
+   "answer": "4.5",
+   "gold": "4.39",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Fluoborite/specific_gravity",
+   "answer": "2.8",
+   "gold": "2.88",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Halotrichite/specific_gravity",
+   "answer": "2.0",
+   "gold": "1.95",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Pollucite/specific_gravity",
+   "answer": "2.68–2.90",
+   "gold": "2.9",
+   "script": 1,
+   "hand": 0,
+   "note": "range ends at key but midpoint 2.79 is 3.8% low"
+  },
+  {
+   "q": "Rheniite/specific_gravity",
+   "answer": "6.9",
+   "gold": "7.11",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Ringwoodite/specific_gravity",
+   "answer": "3.61",
+   "gold": "3.24",
+   "script": 0,
+   "hand": 0,
+   "note": "",
+   "key_issue": "Ringwoodite (high-pressure Mg2SiO4 spinel) has density about 3.9 (calculated); key 3.24 is an olivine/forsterite-like value"
+  },
+  {
+   "q": "Ringwoodite/specific_gravity",
+   "answer": "4.2–4.4",
+   "gold": "3.24",
+   "script": 0,
+   "hand": 0,
+   "note": "",
+   "key_issue": "Ringwoodite (high-pressure Mg2SiO4 spinel) has density about 3.9 (calculated); key 3.24 is an olivine/forsterite-like value"
+  },
+  {
+   "q": "Ringwoodite/specific_gravity",
+   "answer": "4.3",
+   "gold": "3.24",
+   "script": 0,
+   "hand": 0,
+   "note": "",
+   "key_issue": "Ringwoodite (high-pressure Mg2SiO4 spinel) has density about 3.9 (calculated); key 3.24 is an olivine/forsterite-like value"
+  },
+  {
+   "q": "Ringwoodite/specific_gravity",
+   "answer": "4.40",
+   "gold": "3.24",
+   "script": 0,
+   "hand": 0,
+   "note": "",
+   "key_issue": "Ringwoodite (high-pressure Mg2SiO4 spinel) has density about 3.9 (calculated); key 3.24 is an olivine/forsterite-like value"
+  },
+  {
+   "q": "Saponite/specific_gravity",
+   "answer": "The specific gravity of Saponite is approximately 2.0 to 2.3",
+   "gold": "2.30",
+   "script": 1,
+   "hand": 0,
+   "note": "range 2.0–2.3 ends at key but midpoint 2.15 is 6.5% low"
+  },
+  {
+   "q": "Saponite/specific_gravity",
+   "answer": "Approximately 2.0 to 2.3",
+   "gold": "2.30",
+   "script": 1,
+   "hand": 0,
+   "note": "range 2.0–2.3 ends at key but midpoint 2.15 is 6.5% low"
+  },
+  {
+   "q": "Scolecite/specific_gravity",
+   "answer": "2.33",
+   "gold": "2.28",
+   "script": 0,
+   "hand": 1,
+   "note": ""
+  },
+  {
+   "q": "Sodalite/specific_gravity",
+   "answer": "The specific gravity of sodalite typically ranges from 2.13 to 2.29",
+   "gold": "2.29",
+   "script": 1,
+   "hand": 0,
+   "note": "range 2.13–2.29 ends at key but midpoint 2.21 just under the 3% band (2.221)"
+  },
+  {
+   "q": "term-0012",
+   "answer": "Arithmetic mean diameter",
+   "gold": "arithmetic-mean particle diameter",
+   "script": 0,
+   "hand": 1,
+   "note": "arithmetic mean diameter is the glossary name for the same measure; dropping 'particle' does not change the referent"
+  },
+  {
+   "q": "term-0024",
+   "answer": "Batch processing",
+   "gold": "batch treatment",
+   "script": 0,
+   "hand": 1,
+   "note": "batch processing = batch treatment; processing/treatment interchangeable in mineral processing, same concept"
+  },
+  {
+   "q": "term-0029",
+   "answer": "Biaxial mineral",
+   "gold": "biaxial stone",
+   "script": 0,
+   "hand": 1,
+   "note": "biaxial mineral names exactly the defined concept (definition says 'a mineral'); stone/mineral wording only"
+  },
+  {
+   "q": "term-0049",
+   "answer": "Connection wire",
+   "gold": "connecting wire",
+   "script": 0,
+   "hand": 1,
+   "note": "word-form variant of connecting wire"
+  },
+  {
+   "q": "term-0050",
+   "answer": "Constant systematic error",
+   "gold": "constant error",
+   "script": 0,
+   "hand": 1,
+   "note": "a constant error is by definition systematic; added word does not change the referent"
+  },
+  {
+   "q": "term-0053",
+   "answer": "i. Critical minerals; ii. Facies-defining (or facies-diagnostic) mineral assemblages",
+   "gold": "critical minerals",
+   "script": 1,
+   "hand": 0,
+   "note": "different term per sense (facies-defining assemblages for sense ii); key covers both senses, so not one term"
+  },
+  {
+   "q": "term-0111",
+   "answer": "Hartmann lines",
+   "gold": "Lueders line",
+   "script": 0,
+   "hand": 1,
+   "note": "Hartmann lines is a synonym the glossary entry itself lists for Lueders lines"
+  },
+  {
+   "q": "term-0125",
+   "answer": "Natural satellite",
+   "gold": "moon",
+   "script": 0,
+   "hand": 1,
+   "note": "natural satellite = moon; the definition itself treats them as the same"
+  },
+  {
+   "q": "term-0136",
+   "answer": "that encompasses all four definitions is **Pass",
+   "gold": "pass",
+   "script": 0,
+   "hand": 1,
+   "note": "answer-label sentence states Pass, which is the key"
+  },
+  {
+   "q": "term-0144",
+   "answer": "Plutonic rock",
+   "gold": "pluton",
+   "script": 1,
+   "hand": 0,
+   "note": "plutonic rock names the rock type; pluton is the body; added word changes what it names"
+  },
+  {
+   "q": "term-0145",
+   "answer": "The single term that satisfies all ten definitions provided is **Pocket",
+   "gold": "pocket",
+   "script": 0,
+   "hand": 1,
+   "note": "answer-label sentence states Pocket, which is the key"
+  },
+  {
+   "q": "term-0166",
+   "answer": "Open-hearth process",
+   "gold": "Siemens-Martin process",
+   "script": 0,
+   "hand": 1,
+   "note": "open-hearth process is the standard synonym of Siemens-Martin process"
+  },
+  {
+   "q": "term-0173",
+   "answer": "Self-baking electrode",
+   "gold": "Soderberg electrode",
+   "script": 0,
+   "hand": 1,
+   "note": "self-baking electrode is the standard generic name for the Soderberg electrode"
+  },
+  {
+   "q": "term-0178",
+   "answer": "Lithospheric plate",
+   "gold": "tectonic plate",
+   "script": 0,
+   "hand": 1,
+   "note": "lithospheric plate = tectonic plate, standard synonym"
+  },
+  {
+   "q": "term-0012",
+   "answer": "Arithmetic Mean Particle Size",
+   "gold": "arithmetic-mean particle diameter",
+   "script": 0,
+   "hand": 1,
+   "note": "size/diameter wording only; same measure"
+  },
+  {
+   "q": "term-0029",
+   "answer": "Biaxial crystal",
+   "gold": "biaxial stone",
+   "script": 0,
+   "hand": 1,
+   "note": "biaxial crystal names exactly the defined concept; stone/crystal wording only"
+  },
+  {
+   "q": "term-0036",
+   "answer": "Büchner funnel",
+   "gold": "Buchner funnel",
+   "script": 0,
+   "hand": 1,
+   "note": "diacritic variant of Buchner"
+  },
+  {
+   "q": "term-0039",
+   "answer": "Biogenic carbonate sand",
+   "gold": "carbonate sand",
+   "script": 1,
+   "hand": 0,
+   "note": "added 'biogenic' narrows the term (carbonate sand also includes non-skeletal grains)"
+  },
+  {
+   "q": "term-0048",
+   "answer": "Cone-in-cone",
+   "gold": "cone-in-cone structure",
+   "script": 0,
+   "hand": 1,
+   "note": "cone-in-cone is the standard short name of the structure"
+  },
+  {
+   "q": "term-0050",
+   "answer": "Constant Systematic Error",
+   "gold": "constant error",
+   "script": 0,
+   "hand": 1,
+   "note": "a constant error is by definition systematic; added word does not change the referent"
+  },
+  {
+   "q": "term-0053",
+   "answer": "i. Critical minerals; ii. Index minerals (or diagnostic minerals",
+   "gold": "critical minerals",
+   "script": 1,
+   "hand": 0,
+   "note": "different term per sense (index minerals for sense ii); key covers both senses, so not one term"
+  },
+  {
+   "q": "term-0054",
+   "answer": "Crossed Nicols",
+   "gold": "crossed polars",
+   "script": 0,
+   "hand": 1,
+   "note": "crossed nicols = crossed polars, standard synonym"
+  },
+  {
+   "q": "term-0062",
+   "answer": "Luffing jib crane",
+   "gold": "derricking jib crane",
+   "script": 0,
+   "hand": 1,
+   "note": "luffing = derricking in crane terminology"
+  },
+  {
+   "q": "term-0072",
+   "answer": "Powder Diffraction Pattern",
+   "gold": "diffraction pattern",
+   "script": 1,
+   "hand": 0,
+   "note": "narrower: 'powder' restricts the key term"
+  },
+  {
+   "q": "term-0119",
+   "answer": "Miller–Bravais indices",
+   "gold": "Miller-Bravais indices",
+   "script": 0,
+   "hand": 1,
+   "note": "en dash vs hyphen only"
+  },
+  {
+   "q": "term-0125",
+   "answer": "Natural Satellite",
+   "gold": "moon",
+   "script": 0,
+   "hand": 1,
+   "note": "natural satellite = moon; the definition itself treats them as the same"
+  },
+  {
+   "q": "term-0128",
+   "answer": "Volcanic cone (or Mud volcano",
+   "gold": "mud volcano",
+   "script": 1,
+   "hand": 0,
+   "note": "hedge: primary answer volcanic cone is wrong, key only offered as an alternative"
+  },
+  {
+   "q": "term-0135",
+   "answer": "Parr's Formula",
+   "gold": "Parr formula",
+   "script": 0,
+   "hand": 1,
+   "note": "possessive variant of Parr formula"
+  },
+  {
+   "q": "term-0159",
+   "answer": "S-P time",
+   "gold": "S-P interval",
+   "script": 0,
+   "hand": 1,
+   "note": "S-P time = S-P interval, standard seismology synonym"
+  },
+  {
+   "q": "term-0161",
+   "answer": "Sea state",
+   "gold": "sea",
+   "script": 1,
+   "hand": 0,
+   "note": "sea state names only sense iii; added word changes what it names"
+  },
+  {
+   "q": "term-0014",
+   "answer": "Arseniate",
+   "gold": "arsenate",
+   "script": 0,
+   "hand": 1,
+   "note": "arseniate is the old spelling variant of arsenate"
+  },
+  {
+   "q": "term-0020",
+   "answer": "Basement",
+   "gold": "basement complex",
+   "script": 0,
+   "hand": 1,
+   "note": "basement is the glossary synonym of basement complex"
+  },
+  {
+   "q": "term-0027",
+   "answer": "Belt conveyor capacity",
+   "gold": "belt capacity",
+   "script": 0,
+   "hand": 1,
+   "note": "added 'conveyor' does not change the referent"
+  },
+  {
+   "q": "term-0062",
+   "answer": "Luffing crane",
+   "gold": "derricking jib crane",
+   "script": 0,
+   "hand": 1,
+   "note": "luffing = derricking (standard crane synonym); luffing jib crane is the same concept"
+  },
+  {
+   "q": "term-0083",
+   "answer": "formation** encompasses all four definitions provided",
+   "gold": "formation",
+   "script": 0,
+   "hand": 1,
+   "note": "first line states the answer: 'The term formation encompasses...'; prose label ignored"
+  },
+  {
+   "q": "term-0159",
+   "answer": "S-P Time",
+   "gold": "S-P interval",
+   "script": 0,
+   "hand": 1,
+   "note": "S-P time is the standard synonym of S-P interval"
+  },
+  {
+   "q": "term-0173",
+   "answer": "Söderberg electrode",
+   "gold": "Soderberg electrode",
+   "script": 0,
+   "hand": 1,
+   "note": "diacritic variant of Soderberg"
+  },
+  {
+   "q": "term-0012",
+   "answer": "Arithmetic mean particle size",
+   "gold": "arithmetic-mean particle diameter",
+   "script": 0,
+   "hand": 1,
+   "note": "particle size = particle diameter here; same measure"
+  },
+  {
+   "q": "term-0018",
+   "answer": "Autothermal roasting",
+   "gold": "autogenous roasting",
+   "script": 0,
+   "hand": 1,
+   "note": "autothermal roasting is the standard synonym of autogenous roasting"
+  },
+  {
+   "q": "term-0025",
+   "answer": "Bait",
+   "gold": "bate",
+   "script": 0,
+   "hand": 1,
+   "note": "spelling variant; definition says 'Also spelled bait'"
+  },
+  {
+   "q": "term-0038",
+   "answer": "Canvas Concentrating Table",
+   "gold": "canvas table",
+   "script": 0,
+   "hand": 1,
+   "note": "added 'concentrating' does not change what it names; a canvas table is a concentrating table"
+  },
+  {
+   "q": "term-0067",
+   "answer": "Dolerite",
+   "gold": "diabase",
+   "script": 0,
+   "hand": 1,
+   "note": "dolerite is the accepted (British/IUGS) synonym of diabase in this sense"
+  },
+  {
+   "q": "term-0082",
+   "answer": "Forel-Ule scale",
+   "gold": "Forel scale",
+   "script": 0,
+   "hand": 1,
+   "note": "Forel-Ule scale is the standard name of the Forel scale"
+  },
+  {
+   "q": "term-0092",
+   "answer": "Glover tower",
+   "gold": "Glover's tower",
+   "script": 0,
+   "hand": 1,
+   "note": "possessive variant of Glover's tower"
+  },
+  {
+   "q": "term-0111",
+   "answer": "Lüders bands",
+   "gold": "Lueders line",
+   "script": 0,
+   "hand": 1,
+   "note": "Lüders bands = Lueders lines (same phenomenon, standard synonym; diacritic variant)"
+  },
+  {
+   "q": "term-0119",
+   "answer": "Four-index Miller–Bravais indices",
+   "gold": "Miller-Bravais indices",
+   "script": 0,
+   "hand": 1,
+   "note": "'four-index' is inherent to Miller-Bravais indices; en dash variant"
+  },
+  {
+   "q": "term-0147",
+   "answer": "Detonating cord",
+   "gold": "Primacord",
+   "script": 0,
+   "hand": 0,
+   "note": "generic term, broader than the trade name",
+   "key_issue": "definition is generic and fits detonating cord as well as the trade name Primacord"
+  },
+  {
+   "q": "term-0148",
+   "answer": "Detonating cord",
+   "gold": "Primacord-Bickford fuse",
+   "script": 0,
+   "hand": 0,
+   "note": "generic term, broader than the trade name",
+   "key_issue": "definition (PETN detonating fuse) is generic; detonating cord fits as well as the trade name"
+  },
+  {
+   "q": "term-0159",
+   "answer": "S–P interval",
+   "gold": "S-P interval",
+   "script": 0,
+   "hand": 1,
+   "note": "en dash vs hyphen"
+  },
+  {
+   "q": "term-0165",
+   "answer": "i. Shield",
+   "gold": "shield",
+   "script": 0,
+   "hand": 1,
+   "note": "sense label 'i.' ignored; names shield"
+  },
+  {
+   "q": "term-0166",
+   "answer": "Siemens–Martin process",
+   "gold": "Siemens-Martin process",
+   "script": 0,
+   "hand": 1,
+   "note": "en dash vs hyphen"
+  },
+  {
+   "q": "term-0172",
+   "answer": "i. Smelter",
+   "gold": "smelter",
+   "script": 0,
+   "hand": 1,
+   "note": "sense label 'i.' ignored; names smelter"
+  },
+  {
+   "q": "term-0012",
+   "answer": "Weighted arithmetic mean particle size",
+   "gold": "arithmetic-mean particle diameter",
+   "script": 0,
+   "hand": 1,
+   "note": "frequency-weighted mean is what the definition computes; same measure as arithmetic-mean particle diameter"
+  },
+  {
+   "q": "term-0020",
+   "answer": "Basement rocks",
+   "gold": "basement complex",
+   "script": 0,
+   "hand": 1,
+   "note": "basement rocks is a standard synonym of basement complex"
+  },
+  {
+   "q": "term-0074",
+   "answer": "Dimensional stone",
+   "gold": "dimension stone",
+   "script": 0,
+   "hand": 1,
+   "note": "dimensional stone is a common variant of dimension stone"
+  },
+  {
+   "q": "term-0111",
+   "answer": "Lüders lines",
+   "gold": "Lueders line",
+   "script": 0,
+   "hand": 1,
+   "note": "diacritic variant and plural of Lueders line"
+  },
+  {
+   "q": "term-0116",
+   "answer": "Fall location",
+   "gold": "meteorite fall location",
+   "script": 0,
+   "hand": 1,
+   "note": "fall location is the meteoritics term for the same thing (fall vs find)"
+  },
+  {
+   "q": "term-0064",
+   "answer": "De-sliming",
+   "gold": "desliming",
+   "script": 0,
+   "hand": 1,
+   "note": "hyphen variant"
+  },
+  {
+   "q": "term-0072",
+   "answer": "Powder diffraction pattern",
+   "gold": "diffraction pattern",
+   "script": 1,
+   "hand": 0,
+   "note": "'powder' narrows diffraction pattern; same call as X-ray powder diffraction pattern"
+  },
+  {
+   "q": "term-0129",
+   "answer": "A nunatak is a rock summit or ridge protruding from an ice field or glacier, often forming pyramidal peaks; isolated examples are termed glacial islands, and smaller, glacially rounded forms are known as rognons",
+   "gold": "nunatak",
+   "script": 0,
+   "hand": 1,
+   "note": "prose first line states the term: 'A nunatak is ...'"
+  },
+  {
+   "q": "term-0134",
+   "answer": "Parke's process",
+   "gold": "Parkes process",
+   "script": 0,
+   "hand": 1,
+   "note": "misplaced-apostrophe spelling of Parkes process"
+  },
+  {
+   "q": "term-0165",
+   "answer": "I. Shield; II. Shield; III. Shield",
+   "gold": "shield",
+   "script": 0,
+   "hand": 1,
+   "note": "names shield for every sense"
+  }
+ ],
+ "ner": [
+  {
+   "q": "geoner-0005",
+   "key_issue": "'sedimentary' (in 'sedimentary and basalt units') is untagged, though the key tags the parallel 'metasedimentary' in geoner-0017 as ROCK"
+  },
+  {
+   "q": "geoner-0012",
+   "key_issue": "key MINERAL 'goethite sulphide' joins two minerals (goethite replicas after sulphide) into one span; 'goethite' alone is the mineral"
+  },
+  {
+   "q": "geoner-0014",
+   "key_issue": "'pyradie' (in 'undivided Boongal, Pyradie, and Bunjinah Formations') is untagged while the parallel 'boongal' is tagged STRAT"
+  },
+  {
+   "q": "geoner-0018",
+   "key_issue": "'lower zone' (a named zone of the Milgoo Layered Series) is untagged STRAT, while the parallel 'Shephards Discordant Zone' in geoner-0002 is tagged"
+  },
+  {
+   "q": "geoner-0028",
+   "label": "MINERAL",
+   "pred": "olivine",
+   "gold": "olivines",
+   "why": "singular of the same mention"
+  },
+  {
+   "q": "geoner-0028",
+   "label": "ROCK",
+   "pred": "dunite",
+   "gold": "dunites",
+   "why": "singular of the same mention"
+  },
+  {
+   "q": "geoner-0028",
+   "label": "ROCK",
+   "pred": "peridotite",
+   "gold": "peridotites",
+   "why": "singular of the same mention"
+  },
+  {
+   "q": "geoner-0029",
+   "key_issue": "'sedimentary' (in 'minor sedimentary and felsic volcanic rocks') is untagged while the parallel 'felsic' (in 'felsic and mafic intrusive rocks') is tagged ROCK"
+  },
+  {
+   "q": "geoner-0031",
+   "key_issue": "'rushall slate' (a formation of the Whim Creek Group) is missing from STRAT"
+  },
+  {
+   "q": "geoner-0035",
+   "key_issue": "key MINERAL 'copper zinc' is one span for two elements, while 'nickel copper' in the same sentence is split into 'nickel' and 'copper'"
+  },
+  {
+   "q": "geoner-0036",
+   "key_issue": "'dacitic lavas' (in 'basalt, andesite and dacitic lavas') is missing from ROCK; geoner-0020 tags 'dacite lava'"
+  },
+  {
+   "q": "geoner-0040",
+   "label": "LOCATION",
+   "pred": "yilgarn craton",
+   "gold": "yilgarn cratons",
+   "why": "singular of the same mention"
+  },
+  {
+   "q": "geoner-0040",
+   "key_issue": "'pilbara' (in 'Archaean Pilbara and Yilgarn Cratons') is missing from LOCATION while the parallel 'yilgarn cratons' is tagged"
+  },
+  {
+   "q": "geoner-0057",
+   "label": "STRAT",
+   "pred": "the carlingup formation",
+   "gold": "carlingup formation",
+   "why": "leading article"
+  },
+  {
+   "q": "geoner-0060",
+   "key_issue": "'supracrustal rocks' is missing from ROCK"
+  },
+  {
+   "q": "geoner-0067",
+   "key_issue": "'lady mary' (the Lady Mary project) is missing from LOCATION, though geoner-0045 tags 'mount oscar' from 'Mount Oscar South Project'"
+  },
+  {
+   "q": "geoner-0073",
+   "key_issue": "'phyllosilicates' (a mineral group, like the key's 'carbonate' and 'sulphide' elsewhere) is missing from MINERAL"
+  },
+  {
+   "q": "geoner-0085",
+   "key_issue": "key LOCATION 'australia' is part of the company name 'Uranerz Australia Pty Ltd'; 'sediment' (in 'calcrete and associated sediment') is missing from ROCK, though geoner-0060 tags 'sediments'"
+  },
+  {
+   "q": "geoner-0088",
+   "key_issue": "'lady mary' (the Lady Mary area) is missing from LOCATION"
+  },
+  {
+   "q": "geoner-0089",
+   "key_issue": "key splits 'quartz muscovite metasediments' into MINERAL 'quartz' and ROCK 'muscovite metasediments' (muscovite is a mineral too); 'mafic ultramafic metavolcanic suite' is missing from ROCK"
+  },
+  {
+   "q": "geoner-0092",
+   "key_issue": "'volcanics' (in 'lesser volcanics') is missing from ROCK; geoner-0007 tags 'volcanics'"
+  },
+  {
+   "q": "geoner-0094",
+   "key_issue": "'magazine schist' (a named unit, parallel to 'Cockatoo Formation') is missing from STRAT; the key tags only 'schist' as ROCK"
+  },
+  {
+   "q": "geoner-0095",
+   "key_issue": "'mount fraser' (Mount Fraser Project Group) is missing from LOCATION while the parallel 'peak hill' (Peak Hill Project Group) is tagged"
+  },
+  {
+   "q": "geoner-0097",
+   "key_issue": "'horneblende' (hornblende, misspelt in the text, in 'horneblende - biotite granite') is missing from MINERAL while 'biotite' is tagged"
+  },
+  {
+   "q": "geoner-0099",
+   "key_issue": "'big ben intrusion' (parallel to 'Panton Intrusion') is missing from STRAT"
+  },
+  {
+   "q": "geoner-0102",
+   "key_issue": "the heading mention 'panton layered intrusion' is untagged STRAT; only the later 'panton intrusion' is in the key"
+  },
+  {
+   "q": "geoner-0104",
+   "key_issue": "key STRAT 'vivien sedimentary' is an odd span, inconsistent with the parallel 'scotty creek' (either 'vivien' or the full 'vivien sedimentary sequences')"
+  },
+  {
+   "q": "geoner-0109",
+   "key_issue": "'goethitic' (in 'goethitic - hematitic') is missing from MINERAL while the parallel 'hematitic' is tagged"
+  },
+  {
+   "q": "geoner-0115",
+   "key_issue": "'magazine schist' (a named unit, parallel to 'Cockatoo Formation') is missing from STRAT; the key tags only 'schist' as ROCK"
+  },
+  {
+   "q": "geoner-0122",
+   "key_issue": "'chert' (in 'shale / chert horizon') is missing from ROCK while 'shale' is tagged"
+  },
+  {
+   "q": "geoner-0132",
+   "key_issue": "key labels 'chloritic' as ROCK; it describes a mineral (chlorite) in 'Chloritic quartz - rich sandstone', parallel to MINERAL 'quartz'"
+  },
+  {
+   "q": "geoner-0133",
+   "key_issue": "'murchison river' is missing from LOCATION"
+  },
+  {
+   "q": "geoner-0134",
+   "key_issue": "'jandakot' (in 'Kevron Geophysics Ltd of Jandakot, Western Australia') is missing from LOCATION"
+  },
+  {
+   "q": "geoner-0140",
+   "key_issue": "'granites - tanami region' (the Granites-Tanami region) is missing from LOCATION"
+  },
+  {
+   "q": "geoner-0145",
+   "key_issue": "key LOCATION 'proterozoic' is a time period, not a place; key MINERAL 'actinolite talc' is one span for two minerals"
+  },
+  {
+   "q": "geoner-0146",
+   "key_issue": "'kurnalpi' (Kurnalpi road) and 'carosue' (Carosue mine site; geoner-0015 tags 'carosue dam') are untagged LOCATION"
+  },
+  {
+   "q": "geoner-0156",
+   "label": "LOCATION",
+   "pred": "the pilbara",
+   "gold": "pilbara",
+   "why": "leading article"
+  },
+  {
+   "q": "geoner-0156",
+   "key_issue": "'lennon s find' (the Lennon s Find project) is missing from LOCATION"
+  },
+  {
+   "q": "geoner-0159",
+   "key_issue": "key ROCK 'magnesian basalt' drops the 'high -' of the rock name 'high - magnesian basalt'"
+  },
+  {
+   "q": "geoner-0160",
+   "key_issue": "'felsic volcanic' (in 'felsic volcanic units') is untagged ROCK, though geoner-0150 tags 'felsic volcanic' in 'felsic volcanic and sedimentary unit'"
+  },
+  {
+   "q": "geoner-0162",
+   "key_issue": "'thorium' and 'potassium' are untagged while the parallel 'uranium' is ORE_DEPOSIT; 'alluvial' (in 'Alluvial and lacustrine sediments') is untagged while 'lacustrine sediments' is ROCK"
+  },
+  {
+   "q": "geoner-0165",
+   "key_issue": "key STRAT 'yerrida basin mooloogool group' joins a basin (LOCATION, like the tagged 'earaheedy basin' and 'bryah basin') with the group name 'mooloogool group'"
+  },
+  {
+   "q": "geoner-0168",
+   "key_issue": "key LOCATION 'gindalbie and pinjin pastoral' is one broken span for two places ('Gindalbie' and 'Pinjin Pastoral Leases')"
+  },
+  {
+   "q": "geoner-0169",
+   "key_issue": "'ferromagnesian rocks' (parallel to the tagged 'basaltic rocks') and 'carbonates' are untagged ROCK"
+  },
+  {
+   "q": "geoner-0176",
+   "key_issue": "'trouser legs' (the Trouser Legs tenements) is untagged LOCATION"
+  },
+  {
+   "q": "geoner-0182",
+   "key_issue": "key labels 'limonite' ORE_DEPOSIT; in 'limonite aggregates may have replaced original carbonate' it is a mineral (MINERAL)"
+  },
+  {
+   "q": "geoner-0184",
+   "key_issue": "'mingarby' (the Mingarby project) is untagged LOCATION"
+  },
+  {
+   "q": "geoner-0189",
+   "key_issue": "'earaheedy' (the Earaheedy Project) is untagged LOCATION"
+  },
+  {
+   "q": "geoner-0192",
+   "key_issue": "'silt' (in 'interbeds of silt or fine sand') is missing from ROCK while the parallel 'fine sand' is tagged"
+  },
+  {
+   "q": "geoner-0193",
+   "key_issue": "key labels 'limonite' ORE_DEPOSIT; in 'limonite replicas ... replaced original sulphides' it is a mineral (MINERAL)"
+  },
+  {
+   "q": "geoner-0194",
+   "key_issue": "'chloritic' (in 'less chloritic upwards') is untagged MINERAL while 'quartz' from 'quartz - rich' is tagged; geoner-0132 tags 'chloritic' as ROCK"
+  }
+ ]
+}

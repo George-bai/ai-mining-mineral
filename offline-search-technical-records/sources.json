@@ -1,0 +1,12 @@
+[
+ {"id": "newcrest-2021-12-quarterly", "file": "newcrest-q4-2021.pdf", "label": "Newcrest quarterly report, December 2021 quarter (released 28 Jan 2022)",
+  "url": "https://announcements.asx.com.au/asxpdf/20220128/pdf/455cvnlbn3cp01.pdf"},
+ {"id": "newcrest-2022-03-quarterly", "file": "newcrest-q1-2022.pdf", "label": "Newcrest quarterly report, March 2022 quarter (released 28 Apr 2022)",
+  "url": "https://s24.q4cdn.com/382246808/files/doc_downloads/Newcrest/quarterly/22/220428_Newcrest-Mar-2022-Quarterly-Report.pdf"},
+ {"id": "newcrest-2022-06-quarterly", "file": "newcrest-q2-2022.pdf", "label": "Newcrest quarterly report, June 2022 quarter (released 21 Jul 2022)",
+  "url": "https://www.asx.com.au/asxpdf/20220721/pdf/45c17j041vvb1d.pdf"},
+ {"id": "newmont-cadia-trs-2024", "file": "newmont-cadia-trs-2024.htm", "label": "Newmont, Cadia technical report summary, February 2024 edition (filed 29 Feb 2024)",
+  "url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472724000016/exhibit966-cadiaoperatio.htm"},
+ {"id": "newmont-cadia-trs-2026", "file": "newmont-cadia-trs-2026.htm", "label": "Newmont, Cadia technical report summary, February 2026 edition (filed 19 Feb 2026)",
+  "url": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000010/q425ex962cadia.htm"}
+]

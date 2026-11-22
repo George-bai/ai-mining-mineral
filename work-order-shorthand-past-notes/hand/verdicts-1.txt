@@ -1,0 +1,29 @@
+# read r9162 to r9774, all 160 entries
+r3154 meaning=0 | ext read as "external" frame, the key's extinguisher frame; a different part asserted
+r8525 meaning=0 added=1 | "nozzle" added; the note names only the quick fill
+r5830 meaning=0 | F/WHEEL read as "front wheel" and HOSU as "hose" (flywheel housing); asset XH531 dropped
+r2500 meaning=0 | RT/LF read as "Right/Left Front": adds a front position the note does not give
+r2500|1 wrong | plain says "Right/Left Front", a different position from the key's right / left
+r8227 meaning=0 | RHR read as "right hand"; rear dropped
+r5633 meaning=0 | MAKE UP read as "Replace" (a different action); stock made a place, "stockyard"
+r9155 meaning=0 | DMG asserted as an asset ("Asset DMG") instead of damage
+r9155|0 wrong | kept letters but asserted as an asset code, a different thing from damage
+r5444 meaning=0 | "no" read as "Number": says the opposite of no fans
+r7088 meaning=0 | 3-month interval made a deadline, "In 3 months"; interval not intact
+r4319 meaning=0 added=1 | "mechanical" and "haul truck" added; the note says only 250hr Service on LD3192
+# r1453 meaning=0 withdrawn (settled before unblinding, 21 Nov 2026): a doubtful key costs meaning only when the answer's reading does not fit the note; 'interface' fits, as r7189 was judged
+doubt r1453|2 | "INTER FACE" reads as interface just as well as internal face; the key's reading is uncertain
+r4857 meaning=0 | "roll" changed to "roller", a different part word
+r9321 meaning=0 | DMG asserted as an asset ("Asset DMG") instead of damage
+r9321|0 wrong | kept letters but asserted as an asset code, a different thing from damage
+r7979 meaning=0 | REQ read as "Request" against the key's required; the sentence becomes a request
+r7767 meaning=0 | "Tong" changed to "tongue"; on this drill (mast raise on UF2558) tong break is a breakout tong
+r9660 meaning=0 | "ceasing" changed to "closing": a confident wrong reading (seizing is likely)
+r3112 meaning=0 | MAKE UP tyres read as "inflate", a narrower, different action from assembling them
+r2239 meaning=0 | TOOTH LOCK split into "missing tooth" and "Perform a lockout": part misread, action invented from LOCK
+r9662|3 right | "autogreaser" is the same word as auto-greaser, spelling only
+r9644|3 right | "autogreaser" is the same word as auto-greaser, spelling only
+r6134|5 right | "drop box" is dropbox, spelling only
+doubt r6134|1 | "TEMP REP TO ... LEAK" reads as temporary repair; "temperature repair" makes no sense here; piece left wrong on the key, meaning left 1
+r6395|1 right | "engine starting fault" carries engine / start fault
+r7107|3 right | "equalizer" is the US spelling of equaliser

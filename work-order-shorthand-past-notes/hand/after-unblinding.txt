@@ -1,0 +1,18 @@
+# Verdicts changed after unblinding (21 Nov 2026, versions known), each by a rule No. 13 recorded on the same note or
+# by the hand-check rules as written, and applied to every answer in both versions the rule touches (found by text search).
+# Read by `handsheet.py merge` after the blind verdicts; format: <note id>|<version> ... or <note id>|<version>|<token> ...
+C-test-072|glossary meaning=0 | 'quick fill' made 'Kwik fill', a brand (No. 13's ruling; calibration showed the readers had not applied it)
+C-test-336|glossary meaning=0 | 'quick fill' made 'Kwik fill', a brand (No. 13's ruling; calibration showed the readers had not applied it)
+B-test-237|search meaning=1 | REQ read as a request: No. 13 ruled 'Request to send the air compressor ... for repair' meaning kept, REQ right (Codex page review)
+B-test-237|glossary meaning=1 | REQ read as a request: No. 13 ruled 'Request to send the air compressor ... for repair' meaning kept, REQ right (Codex page review)
+B-test-237|search|6 right | REQ as request, as No. 13 ruled
+B-test-237|glossary|6 right | REQ as request, as No. 13 ruled
+B-test-340|glossary meaning=0 | J4, keyed as an asset id, made 'position J4': an asset number changed (rule); no other answer in either version does this (Codex page review)
+C-test-214|search|5 right | the date 4/8/8 kept as typed is right, as No. 13 ruled for this note
+C-test-214|glossary|5 right | the date 4/8/8 kept as typed is right, as No. 13 ruled for this note
+# Precedent applied both ways (after Codex's third page review): every new answer whose reading matches one No. 13
+# judged differently on the same note (a word-overlap scan of all 600, then read), set to No. 13's ruling.
+B-test-397|glossary meaning=1 | 'requests resealing' for req's: No. 13 kept this same reading of this note
+B-test-274|glossary meaning=1 | 'the turbo at the primary, right, front': No. 13 kept this same reading of this note
+C-test-295|search meaning=1 | 'coolant roller': No. 13 kept this same reading of this note
+A-test-329|search meaning=1 | the trailing REPORT left out, as in No. 13's answer it kept for this note

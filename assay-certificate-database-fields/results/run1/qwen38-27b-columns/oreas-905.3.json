@@ -1,0 +1,27 @@
+{
+ "fields": {
+  "cu_4a_pct": 0.1533,
+  "cu_4a_sd_pct": 0.0061,
+  "cu_ar_pct": 0.1562,
+  "cu_ar_sd_pct": 0.0047,
+  "cu_h2so4_pct": 0.1272,
+  "cu_h2so4_sd_pct": 0.0065,
+  "cu_cn_pct": null,
+  "cu_cn_sd_pct": null,
+  "au_fa_ppm": 0.391,
+  "au_fa_sd_ppm": 0.009,
+  "au_ar_ppm": 0.395,
+  "au_ar_sd_ppm": 0.019
+ },
+ "content": "\n\n{\"cu_4a_pct\":0.1533,\"cu_4a_sd_pct\":0.0061,\"cu_ar_pct\":0.1562,\"cu_ar_sd_pct\":0.0047,\"cu_h2so4_pct\":0.1272,\"cu_h2so4_sd_pct\":0.0065,\"cu_cn_pct\":null,\"cu_cn_sd_pct\":null,\"au_fa_ppm\":0.391,\"au_fa_sd_ppm\":0.009,\"au_ar_ppm\":0.395,\"au_ar_sd_ppm\":0.019}",
+ "reasoning": "Let me extract the values from the certificate of analysis for OREAS 905.\n\nI need to fill in these columns:\n- cu_4a_pct: Copper via 4-Acid Digestion, in percent (wt.%)\n- cu_4a_sd_pct: SD for the above\n- cu_ar_pct: Copper via Aqua Regia, in percent (wt.%)\n- cu_ar_sd_pct: SD for the above\n- cu_h2so4_pct: Copper via H2SO4 (Sulphuric Acid Leach), in percent (wt.%)\n- cu_h2so4_sd_pct: SD for the above\n- cu_cn_pct: Copper via CN (cyanide?), in percent (wt.%)\n- cu_cn_sd_pct: SD for the above\n- au_fa_ppm: Gold via Fire Assay, in ppm\n- au_fa_sd_ppm: SD for the above\n- au_ar_ppm: Gold via Aqua Regia, in ppm\n- au_ar_sd_ppm: SD for the above\n\nNow let me look at the certificate:\n\n**Copper via 4-Acid Digestion:**\nFrom Table 1: Cu, Copper (ppm) = 1533, 1SD = 61\nThe column asks for \"pct\" (percent). 1533 ppm = 1533/10000 = 0.1533 wt.%\nSD: 61 ppm = 61/10000 = 0.0061 wt.%\n\nWait, let me reconsider. The column names say \"pct\" which means percent. The certificate reports Cu in ppm for 4-acid. So I need to convert:\n- 1533 ppm = 0.1533%\n- 61 ppm = 0.0061%\n\n**Copper via Aqua Regia:**\nFrom Table 1: Cu, Copper (ppm) = 1562, 1SD = 47\n- 1562 ppm = 0.1562%\n- 47 ppm = 0.0047%\n\n**Copper via H2SO4 (Sulphuric Acid Leach):**\nFrom Table 1: Cu-Sol, Copper Soluble (ppm) = 1272, 1SD = 65\n- 1272 ppm = 0.1272%\n- 65 ppm = 0.0065%\n\n**Copper via CN (cyanide):**\nI don't see any cyanide digestion method in this certificate. The methods listed are:\n- Pb Fire Assay\n- 4-Acid Digestion\n- Borate/Peroxide Fusion ICP\n- Aqua Regia Digestion\n- Sulphuric Acid Leach (5%)\n- Gas/Liquid Pycnometry\n\nThere is no CN (cyanide) method. So cu_cn_pct and cu_cn_sd_pct should be null.\n\n**Gold via Fire Assay:**\nFrom Table 1: Au, Gold (ppm) = 0.391, 1SD = 0.009\nThese are already in ppm.\n- au_fa_ppm = 0.391\n- au_fa_sd_ppm = 0.009\n\n**Gold via Aqua Regia:**\nFrom Table 1: Au, Gold (ppm) = 0.395, 1SD = 0.019\n- au_ar_ppm = 0.395\n- au_ar_sd_ppm = 0.019\n\nLet me double-check the units. The column names say \"pct\" for copper values. The certificate reports copper in ppm for all methods. So I need to convert ppm to percent:\n- 1533 ppm = 0.1533 wt.%\n- 61 ppm = 0.0061 wt.%\n- 1562 ppm = 0.1562 wt.%\n- 47 ppm = 0.0047 wt.%\n- 1272 ppm = 0.1272 wt.%\n- 65 ppm = 0.0065 wt.%\n\nFor gold, the columns say \"ppm\" so I keep them in ppm:\n- 0.391 ppm, 0.009 ppm\n- 0.395 ppm, 0.019 ppm\n\nLet me format the JSON object.\n",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 28259,
+  "total_tokens": 29403,
+  "completion_tokens": 1144,
+  "prompt_tokens_details": null
+ },
+ "seconds": 17.8,
+ "model": "qwen38-27b"
+}

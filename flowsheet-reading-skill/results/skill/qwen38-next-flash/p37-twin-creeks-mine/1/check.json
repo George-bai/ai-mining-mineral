@@ -1,0 +1,22 @@
+{
+ "checked": "Claude, 16 Nov 2026",
+ "pairing": {
+  "screen_sag_refractory": {
+   "to": [
+    "ref_screen"
+   ],
+   "why": "the screen of the refractory SAG mill (id and feed, rule 1 and 2): the unlabelled refractory SAG discharge screen, not the oxide screen"
+  },
+  "sump_cil": {
+   "to": [
+    "tails_sump"
+   ],
+   "why": "the sump after the CIL screen, feeding the tailings (rule 1 and 2): the tailings pump box, not the oxide cyclone feed sump"
+  }
+ },
+ "notes": [
+  "Test, skill. the other sumps, hoppers, cyclones and trash screens by their oxide/refractory ids and feeds, as the scorer has them. 'Lime Slurry', feeding the tower mill and venting, stands for the lime silo. 'Sub Aerial Decantier / Tailings' names a stream label and the tailings: it pairs with the tailings. Water, air, vent and to-atmosphere boxes pair with the set sharing their label.",
+  "First run wrote the chart (22.7 minutes).",
+  "Read: every box whose label is not exactly its key item's, or that pairs with nothing or with a set, and every box paired with a repeated key label, with its feeds (local/dev/repeats.py); both lists uncut, 16 Nov. Boxes whose label is exactly their key item's were not each read."
+ ]
+}

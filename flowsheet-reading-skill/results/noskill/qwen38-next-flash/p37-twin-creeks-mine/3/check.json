@@ -1,0 +1,33 @@
+{
+ "checked": "Claude, 16 Nov 2026",
+ "pairing": {
+  "ScreenRef": {
+   "to": [
+    "ref_screen"
+   ],
+   "why": "the screen of the refractory SAG mill (id and feed): the unlabelled refractory SAG discharge screen, not the oxide screen"
+  },
+  "SumpOx": {
+   "to": [
+    "ox_sump"
+   ],
+   "why": "the oxide cyclone feed sump (id, feeding the oxide cyclones)"
+  },
+  "SumpRef1": {
+   "to": [
+    "ref_sump_1"
+   ],
+   "why": "the primary cyclone feed sump (feeding the primary cyclones)"
+  },
+  "SumpRef2": {
+   "to": [
+    "ref_sump_2"
+   ],
+   "why": "the secondary cyclone feed sump (fed by the trash screen, feeding the secondary cyclones)"
+  }
+ },
+ "notes": [
+  "Test, no skill. hoppers, SAG mills, cyclones and trash screens by their ids and feeds, as the scorer has them. Air, water, vent and to-atmosphere boxes pair with their sets.",
+  "Read: every box whose label is not exactly its key item's, or that pairs with nothing or with a set, and every box paired with a repeated key label, with its feeds (local/dev/repeats.py); both lists uncut, 16 Nov. Boxes whose label is exactly their key item's were not each read."
+ ]
+}

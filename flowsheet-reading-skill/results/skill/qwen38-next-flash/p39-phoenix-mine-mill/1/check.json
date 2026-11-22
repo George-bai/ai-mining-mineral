@@ -1,0 +1,22 @@
+{
+ "checked": "Claude, 16 Nov 2026",
+ "pairing": {
+  "sag_sump": {
+   "to": [
+    "grinding_sump"
+   ],
+   "why": "the sump under the SAG mill discharge screen (id and feeds, rule 1 and 2): the cyclone feed sump, not the rougher concentrate sump"
+  },
+  "tails_sump": {
+   "to": [
+    "tails_tank"
+   ],
+   "why": "'Box / sump' with id tails_sump: the tailings mixing box before the pond (rule 1)"
+  }
+ },
+ "notes": [
+  "Test, skill. Two BALL MILLS boxes (upper, lower) both pair with the drawing's one BALL MILLS. Unlabelled cyclones and the trash screen by role. Water, reagent, lime and Caro's acid inputs pair with the set sharing their label. '(RESIDUE)' is a stream label.",
+  "First run wrote the chart (24.5 minutes).",
+  "Read: every box whose label is not exactly its key item's, or that pairs with nothing or with a set, and every box paired with a repeated key label, with its feeds (local/dev/repeats.py); both lists uncut, 16 Nov. Boxes whose label is exactly their key item's were not each read."
+ ]
+}

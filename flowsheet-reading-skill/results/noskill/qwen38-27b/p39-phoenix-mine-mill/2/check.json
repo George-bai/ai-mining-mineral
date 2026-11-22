@@ -1,0 +1,115 @@
+{
+ "checked": "Claude, 16 Nov 2026 (rerun)",
+ "pairing": {
+  "WaterLime1": {
+   "to": [
+    "water_sag",
+    "lime_sag"
+   ],
+   "why": "'WATER LIME' into the SAG mill names two items: pairs with both"
+  },
+  "Reactants1": {
+   "to": [
+    "reag_cyclone",
+    "reag_contact",
+    "reag_rougher",
+    "reag_regrind",
+    "reag_clsc",
+    "reag_clsc_sump",
+    "reag_cond"
+   ],
+   "why": "'REACTANTS': REAGENTS misread; pairs with the set of REAGENTS inputs, as a REAGENTS box does (the scorer had picked one item)"
+  },
+  "Reactants2": {
+   "to": [
+    "reag_cyclone",
+    "reag_contact",
+    "reag_rougher",
+    "reag_regrind",
+    "reag_clsc",
+    "reag_clsc_sump",
+    "reag_cond"
+   ],
+   "why": "as Reactants1"
+  },
+  "Reactants3": {
+   "to": [
+    "reag_cyclone",
+    "reag_contact",
+    "reag_rougher",
+    "reag_regrind",
+    "reag_clsc",
+    "reag_clsc_sump",
+    "reag_cond"
+   ],
+   "why": "as Reactants1"
+  },
+  "Reactants4": {
+   "to": [
+    "reag_cyclone",
+    "reag_contact",
+    "reag_rougher",
+    "reag_regrind",
+    "reag_clsc",
+    "reag_clsc_sump",
+    "reag_cond"
+   ],
+   "why": "as Reactants1"
+  },
+  "Reactants5": {
+   "to": [
+    "reag_cyclone",
+    "reag_contact",
+    "reag_rougher",
+    "reag_regrind",
+    "reag_clsc",
+    "reag_clsc_sump",
+    "reag_cond"
+   ],
+   "why": "as Reactants1"
+  },
+  "Reactants6": {
+   "to": [
+    "reag_cyclone",
+    "reag_contact",
+    "reag_rougher",
+    "reag_regrind",
+    "reag_clsc",
+    "reag_clsc_sump",
+    "reag_cond"
+   ],
+   "why": "as Reactants1"
+  },
+  "LimeReactants2": {
+   "to": [
+    "lime_sag",
+    "lime_regrind",
+    "lime_clsc_sump",
+    "lime_reclaim",
+    "reag_cyclone",
+    "reag_contact",
+    "reag_rougher",
+    "reag_regrind",
+    "reag_clsc",
+    "reag_clsc_sump",
+    "reag_cond"
+   ],
+   "why": "'LIME REACTANTS' names two inputs: pairs with both sets"
+  },
+  "CarosAcidLime": {
+   "to": [
+    "caros_acid_reclaim",
+    "caros_acid_tails",
+    "lime_sag",
+    "lime_regrind",
+    "lime_clsc_sump",
+    "lime_reclaim"
+   ],
+   "why": "'CARO'S ACID LIME' names two inputs: pairs with both sets"
+  }
+ },
+ "notes": [
+  "Rerun, no skill. Misread labels kept as the same items: DESIME CYCLONES, INTENSIVE OXIDATION, DIP (CIP), PRECIPITANT SOLUTION TANK, CHLORIDE FLUME, 'REACTANTS CLAND WATER' (the REAGENTS GLAND WATER outlet), REACTANTS (REAGENTS: first seen here; each pairs with the REAGENTS set, as a REAGENTS box does). Lime and Caro's acid inputs pair with their sets; '(RESIDUE)' is a stream label.",
+  "Read: every box whose label is not exactly its key item's (local/dev/differs.py), or that pairs with nothing or with a set, and every box paired with a repeated key label, with its feeds (local/dev/repeats.py), 16 Nov. Boxes whose label is exactly their key item's were not each read."
+ ]
+}

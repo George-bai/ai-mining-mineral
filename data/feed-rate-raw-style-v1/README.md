@@ -1,7 +1,7 @@
 # Feed rate tag as raw-style records, version 1
 
 A mill feed rate tag (belt weigher, t/h) over 4 days, as the irregular records a historian archive
-holds. Used in the article [How to clean plant sensor data?](https://eleticle.com/articles/sensor-data-outlier-removal/).
+holds. Used in the article [How should you clean plant sensor data?](https://eleticle.com/articles/sensor-data-outlier-removal/).
 
 **What is real and what is not:**
 
@@ -12,6 +12,11 @@ holds. Used in the article [How to clean plant sensor data?](https://eleticle.co
 | Faults and events | **Inserted**, and labelled in the `event` column |
 
 Anything shown from this data must say so: real hourly averages, generated records, inserted faults.
+
+**Source and right to publish.** The 96 hourly averages are a slice of a plant historian export held by
+Eleticle, which has the right to publish it. Only this slice is published; the rest of the export stays
+private. The site is not named, the dates are shifted and the values scaled, so the numbers are not the
+plant's own.
 
 ## Files
 

@@ -1,0 +1,18 @@
+{
+ "id": "A-test-210",
+ "condition": "search",
+ "note": "BF079 REPAIR HYD FAULT",
+ "model": "qwen38-27b",
+ "prompt": "You help a maintenance planner at an Australian mine site read work orders. Work orders are short notes typed in a hurry by maintainers and planners, full of the site's shorthand: abbreviations, misspellings and words run together. Codes such as AB123 or XY45 are asset numbers.\n\nRewrite the work order below in plain English for a reader who does not know the site's shorthand.\n\n- Expand every abbreviation and correct every misspelling. Choose each meaning from the note's context.\n- Keep to what the note says. Do not add a cause, a diagnosis, a fault or an outcome that the note does not state.\n- Keep the note's tense. A request for work stays a request: say that work was done only if the note says so.\n- Keep the note's asset numbers, quantities, positions and timings as they are.\n- If you cannot read a piece of shorthand with confidence, keep it as written in \"plain\", so the reader can see it is unresolved, and list it under \"unsure\".\n\nEarlier work orders from this site, found by searching its own records, and what each meant. The same shorthand can mean something else at another site.\n\nBF079 repair low coolant fault = BF079 repair low coolant fault\nBF079 diag/repair fuel fault = BF079 diagnose / repair fuel fault\nBF079 REPAIR RIDE CONTROL FAULT = BF079 repair ride control fault\nBF079 REAPIR OVER HEATING FAULT = BF079 repair overheating fault\nBF079 REPLACE DAMAGED HYD HOSES = BF079 replace damaged hydraulic hoses\nBF079 REPLACE CRACKED HYD SUCTION PIPE = BF079 replace cracked hydraulic suction pipe\nBF079 REP PARK BRAKE RELEASE FAULT = BF079 repair park brake release fault\nBF079 REPAIR START FAULT = BF079 repair start fault\nBF079 PPT32 Repair hyd hoses see text = BF079 PPT32 repair hydraulic hoses see text\nBF079 TRANNY FAULT = BF079 transmission fault\nAnswer with a JSON object only, with three keys:\n- \"plain\": the work order in plain English.\n- \"terms\": one item for each piece of shorthand you expanded or corrected: {\"written\": \"<as written in the note>\", \"means\": \"<what it stands for>\"}.\n- \"unsure\": the shorthand you could not read with confidence, as written in the note.\n\nWork order: BF079 REPAIR HYD FAULT\n",
+ "started": "2026-11-21T15:56:15+1000",
+ "content": "\n\n{\n  \"plain\": \"BF079 repair hydraulic fault\",\n  \"terms\": [\n    {\"written\": \"HYD\", \"means\": \"hydraulic\"}\n  ],\n  \"unsure\": []\n}",
+ "reasoning": "The user wants me to rewrite a work order in plain English. Let me analyze the work order:\n\n\"BF079 REPAIR HYD FAULT\"\n\nLet me break this down:\n- BF079: This is an asset number. From the earlier work orders, BF079 is consistently used as an asset number.\n- REPAIR: This is straightforward - repair.\n- HYD: This is shorthand for \"hydraulic\". Looking at the earlier work orders, \"HYD HOSES\" = \"hydraulic hoses\" and \"HYD SUCTION PIPE\" = \"hydraulic suction pipe\". So HYD = hydraulic.\n- FAULT: This is straightforward - fault.\n\nSo the plain English version would be: \"BF079 repair hydraulic fault\"\n\nNow let me check:\n- The note says \"REPAIR\" - it's a request for work (repair), not a statement that work was done. I should keep it as a request.\n- No misspellings to correct.\n- No additional cause, diagnosis, or outcome to add.\n- Asset number BF079 stays as is.\n\nTerms to expand:\n- \"HYD\" means \"hydraulic\"\n\nUnsure: Nothing I can't read with confidence.\n\nLet me format the JSON response.\n",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 567,
+  "total_tokens": 895,
+  "completion_tokens": 328,
+  "prompt_tokens_details": null
+ },
+ "seconds": 5.4
+}

@@ -1,0 +1,27 @@
+{
+ "fields": {
+  "cu_4a_pct": 0.00267,
+  "cu_4a_sd_pct": 0.000168,
+  "cu_ar_pct": 0.00254,
+  "cu_ar_sd_pct": 0.000141,
+  "cu_h2so4_pct": null,
+  "cu_h2so4_sd_pct": null,
+  "cu_cn_pct": null,
+  "cu_cn_sd_pct": null,
+  "au_fa_ppm": 0.946,
+  "au_fa_sd_ppm": 0.037,
+  "au_ar_ppm": 0.898,
+  "au_ar_sd_ppm": 0.052
+ },
+ "content": "\n\n{\"cu_4a_pct\":0.00267,\"cu_4a_sd_pct\":0.000168,\"cu_ar_pct\":0.00254,\"cu_ar_sd_pct\":0.000141,\"cu_h2so4_pct\":null,\"cu_h2so4_sd_pct\":null,\"cu_cn_pct\":null,\"cu_cn_sd_pct\":null,\"au_fa_ppm\":0.946,\"au_fa_sd_ppm\":0.037,\"au_ar_ppm\":0.898,\"au_ar_sd_ppm\":0.052}",
+ "reasoning": "Let me analyze the certificate of analysis for OREAS 232b to fill in the required fields.\n\nI need to find:\n1. `cu_4a_pct`: Copper by four-acid digestion, certified value in wt.% Cu\n2. `cu_4a_sd_pct`: 1SD for Cu by 4-acid in wt.% Cu\n3. `cu_ar_pct`: Copper by aqua regia digestion, certified value in wt.% Cu\n4. `cu_ar_sd_pct`: 1SD for Cu by aqua regia in wt.% Cu\n5. `cu_h2so4_pct`: Acid-soluble copper by H2SO4 leach - certified value in wt.% Cu\n6. `cu_h2so4_sd_pct`: 1SD for Cu by H2SO4 leach in wt.% Cu\n7. `cu_cn_pct`: Cyanide-soluble copper by NaCN leach - certified value in wt.% Cu\n8. `cu_cn_sd_pct`: 1SD for Cu by NaCN leach in wt.% Cu\n9. `au_fa_ppm`: Gold by fire assay, certified value in ppm\n10. `au_fa_sd_ppm`: 1SD for Au by fire assay in ppm\n11. `au_ar_ppm`: Gold by aqua regia, certified value in ppm\n12. `au_ar_sd_ppm`: 1SD for Au by aqua regia in ppm\n\nNow let me look at the certificate:\n\n**Copper by 4-acid digestion:**\nFrom Table 1, under \"4-Acid Digestion\":\n- Cu, ppm: Certified Value = 26.7, 1SD = 1.68\n\nThe field requires wt.% Cu. 26.7 ppm = 26.7/10,000 wt.% = 0.00267 wt.%\n1SD = 1.68 ppm = 1.68/10,000 wt.% = 0.000168 wt.%\n\n**Copper by aqua regia digestion:**\nFrom Table 1, under \"Aqua Regia Digestion\":\n- Cu, ppm: Certified Value = 25.4, 1SD = 1.41\n\nThe field requires wt.% Cu. 25.4 ppm = 25.4/10,000 wt.% = 0.00254 wt.%\n1SD = 1.41 ppm = 1.41/10,000 wt.% = 0.000141 wt.%\n\n**Copper by H2SO4 leach:**\nThe certificate does not report copper by sulphuric acid leach. This method is not mentioned anywhere in the certificate. So this is null.\n\n**Copper by cyanide (NaCN) leach:**\nThe certificate does not report copper by cyanide leach. The cyanide leach section only reports Au. So this is null.\n\n**Gold by fire assay (Pb Fire Assay):**\nFrom Table 1:\n- Au, ppm: Certified Value = 0.946, 1SD = 0.037\n\n**Gold by aqua regia digestion:**\nFrom Table 1:\n- Au, ppm: Certified Value = 0.898, 1SD = 0.052\n\nNow let me verify the units:\n- The 1SD column in the table is labeled \"1SD\" under \"Absolute Standard Deviations\". So the values 0.037, 0.052, 1.68, 1.41 are already 1SD values.\n\nWait, let me re-read the table headers more carefully:\n\n\"Absolute Standard Deviations\" has sub-columns: \"1SD\", \"2SD Low\", \"2SD High\"\n\"Relative Standard Deviations\" has sub-columns: \"1RSD\", \"2RSD\", \"3RSD\"\n\nSo the \"1SD\" column gives the 1SD value directly. Good.\n\nFor Cu by 4-acid: 1SD = 1.68 ppm \u2192 in wt.% = 1.68/10000 = 0.000168\nFor Cu by aqua regia: 1SD = 1.41 ppm \u2192 in wt.% = 1.41/10000 = 0.000141\n\nLet me double-check the conversion: 1 wt.% = 10,000 ppm. So to convert ppm to wt.%, divide by 10,000.\n\nCu 4-acid: 26.7 ppm / 10000 = 0.00267 wt.%\nCu 4-acid 1SD: 1.68 ppm / 10000 = 0.000168 wt.%\n\nCu AR: 25.4 ppm / 10000 = 0.00254 wt.%\nCu AR 1SD: 1.41 ppm / 10000 = 0.000141 wt.%\n\nAu FA: 0.946 ppm, 1SD = 0.037 ppm\nAu AR: 0.898 ppm, 1SD = 0.052 ppm\n\nThese are already in ppm (g/t), so no conversion needed.\n\nNow for the H2SO4 and cyanide Cu fields - the certificate does not report these methods for copper. The cyanide leach section only has Au. There's no H2SO4 leach section at all. So these are all null.\n\nLet me format the JSON:\n",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 25777,
+  "total_tokens": 27179,
+  "completion_tokens": 1402,
+  "prompt_tokens_details": null
+ },
+ "seconds": 41.0,
+ "model": "qwen38-27b"
+}

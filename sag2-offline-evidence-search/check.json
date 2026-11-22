@@ -1,0 +1,557 @@
+{
+ "note": "Hand check of the eight answers, 21 Nov 2026 (AEST). Each answer split into statements (one per sentence or bullet), each read against the passages it cites. Reader 1 (Claude, this session) found one problem: e8's owner. Reader 2 (a second Claude reader, statement by statement, without reader 1's verdicts) flagged six statements: e4's mill (its name; its objection to 'each' was withdrawn after Codex's fourth review, as the table's Number column gives 2), e6's 'only exception', 'including its pulley area' and 'only way', e8's merged recommendations and e8's closing line (the owner). Codex's page reviews added one statement, e6's 'seven feet or more from the walkway', and a further reason on e8's closing line (the citation-termination text it calls missing is in [1]); a flag on e8's 'termination notice' was raised and withdrawn. Each was checked against the passages. Seven statements stand flagged: 3 partly supported, 4 claims no source makes. Verdicts: supported; partly (part of it is not in the cited passages); wrong-cite; unsupported; uncited-ok (no citation, a fair reading or a true statement about what the sources lack); uncited-not-in-sources (no citation, a claim no source makes). Names of people are withheld.",
+ "answers": {
+  "e1": {
+   "statements": 3,
+   "supported": 3,
+   "partly": 0,
+   "wrong_cite": 0,
+   "unsupported": 0,
+   "uncited_ok": 0,
+   "uncited_not_in_sources": 0,
+   "overall": "answers",
+   "says": "3 statements, each supported by the passage it cites.",
+   "detail": [
+    {
+     "text": "Cadia's molybdenum plant receives its feed from the overland copper concentrate pipeline that transports concentrate slurry from the copper concentrators to the Blayney concentrate filter plant [2].",
+     "cites": [
+      2
+     ],
+     "verdict": "supported",
+     "reason": ""
+    },
+    {
+     "text": "Specifically, the plant processes the copper concentrate stream produced by the two concentrators (Concentrator 1 and Concentrator 2), which are currently treating ore from the Cadia East mine [6][5].",
+     "cites": [
+      6,
+      5
+     ],
+     "verdict": "supported",
+     "reason": "'currently' is the source's own word ([6], report dated Feb 2026), not a new time claim"
+    },
+    {
+     "text": "The molybdenum plant is designed to produce molybdenum concentrate as a by-product from these concentrator operations [4][15], with a scheduled throughput of 300,000–400,000 t of Cadia concentrate…",
+     "cites": [
+      4,
+      15,
+      1
+     ],
+     "verdict": "supported",
+     "reason": ""
+    }
+   ]
+  },
+  "e2": {
+   "statements": 3,
+   "supported": 3,
+   "partly": 0,
+   "wrong_cite": 0,
+   "unsupported": 0,
+   "uncited_ok": 0,
+   "uncited_not_in_sources": 0,
+   "overall": "answers",
+   "says": "3 statements, each supported by the passage it cites.",
+   "detail": [
+    {
+     "text": "According to the Cadia Valley Operations technical report, a plant trial with underground ore achieved recoveries of 80.1% for gold and 83.6% for copper [1].",
+     "cites": [
+      1
+     ],
+     "verdict": "supported",
+     "reason": ""
+    },
+    {
+     "text": "This trial was part of a broader testwork program that also included flotation piloting of four ore types, which yielded copper recoveries ranging between 85% and 94% at concentrate grades of 19.9%…",
+     "cites": [
+      1
+     ],
+     "verdict": "supported",
+     "reason": "numbers match [1]; 'broader testwork program' is a fair paraphrase of the same paragraph"
+    },
+    {
+     "text": "The underground ore trial was completed in 2008 as part of confirmatory testing of bulk ore samples [2].",
+     "cites": [
+      2
+     ],
+     "verdict": "supported",
+     "reason": "[2] names the 2008 plant trial with Cadia East underground ore; same trial as [1] by context"
+    }
+   ]
+  },
+  "e3": {
+   "statements": 3,
+   "supported": 3,
+   "partly": 0,
+   "wrong_cite": 0,
+   "unsupported": 0,
+   "uncited_ok": 0,
+   "uncited_not_in_sources": 0,
+   "overall": "answers",
+   "says": "3 statements, each supported by the passages it cites.",
+   "detail": [
+    {
+     "text": "Cadia's life-of-mine (LOM) plan assumes that 65–70% of all water will be reused (recycled) [1][5].",
+     "cites": [
+      1,
+      5
+     ],
+     "verdict": "supported",
+     "reason": ""
+    },
+    {
+     "text": "It is worth noting that Newmont reports its actual net water reuse rates have since increased to approximately 85%, driven by improved reuse from tailings thickeners and exceptionally high reuse…",
+     "cites": [
+      2
+     ],
+     "verdict": "supported",
+     "reason": ""
+    },
+    {
+     "text": "However, the planning assumption embedded in the LOM plan remains the 65–70% figure [1][5].",
+     "cites": [
+      1,
+      5
+     ],
+     "verdict": "supported",
+     "reason": "'remains' is fair: the same report states both the 65–70% assumption and the ~85% achieved rate"
+    }
+   ]
+  },
+  "e4": {
+   "statements": 8,
+   "supported": 5,
+   "partly": 1,
+   "wrong_cite": 0,
+   "unsupported": 0,
+   "uncited_ok": 2,
+   "uncited_not_in_sources": 0,
+   "overall": "answers",
+   "says": "8 statements: 5 supported, 2 fair readings without a citation, 1 only partly: the table names a “double rotator” ball mill.",
+   "detail": [
+    {
+     "text": "In the Goldstrike roaster circuit, two parallel dry grinding circuits come immediately after primary and secondary crushing [3].",
+     "cites": [
+      3
+     ],
+     "verdict": "supported",
+     "reason": "the order is read from the listing order in [3]; a fair reading"
+    },
+    {
+     "text": "The grinding is performed in Thyssenkrupp double-rotor ball mills (2 × 5.8 m × 17.5 m, 7,355 kW each) [17].",
+     "cites": [
+      17
+     ],
+     "verdict": "partly",
+     "reason": "[17] reads 'double rotator ball mill', not 'double-rotor'; the table gives the size, 7,355 kW and a quantity of 2, so the power per mill is a fair reading (the second reader had also flagged 'each'; dropped after Codex's fourth review)"
+    },
+    {
+     "text": "Following the dry grinding, the ground material is fed into two dual-stage (bubbling) fluidized bed roasters (Dorr Oliver design) [3][18].",
+     "cites": [
+      3,
+      18
+     ],
+     "verdict": "supported",
+     "reason": ""
+    },
+    {
+     "text": "These roasters use high-purity oxygen to burn off organic carbon and oxidize sulfide sulfur, achieving over 95% sulfide oxidation and over 80% organic carbon oxidation [3].",
+     "cites": [
+      3
+     ],
+     "verdict": "supported",
+     "reason": ""
+    },
+    {
+     "text": "1. Primary and secondary crushing",
+     "cites": [],
+     "verdict": "uncited-ok",
+     "reason": "list item restating [3], which the list cites on its last item"
+    },
+    {
+     "text": "2. Two parallel dry grinding circuits",
+     "cites": [],
+     "verdict": "uncited-ok",
+     "reason": "list item restating [3], which the list cites on its last item"
+    },
+    {
+     "text": "3. Two dual-stage fluidized bed roasters [3]",
+     "cites": [
+      3
+     ],
+     "verdict": "supported",
+     "reason": ""
+    },
+    {
+     "text": "This is consistent with the MSHA description, which notes that ore was \"crushed and milled to a fine powder\" and then \"fed into one of two identical roasters\" [7].",
+     "cites": [
+      7
+     ],
+     "verdict": "supported",
+     "reason": "both quotes verbatim in [7]; the 2003 description is kept in past tense"
+    }
+   ]
+  },
+  "e5": {
+   "statements": 10,
+   "supported": 8,
+   "partly": 0,
+   "wrong_cite": 0,
+   "unsupported": 0,
+   "uncited_ok": 2,
+   "uncited_not_in_sources": 0,
+   "overall": "answers",
+   "says": "10 statements: 8 supported by the passages they cite, 2 fair readings without a citation.",
+   "detail": [
+    {
+     "text": "The roaster was not emptied before the gasket repair began.",
+     "cites": [],
+     "verdict": "uncited-ok",
+     "reason": "stated in [3] and [7]; the citation is left off"
+    },
+    {
+     "text": "It was shut down with a large quantity of hot calcine remaining in both the upper and lower beds [3].",
+     "cites": [
+      3
+     ],
+     "verdict": "supported",
+     "reason": ""
+    },
+    {
+     "text": "The lower bed alone could have contained approximately 28 cubic yards of hot calcine [1].",
+     "cites": [
+      1
+     ],
+     "verdict": "supported",
+     "reason": ""
+    },
+    {
+     "text": "The report explicitly identifies this as a causal factor: \"The hot calcine in the roaster was not emptied. No means was provided to block or control the flow of hot calcine from the discharge pipe…\"",
+     "cites": [
+      3
+     ],
+     "verdict": "supported",
+     "reason": "quote verbatim in [3]"
+    },
+    {
+     "text": "When the crew opened the 16-inch B-leg #1 pipe to replace the gasket, they found it \"full of cool calcine dust\" [2], and the unexpected release of hot calcine through the open pipeline is what…",
+     "cites": [
+      2,
+      7
+     ],
+     "verdict": "supported",
+     "reason": ""
+    },
+    {
+     "text": "No, it was not physically locked out.",
+     "cites": [],
+     "verdict": "uncited-ok",
+     "reason": "direct reading of [1], which the next sentence cites"
+    },
+    {
+     "text": "The investigation states that \"the oxygen supply line was turned off but the manual oxygen valves were not physically locked-out\" [1].",
+     "cites": [
+      1
+     ],
+     "verdict": "supported",
+     "reason": "quote verbatim in [1]"
+    },
+    {
+     "text": "The maintenance crew was still waiting for the roaster feed and oxygen valves to be locked out at 7:30 a.m. [2], and by 8:30 a.m. they had placed locks on the lock box for the roaster feed and began…",
+     "cites": [
+      2
+     ],
+     "verdict": "supported",
+     "reason": ""
+    },
+    {
+     "text": "However, the oxygen valves themselves never received physical lockout [1].",
+     "cites": [
+      1
+     ],
+     "verdict": "supported",
+     "reason": "'never' is a little stronger than [1]'s 'were not physically locked-out', but both describe the same shutdown"
+    },
+    {
+     "text": "Additionally, the roaster's control interlocks had been disabled during the shutdown, meaning no electrical power was supplied to the roaster controls or feedback sensors [1], and the controls did…",
+     "cites": [
+      1,
+      5
+     ],
+     "verdict": "supported",
+     "reason": ""
+    }
+   ]
+  },
+  "e6": {
+   "statements": 11,
+   "supported": 4,
+   "partly": 1,
+   "wrong_cite": 0,
+   "unsupported": 0,
+   "uncited_ok": 3,
+   "uncited_not_in_sources": 3,
+   "overall": "answers",
+   "says": "11 statements: 4 supported, 3 fair readings, 1 only partly and 3 claims no source makes: that the seven-foot rule is the “only” exception, that seven feet from the walkway alone would do, and that a pulley area may be left unguarded beside a travelway. The railing line is complete for what was returned, not as a rule: a railing must also withstand vibration, shock and wear, and must not create a hazard, two conditions the search did not return.",
+   "detail": [
+    {
+     "text": "No.",
+     "cites": [],
+     "verdict": "uncited-ok",
+     "reason": "the answer word; the next sentence quotes [8][9]"
+    },
+    {
+     "text": "MSHA's best-practice guidance for mechanics explicitly states: \"Don't try to dislodge rocks from pulleys while the conveyor is running.\" [8][9]",
+     "cites": [
+      8,
+      9
+     ],
+     "verdict": "supported",
+     "reason": "quote verbatim across [8] and [9]"
+    },
+    {
+     "text": "The same card adds that, more broadly, you should block conveyors against hazardous motion before repairing or doing maintenance on the machine [9][10], and lock out the power switch and tag it…",
+     "cites": [
+      9,
+      10,
+      11,
+      12
+     ],
+     "verdict": "supported",
+     "reason": ""
+    },
+    {
+     "text": "Under 30 CFR § 56.14107(a), moving machine parts—including tail pulleys—\"shall be guarded to protect persons from contacting\" them when they \"can cause injury.\" [21]",
+     "cites": [
+      21
+     ],
+     "verdict": "supported",
+     "reason": "quotes verbatim; in [21] 'that can cause injury' trails 'similar moving parts', so making it a condition on tail pulleys is a minor gloss"
+    },
+    {
+     "text": "The only exception is in § 56.14107(b): guards are not required where the exposed moving parts are at least seven feet away from walking or working surfaces. [22]",
+     "cites": [
+      22
+     ],
+     "verdict": "partly",
+     "reason": "the (b) rule matches [22]; 'only exception' is stated nowhere, and [27] (§ 56.14112(b)) lets guards come off for testing or adjustments that need it"
+    },
+    {
+     "text": "Therefore, a tail pulley located beside a walkway (i.e., closer than seven feet from the walking surface) must be guarded.",
+     "cites": [],
+     "verdict": "uncited-ok",
+     "reason": "fair inference from [21] and [22]; equating 'beside' with under seven feet is the model's assumption"
+    },
+    {
+     "text": "If it were positioned seven feet or more from the walkway, a guard would not be mandated by that specific provision.",
+     "cites": [],
+     "verdict": "uncited-not-in-sources",
+     "reason": "§ 56.14107(b) [22] needs the moving parts at least seven feet from walking or working surfaces; seven feet from one walkway is not enough (Codex page review, 21 Nov 2026, confirmed against [22])"
+    },
+    {
+     "text": "If a conveyor (including its pulley area) is left unguarded next to a travelway, § 56.14109 requires either:",
+     "cites": [],
+     "verdict": "uncited-not-in-sources",
+     "reason": "the rule itself is [17], cited at the list's end, but '(including its pulley area)' is in no source and implies a pulley may stay unguarded, against [21]"
+    },
+    {
+     "text": "(a) Emergency stop devices positioned so a person falling on or against the conveyor can readily deactivate the drive motor; or",
+     "cites": [],
+     "verdict": "uncited-ok",
+     "reason": "matches [18], which the list cites at its end"
+    },
+    {
+     "text": "(b) Railings positioned to prevent persons from falling on or against the conveyor. [17][18][19][20]",
+     "cites": [
+      17,
+      18,
+      19,
+      20
+     ],
+     "verdict": "supported",
+     "reason": "supported by the passages returned ([17]-[20]), but incomplete as safety guidance: the search returned § 56.14109(b)(1) only, and (b)(2) and (3), that a railing must withstand vibration, shock and wear and must not create a hazard, were not before the model"
+    },
+    {
+     "text": "In short, for a tail pulley right next to a walkway, the default rule is that it must be guarded; the seven-foot distance exception is the only way to avoid that requirement.",
+     "cites": [],
+     "verdict": "uncited-not-in-sources",
+     "reason": "'only way' is stated by no source; it repeats the overclaim of the 'only exception' sentence"
+    }
+   ]
+  },
+  "e7": {
+   "statements": 7,
+   "supported": 5,
+   "partly": 0,
+   "wrong_cite": 0,
+   "unsupported": 0,
+   "uncited_ok": 2,
+   "uncited_not_in_sources": 0,
+   "overall": "says not in sources",
+   "says": "7 statements: 5 supported, 2 fair readings. Only the 2003 report came back, so the answer could not say how ore is ground now. The 2026 technical report, current to 31 December 2025, describes the latest documented circuit; whether it still runs that way is not in the records.",
+   "detail": [
+    {
+     "text": "The mine in question is the Goldstrike Mine, where roaster operator [name withheld] was killed on November 19, 2003 [1][6].",
+     "cites": [
+      1,
+      6
+     ],
+     "verdict": "supported",
+     "reason": "supported counting the record title sent with each passage: the mine's name comes from that title, which we wrote ('MSHA, Goldstrike Mine, report of investigation MAI-2003-23 …'); [1] names the person killed, [6] the date and a roaster operator"
+    },
+    {
+     "text": "Gold ore was mined and hauled to the crushers, where it was \"crushed and milled to a fine powder\" [1].",
+     "cites": [
+      1
+     ],
+     "verdict": "supported",
+     "reason": ""
+    },
+    {
+     "text": "This material was then referred to as \"roaster feed, double refractory ore\" [2].",
+     "cites": [
+      2
+     ],
+     "verdict": "supported",
+     "reason": "quote verbatim in [2]"
+    },
+    {
+     "text": "The crushed/milled feed was gravity-fed into the top of the large, cylindrical, two-stage roaster through distribution piping [2][5].",
+     "cites": [
+      2,
+      5
+     ],
+     "verdict": "supported",
+     "reason": ""
+    },
+    {
+     "text": "Important caveat: All of the above comes from a 2003 MSHA accident-investigation report [1][2][5].",
+     "cites": [
+      1,
+      2,
+      5
+     ],
+     "verdict": "supported",
+     "reason": ""
+    },
+    {
+     "text": "The sources do not describe any changes to the grinding/milling process after that date, so I cannot confirm from the provided material how the ore is ground \"today\" (i.e., at the present time).",
+     "cites": [],
+     "verdict": "uncited-ok",
+     "reason": "true: all six passages are from the 2003 MSHA report"
+    },
+    {
+     "text": "If the process has been modified since 2003, that information is not contained in the sources given here.",
+     "cites": [],
+     "verdict": "uncited-ok",
+     "reason": "true of these sources"
+    }
+   ]
+  },
+  "e8": {
+   "statements": 11,
+   "supported": 7,
+   "partly": 1,
+   "wrong_cite": 0,
+   "unsupported": 0,
+   "uncited_ok": 2,
+   "uncited_not_in_sources": 1,
+   "overall": "says not in sources",
+   "says": "11 statements: 7 supported, 2 fair readings, 1 only partly (two separate recommendations merged into one procedure) and 1 claim no source makes: who owns the mine now. Its closing line also says MSHA holds the verbatim procedure, which no passage says, and that the citation-termination text is not among its sources, though passage 1 holds it.",
+   "detail": [
+    {
+     "text": "Based on the provided sources, the full text of Goldstrike's written procedure for replacing a roaster discharge-leg gasket is not included in the materials available here.",
+     "cites": [],
+     "verdict": "uncited-ok",
+     "reason": "true: [1] says a procedure exists but gives no steps"
+    },
+    {
+     "text": "After the fatal incident of 19 Nov 2003, the company \"has established a written safe job procedure\" for maintenance on the roaster discharge legs, and miners \"have been instructed in this…",
+     "cites": [
+      1
+     ],
+     "verdict": "supported",
+     "reason": "both quotes verbatim in [1]"
+    },
+    {
+     "text": "The citation under 30 CFR 56.15006 was terminated on 13 January 2004 once that written procedure was in place and training was completed. [1]",
+     "cites": [
+      1
+     ],
+     "verdict": "supported",
+     "reason": ""
+    },
+    {
+     "text": "The MSHA root-cause analysis and corrective-action recommendations (which the company's procedure was expected to address) specify that the written procedure should include: [4]",
+     "cites": [
+      4
+     ],
+     "verdict": "partly",
+     "reason": "[4] gives separate recommendations (procedure and risk analysis; monitoring; a separate written plan for containment and clothing), not items of one procedure; 'expected to address' is not stated"
+    },
+    {
+     "text": "A pre-job risk analysis identifying all hazards associated with the gasket-replacement task before any repair or maintenance begins. [4]",
+     "cites": [
+      4
+     ],
+     "verdict": "supported",
+     "reason": ""
+    },
+    {
+     "text": "A plan to ensure the contents of the roaster (hot calcine) are contained and do not pose a hazard to persons working on the roaster or its components. [4]",
+     "cites": [
+      4
+     ],
+     "verdict": "supported",
+     "reason": ""
+    },
+    {
+     "text": "A requirement that all personnel wear protective clothing (special protective clothing and equipment) to prevent injuries from hot calcine material. [1][4]",
+     "cites": [
+      1,
+      4
+     ],
+     "verdict": "supported",
+     "reason": "the only element that [1] confirms is in the company's actual procedure"
+    },
+    {
+     "text": "Periodic monitoring of the task throughout the shift to ensure safe completion. [4]",
+     "cites": [
+      4
+     ],
+     "verdict": "supported",
+     "reason": ""
+    },
+    {
+     "text": "The sources are excerpts from the MSHA investigation report (MAI-2003-23) and its termination notice, dated 2003–early 2004. They describe the procedure in summary form; the actual step-by-step…",
+     "cites": [
+      1,
+      4
+     ],
+     "verdict": "supported",
+     "reason": "'termination notice' names the citation-termination text inside the same report ([1], p. 11); the termination text is in the sources, so the statement stands (reassessed after Codex's second page review)"
+    },
+    {
+     "text": "The sources only reflect what was established by January 2004. No later revision or update is documented in the materials provided, so I cannot confirm whether the procedure has since been amended.",
+     "cites": [],
+     "verdict": "uncited-ok",
+     "reason": "true of the sources"
+    },
+    {
+     "text": "If you need the verbatim procedure, it would have to be obtained from Goldstrike's (now part of Newmont) internal safe-job-procedure files or from MSHA's citation-termination documentation, neither…",
+     "cites": [],
+     "verdict": "uncited-not-in-sources",
+     "reason": "'(now part of Newmont)' is in no source and is a present-day claim (the corpus's 2026 report puts Goldstrike in Nevada Gold Mines); that MSHA's citation-termination documentation holds the verbatim procedure is in no source; and 'neither of which is included in the sources supplied here' contradicts [1], which holds the citation-termination text"
+    }
+   ]
+  }
+ },
+ "totals": {
+  "statements": 56,
+  "supported": 38,
+  "partly": 3,
+  "wrong_cite": 0,
+  "unsupported": 0,
+  "uncited_ok": 11,
+  "uncited_not_in_sources": 4
+ }
+}

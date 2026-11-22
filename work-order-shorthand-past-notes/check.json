@@ -1,0 +1,5653 @@
+{
+ "A-test-001|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3376"
+ },
+ "A-test-001|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2647"
+ },
+ "A-test-007|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4865"
+ },
+ "A-test-007|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6286"
+ },
+ "A-test-021|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1789"
+ },
+ "A-test-021|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2398"
+ },
+ "A-test-022|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3224"
+ },
+ "A-test-022|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9743"
+ },
+ "A-test-036|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3769"
+ },
+ "A-test-036|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9472"
+ },
+ "A-test-038|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3338"
+ },
+ "A-test-038|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3799"
+ },
+ "A-test-039|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2629"
+ },
+ "A-test-039|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4923"
+ },
+ "A-test-040|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3273"
+ },
+ "A-test-040|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7991"
+ },
+ "A-test-044|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8763"
+ },
+ "A-test-044|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5099"
+ },
+ "A-test-045|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7410"
+ },
+ "A-test-045|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1687"
+ },
+ "A-test-050|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3766"
+ },
+ "A-test-050|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9584"
+ },
+ "A-test-053|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5847"
+ },
+ "A-test-053|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6625"
+ },
+ "A-test-061|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7309"
+ },
+ "A-test-061|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6509"
+ },
+ "A-test-062|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7224"
+ },
+ "A-test-062|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9018"
+ },
+ "A-test-068|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7608"
+ },
+ "A-test-068|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6181"
+ },
+ "A-test-073|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6847"
+ },
+ "A-test-073|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1317"
+ },
+ "A-test-077|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1657"
+ },
+ "A-test-077|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9769"
+ },
+ "A-test-080|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6883"
+ },
+ "A-test-080|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4844"
+ },
+ "A-test-081|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4307"
+ },
+ "A-test-081|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3849"
+ },
+ "A-test-083|glossary": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "MAKE UP read as \"Replace\" (a different action); stock made a place, \"stockyard\"",
+  "rid": "r5633"
+ },
+ "A-test-083|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2991"
+ },
+ "A-test-085|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6885"
+ },
+ "A-test-085|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6853"
+ },
+ "A-test-097|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9638"
+ },
+ "A-test-097|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4479"
+ },
+ "A-test-105|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2011"
+ },
+ "A-test-105|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1369"
+ },
+ "A-test-106|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2758"
+ },
+ "A-test-106|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1122"
+ },
+ "A-test-108|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4646"
+ },
+ "A-test-108|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9190"
+ },
+ "A-test-110|glossary": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "UNIS (universal joints) read as \"units\"",
+  "rid": "r9993"
+ },
+ "A-test-110|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9131"
+ },
+ "A-test-116|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9091"
+ },
+ "A-test-116|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4343"
+ },
+ "A-test-120|glossary": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "\"198 HR PREVENTATIVE MAINTENANCE\" (the 198-hour PM) read as \"198 hours of preventive maintenance\", a duration: interval lost",
+  "rid": "r9313"
+ },
+ "A-test-120|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7973"
+ },
+ "A-test-122|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9644"
+ },
+ "A-test-122|glossary|3": {
+  "outcome": "right",
+  "why": "\"autogreaser\" is the same word as auto-greaser, spelling only",
+  "rid": "r9644"
+ },
+ "A-test-122|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9662"
+ },
+ "A-test-122|search|3": {
+  "outcome": "right",
+  "why": "\"autogreaser\" is the same word as auto-greaser, spelling only",
+  "rid": "r9662"
+ },
+ "A-test-124|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2144"
+ },
+ "A-test-124|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2364"
+ },
+ "A-test-126|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7814"
+ },
+ "A-test-126|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2547"
+ },
+ "A-test-127|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4917"
+ },
+ "A-test-127|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7592"
+ },
+ "A-test-130|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1649"
+ },
+ "A-test-130|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1673"
+ },
+ "A-test-138|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8583"
+ },
+ "A-test-138|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1190"
+ },
+ "A-test-147|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2295"
+ },
+ "A-test-147|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9577"
+ },
+ "A-test-148|glossary": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "F/WHEEL HOSU read as \"front wheel hose\"; note means flywheel housing",
+  "rid": "r8087"
+ },
+ "A-test-148|search": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "F/WHEEL read as \"front wheel\" (flywheel) and HOSU as \"hose\" (housing): different parts named",
+  "rid": "r2968"
+ },
+ "A-test-149|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4719"
+ },
+ "A-test-149|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2649"
+ },
+ "A-test-150|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6600"
+ },
+ "A-test-150|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5800"
+ },
+ "A-test-152|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3238"
+ },
+ "A-test-152|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4908"
+ },
+ "A-test-154|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7534"
+ },
+ "A-test-154|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1949"
+ },
+ "A-test-154|search|1": {
+  "outcome": "right",
+  "why": "\"replace\" a tyre means the same as change out",
+  "rid": "r1949"
+ },
+ "A-test-155|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8085"
+ },
+ "A-test-155|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4060"
+ },
+ "A-test-156|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9157"
+ },
+ "A-test-156|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1646"
+ },
+ "A-test-161|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4348"
+ },
+ "A-test-161|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4554"
+ },
+ "A-test-171|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9534"
+ },
+ "A-test-171|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1047"
+ },
+ "A-test-183|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5576"
+ },
+ "A-test-183|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2413"
+ },
+ "A-test-185|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2387"
+ },
+ "A-test-185|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9142"
+ },
+ "A-test-206|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3157"
+ },
+ "A-test-206|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2593"
+ },
+ "A-test-209|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1253"
+ },
+ "A-test-209|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8706"
+ },
+ "A-test-210|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9949"
+ },
+ "A-test-210|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4955"
+ },
+ "A-test-211|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7171"
+ },
+ "A-test-211|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4845"
+ },
+ "A-test-216|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5626"
+ },
+ "A-test-216|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2882"
+ },
+ "A-test-222|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7678"
+ },
+ "A-test-222|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6491"
+ },
+ "A-test-228|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2380"
+ },
+ "A-test-228|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8232"
+ },
+ "A-test-229|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2893"
+ },
+ "A-test-229|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1737"
+ },
+ "A-test-230|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8461"
+ },
+ "A-test-230|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8053"
+ },
+ "A-test-231|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8468"
+ },
+ "A-test-231|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5543"
+ },
+ "A-test-232|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7280"
+ },
+ "A-test-232|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8709"
+ },
+ "A-test-240|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8275"
+ },
+ "A-test-240|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4091"
+ },
+ "A-test-244|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5961"
+ },
+ "A-test-244|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1895"
+ },
+ "A-test-250|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8340"
+ },
+ "A-test-250|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8110"
+ },
+ "A-test-251|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4301"
+ },
+ "A-test-251|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8221"
+ },
+ "A-test-252|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4822"
+ },
+ "A-test-252|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7275"
+ },
+ "A-test-256|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4200"
+ },
+ "A-test-256|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3118"
+ },
+ "A-test-259|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7021"
+ },
+ "A-test-259|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8546"
+ },
+ "A-test-262|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7333"
+ },
+ "A-test-262|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1395"
+ },
+ "A-test-267|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6134"
+ },
+ "A-test-267|glossary|5": {
+  "outcome": "right",
+  "why": "\"drop box\" is dropbox, spelling only",
+  "rid": "r6134"
+ },
+ "A-test-267|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3220"
+ },
+ "A-test-267|search|5": {
+  "outcome": "right",
+  "why": "\"drop box\" is the everyday spelling of dropbox, the key's meaning (rule 3/4)",
+  "rid": "r3220"
+ },
+ "A-test-268|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5468"
+ },
+ "A-test-268|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7634"
+ },
+ "A-test-271|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3003"
+ },
+ "A-test-271|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7774"
+ },
+ "A-test-273|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2795"
+ },
+ "A-test-273|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8612"
+ },
+ "A-test-275|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2313"
+ },
+ "A-test-275|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6242"
+ },
+ "A-test-278|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1075"
+ },
+ "A-test-278|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7203"
+ },
+ "A-test-284|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3895"
+ },
+ "A-test-284|glossary|4": {
+  "outcome": "right",
+  "why": "\"hand rails\" is the everyday word with the key's meaning (handrails)",
+  "rid": "r3895"
+ },
+ "A-test-284|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7912"
+ },
+ "A-test-284|search|4": {
+  "outcome": "right",
+  "why": "\"hand rails\" is the everyday word with the key's meaning (handrails)",
+  "rid": "r7912"
+ },
+ "A-test-285|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3294"
+ },
+ "A-test-285|search": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "\"BRAKE PACKS\" read as \"brake pads\", a different part",
+  "rid": "r7759"
+ },
+ "A-test-286|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3511"
+ },
+ "A-test-286|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1048"
+ },
+ "A-test-287|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9010"
+ },
+ "A-test-287|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4472"
+ },
+ "A-test-289|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2178"
+ },
+ "A-test-289|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5513"
+ },
+ "A-test-296|glossary": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "TOOTH LOCK split into \"missing tooth\" and \"Perform a lockout\": part misread, action invented from LOCK",
+  "rid": "r2239"
+ },
+ "A-test-296|search": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": true,
+  "why": "\"bucket\" added before \"tooth lock\"; not in the note",
+  "rid": "r5843"
+ },
+ "A-test-310|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9029"
+ },
+ "A-test-310|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2160"
+ },
+ "A-test-312|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4170"
+ },
+ "A-test-312|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4577"
+ },
+ "A-test-313|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9526"
+ },
+ "A-test-313|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6042"
+ },
+ "A-test-314|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3928"
+ },
+ "A-test-314|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7713"
+ },
+ "A-test-317|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5575"
+ },
+ "A-test-317|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6560"
+ },
+ "A-test-325|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5410"
+ },
+ "A-test-325|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1973"
+ },
+ "A-test-328|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3189"
+ },
+ "A-test-328|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6395"
+ },
+ "A-test-328|search|1": {
+  "outcome": "right",
+  "why": "\"engine starting fault\" carries engine / start fault",
+  "rid": "r6395"
+ },
+ "A-test-329|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5927"
+ },
+ "A-test-329|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "the trailing REPORT left out, as in No. 13's answer it kept for this note",
+  "rid": "r3297",
+  "after_unblinding": true
+ },
+ "A-test-330|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8905"
+ },
+ "A-test-330|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5100"
+ },
+ "A-test-333|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3246"
+ },
+ "A-test-333|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2855"
+ },
+ "A-test-335|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5906"
+ },
+ "A-test-335|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4650"
+ },
+ "A-test-340|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9609"
+ },
+ "A-test-340|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5232"
+ },
+ "A-test-352|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1499"
+ },
+ "A-test-352|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3759"
+ },
+ "A-test-360|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2837"
+ },
+ "A-test-360|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1772"
+ },
+ "A-test-365|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1198"
+ },
+ "A-test-365|glossary|4": {
+  "outcome": "right",
+  "why": "\"shut down\" is the everyday word with the key's meaning (shutdown)",
+  "rid": "r1198"
+ },
+ "A-test-365|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7175"
+ },
+ "A-test-369|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1306"
+ },
+ "A-test-369|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2753"
+ },
+ "A-test-377|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9806"
+ },
+ "A-test-377|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5028"
+ },
+ "A-test-380|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4672"
+ },
+ "A-test-380|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8965"
+ },
+ "A-test-387|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7189"
+ },
+ "A-test-387|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1453"
+ },
+ "A-test-391|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7712"
+ },
+ "A-test-391|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1388"
+ },
+ "A-test-392|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3130"
+ },
+ "A-test-392|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9349"
+ },
+ "A-test-393|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1526"
+ },
+ "A-test-393|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5189"
+ },
+ "A-test-399|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6622"
+ },
+ "A-test-399|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1314"
+ },
+ "B-test-002|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5577"
+ },
+ "B-test-002|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2375"
+ },
+ "B-test-013|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3932"
+ },
+ "B-test-013|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1177"
+ },
+ "B-test-021|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6603"
+ },
+ "B-test-021|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3838"
+ },
+ "B-test-022|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8041"
+ },
+ "B-test-022|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8268"
+ },
+ "B-test-026|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1916"
+ },
+ "B-test-026|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4284"
+ },
+ "B-test-027|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1024"
+ },
+ "B-test-027|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9253"
+ },
+ "B-test-030|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3339"
+ },
+ "B-test-030|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6331"
+ },
+ "B-test-034|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4717"
+ },
+ "B-test-034|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1170"
+ },
+ "B-test-036|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9403"
+ },
+ "B-test-036|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5854"
+ },
+ "B-test-042|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6076"
+ },
+ "B-test-042|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4346"
+ },
+ "B-test-044|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5671"
+ },
+ "B-test-044|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8245"
+ },
+ "B-test-044|search|5": {
+  "outcome": "right",
+  "why": "\"rock breaker\" is a spelling of rockbreaker, same meaning",
+  "rid": "r8245"
+ },
+ "B-test-045|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9774"
+ },
+ "B-test-045|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7405"
+ },
+ "B-test-048|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2793"
+ },
+ "B-test-048|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9908"
+ },
+ "B-test-059|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8669"
+ },
+ "B-test-059|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4048"
+ },
+ "B-test-073|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5360"
+ },
+ "B-test-073|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6691"
+ },
+ "B-test-074|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3690"
+ },
+ "B-test-074|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3975"
+ },
+ "B-test-078|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3321"
+ },
+ "B-test-078|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1906"
+ },
+ "B-test-079|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3552"
+ },
+ "B-test-079|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7998"
+ },
+ "B-test-080|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2896"
+ },
+ "B-test-080|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1356"
+ },
+ "B-test-082|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1785"
+ },
+ "B-test-082|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8499"
+ },
+ "B-test-089|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5480"
+ },
+ "B-test-089|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1807"
+ },
+ "B-test-093|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4818"
+ },
+ "B-test-093|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1271"
+ },
+ "B-test-094|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3656"
+ },
+ "B-test-094|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6196"
+ },
+ "B-test-095|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6709"
+ },
+ "B-test-095|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3700"
+ },
+ "B-test-102|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2601"
+ },
+ "B-test-102|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3446"
+ },
+ "B-test-109|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3243"
+ },
+ "B-test-109|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5763"
+ },
+ "B-test-110|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2990"
+ },
+ "B-test-110|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3284"
+ },
+ "B-test-113|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5128"
+ },
+ "B-test-113|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5455"
+ },
+ "B-test-118|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7102"
+ },
+ "B-test-118|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1240"
+ },
+ "B-test-119|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5727"
+ },
+ "B-test-119|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2892"
+ },
+ "B-test-121|glossary": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "RT/LF read as \"Right/Left Front\": adds a front position the note does not give",
+  "rid": "r2500"
+ },
+ "B-test-121|glossary|1": {
+  "outcome": "wrong",
+  "why": "plain says \"Right/Left Front\", a different position from the key's right / left",
+  "rid": "r2500"
+ },
+ "B-test-121|search": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "plain text asserts a front position (\"right/left front suspension cylinder\") the note does not give",
+  "rid": "r4391"
+ },
+ "B-test-121|search|1": {
+  "outcome": "wrong",
+  "why": "RT/LF read as \"right/left front\": adds a front position not in the key's right / left",
+  "rid": "r4391"
+ },
+ "B-test-122|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7252"
+ },
+ "B-test-122|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6261"
+ },
+ "B-test-136|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8270"
+ },
+ "B-test-136|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6800"
+ },
+ "B-test-143|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7172"
+ },
+ "B-test-143|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9904"
+ },
+ "B-test-144|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5622"
+ },
+ "B-test-144|search": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "\"ceasing\" changed to \"closing\": a confident wrong reading (seizing is likely)",
+  "rid": "r9660"
+ },
+ "B-test-145|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5245"
+ },
+ "B-test-145|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9891"
+ },
+ "B-test-151|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5585"
+ },
+ "B-test-151|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2352"
+ },
+ "B-test-155|glossary": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "asset WK1566 made \"Work order 1566\", the WK prefix lost",
+  "rid": "r5915"
+ },
+ "B-test-155|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8453"
+ },
+ "B-test-165|glossary": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "3-month interval made a deadline, \"In 3 months\"; interval not intact",
+  "rid": "r7088"
+ },
+ "B-test-165|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6611"
+ },
+ "B-test-168|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4564"
+ },
+ "B-test-168|glossary|3": {
+  "outcome": "right",
+  "why": "\"equalizer\" is a spelling of equaliser",
+  "rid": "r4564"
+ },
+ "B-test-168|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7107"
+ },
+ "B-test-168|search|3": {
+  "outcome": "right",
+  "why": "\"equalizer\" is the US spelling of equaliser",
+  "rid": "r7107"
+ },
+ "B-test-175|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5368"
+ },
+ "B-test-175|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5097"
+ },
+ "B-test-177|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2723"
+ },
+ "B-test-177|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9611"
+ },
+ "B-test-183|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5999"
+ },
+ "B-test-183|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1311"
+ },
+ "B-test-193|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2530"
+ },
+ "B-test-193|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9194"
+ },
+ "B-test-194|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8804"
+ },
+ "B-test-194|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9958"
+ },
+ "B-test-197|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6260"
+ },
+ "B-test-197|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9393"
+ },
+ "B-test-200|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6607"
+ },
+ "B-test-200|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9140"
+ },
+ "B-test-204|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3466"
+ },
+ "B-test-204|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6985"
+ },
+ "B-test-205|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1092"
+ },
+ "B-test-205|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1745"
+ },
+ "B-test-211|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1382"
+ },
+ "B-test-211|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9682"
+ },
+ "B-test-213|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9233"
+ },
+ "B-test-213|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3379"
+ },
+ "B-test-215|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7777"
+ },
+ "B-test-215|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6776"
+ },
+ "B-test-217|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8183"
+ },
+ "B-test-217|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4962"
+ },
+ "B-test-219|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2007"
+ },
+ "B-test-219|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8417"
+ },
+ "B-test-220|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8440"
+ },
+ "B-test-220|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3286"
+ },
+ "B-test-222|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2236"
+ },
+ "B-test-222|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8320"
+ },
+ "B-test-224|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5117"
+ },
+ "B-test-224|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5753"
+ },
+ "B-test-230|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9969"
+ },
+ "B-test-230|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7741"
+ },
+ "B-test-231|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6641"
+ },
+ "B-test-231|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7545"
+ },
+ "B-test-233|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1824"
+ },
+ "B-test-233|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2524"
+ },
+ "B-test-235|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7788"
+ },
+ "B-test-235|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6271"
+ },
+ "B-test-237|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "REQ read as a request: No. 13 ruled 'Request to send the air compressor ... for repair' meaning kept, REQ right (Codex page review)",
+  "rid": "r7979",
+  "after_unblinding": true
+ },
+ "B-test-237|glossary|6": {
+  "outcome": "right",
+  "why": "REQ as request, as No. 13 ruled",
+  "after_unblinding": true
+ },
+ "B-test-237|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "REQ read as a request: No. 13 ruled 'Request to send the air compressor ... for repair' meaning kept, REQ right (Codex page review)",
+  "rid": "r4316",
+  "after_unblinding": true
+ },
+ "B-test-237|search|6": {
+  "outcome": "right",
+  "why": "REQ as request, as No. 13 ruled",
+  "after_unblinding": true
+ },
+ "B-test-241|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4739"
+ },
+ "B-test-241|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5520"
+ },
+ "B-test-254|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1816"
+ },
+ "B-test-254|glossary|3": {
+  "outcome": "right",
+  "why": "\"is continuing to creep down\" means the same as continuously creeping down",
+  "rid": "r1816"
+ },
+ "B-test-254|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7683"
+ },
+ "B-test-257|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5244"
+ },
+ "B-test-257|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6638"
+ },
+ "B-test-261|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6339"
+ },
+ "B-test-261|search": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": true,
+  "why": "\"mechanical\" and \"haul truck\" added; the note says only 250hr Service on LD3192",
+  "rid": "r4319"
+ },
+ "B-test-263|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7007"
+ },
+ "B-test-263|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9643"
+ },
+ "B-test-266|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8683"
+ },
+ "B-test-266|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7837"
+ },
+ "B-test-274|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "'the turbo at the primary, right, front': No. 13 kept this same reading of this note",
+  "rid": "r7031",
+  "after_unblinding": true
+ },
+ "B-test-274|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7493"
+ },
+ "B-test-275|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1766"
+ },
+ "B-test-275|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2429"
+ },
+ "B-test-276|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4267"
+ },
+ "B-test-276|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2880"
+ },
+ "B-test-281|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1465"
+ },
+ "B-test-281|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8228"
+ },
+ "B-test-282|glossary": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "INJ read as \"injection\" (key: injector), and VIMS expanded confidently and wrongly as \"Vehicle Immobiliser System\"",
+  "rid": "r4758"
+ },
+ "B-test-282|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5777"
+ },
+ "B-test-285|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1508"
+ },
+ "B-test-285|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9096"
+ },
+ "B-test-295|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9418"
+ },
+ "B-test-295|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4266"
+ },
+ "B-test-313|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7191"
+ },
+ "B-test-313|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6990"
+ },
+ "B-test-323|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7147"
+ },
+ "B-test-323|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1731"
+ },
+ "B-test-325|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1279"
+ },
+ "B-test-325|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7479"
+ },
+ "B-test-333|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1030"
+ },
+ "B-test-333|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3644"
+ },
+ "B-test-340|glossary": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1484",
+  "why": "J4, keyed as an asset id, made 'position J4': an asset number changed (rule); no other answer in either version does this (Codex page review)",
+  "after_unblinding": true
+ },
+ "B-test-340|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4791"
+ },
+ "B-test-343|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1384"
+ },
+ "B-test-343|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5510"
+ },
+ "B-test-345|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6360"
+ },
+ "B-test-345|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9339"
+ },
+ "B-test-346|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6910"
+ },
+ "B-test-346|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9568"
+ },
+ "B-test-347|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4706"
+ },
+ "B-test-347|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8174"
+ },
+ "B-test-350|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7909"
+ },
+ "B-test-350|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2734"
+ },
+ "B-test-351|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7034"
+ },
+ "B-test-351|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8531"
+ },
+ "B-test-352|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7000"
+ },
+ "B-test-352|glossary|1": {
+  "outcome": "right",
+  "why": "\"Re-seal\" is reseal with a hyphen, a spelling variant of the key's meaning (rule 1/3); the script's note \"re- (again)\" is the same word",
+  "rid": "r7000"
+ },
+ "B-test-352|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9261"
+ },
+ "B-test-352|search|1": {
+  "outcome": "right",
+  "why": "\"Re-seal\" is a spelling of reseal, same meaning",
+  "rid": "r9261"
+ },
+ "B-test-354|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4126"
+ },
+ "B-test-354|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2388"
+ },
+ "B-test-358|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1308"
+ },
+ "B-test-358|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7334"
+ },
+ "B-test-359|glossary": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "\"Pos 3 9 tyres\" (positions 3 and 9) read as \"the 9 tyres at Position 3\": a position number made a quantity",
+  "rid": "r5456"
+ },
+ "B-test-359|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6650"
+ },
+ "B-test-363|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3120"
+ },
+ "B-test-363|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8878"
+ },
+ "B-test-364|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6020"
+ },
+ "B-test-364|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5425"
+ },
+ "B-test-365|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5139"
+ },
+ "B-test-365|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3602"
+ },
+ "B-test-366|glossary": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "RHR read as \"right hand\"; rear dropped",
+  "rid": "r8227"
+ },
+ "B-test-366|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3817"
+ },
+ "B-test-379|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2680"
+ },
+ "B-test-379|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3625"
+ },
+ "B-test-381|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3675"
+ },
+ "B-test-381|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4628"
+ },
+ "B-test-382|glossary": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "\"stick cylinder\" becomes \"sticking cylinder\": the note's word stick (the excavator stick) is changed",
+  "rid": "r5615"
+ },
+ "B-test-382|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9158"
+ },
+ "B-test-383|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5284"
+ },
+ "B-test-383|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2539"
+ },
+ "B-test-397|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "'requests resealing' for req's: No. 13 kept this same reading of this note",
+  "rid": "r9049",
+  "after_unblinding": true
+ },
+ "B-test-397|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8188"
+ },
+ "B-test-399|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3382"
+ },
+ "B-test-399|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2504"
+ },
+ "C-test-009|glossary": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "DMG asserted as an asset (\"Asset DMG\") instead of damage",
+  "rid": "r9155"
+ },
+ "C-test-009|glossary|0": {
+  "outcome": "wrong",
+  "why": "kept letters but asserted as an asset code, a different thing from damage",
+  "rid": "r9155"
+ },
+ "C-test-009|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6912"
+ },
+ "C-test-011|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3907"
+ },
+ "C-test-011|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9394"
+ },
+ "C-test-015|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9988"
+ },
+ "C-test-015|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1781"
+ },
+ "C-test-020|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1098"
+ },
+ "C-test-020|search": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "the action \"protect wiring\" turned into \"protective wiring\"; the work asked for is lost",
+  "rid": "r9750"
+ },
+ "C-test-025|glossary": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "MCC asserted as \"Main Control Centre\"; an MCC is a motor control centre",
+  "rid": "r5253"
+ },
+ "C-test-025|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6870"
+ },
+ "C-test-026|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6688"
+ },
+ "C-test-026|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5389"
+ },
+ "C-test-035|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8887"
+ },
+ "C-test-035|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3787"
+ },
+ "C-test-037|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6045"
+ },
+ "C-test-037|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8080"
+ },
+ "C-test-038|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6782"
+ },
+ "C-test-038|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2554"
+ },
+ "C-test-040|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1199"
+ },
+ "C-test-040|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4616"
+ },
+ "C-test-044|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4082"
+ },
+ "C-test-044|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6811"
+ },
+ "C-test-045|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5299"
+ },
+ "C-test-045|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3705"
+ },
+ "C-test-047|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7949"
+ },
+ "C-test-047|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3698"
+ },
+ "C-test-048|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9628"
+ },
+ "C-test-048|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3455"
+ },
+ "C-test-055|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5871"
+ },
+ "C-test-055|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7231"
+ },
+ "C-test-055|search|7": {
+  "outcome": "right",
+  "why": "\"steer ram\" is the everyday term with the key's meaning (steering ram)",
+  "rid": "r7231"
+ },
+ "C-test-056|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9565"
+ },
+ "C-test-056|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7702"
+ },
+ "C-test-062|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9899"
+ },
+ "C-test-062|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7473"
+ },
+ "C-test-066|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1810"
+ },
+ "C-test-066|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2678"
+ },
+ "C-test-072|glossary": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8235",
+  "why": "'quick fill' made 'Kwik fill', a brand (No. 13's ruling; calibration showed the readers had not applied it)",
+  "after_unblinding": true
+ },
+ "C-test-072|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3140"
+ },
+ "C-test-083|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6938"
+ },
+ "C-test-083|glossary|0": {
+  "outcome": "unsure",
+  "why": "\"afe\" kept as typed in the plain text and listed as unsure",
+  "rid": "r6938"
+ },
+ "C-test-083|search": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "\"`afe\" (safe) read as \"After\"",
+  "rid": "r1769"
+ },
+ "C-test-084|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9586"
+ },
+ "C-test-084|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5783"
+ },
+ "C-test-085|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4490"
+ },
+ "C-test-085|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9440"
+ },
+ "C-test-087|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2739"
+ },
+ "C-test-087|glossary|1": {
+  "outcome": "right",
+  "why": "\"Re-route\" is the everyday word with the key's meaning (reroute)",
+  "rid": "r2739"
+ },
+ "C-test-087|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6905"
+ },
+ "C-test-090|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6775"
+ },
+ "C-test-090|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3968"
+ },
+ "C-test-094|glossary": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "\"Drag Motor\" (the drag motion motor) read as \"dragline motor\", a different part",
+  "rid": "r9880"
+ },
+ "C-test-094|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3465"
+ },
+ "C-test-096|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3548"
+ },
+ "C-test-096|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5586"
+ },
+ "C-test-100|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4155"
+ },
+ "C-test-100|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9832"
+ },
+ "C-test-100|search|3": {
+  "outcome": "right",
+  "why": "\"&\" kept in the plain text is the everyday sign for \"and\", the key's meaning (rule 4 exception)",
+  "rid": "r9832"
+ },
+ "C-test-101|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7466"
+ },
+ "C-test-101|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9501"
+ },
+ "C-test-106|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9135"
+ },
+ "C-test-106|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4304"
+ },
+ "C-test-109|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5857"
+ },
+ "C-test-109|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1554"
+ },
+ "C-test-111|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8565"
+ },
+ "C-test-111|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5191"
+ },
+ "C-test-112|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4759"
+ },
+ "C-test-112|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1243"
+ },
+ "C-test-121|glossary": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "RHR read as \"right hand\": rear dropped",
+  "rid": "r7403"
+ },
+ "C-test-121|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4429"
+ },
+ "C-test-123|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6723"
+ },
+ "C-test-123|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2109"
+ },
+ "C-test-124|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3707"
+ },
+ "C-test-124|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9754"
+ },
+ "C-test-125|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4473"
+ },
+ "C-test-125|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3765"
+ },
+ "C-test-127|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9902"
+ },
+ "C-test-127|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6228"
+ },
+ "C-test-132|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9287"
+ },
+ "C-test-132|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6319"
+ },
+ "C-test-134|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9347"
+ },
+ "C-test-134|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8211"
+ },
+ "C-test-136|glossary": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "the id \"I\" is changed to the number \"1\"",
+  "rid": "r6245"
+ },
+ "C-test-136|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7114"
+ },
+ "C-test-139|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2819"
+ },
+ "C-test-139|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7672"
+ },
+ "C-test-144|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8000"
+ },
+ "C-test-144|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5199"
+ },
+ "C-test-145|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9480"
+ },
+ "C-test-145|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7469"
+ },
+ "C-test-147|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2042"
+ },
+ "C-test-147|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9521"
+ },
+ "C-test-148|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7676"
+ },
+ "C-test-148|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8710"
+ },
+ "C-test-164|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3735"
+ },
+ "C-test-164|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3076"
+ },
+ "C-test-168|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8604"
+ },
+ "C-test-168|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3626"
+ },
+ "C-test-170|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9324"
+ },
+ "C-test-170|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8724"
+ },
+ "C-test-171|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9728"
+ },
+ "C-test-171|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1470"
+ },
+ "C-test-188|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9239"
+ },
+ "C-test-188|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2052"
+ },
+ "C-test-188|search|5": {
+  "outcome": "right",
+  "why": "the plain text says \"non-compliance\", the key's own word",
+  "rid": "r2052"
+ },
+ "C-test-194|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4624"
+ },
+ "C-test-194|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3876"
+ },
+ "C-test-205|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3044"
+ },
+ "C-test-205|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5079"
+ },
+ "C-test-206|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3576"
+ },
+ "C-test-206|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1225"
+ },
+ "C-test-214|glossary": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "5H, keyed as an asset, read as 5 hours; No. 13 recorded this reading of this note as meaning lost (settled before unblinding, 21 Nov 2026; the doubt stays logged)",
+  "rid": "r3123"
+ },
+ "C-test-214|glossary|5": {
+  "outcome": "right",
+  "why": "the date 4/8/8 kept as typed is right, as No. 13 ruled for this note",
+  "after_unblinding": true
+ },
+ "C-test-214|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1284"
+ },
+ "C-test-214|search|5": {
+  "outcome": "right",
+  "why": "the date 4/8/8 kept as typed is right, as No. 13 ruled for this note",
+  "after_unblinding": true
+ },
+ "C-test-221|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8562"
+ },
+ "C-test-221|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7851"
+ },
+ "C-test-223|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2440"
+ },
+ "C-test-223|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6440"
+ },
+ "C-test-231|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6594"
+ },
+ "C-test-231|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2054"
+ },
+ "C-test-232|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6391"
+ },
+ "C-test-232|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5951"
+ },
+ "C-test-233|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1811"
+ },
+ "C-test-233|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7123"
+ },
+ "C-test-235|glossary": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "ext (extinguisher) read as \"external\" in the plain text",
+  "rid": "r2809"
+ },
+ "C-test-235|search": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "\"ext frame\" read as \"external frame\"; key means extinguisher frame",
+  "rid": "r1042"
+ },
+ "C-test-236|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4998"
+ },
+ "C-test-236|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8579"
+ },
+ "C-test-239|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5985"
+ },
+ "C-test-239|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2859"
+ },
+ "C-test-243|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8928"
+ },
+ "C-test-243|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8978"
+ },
+ "C-test-244|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1189"
+ },
+ "C-test-244|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1448"
+ },
+ "C-test-246|glossary": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "\"Connect Inspect\" (inspect the connection, as the sister note \"Connection Insp\" shows) made an instruction to connect the swing motor and blower, then inspect; Motor/Blower also made \"motor and blower\"",
+  "rid": "r1015"
+ },
+ "C-test-246|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8020"
+ },
+ "C-test-253|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8413"
+ },
+ "C-test-253|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3524"
+ },
+ "C-test-258|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9536"
+ },
+ "C-test-258|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3756"
+ },
+ "C-test-262|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2138"
+ },
+ "C-test-262|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7766"
+ },
+ "C-test-266|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2271"
+ },
+ "C-test-266|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6855"
+ },
+ "C-test-269|glossary": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "\"Drag loop\" (the drag motion's loop, kept as drag loop in the key) made \"dragline loop\", a different thing",
+  "rid": "r7082"
+ },
+ "C-test-269|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5179"
+ },
+ "C-test-270|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8750"
+ },
+ "C-test-270|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9162"
+ },
+ "C-test-286|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7601"
+ },
+ "C-test-286|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4750"
+ },
+ "C-test-292|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9876"
+ },
+ "C-test-292|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1605"
+ },
+ "C-test-293|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4567"
+ },
+ "C-test-293|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5209"
+ },
+ "C-test-294|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2334"
+ },
+ "C-test-294|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4623"
+ },
+ "C-test-295|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6819"
+ },
+ "C-test-295|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "'coolant roller': No. 13 kept this same reading of this note",
+  "rid": "r4857",
+  "after_unblinding": true
+ },
+ "C-test-299|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9184"
+ },
+ "C-test-299|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5203"
+ },
+ "C-test-306|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2954"
+ },
+ "C-test-306|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2018"
+ },
+ "C-test-307|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6212"
+ },
+ "C-test-307|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8023"
+ },
+ "C-test-310|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4684"
+ },
+ "C-test-310|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7415"
+ },
+ "C-test-310|search|0": {
+  "outcome": "right",
+  "why": "\"hand rail\" is the everyday word with the key's meaning (handrail)",
+  "rid": "r7415"
+ },
+ "C-test-313|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5947"
+ },
+ "C-test-313|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9089"
+ },
+ "C-test-315|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1907"
+ },
+ "C-test-315|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4378"
+ },
+ "C-test-318|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9363"
+ },
+ "C-test-318|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2091"
+ },
+ "C-test-320|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7813"
+ },
+ "C-test-320|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5756"
+ },
+ "C-test-327|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2297"
+ },
+ "C-test-327|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8658"
+ },
+ "C-test-329|glossary": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "\"propels\" (the propel drives) read as \"propellers\", a different part",
+  "rid": "r3490"
+ },
+ "C-test-329|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5391"
+ },
+ "C-test-336|glossary": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9798",
+  "why": "'quick fill' made 'Kwik fill', a brand (No. 13's ruling; calibration showed the readers had not applied it)",
+  "after_unblinding": true
+ },
+ "C-test-336|search": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": true,
+  "why": "\"nozzle\" added; the note names only the quick fill",
+  "rid": "r8525"
+ },
+ "C-test-347|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1980"
+ },
+ "C-test-347|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7233"
+ },
+ "C-test-351|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8380"
+ },
+ "C-test-351|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3250"
+ },
+ "C-test-355|glossary": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "\"no\" read as \"Number\": says the opposite of no fans",
+  "rid": "r5444"
+ },
+ "C-test-355|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6074"
+ },
+ "C-test-357|glossary": {
+  "meaning": false,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "why": "\"blinker dipper switch\" (indicator and headlight dip switch) read as \"the indicator switch on the dipper\": dipper made a location",
+  "rid": "r7310"
+ },
+ "C-test-357|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5211"
+ },
+ "C-test-368|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5129"
+ },
+ "C-test-368|glossary|4": {
+  "outcome": "right",
+  "why": "\"over temperature\" means the same as overtemperature (rule 1/3)",
+  "rid": "r5129"
+ },
+ "C-test-368|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4493"
+ },
+ "C-test-368|search|4": {
+  "outcome": "right",
+  "why": "\"over temperature\" means the same as overtemperature (rule 1/3)",
+  "rid": "r4493"
+ },
+ "C-test-374|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r8077"
+ },
+ "C-test-374|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7925"
+ },
+ "C-test-376|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1890"
+ },
+ "C-test-376|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6293"
+ },
+ "C-test-382|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r1108"
+ },
+ "C-test-382|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r7744"
+ },
+ "C-test-385|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9187"
+ },
+ "C-test-385|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r5993"
+ },
+ "C-test-390|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6512"
+ },
+ "C-test-390|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r6909"
+ },
+ "C-test-393|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r9053"
+ },
+ "C-test-393|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3422"
+ },
+ "C-test-393|search|3": {
+  "outcome": "right",
+  "why": "\"swing 5\" keeps the number and means swing number 5",
+  "rid": "r3422"
+ },
+ "C-test-396|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3028"
+ },
+ "C-test-396|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r3202"
+ },
+ "C-test-398|glossary": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r2463"
+ },
+ "C-test-398|search": {
+  "meaning": true,
+  "diagnosis": false,
+  "done": false,
+  "added": false,
+  "rid": "r4899"
+ },
+ "_answers": {
+  "C-test-270|search": "d52a698fae1eb123",
+  "A-test-081|glossary": "889ef8600b2f1cdf",
+  "B-test-122|glossary": "8d8fea30da3292a0",
+  "B-test-285|search": "0eecd515ec753bab",
+  "A-test-228|search": "6165c5ac2759b90f",
+  "B-test-027|glossary": "d347fe87064f2ee4",
+  "A-test-211|search": "b1a4dce30e7a306c",
+  "A-test-147|glossary": "a4213749dd8f526e",
+  "A-test-155|search": "3128e9b5a8cd3a95",
+  "C-test-385|search": "b2c6b9a69ce9a72f",
+  "B-test-313|search": "4baab5e990e9b1e9",
+  "B-test-080|search": "46f5f0167d222f4e",
+  "B-test-399|search": "6cced8bf4deb53fa",
+  "B-test-343|glossary": "6b57d843ec9b78e8",
+  "A-test-105|search": "1c47201005b6eb77",
+  "B-test-213|search": "b543984c1a6b27d1",
+  "C-test-136|search": "11976113e23f5d62",
+  "A-test-399|glossary": "e5d52f2eb4bb8b4b",
+  "C-test-336|search": "8878142384328e73",
+  "A-test-380|glossary": "0ce1b0dc57bf6bc3",
+  "C-test-112|glossary": "b715a0bb0c17b2ca",
+  "C-test-266|glossary": "79190189e6e1869b",
+  "C-test-376|search": "3c969f14bac27c1e",
+  "A-test-122|search": "b4918aee5f7b4bbd",
+  "C-test-258|search": "b52a4198a503d10a",
+  "C-test-313|search": "2888ab566eb6f385",
+  "A-test-036|glossary": "60f89e98cd5f96be",
+  "B-test-220|search": "3f7a349f179853aa",
+  "A-test-039|search": "06ca21c160abde66",
+  "B-test-118|glossary": "0df1b95dd432392c",
+  "A-test-333|glossary": "5f47209d0ea34be7",
+  "B-test-219|search": "96d859a40491b693",
+  "B-test-204|glossary": "a307afa632b47bb8",
+  "C-test-299|glossary": "cc0d99e93e2bbde9",
+  "A-test-068|glossary": "118b0d22b7dd7372",
+  "C-test-047|glossary": "107aff88bad771a1",
+  "B-test-113|glossary": "0370e3702c08d801",
+  "A-test-360|search": "d42a27caba7ab746",
+  "C-test-084|search": "0513f9dda45d4f86",
+  "A-test-271|search": "5a11a25b696541d9",
+  "C-test-148|search": "68a909d1ce99525f",
+  "B-test-381|search": "a29475c86a8651fd",
+  "C-test-144|glossary": "bc1d3249cbcee562",
+  "C-test-132|glossary": "27cf81f1b3ccc171",
+  "C-test-351|glossary": "e68c42ba7cf5128c",
+  "B-test-121|glossary": "62248e5b599932cc",
+  "A-test-393|search": "aa9beff9a6d50108",
+  "B-test-399|glossary": "8bf1d666e9a3bea7",
+  "A-test-211|glossary": "9d3b277401ba37da",
+  "C-test-072|glossary": "9315d4438802116a",
+  "C-test-020|glossary": "68b86ede362bd89c",
+  "C-test-025|search": "0db648508d774575",
+  "A-test-329|glossary": "33cf54db1a0d9ac2",
+  "A-test-183|glossary": "67911e53be0aa9e9",
+  "B-test-113|search": "a5d5beb4626713b6",
+  "B-test-363|search": "ed33e51fbfb18e52",
+  "C-test-336|glossary": "5b451237303a3775",
+  "B-test-366|glossary": "907703aef762224b",
+  "C-test-205|search": "6e8a51b9e8593595",
+  "C-test-111|glossary": "aca8ae9db3526511",
+  "A-test-268|glossary": "b032c5037a5d3c52",
+  "B-test-217|glossary": "077959ec5b6eea14",
+  "C-test-205|glossary": "6e8a51b9e8593595",
+  "B-test-026|search": "925451d387b1f999",
+  "C-test-171|search": "0a7987f65d611810",
+  "C-test-396|search": "f496ceb0945e3657",
+  "A-test-083|glossary": "fa10d295043d809a",
+  "C-test-164|search": "f19ffb17525ec284",
+  "B-test-219|glossary": "251c1e1777ae5d54",
+  "A-test-036|search": "73b4699705ad3d20",
+  "C-test-090|search": "1e2b970e74b0fd8f",
+  "B-test-122|search": "5e8444bae4d4ce94",
+  "B-test-276|search": "306d0988d4806c74",
+  "B-test-323|glossary": "11b616d93214b87e",
+  "C-test-009|glossary": "cc80a86525ca5d89",
+  "C-test-355|glossary": "7729e083a3a923a4",
+  "C-test-124|search": "e6146ce920b224ee",
+  "B-test-165|glossary": "c19217ec8f4f7dba",
+  "B-test-282|search": "2a99fb23405f91de",
+  "B-test-350|glossary": "8a13221f89c82cb5",
+  "B-test-266|glossary": "f992a1635774e9f3",
+  "B-test-346|glossary": "a419ce5c7fe0ee41",
+  "B-test-261|search": "71b5b9637ec5de58",
+  "B-test-241|search": "ea519d3751c3a973",
+  "A-test-289|search": "f94d597757ff1540",
+  "B-test-381|glossary": "2620b5170f99dcce",
+  "A-test-377|glossary": "29d76b5f8498026d",
+  "C-test-037|search": "ae48eb378b35a893",
+  "A-test-077|search": "e7413d0d477e50f2",
+  "C-test-112|search": "6a8ee0427294c2e5",
+  "B-test-224|search": "90c2f7f4f7988fe2",
+  "A-test-130|search": "54ebfd5c964cb558",
+  "A-test-209|search": "b43ce0217566facd",
+  "B-test-078|glossary": "51a1e3f9b3820b12",
+  "A-test-259|search": "d1d2e0112f595498",
+  "C-test-168|glossary": "a44e2aae01aa92ba",
+  "A-test-387|search": "2cce74dcb6e99f03",
+  "A-test-335|search": "766f7003095535c1",
+  "B-test-102|glossary": "4be9b32cfadc055a",
+  "B-test-215|search": "068abae4a9123c4c",
+  "B-test-231|search": "763ac7b72d1ad0ca",
+  "B-test-204|search": "6edc7275a9aa4e8d",
+  "C-test-295|search": "03145daefa7db172",
+  "C-test-062|glossary": "541209116f2be8ce",
+  "A-test-352|search": "551b241936e0b289",
+  "C-test-231|glossary": "86c92c48b6934de1",
+  "C-test-258|glossary": "fcd1a7178291b4b3",
+  "B-test-397|search": "a062487f8810b9d2",
+  "B-test-295|search": "e627364c49874fd3",
+  "B-test-340|search": "2ac8477af99a6640",
+  "C-test-262|search": "87e7cf8c84418146",
+  "A-test-325|search": "26d40316a1ec1c5a",
+  "A-test-001|glossary": "d14fe01682398436",
+  "A-test-122|glossary": "7a3c73585e59c059",
+  "C-test-101|search": "6833a2fe4d577fac",
+  "B-test-351|search": "b2a761658d63b324",
+  "A-test-171|glossary": "ee0348937f086464",
+  "B-test-237|glossary": "54aedfe19889bc09",
+  "A-test-267|glossary": "ebde32e5d4836dcf",
+  "A-test-068|search": "a235488fe06f6e9c",
+  "B-test-074|search": "fba5715b08211cc3",
+  "C-test-253|search": "21c3a30a3fb13a5d",
+  "B-test-034|glossary": "c2f2b8fbc6669d73",
+  "A-test-021|glossary": "3ebb4cd80f9ee298",
+  "C-test-026|search": "78029ca9e8493c1f",
+  "A-test-330|search": "da2dabfdb0d6c864",
+  "B-test-144|search": "b5046c84bf8e3907",
+  "A-test-250|search": "0d2c947f3ebc86c4",
+  "C-test-347|search": "5d2268a5287c35f0",
+  "A-test-328|search": "bbe50853890d7a28",
+  "C-test-398|glossary": "7fd2a6b49d9a5f34",
+  "A-test-287|search": "bef34a21bc6500f7",
+  "C-test-056|glossary": "d64efff7dadb9884",
+  "B-test-021|glossary": "3e3b43b8d79ca879",
+  "A-test-229|glossary": "5a94280745ad0759",
+  "A-test-391|search": "03bbf6bfe28f3af9",
+  "A-test-232|search": "2cfdae73e937a374",
+  "B-test-168|search": "c65b35c1e5d8d1cf",
+  "B-test-220|glossary": "4d3f3f052560fe92",
+  "B-test-177|search": "97c9ab0aefcda7ae",
+  "A-test-206|glossary": "29816386aaa54107",
+  "A-test-310|glossary": "a2b1840be38c0210",
+  "C-test-390|search": "44aa9b5835ee69d2",
+  "A-test-161|search": "987c908d4433c337",
+  "C-test-085|glossary": "75568b8c7612902d",
+  "A-test-296|glossary": "a747b84586196ab3",
+  "B-test-074|glossary": "be9ff6a8d40bee4c",
+  "C-test-244|glossary": "006be2787e0e5355",
+  "C-test-262|glossary": "6b1489100bee70a0",
+  "B-test-045|glossary": "0d92c0d2b40ce32f",
+  "A-test-152|glossary": "1abdc13e7659c93b",
+  "B-test-200|glossary": "1c7ce445addecaf1",
+  "B-test-073|search": "116198598873725d",
+  "A-test-152|search": "c61f04229e531a90",
+  "A-test-286|glossary": "a04a8a2aa5e94700",
+  "C-test-015|search": "3ca26a3c389590d5",
+  "B-test-281|search": "c2702fc1904003f3",
+  "B-test-295|glossary": "0c9ca3e84d0d44a7",
+  "A-test-286|search": "b4f59197f682a8fb",
+  "C-test-357|search": "54418abfd5d2196a",
+  "A-test-252|search": "8a44afc3665c0e76",
+  "B-test-363|glossary": "0c07343d30e7d331",
+  "A-test-285|glossary": "088bb426119cd557",
+  "C-test-087|glossary": "b52adc0425bc008e",
+  "A-test-039|glossary": "f9c75bda3493fd15",
+  "C-test-127|search": "d26c7118bbcc4e4a",
+  "B-test-285|glossary": "2460b99296565ba5",
+  "C-test-329|search": "2b7295aa29cc7d37",
+  "C-test-090|glossary": "1e2b970e74b0fd8f",
+  "A-test-284|glossary": "7f785209b559a0c5",
+  "B-test-022|glossary": "26ebdd18617c2656",
+  "B-test-027|search": "d3eaf4427fab9c36",
+  "A-test-161|glossary": "1c05e6697db379ae",
+  "B-test-145|search": "46dd5beea09a94d0",
+  "C-test-164|glossary": "f19ffb17525ec284",
+  "B-test-048|glossary": "78fb65b1451831ce",
+  "C-test-246|search": "a3785bdb1bc92712",
+  "B-test-110|search": "9db6f6ccc2a04915",
+  "A-test-110|search": "f914060d9b70ecb9",
+  "A-test-251|search": "48af1ed4dda38bdc",
+  "B-test-093|search": "33afb3afaf9b00d1",
+  "A-test-340|search": "0626fc55c45c1520",
+  "B-test-254|glossary": "3e756cca20a8931c",
+  "B-test-211|glossary": "a0b2c7408790f95e",
+  "B-test-230|search": "1c36aac2ef3f9039",
+  "C-test-310|search": "81e9ea873322dee6",
+  "B-test-002|search": "7d8432e47b1761bc",
+  "C-test-374|search": "edd3c4819daf2b3d",
+  "B-test-080|glossary": "a08ab23969e16de5",
+  "A-test-022|search": "6797712d1fecca8e",
+  "C-test-096|glossary": "3c9179a31d887c84",
+  "A-test-228|glossary": "50e69246a573e4f3",
+  "A-test-080|search": "617ace91365bcb4a",
+  "C-test-111|search": "5dffe296fe8b4e3f",
+  "C-test-037|glossary": "2983731861b20a0f",
+  "B-test-193|glossary": "db2473c40772a853",
+  "C-test-286|search": "1dd57b4b1d782c29",
+  "A-test-251|glossary": "f480494370166acf",
+  "C-test-035|glossary": "996040503547029a",
+  "A-test-148|glossary": "f7514d5062a94e47",
+  "B-test-359|search": "91708c096e5f4c7c",
+  "B-test-151|glossary": "4cdebec177a22ad8",
+  "A-test-256|glossary": "a3d248ceb2d5f00c",
+  "C-test-307|search": "74c059cb7899d769",
+  "C-test-040|search": "818f4884c9cd6b51",
+  "B-test-110|glossary": "97fb74a65408b868",
+  "C-test-109|glossary": "e721906b7d688805",
+  "C-test-307|glossary": "bd363a61c9e4cff3",
+  "A-test-284|search": "64a49886a408f4db",
+  "B-test-200|search": "c319f761976e6195",
+  "B-test-358|search": "aa623761e9dd5ad9",
+  "A-test-040|search": "cb9fdfb6d1acc1be",
+  "A-test-222|search": "bb1356e81d29eaf5",
+  "A-test-050|search": "24d66328486f2b39",
+  "A-test-077|glossary": "06e65b314e99e41a",
+  "C-test-393|search": "120d8671666ea7bc",
+  "C-test-243|glossary": "2c0dfd4d306717fd",
+  "C-test-398|search": "1ddd32627038696f",
+  "B-test-352|search": "17c4189ab3f2f376",
+  "C-test-214|glossary": "711f6a1a7f29b832",
+  "C-test-109|search": "9d32cbb7b420b54a",
+  "A-test-259|glossary": "31e90274d91161df",
+  "A-test-073|glossary": "f54bc41c770fc722",
+  "B-test-059|search": "79fa33a8197bd8c9",
+  "A-test-328|glossary": "b4af3344eab1d08d",
+  "B-test-197|search": "7e52645f913fd321",
+  "A-test-275|search": "43097f0fd7eb7c3a",
+  "A-test-138|glossary": "e3c4252782c51a90",
+  "A-test-171|search": "1046969d9644291d",
+  "C-test-011|glossary": "b1f1af5e103a80e1",
+  "B-test-022|search": "2c796a784e13492e",
+  "A-test-138|search": "81cf8ec1eb936d99",
+  "C-test-144|search": "bcf1a63c3a7370cd",
+  "B-test-235|search": "bbfa4f1480ec344d",
+  "B-test-222|search": "857f1bae1ca9dcfa",
+  "B-test-347|search": "7b7381659b1aef8b",
+  "C-test-188|glossary": "5686a78005e13da2",
+  "A-test-126|search": "5d729877e5a95bb7",
+  "B-test-175|glossary": "c3d7b92d0d283fb2",
+  "A-test-126|glossary": "e660ec913dd21c81",
+  "A-test-312|glossary": "bc3b5e78aa619880",
+  "C-test-096|search": "3fca503535334dcf",
+  "A-test-050|glossary": "366e3500ef741a0f",
+  "A-test-154|search": "9f50f7092e707169",
+  "C-test-292|glossary": "07a07f2e31b1917e",
+  "B-test-224|glossary": "533e767fb23428d7",
+  "C-test-123|glossary": "05a4ac9db7de0c78",
+  "B-test-155|glossary": "7eb49c70d8d63200",
+  "A-test-038|glossary": "add22f43df9daa7e",
+  "C-test-124|glossary": "03777358a1d51453",
+  "A-test-365|glossary": "68ab244a0d349ee8",
+  "C-test-020|search": "ba7580276a5ea5e5",
+  "C-test-145|search": "191d49f18ab22580",
+  "B-test-044|search": "489175498669969c",
+  "C-test-236|glossary": "0bd5f1e475e947f8",
+  "A-test-062|search": "d7b9cdc7347ef107",
+  "A-test-007|search": "f3babf282f4af94f",
+  "B-test-048|search": "15bb99abd9288976",
+  "C-test-083|glossary": "0d4d83b13b73019b",
+  "C-test-072|search": "3b934102a8bd8294",
+  "A-test-130|glossary": "e1ba588f9a876db8",
+  "A-test-240|search": "b0529e31228d1798",
+  "A-test-329|search": "dfa77a07275ccaed",
+  "A-test-116|search": "b50021b535ee4c43",
+  "B-test-379|search": "7f1db4c5c29e38de",
+  "B-test-266|search": "847faafb88076aa5",
+  "C-test-270|glossary": "166cc1d8c6cac5a8",
+  "A-test-313|search": "165b22729052540e",
+  "A-test-222|glossary": "80c4b46a43b3e01c",
+  "B-test-168|glossary": "d779158af35ae532",
+  "C-test-056|search": "133d87bd20fcda93",
+  "A-test-210|glossary": "6208925fefd18c8a",
+  "C-test-294|search": "f0e48d8585720098",
+  "C-test-025|glossary": "94053da250e600cf",
+  "A-test-150|glossary": "7062029c58c6d67b",
+  "A-test-097|glossary": "c4c809c790cc2273",
+  "A-test-097|search": "ed42a97e5b70e76f",
+  "B-test-034|search": "15613a4efe0ae4e6",
+  "C-test-055|search": "4ce2a4e5d28b0cbe",
+  "A-test-314|glossary": "9aa5e43cd6dd64a1",
+  "C-test-393|glossary": "007c776858424bc8",
+  "A-test-380|search": "341bee04fc721e69",
+  "B-test-002|glossary": "7d8432e47b1761bc",
+  "C-test-194|search": "b8fc3e71b0da9460",
+  "C-test-232|glossary": "8d0285ac8ebad525",
+  "B-test-136|search": "f8a20446be69c1f9",
+  "C-test-221|search": "1ac3dd57b391463c",
+  "A-test-262|glossary": "e17533337db062f6",
+  "A-test-127|glossary": "592556e517850c4c",
+  "A-test-040|glossary": "9c1caeffd2a8da14",
+  "A-test-127|search": "f97afefce0d32bd9",
+  "A-test-230|search": "dc73af071c9d5230",
+  "C-test-236|search": "f412c1c4d2138b4c",
+  "A-test-085|search": "eb0b7114406e8c12",
+  "C-test-125|glossary": "c3fa33d25e410ef7",
+  "C-test-318|glossary": "d90d34cd621bb8c7",
+  "B-test-325|search": "af0fe17fd79c8e53",
+  "C-test-235|search": "64a2557080f2c979",
+  "A-test-156|search": "6202ad1a6f97a8b7",
+  "B-test-143|glossary": "b7727d79c623d697",
+  "B-test-230|glossary": "8ae76ef7e138088c",
+  "B-test-205|search": "456faa9f6a9ea819",
+  "C-test-293|glossary": "b313e1173da05f1a",
+  "A-test-106|search": "00794c3103c3ba55",
+  "C-test-145|glossary": "ac5d3332322aeed4",
+  "B-test-233|glossary": "f9b000107a0bd7d7",
+  "A-test-120|glossary": "69c5eab7b3c03f58",
+  "B-test-089|glossary": "86cc5947b93a5d2f",
+  "B-test-364|search": "03ea1f4751ccf099",
+  "B-test-261|glossary": "f80aea1c2b7a65aa",
+  "B-test-118|search": "0df1b95dd432392c",
+  "C-test-048|glossary": "40ffd3f9379a3fe8",
+  "C-test-214|search": "538bf0932b246428",
+  "C-test-127|glossary": "a2c9c7f0434ca1b4",
+  "C-test-045|search": "7ccf1e2892871961",
+  "B-test-379|glossary": "53e52fc5e2ce2ab1",
+  "A-test-120|search": "66599d2e426f6e15",
+  "C-test-286|glossary": "1d432d370d24bb2c",
+  "C-test-121|glossary": "a7485ba1dfa75802",
+  "A-test-116|glossary": "8bafe90962352b73",
+  "B-test-119|search": "bcd912294df24317",
+  "A-test-085|glossary": "7db6d6a23093e473",
+  "A-test-317|glossary": "fdc3e2d5a3907113",
+  "A-test-310|search": "a2b1840be38c0210",
+  "C-test-048|search": "d1812df0ac939e00",
+  "A-test-073|search": "98e56db2468ef644",
+  "B-test-078|search": "acab2cb0718d8739",
+  "A-test-392|search": "52a0ef96e8c13941",
+  "A-test-317|search": "2e8c669847c13132",
+  "C-test-329|glossary": "76cd2d8ab3ba2228",
+  "C-test-357|glossary": "343c6a717beee976",
+  "B-test-079|glossary": "d546dd11b2bd529e",
+  "C-test-125|search": "855ab287b0e3aec6",
+  "B-test-257|search": "4d362cce996661a6",
+  "B-test-359|glossary": "aebd8476695c55e4",
+  "C-test-171|glossary": "68099480aced9045",
+  "C-test-055|glossary": "72f389a6579f6a7e",
+  "A-test-149|search": "12efae3e9642f86f",
+  "A-test-296|search": "4b0adbc2029bbf7d",
+  "A-test-285|search": "182dc69c71b70d56",
+  "A-test-150|search": "d109f71eb4bc37c6",
+  "B-test-109|glossary": "798083c893e013df",
+  "B-test-136|glossary": "8bc7888d57268a07",
+  "A-test-216|search": "8bbe9250ba49c675",
+  "A-test-325|glossary": "65470e54edb93b8d",
+  "B-test-263|search": "881e3d723618f5a0",
+  "A-test-044|glossary": "f2aa0420c01ec6a3",
+  "C-test-101|glossary": "be4d2b6cb31059f2",
+  "B-test-346|search": "181a485eb7705d19",
+  "A-test-062|glossary": "d7d51f4b36e51670",
+  "C-test-062|search": "9b4ba4262d2a1370",
+  "A-test-001|search": "d14fe01682398436",
+  "A-test-209|glossary": "8e2aa7aed7925a45",
+  "B-test-397|glossary": "562be69257087380",
+  "C-test-134|search": "526ea8fcbaacec7a",
+  "C-test-188|search": "519daa980bdaaf8a",
+  "B-test-144|glossary": "c7a5ccc4514378c8",
+  "A-test-240|glossary": "9fe116d1b1fb4374",
+  "B-test-073|glossary": "8abecf83b7f40d37",
+  "A-test-038|search": "17b3b60564749254",
+  "C-test-347|glossary": "5d2268a5287c35f0",
+  "C-test-170|glossary": "faa5f11e0d1a0b6a",
+  "B-test-155|search": "7e78f634accdcb0a",
+  "C-test-243|search": "9b4b1391782ae58a",
+  "B-test-079|search": "27e62a1acd115c72",
+  "C-test-026|glossary": "801b7fbf17be6921",
+  "B-test-030|search": "30037e4b34fd3999",
+  "A-test-080|glossary": "1d2d82e246467ffe",
+  "B-test-183|search": "11586f662dfe28c8",
+  "C-test-253|glossary": "7ca4c5f7ad5442de",
+  "B-test-042|glossary": "afbb53048c611ef9",
+  "C-test-038|search": "2679d3df4a3a7dc7",
+  "C-test-239|search": "2ecfd5c98481f4ff",
+  "B-test-095|search": "4f919818afd2124c",
+  "A-test-335|glossary": "a74b302902345547",
+  "C-test-206|glossary": "699a1d879abf9263",
+  "B-test-030|glossary": "91f556ccf823a030",
+  "B-test-193|search": "497df8e32be55256",
+  "C-test-066|glossary": "3e7d3ff2c44710c1",
+  "B-test-145|glossary": "3338b563bf90479d",
+  "B-test-211|search": "8dbc97ea835f0ba4",
+  "B-test-119|glossary": "5836ed32210b6924",
+  "A-test-365|search": "8cbdedcbf5ad776f",
+  "B-test-345|glossary": "6f2e007d33ee09a4",
+  "C-test-269|search": "fe9c9512e6008bfb",
+  "B-test-109|search": "bd8c1863f13030d9",
+  "C-test-094|glossary": "2e5a96ede6764a9c",
+  "A-test-185|search": "ac8f344e2a419548",
+  "A-test-124|search": "32038dde70643430",
+  "B-test-257|glossary": "e6a52d98e8cbf226",
+  "A-test-021|search": "fcb02ae6e4ed49c1",
+  "B-test-325|glossary": "f6efbcf3687b332f",
+  "A-test-377|search": "c6d7bc44606bf6b6",
+  "C-test-390|glossary": "4c3b659f23cd272e",
+  "B-test-333|glossary": "064739f0cc332cf1",
+  "B-test-213|glossary": "8177b88300f26f90",
+  "B-test-013|search": "5c834455e3004ed6",
+  "B-test-323|search": "7900b880d7350b56",
+  "B-test-021|search": "5df08c6725df8580",
+  "B-test-351|glossary": "214c4a7a3497b6f7",
+  "C-test-294|glossary": "5b92c463de6f8c8a",
+  "B-test-194|search": "17a2f9b5454465c1",
+  "A-test-231|search": "cad17d4718b24af4",
+  "B-test-165|search": "4d7cb9b2be38bb53",
+  "B-test-093|glossary": "10337f75a429e0ea",
+  "B-test-197|glossary": "d026eddca847053a",
+  "A-test-232|glossary": "ce68bd672f397029",
+  "A-test-289|glossary": "940a74eb0daeb985",
+  "C-test-170|search": "de2d18fd8c99a4e6",
+  "A-test-044|search": "90fbaf4c0701f8f5",
+  "C-test-100|glossary": "3c503a33418d3376",
+  "B-test-094|search": "dae3fef3bccece21",
+  "A-test-022|glossary": "dd22f31d76567718",
+  "B-test-222|glossary": "67786982837e39e2",
+  "A-test-081|search": "4eaeaca6a5b48b3b",
+  "A-test-256|search": "e82d56220efc5c6e",
+  "C-test-313|glossary": "a18ed55b51d48aef",
+  "A-test-287|glossary": "8bdd50f46557a86d",
+  "B-test-013|glossary": "5c834455e3004ed6",
+  "C-test-168|search": "aa12cefa912bc06f",
+  "C-test-044|glossary": "542c4ebf5e937e5a",
+  "A-test-278|search": "ce9b95464fbb667f",
+  "A-test-313|glossary": "b29bbaf1efb5357a",
+  "C-test-083|search": "3f6c852cf862e793",
+  "B-test-274|search": "75b51ef837f92e17",
+  "B-test-082|search": "e710c030c9a0f60d",
+  "B-test-281|glossary": "eeafe548f4630795",
+  "B-test-082|glossary": "34017f0c76b38791",
+  "B-test-274|glossary": "b613fccbf78aa6a3",
+  "C-test-206|search": "d1257cf13458d1e1",
+  "A-test-312|search": "fd5d3ffe4419dc5e",
+  "C-test-134|glossary": "00fb01fb515e1bee",
+  "B-test-175|search": "c1778d537c4e6c86",
+  "A-test-083|search": "ac657bcf557afd34",
+  "A-test-155|glossary": "f85c58d868da0cf0",
+  "C-test-009|search": "3ed48e3de5743f5c",
+  "C-test-139|search": "869c0ebf9a6c57be",
+  "B-test-143|search": "95d92926b0b1e28c",
+  "B-test-036|glossary": "6940f126982daecc",
+  "C-test-382|glossary": "854d2f5b322869b9",
+  "C-test-106|search": "d9fcd337e2aafd3b",
+  "C-test-035|search": "1b50476a1ac11c5c",
+  "B-test-365|glossary": "6a8e6d5e70a32b01",
+  "C-test-221|glossary": "14ec1cd6831fc891",
+  "C-test-085|search": "87f863c5ee64d399",
+  "C-test-084|glossary": "6b83de5a00067e3f",
+  "B-test-233|search": "91902327040cf1f9",
+  "B-test-275|search": "4ccc12da73a5eaaa",
+  "A-test-229|search": "560296da2f1e4bda",
+  "A-test-061|search": "fbf0f657a516acd2",
+  "B-test-282|glossary": "0fb84c807b5a20de",
+  "A-test-244|glossary": "cc9ced42b1f5c748",
+  "B-test-382|glossary": "1f369925fa0ef604",
+  "A-test-393|glossary": "b6e6c51316b0a495",
+  "C-test-368|glossary": "97d61d89c6ac1178",
+  "A-test-369|search": "c83a4cfd4bbd22d5",
+  "A-test-250|glossary": "8b4f355cb7728db7",
+  "C-test-123|search": "0188807f6c532b9f",
+  "B-test-237|search": "ccb47c256be50a69",
+  "C-test-320|glossary": "b28b3bf06bec73e8",
+  "C-test-244|search": "2e63e6369e0a9489",
+  "C-test-376|glossary": "3c969f14bac27c1e",
+  "C-test-266|search": "b52bc5961b875933",
+  "C-test-044|search": "454c16a4ae9499e0",
+  "C-test-315|search": "4eb2b8fb0edea1d3",
+  "C-test-320|search": "c455615a14c82b3c",
+  "C-test-327|search": "fdee2eb04f63137f",
+  "A-test-392|glossary": "8195ce5a0c5958b4",
+  "B-test-194|glossary": "7db5cbdbf4030efa",
+  "A-test-369|glossary": "a30102ef2797df9b",
+  "A-test-053|glossary": "a065b14dcb24e133",
+  "B-test-095|glossary": "1530665774e434ec",
+  "A-test-154|glossary": "5a8c95f214bce4cf",
+  "A-test-391|glossary": "8c5d778cc07f54c9",
+  "A-test-149|glossary": "44e58684f5688499",
+  "B-test-354|glossary": "998d1670ea7f3cb3",
+  "C-test-292|search": "40e4669f4201707e",
+  "B-test-026|glossary": "3bcd641c43a253cf",
+  "A-test-148|search": "413ff777cb1b4b4b",
+  "A-test-045|search": "0bee3c7182cd1ad8",
+  "B-test-183|glossary": "214f1f01cf883900",
+  "A-test-360|glossary": "91464bbc1ce50dac",
+  "C-test-239|glossary": "d78fff1f2e769eeb",
+  "B-test-241|glossary": "7a9c65c08c85b563",
+  "A-test-278|glossary": "454c3a9ec5e38f93",
+  "B-test-235|glossary": "5252f29fded682ab",
+  "A-test-352|glossary": "5aac1555ab685b8c",
+  "C-test-038|glossary": "5129a66d6c2c4a7a",
+  "C-test-106|glossary": "8f209d6227248ae4",
+  "B-test-333|search": "c0bace7c892470e2",
+  "B-test-350|search": "3794ce6f01cf7f16",
+  "B-test-177|glossary": "8830e13cacb5a0cc",
+  "C-test-382|search": "24fedb0ee3672710",
+  "B-test-383|search": "734d8dc9b12d590d",
+  "B-test-045|search": "89eaeabc3878b9c9",
+  "C-test-040|glossary": "03d93f6bd15a7b4e",
+  "B-test-254|search": "061587ddf60e573a",
+  "A-test-230|glossary": "6d7394869407595e",
+  "A-test-061|glossary": "feb7f05e01ce8929",
+  "C-test-374|glossary": "c284aa4cf1b6c217",
+  "C-test-293|search": "9995bd80955893fc",
+  "B-test-358|glossary": "77414aca38491036",
+  "B-test-382|search": "4a872301b09f2734",
+  "B-test-036|search": "afd159a49aa4c429",
+  "B-test-365|search": "be41e4715d977cf1",
+  "C-test-139|glossary": "869c0ebf9a6c57be",
+  "A-test-271|glossary": "28cfcc937348e8f5",
+  "A-test-252|glossary": "36125b4ddb54ccca",
+  "B-test-059|glossary": "b82a4a9b299b9211",
+  "C-test-147|glossary": "11bfacbc4276c949",
+  "B-test-313|glossary": "e55cb1310e47f634",
+  "C-test-355|search": "2136ae049d36eced",
+  "C-test-295|glossary": "a2f3725f293babbd",
+  "A-test-268|search": "f915525edebc53fe",
+  "C-test-385|glossary": "164b51eac55f0927",
+  "A-test-216|glossary": "997798347805549a",
+  "B-test-347|glossary": "fb23f8ec9597cdbc",
+  "B-test-217|search": "dbdb2dbeab792c51",
+  "A-test-314|search": "f6f42201d0aa2015",
+  "B-test-042|search": "86d50f01bee423d6",
+  "A-test-267|search": "58cf5c890d6826ce",
+  "C-test-315|glossary": "39fae7d7021ec708",
+  "A-test-340|glossary": "e22c69f3db0a3315",
+  "A-test-183|search": "c1537b314b6c2286",
+  "A-test-210|search": "025e5dce6b916640",
+  "C-test-047|search": "3e1fe83283c2ee76",
+  "C-test-148|glossary": "5520286e3cbd5a93",
+  "B-test-263|glossary": "793ce0ba7c4b0182",
+  "C-test-269|glossary": "7b425fdb78742c79",
+  "C-test-136|glossary": "50f7f27a5f249da7",
+  "A-test-333|search": "4a3b633721cfb067",
+  "A-test-185|glossary": "2f263bd45638b776",
+  "C-test-368|search": "fc261b01c5e83995",
+  "A-test-124|glossary": "dc3393281745cbf6",
+  "A-test-231|glossary": "86d506d1e7716741",
+  "B-test-343|search": "c337698805d032f0",
+  "A-test-105|glossary": "abdf1e684d83e30c",
+  "C-test-232|search": "6e1332a3f591447f",
+  "B-test-044|glossary": "1f112aa188f0edac",
+  "C-test-011|search": "7ac9d47063e6ead1",
+  "A-test-244|search": "406bca0de9efc8e9",
+  "A-test-106|glossary": "4a231b62ea28226d",
+  "B-test-364|glossary": "da6ef82bbeb7c54f",
+  "A-test-273|glossary": "784a4250d209fa9e",
+  "B-test-089|search": "0140c4f2e4f56956",
+  "C-test-351|search": "f7ae4b289307c7df",
+  "B-test-231|glossary": "03daca00e89a3676",
+  "B-test-094|glossary": "e7946e25c57b8f54",
+  "A-test-108|glossary": "ce8f796312f5e199",
+  "B-test-121|search": "6c956ef1154fcfdb",
+  "C-test-121|search": "e393d59c7e59be9c",
+  "C-test-299|search": "74ce8613950d6da7",
+  "C-test-310|glossary": "0c8cb92561cef7cb",
+  "A-test-007|glossary": "3a2df090f4870301",
+  "A-test-147|search": "e86b39e677776fca",
+  "B-test-366|search": "15104d87e750ea2c",
+  "C-test-015|glossary": "3ca26a3c389590d5",
+  "A-test-110|glossary": "18910c25bcb3efea",
+  "A-test-206|search": "37a90a5000ec27c4",
+  "A-test-399|search": "e49fe2eb95d7813b",
+  "B-test-345|search": "ea2c3287e5da8644",
+  "C-test-100|search": "291c8efc974fb701",
+  "A-test-108|search": "b00c90ced38ab0a3",
+  "C-test-235|glossary": "2c7cf4fadf6cce5c",
+  "B-test-340|glossary": "9b3b0d06fcfcc2e1",
+  "B-test-276|glossary": "2e3f17e4796cb5f7",
+  "A-test-275|glossary": "c3541b11aa666f12",
+  "C-test-194|glossary": "9ccfd501bd4bd819",
+  "C-test-045|glossary": "b92e211e470394cd",
+  "C-test-087|search": "1bba9cecc3619d45",
+  "B-test-205|glossary": "f3e83f2258b8de0b",
+  "C-test-318|search": "2df28053a954acdc",
+  "C-test-223|search": "7691e3ebe67306b7",
+  "C-test-223|glossary": "a880316521c04e0b",
+  "B-test-275|glossary": "9cd004285a675d8c",
+  "C-test-231|search": "d3f9ea53281fd2c2",
+  "C-test-147|search": "d005130d683a752c",
+  "B-test-102|search": "d790e4238fbf5c08",
+  "C-test-396|glossary": "f496ceb0945e3657",
+  "B-test-383|glossary": "87f147a22ab0f017",
+  "A-test-330|glossary": "10cdb5b2115b32e2",
+  "C-test-066|search": "e0288d063ad3afb9",
+  "A-test-273|search": "7c5fe3e7d03d50dd",
+  "B-test-151|search": "f42fb739742b3420",
+  "B-test-354|search": "998d1670ea7f3cb3",
+  "B-test-215|glossary": "be11a9569beff5ba",
+  "B-test-352|glossary": "f26c9d287edc21a3",
+  "C-test-233|search": "2314788e2de7a780",
+  "C-test-132|search": "0630fe9c59f4b7ae",
+  "C-test-306|glossary": "2e1bab948276e369",
+  "A-test-045|glossary": "78a6ce7c3292892c",
+  "A-test-156|glossary": "67c1aad0a2d80a34",
+  "A-test-387|glossary": "50833a5b5302778d",
+  "A-test-262|search": "c6e75a238510c80d",
+  "C-test-306|search": "5076dcba86f8973b",
+  "C-test-233|glossary": "38ff0a70b0db57d5",
+  "C-test-327|glossary": "6ab5051f8bdf6ab1",
+  "A-test-053|search": "84d91bd33c992335",
+  "C-test-246|glossary": "70a4f4b169dd69e5",
+  "C-test-094|search": "37e8eaa2f614ba81"
+ },
+ "_key_doubts": {
+  "A-test-387|2": "key reads INTER FACE as \"internal face\"; \"interface\", the plain text's reading, is at least as likely for the two words together (meaning left at 1)",
+  "A-test-267|1": "key reads TEMP as \"temperature\"; in \"TEMP REP TO ... LEAK\" it is almost surely \"temporary\" repair, as the plain text says (meaning left at 1)",
+  "C-test-214|0": "key gives 5H as an asset id; read with the sheet's other \"<num>H\" notes it is 5 hours, as the plain text has it"
+ },
+ "_after_unblinding": [
+  "C-test-072|glossary meaning=0 | 'quick fill' made 'Kwik fill', a brand (No. 13's ruling; calibration showed the readers had not applied it)",
+  "C-test-336|glossary meaning=0 | 'quick fill' made 'Kwik fill', a brand (No. 13's ruling; calibration showed the readers had not applied it)",
+  "B-test-237|search meaning=1 | REQ read as a request: No. 13 ruled 'Request to send the air compressor ... for repair' meaning kept, REQ right (Codex page review)",
+  "B-test-237|glossary meaning=1 | REQ read as a request: No. 13 ruled 'Request to send the air compressor ... for repair' meaning kept, REQ right (Codex page review)",
+  "B-test-237|search|6 right | REQ as request, as No. 13 ruled",
+  "B-test-237|glossary|6 right | REQ as request, as No. 13 ruled",
+  "B-test-340|glossary meaning=0 | J4, keyed as an asset id, made 'position J4': an asset number changed (rule); no other answer in either version does this (Codex page review)",
+  "C-test-214|search|5 right | the date 4/8/8 kept as typed is right, as No. 13 ruled for this note",
+  "C-test-214|glossary|5 right | the date 4/8/8 kept as typed is right, as No. 13 ruled for this note",
+  "B-test-397|glossary meaning=1 | 'requests resealing' for req's: No. 13 kept this same reading of this note",
+  "B-test-274|glossary meaning=1 | 'the turbo at the primary, right, front': No. 13 kept this same reading of this note",
+  "C-test-295|search meaning=1 | 'coolant roller': No. 13 kept this same reading of this note",
+  "A-test-329|search meaning=1 | the trailing REPORT left out, as in No. 13's answer it kept for this note"
+ ],
+ "_calibration": {
+  "items": {
+   "r3154": {
+    "note": "C-test-235",
+    "recorded": {
+     "meaning": false,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": false,
+     "diagnosis": false,
+     "done": false,
+     "added": false,
+     "why": "ext read as \"external\" frame, the key's extinguisher frame; a different part asserted"
+    }
+   },
+   "r9542": {
+    "note": "B-test-230",
+    "recorded": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    }
+   },
+   "r5830": {
+    "note": "A-test-148",
+    "recorded": {
+     "meaning": false,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": false,
+     "diagnosis": false,
+     "done": false,
+     "added": false,
+     "why": "F/WHEEL read as \"front wheel\" and HOSU as \"hose\" (flywheel housing); asset XH531 dropped"
+    }
+   },
+   "r2201": {
+    "note": "B-test-110",
+    "recorded": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    }
+   },
+   "r1191": {
+    "note": "B-test-215",
+    "recorded": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    }
+   },
+   "r4491": {
+    "note": "B-test-165",
+    "recorded": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    }
+   },
+   "r4361": {
+    "note": "B-test-079",
+    "recorded": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    }
+   },
+   "r7767": {
+    "note": "B-test-136",
+    "recorded": {
+     "meaning": false,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": false,
+     "diagnosis": false,
+     "done": false,
+     "added": false,
+     "why": "\"Tong\" changed to \"tongue\"; on this drill (mast raise on UF2558) tong break is a breakout tong"
+    }
+   },
+   "r9321": {
+    "note": "C-test-009",
+    "recorded": {
+     "meaning": false,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": false,
+     "diagnosis": false,
+     "done": false,
+     "added": false,
+     "why": "DMG asserted as an asset (\"Asset DMG\") instead of damage"
+    }
+   },
+   "r3112": {
+    "note": "A-test-083",
+    "recorded": {
+     "meaning": false,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": false,
+     "diagnosis": false,
+     "done": false,
+     "added": false,
+     "why": "MAKE UP tyres read as \"inflate\", a narrower, different action from assembling them"
+    }
+   },
+   "r8996": {
+    "note": "C-test-243",
+    "recorded": {
+     "meaning": false,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": false,
+     "diagnosis": false,
+     "done": false,
+     "added": false,
+     "why": "\"cutting out\" (the fault) read as the action \"Isolating\"; the note's symptom is lost"
+    }
+   },
+   "r4872": {
+    "note": "B-test-282",
+    "recorded": {
+     "meaning": false,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": false,
+     "diagnosis": false,
+     "done": false,
+     "added": false,
+     "why": "INJ read as \"injection errors\", key and note mean injector errors"
+    }
+   },
+   "r8980": {
+    "note": "C-test-246",
+    "recorded": {
+     "meaning": false,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    }
+   },
+   "r3985": {
+    "note": "A-test-310",
+    "recorded": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    }
+   },
+   "r6966": {
+    "note": "B-test-257",
+    "recorded": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    }
+   },
+   "r8625": {
+    "note": "A-test-050",
+    "recorded": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    }
+   },
+   "r4189": {
+    "note": "C-test-214",
+    "recorded": {
+     "meaning": false,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": false,
+     "diagnosis": false,
+     "done": false,
+     "added": false,
+     "why": "5H, keyed as an asset, read as 5 hours; No. 13 recorded this reading of this note as meaning lost (settled before unblinding, 21 Nov 2026; the doubt stays logged)"
+    }
+   },
+   "r1264": {
+    "note": "C-test-047",
+    "recorded": {
+     "meaning": false,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": false,
+     "diagnosis": false,
+     "done": false,
+     "added": false,
+     "why": "tremmel presented as a brand name \"Tremmel\", not read as trammel and not marked unsure"
+    }
+   },
+   "r6996": {
+    "note": "C-test-094",
+    "recorded": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    }
+   },
+   "r9015": {
+    "note": "A-test-296",
+    "recorded": {
+     "meaning": false,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": false,
+     "diagnosis": false,
+     "done": false,
+     "added": false,
+     "why": "\"TOOTH LOCK\" read as \"tooth lockout\", a different part"
+    }
+   },
+   "r5655": {
+    "note": "A-test-021",
+    "recorded": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    }
+   },
+   "r9563": {
+    "note": "A-test-328",
+    "recorded": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    }
+   },
+   "r4590": {
+    "note": "B-test-366",
+    "recorded": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    }
+   },
+   "r2219": {
+    "note": "A-test-110",
+    "recorded": {
+     "meaning": false,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": false,
+     "diagnosis": false,
+     "done": false,
+     "added": false,
+     "why": "\"Replace the converter shaft.\" asserts the shaft is replaced; the note replaces the shaft's UNIS (universal joints), which is only listed unsure"
+    }
+   },
+   "r3813": {
+    "note": "B-test-235",
+    "recorded": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    }
+   },
+   "r1758": {
+    "note": "A-test-267",
+    "recorded": {
+     "meaning": false,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": false,
+     "diagnosis": false,
+     "done": false,
+     "added": false,
+     "why": "\"TEMP REP\" is a temporary repair; \"Temperature repair\" is a confident wrong reading (the key reads temperature too, see doubt)"
+    }
+   },
+   "r7570": {
+    "note": "C-test-336",
+    "recorded": {
+     "meaning": false,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    }
+   },
+   "r3792": {
+    "note": "C-test-072",
+    "recorded": {
+     "meaning": false,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    }
+   },
+   "r5639": {
+    "note": "A-test-038",
+    "recorded": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    }
+   },
+   "r4716": {
+    "note": "B-test-093",
+    "recorded": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    }
+   },
+   "r6283": {
+    "note": "C-test-355",
+    "recorded": {
+     "meaning": false,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": false,
+     "diagnosis": false,
+     "done": false,
+     "added": false,
+     "why": "\"no\" read as \"Number\": the plain text no longer says the fans are missing or off"
+    }
+   },
+   "r2425": {
+    "note": "C-test-233",
+    "recorded": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    }
+   },
+   "r9783": {
+    "note": "A-test-053",
+    "recorded": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    }
+   },
+   "r2973": {
+    "note": "B-test-080",
+    "recorded": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    }
+   },
+   "r7206": {
+    "note": "B-test-363",
+    "recorded": {
+     "meaning": false,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": false,
+     "diagnosis": false,
+     "done": false,
+     "added": false,
+     "why": "asset number UY2435 missing from the plain text"
+    }
+   },
+   "r4389": {
+    "note": "C-test-136",
+    "recorded": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    }
+   },
+   "r5460": {
+    "note": "C-test-205",
+    "recorded": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    }
+   },
+   "r8599": {
+    "note": "C-test-084",
+    "recorded": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    }
+   },
+   "r3812": {
+    "note": "B-test-145",
+    "recorded": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    }
+   },
+   "r9002": {
+    "note": "B-test-333",
+    "recorded": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    },
+    "readers": {
+     "meaning": true,
+     "diagnosis": false,
+     "done": false,
+     "added": false
+    }
+   }
+  },
+  "meaning_agree": 37,
+  "n": 40,
+  "recorded_lost_read_lost": 14,
+  "recorded_lost": 17
+ }
+}

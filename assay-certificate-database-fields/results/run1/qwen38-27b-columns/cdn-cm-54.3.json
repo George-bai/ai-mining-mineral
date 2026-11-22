@@ -1,0 +1,27 @@
+{
+ "fields": {
+  "cu_4a_pct": 0.356,
+  "cu_4a_sd_pct": 0.015,
+  "cu_ar_pct": 0.363,
+  "cu_ar_sd_pct": 0.015,
+  "cu_h2so4_pct": null,
+  "cu_h2so4_sd_pct": null,
+  "cu_cn_pct": null,
+  "cu_cn_sd_pct": null,
+  "au_fa_ppm": 1.682,
+  "au_fa_sd_ppm": 0.137,
+  "au_ar_ppm": null,
+  "au_ar_sd_ppm": null
+ },
+ "content": "\n\n{\"cu_4a_pct\":0.356,\"cu_4a_sd_pct\":0.015,\"cu_ar_pct\":0.363,\"cu_ar_sd_pct\":0.015,\"cu_h2so4_pct\":null,\"cu_h2so4_sd_pct\":null,\"cu_cn_pct\":null,\"cu_cn_sd_pct\":null,\"au_fa_ppm\":1.682,\"au_fa_sd_ppm\":0.137,\"au_ar_ppm\":null,\"au_ar_sd_ppm\":null}",
+ "reasoning": "Let me analyze the certificate of analysis for CDN-CM-54 to fill in the CRM standards table.\n\nThe columns I need to fill are:\n- cu_4a_pct: Copper by 4 Acid digestion (percent)\n- cu_4a_sd_pct: Copper by 4 Acid digestion standard deviation (percent)\n- cu_ar_pct: Copper by Aqua Regia digestion (percent)\n- cu_ar_sd_pct: Copper by Aqua Regia digestion standard deviation (percent)\n- cu_h2so4_pct: Copper by H2SO4 digestion (percent)\n- cu_h2so4_sd_pct: Copper by H2SO4 digestion standard deviation (percent)\n- cu_cn_pct: Copper by Cyanide digestion (percent)\n- cu_cn_sd_pct: Copper by Cyanide digestion standard deviation (percent)\n- au_fa_ppm: Gold by Fire Assay (ppm)\n- au_fa_sd_ppm: Gold by Fire Assay standard deviation (ppm)\n- au_ar_ppm: Gold by Aqua Regia digestion (ppm)\n- au_ar_sd_ppm: Gold by Aqua Regia digestion standard deviation (ppm)\n\nFrom the certificate:\n\nCopper:\n- 4 Acid digestion / ICP finish: 0.356% \u00b1 0.015% (Certified value)\n- Aqua regia digestion / ICP finish: 0.363% \u00b1 0.015% (Certified value)\n\nNo H2SO4 or Cyanide digestion values for copper are listed.\n\nGold:\n- 30 g Fire Assay, ICP or AA finish: 1.682 gpt \u00b1 0.137 gpt (Certified value)\n\nNote: gpt = grams per tonne = ppm. So 1.682 gpt = 1.682 ppm.\n\nNo Aqua Regia digestion value for gold is listed.\n\nSo:\n- cu_4a_pct: 0.356\n- cu_4a_sd_pct: 0.015\n- cu_ar_pct: 0.363\n- cu_ar_sd_pct: 0.015\n- cu_h2so4_pct: null\n- cu_h2so4_sd_pct: null\n- cu_cn_pct: null\n- cu_cn_sd_pct: null\n- au_fa_ppm: 1.682\n- au_fa_sd_ppm: 0.137\n- au_ar_ppm: null\n- au_ar_sd_ppm: null\n",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 31098,
+  "total_tokens": 31771,
+  "completion_tokens": 673,
+  "prompt_tokens_details": null
+ },
+ "seconds": 22.4,
+ "model": "qwen38-27b"
+}

@@ -1,0 +1,154 @@
+flowchart TD
+    %% ===== Feed =====
+    mineOre["MINE ORE<br/>12,254,000 TONS/YR<br/>0.135% Cu<br/>0.335 OZ/TON Au<br/>0.270 OZ/TON Ag"]
+    primaryCrusher["PRIMARY CRUSHER"]
+    crushedOre["CRUSHED ORE STOCKPILE<br/>33,000 TDM (LIVE)"]
+    pebbleCrushed["PEBBLE CRUSHED"]
+
+    mineOre --> primaryCrusher
+    primaryCrusher --> crushedOre
+    crushedOre --> sagMill
+    sagScreen --> pebbleCrushed
+    pebbleCrushed --> sagMill
+
+    %% ===== Grinding =====
+    waterLime["WATER / LIME"]
+    sagMill["SAG MILL"]
+    sagScreen["SAG MILL DISCHARGE SCREEN"]
+    ballMills["BALL MILLS"]
+
+    waterLime --> sagMill
+    sagMill --> sagScreen
+    sagScreen --> ballMills
+
+    %% ===== Reagents =====
+    reagents1["REAGENTS"]
+    reagents2["REAGENTS"]
+    reagents3["REAGENTS"]
+    reagents4["REAGENTS"]
+    reagents5["REAGENTS"]
+    reagentsCland["REAGENTS<br/>CLAND WATER"]
+
+    %% ===== Flotation circuit =====
+    contactFlot["CONTACT FLOTATION"]
+    rougherFlot["ROUGHER FLOTATION"]
+    reagents1 --> contactFlot
+    ballMills --> contactFlot
+    contactFlot --> rougherFlot
+    reagents2 --> rougherFlot
+
+    %% ===== Fibres / deslime =====
+    flocculant["FLOCCULANT"]
+    fibresThickener["FIBRES THICKENER"]
+    deslime["DESLIME CYCLONES"]
+    cyanide["CYANIDE"]
+    trash["TRASH"]
+
+    rougherFlot --> fibresThickener
+    flocculant --> fibresThickener
+    fibresThickener --> deslime
+    cyanide --> deslime
+    deslime --> trash
+    deslime --> leach
+
+    %% ===== Leach / carbon circuit =====
+    leach["LEACH"]
+    dip["DIP"]
+    carbonBin["CARBON BIN"]
+    carosAcid["CARO'S ACID"]
+    carosAcid --> carbonBin
+    leach --> dip
+    dip --> carbonBin
+    carbonBin --> tailingsPond
+    carbonBin --> solidCarbon["(SOLID) CARBON"]
+    carbonBin --> liquidCarbon["(LIQUID) CARBON"]
+    liquidCarbon --> heapLeachCarbon["HEAP LEACH CARBON"]
+    solidCarbon --> acidWash["ACID WASH"]
+    acidWash --> strip["STRIP"]
+    strip --> regeneration["REGENERATION"]
+    regeneration --> carbonToHeap["CARBON TO HEAP LEACH"]
+
+    %% ===== Water / reclaims =====
+    mineWater["MINE WATER"]
+    limeIn["LIME"]
+    treatedReclaim["TREATED RECLAIM"]
+    millWaterReclaim["MILL WATER RECLAIM"]
+    millWaterDistn["MILL WATER DIST/N"]
+    freshWater["FRESH WATER"]
+    reclaimWater["RECLAIM WATER"]
+    chloridePlume["CHLORIDE PLUME"]
+    tailingsPond["TAILINGS POND"]
+
+    mineWater --> fibresThickener
+    limeIn --> fibresThickener
+    treatedReclaim --> fibresThickener
+    millWaterReclaim --> millWaterDistn
+    millWaterDistn --> fibresThickener
+    freshWater --> deslime
+    reagentsCland --> leach
+    tailingsPond --> reclaimWater
+    tailingsPond --> chloridePlume
+
+    %% ===== Gravity circuit =====
+    primaryGravity["PRIMARY GRAVITY"]
+    flotationGravity["FLOTATION GRAVITY"]
+    cleanerGravity["CLEANER GRAVITY (FUTURE)"]
+    primaryCleanerColumn["PRIMARY CLEANER COLUMN"]
+    residue["RESIDUE"]
+    res["RES"]
+    intensiveOxidation["INTENSIVE OXIDATION"]
+
+    sagScreen --> primaryGravity
+    primaryGravity --> flotationGravity
+    flotationGravity --> cleanerGravity
+    primaryGravity --> primaryCleanerColumn
+    primaryGravity --> residue
+    residue --> res
+    res --> intensiveOxidation
+
+    %% ===== Cleaner / scavenger flotation =====
+    regrind["REGRIND"]
+    firstCleanerFlot["1st CLEANER FLOTATION"]
+    cleanerScavFlot["CLEANER/SCAVENGER FLOTATION"]
+    limeReagents["LIME / REAGENTS"]
+    reagents6["REAGENTS"]
+    secondCleanerCond["2ND CLEANER CONDITIONING TANK"]
+
+    primaryCleanerColumn --> regrind
+    regrind --> firstCleanerFlot
+    reagents3 --> firstCleanerFlot
+    firstCleanerFlot --> cleanerScavFlot
+    reagents4 --> cleanerScavFlot
+    limeReagents --> cleanerScavFlot
+    cleanerScavFlot --> secondCleanerCond
+    reagents5 --> secondCleanerCond
+
+    %% ===== Magnetic separation =====
+    magneticConcGrav["MAGNETIC CONCENTRATE GRAVITY SEPARATOR"]
+    magneticSeparation["MAGNETIC SEPARATION"]
+
+    secondCleanerCond --> magneticConcGrav
+    magneticConcGrav --> magneticSeparation
+
+    %% ===== Solution tanks / refining =====
+    barrenSolution["BARREN SOLUTION TANK"]
+    pregnantSolution["PREGNANT SOLUTION TANK"]
+    preciousMetal["PRECIOUS METAL<br/>EW SLUDGE<br/>TO REFINERY<br/>231,800 LB/YR Au<br/>422,800 OZ/YR Ag"]
+
+    regeneration --> barrenSolution
+    barrenSolution --> pregnantSolution
+    pregnantSolution --> preciousMetal
+
+    %% ===== Copper concentrate circuit =====
+    copperThickener["COPPER CONCENTRATE THICKENER"]
+    copperFilter["COPPER CONCENTRATE FILTER"]
+    copperStockpile["COPPER CONCENTRATE STOCKPILE<br/>10,000 TONS (COVERED)"]
+    concentrateMarket["CONCENTRATE TO MARKET<br/>38,880 TONS/YR (AVG @ 25% Cu)<br/>19,934,000 LB/YR Cu<br/>150,000 OZ/YR Au<br/>1,418,100 OZ/YR Ag"]
+    secondCleanerScav["2ND CLEANER SCAVENGER"]
+
+    magneticSeparation --> copperThickener
+    copperThickener --> copperFilter
+    copperFilter --> copperStockpile
+    copperStockpile --> concentrateMarket
+    secondCleanerCond --> secondCleanerScav
+    secondCleanerScav --> copperThickener

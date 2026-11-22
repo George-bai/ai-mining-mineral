@@ -1,0 +1,18 @@
+{
+ "id": "B-test-220",
+ "condition": "search",
+ "note": "RW7142 Touch screen u/s",
+ "model": "qwen38-27b",
+ "prompt": "You help a maintenance planner at an Australian mine site read work orders. Work orders are short notes typed in a hurry by maintainers and planners, full of the site's shorthand: abbreviations, misspellings and words run together. Codes such as AB123 or XY45 are asset numbers.\n\nRewrite the work order below in plain English for a reader who does not know the site's shorthand.\n\n- Expand every abbreviation and correct every misspelling. Choose each meaning from the note's context.\n- Keep to what the note says. Do not add a cause, a diagnosis, a fault or an outcome that the note does not state.\n- Keep the note's tense. A request for work stays a request: say that work was done only if the note says so.\n- Keep the note's asset numbers, quantities, positions and timings as they are.\n- If you cannot read a piece of shorthand with confidence, keep it as written in \"plain\", so the reader can see it is unresolved, and list it under \"unsure\".\n\nEarlier work orders from this site, found by searching its own records, and what each meant. The same shorthand can mean something else at another site.\n\nRW7142 Rear Air Con U/S = RW7142 rear air conditioner unserviceable\nRW7142 cab riser pressuriser u/s = RW7142 cabin riser pressuriser unserviceable\nRW7142 500hr Service - Out/stding PO's = RW7142 500 hour service - outstanding POs\nRW7142 Dash broken = RW7142 dash broken\nLD3192 Backlight on dash U/S = LD3192 backlight on dash unserviceable\nladder u/s = ladder unserviceable\nMain batteries U/S = main batteries unserviceable\nMV3594 air/con u/s when stationary = MV3594 air conditioner unserviceable when stationary\nTY8010 Replace u/s lights = TY8010 replace unserviceable lights\nRear Rotating Beacon U/S = rear rotating beacon unserviceable\nAnswer with a JSON object only, with three keys:\n- \"plain\": the work order in plain English.\n- \"terms\": one item for each piece of shorthand you expanded or corrected: {\"written\": \"<as written in the note>\", \"means\": \"<what it stands for>\"}.\n- \"unsure\": the shorthand you could not read with confidence, as written in the note.\n\nWork order: RW7142 Touch screen u/s\n",
+ "started": "2026-11-21T16:20:36+1000",
+ "content": "\n\n{\n  \"plain\": \"RW7142 touch screen unserviceable\",\n  \"terms\": [\n    {\"written\": \"u/s\", \"means\": \"unserviceable\"}\n  ],\n  \"unsure\": []\n}",
+ "reasoning": "The user wants me to rewrite a work order in plain English. Let me analyze the work order:\n\n\"RW7142 Touch screen u/s\"\n\nLet me break this down:\n- RW7142: This is an asset number (from the earlier examples, RW7142 is an asset)\n- Touch screen: This is clear, no abbreviation\n- u/s: From the earlier examples, \"u/s\" means \"unserviceable\" (e.g., \"Rear Air Con U/S = RW7142 rear air conditioner unserviceable\")\n\nSo the plain English version would be: \"RW7142 touch screen unserviceable\"\n\nLet me check:\n- Abbreviations to expand: \"u/s\" → \"unserviceable\"\n- Misspellings: \"Touch screen\" - this is fine, it's a standard term. No misspelling here.\n- Keep asset number: RW7142\n- Keep tense: This is a statement of condition (unserviceable), not a request for work. So I keep it as a statement.\n- No cause, diagnosis, fault, or outcome added.\n\nTerms:\n- \"u/s\" means \"unserviceable\"\n\nUnsure: Nothing I can't read with confidence.\n\nLet me format the JSON response.\n",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 563,
+  "total_tokens": 902,
+  "completion_tokens": 339,
+  "prompt_tokens_details": null
+ },
+ "seconds": 5.6
+}

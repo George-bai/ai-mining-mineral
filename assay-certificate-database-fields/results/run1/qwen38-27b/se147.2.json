@@ -1,0 +1,27 @@
+{
+ "fields": {
+  "cu_4a_pct": null,
+  "cu_4a_sd_pct": null,
+  "cu_ar_pct": null,
+  "cu_ar_sd_pct": null,
+  "cu_h2so4_pct": null,
+  "cu_h2so4_sd_pct": null,
+  "cu_cn_pct": null,
+  "cu_cn_sd_pct": null,
+  "au_fa_ppm": 0.623,
+  "au_fa_sd_ppm": 0.005,
+  "au_ar_ppm": null,
+  "au_ar_sd_ppm": null
+ },
+ "content": "\n\n{\"cu_4a_pct\":null,\"cu_4a_sd_pct\":null,\"cu_ar_pct\":null,\"cu_ar_sd_pct\":null,\"cu_h2so4_pct\":null,\"cu_h2so4_sd_pct\":null,\"cu_cn_pct\":null,\"cu_cn_sd_pct\":null,\"au_fa_ppm\":0.623,\"au_fa_sd_ppm\":0.005,\"au_ar_ppm\":null,\"au_ar_sd_ppm\":null}",
+ "reasoning": "The certificate is for CRM SE147 \u2013 Gold Au. Let me analyze what's reported:\n\n1. The certified value is for Gold (Au) only: 0.623 ppm with expanded uncertainty \u00b10.01 at k=2.\n\n2. The method used for the certified value: The certificate states \"Gold analysis was conducted by all participating laboratories using fire assay followed by either gravimetric or instrument finish (AAS or ICP).\" The homogeneity assessment used \"fire assay on 30g portions followed by an ICP-AES finish.\"\n\nSo the certified value is for gold by fire assay. The field `au_fa_ppm` is \"Gold by lead-collection fire assay (any finish)\". The certificate says fire assay with various finishes (gravimetric, AAS, ICP). The field says \"any finish\" so this matches.\n\nNow for the 1SD: The certificate gives expanded uncertainty U = \u00b10.01 at k=2. So 1SD = 0.01/2 = 0.005 ppm.\n\nWait, let me re-read the rules: \"The 1SD fields take one standard deviation. If the certificate gives 2SD, halve it; never use a confidence or tolerance interval.\"\n\nThe expanded uncertainty U = \u00b10.01 at k=2. This is essentially 2 standard deviations (expanded uncertainty = k \u00d7 standard uncertainty, and k=2 means it's 2SD). So 1SD = 0.01/2 = 0.005 ppm.\n\nNow let me check each field:\n\n- `cu_4a_pct`: No copper by four-acid digestion reported. \u2192 null\n- `cu_4a_sd_pct`: No copper by four-acid digestion. \u2192 null\n- `cu_ar_pct`: No copper by aqua regia. \u2192 null\n- `cu_ar_sd_pct`: No copper by aqua regia. \u2192 null\n- `cu_h2so4_pct`: No copper by H2SO4 leach. \u2192 null\n- `cu_h2so4_sd_pct`: No copper by H2SO4 leach. \u2192 null\n- `cu_cn_pct`: No copper by cyanide leach. \u2192 null\n- `cu_cn_sd_pct`: No copper by cyanide leach. \u2192 null\n- `au_fa_ppm`: Gold by fire assay (any finish): 0.623 ppm. This is certified. \u2192 0.623\n- `au_fa_sd_ppm`: 1SD for fire assay gold: U = 0.01 at k=2, so 1SD = 0.01/2 = 0.005 \u2192 0.005\n- `au_ar_ppm`: Gold by aqua regia: Not reported. \u2192 null\n- `au_ar_sd_ppm`: Gold by aqua regia: Not reported. \u2192 null\n\nThe certificate only reports gold by fire assay. No copper values are reported at all. No aqua regia gold is reported.\n\nLet me double-check: The chemical composition table lists elements like SiO2, Al2O3, etc. but these are marked as \"Uncertified Values\" from Borate Fusion XRF. No copper is listed there either.\n\nSo my answer:\n- cu_4a_pct: null\n- cu_4a_sd_pct: null\n- cu_ar_pct: null\n- cu_ar_sd_pct: null\n- cu_h2so4_pct: null\n- cu_h2so4_sd_pct: null\n- cu_cn_pct: null\n- cu_cn_sd_pct: null\n- au_fa_ppm: 0.623\n- au_fa_sd_ppm: 0.005\n- au_ar_ppm: null\n- au_ar_sd_ppm: null\n",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 5129,
+  "total_tokens": 6050,
+  "completion_tokens": 921,
+  "prompt_tokens_details": null
+ },
+ "seconds": 15.4,
+ "model": "qwen38-27b"
+}

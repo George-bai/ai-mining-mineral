@@ -1,0 +1,864 @@
+{
+ "items_found": 72,
+ "items_total": 76,
+ "extra_boxes": 4,
+ "streams_found": 52,
+ "streams_total": 90,
+ "lines_right": 52,
+ "lines_wrong": 27,
+ "lines_reversed": 5,
+ "loops_found": 0,
+ "loops_total": 12,
+ "missing_streams": [
+  [
+   "acidulation_tanks",
+   "to_atm_acid"
+  ],
+  [
+   "air_tm",
+   "tower_mill"
+  ],
+  [
+   "autoclave",
+   "scrubber"
+  ],
+  [
+   "carbon_tank",
+   "cil_tanks"
+  ],
+  [
+   "cil_screen",
+   "carbon_tank"
+  ],
+  [
+   "coolers",
+   "cooling_tower"
+  ],
+  [
+   "coolers",
+   "neutralization_tanks"
+  ],
+  [
+   "cooling_tower",
+   "coolers"
+  ],
+  [
+   "ew_cells",
+   "barren_tank"
+  ],
+  [
+   "flash_vessels",
+   "slurry_heaters"
+  ],
+  [
+   "heat_exchanger",
+   "heater"
+  ],
+  [
+   "heater",
+   "strip_vessel"
+  ],
+  [
+   "jaw_crusher",
+   "ox_stockpile"
+  ],
+  [
+   "kiln_feed_screen",
+   "carbon_fines"
+  ],
+  [
+   "loaded_carbon_screen",
+   "cil_tanks"
+  ],
+  [
+   "ox_ball_mill",
+   "ox_cyclones"
+  ],
+  [
+   "ox_cyclones",
+   "ox_trash_screen"
+  ],
+  [
+   "ox_screen",
+   "ox_sag_mill"
+  ],
+  [
+   "ox_trash_screen",
+   "ox_thickener"
+  ],
+  [
+   "primary_ball_mill",
+   "ref_cyclones_1"
+  ],
+  [
+   "ref_cyclones_1",
+   "ref_trash_screen"
+  ],
+  [
+   "ref_cyclones_2",
+   "ref_thickener"
+  ],
+  [
+   "ref_cyclones_2",
+   "secondary_ball_mill"
+  ],
+  [
+   "ref_sag_mill",
+   "ref_screen"
+  ],
+  [
+   "ref_screen",
+   "ref_cyclones_1"
+  ],
+  [
+   "ref_screen",
+   "ref_sag_mill"
+  ],
+  [
+   "ref_trash_screen",
+   "ref_cyclones_2"
+  ],
+  [
+   "return_water_ox",
+   "ox_screen"
+  ],
+  [
+   "return_water_ref",
+   "ref_cyclones_2"
+  ],
+  [
+   "return_water_ref",
+   "ref_screen"
+  ],
+  [
+   "scrubber",
+   "ref_thickener"
+  ],
+  [
+   "scrubber",
+   "to_atm_scrubber"
+  ],
+  [
+   "slurry_heaters",
+   "scrubber"
+  ],
+  [
+   "steam_plant",
+   "autoclave"
+  ],
+  [
+   "steam_plant",
+   "to_atm_steam"
+  ],
+  [
+   "strip_vessel",
+   "kiln_feed_screen"
+  ],
+  [
+   "tailings",
+   "reclaim_out"
+  ],
+  [
+   "tower_mill",
+   "neutralization_tanks"
+  ]
+ ],
+ "wrong_lines": [
+  [
+   [
+    "autoclave"
+   ],
+   [
+    "steam_plant"
+   ],
+   [
+    [
+     "autoclave",
+     "steam_gen_plant"
+    ]
+   ]
+  ],
+  [
+   [
+    "autoclave"
+   ],
+   [
+    "to_atm_acid",
+    "to_atm_scrubber",
+    "to_atm_steam"
+   ],
+   [
+    [
+     "autoclave",
+     "to_atmosphere_2"
+    ]
+   ]
+  ],
+  [
+   [
+    "barren_tank"
+   ],
+   [
+    "retort"
+   ],
+   [
+    [
+     "barren_sal_tank",
+     "roast"
+    ]
+   ]
+  ],
+  [
+   [
+    "carbon_tank"
+   ],
+   [
+    "heater"
+   ],
+   [
+    [
+     "carbon_tank",
+     "heater_cs"
+    ]
+   ]
+  ],
+  [
+   [
+    "coolers",
+    "heat_exchanger"
+   ],
+   [
+    "strip_vessel"
+   ],
+   [
+    [
+     "heat_exchanger",
+     "carbon_strip_vessel"
+    ]
+   ]
+  ],
+  [
+   [
+    "cooling_tower"
+   ],
+   [
+    "surge_tank_cooling"
+   ],
+   [
+    [
+     "cooling_tower",
+     "surge_tank_po"
+    ]
+   ]
+  ],
+  [
+   [
+    "heater"
+   ],
+   [
+    "coolers",
+    "heat_exchanger"
+   ],
+   [
+    [
+     "heater_cs",
+     "heat_exchanger"
+    ]
+   ]
+  ],
+  [
+   [
+    "jaw_crusher"
+   ],
+   [
+    "ox_sag_hopper"
+   ],
+   [
+    [
+     "jaw_crusher",
+     "hopper_oxide_grind"
+    ]
+   ]
+  ],
+  [
+   [
+    "ox_ball_mill"
+   ],
+   [
+    "ox_thickener"
+   ],
+   [
+    [
+     "ball_mill_oxide",
+     "oxide_thickener"
+    ]
+   ]
+  ],
+  [
+   [
+    "ox_cyclones"
+   ],
+   [
+    "ox_thickener"
+   ],
+   [
+    [
+     "cycloner_oxide",
+     "oxide_thickener"
+    ]
+   ]
+  ],
+  [
+   [
+    "ox_sag_mill"
+   ],
+   [
+    "ox_cyclones"
+   ],
+   [
+    [
+     "sag_mill_oxide",
+     "cycloner_oxide"
+    ]
+   ]
+  ],
+  [
+   [
+    "pregnant_tank"
+   ],
+   [
+    "barren_tank"
+   ],
+   [
+    [
+     "pregnant_sal_tank",
+     "barren_sal_tank"
+    ]
+   ]
+  ],
+  [
+   [
+    "pregnant_tank"
+   ],
+   [
+    "retort"
+   ],
+   [
+    [
+     "pregnant_sal_tank",
+     "roast"
+    ]
+   ]
+  ],
+  [
+   [
+    "primary_ball_mill"
+   ],
+   [
+    "ref_thickener"
+   ],
+   [
+    [
+     "primary_ball_mill",
+     "refractory_thickener"
+    ]
+   ]
+  ],
+  [
+   [
+    "primary_ball_mill"
+   ],
+   [
+    "secondary_ball_mill"
+   ],
+   [
+    [
+     "primary_ball_mill",
+     "secondary_ball_mill"
+    ]
+   ]
+  ],
+  [
+   [
+    "reclaim_out"
+   ],
+   [
+    "tailings"
+   ],
+   [
+    [
+     "reclaim_water",
+     "tailings"
+    ]
+   ]
+  ],
+  [
+   [
+    "ref_sag_mill"
+   ],
+   [
+    "ref_cyclones_1"
+   ],
+   [
+    [
+     "sag_mill_refractory",
+     "cycloner_refractory"
+    ]
+   ]
+  ],
+  [
+   [
+    "ref_trash_screen"
+   ],
+   [
+    "ref_thickener"
+   ],
+   [
+    [
+     "trash_screen_refractory",
+     "refractory_thickener"
+    ]
+   ]
+  ],
+  [
+   [
+    "ref_trash_screen"
+   ],
+   [
+    "secondary_ball_mill"
+   ],
+   [
+    [
+     "trash_screen_refractory",
+     "secondary_ball_mill"
+    ]
+   ]
+  ],
+  [
+   [
+    "scrubber"
+   ],
+   [
+    "cooling_tower"
+   ],
+   [
+    [
+     "vent_gas_scrubber",
+     "cooling_tower"
+    ]
+   ]
+  ],
+  [
+   [
+    "strip_vessel"
+   ],
+   [
+    "kiln"
+   ],
+   [
+    [
+     "carbon_strip_vessel",
+     "reactivation_kiln"
+    ]
+   ]
+  ],
+  [
+   [
+    "sulfuric_acid"
+   ],
+   [
+    "to_atm_acid",
+    "to_atm_scrubber",
+    "to_atm_steam"
+   ],
+   [
+    [
+     "sulfuric_acid",
+     "to_atmosphere_1"
+    ]
+   ]
+  ],
+  [
+   [
+    "sulfuric_acid"
+   ],
+   [
+    "vent_ew",
+    "vent_lime"
+   ],
+   [
+    [
+     "sulfuric_acid",
+     "vent_sulfuric"
+    ]
+   ]
+  ],
+  [
+   [
+    "surge_tank_carbon"
+   ],
+   [
+    "carbon_tank"
+   ],
+   [
+    [
+     "surge_tank_cil",
+     "carbon_tank"
+    ]
+   ]
+  ],
+  [
+   [
+    "tower_mill"
+   ],
+   [
+    "cil_tanks"
+   ],
+   [
+    [
+     "tower_mill",
+     "cil_tanker"
+    ]
+   ]
+  ],
+  [
+   [
+    "water_return_ox"
+   ],
+   [
+    "return_water_ox",
+    "return_water_ref",
+    "return_water_tm"
+   ],
+   [
+    [
+     "water_return_oxide",
+     "return_water"
+    ]
+   ]
+  ],
+  [
+   [
+    "water_return_ref"
+   ],
+   [
+    "return_water_ox",
+    "return_water_ref",
+    "return_water_tm"
+   ],
+   [
+    [
+     "water_return_refractory",
+     "return_water_2"
+    ]
+   ]
+  ]
+ ],
+ "loops": [
+  {
+   "name": "oxide SAG screen oversize back to the mill",
+   "found": false
+  },
+  {
+   "name": "oxide ball mill in closed circuit with cyclones",
+   "found": false
+  },
+  {
+   "name": "refractory SAG screen oversize back to the mill",
+   "found": false
+  },
+  {
+   "name": "primary ball mill in closed circuit with cyclones",
+   "found": false
+  },
+  {
+   "name": "secondary ball mill in closed circuit with cyclones",
+   "found": false
+  },
+  {
+   "name": "flashed steam heats the autoclave feed",
+   "found": false
+  },
+  {
+   "name": "cooling water circuit",
+   "found": false
+  },
+  {
+   "name": "loaded carbon screen undersize back to CIL",
+   "found": false
+  },
+  {
+   "name": "carbon loop",
+   "found": false
+  },
+  {
+   "name": "CIL tailings screen carbon back to CIL",
+   "found": false
+  },
+  {
+   "name": "strip solution loop",
+   "found": false
+  },
+  {
+   "name": "Scrubber water returns to the refractory thickener and pressure-oxidation feed",
+   "found": false
+  }
+ ],
+ "missing_items": [
+  "ox_stockpile",
+  "ox_trash_screen",
+  "ref_cyclones_2",
+  "ref_screen"
+ ],
+ "pairing": {
+  "rom_oxide_ore": [
+   "rom_oxide_ore"
+  ],
+  "hopper_oxide": [
+   "ox_hopper"
+  ],
+  "jaw_crusher": [
+   "jaw_crusher"
+  ],
+  "trash_screen_oxide": [],
+  "radial_stacker": [
+   "radial_stacker"
+  ],
+  "rom_refractory_ore": [
+   "rom_refractory_ore"
+  ],
+  "ore_blend_stacker": [
+   "ore_blend_stockpiles"
+  ],
+  "hopper_oxide_grind": [
+   "ox_sag_hopper"
+  ],
+  "sag_mill_oxide": [
+   "ox_sag_mill"
+  ],
+  "screen_oxide": [
+   "ox_screen"
+  ],
+  "sump_oxide": [
+   "ox_sump"
+  ],
+  "cycloner_oxide": [
+   "ox_cyclones"
+  ],
+  "ball_mill_oxide": [
+   "ox_ball_mill"
+  ],
+  "oxide_thickener": [
+   "ox_thickener"
+  ],
+  "return_water": [
+   "return_water_ox",
+   "return_water_ref",
+   "return_water_tm"
+  ],
+  "water_return_oxide": [
+   "water_return_ox"
+  ],
+  "front_end_loader": [
+   "front_end_loader"
+  ],
+  "hopper_refractory": [
+   "ref_hopper"
+  ],
+  "sag_mill_refractory": [
+   "ref_sag_mill"
+  ],
+  "cycloner_refractory": [
+   "ref_cyclones_1"
+  ],
+  "primary_ball_mill": [
+   "primary_ball_mill"
+  ],
+  "secondary_ball_mill": [
+   "secondary_ball_mill"
+  ],
+  "trash_screen_refractory": [
+   "ref_trash_screen"
+  ],
+  "sump_refractory": [
+   "ref_sump_1"
+  ],
+  "refractory_thickener": [
+   "ref_thickener"
+  ],
+  "return_water_2": [
+   "return_water_ox",
+   "return_water_ref",
+   "return_water_tm"
+  ],
+  "water_return_refractory": [
+   "water_return_ref"
+  ],
+  "sulfuric_acid": [
+   "sulfuric_acid"
+  ],
+  "air_2": [
+   "air_acid",
+   "air_cil",
+   "air_tm"
+  ],
+  "agitation_storage_tanker": [
+   "acidulation_tanks"
+  ],
+  "slurry_heater": [
+   "slurry_heaters"
+  ],
+  "autoclave": [
+   "autoclave"
+  ],
+  "oxygen": [
+   "oxygen"
+  ],
+  "natural_gas": [
+   "natural_gas"
+  ],
+  "steam_gen_plant": [
+   "steam_plant"
+  ],
+  "flash_vessel": [
+   "flash_vessels"
+  ],
+  "vessel_below_flash": [
+   "flash_vessels"
+  ],
+  "to_atmosphere_2": [
+   "to_atm_acid",
+   "to_atm_scrubber",
+   "to_atm_steam"
+  ],
+  "cooling_water": [
+   "cooling_water_ac"
+  ],
+  "vent_sulfuric": [
+   "vent_ew",
+   "vent_lime"
+  ],
+  "water": [
+   "water_scrubber"
+  ],
+  "vent_gas_scrubber": [
+   "scrubber"
+  ],
+  "cooling_tower": [
+   "cooling_tower"
+  ],
+  "refractory_slurry_cooling": [],
+  "surge_tank_po": [
+   "surge_tank_cooling"
+  ],
+  "lime": [],
+  "lime_silo": [
+   "lime_silo"
+  ],
+  "return_water_3": [
+   "return_water_ox",
+   "return_water_ref",
+   "return_water_tm"
+  ],
+  "neutralization_tanker": [
+   "neutralization_tanks"
+  ],
+  "tower_mill": [
+   "tower_mill"
+  ],
+  "air": [
+   "air_acid",
+   "air_cil",
+   "air_tm"
+  ],
+  "cil_tanker": [
+   "cil_tanks"
+  ],
+  "cil_screen": [
+   "cil_screen"
+  ],
+  "sub_aerial_depatcher": [],
+  "reclaim_water": [
+   "reclaim_out"
+  ],
+  "tailings": [
+   "tailings"
+  ],
+  "loaded_carbon_screen": [
+   "loaded_carbon_screen"
+  ],
+  "surge_tank_cil": [
+   "surge_tank_carbon"
+  ],
+  "vent_lime_silo": [
+   "vent_ew",
+   "vent_lime"
+  ],
+  "nitric_acid": [
+   "nitric_acid"
+  ],
+  "acid_wash_tank": [
+   "acid_wash_tank"
+  ],
+  "carbon_strip_vessel": [
+   "strip_vessel"
+  ],
+  "reactivation_kiln": [
+   "kiln"
+  ],
+  "kiln_feed_screen": [
+   "kiln_feed_screen"
+  ],
+  "quench_tank": [
+   "quench_tank"
+  ],
+  "carbon_wash_screen": [
+   "carbon_wash_screen"
+  ],
+  "carbon_fines_tail_filter": [
+   "carbon_fines"
+  ],
+  "carbon_tank": [
+   "carbon_tank"
+  ],
+  "heater_cs": [
+   "heater"
+  ],
+  "heat_exchanger": [
+   "coolers",
+   "heat_exchanger"
+  ],
+  "caustic": [
+   "caustic"
+  ],
+  "barren_sal_tank": [
+   "barren_tank"
+  ],
+  "pregnant_sal_tank": [
+   "pregnant_tank"
+  ],
+  "electrowinning_cell": [
+   "ew_cells"
+  ],
+  "vent_ew": [
+   "vent_ew",
+   "vent_lime"
+  ],
+  "roast": [
+   "retort"
+  ],
+  "furnace": [
+   "furnace"
+  ],
+  "gold_bullion": [
+   "gold_bullion"
+  ],
+  "to_atmosphere_1": [
+   "to_atm_acid",
+   "to_atm_scrubber",
+   "to_atm_steam"
+  ]
+ },
+ "checked_by_hand": "Claude, 16 Nov 2026",
+ "hand_pairings": 5
+}

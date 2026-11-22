@@ -1,0 +1,18 @@
+{
+ "id": "C-test-223",
+ "condition": "search",
+ "note": "Cgantry chain broken",
+ "model": "qwen38-27b",
+ "prompt": "You help a maintenance planner at an Australian mine site read work orders. Work orders are short notes typed in a hurry by maintainers and planners, full of the site's shorthand: abbreviations, misspellings and words run together. Codes such as AB123 or XY45 are asset numbers.\n\nRewrite the work order below in plain English for a reader who does not know the site's shorthand.\n\n- Expand every abbreviation and correct every misspelling. Choose each meaning from the note's context.\n- Keep to what the note says. Do not add a cause, a diagnosis, a fault or an outcome that the note does not state.\n- Keep the note's tense. A request for work stays a request: say that work was done only if the note says so.\n- Keep the note's asset numbers, quantities, positions and timings as they are.\n- If you cannot read a piece of shorthand with confidence, keep it as written in \"plain\", so the reader can see it is unresolved, and list it under \"unsure\".\n\nEarlier work orders from this site, found by searching its own records, and what each meant. The same shorthand can mean something else at another site.\n\nbroken chain on cable tower = broken chain on cable tower\nR/H drag chain failure = right hand drag chain failure\npear link broken on rhs chain = pear link broken on right hand side chain\nstrong backs and bolt broken-LH outer = strong backs and bolt broken - left hand outer\nhoist chain broken = hoist chain broken\nfigure 8 on the dump chain broken = figure of eight on the dump chain broken\nchain snapped = chain snapped\npear link broken on dragchain = pear link broken on dragchain\nBroken pair link = broken pair link\nchain broken on the handrail = chain broken on the handrail\nAnswer with a JSON object only, with three keys:\n- \"plain\": the work order in plain English.\n- \"terms\": one item for each piece of shorthand you expanded or corrected: {\"written\": \"<as written in the note>\", \"means\": \"<what it stands for>\"}.\n- \"unsure\": the shorthand you could not read with confidence, as written in the note.\n\nWork order: Cgantry chain broken\n",
+ "started": "2026-11-21T16:46:12+1000",
+ "content": "\n\n{\"plain\": \"Gantry chain broken\", \"terms\": [{\"written\": \"Cgantry\", \"means\": \"Gantry\"}], \"unsure\": []}",
+ "reasoning": "Let me analyze this work order: \"Cgantry chain broken\"\n\nLooking at this:\n- \"Cgantry\" - This is clearly a misspelling/typo of \"Gantry\". The letters are \"C\" + \"gantry\" run together or \"G\" mistyped as \"C\". In context, a \"gantry chain\" makes sense - it's a chain on a gantry structure.\n- \"chain broken\" - straightforward, the chain is broken.\n\nSo the plain English version would be: \"Gantry chain broken\"\n\nLet me check the earlier work orders for context:\n- They all deal with chains breaking on various equipment (cable tower, drag chain, hoist chain, dump chain, handrail)\n- \"Gantry chain broken\" fits the pattern of these work orders\n\nThe misspelling \"Cgantry\" → \"Gantry\" - this is a clear typo where \"G\" was typed as \"C\" (adjacent keys on keyboard) or the \"G\" was dropped and a \"C\" was added.\n\nLet me construct the JSON:\n\n- \"plain\": \"Gantry chain broken\"\n- \"terms\": [{\"written\": \"Cgantry\", \"means\": \"Gantry\"}]\n- \"unsure\": []\n\nThis is straightforward. The note says the gantry chain is broken - it's a statement of a fault, not a request for work. I'll keep the tense as is.\n",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 480,
+  "total_tokens": 825,
+  "completion_tokens": 345,
+  "prompt_tokens_details": null
+ },
+ "seconds": 5.7
+}

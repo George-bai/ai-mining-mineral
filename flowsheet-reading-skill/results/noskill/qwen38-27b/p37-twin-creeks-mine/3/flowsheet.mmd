@@ -1,0 +1,86 @@
+flowchart TB
+    %% ================= Oxide Crushing =================
+    ROMOxideOre["ROM Oxide Ore"] --> HopperOC["Hopper"]
+    HopperOC --> JawCrusher["Jaw Crusher"]
+    JawCrusher --> TrashScreenOC["Trash Screen"]
+    TrashScreenOC --> RadialStacker["Radial Stacker"]
+    ROMRefractoryOre["ROM Refractory Ore"] --> OreBlendStacker["Ore Blend & Stacker"]
+    RadialStacker --> HopperOG["Hopper"]
+
+    %% ================= Oxide Grinding =================
+    HopperOG --> SAGMillOG["SAG Mill"]
+    ReturnWaterOG["Return Water"] --> SAGMillOG
+    SAGMillOG --> CyclonerOG["Cycloner"]
+    CyclonerOG --> SAGMillOG
+    SAGMillOG --> ScreenOG["Screen"]
+    ScreenOG --> BallMill["Ball Mill"]
+    BallMill --> OxideThickener["Oxide Thickener"]
+    OxideThickener --> WaterReturnOxide["Water Return to Oxide Circuit"]
+    WaterReturnOxide --> HopperOG
+
+    %% ================= Refractory Grinding =================
+    FrontEndLoader["Front End Loader"] --> HopperRG["Hopper"]
+    HopperRG --> SAGMillRG["SAG Mill"]
+    SAGMillRG --> CyclonerRG["Cycloner"]
+    CyclonerRG --> PrimaryBallMill["Primary Ball Mill"]
+    PrimaryBallMill --> SecondaryBallMill["Secondary Ball Mill"]
+    SecondaryBallMill --> CyclonerSBM["Cycloner"]
+    CyclonerSBM --> SecondaryBallMill
+    SecondaryBallMill --> TrashScreenRG["Trash Screen"]
+    TrashScreenRG --> RefractoryThickener["Refractory Thickener"]
+    RefractoryThickener --> WaterReturnRefractory["Water Return to Refractory Circuit"]
+    WaterReturnRefractory --> HopperRG
+
+    %% ================= Pressure Oxidation =================
+    RefractoryThickener --> AcidulationTanker["Acidulation Slurry Tanker (3)"]
+    SulfuricAcid["Sulfuric Acid"] --> AcidulationTanker
+    Air["Air"] --> AcidulationTanker
+    AcidulationTanker --> VentAT["Vent"]
+    AcidulationTanker --> SlurryHeater["2 Stage Slurry Heater (2)"]
+    SlurryHeater --> ToAtmosphere1["To Atmosphere"]
+    SlurryHeater --> Autoclave["4 Stage Autoclave"]
+    Oxygen["Oxygen"] --> Autoclave
+    Steam["Steam"] --> Autoclave
+    Autoclave --> CoolingWater["Cooling Water"]
+    Autoclave --> RefractorySlurryCooling["Refractory Slurry Cooling"]
+    RefractorySlurryCooling --> CoolingTower["Cooling Tower"]
+    CoolingTower --> SurgeTankR["Surge Tank"]
+    NaturalGas["Natural Gas"] --> SteamGenPlant["Steam Generation Plant"]
+    SteamGenPlant --> Steam
+    WaterVGS["Water"] --> VentGasScrubber["Vent Gas Scrubber (2)"]
+    VentGasScrubber --> ToAtmosphere2["To Atmosphere"]
+
+    %% ================= Carbon-in-Leach =================
+    OxideThickener --> NeutralizationTank["Neutralization Tanker (3)"]
+    Lime["Lime"] --> NeutralizationTank
+    NeutralizationTank --> TailorMill["Tailor Mill (2)"]
+    LimeSlurry["Lime Slurry"] --> TailorMill
+    ReturnWaterCM["Return Water"] --> TailorMill
+    TailorMill --> VentTM["Vent"]
+    TailorMill --> CILTank["CIL Tank (7)"]
+    CILTank --> ScreenCIL["Screen"]
+    ScreenCIL --> SubAerialDeposition["Sub Aerial Deposition"]
+    SubAerialDeposition --> Tailings["Tailings"]
+    ScreenCIL --> ReturnWaterPlant["Return Water to Plant"]
+    CILTank --> LoadedCarbonScreen["Loaded Carbon Screen"]
+    LoadedCarbonScreen --> SurgeTankC["Surge Tank"]
+    SurgeTankC --> AcidWashTank["Acid Wash Tank"]
+    AcidWashTank --> NitricAcid["Nitric Acid"]
+    NitricAcid --> CarbonTank["Carbon Tank"]
+
+    %% ================= Carbon Stripping, Reactivation, & Sizing =================
+    CarbonTank --> Heater["Heater"]
+    Heater --> HeatExchanger["Heat Exchanger"]
+    HeatExchanger --> Cautic["Cautic"]
+    HeatExchanger --> QuenchTank["Quench Tank"]
+    QuenchTank --> CarbonWashScreen["Carbon Wash Screen"]
+    CarbonWashScreen --> CarbonFinerFilter["Carbon Finer to Filter"]
+    CarbonWashScreen --> KilnFeedScreen["Kiln Feed Screen"]
+    KilnFeedScreen --> ReactivationKiln["Reactivation Kiln"]
+    HeatExchanger --> BarrenSolTank["Barren Sol. Tank"]
+    BarrenSolTank --> PregnantSolTank["Pregnant Sol. Tank"]
+    PregnantSolTank --> EWCells["Electrowinning Cells (6)"]
+    EWCells --> VentEW["Vent"]
+    EWCells --> Rostart["Rostart"]
+    Rostart --> Furnace["Furnace"]
+    Furnace --> GoldBullion["Gold Bullion"]

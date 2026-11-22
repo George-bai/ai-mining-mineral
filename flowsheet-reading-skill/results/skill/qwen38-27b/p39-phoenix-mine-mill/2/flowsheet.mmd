@@ -1,0 +1,188 @@
+flowchart TD
+  subgraph crushing["Crushing"]
+    mine_ore["MINE ORE<br/>12,254,000 TONS/YR<br/>0.135% Cu<br/>0.335 OZ/TON Au<br/>0.270 OZ/TON Ag"]
+    primary_crusher["PRIMARY CRUSHER"]
+    crushed_ore_stockpile["CRUSHED ORE STOCKPILE (LIVE)<br/>33,000 TON"]
+    pebble_crusher["PEBBLE CRUSHER"]
+  end
+
+  subgraph grinding["Grinding"]
+    water_lime_sag["WATER, LIME"]
+    sag_mill["SAG MILL"]
+    sag_discharge_screen["SAG MILL DISCHARGE SCREEN"]
+    sag_sump["Sump"]
+    water_sag_sump["WATER"]
+    ball_mills["BALL MILLS"]
+    reagents_sag_feed["REAGENTS"]
+    reagents_ball_mill["REAGENTS"]
+    ball_mill_cyclone["Cyclone"]
+    reagents_cyclone["REAGENTS"]
+    contact_flotation["CONTACT FLOTATION"]
+    ball_mill_sump["Sump"]
+  end
+
+  subgraph flotation["Flotation"]
+    rougher_flotation["ROUGHER FLOTATION"]
+    reagents_rouger["REAGENTS"]
+    cleaner_flotation_1st["1st CLEANER FLOTATION"]
+    reagents_1st_cleaner["REAGENTS"]
+    cleaner_scavenger_flotation["CLEANER/SCAVENGER FLOTATION"]
+    reagents_cleaner_scav["REAGENTS"]
+    cleaner_sump["Sump"]
+    lime_cleaner_sump["LIME"]
+    primary_cleaner_column["PRIMARY CLEANER COLUMN"]
+    regrind["REGRIND"]
+    regrind_sump["Sump"]
+    lime_regrind_sump["LIME"]
+    reagents_regrind_sump["REAGENTS"]
+    2nd_cleaner_conditioning_tank["2ND CLEANER CONDITIONING TANK"]
+    reagents_2nd_cleaner["REAGENTS"]
+    2nd_cleaner["2ND CLEANER"]
+    2nd_cleaner_scavenger["2ND CLEANER SCAVENGER"]
+    magnetic_separation_left["MAGNETIC SEPARATION"]
+    magnetic_conc_gravity_conc["MAGNETIC CONCENTRATE GRAVITY CONCENTRATOR"]
+  end
+
+  subgraph gravity["Gravity / Oxidation"]
+    flotation_gravity["FLOTATION GRAVITY"]
+    primary_gravity["PRIMARY GRAVITY"]
+    cleaner_gravity["CLEANER GRAVITY (FUTURE)"]
+    intensive_oxidation["INTENSIVE OXIDATION"]
+    residue["(RESIDUE)"]
+  end
+
+  subgraph tailings["Tailings / Thickening"]
+    deslime_cyclones["DESLIME CYCLONES"]
+    trash["TRASH"]
+    fines_thickener["FINES THICKENER"]
+    flocculant["FLOCCLUANT"]
+  end
+
+  subgraph water["Water / Reclaim"]
+    treated_reclaim["TREATED RECLAIM"]
+    mine_water["MINE WATER"]
+    caros_acid_treated["CARO'S ACID"]
+    lime_treated["LIME"]
+    mill_water["MILL WATER"]
+    mill_water_distn["MILL WATER DIST'N"]
+    fresh_water["FRESH WATER"]
+    reagents_cland_water["REAGENTS CLAND WATER"]
+    tailings_pond["TAILINGS POND"]
+    reclaim_water["RECLAIM WATER"]
+    chloride_plume["CHLORIDE PLUME"]
+  end
+
+  subgraph cil["CIL / Carbon / Solutions"]
+    leach["LEACH"]
+    cyanide["CYANIDE"]
+    dip["DIP"]
+    carbon_bin["CARBON BIN"]
+    acid_wash["ACID WASH"]
+    heap_leach_carbon["HEAP LEACH CARBON"]
+    caros_acid_acid_wash["CARO'S ACID"]
+    strip["STRIP"]
+    regeneration["REGENERATION"]
+    carbon_to_heap_leach["CARBON TO HEAP LEACH"]
+    barren_solution_tank["BARREN SOLUTION TANK"]
+    pregnant_solution_tank["PREGNANT SOLUTION TANK"]
+    magnetic_separation_right["MAGNETIC SEPARATION"]
+    precious_metal_sludge["PRECIOUS METAL EW SLUDGE<br/>TO REFINERY<br/>231,800 OZ/YR Au<br/>422,400 OZ/YR Ag"]
+  end
+
+  subgraph concentrate["Copper Concentrate"]
+    copper_conc_thickener["COPPER CONCENTRATE THICKENER"]
+    copper_conc_filter["COPPER CONCENTRATE FILTER"]
+    copper_conc_stockpile["COPPER CONCENTRATE STOCKPILE<br/>10,000 TONS (COVERED)"]
+    concentrate_to_market["CONCENTRATE TO MARKET<br/>39,900 TONS/YR (AVE @ 25% Cu)<br/>19,934,000 LB/YR Cu<br/>159,000 OZ/YR Au<br/>1,418,100 OZ/YR Ag"]
+  end
+
+  mine_ore --> primary_crusher
+  primary_crusher --> crushed_ore_stockpile
+  crushed_ore_stockpile --> pebble_crusher
+  crushed_ore_stockpile --> sag_mill
+  pebble_crusher --> sag_mill
+  water_lime_sag --> sag_mill
+  sag_mill --> sag_discharge_screen
+  sag_discharge_screen -->|"oversize"| ball_mills
+  sag_discharge_screen --> primary_gravity
+  sag_discharge_screen --> flotation_gravity
+  sag_discharge_screen --> sag_sump
+  water_sag_sump --> sag_sump
+  sag_sump -->|"circulating load"| ball_mills
+  reagents_sag_feed --> ball_mills
+  reagents_ball_mill --> ball_mills
+  ball_mills --> ball_mill_cyclone
+  ball_mill_cyclone -->|"overflow"| rougher_flotation
+  ball_mill_cyclone -->|"underflow"| contact_flotation
+  reagents_cyclone --> contact_flotation
+  contact_flotation --> ball_mill_sump
+  ball_mill_sump --> leach
+  reagents_rouger --> rougher_flotation
+  rougher_flotation -->|"concentrate"| cleaner_flotation_1st
+  rougher_flotation -->|"tailings"| deslime_cyclones
+  rougher_flotation --> intensive_oxidation
+  deslime_cyclones --> trash
+  deslime_cyclones -->|"overflow"| fines_thickener
+  flocculant --> fines_thickener
+  fines_thickener -->|"overflow"| treated_reclaim
+  fines_thickener -->|"overflow"| mill_water
+  fines_thickener -->|"underflow"| leach
+  mine_water --> treated_reclaim
+  caros_acid_treated --> treated_reclaim
+  lime_treated --> treated_reclaim
+  treated_reclaim --> mill_water
+  mill_water --> mill_water_distn
+  fresh_water --> reagents_cland_water
+  reagents_cland_water --> dip
+  cyanide --> leach
+  leach --> dip
+  dip -->|"LOADED CARBON"| carbon_bin
+  carbon_bin -->|"LOADED CARBON"| acid_wash
+  heap_leach_carbon --> acid_wash
+  caros_acid_acid_wash --> acid_wash
+  acid_wash --> strip
+  strip -->|"loaded carbon"| regeneration
+  strip --> barren_solution_tank
+  barren_solution_tank -->|"recycle"| strip
+  regeneration -->|"BARREN CARBON"| dip
+  regeneration --> carbon_to_heap_leach
+  regeneration --> magnetic_separation_right
+  regeneration --> barren_solution_tank
+  regeneration --> pregnant_solution_tank
+  pregnant_solution_tank --> magnetic_separation_right
+  magnetic_separation_right --> precious_metal_sludge
+  magnetic_separation_right -->|"recycle"| 2nd_cleaner_scavenger
+  cleaner_sump --> tailings_pond
+  tailings_pond --> reclaim_water
+  reclaim_water -->|"reclaim water return"| tailings_pond
+  reclaim_water --> chloride_plume
+  flotation_gravity --> primary_gravity
+  flotation_gravity --> intensive_oxidation
+  primary_gravity --> cleaner_gravity
+  cleaner_gravity --> intensive_oxidation
+  primary_gravity --> primary_cleaner_column
+  intensive_oxidation --> residue
+  intensive_oxidation -->|"(PREG)"| regrind
+  intensive_oxidation --> 2nd_cleaner_conditioning_tank
+  primary_cleaner_column --> regrind
+  regrind --> regrind_sump
+  lime_regrind_sump --> regrind_sump
+  reagents_regrind_sump --> regrind_sump
+  regrind_sump --> 2nd_cleaner_conditioning_tank
+  reagents_1st_cleaner --> cleaner_flotation_1st
+  2nd_cleaner_conditioning_tank -->|"recycle"| cleaner_flotation_1st
+  cleaner_flotation_1st --> cleaner_scavenger_flotation
+  cleaner_flotation_1st --> 2nd_cleaner_conditioning_tank
+  reagents_cleaner_scav --> cleaner_scavenger_flotation
+  cleaner_scavenger_flotation --> cleaner_sump
+  lime_cleaner_sump --> cleaner_sump
+  reagents_2nd_cleaner --> 2nd_cleaner_conditioning_tank
+  2nd_cleaner_conditioning_tank --> magnetic_separation_left
+  2nd_cleaner_scavenger --> magnetic_separation_left
+  magnetic_separation_left --> magnetic_conc_gravity_conc
+  magnetic_separation_left --> 2nd_cleaner
+  2nd_cleaner --> 2nd_cleaner_scavenger
+  magnetic_conc_gravity_conc --> copper_conc_thickener
+  copper_conc_thickener --> copper_conc_filter
+  copper_conc_filter --> copper_conc_stockpile
+  copper_conc_stockpile --> concentrate_to_market

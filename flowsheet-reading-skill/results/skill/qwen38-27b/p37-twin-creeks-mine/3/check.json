@@ -1,0 +1,20 @@
+{
+ "checked": "Claude, 16 Nov 2026 (rerun)",
+ "pairing": {
+  "steam": {
+   "to": [],
+   "why": "'Steam' after the chart's own Steam Generation Plant box: the key's stream label 'Steam' drawn as a box"
+  },
+  "carbon_wash_tank": {
+   "to": [
+    "acid_wash_tank"
+   ],
+   "why": "'Carbon Wash Tank' fed by the loaded carbon screen and nitric acid, the chart's only box there (rule 2): the acid wash tank, not the carbon tank (the chart has its own 'Carbon Tank' box)"
+  }
+ },
+ "notes": [
+  "Rerun, skill. Hoppers, SAG mills, screens, cyclones (oxide; refractory left and right by their feeds), trash screens and surge tanks by their ids and feeds, as the scorer has them; the oxide trash screen is also fed by the cyclone overflow, so the crushing-line call does not apply. 'CIL Tanker (7)' and two 'CIL Tank' boxes are the CIL row. Misread labels kept as the same items: Ore Blend Stacker, Cycloner, Acidulation Storage Tanker, Neutralization Tanker, To Atmaphore, Tube and Shell Condenser (the coolers), Wast Gas Scrubber, Barren and Pregnant Sal. Tank, Rostart (the retort). Return water, air, vent, water and to-atmosphere boxes pair with their sets; 'Sub Aerial Deposition' is a stream label.",
+  "First try stopped by the loop guard after 370 s (a zoom region asked for again after zoom.py had closed it); the restart run.sh gives both conditions wrote the chart.",
+  "Read: every box whose label is not exactly its key item's (local/dev/differs.py), or that pairs with nothing or with a set, and every box paired with a repeated key label, with its feeds (local/dev/repeats.py), 16 Nov. Boxes whose label is exactly their key item's were not each read."
+ ]
+}

@@ -1,4 +1,4 @@
-# How to clean plant sensor data?
+# How should you clean plant sensor data?
 
 Code and figures for the article at https://eleticle.com/articles/sensor-data-outlier-removal/.
 
@@ -8,7 +8,7 @@ hide a whole shift of feed rate on the raw trend, and one of them moves an hourl
 while leaving it inside the normal range.
 
 **What is real and what is not.** The hourly averages are real: 96 consecutive hours from a working
-plant, renamed and scaled. The records inside each hour are generated, and every fault and event is
+plant, anonymised and scaled, and published with the right to do so. The records inside each hour are generated, and every fault and event is
 inserted at a known position. The dataset and its full description are in
 [`../data/feed-rate-raw-style-v1`](../data/feed-rate-raw-style-v1/README.md).
 
@@ -35,6 +35,14 @@ python3 figures.py ../data/feed-rate-raw-style-v1 out/figures
 
 This shows how each rule behaves on this dataset, not how real plants behave. Only the hourly averages
 are real; spike sizes and fault durations are example values. See the dataset's README before reusing it.
+
+Two rules in `demo.py` hold for this dataset only (each is described in its docstring):
+
+- A small negative on a running belt is set to zero. A running belt does not show an empty belt: on a real
+  tag, use separate evidence of no load, such as a belt-loaded signal or the feeder stopped.
+- Only a gap left by removed records counts as missing. A gap with no records at all is interpolated,
+  however long, because historian silence is trusted as compression. On a real tag, mark outages from the
+  historian's quality flags or an outage log.
 
 ## Licence
 

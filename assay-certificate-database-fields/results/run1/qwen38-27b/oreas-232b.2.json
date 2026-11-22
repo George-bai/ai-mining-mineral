@@ -1,0 +1,27 @@
+{
+ "fields": {
+  "cu_4a_pct": 0.00267,
+  "cu_4a_sd_pct": 0.000168,
+  "cu_ar_pct": 0.00254,
+  "cu_ar_sd_pct": 0.000141,
+  "cu_h2so4_pct": null,
+  "cu_h2so4_sd_pct": null,
+  "cu_cn_pct": null,
+  "cu_cn_sd_pct": null,
+  "au_fa_ppm": 0.946,
+  "au_fa_sd_ppm": 0.037,
+  "au_ar_ppm": 0.898,
+  "au_ar_sd_ppm": 0.052
+ },
+ "content": "\n\n{\"cu_4a_pct\":0.00267,\"cu_4a_sd_pct\":0.000168,\"cu_ar_pct\":0.00254,\"cu_ar_sd_pct\":0.000141,\"cu_h2so4_pct\":null,\"cu_h2so4_sd_pct\":null,\"cu_cn_pct\":null,\"cu_cn_sd_pct\":null,\"au_fa_ppm\":0.946,\"au_fa_sd_ppm\":0.037,\"au_ar_ppm\":0.898,\"au_ar_sd_ppm\":0.052}",
+ "reasoning": "Let me analyze the certificate of analysis for OREAS 232b to fill in the required fields.\n\nI need to find:\n1. `cu_4a_pct`: Copper by four-acid digestion - certified value in wt.% Cu\n2. `cu_4a_sd_pct`: 1SD for the above\n3. `cu_ar_pct`: Copper by aqua regia digestion - certified value in wt.% Cu\n4. `cu_ar_sd_pct`: 1SD for the above\n5. `cu_h2so4_pct`: Acid-soluble copper by H2SO4 leach - certified value in wt.% Cu\n6. `cu_h2so4_sd_pct`: 1SD for the above\n7. `cu_cn_pct`: Cyanide-soluble copper by NaCN leach - certified value in wt.% Cu\n8. `cu_cn_sd_pct`: 1SD for the above\n9. `au_fa_ppm`: Gold by fire assay - certified value in ppm\n10. `au_fa_sd_ppm`: 1SD for the above\n11. `au_ar_ppm`: Gold by aqua regia digestion - certified value in ppm\n12. `au_ar_sd_ppm`: 1SD for the above\n\nLet me look through the certificate:\n\n**Copper by 4-acid digestion:**\nFrom Table 1 (4-Acid Digestion section):\n- Cu, ppm: 26.7, 1SD: 1.68\n- This is in ppm, but the field asks for wt.% Cu\n- 26.7 ppm = 26.7/10,000 wt.% = 0.00267 wt.%\n- 1SD = 1.68 ppm = 1.68/10,000 = 0.000168 wt.%\n\nWait, let me re-read the field description: \"Copper by four-acid (near-total) digestion: certified value, in wt.% Cu.\"\n\nSo I need to convert from ppm to wt.%. 1 wt.% = 10,000 ppm.\n- 26.7 ppm / 10,000 = 0.00267 wt.%\n- 1.68 ppm / 10,000 = 0.000168 wt.%\n\n**Copper by aqua regia digestion:**\nFrom Table 1 (Aqua Regia Digestion section):\n- Cu, ppm: 25.4, 1SD: 1.41\n- 25.4 ppm / 10,000 = 0.00254 wt.%\n- 1.41 ppm / 10,000 = 0.000141 wt.%\n\n**Copper by H2SO4 leach:**\nLooking through the certificate... I don't see any H2SO4 leach method reported. The methods mentioned are:\n- Pb Fire Assay (for Au)\n- Aqua Regia Digestion\n- Cyanide Leach (for Au)\n- X-ray Photon Assay (for Au)\n- 4-Acid Digestion\n- Aqua Regia Digestion (for elements)\n- Borate Fusion XRF\n- Thermogravimetry\n- Infrared Combustion\n- Laser Ablation ICP-MS\n- INAA\n\nThere is no H2SO4 leach method reported. So `cu_h2so4_pct` and `cu_h2so4_sd_pct` are null.\n\n**Copper by cyanide leach:**\nLooking through the certificate... The cyanide leach method is only reported for Gold (Au). There is no cyanide leach for copper. The methods listed are:\n- Gold by cyanide leach (Au only)\n\nSo `cu_cn_pct` and `cu_cn_sd_pct` are null.\n\n**Gold by fire assay:**\nFrom Table 1 (Pb Fire Assay section):\n- Au, ppm: 0.946, 1SD: 0.037\n\n**Gold by aqua regia digestion:**\nFrom Table 1 (Aqua Regia Digestion section):\n- Au, ppm: 0.898, 1SD: 0.052\n\nNow let me verify the 1SD values. The table header says \"Absolute Standard Deviations\" with columns \"1SD\", \"2SD Low\", \"2SD High\", \"3SD Low\", \"3SD High\". So the \"1SD\" column is indeed the 1SD value.\n\nLet me double-check:\n- For Pb Fire Assay Au: Certified Value = 0.946, 1SD = 0.037\n- For Aqua Regia Au: Certified Value = 0.898, 1SD = 0.052\n- For 4-Acid Cu: Certified Value = 26.7 ppm, 1SD = 1.68\n- For Aqua Regia Cu: Certified Value = 25.4 ppm, 1SD = 1.41\n\nConversions:\n- cu_4a_pct: 26.7 / 10000 = 0.00267\n- cu_4a_sd_pct: 1.68 / 10000 = 0.000168\n- cu_ar_pct: 25.4 / 10000 = 0.00254\n- cu_ar_sd_pct: 1.41 / 10000 = 0.000141\n- cu_h2so4_pct: null\n- cu_h2so4_sd_pct: null\n- cu_cn_pct: null\n- cu_cn_sd_pct: null\n- au_fa_ppm: 0.946\n- au_fa_sd_ppm: 0.037\n- au_ar_ppm: 0.898\n- au_ar_sd_ppm: 0.052\n",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 25777,
+  "total_tokens": 27251,
+  "completion_tokens": 1474,
+  "prompt_tokens_details": null
+ },
+ "seconds": 31.5,
+ "model": "qwen38-27b"
+}

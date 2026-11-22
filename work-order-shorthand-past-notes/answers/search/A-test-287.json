@@ -1,0 +1,18 @@
+{
+ "id": "A-test-287",
+ "condition": "search",
+ "note": "AN426 REPL BUCKET",
+ "model": "qwen38-27b",
+ "prompt": "You help a maintenance planner at an Australian mine site read work orders. Work orders are short notes typed in a hurry by maintainers and planners, full of the site's shorthand: abbreviations, misspellings and words run together. Codes such as AB123 or XY45 are asset numbers.\n\nRewrite the work order below in plain English for a reader who does not know the site's shorthand.\n\n- Expand every abbreviation and correct every misspelling. Choose each meaning from the note's context.\n- Keep to what the note says. Do not add a cause, a diagnosis, a fault or an outcome that the note does not state.\n- Keep the note's tense. A request for work stays a request: say that work was done only if the note says so.\n- Keep the note's asset numbers, quantities, positions and timings as they are.\n- If you cannot read a piece of shorthand with confidence, keep it as written in \"plain\", so the reader can see it is unresolved, and list it under \"unsure\".\n\nEarlier work orders from this site, found by searching its own records, and what each meant. The same shorthand can mean something else at another site.\n\nAN426 REPLACE BUCKET AND ALL PINS ETC = AN426 replace bucket and all pins etc\nAN426 Replace Bucket Tooth Lock = AN426 replace bucket tooth lock\nAN426 Replace all bucket teeth & locks = AN426 replace all bucket teeth and locks\nAN426 REPL 8 X WORN BUCKET TEETH = AN426 replace 8 x worn bucket teeth\nAN426 REPLACE POS 8 TYRE BUCKET BOSS = AN426 replace position 8 tyre bucket boss\nAN426 BOILY REP TO BUCKET STOPS = AN426 boilermaker repair to bucket stops\nAN426 REPAIR BUCKET W/SHOP = AN426 repair bucket workshop\nAN426 REPAIR CRACKS IN TOP OF BUCKET = AN426 repair cracks in top of bucket\nAN426 REPLACE #4 BUCKET TOOTH = AN426 replace number 4 bucket tooth\nAN426 REPLACE ALL BUCKET TEETH = AN426 replace all bucket teeth\nAnswer with a JSON object only, with three keys:\n- \"plain\": the work order in plain English.\n- \"terms\": one item for each piece of shorthand you expanded or corrected: {\"written\": \"<as written in the note>\", \"means\": \"<what it stands for>\"}.\n- \"unsure\": the shorthand you could not read with confidence, as written in the note.\n\nWork order: AN426 REPL BUCKET\n",
+ "started": "2026-11-21T16:01:16+1000",
+ "content": "\n\n{\"plain\":\"AN426 replace bucket\",\"terms\":[{\"written\":\"REPL\",\"means\":\"replace\"}],\"unsure\":[]}",
+ "reasoning": "Let me analyze the work order: \"AN426 REPL BUCKET\"\n\nLooking at the context from earlier work orders:\n- AN426 is an asset number\n- \"REPL\" appears in \"REPL 8 X WORN BUCKET TEETH\" which was expanded to \"replace 8 x worn bucket teeth\" - so REPL = replace\n- \"BUCKET\" is a component of the asset\n\nSo \"AN426 REPL BUCKET\" means \"AN426 replace bucket\"\n\nLet me check:\n- AN426: asset number, keep as is\n- REPL: abbreviation for \"replace\" (confirmed by \"REPL 8 X WORN BUCKET TEETH\" = \"replace 8 x worn bucket teeth\")\n- BUCKET: this is a full word, not an abbreviation\n\nThe note is a request for work (replace bucket), not a statement that work was done. I should keep it as a request.\n\nTerms to expand:\n- \"REPL\" → \"replace\"\n\nThat's the only abbreviation. \"BUCKET\" is a full word. \"AN426\" is an asset number to keep as is.\n\nNo unclear terms - I'm confident in all readings.\n",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 587,
+  "total_tokens": 877,
+  "completion_tokens": 290,
+  "prompt_tokens_details": null
+ },
+ "seconds": 7.7
+}

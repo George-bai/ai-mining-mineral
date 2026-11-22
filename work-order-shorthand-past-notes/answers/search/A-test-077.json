@@ -1,0 +1,18 @@
+{
+ "id": "A-test-077",
+ "condition": "search",
+ "note": "GS690 REPL FIRE EXTINGUISHER",
+ "model": "qwen38-27b",
+ "prompt": "You help a maintenance planner at an Australian mine site read work orders. Work orders are short notes typed in a hurry by maintainers and planners, full of the site's shorthand: abbreviations, misspellings and words run together. Codes such as AB123 or XY45 are asset numbers.\n\nRewrite the work order below in plain English for a reader who does not know the site's shorthand.\n\n- Expand every abbreviation and correct every misspelling. Choose each meaning from the note's context.\n- Keep to what the note says. Do not add a cause, a diagnosis, a fault or an outcome that the note does not state.\n- Keep the note's tense. A request for work stays a request: say that work was done only if the note says so.\n- Keep the note's asset numbers, quantities, positions and timings as they are.\n- If you cannot read a piece of shorthand with confidence, keep it as written in \"plain\", so the reader can see it is unresolved, and list it under \"unsure\".\n\nEarlier work orders from this site, found by searching its own records, and what each meant. The same shorthand can mean something else at another site.\n\nBF079 REPLACE FIRE EXT = BF079 replace fire extinguisher\nZW767 REPLACE FIRE EXT = ZW767 replace fire extinguisher\nGS690 REPL HYDRAULIC FILLER CAP = GS690 replace hydraulic filler cap\nGS690 REPL U/S FAN HUB BEARINGS = GS690 replace unserviceable fan hub bearings\nGS690 REPL REAR SHUTDOWN SWITCH = GS690 replace rear shutdown switch\nGS690 REPL 4 X CRACKED WINDOWS = GS690 replace 4 x cracked windows\nGS690 REPLACE A/C = GS690 replace air conditioner\nGS690 REPL ALL BUCKET TEETH = GS690 replace all bucket teeth\nGS690 REPL R/H LIFT CYLINDER = GS690 replace right hand lift cylinder\nOQ524 FIT FIRE EXT AND BRK TO POS1 GAURD = OQ524 fit fire extinguisher and bracket to position 1 guard\nAnswer with a JSON object only, with three keys:\n- \"plain\": the work order in plain English.\n- \"terms\": one item for each piece of shorthand you expanded or corrected: {\"written\": \"<as written in the note>\", \"means\": \"<what it stands for>\"}.\n- \"unsure\": the shorthand you could not read with confidence, as written in the note.\n\nWork order: GS690 REPL FIRE EXTINGUISHER\n",
+ "started": "2026-11-21T15:48:32+1000",
+ "content": "\n\n{\n  \"plain\": \"GS690 replace fire extinguisher\",\n  \"terms\": [\n    {\"written\": \"REPL\", \"means\": \"replace\"}\n  ],\n  \"unsure\": []\n}",
+ "reasoning": "Let me analyze this work order:\n\n\"GS690 REPL FIRE EXTINGUISHER\"\n\nLet me break this down:\n- GS690: This is an asset number (a code like AB123 or XY45). Keep as is.\n- REPL: This is shorthand for \"replace\" - confirmed by multiple earlier work orders (REPL HYDRAULIC FILLER CAP = replace hydraulic filler cap, REPL U/S FAN HUB BEARINGS = replace unserviceable fan hub bearings, etc.)\n- FIRE EXTINGUISHER: This is already in plain English. It's a fire extinguisher.\n\nSo the full work order means: \"GS690 replace fire extinguisher\"\n\nThis is a request for work (replace), not a statement that work was done. The tense is an imperative/request.\n\nLet me check:\n- Abbreviations to expand: REPL → replace\n- Misspellings: None that I can see\n- Asset numbers: GS690 - keep as is\n- Quantities, positions, timings: None specified\n\nTerms:\n- \"REPL\" means \"replace\"\n\nUnsure: Nothing I can't read with confidence.\n\nLet me format the JSON response.\n",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 580,
+  "total_tokens": 895,
+  "completion_tokens": 315,
+  "prompt_tokens_details": null
+ },
+ "seconds": 5.2
+}

@@ -1,0 +1,354 @@
+[
+ {
+  "key": "u/s",
+  "means": [
+   "unserviceable"
+  ],
+  "uses": 147
+ },
+ {
+  "key": "&",
+  "means": [
+   "and"
+  ],
+  "uses": 136
+ },
+ {
+  "key": "#",
+  "means": [
+   "number"
+  ],
+  "uses": 106
+ },
+ {
+  "key": "wk",
+  "means": [
+   "week"
+  ],
+  "uses": 101
+ },
+ {
+  "key": "no",
+  "means": [
+   "number"
+  ],
+  "uses": 87
+ },
+ {
+  "key": "lh",
+  "means": [
+   "left hand"
+  ],
+  "uses": 68
+ },
+ {
+  "key": "rh",
+  "means": [
+   "right hand"
+  ],
+  "uses": 68
+ },
+ {
+  "key": "insp",
+  "means": [
+   "inspection"
+  ],
+  "uses": 59
+ },
+ {
+  "key": "hr",
+  "means": [
+   "hour"
+  ],
+  "uses": 50
+ },
+ {
+  "key": "r/h",
+  "means": [
+   "right hand"
+  ],
+  "uses": 50
+ },
+ {
+  "key": "l/h",
+  "means": [
+   "left hand"
+  ],
+  "uses": 47
+ },
+ {
+  "key": "cab",
+  "means": [
+   "cabin"
+  ],
+  "uses": 44
+ },
+ {
+  "key": "c/o",
+  "means": [
+   "change out"
+  ],
+  "uses": 34
+ },
+ {
+  "key": "rhs",
+  "means": [
+   "right hand side"
+  ],
+  "uses": 28
+ },
+ {
+  "key": "w",
+  "means": [
+   "week"
+  ],
+  "uses": 28
+ },
+ {
+  "key": "a/c",
+  "means": [
+   "air conditioner"
+  ],
+  "uses": 25
+ },
+ {
+  "key": "gen",
+  "means": [
+   "generator"
+  ],
+  "uses": 25
+ },
+ {
+  "key": "hv",
+  "means": [
+   "high voltage"
+  ],
+  "uses": 24
+ },
+ {
+  "key": "hyd",
+  "means": [
+   "hydraulic"
+  ],
+  "uses": 23
+ },
+ {
+  "key": "diff",
+  "means": [
+   "differential"
+  ],
+  "uses": 22
+ },
+ {
+  "key": "cm",
+  "means": [
+   "condition monitoring"
+  ],
+  "uses": 21
+ },
+ {
+  "key": "steer",
+  "means": [
+   "steering"
+  ],
+  "uses": 21
+ },
+ {
+  "key": "w/place",
+  "means": [
+   "workplace"
+  ],
+  "uses": 17
+ },
+ {
+  "key": "wont",
+  "means": [
+   "won't"
+  ],
+  "uses": 17
+ },
+ {
+  "key": "c/out-mech",
+  "means": [
+   "change out - mechanical"
+  ],
+  "uses": 16
+ },
+ {
+  "key": "lhs",
+  "means": [
+   "left hand side"
+  ],
+  "uses": 16
+ },
+ {
+  "key": "quick",
+  "means": [
+   "Kwik"
+  ],
+  "uses": 16
+ },
+ {
+  "key": "wksp",
+  "means": [
+   "workshop"
+  ],
+  "uses": 16
+ },
+ {
+  "key": "con",
+  "means": [
+   "conditioner"
+  ],
+  "uses": 15
+ },
+ {
+  "key": "mech",
+  "means": [
+   "mechanical"
+  ],
+  "uses": 14
+ },
+ {
+  "key": "a",
+  "means": [
+   "A-frame"
+  ],
+  "uses": 13
+ },
+ {
+  "key": "n/w",
+  "means": [
+   "not working"
+  ],
+  "uses": 13
+ },
+ {
+  "key": "pos",
+  "means": [
+   "position"
+  ],
+  "uses": 13
+ },
+ {
+  "key": "req",
+  "means": [
+   "requires"
+  ],
+  "uses": 13
+ },
+ {
+  "key": "sys",
+  "means": [
+   "system"
+  ],
+  "uses": 13
+ },
+ {
+  "key": "bkt",
+  "means": [
+   "bucket"
+  ],
+  "uses": 12
+ },
+ {
+  "key": "overhaul-elec/mech",
+  "means": [
+   "overhaul - electrical / mechanical"
+  ],
+  "uses": 12
+ },
+ {
+  "key": "c/out",
+  "means": [
+   "change out"
+  ],
+  "uses": 11
+ },
+ {
+  "key": "changeout-mechanical",
+  "means": [
+   "change out - mechanical"
+  ],
+  "uses": 11
+ },
+ {
+  "key": "d/line",
+  "means": [
+   "dragline"
+  ],
+  "uses": 10
+ },
+ {
+  "key": "elect",
+  "means": [
+   "electrical"
+  ],
+  "uses": 10
+ },
+ {
+  "key": "r/h/s",
+  "means": [
+   "right hand side"
+  ],
+  "uses": 10
+ },
+ {
+  "key": "aux",
+  "means": [
+   "auxiliary"
+  ],
+  "uses": 9
+ },
+ {
+  "key": "changeout-mech",
+  "means": [
+   "change out - mechanical"
+  ],
+  "uses": 9
+ },
+ {
+  "key": "eng",
+  "means": [
+   "engine"
+  ],
+  "uses": 9
+ },
+ {
+  "key": "gear",
+  "means": [
+   "gearcase",
+   "gearbox"
+  ],
+  "uses": 9
+ },
+ {
+  "key": "h",
+  "means": [
+   "H-link",
+   "hand"
+  ],
+  "uses": 9
+ },
+ {
+  "key": "mg",
+  "means": [
+   "motor generator"
+  ],
+  "uses": 9
+ },
+ {
+  "key": "p",
+  "means": [
+   "replace"
+  ],
+  "uses": 9
+ },
+ {
+  "key": "sync",
+  "means": [
+   "synchronous"
+  ],
+  "uses": 9
+ }
+]

@@ -1,0 +1,27 @@
+{
+ "fields": {
+  "cu_4a_pct": 0.1533,
+  "cu_4a_sd_pct": 0.0061,
+  "cu_ar_pct": 0.1562,
+  "cu_ar_sd_pct": 0.0047,
+  "cu_h2so4_pct": 0.1272,
+  "cu_h2so4_sd_pct": 0.0065,
+  "cu_cn_pct": null,
+  "cu_cn_sd_pct": null,
+  "au_fa_ppm": 0.391,
+  "au_fa_sd_ppm": 0.009,
+  "au_ar_ppm": 0.395,
+  "au_ar_sd_ppm": 0.019
+ },
+ "content": "\n\n{\"cu_4a_pct\":0.1533,\"cu_4a_sd_pct\":0.0061,\"cu_ar_pct\":0.1562,\"cu_ar_sd_pct\":0.0047,\"cu_h2so4_pct\":0.1272,\"cu_h2so4_sd_pct\":0.0065,\"cu_cn_pct\":null,\"cu_cn_sd_pct\":null,\"au_fa_ppm\":0.391,\"au_fa_sd_ppm\":0.009,\"au_ar_ppm\":0.395,\"au_ar_sd_ppm\":0.019}",
+ "reasoning": "Let me analyze the certificate of analysis for OREAS 905 and fill in the required fields.\n\nI need to find:\n1. `cu_4a_pct`: Copper by four-acid digestion, certified value in wt.% Cu\n2. `cu_4a_sd_pct`: 1SD for the above, in wt.% Cu\n3. `cu_ar_pct`: Copper by aqua regia digestion, certified value in wt.% Cu\n4. `cu_ar_sd_pct`: 1SD for the above, in wt.% Cu\n5. `cu_h2so4_pct`: Acid-soluble copper by H2SO4 leach, certified value in wt.% Cu\n6. `cu_h2so4_sd_pct`: 1SD for the above, in wt.% Cu\n7. `cu_cn_pct`: Cyanide-soluble copper by NaCN leach, certified value in wt.% Cu\n8. `cu_cn_sd_pct`: 1SD for the above, in wt.% Cu\n9. `au_fa_ppm`: Gold by fire assay, certified value in ppm\n10. `au_fa_sd_ppm`: 1SD for the above, in ppm\n11. `au_ar_ppm`: Gold by aqua regia, certified value in ppm\n12. `au_ar_sd_ppm`: 1SD for the above, in ppm\n\nFrom the certificate:\n\n**Copper by 4-Acid Digestion:**\n- Table 1: Cu, Copper (ppm) = 1533, 1SD = 61\n- Convert to wt.%: 1533 ppm / 10,000 = 0.1533 wt.%\n- 1SD: 61 ppm / 10,000 = 0.0061 wt.%\n\n**Copper by Aqua Regia Digestion:**\n- Table 1: Cu, Copper (ppm) = 1562, 1SD = 47\n- Convert to wt.%: 1562 ppm / 10,000 = 0.1562 wt.%\n- 1SD: 47 ppm / 10,000 = 0.0047 wt.%\n\n**Copper by Sulphuric Acid Leach (H2SO4):**\n- Table 1: Cu-Sol, Copper Soluble (ppm) = 1272, 1SD = 65\n- Convert to wt.%: 1272 ppm / 10,000 = 0.1272 wt.%\n- 1SD: 65 ppm / 10,000 = 0.0065 wt.%\n\n**Cyanide-soluble copper by NaCN leach:**\n- Looking through the certificate, I don't see any cyanide (NaCN) leach method reported. The methods listed are: Pb Fire Assay, 4-Acid Digestion, Borate/Peroxide Fusion ICP, Aqua Regia Digestion, Sulphuric Acid Leach (5%), Gas/Liquid Pycnometry. There is no cyanide leach method.\n- So `cu_cn_pct` = null, `cu_cn_sd_pct` = null\n\n**Gold by Fire Assay (Pb Fire Assay):**\n- Table 1: Au, Gold (ppm) = 0.391, 1SD = 0.009\n- Already in ppm\n\n**Gold by Aqua Regia Digestion:**\n- Table 1: Au, Gold (ppm) = 0.395, 1SD = 0.019\n- Already in ppm\n\nAll values are certified (in Table 1), not indicative (Table 2). Good.\n\nLet me double-check the conversions:\n- 1 wt.% = 10,000 ppm\n- So ppm to wt.%: divide by 10,000\n\nCu 4-acid: 1533/10000 = 0.1533 wt.%, SD: 61/10000 = 0.0061 wt.%\nCu AR: 1562/10000 = 0.1562 wt.%, SD: 47/10000 = 0.0047 wt.%\nCu H2SO4: 1272/10000 = 0.1272 wt.%, SD: 65/10000 = 0.0065 wt.%\n\nAll 1SD values are already given as 1SD (not 2SD), so no halving needed.\n\nLet me verify: The certificate says \"1SD\" in the column header, so these are indeed 1 standard deviation values. No conversion needed for the SD fields.\n",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 28690,
+  "total_tokens": 29911,
+  "completion_tokens": 1221,
+  "prompt_tokens_details": null
+ },
+ "seconds": 37.5,
+ "model": "qwen38-27b"
+}

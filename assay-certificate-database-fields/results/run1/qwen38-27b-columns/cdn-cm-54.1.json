@@ -1,0 +1,27 @@
+{
+ "fields": {
+  "cu_4a_pct": 0.356,
+  "cu_4a_sd_pct": 0.015,
+  "cu_ar_pct": 0.363,
+  "cu_ar_sd_pct": 0.015,
+  "cu_h2so4_pct": null,
+  "cu_h2so4_sd_pct": null,
+  "cu_cn_pct": null,
+  "cu_cn_sd_pct": null,
+  "au_fa_ppm": 1.682,
+  "au_fa_sd_ppm": 0.137,
+  "au_ar_ppm": null,
+  "au_ar_sd_ppm": null
+ },
+ "content": "\n\n{\"cu_4a_pct\":0.356,\"cu_4a_sd_pct\":0.015,\"cu_ar_pct\":0.363,\"cu_ar_sd_pct\":0.015,\"cu_h2so4_pct\":null,\"cu_h2so4_sd_pct\":null,\"cu_cn_pct\":null,\"cu_cn_sd_pct\":null,\"au_fa_ppm\":1.682,\"au_fa_sd_ppm\":0.137,\"au_ar_ppm\":null,\"au_ar_sd_ppm\":null}",
+ "reasoning": "Let me analyze the certificate of analysis for CDN-CM-54 to fill in the CRM standards table.\n\nThe columns I need to fill are:\n- cu_4a_pct: Copper by 4 Acid digestion, in percent\n- cu_4a_sd_pct: Copper by 4 Acid digestion, standard deviation, in percent\n- cu_ar_pct: Copper by Aqua Regia digestion, in percent\n- cu_ar_sd_pct: Copper by Aqua Regia digestion, standard deviation, in percent\n- cu_h2so4_pct: Copper by H2SO4 digestion, in percent\n- cu_h2so4_sd_pct: Copper by H2SO4 digestion, standard deviation, in percent\n- cu_cn_pct: Copper by CN (cyanide) digestion, in percent\n- cu_cn_sd_pct: Copper by CN (cyanide) digestion, standard deviation, in percent\n- au_fa_ppm: Gold by Fire Assay, in ppm\n- au_fa_sd_ppm: Gold by Fire Assay, standard deviation, in ppm\n- au_ar_ppm: Gold by Aqua Regia, in ppm\n- au_ar_sd_ppm: Gold by Aqua Regia, standard deviation, in ppm\n\nFrom the certificate:\n\nCopper by 4 Acid digestion / ICP finish: 0.356% \u00b1 0.015% (Certified value)\nCopper by Aqua Regia digestion / ICP finish: 0.363% \u00b1 0.015% (Certified value)\n\nGold: 1.682 gpt \u00b1 0.137 gpt (30 g Fire Assay, ICP or AA finish) - Certified value\n\nNow, the units:\n- Gold is given in gpt (grams per tonne). 1 gpt = 1 ppm. So 1.682 gpt = 1.682 ppm, and 0.137 gpt = 0.137 ppm.\n\nFor the columns:\n- cu_4a_pct = 0.356\n- cu_4a_sd_pct = 0.015\n- cu_ar_pct = 0.363\n- cu_ar_sd_pct = 0.015\n- cu_h2so4_pct = null (no H2SO4 method listed)\n- cu_h2so4_sd_pct = null\n- cu_cn_pct = null (no CN/cyanide method listed)\n- cu_cn_sd_pct = null\n- au_fa_ppm = 1.682 (gpt = ppm)\n- au_fa_sd_ppm = 0.137\n- au_ar_ppm = null (no Aqua Regia gold method listed)\n- au_ar_sd_ppm = null\n\nLet me double-check: The certificate lists Gold only with \"30 g Fire Assay, ICP or AA finish\" - there's no Aqua Regia gold value. So au_ar_ppm and au_ar_sd_ppm are null.\n\nThere's no H2SO4 or CN method for copper listed either.\n",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 31098,
+  "total_tokens": 31881,
+  "completion_tokens": 783,
+  "prompt_tokens_details": null
+ },
+ "seconds": 24.4,
+ "model": "qwen38-27b"
+}

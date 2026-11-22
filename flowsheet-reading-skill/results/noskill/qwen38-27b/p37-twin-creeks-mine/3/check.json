@@ -1,0 +1,25 @@
+{
+ "checked": "Claude, 16 Nov 2026 (rerun)",
+ "pairing": {
+  "TrashScreenOC": {
+   "to": [],
+   "why": "'Trash Screen' between the jaw crusher and the radial stacker, on the oxide crushing line, where the drawing has no trash screen: a role the drawing does not have. Pairs with nothing, its lines run through (call of 16 Nov 2026, 8:45 pm AEST)"
+  },
+  "Steam": {
+   "to": [],
+   "why": "'Steam' between the chart's own Steam Generation Plant box and the autoclave: the key's stream label 'Steam' drawn as a box"
+  },
+  "RefractorySlurryCooling": {
+   "to": [],
+   "why": "'Refractory Slurry Cooling' names a section, not an item (the scorer had matched it to the refractory SAG mill)"
+  },
+  "Lime": {
+   "to": [],
+   "why": "'Lime' on the line into the neutralization tanks, with the chart's own lime silo box ('Lime Slurry', feeding the tower mill): the key's stream label 'Lime' drawn as a box"
+  }
+ },
+ "notes": [
+  "Rerun, no skill. Hoppers, SAG mills, screens, cyclones (oxide; refractory primary and secondary by their feeds), trash screens and surge tanks by their ids and feeds, as the scorer has them, except the crushing-line trash screen. 'Lime Slurry', feeding the tower mill, stands for the lime silo. Misread labels kept as the same items: Ore Blend & Stacker, Cycloner, Acidulation Slurry Tanker, Neutralization Tanker, Tailor Mill, Cautic (the caustic), Carbon Finer to Filter, Rostart (the retort). Return water, air, vent, water and to-atmosphere boxes pair with their sets; 'Sub Aerial Deposition' is a stream label.",
+  "Read: every box whose label is not exactly its key item's (local/dev/differs.py), or that pairs with nothing or with a set, and every box paired with a repeated key label, with its feeds (local/dev/repeats.py), 16 Nov. Boxes whose label is exactly their key item's were not each read."
+ ]
+}

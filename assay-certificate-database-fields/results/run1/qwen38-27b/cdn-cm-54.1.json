@@ -1,0 +1,27 @@
+{
+ "fields": {
+  "cu_4a_pct": 0.356,
+  "cu_4a_sd_pct": 0.0075,
+  "cu_ar_pct": 0.363,
+  "cu_ar_sd_pct": 0.0075,
+  "cu_h2so4_pct": null,
+  "cu_h2so4_sd_pct": null,
+  "cu_cn_pct": null,
+  "cu_cn_sd_pct": null,
+  "au_fa_ppm": 1.682,
+  "au_fa_sd_ppm": 0.0685,
+  "au_ar_ppm": null,
+  "au_ar_sd_ppm": null
+ },
+ "content": "\n\n{\"cu_4a_pct\":0.356,\"cu_4a_sd_pct\":0.0075,\"cu_ar_pct\":0.363,\"cu_ar_sd_pct\":0.0075,\"cu_h2so4_pct\":null,\"cu_h2so4_sd_pct\":null,\"cu_cn_pct\":null,\"cu_cn_sd_pct\":null,\"au_fa_ppm\":1.682,\"au_fa_sd_ppm\":0.0685,\"au_ar_ppm\":null,\"au_ar_sd_ppm\":null}",
+ "reasoning": "Let me analyze the certificate of analysis for CDN-CM-54 to fill in the required fields.\n\nFirst, let me identify the relevant values from the certificate:\n\n**Copper by 4-acid digestion:**\n- Certified value: 0.356 % (wt.%)\n- The certificate states \"\u00b1 0.015 %\" - this is described as \"Between Lab Two Standard Deviations\" in the header\n- Status: \"Certified value\"\n- So the certified value is 0.356 wt.% Cu\n- The \u00b1 0.015% is 2SD (as stated in the header: \"Recommended values and the 'Between Lab' Two Standard Deviations\")\n- Therefore 1SD = 0.015 / 2 = 0.0075 wt.% Cu\n\n**Copper by aqua regia digestion:**\n- Certified value: 0.363 % (wt.%)\n- The certificate states \"\u00b1 0.015 %\" - this is 2SD\n- Status: \"Certified value\"\n- So the certified value is 0.363 wt.% Cu\n- 1SD = 0.015 / 2 = 0.0075 wt.% Cu\n\n**Copper by H2SO4 leach:**\n- Not reported in the certificate. No H2SO4 leach data. \u2192 null\n\n**Copper by cyanide (NaCN) leach:**\n- Not reported in the certificate. No cyanide leach data. \u2192 null\n\n**Gold by fire assay:**\n- Certified value: 1.682 gpt (ppm)\n- The certificate states \"\u00b1 0.137 gpt\" - this is 2SD\n- Status: \"Certified value\"\n- So the certified value is 1.682 ppm Au\n- 1SD = 0.137 / 2 = 0.0685 ppm Au\n\n**Gold by aqua regia digestion:**\n- Not reported in the certificate. There is no gold by aqua regia value. \u2192 null\n\nNow let me double-check the header: \"Recommended values and the 'Between Lab' Two Standard Deviations\"\n\nThis confirms that the \u00b1 values given are 2SD (two standard deviations). So I need to halve them to get 1SD.\n\nLet me verify:\n- cu_4a_pct: 0.356\n- cu_4a_sd_pct: 0.015 / 2 = 0.0075\n- cu_ar_pct: 0.363\n- cu_ar_sd_pct: 0.015 / 2 = 0.0075\n- cu_h2so4_pct: null\n- cu_h2so4_sd_pct: null\n- cu_cn_pct: null\n- cu_cn_sd_pct: null\n- au_fa_ppm: 1.682\n- au_fa_sd_ppm: 0.137 / 2 = 0.0685\n- au_ar_ppm: null\n- au_ar_sd_ppm: null\n\nAll values are certified (marked as \"Certified value\"), so they qualify.\n\nThe methods match:\n- 4-acid digestion \u2192 cu_4a fields \u2713\n- Aqua regia digestion \u2192 cu_ar fields \u2713\n- Fire assay (30g) \u2192 au_fa fields \u2713\n- No H2SO4 leach \u2192 null \u2713\n- No cyanide leach \u2192 null \u2713\n- No gold by aqua regia \u2192 null \u2713\n",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 31529,
+  "total_tokens": 32433,
+  "completion_tokens": 904,
+  "prompt_tokens_details": null
+ },
+ "seconds": 25.3,
+ "model": "qwen38-27b"
+}

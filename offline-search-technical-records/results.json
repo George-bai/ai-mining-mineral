@@ -1,0 +1,4819 @@
+{
+ "systems": [
+  "keyword",
+  "tinybert",
+  "minilm",
+  "qwen-rr",
+  "hindsight",
+  "d1",
+  "knowline"
+ ],
+ "scores": {
+  "keyword": {
+   "full": {
+    "q01": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "feed": null,
+      "filtered-2021": 1
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": null,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.01
+    },
+    "q02": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "feed": null,
+      "filtered-2021": 1
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": null,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.0
+    },
+    "q03": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "feed": null,
+      "filtered-2021": 1
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": null,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.01
+    },
+    "q04": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {},
+     "wrong_edition": {},
+     "page": {},
+     "partial": {},
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.01
+    },
+    "q05": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "commissioned": 2
+     },
+     "wrong_edition": {
+      "commissioned": null
+     },
+     "page": {
+      "commissioned": 2
+     },
+     "partial": {
+      "commissioned": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.01
+    },
+    "q06": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "first-shipment": 2
+     },
+     "wrong_edition": {
+      "first-shipment": null
+     },
+     "page": {
+      "first-shipment": 2
+     },
+     "partial": {
+      "first-shipment": 1
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.02
+    },
+    "q07": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "copper-tails": 1
+     },
+     "wrong_edition": {
+      "copper-tails": null
+     },
+     "page": {
+      "copper-tails": 1
+     },
+     "partial": {
+      "copper-tails": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.02
+    },
+    "q08": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "capacity": 1
+     },
+     "wrong_edition": {
+      "capacity": null
+     },
+     "page": {
+      "capacity": 1
+     },
+     "partial": {
+      "capacity": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.01
+    },
+    "q09": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "grade": 1
+     },
+     "wrong_edition": {
+      "grade": null
+     },
+     "page": {
+      "grade": 1
+     },
+     "partial": {
+      "grade": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.02
+    },
+    "q10": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "reagents": 4
+     },
+     "wrong_edition": {
+      "reagents": null
+     },
+     "page": {
+      "reagents": 3
+     },
+     "partial": {
+      "reagents": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.02
+    },
+    "q11": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "packing": 1
+     },
+     "wrong_edition": {
+      "packing": null
+     },
+     "page": {
+      "packing": 1
+     },
+     "partial": {
+      "packing": 7
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.02
+    },
+    "q12": {
+     "excerpts_returned": 9,
+     "excerpts": 9,
+     "shown": {
+      "commissioned": 2,
+      "first-shipment": 3
+     },
+     "wrong_edition": {
+      "commissioned": null,
+      "first-shipment": null
+     },
+     "page": {
+      "commissioned": 2,
+      "first-shipment": 3
+     },
+     "partial": {
+      "commissioned": 5,
+      "first-shipment": 2
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.01
+    }
+   },
+   "focused": {
+    "q01": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "feed": null,
+      "filtered-2021": 7
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": null,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.0
+    },
+    "q02": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "feed": null,
+      "filtered-2021": 8
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": null,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.0
+    },
+    "q03": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "feed": null,
+      "filtered-2021": 8
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": null,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.0
+    },
+    "q04": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {},
+     "wrong_edition": {},
+     "page": {},
+     "partial": {},
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.0
+    },
+    "q05": {
+     "excerpts_returned": 5,
+     "excerpts": 5,
+     "shown": {
+      "commissioned": 2
+     },
+     "wrong_edition": {
+      "commissioned": null
+     },
+     "page": {
+      "commissioned": 2
+     },
+     "partial": {
+      "commissioned": 3
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.0
+    },
+    "q06": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "first-shipment": 2
+     },
+     "wrong_edition": {
+      "first-shipment": null
+     },
+     "page": {
+      "first-shipment": 2
+     },
+     "partial": {
+      "first-shipment": 1
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.0
+    },
+    "q07": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "copper-tails": 2
+     },
+     "wrong_edition": {
+      "copper-tails": null
+     },
+     "page": {
+      "copper-tails": 1
+     },
+     "partial": {
+      "copper-tails": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.0
+    },
+    "q08": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "capacity": 1
+     },
+     "wrong_edition": {
+      "capacity": null
+     },
+     "page": {
+      "capacity": 1
+     },
+     "partial": {
+      "capacity": 8
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.0
+    },
+    "q09": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "grade": 1
+     },
+     "wrong_edition": {
+      "grade": null
+     },
+     "page": {
+      "grade": 1
+     },
+     "partial": {
+      "grade": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.0
+    },
+    "q10": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "reagents": 5
+     },
+     "wrong_edition": {
+      "reagents": null
+     },
+     "page": {
+      "reagents": 4
+     },
+     "partial": {
+      "reagents": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.0
+    },
+    "q11": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "packing": 1
+     },
+     "wrong_edition": {
+      "packing": null
+     },
+     "page": {
+      "packing": 1
+     },
+     "partial": {
+      "packing": 7
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.0
+    },
+    "q12": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "commissioned": 1,
+      "first-shipment": 3
+     },
+     "wrong_edition": {
+      "commissioned": null,
+      "first-shipment": null
+     },
+     "page": {
+      "commissioned": 1,
+      "first-shipment": 3
+     },
+     "partial": {
+      "commissioned": 4,
+      "first-shipment": 1
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.0
+    }
+   }
+  },
+  "tinybert": {
+   "full": {
+    "q01": {
+     "excerpts_returned": 23,
+     "excerpts": 10,
+     "shown": {
+      "feed": null,
+      "filtered-2021": 1
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": null,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.27
+    },
+    "q02": {
+     "excerpts_returned": 12,
+     "excerpts": 10,
+     "shown": {
+      "feed": 9,
+      "filtered-2021": 1
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 9,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.09
+    },
+    "q03": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {
+      "feed": 3,
+      "filtered-2021": null
+     },
+     "wrong_edition": {
+      "feed": 6,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": null
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.12
+    },
+    "q04": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {},
+     "wrong_edition": {},
+     "page": {},
+     "partial": {},
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.11
+    },
+    "q05": {
+     "excerpts_returned": 11,
+     "excerpts": 10,
+     "shown": {
+      "commissioned": 1
+     },
+     "wrong_edition": {
+      "commissioned": null
+     },
+     "page": {
+      "commissioned": 1
+     },
+     "partial": {
+      "commissioned": 3
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.09
+    },
+    "q06": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {
+      "first-shipment": 2
+     },
+     "wrong_edition": {
+      "first-shipment": null
+     },
+     "page": {
+      "first-shipment": 2
+     },
+     "partial": {
+      "first-shipment": 1
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.1
+    },
+    "q07": {
+     "excerpts_returned": 15,
+     "excerpts": 10,
+     "shown": {
+      "copper-tails": 1
+     },
+     "wrong_edition": {
+      "copper-tails": null
+     },
+     "page": {
+      "copper-tails": 1
+     },
+     "partial": {
+      "copper-tails": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.11
+    },
+    "q08": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {
+      "capacity": 1
+     },
+     "wrong_edition": {
+      "capacity": null
+     },
+     "page": {
+      "capacity": 1
+     },
+     "partial": {
+      "capacity": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.11
+    },
+    "q09": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {
+      "grade": 1
+     },
+     "wrong_edition": {
+      "grade": null
+     },
+     "page": {
+      "grade": 1
+     },
+     "partial": {
+      "grade": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.1
+    },
+    "q10": {
+     "excerpts_returned": 21,
+     "excerpts": 10,
+     "shown": {
+      "reagents": 2
+     },
+     "wrong_edition": {
+      "reagents": null
+     },
+     "page": {
+      "reagents": 1
+     },
+     "partial": {
+      "reagents": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.11
+    },
+    "q11": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {
+      "packing": 1
+     },
+     "wrong_edition": {
+      "packing": null
+     },
+     "page": {
+      "packing": 1
+     },
+     "partial": {
+      "packing": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.11
+    },
+    "q12": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "commissioned": 1,
+      "first-shipment": 2
+     },
+     "wrong_edition": {
+      "commissioned": null,
+      "first-shipment": null
+     },
+     "page": {
+      "commissioned": 1,
+      "first-shipment": 2
+     },
+     "partial": {
+      "commissioned": 4,
+      "first-shipment": 1
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.1
+    }
+   },
+   "focused": {
+    "q01": {
+     "excerpts_returned": 62,
+     "excerpts": 10,
+     "shown": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": null,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.23
+    },
+    "q02": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {
+      "feed": 7,
+      "filtered-2021": 2
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 6,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.06
+    },
+    "q03": {
+     "excerpts_returned": 14,
+     "excerpts": 10,
+     "shown": {
+      "feed": 3,
+      "filtered-2021": null
+     },
+     "wrong_edition": {
+      "feed": 6,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": null
+     },
+     "partial": {
+      "feed": 8,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.08
+    },
+    "q04": {
+     "excerpts_returned": 12,
+     "excerpts": 10,
+     "shown": {},
+     "wrong_edition": {},
+     "page": {},
+     "partial": {},
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.06
+    },
+    "q05": {
+     "excerpts_returned": 11,
+     "excerpts": 10,
+     "shown": {
+      "commissioned": 1
+     },
+     "wrong_edition": {
+      "commissioned": null
+     },
+     "page": {
+      "commissioned": 1
+     },
+     "partial": {
+      "commissioned": 3
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.06
+    },
+    "q06": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {
+      "first-shipment": 2
+     },
+     "wrong_edition": {
+      "first-shipment": null
+     },
+     "page": {
+      "first-shipment": 2
+     },
+     "partial": {
+      "first-shipment": 1
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.07
+    },
+    "q07": {
+     "excerpts_returned": 14,
+     "excerpts": 10,
+     "shown": {
+      "copper-tails": 1
+     },
+     "wrong_edition": {
+      "copper-tails": null
+     },
+     "page": {
+      "copper-tails": 1
+     },
+     "partial": {
+      "copper-tails": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.07
+    },
+    "q08": {
+     "excerpts_returned": 14,
+     "excerpts": 10,
+     "shown": {
+      "capacity": 1
+     },
+     "wrong_edition": {
+      "capacity": null
+     },
+     "page": {
+      "capacity": 1
+     },
+     "partial": {
+      "capacity": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.07
+    },
+    "q09": {
+     "excerpts_returned": 11,
+     "excerpts": 10,
+     "shown": {
+      "grade": 1
+     },
+     "wrong_edition": {
+      "grade": null
+     },
+     "page": {
+      "grade": 1
+     },
+     "partial": {
+      "grade": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.07
+    },
+    "q10": {
+     "excerpts_returned": 20,
+     "excerpts": 10,
+     "shown": {
+      "reagents": 2
+     },
+     "wrong_edition": {
+      "reagents": null
+     },
+     "page": {
+      "reagents": 1
+     },
+     "partial": {
+      "reagents": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.08
+    },
+    "q11": {
+     "excerpts_returned": 15,
+     "excerpts": 10,
+     "shown": {
+      "packing": 1
+     },
+     "wrong_edition": {
+      "packing": null
+     },
+     "page": {
+      "packing": 1
+     },
+     "partial": {
+      "packing": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.06
+    },
+    "q12": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "commissioned": 1,
+      "first-shipment": 2
+     },
+     "wrong_edition": {
+      "commissioned": null,
+      "first-shipment": null
+     },
+     "page": {
+      "commissioned": 1,
+      "first-shipment": 2
+     },
+     "partial": {
+      "commissioned": 4,
+      "first-shipment": 1
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.06
+    }
+   }
+  },
+  "minilm": {
+   "full": {
+    "q01": {
+     "excerpts_returned": 9,
+     "excerpts": 9,
+     "shown": {
+      "feed": null,
+      "filtered-2021": 2
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": null,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.3
+    },
+    "q02": {
+     "excerpts_returned": 12,
+     "excerpts": 10,
+     "shown": {
+      "feed": 2,
+      "filtered-2021": 1
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 2,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": 10,
+      "filtered-2021": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.13
+    },
+    "q03": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {
+      "feed": 3,
+      "filtered-2021": null
+     },
+     "wrong_edition": {
+      "feed": 5,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": null
+     },
+     "partial": {
+      "feed": 7,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.16
+    },
+    "q04": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {},
+     "wrong_edition": {},
+     "page": {},
+     "partial": {},
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.14
+    },
+    "q05": {
+     "excerpts_returned": 11,
+     "excerpts": 10,
+     "shown": {
+      "commissioned": 1
+     },
+     "wrong_edition": {
+      "commissioned": null
+     },
+     "page": {
+      "commissioned": 1
+     },
+     "partial": {
+      "commissioned": 3
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.11
+    },
+    "q06": {
+     "excerpts_returned": 12,
+     "excerpts": 10,
+     "shown": {
+      "first-shipment": 2
+     },
+     "wrong_edition": {
+      "first-shipment": null
+     },
+     "page": {
+      "first-shipment": 2
+     },
+     "partial": {
+      "first-shipment": 1
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.13
+    },
+    "q07": {
+     "excerpts_returned": 14,
+     "excerpts": 10,
+     "shown": {
+      "copper-tails": 1
+     },
+     "wrong_edition": {
+      "copper-tails": null
+     },
+     "page": {
+      "copper-tails": 1
+     },
+     "partial": {
+      "copper-tails": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.14
+    },
+    "q08": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {
+      "capacity": 1
+     },
+     "wrong_edition": {
+      "capacity": null
+     },
+     "page": {
+      "capacity": 1
+     },
+     "partial": {
+      "capacity": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.16
+    },
+    "q09": {
+     "excerpts_returned": 18,
+     "excerpts": 10,
+     "shown": {
+      "grade": 2
+     },
+     "wrong_edition": {
+      "grade": null
+     },
+     "page": {
+      "grade": 1
+     },
+     "partial": {
+      "grade": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.15
+    },
+    "q10": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {
+      "reagents": 2
+     },
+     "wrong_edition": {
+      "reagents": null
+     },
+     "page": {
+      "reagents": 1
+     },
+     "partial": {
+      "reagents": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.16
+    },
+    "q11": {
+     "excerpts_returned": 14,
+     "excerpts": 10,
+     "shown": {
+      "packing": 1
+     },
+     "wrong_edition": {
+      "packing": null
+     },
+     "page": {
+      "packing": 1
+     },
+     "partial": {
+      "packing": 10
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.14
+    },
+    "q12": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "commissioned": 1,
+      "first-shipment": 2
+     },
+     "wrong_edition": {
+      "commissioned": null,
+      "first-shipment": null
+     },
+     "page": {
+      "commissioned": 1,
+      "first-shipment": 2
+     },
+     "partial": {
+      "commissioned": 4,
+      "first-shipment": 1
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.13
+    }
+   },
+   "focused": {
+    "q01": {
+     "excerpts_returned": 14,
+     "excerpts": 10,
+     "shown": {
+      "feed": 2,
+      "filtered-2021": null
+     },
+     "wrong_edition": {
+      "feed": 8,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": null
+     },
+     "partial": {
+      "feed": 4,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.28
+    },
+    "q02": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "feed": 3,
+      "filtered-2021": 1
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 2,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": 10,
+      "filtered-2021": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.1
+    },
+    "q03": {
+     "excerpts_returned": 15,
+     "excerpts": 10,
+     "shown": {
+      "feed": 2,
+      "filtered-2021": null
+     },
+     "wrong_edition": {
+      "feed": 5,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": null
+     },
+     "partial": {
+      "feed": 7,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.15
+    },
+    "q04": {
+     "excerpts_returned": 15,
+     "excerpts": 10,
+     "shown": {},
+     "wrong_edition": {},
+     "page": {},
+     "partial": {},
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.11
+    },
+    "q05": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "commissioned": 1
+     },
+     "wrong_edition": {
+      "commissioned": null
+     },
+     "page": {
+      "commissioned": 1
+     },
+     "partial": {
+      "commissioned": 3
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.1
+    },
+    "q06": {
+     "excerpts_returned": 12,
+     "excerpts": 10,
+     "shown": {
+      "first-shipment": 2
+     },
+     "wrong_edition": {
+      "first-shipment": null
+     },
+     "page": {
+      "first-shipment": 2
+     },
+     "partial": {
+      "first-shipment": 1
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.11
+    },
+    "q07": {
+     "excerpts_returned": 14,
+     "excerpts": 10,
+     "shown": {
+      "copper-tails": 1
+     },
+     "wrong_edition": {
+      "copper-tails": null
+     },
+     "page": {
+      "copper-tails": 1
+     },
+     "partial": {
+      "copper-tails": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.12
+    },
+    "q08": {
+     "excerpts_returned": 14,
+     "excerpts": 10,
+     "shown": {
+      "capacity": 1
+     },
+     "wrong_edition": {
+      "capacity": null
+     },
+     "page": {
+      "capacity": 1
+     },
+     "partial": {
+      "capacity": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.11
+    },
+    "q09": {
+     "excerpts_returned": 12,
+     "excerpts": 10,
+     "shown": {
+      "grade": 2
+     },
+     "wrong_edition": {
+      "grade": null
+     },
+     "page": {
+      "grade": 1
+     },
+     "partial": {
+      "grade": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.12
+    },
+    "q10": {
+     "excerpts_returned": 15,
+     "excerpts": 10,
+     "shown": {
+      "reagents": 2
+     },
+     "wrong_edition": {
+      "reagents": null
+     },
+     "page": {
+      "reagents": 1
+     },
+     "partial": {
+      "reagents": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.13
+    },
+    "q11": {
+     "excerpts_returned": 15,
+     "excerpts": 10,
+     "shown": {
+      "packing": 1
+     },
+     "wrong_edition": {
+      "packing": null
+     },
+     "page": {
+      "packing": 1
+     },
+     "partial": {
+      "packing": 9
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.11
+    },
+    "q12": {
+     "excerpts_returned": 11,
+     "excerpts": 10,
+     "shown": {
+      "commissioned": 1,
+      "first-shipment": 2
+     },
+     "wrong_edition": {
+      "commissioned": null,
+      "first-shipment": null
+     },
+     "page": {
+      "commissioned": 1,
+      "first-shipment": 2
+     },
+     "partial": {
+      "commissioned": 4,
+      "first-shipment": 1
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.09
+    }
+   }
+  },
+  "qwen-rr": {
+   "full": {
+    "q01": {
+     "excerpts_returned": 12,
+     "excerpts": 10,
+     "shown": {
+      "feed": 1,
+      "filtered-2021": 3
+     },
+     "wrong_edition": {
+      "feed": 4,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": 3
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 1.68
+    },
+    "q02": {
+     "excerpts_returned": 12,
+     "excerpts": 10,
+     "shown": {
+      "feed": 3,
+      "filtered-2021": 1
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 2,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 1.23
+    },
+    "q03": {
+     "excerpts_returned": 12,
+     "excerpts": 10,
+     "shown": {
+      "feed": 3,
+      "filtered-2021": 1
+     },
+     "wrong_edition": {
+      "feed": 10,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 2,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": 5,
+      "filtered-2021": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 1.23
+    },
+    "q04": {
+     "excerpts_returned": 11,
+     "excerpts": 10,
+     "shown": {},
+     "wrong_edition": {},
+     "page": {},
+     "partial": {},
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 1.12
+    },
+    "q05": {
+     "excerpts_returned": 11,
+     "excerpts": 10,
+     "shown": {
+      "commissioned": 1
+     },
+     "wrong_edition": {
+      "commissioned": null
+     },
+     "page": {
+      "commissioned": 1
+     },
+     "partial": {
+      "commissioned": 3
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 1.12
+    },
+    "q06": {
+     "excerpts_returned": 12,
+     "excerpts": 10,
+     "shown": {
+      "first-shipment": 2
+     },
+     "wrong_edition": {
+      "first-shipment": null
+     },
+     "page": {
+      "first-shipment": 2
+     },
+     "partial": {
+      "first-shipment": 1
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 1.06
+    },
+    "q07": {
+     "excerpts_returned": 14,
+     "excerpts": 10,
+     "shown": {
+      "copper-tails": 1
+     },
+     "wrong_edition": {
+      "copper-tails": null
+     },
+     "page": {
+      "copper-tails": 1
+     },
+     "partial": {
+      "copper-tails": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 1.09
+    },
+    "q08": {
+     "excerpts_returned": 14,
+     "excerpts": 10,
+     "shown": {
+      "capacity": 1
+     },
+     "wrong_edition": {
+      "capacity": null
+     },
+     "page": {
+      "capacity": 1
+     },
+     "partial": {
+      "capacity": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 1.18
+    },
+    "q09": {
+     "excerpts_returned": 14,
+     "excerpts": 10,
+     "shown": {
+      "grade": 1
+     },
+     "wrong_edition": {
+      "grade": null
+     },
+     "page": {
+      "grade": 1
+     },
+     "partial": {
+      "grade": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 1.18
+    },
+    "q10": {
+     "excerpts_returned": 15,
+     "excerpts": 10,
+     "shown": {
+      "reagents": 2
+     },
+     "wrong_edition": {
+      "reagents": null
+     },
+     "page": {
+      "reagents": 1
+     },
+     "partial": {
+      "reagents": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 1.16
+    },
+    "q11": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {
+      "packing": 2
+     },
+     "wrong_edition": {
+      "packing": null
+     },
+     "page": {
+      "packing": 1
+     },
+     "partial": {
+      "packing": 10
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 1.06
+    },
+    "q12": {
+     "excerpts_returned": 11,
+     "excerpts": 10,
+     "shown": {
+      "commissioned": 1,
+      "first-shipment": 2
+     },
+     "wrong_edition": {
+      "commissioned": null,
+      "first-shipment": null
+     },
+     "page": {
+      "commissioned": 1,
+      "first-shipment": 2
+     },
+     "partial": {
+      "commissioned": 3,
+      "first-shipment": 1
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 1.05
+    }
+   },
+   "focused": {
+    "q01": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {
+      "feed": 2,
+      "filtered-2021": 4
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": 4
+     },
+     "partial": {
+      "feed": 5,
+      "filtered-2021": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 1.11
+    },
+    "q02": {
+     "excerpts_returned": 59,
+     "excerpts": 10,
+     "shown": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": null,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.76
+    },
+    "q03": {
+     "excerpts_returned": 12,
+     "excerpts": 10,
+     "shown": {
+      "feed": 3,
+      "filtered-2021": 1
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 2,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": 5,
+      "filtered-2021": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 1.14
+    },
+    "q04": {
+     "excerpts_returned": 62,
+     "excerpts": 10,
+     "shown": {},
+     "wrong_edition": {},
+     "page": {},
+     "partial": {},
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.95
+    },
+    "q05": {
+     "excerpts_returned": 12,
+     "excerpts": 10,
+     "shown": {
+      "commissioned": 1
+     },
+     "wrong_edition": {
+      "commissioned": null
+     },
+     "page": {
+      "commissioned": 1
+     },
+     "partial": {
+      "commissioned": 3
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 1.03
+    },
+    "q06": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {
+      "first-shipment": 2
+     },
+     "wrong_edition": {
+      "first-shipment": null
+     },
+     "page": {
+      "first-shipment": 2
+     },
+     "partial": {
+      "first-shipment": 1
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 1.02
+    },
+    "q07": {
+     "excerpts_returned": 14,
+     "excerpts": 10,
+     "shown": {
+      "copper-tails": 1
+     },
+     "wrong_edition": {
+      "copper-tails": null
+     },
+     "page": {
+      "copper-tails": 1
+     },
+     "partial": {
+      "copper-tails": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 1.03
+    },
+    "q08": {
+     "excerpts_returned": 14,
+     "excerpts": 10,
+     "shown": {
+      "capacity": 1
+     },
+     "wrong_edition": {
+      "capacity": null
+     },
+     "page": {
+      "capacity": 1
+     },
+     "partial": {
+      "capacity": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 1.2
+    },
+    "q09": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {
+      "grade": 1
+     },
+     "wrong_edition": {
+      "grade": null
+     },
+     "page": {
+      "grade": 1
+     },
+     "partial": {
+      "grade": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 1.08
+    },
+    "q10": {
+     "excerpts_returned": 16,
+     "excerpts": 10,
+     "shown": {
+      "reagents": 2
+     },
+     "wrong_edition": {
+      "reagents": null
+     },
+     "page": {
+      "reagents": 1
+     },
+     "partial": {
+      "reagents": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.88
+    },
+    "q11": {
+     "excerpts_returned": 15,
+     "excerpts": 10,
+     "shown": {
+      "packing": 3
+     },
+     "wrong_edition": {
+      "packing": null
+     },
+     "page": {
+      "packing": 1
+     },
+     "partial": {
+      "packing": 10
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 1.01
+    },
+    "q12": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "commissioned": 1,
+      "first-shipment": 2
+     },
+     "wrong_edition": {
+      "commissioned": null,
+      "first-shipment": null
+     },
+     "page": {
+      "commissioned": 1,
+      "first-shipment": 2
+     },
+     "partial": {
+      "commissioned": 3,
+      "first-shipment": 1
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.98
+    }
+   }
+  },
+  "hindsight": {
+   "full": {
+    "q01": {
+     "excerpts_returned": 16,
+     "excerpts": 10,
+     "shown": {
+      "feed": 1,
+      "filtered-2021": null
+     },
+     "wrong_edition": {
+      "feed": 3,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": null
+     },
+     "partial": {
+      "feed": 8,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 3.2
+    },
+    "q02": {
+     "excerpts_returned": 14,
+     "excerpts": 10,
+     "shown": {
+      "feed": 1,
+      "filtered-2021": null
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": 6
+     },
+     "partial": {
+      "feed": 5,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": true,
+     "seconds": 2.85
+    },
+    "q03": {
+     "excerpts_returned": 27,
+     "excerpts": 10,
+     "shown": {
+      "feed": 2,
+      "filtered-2021": null
+     },
+     "wrong_edition": {
+      "feed": 4,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": null
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 2.72
+    },
+    "q04": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {},
+     "wrong_edition": {},
+     "page": {},
+     "partial": {},
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 2.81
+    },
+    "q05": {
+     "excerpts_returned": 16,
+     "excerpts": 10,
+     "shown": {
+      "commissioned": 1
+     },
+     "wrong_edition": {
+      "commissioned": null
+     },
+     "page": {
+      "commissioned": 1
+     },
+     "partial": {
+      "commissioned": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 2.51
+    },
+    "q06": {
+     "excerpts_returned": 24,
+     "excerpts": 10,
+     "shown": {
+      "first-shipment": 2
+     },
+     "wrong_edition": {
+      "first-shipment": null
+     },
+     "page": {
+      "first-shipment": 2
+     },
+     "partial": {
+      "first-shipment": 1
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 2.67
+    },
+    "q07": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {
+      "copper-tails": 1
+     },
+     "wrong_edition": {
+      "copper-tails": null
+     },
+     "page": {
+      "copper-tails": 1
+     },
+     "partial": {
+      "copper-tails": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 2.73
+    },
+    "q08": {
+     "excerpts_returned": 14,
+     "excerpts": 10,
+     "shown": {
+      "capacity": 4
+     },
+     "wrong_edition": {
+      "capacity": null
+     },
+     "page": {
+      "capacity": 4
+     },
+     "partial": {
+      "capacity": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 2.79
+    },
+    "q09": {
+     "excerpts_returned": 15,
+     "excerpts": 10,
+     "shown": {
+      "grade": 1
+     },
+     "wrong_edition": {
+      "grade": null
+     },
+     "page": {
+      "grade": 1
+     },
+     "partial": {
+      "grade": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 2.73
+    },
+    "q10": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {
+      "reagents": 2
+     },
+     "wrong_edition": {
+      "reagents": null
+     },
+     "page": {
+      "reagents": 1
+     },
+     "partial": {
+      "reagents": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 2.61
+    },
+    "q11": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {
+      "packing": 1
+     },
+     "wrong_edition": {
+      "packing": null
+     },
+     "page": {
+      "packing": 1
+     },
+     "partial": {
+      "packing": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 2.65
+    },
+    "q12": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {
+      "commissioned": 1,
+      "first-shipment": 2
+     },
+     "wrong_edition": {
+      "commissioned": null,
+      "first-shipment": null
+     },
+     "page": {
+      "commissioned": 1,
+      "first-shipment": 2
+     },
+     "partial": {
+      "commissioned": null,
+      "first-shipment": 1
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 2.64
+    }
+   },
+   "focused": {
+    "q01": {
+     "excerpts_returned": 65,
+     "excerpts": 10,
+     "shown": {
+      "feed": 2,
+      "filtered-2021": null
+     },
+     "wrong_edition": {
+      "feed": 6,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": null
+     },
+     "partial": {
+      "feed": 4,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 3.28
+    },
+    "q02": {
+     "excerpts_returned": 9,
+     "excerpts": 9,
+     "shown": {
+      "feed": 3,
+      "filtered-2021": 1
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 2,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": 6,
+      "filtered-2021": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 1.77
+    },
+    "q03": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {
+      "feed": 2,
+      "filtered-2021": null
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": null
+     },
+     "partial": {
+      "feed": 4,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 2.71
+    },
+    "q04": {
+     "excerpts_returned": 66,
+     "excerpts": 10,
+     "shown": {},
+     "wrong_edition": {},
+     "page": {},
+     "partial": {},
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 1.81
+    },
+    "q05": {
+     "excerpts_returned": 143,
+     "excerpts": 10,
+     "shown": {
+      "commissioned": null
+     },
+     "wrong_edition": {
+      "commissioned": null
+     },
+     "page": {
+      "commissioned": 1
+     },
+     "partial": {
+      "commissioned": null
+     },
+     "complete@5": false,
+     "pages@5": true,
+     "complete@10": false,
+     "pages@10": true,
+     "seconds": 2.79
+    },
+    "q06": {
+     "excerpts_returned": 89,
+     "excerpts": 10,
+     "shown": {
+      "first-shipment": null
+     },
+     "wrong_edition": {
+      "first-shipment": null
+     },
+     "page": {
+      "first-shipment": null
+     },
+     "partial": {
+      "first-shipment": 1
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 2.63
+    },
+    "q07": {
+     "excerpts_returned": 14,
+     "excerpts": 10,
+     "shown": {
+      "copper-tails": 1
+     },
+     "wrong_edition": {
+      "copper-tails": null
+     },
+     "page": {
+      "copper-tails": 1
+     },
+     "partial": {
+      "copper-tails": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 2.64
+    },
+    "q08": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {
+      "capacity": 5
+     },
+     "wrong_edition": {
+      "capacity": null
+     },
+     "page": {
+      "capacity": 5
+     },
+     "partial": {
+      "capacity": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 2.18
+    },
+    "q09": {
+     "excerpts_returned": 14,
+     "excerpts": 10,
+     "shown": {
+      "grade": 1
+     },
+     "wrong_edition": {
+      "grade": null
+     },
+     "page": {
+      "grade": 1
+     },
+     "partial": {
+      "grade": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 2.51
+    },
+    "q10": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "reagents": 2
+     },
+     "wrong_edition": {
+      "reagents": null
+     },
+     "page": {
+      "reagents": 1
+     },
+     "partial": {
+      "reagents": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 1.74
+    },
+    "q11": {
+     "excerpts_returned": 15,
+     "excerpts": 10,
+     "shown": {
+      "packing": 1
+     },
+     "wrong_edition": {
+      "packing": null
+     },
+     "page": {
+      "packing": 1
+     },
+     "partial": {
+      "packing": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 2.56
+    },
+    "q12": {
+     "excerpts_returned": 60,
+     "excerpts": 10,
+     "shown": {
+      "commissioned": 1,
+      "first-shipment": null
+     },
+     "wrong_edition": {
+      "commissioned": null,
+      "first-shipment": null
+     },
+     "page": {
+      "commissioned": 1,
+      "first-shipment": 2
+     },
+     "partial": {
+      "commissioned": null,
+      "first-shipment": 1
+     },
+     "complete@5": false,
+     "pages@5": true,
+     "complete@10": false,
+     "pages@10": true,
+     "seconds": 2.32
+    }
+   }
+  },
+  "d1": {
+   "full": {
+    "q01": {
+     "excerpts_returned": 12,
+     "excerpts": 10,
+     "shown": {
+      "feed": null,
+      "filtered-2021": 10
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": null,
+      "filtered-2021": 10
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 5.06
+    },
+    "q02": {
+     "excerpts_returned": 15,
+     "excerpts": 10,
+     "shown": {
+      "feed": 1,
+      "filtered-2021": null
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": null
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 3.39
+    },
+    "q03": {
+     "excerpts_returned": 11,
+     "excerpts": 10,
+     "shown": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": null,
+      "filtered-2021": 8
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 4.06
+    },
+    "q04": {
+     "excerpts_returned": 27,
+     "excerpts": 10,
+     "shown": {},
+     "wrong_edition": {},
+     "page": {},
+     "partial": {},
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 3.9
+    },
+    "q05": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {
+      "commissioned": 7
+     },
+     "wrong_edition": {
+      "commissioned": null
+     },
+     "page": {
+      "commissioned": 7
+     },
+     "partial": {
+      "commissioned": 1
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 3.65
+    },
+    "q06": {
+     "excerpts_returned": 80,
+     "excerpts": 10,
+     "shown": {
+      "first-shipment": 1
+     },
+     "wrong_edition": {
+      "first-shipment": null
+     },
+     "page": {
+      "first-shipment": 1
+     },
+     "partial": {
+      "first-shipment": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 3.25
+    },
+    "q07": {
+     "excerpts_returned": 15,
+     "excerpts": 10,
+     "shown": {
+      "copper-tails": 1
+     },
+     "wrong_edition": {
+      "copper-tails": null
+     },
+     "page": {
+      "copper-tails": 1
+     },
+     "partial": {
+      "copper-tails": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 3.29
+    },
+    "q08": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {
+      "capacity": 1
+     },
+     "wrong_edition": {
+      "capacity": null
+     },
+     "page": {
+      "capacity": 1
+     },
+     "partial": {
+      "capacity": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 3.73
+    },
+    "q09": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {
+      "grade": 2
+     },
+     "wrong_edition": {
+      "grade": null
+     },
+     "page": {
+      "grade": 1
+     },
+     "partial": {
+      "grade": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 3.93
+    },
+    "q10": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {
+      "reagents": 2
+     },
+     "wrong_edition": {
+      "reagents": null
+     },
+     "page": {
+      "reagents": 1
+     },
+     "partial": {
+      "reagents": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 3.66
+    },
+    "q11": {
+     "excerpts_returned": 14,
+     "excerpts": 10,
+     "shown": {
+      "packing": 1
+     },
+     "wrong_edition": {
+      "packing": null
+     },
+     "page": {
+      "packing": 1
+     },
+     "partial": {
+      "packing": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 3.22
+    },
+    "q12": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {
+      "commissioned": 4,
+      "first-shipment": 3
+     },
+     "wrong_edition": {
+      "commissioned": null,
+      "first-shipment": null
+     },
+     "page": {
+      "commissioned": 4,
+      "first-shipment": 3
+     },
+     "partial": {
+      "commissioned": 5,
+      "first-shipment": 4
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 3.73
+    }
+   },
+   "focused": {
+    "q01": {
+     "excerpts_returned": 16,
+     "excerpts": 10,
+     "shown": {
+      "feed": 2,
+      "filtered-2021": null
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": 4
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": true,
+     "complete@10": false,
+     "pages@10": true,
+     "seconds": 3.5
+    },
+    "q02": {
+     "excerpts_returned": 16,
+     "excerpts": 10,
+     "shown": {
+      "feed": 10,
+      "filtered-2021": 8
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 10,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 3.19
+    },
+    "q03": {
+     "excerpts_returned": 17,
+     "excerpts": 10,
+     "shown": {
+      "feed": 2,
+      "filtered-2021": null
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": 4
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": true,
+     "complete@10": false,
+     "pages@10": true,
+     "seconds": 2.74
+    },
+    "q04": {
+     "excerpts_returned": 14,
+     "excerpts": 10,
+     "shown": {},
+     "wrong_edition": {},
+     "page": {},
+     "partial": {},
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 4.05
+    },
+    "q05": {
+     "excerpts_returned": 8,
+     "excerpts": 8,
+     "shown": {
+      "commissioned": 1
+     },
+     "wrong_edition": {
+      "commissioned": null
+     },
+     "page": {
+      "commissioned": 1
+     },
+     "partial": {
+      "commissioned": 2
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 3.18
+    },
+    "q06": {
+     "excerpts_returned": 61,
+     "excerpts": 10,
+     "shown": {
+      "first-shipment": null
+     },
+     "wrong_edition": {
+      "first-shipment": null
+     },
+     "page": {
+      "first-shipment": 1
+     },
+     "partial": {
+      "first-shipment": null
+     },
+     "complete@5": false,
+     "pages@5": true,
+     "complete@10": false,
+     "pages@10": true,
+     "seconds": 3.43
+    },
+    "q07": {
+     "excerpts_returned": 12,
+     "excerpts": 10,
+     "shown": {
+      "copper-tails": 1
+     },
+     "wrong_edition": {
+      "copper-tails": null
+     },
+     "page": {
+      "copper-tails": 1
+     },
+     "partial": {
+      "copper-tails": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 3.92
+    },
+    "q08": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {
+      "capacity": 1
+     },
+     "wrong_edition": {
+      "capacity": null
+     },
+     "page": {
+      "capacity": 1
+     },
+     "partial": {
+      "capacity": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 2.29
+    },
+    "q09": {
+     "excerpts_returned": 14,
+     "excerpts": 10,
+     "shown": {
+      "grade": 2
+     },
+     "wrong_edition": {
+      "grade": null
+     },
+     "page": {
+      "grade": 1
+     },
+     "partial": {
+      "grade": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 3.18
+    },
+    "q10": {
+     "excerpts_returned": 11,
+     "excerpts": 10,
+     "shown": {
+      "reagents": 2
+     },
+     "wrong_edition": {
+      "reagents": null
+     },
+     "page": {
+      "reagents": 1
+     },
+     "partial": {
+      "reagents": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 2.24
+    },
+    "q11": {
+     "excerpts_returned": 14,
+     "excerpts": 10,
+     "shown": {
+      "packing": 1
+     },
+     "wrong_edition": {
+      "packing": null
+     },
+     "page": {
+      "packing": 1
+     },
+     "partial": {
+      "packing": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 2.9
+    },
+    "q12": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {
+      "commissioned": 1,
+      "first-shipment": 8
+     },
+     "wrong_edition": {
+      "commissioned": null,
+      "first-shipment": null
+     },
+     "page": {
+      "commissioned": 1,
+      "first-shipment": 8
+     },
+     "partial": {
+      "commissioned": 2,
+      "first-shipment": 1
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 3.72
+    }
+   }
+  },
+  "knowline": {
+   "full": {
+    "q01": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "feed": 1,
+      "filtered-2021": 3
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": 3
+     },
+     "partial": {
+      "feed": 10,
+      "filtered-2021": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 47.9
+    },
+    "q02": {
+     "excerpts_returned": 11,
+     "excerpts": 10,
+     "shown": {
+      "feed": 1,
+      "filtered-2021": 7
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": 7
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 42.06
+    },
+    "q03": {
+     "excerpts_returned": 9,
+     "excerpts": 9,
+     "shown": {
+      "feed": 2,
+      "filtered-2021": 4
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": 4
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 39.74
+    },
+    "q04": {
+     "excerpts_returned": 77,
+     "excerpts": 10,
+     "shown": {},
+     "wrong_edition": {},
+     "page": {},
+     "partial": {},
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 54.42
+    },
+    "q05": {
+     "excerpts_returned": 12,
+     "excerpts": 10,
+     "shown": {
+      "commissioned": 1
+     },
+     "wrong_edition": {
+      "commissioned": null
+     },
+     "page": {
+      "commissioned": 1
+     },
+     "partial": {
+      "commissioned": 4
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 42.23
+    },
+    "q06": {
+     "excerpts_returned": 12,
+     "excerpts": 10,
+     "shown": {
+      "first-shipment": 1
+     },
+     "wrong_edition": {
+      "first-shipment": null
+     },
+     "page": {
+      "first-shipment": 1
+     },
+     "partial": {
+      "first-shipment": 2
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 46.82
+    },
+    "q07": {
+     "excerpts_returned": 12,
+     "excerpts": 10,
+     "shown": {
+      "copper-tails": 1
+     },
+     "wrong_edition": {
+      "copper-tails": null
+     },
+     "page": {
+      "copper-tails": 1
+     },
+     "partial": {
+      "copper-tails": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 48.41
+    },
+    "q08": {
+     "excerpts_returned": 14,
+     "excerpts": 10,
+     "shown": {
+      "capacity": 2
+     },
+     "wrong_edition": {
+      "capacity": null
+     },
+     "page": {
+      "capacity": 1
+     },
+     "partial": {
+      "capacity": 6
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 45.86
+    },
+    "q09": {
+     "excerpts_returned": 17,
+     "excerpts": 10,
+     "shown": {
+      "grade": 2
+     },
+     "wrong_edition": {
+      "grade": null
+     },
+     "page": {
+      "grade": 1
+     },
+     "partial": {
+      "grade": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 54.13
+    },
+    "q10": {
+     "excerpts_returned": 18,
+     "excerpts": 10,
+     "shown": {
+      "reagents": 2
+     },
+     "wrong_edition": {
+      "reagents": null
+     },
+     "page": {
+      "reagents": 1
+     },
+     "partial": {
+      "reagents": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 44.71
+    },
+    "q11": {
+     "excerpts_returned": 14,
+     "excerpts": 10,
+     "shown": {
+      "packing": 2
+     },
+     "wrong_edition": {
+      "packing": null
+     },
+     "page": {
+      "packing": 1
+     },
+     "partial": {
+      "packing": 8
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 47.68
+    },
+    "q12": {
+     "excerpts_returned": 17,
+     "excerpts": 10,
+     "shown": {
+      "commissioned": 1,
+      "first-shipment": 10
+     },
+     "wrong_edition": {
+      "commissioned": null,
+      "first-shipment": null
+     },
+     "page": {
+      "commissioned": 1,
+      "first-shipment": 2
+     },
+     "partial": {
+      "commissioned": null,
+      "first-shipment": 1
+     },
+     "complete@5": false,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 46.67
+    }
+   },
+   "focused": {
+    "q01": {
+     "excerpts_returned": 16,
+     "excerpts": 10,
+     "shown": {
+      "feed": 2,
+      "filtered-2021": 4
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": 4
+     },
+     "partial": {
+      "feed": 7,
+      "filtered-2021": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 24.45
+    },
+    "q02": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "feed": 4,
+      "filtered-2021": 2
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 3,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": 9,
+      "filtered-2021": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 42.98
+    },
+    "q03": {
+     "excerpts_returned": 11,
+     "excerpts": 10,
+     "shown": {
+      "feed": 2,
+      "filtered-2021": 5
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": 4
+     },
+     "partial": {
+      "feed": 6,
+      "filtered-2021": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 43.81
+    },
+    "q04": {
+     "excerpts_returned": 62,
+     "excerpts": 10,
+     "shown": {},
+     "wrong_edition": {},
+     "page": {},
+     "partial": {},
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 54.3
+    },
+    "q05": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "commissioned": 1
+     },
+     "wrong_edition": {
+      "commissioned": null
+     },
+     "page": {
+      "commissioned": 1
+     },
+     "partial": {
+      "commissioned": 4
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 47.22
+    },
+    "q06": {
+     "excerpts_returned": 97,
+     "excerpts": 10,
+     "shown": {
+      "first-shipment": null
+     },
+     "wrong_edition": {
+      "first-shipment": null
+     },
+     "page": {
+      "first-shipment": 1
+     },
+     "partial": {
+      "first-shipment": null
+     },
+     "complete@5": false,
+     "pages@5": true,
+     "complete@10": false,
+     "pages@10": true,
+     "seconds": 47.25
+    },
+    "q07": {
+     "excerpts_returned": 11,
+     "excerpts": 10,
+     "shown": {
+      "copper-tails": 1
+     },
+     "wrong_edition": {
+      "copper-tails": null
+     },
+     "page": {
+      "copper-tails": 1
+     },
+     "partial": {
+      "copper-tails": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 46.61
+    },
+    "q08": {
+     "excerpts_returned": 15,
+     "excerpts": 10,
+     "shown": {
+      "capacity": 1
+     },
+     "wrong_edition": {
+      "capacity": null
+     },
+     "page": {
+      "capacity": 1
+     },
+     "partial": {
+      "capacity": 5
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 33.11
+    },
+    "q09": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {
+      "grade": 3
+     },
+     "wrong_edition": {
+      "grade": null
+     },
+     "page": {
+      "grade": 1
+     },
+     "partial": {
+      "grade": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 50.15
+    },
+    "q10": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "reagents": 2
+     },
+     "wrong_edition": {
+      "reagents": null
+     },
+     "page": {
+      "reagents": 1
+     },
+     "partial": {
+      "reagents": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 46.36
+    },
+    "q11": {
+     "excerpts_returned": 17,
+     "excerpts": 10,
+     "shown": {
+      "packing": 2
+     },
+     "wrong_edition": {
+      "packing": null
+     },
+     "page": {
+      "packing": 1
+     },
+     "partial": {
+      "packing": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 48.72
+    },
+    "q12": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "commissioned": 2,
+      "first-shipment": 1
+     },
+     "wrong_edition": {
+      "commissioned": null,
+      "first-shipment": null
+     },
+     "page": {
+      "commissioned": 2,
+      "first-shipment": 1
+     },
+     "partial": {
+      "commissioned": 5,
+      "first-shipment": 2
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 46.14
+    }
+   }
+  }
+ },
+ "repeats": {
+  "keyword": {
+   "full": "identical",
+   "focused": "identical"
+  },
+  "tinybert": {
+   "full": "identical",
+   "focused": "identical"
+  },
+  "minilm": {
+   "full": "identical",
+   "focused": "identical"
+  },
+  "qwen-rr": {
+   "full": "identical",
+   "focused": "identical"
+  },
+  "hindsight": {
+   "full": "identical",
+   "focused": "identical"
+  },
+  "d1": {
+   "full": "identical",
+   "focused": "identical"
+  },
+  "knowline": {
+   "full": "identical",
+   "focused": "identical"
+  }
+ },
+ "asked": {
+  "keyword": {
+   "full": {
+    "q01": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "feed": null,
+      "filtered-2021": 1
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": null,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.01
+    },
+    "q02": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "feed": null,
+      "filtered-2021": 1
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": null,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.01
+    },
+    "q03": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "feed": 5,
+      "filtered-2021": 1
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 3,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.02
+    }
+   },
+   "focused": {
+    "q01": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "feed": null,
+      "filtered-2021": 7
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": null,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.0
+    },
+    "q02": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "feed": null,
+      "filtered-2021": 8
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": null,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.0
+    },
+    "q03": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "feed": null,
+      "filtered-2021": 8
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": null,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.0
+    }
+   }
+  },
+  "tinybert": {
+   "full": {
+    "q01": {
+     "excerpts_returned": 21,
+     "excerpts": 10,
+     "shown": {
+      "feed": null,
+      "filtered-2021": 2
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": null,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.28
+    },
+    "q02": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "feed": 3,
+      "filtered-2021": 1
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 2,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": 8,
+      "filtered-2021": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.11
+    },
+    "q03": {
+     "excerpts_returned": 14,
+     "excerpts": 10,
+     "shown": {
+      "feed": 3,
+      "filtered-2021": null
+     },
+     "wrong_edition": {
+      "feed": 6,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": null
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.11
+    }
+   },
+   "focused": {
+    "q01": {
+     "excerpts_returned": 61,
+     "excerpts": 10,
+     "shown": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": null,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.24
+    },
+    "q02": {
+     "excerpts_returned": 11,
+     "excerpts": 10,
+     "shown": {
+      "feed": 3,
+      "filtered-2021": 1
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 2,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": 8,
+      "filtered-2021": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.07
+    },
+    "q03": {
+     "excerpts_returned": 15,
+     "excerpts": 10,
+     "shown": {
+      "feed": 3,
+      "filtered-2021": null
+     },
+     "wrong_edition": {
+      "feed": 6,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": null
+     },
+     "partial": {
+      "feed": 10,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.08
+    }
+   }
+  },
+  "minilm": {
+   "full": {
+    "q01": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "feed": null,
+      "filtered-2021": 2
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": null,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.31
+    },
+    "q02": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "feed": 2,
+      "filtered-2021": 7
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": 7
+     },
+     "partial": {
+      "feed": 8,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.14
+    },
+    "q03": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {
+      "feed": 3,
+      "filtered-2021": null
+     },
+     "wrong_edition": {
+      "feed": 6,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": null
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.18
+    }
+   },
+   "focused": {
+    "q01": {
+     "excerpts_returned": 14,
+     "excerpts": 10,
+     "shown": {
+      "feed": 2,
+      "filtered-2021": null
+     },
+     "wrong_edition": {
+      "feed": 8,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": null
+     },
+     "partial": {
+      "feed": 4,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.28
+    },
+    "q02": {
+     "excerpts_returned": 11,
+     "excerpts": 10,
+     "shown": {
+      "feed": 2,
+      "filtered-2021": 7
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": 7
+     },
+     "partial": {
+      "feed": 9,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 0.1
+    },
+    "q03": {
+     "excerpts_returned": 15,
+     "excerpts": 10,
+     "shown": {
+      "feed": 3,
+      "filtered-2021": null
+     },
+     "wrong_edition": {
+      "feed": 6,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": null
+     },
+     "partial": {
+      "feed": 8,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 0.15
+    }
+   }
+  },
+  "qwen-rr": {
+   "full": {
+    "q01": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {
+      "feed": 1,
+      "filtered-2021": 3
+     },
+     "wrong_edition": {
+      "feed": 4,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": 3
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 1.75
+    },
+    "q02": {
+     "excerpts_returned": 11,
+     "excerpts": 10,
+     "shown": {
+      "feed": 3,
+      "filtered-2021": 1
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 2,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": 10,
+      "filtered-2021": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 1.27
+    },
+    "q03": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {
+      "feed": 3,
+      "filtered-2021": 5
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": 5
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 1.16
+    }
+   },
+   "focused": {
+    "q01": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {
+      "feed": 2,
+      "filtered-2021": 4
+     },
+     "wrong_edition": {
+      "feed": 8,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": 4
+     },
+     "partial": {
+      "feed": 5,
+      "filtered-2021": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 1.24
+    },
+    "q02": {
+     "excerpts_returned": 12,
+     "excerpts": 10,
+     "shown": {
+      "feed": 3,
+      "filtered-2021": 1
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 2,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 1.01
+    },
+    "q03": {
+     "excerpts_returned": 12,
+     "excerpts": 10,
+     "shown": {
+      "feed": 2,
+      "filtered-2021": 7
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": 7
+     },
+     "partial": {
+      "feed": 4,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 1.07
+    }
+   }
+  },
+  "hindsight": {
+   "full": {
+    "q01": {
+     "excerpts_returned": 14,
+     "excerpts": 10,
+     "shown": {
+      "feed": 1,
+      "filtered-2021": null
+     },
+     "wrong_edition": {
+      "feed": 3,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": null
+     },
+     "partial": {
+      "feed": 9,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 3.09
+    },
+    "q02": {
+     "excerpts_returned": 14,
+     "excerpts": 10,
+     "shown": {
+      "feed": 2,
+      "filtered-2021": null
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": 7
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": true,
+     "seconds": 2.71
+    },
+    "q03": {
+     "excerpts_returned": 15,
+     "excerpts": 10,
+     "shown": {
+      "feed": 5,
+      "filtered-2021": null
+     },
+     "wrong_edition": {
+      "feed": 8,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": null
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 2.6
+    }
+   },
+   "focused": {
+    "q01": {
+     "excerpts_returned": 71,
+     "excerpts": 10,
+     "shown": {
+      "feed": 2,
+      "filtered-2021": null
+     },
+     "wrong_edition": {
+      "feed": 5,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": 8
+     },
+     "partial": {
+      "feed": 7,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": true,
+     "seconds": 2.6
+    },
+    "q02": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {
+      "feed": 2,
+      "filtered-2021": 10
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": 9
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 1.76
+    },
+    "q03": {
+     "excerpts_returned": 14,
+     "excerpts": 10,
+     "shown": {
+      "feed": 2,
+      "filtered-2021": null
+     },
+     "wrong_edition": {
+      "feed": 5,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": null
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 1.64
+    }
+   }
+  },
+  "d1": {
+   "full": {
+    "q01": {
+     "excerpts_returned": 14,
+     "excerpts": 10,
+     "shown": {
+      "feed": null,
+      "filtered-2021": 1
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": null,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 4.92
+    },
+    "q02": {
+     "excerpts_returned": 14,
+     "excerpts": 10,
+     "shown": {
+      "feed": 2,
+      "filtered-2021": null
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": null
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 3.95
+    },
+    "q03": {
+     "excerpts_returned": 11,
+     "excerpts": 10,
+     "shown": {
+      "feed": 3,
+      "filtered-2021": null
+     },
+     "wrong_edition": {
+      "feed": 5,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": null
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": false,
+     "seconds": 3.24
+    }
+   },
+   "focused": {
+    "q01": {
+     "excerpts_returned": 22,
+     "excerpts": 10,
+     "shown": {
+      "feed": 5,
+      "filtered-2021": null
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": 7
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": false,
+     "pages@10": true,
+     "seconds": 3.35
+    },
+    "q02": {
+     "excerpts_returned": 11,
+     "excerpts": 10,
+     "shown": {
+      "feed": 4,
+      "filtered-2021": 1
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 3,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": 2,
+      "filtered-2021": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 3.11
+    },
+    "q03": {
+     "excerpts_returned": 10,
+     "excerpts": 10,
+     "shown": {
+      "feed": 4,
+      "filtered-2021": 2
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 3,
+      "filtered-2021": 1
+     },
+     "partial": {
+      "feed": 7,
+      "filtered-2021": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 2.07
+    }
+   }
+  },
+  "knowline": {
+   "full": {
+    "q01": {
+     "excerpts_returned": 12,
+     "excerpts": 10,
+     "shown": {
+      "feed": 1,
+      "filtered-2021": 3
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": 3
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 47.04
+    },
+    "q02": {
+     "excerpts_returned": 15,
+     "excerpts": 10,
+     "shown": {
+      "feed": 2,
+      "filtered-2021": 7
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": 7
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 48.74
+    },
+    "q03": {
+     "excerpts_returned": 8,
+     "excerpts": 8,
+     "shown": {
+      "feed": 3,
+      "filtered-2021": 5
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": 5
+     },
+     "partial": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 47.22
+    }
+   },
+   "focused": {
+    "q01": {
+     "excerpts_returned": 14,
+     "excerpts": 10,
+     "shown": {
+      "feed": 2,
+      "filtered-2021": 4
+     },
+     "wrong_edition": {
+      "feed": 6,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": 4
+     },
+     "partial": {
+      "feed": 8,
+      "filtered-2021": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 26.85
+    },
+    "q02": {
+     "excerpts_returned": 12,
+     "excerpts": 10,
+     "shown": {
+      "feed": 2,
+      "filtered-2021": 7
+     },
+     "wrong_edition": {
+      "feed": null,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": 7
+     },
+     "partial": {
+      "feed": 9,
+      "filtered-2021": null
+     },
+     "complete@5": false,
+     "pages@5": false,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 43.39
+    },
+    "q03": {
+     "excerpts_returned": 13,
+     "excerpts": 10,
+     "shown": {
+      "feed": 2,
+      "filtered-2021": 4
+     },
+     "wrong_edition": {
+      "feed": 6,
+      "filtered-2021": null
+     },
+     "page": {
+      "feed": 1,
+      "filtered-2021": 4
+     },
+     "partial": {
+      "feed": 9,
+      "filtered-2021": null
+     },
+     "complete@5": true,
+     "pages@5": true,
+     "complete@10": true,
+     "pages@10": true,
+     "seconds": 40.66
+    }
+   }
+  }
+ }
+}

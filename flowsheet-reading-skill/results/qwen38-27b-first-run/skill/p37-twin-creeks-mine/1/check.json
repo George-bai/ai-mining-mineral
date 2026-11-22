@@ -1,0 +1,36 @@
+{
+ "checked": "Claude, 16 Nov 2026",
+ "pairing": {
+  "refractory_slurry_cooling": {
+   "to": [],
+   "why": "'Refractory Slurry Cooling' names a section, not an item (as in the no-skill check of this drawing)"
+  },
+  "heat_exchanger": {
+   "to": [
+    "coolers",
+    "heat_exchanger"
+   ],
+   "why": "'Tube and Shell Cooler / Heat Exchanger' names two items: pairs with both (README, 16 Nov)"
+  },
+  "lime": {
+   "to": [],
+   "why": "'Lime' on the line into the neutralization tanks, with the chart's own lime silo box beside it: the key's stream label 'Lime' drawn as a box (16 Nov, on the uncut list)"
+  },
+  "roast": {
+   "to": [
+    "retort"
+   ],
+   "why": "'Roast' between the electrowinning cells and the furnace, where the drawing has the Retort and the chart has no other box for it (rule 2, as 'Rotary' elsewhere) (16 Nov, on the uncut list)"
+  },
+  "trash_screen_oxide": {
+   "to": [],
+   "why": "'Trash Screen' between the jaw crusher and the radial stacker, on the oxide crushing line, where the drawing has no trash screen: a role the drawing does not have; the chart's position names no key item there. Pairs with nothing, its lines run through (call of 16 Nov 2026, 8:45 pm AEST)"
+  }
+ },
+ "notes": [
+  "Test, skill. hoppers, SAG mills, cyclones, screens and surge tanks by their oxide/refractory ids and feeds, as the scorer has them; the refractory sump between the trash screen and the secondary mill is a junction either way. 'Vessel' below the flash vessel is the flash vessels drawn twice. Water, air, vent and to-atmosphere boxes pair with the set sharing their label. 'Sub Aerial Depatcher' passes through; 'Roast' is the retort (pairing). Misread labels kept: Cycloner, Agidulotiond Starage Tanker, Barren/Pregnant Sal. Tank.",
+  "First run wrote the chart (14.1 minutes).",
+  "Read: every box whose label is not exactly its key item's, or that pairs with nothing or with a set, and every box paired with a repeated key label, with its feeds (local/dev/repeats.py); both lists uncut, 16 Nov. Boxes whose label is exactly their key item's were not each read.",
+  "Corrected 16 Nov 2026, 8:45 pm AEST: the crushing-line trash screen pairs with nothing (reference/README.md, the call added during the 27B rerun); before, it stood as the oxide trash screen, as the scorer paired it."
+ ]
+}

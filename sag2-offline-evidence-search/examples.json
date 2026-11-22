@@ -1,0 +1,133 @@
+{
+ "note": "Written on 21 Nov 2026 before any search on this archive, from the records' text. 'expect' names each question's target pages, the pages used for the final scoring of the retrieval: the pages whose text answers the question as the records stand (for e7, the roaster circuit as documented at 31 December 2025, not its operation on the question's date). 'none' marks the question with no target page. Corrected after the run, 21 Nov 2026, when Codex's page review found that NGM page 191 describes the Gold Quarry roaster, not Goldstrike's: for e4 and e7 the target pages are now NGM 189 (the Goldstrike roaster circuit) and 190 (its equipment table); the selection made before the search is kept as 'expect_original' wherever it was corrected.",
+ "examples": [
+  {
+   "id": "e1",
+   "use": "Plant design",
+   "text": "Where does Cadia's molybdenum plant take its feed from?",
+   "expect": [
+    [
+     "newmont-cadia-trs-2026",
+     "Page 14-3"
+    ]
+   ]
+  },
+  {
+   "id": "e2",
+   "use": "Metallurgical testwork",
+   "text": "What gold and copper recoveries did the Cadia plant trial on underground ore achieve?",
+   "expect": [
+    [
+     "newmont-cadia-trs-2026",
+     "Page 10-4"
+    ]
+   ]
+  },
+  {
+   "id": "e3",
+   "use": "Water",
+   "text": "What share of water does Cadia's life-of-mine plan assume will be reused?",
+   "expect": [
+    [
+     "newmont-cadia-trs-2026",
+     "Page 17-9"
+    ]
+   ]
+  },
+  {
+   "id": "e4",
+   "use": "Process",
+   "text": "What comes after primary and secondary crushing in the Goldstrike roaster circuit?",
+   "expect": [
+    [
+     "ngm-trs-2026",
+     "Page 189"
+    ],
+    [
+     "ngm-trs-2026",
+     "Page 190"
+    ]
+   ],
+   "expect_original": [
+    [
+     "ngm-trs-2026",
+     "Page 189"
+    ],
+    [
+     "ngm-trs-2026",
+     "Page 191"
+    ]
+   ]
+  },
+  {
+   "id": "e5",
+   "use": "Incident records",
+   "text": "During the 2003 Goldstrike roaster gasket repair, what was left inside the roaster, and was the oxygen supply locked out?",
+   "expect": [
+    [
+     "msha-mai-2003-23",
+     "Page 9"
+    ],
+    [
+     "msha-mai-2003-23",
+     "Page 10"
+    ]
+   ]
+  },
+  {
+   "id": "e6",
+   "use": "Maintenance and regulation",
+   "text": "Can a mechanic free a rock from a conveyor pulley while the belt is running, and when must a tail pulley beside a walkway be guarded?",
+   "expect": [
+    [
+     "msha-bp-49",
+     "Page 1"
+    ],
+    [
+     "cfr-30-56-m",
+     "§ 56.14107 Moving machine parts."
+    ]
+   ]
+  },
+  {
+   "id": "e7",
+   "use": "Linking two records",
+   "text": "The mine whose roaster had a fatal accident in November 2003: how is ore ground before its roasters today?",
+   "expect": [
+    [
+     "msha-mai-2003-23",
+     "Page 1"
+    ],
+    [
+     "ngm-trs-2026",
+     "Page 189"
+    ],
+    [
+     "ngm-trs-2026",
+     "Page 190"
+    ]
+   ],
+   "expect_original": [
+    [
+     "msha-mai-2003-23",
+     "Page 1"
+    ],
+    [
+     "ngm-trs-2026",
+     "Page 189"
+    ],
+    [
+     "ngm-trs-2026",
+     "Page 191"
+    ]
+   ],
+   "note": "Target pages describe the roaster circuit as at 31 December 2025 (the report's effective date); its operation on the question's date is not in the records."
+  },
+  {
+   "id": "e8",
+   "use": "Not in the records",
+   "text": "What is Goldstrike's current written procedure for replacing a roaster discharge-leg gasket?",
+   "expect": "none"
+  }
+ ]
+}

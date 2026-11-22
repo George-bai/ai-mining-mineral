@@ -1,0 +1,27 @@
+{
+ "fields": {
+  "cu_4a_pct": 0.301,
+  "cu_4a_sd_pct": 0.008,
+  "cu_ar_pct": 0.308,
+  "cu_ar_sd_pct": 0.012,
+  "cu_h2so4_pct": 0.111,
+  "cu_h2so4_sd_pct": 0.011,
+  "cu_cn_pct": null,
+  "cu_cn_sd_pct": null,
+  "au_fa_ppm": 0.0466,
+  "au_fa_sd_ppm": null,
+  "au_ar_ppm": null,
+  "au_ar_sd_ppm": null
+ },
+ "content": "\n\n{\"cu_4a_pct\":0.301,\"cu_4a_sd_pct\":0.008,\"cu_ar_pct\":0.308,\"cu_ar_sd_pct\":0.012,\"cu_h2so4_pct\":0.111,\"cu_h2so4_sd_pct\":0.011,\"cu_cn_pct\":null,\"cu_cn_sd_pct\":null,\"au_fa_ppm\":0.0466,\"au_fa_sd_ppm\":null,\"au_ar_ppm\":null,\"au_ar_sd_ppm\":null}",
+ "reasoning": "Let me analyze the certificate of analysis for OREAS 902 and extract the relevant values for the CRM standards table.\n\nThe columns I need to fill are:\n- cu_4a_pct: Copper (wt.%) from 4 Acid Digestion\n- cu_4a_sd_pct: SD for that value\n- cu_ar_pct: Copper (wt.%) from Aqua Regia Digestion\n- cu_ar_sd_pct: SD for that value\n- cu_h2so4_pct: Copper from H2SO4 leach (wt.%)\n- cu_h2so4_sd_pct: SD for that value\n- cu_cn_pct: Copper from CN (cyanide) leach - not present in this certificate\n- cu_cn_sd_pct: SD for CN - not present\n- au_fa_ppm: Gold from Fire Assay (ppm)\n- au_fa_sd_ppm: SD for that value\n- au_ar_ppm: Gold from Aqua Regia (ppm)\n- au_ar_sd_ppm: SD for that value\n\nLet me look through the certificate:\n\n**4 Acid Digestion (Table 1):**\n- Cu, Copper (wt.%): Certified Value = 0.301, 1SD = 0.008\n\n**Aqua Regia Digestion (Table 1):**\n- Cu, Copper (wt.%): Certified Value = 0.308, 1SD = 0.012\n\n**Acid Leach 5% H2SO4 (Table 1):**\n- Copper Soluble, Cu-Sol (wt.%): Certified Value = 0.111, 1SD = 0.011\n\n**CN (cyanide) leach:** Not present in this certificate. This is OREAS 902, a copper ore CRM. There's no cyanide leach data.\n\n**Au from Fire Assay (Table 2 - Indicative Values):**\n- Pb Fire Assay: Au, ppb = 46.6\n- This is in ppb, not ppm. 46.6 ppb = 0.0466 ppm\n- No SD is given for indicative values.\n\nWait, let me reconsider. The column says \"au_fa_ppm\" - this is gold from fire assay in ppm. The value is 46.6 ppb = 0.0466 ppm. But there's no SD for indicative values.\n\n**Au from Aqua Regia (Table 1):**\n- Au, Gold (ppb): < 10, 1SD = IND (indeterminate)\n- This is in ppb, not ppm. < 10 ppb = < 0.01 ppm\n- The value is \"< 10\" which is a detection limit, not a certified value. And the SD is IND.\n\nSo for au_ar_ppm: The value is < 10 ppb = < 0.01 ppm. Since it's a detection limit and not a certified value, and the SD is IND, I should use null for both.\n\nActually, let me reconsider. The column asks for au_ar_ppm. The certificate shows Au in ppb for aqua regia as \"< 10\" with SD \"IND\". Since it's below detection limit and not a certified value, I'll use null.\n\nFor au_fa_ppm: The value is 46.6 ppb = 0.0466 ppm. But this is an indicative value (Table 2), not a certified value (Table 1). There's no SD provided. I'll put 0.0466 for the value and null for the SD.\n\nWait, actually let me reconsider. The value 46.6 ppb is in Table 2 (Indicative Values). It's not a certified value with an SD. Should I still include it? The column name is \"au_fa_ppm\" which suggests it's looking for the gold fire assay value in ppm. 46.6 ppb = 0.0466 ppm. I'll include the value but null for SD since no SD is given.\n\nHmm, but actually, looking more carefully at the structure - the indicative values don't have SDs. The question says \"Use null where the certificate has no value.\" The certificate does have a value (46.6 ppb) for Au fire assay, just no SD. So I'll convert to ppm (0.0466) and put null for SD.\n\nWait, let me re-read: \"Use null where the certificate has no value.\" This means if there's no value at all, use null. For Au FA, there IS a value (46.6 ppb = 0.0466 ppm), just no SD. So value = 0.0466, SD = null.\n\nFor Au AR: The value is \"< 10 ppb\" which is a detection limit, not a quantified value. And SD is \"IND\". I think this should be null for both since it's not a certified value - it's below detection.\n\nActually, let me reconsider again. The \"< 10\" is listed in Table 1 (certified values) for Aqua Regia. It has a certified value of \"< 10 ppb\" and 1SD of \"IND\". This is technically a certified value (it's in Table 1), but it's a non-detect. I'll use null for both since it's not a meaningful numeric value.\n\nLet me finalize:\n- cu_4a_pct: 0.301\n- cu_4a_sd_pct: 0.008\n- cu_ar_pct: 0.308\n- cu_ar_sd_pct: 0.012\n- cu_h2so4_pct: 0.111\n- cu_h2so4_sd_pct: 0.011\n- cu_cn_pct: null (no CN leach data)\n- cu_cn_sd_pct: null\n- au_fa_ppm: 0.0466 (46.6 ppb converted to ppm)\n- au_fa_sd_ppm: null (no SD for indicative values)\n- au_ar_ppm: null (< 10 ppb, not a quantified value, SD is IND)\n- au_ar_sd_ppm: null\n\nWait, I need to double-check the Au FA value. It says \"Au ppb 46.6\" in the Pb Fire Assay section of Table 2. 46.6 ppb = 0.0466 ppm. Yes.\n\nLet me format as JSON.\n",
+ "finish": "stop",
+ "usage": {
+  "prompt_tokens": 16432,
+  "total_tokens": 17994,
+  "completion_tokens": 1562,
+  "prompt_tokens_details": null
+ },
+ "seconds": 24.0,
+ "model": "qwen38-27b"
+}

@@ -1,0 +1,55 @@
+{
+ "checked": "Claude, 16 Nov 2026 (rerun)",
+ "pairing": {
+  "mine_ore": {
+   "to": [
+    "mined_ore"
+   ],
+   "why": "'MINE ORE' with its tonnages into the primary crusher: the MINED ORE input, label misread"
+  },
+  "water_sag": {
+   "to": [
+    "water_sag",
+    "lime_sag"
+   ],
+   "why": "'WATER / LIME' into the SAG mill names two items: pairs with both"
+  },
+  "sump_grinding": {
+   "to": [
+    "grinding_sump"
+   ],
+   "why": "unlabelled sump fed by the SAG mill discharge screen (rule 2): the grinding sump, not the rougher concentrate sump"
+  },
+  "cleaner_scavenger_small_tank": {
+   "to": [
+    "clsc_tails_sump"
+   ],
+   "why": "unlabelled tank placed at the cleaner/scavenger by its id and fed with LIME (rules 1 and 2): the cleaner scavenger tailings sump, not the filter feed tank of the copper area"
+  },
+  "carbon_bin_tank": {
+   "to": [
+    "tails_tank"
+   ],
+   "why": "'Tank (unlabelled, under CARBON BIN)' taking Caro's acid (rules 1 and 2): the tailings mixing box under the carbon bin on the drawing; the chart has its own CARBON BIN box"
+  },
+  "heat_exchanger": {
+   "to": [
+    "ew_cells"
+   ],
+   "why": "'Heat exchanger (unlabelled)', a role the drawing does not have, is the chart's only box between the pregnant solution tank and the EW sludge and wired as that item (rule 2, from the pregnant solution tank): the unlabelled electrowinning cells"
+  },
+  "loaded_carbon": {
+   "to": [],
+   "why": "'(LOADED CARBON)' is a stream label drawn as a box; the chart has its own HEAP LEACH CARBON box: pairs with nothing, its lines run through"
+  },
+  "baren_carbon": {
+   "to": [],
+   "why": "'(BAREN CARBON)' is a stream label drawn as a box: pairs with nothing, its lines run through"
+  }
+ },
+ "notes": [
+  "Rerun, skill. Misread labels kept as the same items: FROTH THICKENER (fines thickener), INTENSIVE OXIDATION, BAREN SOLUTION TANK, 'REAGENTS & LAND WATER' (the REAGENTS GLAND WATER outlet). Reagent, lime, water and Caro's acid inputs pair with their sets; '(RESIDUE)' and '(PREG)' are stream labels; the four 'CIP tank' boxes are the CIP row. Looked at on the drawing: the box under the carbon bin and the EW cells.",
+  "First try stopped by the loop guard after 220 s (one zoom call repeated eight times after zoom.py had closed the region); the restart run.sh gives both conditions wrote the chart.",
+  "Read: every box whose label is not exactly its key item's, or that pairs with nothing or with a set, and every box paired with a repeated key label, with its feeds (local/dev/repeats.py), 16 Nov. Boxes whose label is exactly their key item's were not each read."
+ ]
+}
