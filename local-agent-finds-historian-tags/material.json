@@ -1,0 +1,62 @@
+{
+ "codes": [
+  {
+   "point": "SI-C3-AT-4023",
+   "is": "Site I\\Concentrator 3\\Leach\\Leach Tank 6 \u00b7 Free Cyanide"
+  },
+  {
+   "point": "SA-C1-LT-5003",
+   "is": "Site A\\Concentrator 1\\Tailings\\Tailings Thickener \u00b7 Bed Level"
+  },
+  {
+   "point": "SITEC.CONC2.CRU.CV1.SPD",
+   "is": "Site C\\Concentrator 2\\Crushing\\CV-101 \u00b7 Belt Speed"
+  },
+  {
+   "point": "SITEG.CONC5.CRU.CV4.RATE.QC",
+   "is": "Site G\\Concentrator 5\\Crushing\\CV-104 \u00b7 Belt Weigher Rate QC"
+  },
+  {
+   "point": "SVC5_PP7_FLOW2",
+   "is": "PP7 FLOW spare (not in the asset tree)"
+  },
+  {
+   "point": "SRC1_BL1_AIR2",
+   "is": "BL1 AIR spare (not in the asset tree)"
+  }
+ ],
+ "unhealthy": [
+  {
+   "reading": "Site X\\Concentrator 3\\Flotation\\Final Tail \u00b7 Pb",
+   "health": "broken_ref"
+  },
+  {
+   "reading": "Site I\\Concentrator 2\\Leach\\Leach Tank 5 \u00b7 Agitator Power",
+   "health": "broken_ref"
+  },
+  {
+   "reading": "Site AE\\Concentrator 1\\Flotation\\Cleaner Cell 1 \u00b7 Agitator Power",
+   "health": "stale"
+  },
+  {
+   "reading": "Site R\\Concentrator 5\\Grinding\\SAG Mill \u00b7 Bearing Pressure",
+   "health": "stale"
+  },
+  {
+   "reading": "Site S\\Concentrator 2\\Flotation\\Rougher Conc Pump \u00b7 Speed",
+   "health": "no_data"
+  },
+  {
+   "reading": "Site Y\\Concentrator 1\\Flotation\\Depressant \u00b7 Dose Rate",
+   "health": "no_data"
+  },
+  {
+   "reading": "Site K\\Concentrator 5\\Grinding\\Ball Mill 1 \u00b7 Run Hours",
+   "health": "bad_quality"
+  },
+  {
+   "reading": "Site E\\Concentrator 3\\Crushing\\CV-104 \u00b7 Belt Weigher Rate",
+   "health": "bad_quality"
+  }
+ ]
+}

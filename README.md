@@ -18,6 +18,11 @@ article and has its own README.
 | 14 | [How does SAG2 find cited answers in a mine’s records, offline?](sag2-offline-evidence-search/) | https://eleticle.com/articles/sag2-offline-evidence-search/ |
 | 15 | [Which local model finds the whole answer in a mine’s reports?](offline-search-technical-records/) | https://eleticle.com/articles/offline-search-technical-records/ |
 | 16 | [Does searching a site’s own work orders help a local LLM as much as a glossary?](work-order-shorthand-past-notes/) | https://eleticle.com/articles/work-order-shorthand-past-notes/ |
+| 17 | [How should a local agent get access to your site’s historian?](local-agent-site-data-access/) | https://eleticle.com/articles/local-agent-site-data-access/ |
+| 18 | [How can a local agent find the right tag among 50,000?](historian-tag-catalogue-for-agents/) | https://eleticle.com/articles/historian-tag-catalogue-for-agents/ |
+| 19 | [Can a local 27B model find the right historian tags from a plain question?](local-agent-finds-historian-tags/) | https://eleticle.com/articles/local-agent-finds-historian-tags/ |
+| 20 | [Can a local agent see that collector dose relates to recovery differently at each feed grade?](local-agent-reagent-recovery-analysis/) | https://eleticle.com/articles/local-agent-reagent-recovery-analysis/ |
+| 21 | [What does a small local model need to analyse your site’s data well?](teaching-local-agent-site-analysis/) | https://eleticle.com/articles/teaching-local-agent-site-analysis/ |
 
 ## Data
 

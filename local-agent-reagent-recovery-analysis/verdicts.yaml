@@ -1,0 +1,101 @@
+1:
+  turns:
+  - false
+  - false
+  quantity: mass pull
+  r: 0.35
+  bands_r:
+    low: 0.26
+    mid: 0.17
+    high: 0.15
+  why:
+  - 'Read the four tags over the whole record, but calculated (f − t)/(c − t), the mass pull, and called it recovery: a mean
+    of 35.8 % against the key’s 79 to 89 %.'
+  - Split by feed gold and found the low third rising most with dose, but on mass pull, not recovery.
+  quote:
+  - 'There is a positive relationship: higher collector dose rates are associated with higher rougher gold recovery, but the
+    effect is modest and noisy.
+
+    • Pearson correlation r ≈ 0.35 (861 daily points) — a real but weak-to-moderate positive association.
+
+    • Binned means show a clear upward trend: mean recovery rises from ~20–26% at 2.5–3.0 mL/min, through ~32–35% at 4.5–6.0
+    mL/min, to …'
+  - 'Chart saved to collector_dose_vs_recovery_by_feed_grade.png in the current folder.
+
+    Yes — the relationship differs markedly by feed grade.
+
+    Feed grade was split into tertiles of the daily rougher feed Au (from SA-C1-AT-3069): low < 7.0 g/t, mid 7.0–9.0 g/t,
+    high ≥ 9.0 g/t (287 days each).'
+  minutes:
+  - 1.5
+  - 0.7
+2:
+  turns:
+  - true
+  - true
+  quantity: recovery, two-product formula
+  r: 0.48
+  bands_r:
+    low: 0.53
+    mid: 0.32
+    high: 0.2
+  why:
+  - Recovery by the two-product formula from the three assays; r 0.48 (key 0.47), recovery rising with dose and flattening
+    above about 6.5 mL/min.
+  - 'Thirds of feed gold (cuts 7.08 and 8.89 g/t): said recovery climbs steeply with dose in the low third and is flat in
+    the high third, with binned means on its chart and correlations, but no rate per third: a pass on a generous reading of
+    the clarified rule, a fail on a strict one. It also put high-grade recovery in the high 70s to low 80s %, where its own
+    data average 88.9 %.'
+  quote:
+  - 'Chart saved to collector_dose_vs_rougher_recovery.png (script: plot_collector_recovery.py).
+
+    Relationship.
+
+    Over the full historian record (2024-04-20 → 2026-11-13, 878 valid daily points), collector dose rate and rougher gold
+    recovery are moderately positively correlated (Pearson r ≈ 0.48), with a clear shape:
+
+    • ~4.2–5.0 mL/min: recovery ~79–82%
+
+    • ~5.7–6.4 mL/min: ~86%
+
+    • ~6.4–8.5 …'
+  - 'Chart is saved as collector_dose_vs_recovery_by_feed_grade.png (script: plot_collector_recovery_by_grade.py) — three
+    panels, one per feed-grade tercile, all on the same recovery axis.
+
+    Summary of what the chart shows.'
+  minutes:
+  - 2.1
+  - 1.3
+3:
+  turns:
+  - false
+  - false
+  quantity: recovery from pump flows
+  r: 0.55
+  bands_r:
+    low: 0.62
+    mid: 0.38
+    high: 0.28
+  why:
+  - Calculated recovery as one minus tail gold over feed gold, using the rougher concentrate and tail pump flow tags (generated
+    in the stand-in) instead of the assays’ two-product formula; mean 88 %, r 0.55.
+  - Found the low third steepest (r 0.62, 0.38, 0.28) on that same recovery.
+  quote:
+  - 'Done. The chart is saved at collector_dose_vs_rougher_recovery.png (script: collector_recovery.py, dataset: runs/r1/datasets/20261123-193134-0b3033.csv).
+
+    Relationship.
+
+    Higher collector dose → higher rougher gold recovery, with diminishing returns. Over the full historian record (2024-04-20
+    → 2026-11-13, 880 usable days):
+
+    • Dose 1.4–4 mL/min: recovery ~78–85%
+
+    • Dose 4–6 mL/min: …'
+  - 'Chart saved: collector_dose_vs_recovery_by_feed_grade.png (script: collector_recovery_by_grade.py, same dataset as before).
+
+    Yes — the relationship is clearly different at each feed grade.
+
+    Feed grade bands are the tertiles of the rougher feed Au assay (880 days, ~293 each):'
+  minutes:
+  - 10.2
+  - 1.5

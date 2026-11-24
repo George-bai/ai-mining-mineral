@@ -1,0 +1,5 @@
+# Development questions for the analytical skill: grinding at Site C, never scored, not the test.
+- id: d1
+  question: "What was the SAG mill specific energy, in kWh per tonne, at Site C, Concentrator 2 last month?"
+- id: d2
+  question: "How does SAG mill motor power relate to its fresh feed rate at Site C, Concentrator 2 over the past year, and is it different at high, mid and low cyclone feed density?"

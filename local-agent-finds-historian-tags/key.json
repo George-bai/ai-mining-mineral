@@ -1,0 +1,663 @@
+[
+ {
+  "id": "t01",
+  "type": "read",
+  "question": "What's the pH in leach tank 8 at Site B, Conc 4 right now?",
+  "tags": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site B\\Concentrator 4\\Leach\\Leach Tank 8|pH"
+  ],
+  "points": [
+   "SBC4_LT8_PH"
+  ],
+  "health": [
+   "ok"
+  ],
+  "flag": []
+ },
+ {
+  "id": "t02",
+  "type": "read",
+  "question": "Site AA, Conc 2 \u2014 what was the main incomer power factor at noon yesterday?",
+  "tags": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AA\\Concentrator 2\\Utilities\\Main Incomer|Power Factor"
+  ],
+  "points": [
+   "SITEAA.CONC2.UTL.PM1.PF"
+  ],
+  "health": [
+   "ok"
+  ],
+  "flag": []
+ },
+ {
+  "id": "t03",
+  "type": "read",
+  "question": "Trend yesterday's SAG fresh feed tph for Site D, Conc 1.",
+  "tags": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site D\\Concentrator 1\\Grinding\\SAG Mill|Fresh Feed Rate"
+  ],
+  "points": [
+   "SD1:2WT001"
+  ],
+  "health": [
+   "ok"
+  ],
+  "flag": []
+ },
+ {
+  "id": "t04",
+  "type": "read",
+  "question": "Plot the tailings return water flow for the past month at Site U, Conc 5.",
+  "tags": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site U\\Concentrator 5\\Tailings\\Return Water|Flow"
+  ],
+  "points": [
+   "SU-C5-FT-5015"
+  ],
+  "health": [
+   "ok"
+  ],
+  "flag": []
+ },
+ {
+  "id": "t05",
+  "type": "compare",
+  "question": "Site H, Conc 3 \u2014 put CV-103 motor amps and belt weigher tph on the same trend for yesterday.",
+  "tags": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site H\\Concentrator 3\\Crushing\\CV-103|Motor Current",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site H\\Concentrator 3\\Crushing\\CV-103|Belt Weigher Rate"
+  ],
+  "points": [
+   "SH3:1IT015",
+   "SH3:1WT013"
+  ],
+  "health": [
+   "stale",
+   "ok"
+  ],
+  "flag": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site H\\Concentrator 3\\Crushing\\CV-103|Motor Current"
+  ]
+ },
+ {
+  "id": "t06",
+  "type": "compare",
+  "question": "At Site AC, Conc 4, plot Cluster 2 feed pressure alongside the number of cyclones open last week.",
+  "tags": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AC\\Concentrator 4\\Grinding\\Cyclone Cluster 2|Feed Pressure",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AC\\Concentrator 4\\Grinding\\Cyclone Cluster 2|Cyclones Open"
+  ],
+  "points": [
+   "SAC-C4-PT-2023",
+   "SAC-C4-ZI-2027"
+  ],
+  "health": [
+   "stale",
+   "ok"
+  ],
+  "flag": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AC\\Concentrator 4\\Grinding\\Cyclone Cluster 2|Feed Pressure"
+  ]
+ },
+ {
+  "id": "t07",
+  "type": "compare",
+  "question": "Show frother dose rate and rougher cell 1 froth depth on one chart for Site F, Conc 2 since 12 Nov 2026.",
+  "tags": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site F\\Concentrator 2\\Flotation\\Frother|Dose Rate",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site F\\Concentrator 2\\Flotation\\Rougher Cell 1|Froth Depth"
+  ],
+  "points": [
+   "SFC2_RD2_DOSE",
+   "SFC2_FC1_FROTH"
+  ],
+  "health": [
+   "ok",
+   "ok"
+  ],
+  "flag": []
+ },
+ {
+  "id": "t08",
+  "type": "compare",
+  "question": "Can I see the thickener bed level and rake torque on the same trend for the last shift at Site M, Conc 5?",
+  "tags": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site M\\Concentrator 5\\Tailings\\Tailings Thickener|Bed Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site M\\Concentrator 5\\Tailings\\Tailings Thickener|Rake Torque"
+  ],
+  "points": [
+   "SM-C5-LT-5003",
+   "SM-C5-WT-5002"
+  ],
+  "health": [
+   "ok",
+   "ok"
+  ],
+  "flag": []
+ },
+ {
+  "id": "t09",
+  "type": "across",
+  "question": "Site T, Conc 1 \u2014 which of the four crushing belts is pulling the most amps right now?",
+  "tags": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site T\\Concentrator 1\\Crushing\\CV-101|Motor Current",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site T\\Concentrator 1\\Crushing\\CV-102|Motor Current",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site T\\Concentrator 1\\Crushing\\CV-103|Motor Current",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site T\\Concentrator 1\\Crushing\\CV-104|Motor Current"
+  ],
+  "points": [
+   "ST1:1IT007",
+   "ST1:1IT011",
+   "ST1:1IT015",
+   "ST1:1IT019"
+  ],
+  "health": [
+   "ok",
+   "ok",
+   "ok",
+   "ok"
+  ],
+  "flag": [],
+  "winner": "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site T\\Concentrator 1\\Crushing\\CV-102|Motor Current"
+ },
+ {
+  "id": "t10",
+  "type": "across",
+  "question": "Which of the six roughers at Site W, Conc 3 had the deepest froth on average last week?",
+  "tags": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site W\\Concentrator 3\\Flotation\\Rougher Cell 1|Froth Depth",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site W\\Concentrator 3\\Flotation\\Rougher Cell 2|Froth Depth",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site W\\Concentrator 3\\Flotation\\Rougher Cell 3|Froth Depth",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site W\\Concentrator 3\\Flotation\\Rougher Cell 4|Froth Depth",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site W\\Concentrator 3\\Flotation\\Rougher Cell 5|Froth Depth",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site W\\Concentrator 3\\Flotation\\Rougher Cell 6|Froth Depth"
+  ],
+  "points": [
+   "SITEW.CONC3.FLT.FC1.FROTH",
+   "SITEW.CONC3.FLT.FC2.FROTH",
+   "SITEW.CONC3.FLT.FC3.FROTH",
+   "SITEW.CONC3.FLT.FC4.FROTH",
+   "SITEW.CONC3.FLT.FC5.FROTH",
+   "SITEW.CONC3.FLT.FC6.FROTH"
+  ],
+  "health": [
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok"
+  ],
+  "flag": [],
+  "winner": "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site W\\Concentrator 3\\Flotation\\Rougher Cell 6|Froth Depth"
+ },
+ {
+  "id": "t11",
+  "type": "across",
+  "question": "Over the past month, which leach tank at Site L, Conc 2 had the lowest average DO?",
+  "tags": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank 1|Dissolved Oxygen",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank 2|Dissolved Oxygen",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank 3|Dissolved Oxygen",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank 4|Dissolved Oxygen",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank 5|Dissolved Oxygen",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank 6|Dissolved Oxygen",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank 7|Dissolved Oxygen",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank 8|Dissolved Oxygen"
+  ],
+  "points": [
+   "SL2:4AT002",
+   "SL2:4AT006",
+   "SL2:4AT010",
+   "SL2:4AT014",
+   "SL2:4AT018",
+   "SL2:4AT022",
+   "SL2:4AT026",
+   "SL2:4AT030"
+  ],
+  "health": [
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok"
+  ],
+  "flag": [],
+  "winner": "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank 5|Dissolved Oxygen"
+ },
+ {
+  "id": "t12",
+  "type": "across",
+  "question": "Site O, Conc 4 \u2014 which of the four area power meters clocked up the most kWh yesterday?",
+  "tags": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site O\\Concentrator 4\\Utilities\\Crushing Supply|Energy",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site O\\Concentrator 4\\Utilities\\Grinding Supply|Energy",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site O\\Concentrator 4\\Utilities\\Flotation Supply|Energy",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site O\\Concentrator 4\\Utilities\\Leach Supply|Energy"
+  ],
+  "points": [
+   "SITEO.CONC4.UTL.PM2.MWH",
+   "SITEO.CONC4.UTL.PM3.MWH",
+   "SITEO.CONC4.UTL.PM4.MWH",
+   "SITEO.CONC4.UTL.PM5.MWH"
+  ],
+  "health": [
+   "ok",
+   "no_data",
+   "ok",
+   "ok"
+  ],
+  "flag": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site O\\Concentrator 4\\Utilities\\Grinding Supply|Energy"
+  ],
+  "winner": "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site O\\Concentrator 4\\Utilities\\Flotation Supply|Energy",
+  "winner_by_counter": "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site O\\Concentrator 4\\Utilities\\Flotation Supply|Energy",
+  "winner_by_power": "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site O\\Concentrator 4\\Utilities\\Grinding Supply|Active Power"
+ },
+ {
+  "id": "t13",
+  "type": "ambiguous",
+  "question": "What's mill power doing at Site J this morning?",
+  "tags": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 1\\Grinding\\SAG Mill|Motor Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 1\\Grinding\\Ball Mill 1|Motor Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 1\\Grinding\\Ball Mill 2|Motor Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 2\\Grinding\\SAG Mill|Motor Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 2\\Grinding\\Ball Mill 1|Motor Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 2\\Grinding\\Ball Mill 2|Motor Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 3\\Grinding\\SAG Mill|Motor Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 3\\Grinding\\Ball Mill 1|Motor Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 3\\Grinding\\Ball Mill 2|Motor Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 4\\Grinding\\SAG Mill|Motor Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 4\\Grinding\\Ball Mill 1|Motor Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 4\\Grinding\\Ball Mill 2|Motor Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 5\\Grinding\\SAG Mill|Motor Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 5\\Grinding\\Ball Mill 1|Motor Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 5\\Grinding\\Ball Mill 2|Motor Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 1\\Utilities\\Grinding Supply|Active Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 2\\Utilities\\Grinding Supply|Active Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 3\\Utilities\\Grinding Supply|Active Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 4\\Utilities\\Grinding Supply|Active Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 5\\Utilities\\Grinding Supply|Active Power"
+  ],
+  "points": [
+   "SJC1_SAG1_PWR",
+   "SJC1_BM1_PWR",
+   "SJC1_BM2_PWR_OLD",
+   "SJC2_SAG1_PWR",
+   "SJC2_BM1_PWR",
+   "SJC2_BM2_PWR",
+   "SJC3_SAG1_PWR",
+   "SJC3_BM1_PWR",
+   "SJC3_BM2_PWR",
+   "SJC4_SAG1_PWR",
+   "SJC4_BM1_PWR",
+   "SJC4_BM2_PWR",
+   "SJC5_SAG1_PWR",
+   "SJC5_BM1_PWR",
+   "SJC5_BM2_PWR",
+   "SJC1_PM3_KW",
+   "SJC2_PM3_KW",
+   "SJC3_PM3_KW",
+   "SJC4_PM3_KW",
+   "SJC5_PM3_KW"
+  ],
+  "health": [
+   "ok",
+   "ok",
+   "broken_ref",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok"
+  ]
+ },
+ {
+  "id": "t14",
+  "type": "ambiguous",
+  "question": "Can you pull yesterday's gold grade for Site N, Conc 2?",
+  "tags": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site N\\Concentrator 2\\Flotation\\Rougher Feed|Au",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site N\\Concentrator 2\\Flotation\\Rougher Concentrate|Au",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site N\\Concentrator 2\\Flotation\\Rougher Tail|Au",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site N\\Concentrator 2\\Flotation\\Cleaner Concentrate|Au",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site N\\Concentrator 2\\Flotation\\Final Concentrate|Au",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site N\\Concentrator 2\\Flotation\\Final Tail|Au"
+  ],
+  "points": [
+   "SNC2_AN1_AU",
+   "SNC2_AN2_AU",
+   "SNC2_AN3_AU",
+   "SNC2_AN4_AU",
+   "SNC2_AN5_AU",
+   "SNC2_AN6_AU"
+  ],
+  "health": [
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok"
+  ]
+ },
+ {
+  "id": "t15",
+  "type": "ambiguous",
+  "question": "What water flow are we getting at Site Z right now?",
+  "tags": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator 1\\Grinding\\SAG Mill|Feed Water Flow",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator 1\\Grinding\\Process Water|Flow",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator 1\\Tailings\\Return Water|Flow",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator 1\\Utilities\\Raw Water|Flow",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator 2\\Grinding\\SAG Mill|Feed Water Flow",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator 2\\Grinding\\Process Water|Flow",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator 2\\Tailings\\Return Water|Flow",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator 2\\Utilities\\Raw Water|Flow",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator 3\\Grinding\\SAG Mill|Feed Water Flow",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator 3\\Grinding\\Process Water|Flow",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator 3\\Tailings\\Return Water|Flow",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator 3\\Utilities\\Raw Water|Flow",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator 4\\Grinding\\SAG Mill|Feed Water Flow",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator 4\\Grinding\\Process Water|Flow",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator 4\\Tailings\\Return Water|Flow",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator 4\\Utilities\\Raw Water|Flow",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator 5\\Grinding\\SAG Mill|Feed Water Flow",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator 5\\Grinding\\Process Water|Flow",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator 5\\Tailings\\Return Water|Flow",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator 5\\Utilities\\Raw Water|Flow"
+  ],
+  "points": [
+   "SZC1_SAG1_H2O",
+   "SZC1_FM1_FLOW",
+   "SZC1_FM2_FLOW",
+   "SZC1_FM3_FLOW",
+   "SZC2_SAG1_H2O",
+   "SZC2_FM1_FLOW",
+   "SZC2_FM2_FLOW",
+   "SZC2_FM3_FLOW",
+   "SZC3_SAG1_H2O",
+   "SZC3_FM1_FLOW",
+   "SZC3_FM2_FLOW",
+   "SZC3_FM3_FLOW",
+   "SZC4_SAG1_H2O",
+   "SZC4_FM1_FLOW",
+   "SZC4_FM2_FLOW",
+   "SZC4_FM3_FLOW_OLD",
+   "SZC5_SAG1_H2O",
+   "SZC5_FM1_FLOW",
+   "SZC5_FM2_FLOW",
+   "SZC5_FM3_FLOW"
+  ],
+  "health": [
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "broken_ref",
+   "ok",
+   "ok",
+   "ok",
+   "ok"
+  ]
+ },
+ {
+  "id": "t16",
+  "type": "ambiguous",
+  "question": "How did the tank level look at Site AB over the weekend?",
+  "tags": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 1\\Flotation\\Collector|Tank Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 1\\Flotation\\Frother|Tank Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 1\\Flotation\\Depressant|Tank Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 1\\Flotation\\Activator|Tank Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 1\\Leach\\Cyanide|Tank Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 1\\Leach\\Lime|Tank Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 1\\Utilities\\Process Water Tank|Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 2\\Flotation\\Collector|Tank Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 2\\Flotation\\Frother|Tank Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 2\\Flotation\\Depressant|Tank Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 2\\Flotation\\Activator|Tank Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 2\\Leach\\Cyanide|Tank Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 2\\Leach\\Lime|Tank Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 2\\Utilities\\Process Water Tank|Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 3\\Flotation\\Collector|Tank Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 3\\Flotation\\Frother|Tank Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 3\\Flotation\\Depressant|Tank Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 3\\Flotation\\Activator|Tank Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 3\\Leach\\Cyanide|Tank Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 3\\Leach\\Lime|Tank Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 3\\Utilities\\Process Water Tank|Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 4\\Flotation\\Collector|Tank Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 4\\Flotation\\Frother|Tank Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 4\\Flotation\\Depressant|Tank Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 4\\Flotation\\Activator|Tank Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 4\\Leach\\Cyanide|Tank Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 4\\Leach\\Lime|Tank Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 4\\Utilities\\Process Water Tank|Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 5\\Flotation\\Collector|Tank Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 5\\Flotation\\Frother|Tank Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 5\\Flotation\\Depressant|Tank Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 5\\Flotation\\Activator|Tank Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 5\\Leach\\Cyanide|Tank Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 5\\Leach\\Lime|Tank Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 5\\Utilities\\Process Water Tank|Level"
+  ],
+  "points": [
+   "SAB1:3LT058",
+   "SAB1:3LT061",
+   "SAB1:3LT064",
+   "SAB1:3LT067",
+   "SAB1:4LT034",
+   "SAB1:4LT037",
+   "SAB1:9LT026",
+   "SAB2:3LT058",
+   "SAB2:3LT061",
+   "SAB2:3LT064",
+   "SAB2:3LT067",
+   "SAB2:4LT034",
+   "SAB2:4LT037",
+   "SAB2:9LT026",
+   "SAB3:3LT058",
+   "SAB3:3LT061",
+   "SAB3:3LT064",
+   "SAB3:3LT067",
+   "SAB3:4LT034",
+   "SAB3:4LT037",
+   "SAB3:9LT026",
+   "SAB4:3LT058",
+   "SAB4:3LT061",
+   "SAB4:3LT064",
+   "SAB4:3LT067",
+   "SAB4:4LT034",
+   "SAB4:4LT037",
+   "SAB4:9LT026",
+   "SAB5:3LT058",
+   "SAB5:3LT061",
+   "SAB5:3LT064",
+   "SAB5:3LT067",
+   "SAB5:4LT034",
+   "SAB5:4LT037",
+   "SAB5:9LT026"
+  ],
+  "health": [
+   "stale",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "no_data",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok"
+  ]
+ },
+ {
+  "id": "t17",
+  "type": "code",
+  "question": "What was SI-C3-AT-4023 reading at midday yesterday?",
+  "tags": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site I\\Concentrator 3\\Leach\\Leach Tank 6|Free Cyanide"
+  ],
+  "points": [
+   "SI-C3-AT-4023"
+  ],
+  "health": [
+   "ok"
+  ],
+  "flag": []
+ },
+ {
+  "id": "t18",
+  "type": "code",
+  "question": "Trend SITEC.CONC2.CRU.CV1.SPD for the last shift.",
+  "tags": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site C\\Concentrator 2\\Crushing\\CV-101|Belt Speed"
+  ],
+  "points": [
+   "SITEC.CONC2.CRU.CV1.SPD"
+  ],
+  "health": [
+   "ok"
+  ],
+  "flag": []
+ },
+ {
+  "id": "t19",
+  "type": "code",
+  "question": "Pull up SITEG.CONC5.CRU.CV4.RATE.QC for this morning.",
+  "tags": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site G\\Concentrator 5\\Crushing\\CV-104|Belt Weigher Rate QC"
+  ],
+  "points": [
+   "SITEG.CONC5.CRU.CV4.RATE.QC"
+  ],
+  "health": [
+   "ok"
+  ],
+  "flag": []
+ },
+ {
+  "id": "t20",
+  "type": "code",
+  "question": "What's SVC5_PP7_FLOW2 on right now?",
+  "tags": [
+   "\\\\EXAMPLE-PI\\SVC5_PP7_FLOW2"
+  ],
+  "points": [
+   "SVC5_PP7_FLOW2"
+  ],
+  "health": [
+   "ok"
+  ],
+  "flag": []
+ },
+ {
+  "id": "t21",
+  "type": "unhealthy",
+  "question": "What was the lead grade in final tails at noon yesterday, Site X, Conc 3?",
+  "tags": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site X\\Concentrator 3\\Flotation\\Final Tail|Pb"
+  ],
+  "points": [
+   "SX3:3AT096_OLD"
+  ],
+  "health": [
+   "broken_ref"
+  ]
+ },
+ {
+  "id": "t22",
+  "type": "unhealthy",
+  "question": "Show me the agitator power on leach tank 5 at Site I, Conc 2 for last week.",
+  "tags": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site I\\Concentrator 2\\Leach\\Leach Tank 5|Agitator Power"
+  ],
+  "points": [
+   "SI-C2-JT-4020_OLD"
+  ],
+  "health": [
+   "broken_ref"
+  ]
+ },
+ {
+  "id": "t23",
+  "type": "unhealthy",
+  "question": "Site AE, Conc 1 \u2014 how many kW is the cleaner cell 1 agitator drawing now?",
+  "tags": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AE\\Concentrator 1\\Flotation\\Cleaner Cell 1|Agitator Power"
+  ],
+  "points": [
+   "SITEAE.CONC1.FLT.FC10.PWR"
+  ],
+  "health": [
+   "stale"
+  ]
+ },
+ {
+  "id": "t24",
+  "type": "unhealthy",
+  "question": "Pull the SAG bearing pressure trend for Site R, Conc 5 since 9 Nov 2026.",
+  "tags": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site R\\Concentrator 5\\Grinding\\SAG Mill|Bearing Pressure"
+  ],
+  "points": [
+   "SRC5_SAG1_BRGP"
+  ],
+  "health": [
+   "stale"
+  ]
+ }
+]

@@ -1,0 +1,5 @@
+# No. 4's conversation, George's two questions (23 Nov 2026) put to the agent as a metallurgist would ask them.
+- id: c1
+  turns:
+    - "At Site A, Concentrator 1, what is the relationship between the collector dose rate and rougher gold recovery, over all the data the historian has? Rougher recovery is not a tag: calculate it from the rougher feed, rougher concentrate and rougher tail gold assays. Show it on a chart."
+    - "Now split it by feed grade: high, mid and low rougher feed gold. Is the relationship different at each feed grade? Show it on a chart."

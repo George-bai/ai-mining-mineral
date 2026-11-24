@@ -1,0 +1,15 @@
+Check each claim below against its source on the web. For each: CONFIRMED (quote the exact supporting words, under 15 words, and give the page, table or section), WRONG (say what the source actually says) or CANNOT VERIFY (say why). Do not add new claims. Be exact about numbers.
+
+1. Korpela, "Discussions with a time-series database", Tampere University master's thesis, 2025 (https://trepo.tuni.fi/bitstream/handle/10024/226285/KorpelaOssi.pdf?isAllowed=y&sequence=2): a prototype on the ABB Ability History API, 30 test questions; right variable identifiers in 18 of 30; time conversions right in 30 of 30; the application could only fetch data.
+2. Dranca et al., Frontiers in Artificial Intelligence, 2026 (https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2026.1764367/full): small models on one RTX 4090 against a cheese factory's live InfluxDB; on eight time-sensitive aggregation questions every generated query executed and none returned the exact reference result (0 of 8).
+3. Rayfield et al., EMNLP 2025 Industry Track (https://aclanthology.org/2025.emnlp-industry.24.pdf): Granite-3-8B completed 9 of 20 tasks without worked examples and 20 of 20 with 17 examples; tools go site to asset to sensor to history.
+4. Mulayim et al., Lawrence Berkeley National Laboratory, 2025: GPT-4o; five runs per question; 5/5, 5/5 and 3/5 on three questions about FLEXLAB test cells.
+5. Siregar, Novia University of Applied Sciences thesis, 2026 (https://www.theseus.fi/bitstreams/585869bd-a8c2-4a1c-83d8-677d42b0f513/download): Qwen3-14B run locally against a WinCC OA demo project; 235 questions requiring tools with zero malformed tool calls; the prototype also supported operator-mediated writes.
+6. Hasan, Widyotriatmo and Nguyen, Energy and AI, 2026 (https://doi.org/10.1016/j.egyai.2026.100828): Qwen3-14B locally on one 24 GB GPU; archived SCADA file from one operating 2 MW turbine; 24 operator questions; 91.7 % correctness for present-state health checks.
+7. Sun, Han and Liu, Electronics 14(2) 379, 2025 (https://www.mdpi.com/2079-9292/14/2/379): SQL agent over historical coal-mine gas alarms; 0.87 risk-classification accuracy.
+8. Intel Foundry and Formant, "Proving the value of context in AI-driven industrial operations", 2026: explicitly read-only historical data on isolated infrastructure, 540 days, 47 historical alarms, about 60 % average reduction in resolution time in replay.
+9. Nexa Resources Peru, Memoria Anual 2024, p. 107: an assistant built with Gemini and LangChain at the Cerro Lindo concentrator that queries databases; no accuracy reported.
+10. UK NCSC, Secure connectivity principles for OT, principle 4 (https://www.ncsc.gov.uk/collection/operational-technology/secure-connectivity/principle-4): describes transferring data one way from the plant historian to a historian in the DMZ, queried by business systems through an authenticated API.
+11. AVEVA PI Web API reference: the API supports writes as well as reads.
+
+Output markdown: one numbered line per claim with the verdict first.

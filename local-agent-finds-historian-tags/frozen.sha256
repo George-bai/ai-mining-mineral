@@ -1,0 +1,13 @@
+eed6bd04afc357a4338302ee5af56cdd9fe0db6e7c164744c6802f9f37e6d9d5  questions.yaml
+d9e7358b9206f3393643b085f083e160d840e1057bfe509560e14cd0a1a8e2cb  questions.prompt.md
+61967f3acadfd44435339a1dec5216a7f8c24ef150870e38ef21542538c20de4  material.json
+340bd52d0f4a2a69a674cd16111f07293b45a41354ebd25762e0e721ba3fb135  ../../historian-tag-catalogue-for-agents/public/skill/historian-tags/SKILL.md
+2b2ebd52a41d6ca020aa11bb641af85de7c5b8eee91d53c16625bcddca5eee7d  ../../historian-tag-catalogue-for-agents/public/mcp_server.py
+9e9787941b868efc88371a6e27d547ecdca38a76e89df547d901277e8e78bc09  ../../historian-tag-catalogue-for-agents/public/catalog.py
+3bec33d9914ca4d43efd9f249e038494bffa8e2ba8271505b527e2ab4f635c24  key.json
+db25de9457020123546a3d301882280a4a05cf4f5ca86be91e66f6a350dd0a7b  run.sh
+68988c9d78240b076d90ce26193b082f459ac35231a9e260c26b9ea0fcbcf082  prompt.md
+431fbaaf9b8358bb519c7f00d059b0e4d58e0c1c8d8195d00d256d4fcaba328a  models.json
+77a9339088092bab2d781df76544f53de3b6f983b7e55f6954c98a296c303e8e  ../../historian-tag-catalogue-for-agents/public/values.py
+5c68ed2a45e97a097c75855438dd7037a6b2e12927d1bb05d24015481e3625b7  ../../historian-tag-catalogue-for-agents/public/mock_api.py
+# 23 Nov 2026, evening, after the runs: the across questions' summary values were removed from key.json (they come from the private plant set's hourly averages); the winners are unchanged. The full key is in ../local/key-full.json

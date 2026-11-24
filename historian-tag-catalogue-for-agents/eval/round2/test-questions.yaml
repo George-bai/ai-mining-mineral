@@ -1,0 +1,183 @@
+# Round 2 test questions, written by Codex (gpt-6.2-astra, xhigh) from a plain description of the plant and the mix of
+# question types only (no examples, slang lists, abbreviations or code formats), from an empty folder, 23 Nov 2026,
+# after the search code was frozen (frozen.sha256). Prompt in test-questions.prompt.md.
+- id: q01
+  type: plain
+  question: "What was the primary crusher's closed side setting at 6 am at Site A, Concentrator 2?"
+- id: q02
+  type: plain
+  question: "Can you trend the belt speed on CV-104 at Site M, Concentrator 5 from 2 to 4 this morning?"
+- id: q03
+  type: plain
+  question: "What's the SAG fresh feed rate right now at Site AB, Concentrator 1?"
+- id: q04
+  type: plain
+  question: "At Site D, Concentrator 4, what was Ball Mill 2's discharge density just before it stopped?"
+- id: q05
+  type: plain
+  question: "How many cyclones were open on Cluster 1 at Site P, Concentrator 3 around midnight?"
+- id: q06
+  type: plain
+  question: "What's the air flow to rougher cell 6 at Site V, Concentrator 2?"
+- id: q07
+  type: plain
+  question: "What did the analyser last report for silver in final concentrate at Site AE, Concentrator 5?"
+- id: q08
+  type: plain
+  question: "What was the frother tank level at handover this morning at Site G, Concentrator 1?"
+- id: q09
+  type: plain
+  question: "Can I see the dissolved oxygen trend for leach tank 3 at Site W, Concentrator 4 over night shift?"
+- id: q10
+  type: plain
+  question: "What's the free cyanide reading in leach tank 8 at Site R, Concentrator 5?"
+- id: q11
+  type: plain
+  question: "Can you pull up the last four hours of rake torque on the tailings thickener at Site E, Concentrator 3?"
+- id: q12
+  type: plain
+  question: "At Site AC, Concentrator 1, what was the return water flow at the start of day shift?"
+- id: q13
+  type: plain
+  question: "How low did the power factor get on the grinding supply yesterday at Site H, Concentrator 4?"
+- id: q14
+  type: plain
+  question: "Is the process water tank level still dropping at Site T, Concentrator 2?"
+- id: q15
+  type: plain
+  question: "What was the agitator power on recleaner cell 2 at Site Y, Concentrator 3 around lunchtime?"
+- id: q16
+  type: plain
+  question: "What's the raw water flow into Site K, Concentrator 5 this morning?"
+- id: q17
+  type: synonym
+  question: "How tight were we running the primary crusher on days yesterday at Site B, Concentrator 3?"
+- id: q18
+  type: synonym
+  question: "What sort of tonnes an hour were we carrying on CV-102 at Site S, Concentrator 1 after smoko?"
+- id: q19
+  type: synonym
+  question: "How many hours has Ball Mill 1 clocked up at Site F, Concentrator 4?"
+- id: q20
+  type: synonym
+  question: "How much water were we putting in at the feed end of the SAG on nights at Site Z, Concentrator 2?"
+- id: q21
+  type: synonym
+  question: "How deep a froth were they carrying on the first cleaner at Site L, Concentrator 5 this morning?"
+- id: q22
+  type: synonym
+  question: "What did the final tails run for gold on the last sample at Site X, Concentrator 3?"
+- id: q23
+  type: synonym
+  question: "When did the collector pump kick back in after the 2 am stop at Site AA, Concentrator 2?"
+- id: q24
+  type: synonym
+  question: "What's the DO sitting at in No. 6 leach tank at Site U, Concentrator 4?"
+- id: q25
+  type: synonym
+  question: "Was the mud coming out the bottom of the tails thickener getting any thicker towards handover at Site N, Concentrator 1?"
+- id: q26
+  type: synonym
+  question: "How much floc were we putting into the tails thickener on nights at Site AD, Concentrator 5?"
+- id: q27
+  type: synonym
+  question: "How full was the process water tank when we came on shift at Site C, Concentrator 2?"
+- id: q28
+  type: synonym
+  question: "How many megawatts was the whole plant pulling at noon at Site Q, Concentrator 3?"
+- id: q29
+  type: code
+  question: "Can you pull up CV103-II from the crushing screen at Site I, Concentrator 5 for the ten minutes before the belt stopped?"
+- id: q30
+  type: code
+  question: "What's SAG01-SI reading now on the mill screen at Site J, Concentrator 2?"
+- id: q31
+  type: code
+  question: "Did CY02-PIT come back up after 7 am at Site O, Concentrator 4?"
+- id: q32
+  type: code
+  question: "Can I get yesterday's trend for RGH04-FIT-AIR on the flotation screen at Site AB, Concentrator 3?"
+- id: q33
+  type: code
+  question: "What was the last value on AIT-FINALTAIL-AU at Site E, Concentrator 1, and what time did it come in?"
+- id: q34
+  type: code
+  question: "Has LT07-AIT-PH moved since midnight on the leach screen at Site V, Concentrator 5?"
+- id: q35
+  type: code
+  question: "At Site AA, Concentrator 4, what did TH01-LIT peak at on the thickener screen last shift?"
+- id: q36
+  type: code
+  question: "What was the 6 am reading on the meter marked INC01-KWH at Site M, Concentrator 2?"
+- id: q37
+  type: ambiguous
+  question: "What's the mill pulling at Site A, Concentrator 3?"
+- id: q38
+  type: ambiguous
+  question: "What was the density like at the cyclones on nights at Site Q, Concentrator 4?"
+- id: q39
+  type: ambiguous
+  question: "Can you pull up the rougher air for Site N?"
+- id: q40
+  type: ambiguous
+  question: "What did the tails go for on the last analyser sample at Site X, Concentrator 2?"
+- id: q41
+  type: ambiguous
+  question: "Is the reagent pump back on at Site AA, Concentrator 3?"
+- id: q42
+  type: ambiguous
+  question: "Where's the pH sitting in leach over at Site U, Concentrator 5?"
+- id: q43
+  type: ambiguous
+  question: "Did the belt stop again this morning at Site G, Concentrator 4?"
+- id: q44
+  type: ambiguous
+  question: "Have you got the thickener bed level for Site Y at handover?"
+- id: q45
+  type: several
+  question: "Can you put the tonnes per hour for CV-101 through CV-104 on one trend for Site C, Concentrator 1 so I can see which belt dropped off first?"
+- id: q46
+  type: several
+  question: "What are the run-hour readings on both ball mills at Site P, Concentrator 5?"
+- id: q47
+  type: several
+  question: "At Site AE, Concentrator 2, can you plot the two cyclone cluster feed pressures together for the last hour?"
+- id: q48
+  type: several
+  question: "What froth depth are we carrying in each of the six roughers at Site H, Concentrator 3?"
+- id: q49
+  type: several
+  question: "How full are the collector, frother, depressant and activator tanks at Site R, Concentrator 1?"
+- id: q50
+  type: several
+  question: "Can you give me the 6 am pH readings in tank order, from leach 1 through to leach 8, at Site S, Concentrator 4?"
+- id: q51
+  type: several
+  question: "How many kilowatts is each supply pulling at Site D, Concentrator 2 across crushing, grinding, flotation and leach?"
+- id: q52
+  type: several
+  question: "Can you put the agitator power traces for all three scavenger cells side by side for last shift at Site W, Concentrator 5?"
+- id: q53
+  type: variant
+  question: "What did SAG fresh feed average last shift at Site J, Concentrator 2 if you count only the time the mill was running?"
+- id: q54
+  type: variant
+  question: "At Site AC, Concentrator 1, can you check that 3 am spike on the CV-104 belt weigher against the belt speed and motor amps?"
+- id: q55
+  type: variant
+  question: "When did leach tank 7 at Site O, Concentrator 3 last spend more than ten minutes below pH 10?"
+- id: q56
+  type: variant
+  question: "How many kWh did flotation use at Site K, Concentrator 5 between yesterday's 6 am meter reading and today's?"
+- id: q57
+  type: variant
+  question: "Did the thickener rake torque at Site AD, Concentrator 4 stay above 80% for five minutes straight at any point on nights?"
+- id: q58
+  type: variant
+  question: "Can you check whether that low rougher feed gold reading at 2 am at Site I, Concentrator 2 was a one-off by showing me the analyser samples either side?"
+- id: q59
+  type: variant
+  question: "What was the highest five-minute average power on the main incomer at Site F, Concentrator 3 yesterday?"
+- id: q60
+  type: variant
+  question: "On night shift at Site Z, Concentrator 4, how many minutes did CV-101 show running with less than 5 tonnes an hour on the belt weigher?"

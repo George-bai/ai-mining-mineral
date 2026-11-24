@@ -1,0 +1,12 @@
+[project]
+name = "historian-agent"
+version = "0.1.0"
+description = "A mock historian web API, a read-only connector, a crawler that builds a searchable tag catalogue, and an MCP server a local agent uses to find and read tags."
+requires-python = ">=3.11"
+dependencies = ["fastapi", "uvicorn", "httpx", "numpy", "pyyaml", "mcp"]
+
+[dependency-groups]
+dev = ["pytest"]
+
+[tool.uv]
+package = false

@@ -1,0 +1,10 @@
+02ea6fd22b0d72f67df2bf8781e752d2a4575562ee960702d969b163d060a461  questions.yaml
+45c092c152039bd2437c76ea000f202a2cdb367385bd184dcfda0e2668ce8ac5  key.json
+aeff69ca3426293260cc8675d101f32bf2087ab16ab1e5f8c71455e86217ad65  make_key.py
+a68dbf1f2a5e55f2b596311d46bf6e4834a70be1c5cb0761c40b527b87d8d5d2  run.sh
+# 23 Nov 2026, evening: key.json split before any agent read it; the daily points moved to ../local/key-scatter.json (Zyfra values are not republished); numbers unchanged
+8f8f825783492b20f60b2282366b5f40e83dc809c89b2f178431a4244899518d  run.sh
+02ea6fd22b0d72f67df2bf8781e752d2a4575562ee960702d969b163d060a461  questions.yaml
+47ed32e75f44cc9f296921438bc7774a20962a8db28542240843c4874e01a8c4  ../../teaching-local-agent-site-analysis/public/plant-knowledge/site-a-concentrator-1.md
+1e6f86ea7c8b9fe5e66363907e2b188bb07318034916dadaf4acff715fa630eb  ../../teaching-local-agent-site-analysis/skills/site-analysis/SKILL.md
+# above: the second run's files, 23 Nov 2026 8:45 pm AEST, before it started

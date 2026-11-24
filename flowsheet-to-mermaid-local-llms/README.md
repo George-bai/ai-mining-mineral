@@ -123,7 +123,7 @@ The drawings are slides 23, 53, 39 and 37 of: Anderson, C. G. *Mineral Processin
 6). Colorado School of Mines. https://www.researchgate.net/publication/318502393_Flowsheets
 
 They are not included here: they belong to their authors, and the original source of each drawing is not
-stated on the slides. The article shows them with approval. `prepare.sh` rebuilds them from the PDF.
+stated on the slides. `prepare.sh` rebuilds them from the PDF.
 
 ## Licence
 

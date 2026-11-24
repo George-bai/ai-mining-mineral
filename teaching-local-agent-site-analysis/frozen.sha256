@@ -1,0 +1,8 @@
+479d1cae4e8e01505b00cb2a252d93e01e6ba9926a26e50b85f4765af1e32c5e  questions.yaml
+8e4405a075f513482069f148f3845f523aaedd1ec7a9d3f3d961e627a6ad6a13  key.json
+a6f4a822e190befdebe48ca4d8bd7f88d257a1c75be7ada8567c5b076527eaac  make_key.py
+555a094e073bd88b59a0175ac6185f720eea3e0849b2495974a879f89059f4fa  run.sh
+47ed32e75f44cc9f296921438bc7774a20962a8db28542240843c4874e01a8c4  plant-knowledge/site-a-concentrator-1.md
+1e6f86ea7c8b9fe5e66363907e2b188bb07318034916dadaf4acff715fa630eb  ../skills/site-analysis/SKILL.md
+# 23 Nov 2026, evening: the skill's one example of a stop rule (a number from this plant's knowledge page) removed before the skills condition ran; the dev runs used the earlier copy
+# 23 Nov 2026, late evening, after the runs: key.json's lowest-month summary fields restricted to 2026 (the question's year), renamed p4_lowest_2026_*; the monthly values are unchanged

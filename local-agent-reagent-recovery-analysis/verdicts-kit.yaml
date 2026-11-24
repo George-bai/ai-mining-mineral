@@ -1,0 +1,68 @@
+1:
+  turns:
+  - true
+  - true
+  quantity: recovery, two-product formula
+  r: 0.33
+  bands_r:
+    low: 0.32
+    mid: 0.28
+    high: 0.22
+  why:
+  - 'Hourly, running hours, screened: 2.43 points of recovery per mL/min (r 0.33); flags that dose follows feed rate and gives
+    the per-tonne form.'
+  - Slopes 2.86, 1.72, 1.03 points per mL/min by third, as in our hourly key; high minus low −1.83, 95 % interval −3.08 to
+    −0.68 by whole weeks.
+  quote:
+  - 'Answer: Over the full historian record (2024‑04‑20 → 2026‑11‑22), higher collector dose rate is associated with higher
+    rougher gold recovery — a least‑squares slope of ≈ +2.4 percentage points of recovery per mL/min (r = 0.33) — but this
+    is an association, not a demonstrated effect: the dose rate tracks throughput (corr with feed rate 0.57), and the relationship
+    is much weaker …'
+  - 'Yes — the relationship is different at each feed grade, and it weakens as feed grade rises. Over the full record (2024‑04‑20
+    → 2026‑11‑22, same screened running hours as before: 18,847 used), the dose‑rate–recovery slope is about 2.8× steeper
+    at low feed grade than at high feed grade:'
+2:
+  turns:
+  - true
+  - true
+  quantity: recovery, two-product formula
+  r: 0.33
+  bands_r:
+    low: 0.32
+    mid: 0.28
+    high: 0.22
+  why:
+  - 'Hourly, running hours, screened: 2.43 points per mL/min (r 0.33), and the per-tonne form.'
+  - Calculated 2.86, 1.72, 1.03 by third with an interval, and drew them on its chart, but its message only said the chart
+    was saved, “as summarised above”, with no summary. A pass by the rule (the chart reports it); not on a stricter reading.
+  quote:
+  - 'Result: Over all the data (2024-04-20 → 2026-11-13, running hours only), higher collector dose rate is associated with
+    higher rougher gold recovery — about 2.4 percentage points of recovery per mL/min of collector (r = 0.33 hourly; 2.6 pp
+    per mL/min, r = 0.40 on daily points) — but the association is weak and is largely carried by the low-to-mid dose range;
+    in the top dose …'
+  - 'The chart is saved: collector_vs_recovery_by_feed_grade.png (three panels — low, mid and high rougher feed grade — each
+    with the hourly scatter and least-squares line, as summarised above).'
+3:
+  turns:
+  - true
+  - true
+  quantity: recovery, two-product formula
+  r: 0.33
+  bands_r:
+    low: 0.32
+    mid: 0.28
+    high: 0.22
+  why:
+  - 'Hourly, running hours, screened: 2.43 points per mL/min (r 0.33), calling most of it throughput.'
+  - Low third steeper on the recorded dose (2.86 against 1.03, interval 0.68 to 3.08); per tonne no difference, and it says
+    so, though its per-tonne figures used 1,000 instead of 60 to convert and its chart is titled per tonne while plotting
+    the flow.
+  quote:
+  - 'Bottom line: over all the historian''s data (2024‑04‑20 → 2026‑11‑13), collector dose rate shows only a weak association
+    with rougher gold recovery. In the raw flow form the fit is +2.43 percentage points per mL/min (r = 0.33), but that is
+    largely an artifact of throughput: the collector pump flow tracks the SAG fresh feed rate (r = 0.58). On dose per tonne
+    (mL/t) — the form …'
+  - 'Bottom line: the relationship does appear to differ by feed grade in raw dose rate — steeper at low grade (2.86 pp per
+    mL/min, r = 0.32) than at high grade (1.03 pp per mL/min, r = 0.22) — but that difference is a throughput artifact, not
+    a real grade effect. On dose per tonne (which removes the throughput confound), the slope is essentially zero in every
+    third: low −0.01, mid …'

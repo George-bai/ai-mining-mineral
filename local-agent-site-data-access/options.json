@@ -1,0 +1,37 @@
+{
+ "note": "No. 17's comparison of five ways to give a local agent historian data, from research/q2-vendors.md, q3-security.md and q4-findability.md and No. 18's build. good / depends / bad, with the reason shown on the page.",
+ "criteria": [
+  ["change", "Can it change plant data?"],
+  ["leave", "Do readings leave the site?"],
+  ["load", "Can it overload the historian?"],
+  ["find", "Does it find the right tag?"]
+ ],
+ "options": [
+  {"id": "export", "name": "A file export", "short": "Export",
+   "what": "Someone exports the tag list and a slice of data to a file the agent reads.",
+   "change": ["good", "No: it is a copy."], "leave": ["good", "No, with the model on site."],
+   "load": ["good", "Only when the export is made."],
+   "find": ["bad", "The whole tag list is 13 times the model's window; the agent sees what was exported, nothing newer."]},
+  {"id": "login", "name": "The agent's own login", "short": "Own login",
+   "what": "The agent writes its own queries against the historian's web API or database with an account of its own.",
+   "change": ["depends", "Whatever the account may do: the PI web API also writes."], "leave": ["good", "No, with the model on site."],
+   "load": ["bad", "Nothing stops a ten-year, one-second query."],
+   "find": ["bad", "It guesses names: an ABB historian prototype chose the right identifiers in 18 of 30 questions."]},
+  {"id": "cloud", "name": "A vendor's cloud assistant", "short": "Vendor cloud",
+   "what": "The vendor's assistant reads data the site has published to the vendor's cloud.",
+   "change": ["depends", "Depends on the vendor's tools: some can change workbooks or settings."],
+   "leave": ["bad", "Yes: the published data and the values the model reads go to a cloud model."],
+   "load": ["good", "It reads the vendor's copy."],
+   "find": ["depends", "Through the vendor's asset model, where the site has built one."]},
+  {"id": "tools", "name": "Read-only tools", "short": "Read-only tools",
+   "what": "A small set of fixed tools on a read-only account: browse the asset tree, read a series, with limits on each call.",
+   "change": ["good", "No: the tools only read, and so does the account."], "leave": ["good", "No, with the model on site."],
+   "load": ["good", "Limits on tags, values and window per call."],
+   "find": ["depends", "By browsing the tree level by level: slow, and the agent can lose its way."]},
+  {"id": "catalogue", "name": "Read-only tools and a tag catalogue", "short": "Tools and catalogue",
+   "what": "The same tools, plus a catalogue of every tag, crawled nightly, which the agent searches by place and the site's words; a skill tells it how.",
+   "change": ["good", "No: the tools only read, and so does the account."], "leave": ["good", "No, with the model on site."],
+   "load": ["good", "Limits per call; the crawl runs at night."],
+   "find": ["good", "Right tag in the top 10 for 0.915 of No. 18's test questions; dead tags flagged before reading."]}
+ ]
+}

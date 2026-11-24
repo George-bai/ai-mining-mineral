@@ -1,0 +1,103 @@
+# Which real hourly column each mock tag follows (plan.md, "Tag values on real hourly averages").
+# source: zyfra (every concentrator's flotation area and its feed) or plant (grinding, crushing, leach, tailings).
+# group: tags in one group share one scale factor per concentrator (Site A, Concentrator 1: all 1.0).
+# lag_min: minutes later than the source; negative is earlier (the belts carry the ore before it reaches the mill).
+# shift_days: a neighbour's column, later. level: a constant factor on the source (the shape stays as it is).
+# Tags not listed are generated, driven by the concentrator's real feed rate (values.py).
+
+zyfra:
+  feed: rougher.input.feed_rate          # the concentrator's run state comes from this column
+  stop_below: 50                         # t/h
+  tags:
+    - [Grinding, SAG Mill, Fresh Feed Rate, rougher.input.feed_rate, feed]
+    - [Crushing, CV-101, Belt Weigher Rate, rougher.input.feed_rate, feed, {lag_min: -8}]
+    - [Crushing, CV-102, Belt Weigher Rate, rougher.input.feed_rate, feed, {lag_min: -6}]
+    - [Crushing, CV-103, Belt Weigher Rate, rougher.input.feed_rate, feed, {lag_min: -4}]
+    - [Crushing, CV-104, Belt Weigher Rate, rougher.input.feed_rate, feed, {lag_min: -2}]
+    - [Flotation, Collector, Dose Rate, rougher.input.floatbank10_xanthate, collector]
+    - [Flotation, Activator, Dose Rate, rougher.input.floatbank10_sulfate, activator]
+    - [Flotation, Depressant, Dose Rate, primary_cleaner.input.depressant, depressant]
+    # analyser streams: stream, source prefix
+    - [Flotation, Rougher Feed, Au, rougher.input.feed_au, au]
+    - [Flotation, Rougher Feed, Ag, rougher.input.feed_ag, ag]
+    - [Flotation, Rougher Feed, Pb, rougher.input.feed_pb, pb]
+    - [Flotation, Rougher Feed, Solids, rougher.input.feed_sol, sol]
+    - [Flotation, Rougher Concentrate, Au, rougher.output.concentrate_au, au]
+    - [Flotation, Rougher Concentrate, Ag, rougher.output.concentrate_ag, ag]
+    - [Flotation, Rougher Concentrate, Pb, rougher.output.concentrate_pb, pb]
+    - [Flotation, Rougher Concentrate, Solids, rougher.output.concentrate_sol, sol]
+    - [Flotation, Rougher Tail, Au, rougher.output.tail_au, au]
+    - [Flotation, Rougher Tail, Ag, rougher.output.tail_ag, ag]
+    - [Flotation, Rougher Tail, Pb, rougher.output.tail_pb, pb]
+    - [Flotation, Rougher Tail, Solids, rougher.output.tail_sol, sol]
+    - [Flotation, Cleaner Concentrate, Au, primary_cleaner.output.concentrate_au, au]
+    - [Flotation, Cleaner Concentrate, Ag, primary_cleaner.output.concentrate_ag, ag]
+    - [Flotation, Cleaner Concentrate, Pb, primary_cleaner.output.concentrate_pb, pb]
+    - [Flotation, Cleaner Concentrate, Solids, primary_cleaner.output.concentrate_sol, sol]
+    - [Flotation, Final Concentrate, Au, final.output.concentrate_au, au]
+    - [Flotation, Final Concentrate, Ag, final.output.concentrate_ag, ag]
+    - [Flotation, Final Concentrate, Pb, final.output.concentrate_pb, pb]
+    - [Flotation, Final Concentrate, Solids, final.output.concentrate_sol, sol]
+    - [Flotation, Final Tail, Au, final.output.tail_au, au]
+    - [Flotation, Final Tail, Ag, final.output.tail_ag, ag]
+    - [Flotation, Final Tail, Pb, final.output.tail_pb, pb]
+    - [Flotation, Final Tail, Solids, final.output.tail_sol, sol]
+    - [Flotation, Rougher Cell 1, Air Flow, rougher.state.floatbank10_a_air, air]
+    - [Flotation, Rougher Cell 2, Air Flow, rougher.state.floatbank10_b_air, air]
+    - [Flotation, Rougher Cell 3, Air Flow, rougher.state.floatbank10_c_air, air]
+    - [Flotation, Rougher Cell 4, Air Flow, rougher.state.floatbank10_d_air, air]
+    - [Flotation, Rougher Cell 5, Air Flow, rougher.state.floatbank10_e_air, air]
+    - [Flotation, Rougher Cell 6, Air Flow, rougher.state.floatbank10_f_air, air]
+    - [Flotation, Cleaner Cell 1, Air Flow, primary_cleaner.state.floatbank8_a_air, air]
+    - [Flotation, Cleaner Cell 2, Air Flow, primary_cleaner.state.floatbank8_b_air, air]
+    - [Flotation, Cleaner Cell 3, Air Flow, primary_cleaner.state.floatbank8_c_air, air]
+    - [Flotation, Recleaner Cell 1, Air Flow, primary_cleaner.state.floatbank8_d_air, air]
+    # froth depth = minus the bank level (mm below the lip)
+    - [Flotation, Rougher Cell 1, Froth Depth, rougher.state.floatbank10_a_level, level, {sign: -1}]
+    - [Flotation, Rougher Cell 2, Froth Depth, rougher.state.floatbank10_b_level, level, {sign: -1}]
+    - [Flotation, Rougher Cell 3, Froth Depth, rougher.state.floatbank10_c_level, level, {sign: -1}]
+    - [Flotation, Rougher Cell 4, Froth Depth, rougher.state.floatbank10_d_level, level, {sign: -1}]
+    - [Flotation, Rougher Cell 5, Froth Depth, rougher.state.floatbank10_e_level, level, {sign: -1}]
+    - [Flotation, Rougher Cell 6, Froth Depth, rougher.state.floatbank10_f_level, level, {sign: -1}]
+    - [Flotation, Cleaner Cell 1, Froth Depth, primary_cleaner.state.floatbank8_a_level, level, {sign: -1}]
+    - [Flotation, Cleaner Cell 2, Froth Depth, primary_cleaner.state.floatbank8_b_level, level, {sign: -1}]
+    - [Flotation, Cleaner Cell 3, Froth Depth, primary_cleaner.state.floatbank8_c_level, level, {sign: -1}]
+    - [Flotation, Recleaner Cell 1, Froth Depth, primary_cleaner.state.floatbank8_d_level, level, {sign: -1}]
+
+# The plant set holds only running hours, so it advances only while the concentrator runs (Zyfra feed above
+# stop_below); while stopped, its tags hold, and power and rates read zero.
+plant:
+  tags:
+    - [Flotation, Frother, Dose Rate, frother_setpoint_ml_min, frother]
+    - [Grinding, SAG Mill, Motor Power, mill_a_power_kw, sag_power, {level: 8}]       # about 5.8 MW
+    - [Grinding, Ball Mill 1, Motor Power, mill_b_power_kw, bm_power, {level: 20}]    # about 3 MW
+    - [Grinding, Ball Mill 2, Motor Power, mill_c_power_kw, bm_power, {level: 20}]
+    - [Grinding, Cyclone Cluster 1, Feed Density, cyclone_b_density_pct, density]
+    - [Grinding, Cyclone Cluster 1, Overflow Density, cyclone_overflow_density_pct_solids, density]
+    - [Grinding, Cyclone Cluster 2, Feed Density, cyclone_b_density_pct, density, {shift_days: 7}]
+    - [Grinding, Cyclone Cluster 2, Overflow Density, cyclone_overflow_density_pct_solids, density, {shift_days: 7}]
+    - [Leach, Leach Tank 1, pH, leach_tank_1_ph_control, ph]
+    - [Leach, Leach Tank 2, pH, leach_tank_2_ph, ph]
+    - [Leach, Leach Tank 3, pH, leach_tank_3_ph, ph]
+    - [Leach, Leach Tank 4, pH, leach_tank_4_ph_control, ph]
+    - [Leach, Leach Tank 5, pH, leach_tank_4_ph_control, ph, {shift_days: 1}]
+    - [Leach, Leach Tank 6, pH, leach_tank_2_ph, ph, {shift_days: 1}]
+    - [Leach, Leach Tank 7, pH, leach_tank_1_ph_control, ph, {shift_days: 1}]
+    - [Leach, Leach Tank 8, pH, final_leach_tank_ph, ph]
+    - [Leach, Leach Tank 1, Dissolved Oxygen, leach_tank_1_do_ppm, do]
+    - [Leach, Leach Tank 2, Dissolved Oxygen, leach_tank_2_do_ppm, do]
+    - [Leach, Leach Tank 3, Dissolved Oxygen, leach_tank_3_do_ppm, do]
+    - [Leach, Leach Tank 4, Dissolved Oxygen, leach_tank_4_do_ppm, do]
+    - [Leach, Leach Tank 5, Dissolved Oxygen, leach_tank_4_do_ppm, do, {shift_days: 1}]
+    - [Leach, Leach Tank 6, Dissolved Oxygen, leach_tank_3_do_ppm, do, {shift_days: 1}]
+    - [Leach, Leach Tank 7, Dissolved Oxygen, leach_tank_4_do_ppm, do, {shift_days: 2}]
+    - [Leach, Leach Tank 8, Dissolved Oxygen, tails_tank_do_ppm, do]
+    - [Leach, Leach Tank 1, Free Cyanide, free_cyanide_tank_1_ppm, cyanide]
+    - [Leach, Leach Tank 2, Free Cyanide, free_cyanide_analyser_tank_2_ppm, cyanide]
+    - [Leach, Leach Tank 7, Free Cyanide, free_cyanide_tank_7_ppm, cyanide]
+    - [Leach, Leach Tank 3, Free Cyanide, free_cyanide_tank_1_ppm, cyanide, {shift_days: 1}]
+    - [Leach, Leach Tank 4, Free Cyanide, free_cyanide_tank_1_ppm, cyanide, {shift_days: 2}]
+    - [Leach, Leach Tank 5, Free Cyanide, free_cyanide_tank_7_ppm, cyanide, {shift_days: 2}]
+    - [Leach, Leach Tank 6, Free Cyanide, free_cyanide_tank_7_ppm, cyanide, {shift_days: 1}]
+    - [Leach, Leach Tank 8, Free Cyanide, free_cyanide_tank_7_ppm, cyanide, {shift_days: 3}]
+    - [Tailings, Tailings Thickener, Underflow Density, leach_feed_density_pct, density]

@@ -1,0 +1,510 @@
+t01/1:
+  pass: true
+  why: Read Leach Tank 8 pH at Site B, Concentrator 4 and gave its latest value with the tag.
+  quote: 'pH in Leach Tank 8 (Site B, Concentrator 4): 8.72 - Tag: SBC4_LT8_PH — \\EXAMPLE-AF\Operations\Example Mining\Site
+    B\Concentrator 4\Leach\Leach Tank 8 · pH (primary, health: ok) - Value: 8.7158 pH, good quality - As of: 2026-11-22 23:59:55
+    AEST (the historian''s latest record; historian "now" is 2026-11-23 00:00) No chart was needed — you asked for the current
+    value, so there''s nothing to plot. If you''d like a trend …'
+t01/2:
+  pass: true
+  why: Read Leach Tank 8 pH at Site B, Concentrator 4 and gave its latest value with the tag.
+  quote: 'pH in Leach Tank 8 (Site B, Concentrator 4) right now: 8.72 - Value: 8.7158 pH at 2026-11-22 23:59:55 AEST (good
+    quality) - Tag: SBC4_LT8_PH — \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 4\Leach\Leach Tank 8 · pH (primary,
+    healthy) - Context: over the last 24 h it''s been steady, averaging 8.78 (range 8.71–8.84), time-weighted hourly averages.
+    Chart saved as leach_tank_8_pH.png in the current folder.'
+t01/3:
+  pass: true
+  why: Read Leach Tank 8 pH at Site B, Concentrator 4 and gave its latest value with the tag.
+  quote: 'pH in Leach Tank 8, Site B Conc 4 right now: 8.72 (8.7158 at 2026-11-22 23:59:55 AEST, good quality). Provenance
+    - Tag: \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 4\Leach\Leach Tank 8 · pH — point SBC4_LT8_PH, unit
+    pH, primary variant, health ok. It was the only pH tag in that tank, so no ambiguity. - "Now" = historian''s current time
+    2026-11-23 00:00 AEST; the latest record is from 23:59:55 the night …'
+t02/1:
+  pass: true
+  why: Read the main incomer’s power factor at Site AA, Concentrator 2 around noon on 22 Nov.
+  quote: 'Main incomer power factor at noon yesterday (2026-11-22 12:00 AEST): 0.989 (0.9889, time-weighted over the 12:00–12:15
+    interval). Provenance: - Tag: \\EXAMPLE-AF\Operations\Example Mining\Site AA\Concentrator 2\Utilities\Main Incomer · Power
+    Factor — point SITEAA.CONC2.UTL.PM1.PF (catalogue id 40349, primary variant, health ok, dimensionless). - Window/basis:
+    2026-11-22 11:30–12:15, 15-minute time-weighted averages …'
+t02/2:
+  pass: true
+  why: Read the main incomer’s power factor at Site AA, Concentrator 2 around noon on 22 Nov.
+  quote: 'Main incomer power factor at noon yesterday (12:00 AEST, 22 Nov 2026): 0.9925 (time-weighted average over 12:00–12:01;
+    range 0.9911–0.9935). It was ~1.00 in the preceding half hour and stayed ≥0.99 through the hour. Provenance - Tag: \\EXAMPLE-AF\Operations\Example
+    Mining\Site AA\Concentrator 2\Utilities\Main Incomer · Power Factor, point SITEAA.CONC2.UTL.PM1.PF (catalogue id 40349,
+    primary, health ok, …'
+t02/3:
+  pass: true
+  why: Read the main incomer’s power factor at Site AA, Concentrator 2 around noon on 22 Nov.
+  quote: 'Main incomer power factor at noon yesterday (12:00, 22 Nov 2026 AEST): ≈ 0.993 (raw record at 12:00:00 was 0.9934;
+    it sat between 0.991 and 0.994 in the minutes around noon). Provenance - Tag: \\EXAMPLE-AF\Operations\Example Mining\Site
+    AA\Concentrator 2\Utilities\Main Incomer · Power Factor — point SITEAA.CONC2.UTL.PM1.PF (catalogue id 40349, primary,
+    health ok, dimensionless) - Window/basis: raw (recorded) values, …'
+t03/1:
+  pass: true
+  why: Read the SAG fresh feed rate at Site D, Concentrator 1 for 22 Nov and saved a chart.
+  quote: 'Chart saved to sag_fresh_feed_tph_2026-11-22.png in the current folder. SAG fresh feed trend — Site D, Concentrator
+    1, yesterday (22 Nov 2026) Tag: \\EXAMPLE-AF\Operations\Example Mining\Site D\Concentrator 1\Grinding\SAG Mill · Fresh
+    Feed Rate (point SD1:2WT001, catalogue id 4596) — primary, healthy, t/h. This is the golden throughput tag for this concentrator.
+    Basis: time-weighted hourly averages, 24 hours, …'
+t03/2:
+  pass: true
+  why: Read the SAG fresh feed rate at Site D, Concentrator 1 for 22 Nov and saved a chart.
+  quote: 'SAG fresh feed, Site D Concentrator 1 — 22 Nov 2026 (yesterday, AEST): - Daily mean: 447 t/h (time-weighted, hourly
+    averages) - Range: 345–554 t/h (hourly min/max) - Lowest hour: ~03:00 (363 t/h); highest hour: 23:00 (540 t/h) The rate
+    was low overnight (~360 t/h), climbed through the day, and ended the day near its peak. Provenance: - Tag: \\EXAMPLE-AF\Operations\Example
+    Mining\Site D\Concentrator 1\Grinding\SAG …'
+t03/3:
+  pass: true
+  why: Read the SAG fresh feed rate at Site D, Concentrator 1 for 22 Nov and saved a chart.
+  quote: 'Done. Chart saved to sag_fresh_feed_2026-11-22.png in the current folder. Trend — Site D, Conc 1, SAG fresh feed,
+    22 Nov 2026 (00:00–24:00 AEST): - Overnight (00:00–08:00): low and flat, ~363–377 t/h (day low ~345 t/h around 03:00)
+    - Ramp-up (09:00–12:00): steady climb from ~396 to ~509 t/h - Afternoon–evening (12:00–23:00): held high, ~488–540 t/h,
+    peaking at ~554 t/h in the 22:00 hour - Day average: ~447 t/h …'
+t04/1:
+  pass: true
+  why: Read the tailings return water flow at Site U, Concentrator 5 for 30 days and saved a chart.
+  quote: 'Chart saved to tailings_return_water_flow_SU_C5.png in the current folder — a line of daily time-weighted averages
+    with a min–max band. What the data shows (24 Oct – 22 Nov 2026): - Monthly mean: 588.6 m³/h; daily averages mostly sit
+    between ~520 and ~710 m³/h. - Daily peaks up to 898.7 m³/h (20 Nov); troughs down to 219.9 m³/h (15 Nov) and 426.6 m³/h
+    (4 Nov). - Several days (27–28 Oct, 1 Nov, 4 Nov, 8 Nov, 14–15 …'
+t04/2:
+  pass: true
+  why: Read the tailings return water flow at Site U, Concentrator 5 for 30 days and saved a chart.
+  quote: 'Chart saved to site_u_conc5_tailings_return_water_flow.png in the current folder. What the data shows Tag: \\EXAMPLE-AF\Operations\Example
+    Mining\Site U\Concentrator 5\Tailings\Return Water · Flow — point SU-C5-FT-5015, primary variant, health ok, unit m3/h.
+    Window: 2026-10-24 → 2026-11-22 (past month, relative to historian time 2026-11-23), daily time-weighted averages (1d
+    interval, summary mode), …'
+t04/3:
+  pass: true
+  why: Read the tailings return water flow at Site U, Concentrator 5 for 30 days and saved a chart.
+  quote: 'Chart saved as su_c5_tailings_return_water_flow.png in the current folder. What the data shows (24 Oct – 22 Nov
+    2026, daily): - Return water flow ran steadily around 590–700 m³/h, averaging ≈589 m³/h over the month (time-weighted).
+    - Daily peaks reached up to ~899 m³/h; the lowest day was 10 Nov (≈465 m³/h average), with a few brief zero readings inside
+    individual days (short stoppages, not a full-day outage). - No …'
+t05/1:
+  pass: true
+  why: Read both CV-103 tags and said the motor current tag is stale, with no data for the day; charted the rate.
+  quote: 'Chart saved: cv103_amps_tph_2026-11-22.png (current folder). Important caveat: the CV-103 motor amps tag has no
+    data for yesterday. · Series · Tag · Point · Unit · Health · Yesterday (2026-11-22, AEST) · · --- · --- · --- · --- ·
+    --- · --- · · CV-103 Motor Current · …\Site H\Concentrator 3\Crushing\CV-103 · Motor Current · SH3:1IT015 · A · stale
+    · 0 records — last value 170.6 A on 2026-11-03 18:50 · · CV-103 Belt …'
+t05/2:
+  pass: true
+  why: Read both CV-103 tags and said the motor current tag is stale, with no data for the day; charted the rate.
+  quote: 'Chart saved: cv103_amps_vs_weigher_2026-11-22.png in the current folder. Important caveat: the CV-103 motor amps
+    tag has no data for yesterday. What''s on the trend · Series · Tag · Point · Unit · Health · Yesterday (2026-11-22, AEST)
+    · · --- · --- · --- · --- · --- · --- · · Belt weigher rate · Site H\Concentrator 3\Crushing\CV-103\Belt Weigher Rate
+    · SH3:1WT013 · t/h · ok · avg 545.7 t/h, min 477.0, max 589.5 (24 …'
+t05/3:
+  pass: true
+  why: Read both CV-103 tags and said the motor current tag is stale, with no data for the day; charted the rate.
+  quote: 'Chart saved: cv103_amps_vs_weigher_2026-11-22.png Heads-up — I couldn''t plot both series. The CV-103 motor amps
+    tag is dead: · Tag · Point · Status · · --- · --- · --- · · ...\Site H\Concentrator 3\Crushing\CV-103 · Motor Current
+    · SH3:1IT015 · Stale — last value 170.6 A on 3 Nov 2026, zero records for 22 Nov · · ...\Site H\Concentrator 3\Crushing\CV-103
+    · Belt Weigher Rate · SH3:1WT013 · Healthy — 96 readings for …'
+t06/1:
+  pass: true
+  why: Read both cluster 2 tags and said the feed pressure tag is stale, with no values last week; charted the count.
+  quote: 'Chart saved: cluster2_feed_pressure_vs_cyclones_open.png (in .../runs/r1/t06/1/). Important caveat — the pressure
+    series could not be plotted: - Cluster 2 Feed Pressure — \\EXAMPLE-AF\Operations\Example Mining\Site AC\Concentrator 4\Grinding\Cyclone
+    Cluster 2 · Feed Pressure (point SAC-C4-PT-2023, kPa): health is stale, last reading 2026‑11‑10 06:15 AEST. I confirmed
+    the historian returned 0 values for 16–22 Nov, so …'
+t06/2:
+  pass: true
+  why: Read both cluster 2 tags and said the feed pressure tag is stale, with no values last week; charted the count.
+  quote: 'Chart saved: cluster2_feed_pressure_vs_cyclones_open.png What''s in it - Cyclones open (Cluster 2) — \\EXAMPLE-AF\Operations\Example
+    Mining\Site AC\Concentrator 4\Grinding\Cyclone Cluster 2 · Cyclones Open (point SAC-C4-ZI-2027), healthy. 2026-11-16 →
+    2026-11-23 (last 7 days from the historian''s now, 2026-11-23 00:00 AEST), 1-h time-weighted averages: mean ≈ 8.1, range
+    ~6.7–9.6. - Cluster 2 feed pressure — …'
+t06/3:
+  pass: true
+  why: Read both cluster 2 tags and said the feed pressure tag is stale, with no values last week; charted the count.
+  quote: 'Chart saved: conc4_cluster2_last_week.png (in the current folder). Important caveat — one of the two requested series
+    has no data: - Cluster 2 feed pressure — \\EXAMPLE-AF\...\Site AC\Concentrator 4\Grinding\Cyclone Cluster 2 · Feed Pressure
+    (point SAC-C4-PT-2023, kPa): health stale, last reading 2026-11-10 06:15. The historian returned 0 values for last week
+    (16–22 Nov), so it cannot be plotted for that window. - …'
+t07/1:
+  pass: true
+  why: Read the frother dose rate and rougher cell 1 froth depth since 12 Nov and charted them together.
+  quote: 'Chart saved: site_f_conc2_frother_dose_froth_depth.png (in the current folder). What''s on the chart · Series ·
+    Tag (path) · Point · Unit · Health · · --- · --- · --- · --- · --- · · Frother dose rate (blue, left axis) · \\EXAMPLE-AF\Operations\Example
+    Mining\Site F\Concentrator 2\Flotation\Frother · Dose Rate · SFC2_RD2_DOSE · mL/min · ok · · Rougher Cell 1 froth depth
+    (red, right axis) · ...\Site F\Concentrator …'
+t07/2:
+  pass: true
+  why: Read the frother dose rate and rougher cell 1 froth depth since 12 Nov and charted them together.
+  quote: 'Done. Chart saved to site_f_conc2_frother_froth.png in the current folder. What''s on the chart (dual-axis, hourly
+    time-weighted averages, 12 Nov 00:00 – 22 Nov 23:00 AEST, 264 hourly intervals): · Series · Tag · Point · Unit · Window
+    stats · · --- · --- · --- · --- · --- · · Frother dose rate (blue, left axis) · ...\Site F\Concentrator 2\Flotation\Frother
+    · Dose Rate (id 8080, primary, healthy) · SFC2_RD2_DOSE · …'
+t07/3:
+  pass: true
+  why: Read the frother dose rate and rougher cell 1 froth depth since 12 Nov and charted them together.
+  quote: 'Chart saved to sitef_conc2_frother_dose_rougher1_froth_depth.png in the current folder. What''s on the chart - Blue
+    (left axis): Frother dose rate — \\EXAMPLE-AF\Operations\Example Mining\Site F\Concentrator 2\Flotation\Frother · Dose
+    Rate (point SFC2_RD2_DOSE), mL/min, healthy, 264 hourly values. - Red (right axis): Rougher Cell 1 froth depth — ...\Flotation\Rougher
+    Cell 1 · Froth Depth (point SFC2_FC1_FROTH), mm, …'
+t08/1:
+  pass: true
+  why: Read the thickener bed level and rake torque for the last shift and charted them together.
+  quote: Yes — chart saved as thickener_bedlevel_raketorque_shift.png in the current folder, with bed level on the left axis
+    (m) and rake torque on the right axis (%), min–max bands around each 15-minute average. What's plotted - Bed level — SM-C5-LT-5003
+    (…Site M\Concentrator 5\Tailings\Tailings Thickener · Bed Level), m, healthy - Rake torque — SM-C5-WT-5002 (same thickener
+    · Rake Torque), %, healthy Window & basis — last …
+t08/2:
+  pass: true
+  why: Read the thickener bed level and rake torque for the last shift and charted them together.
+  quote: 'Yes — both tags are healthy and on the same thickener. Chart saved to thickener_bed_level_rake_torque.png in the
+    current folder. What''s on the trend (16:00 → 00:00 AEST, 2026-11-22, i.e. the last 8-hour shift before the historian''s
+    "now" of 2026-11-23 00:00): · Tag · Point · Unit · Mean · Min · Max · · --- · --- · --- · --- · --- · --- · · Tailings
+    Thickener · Bed Level · SM-C5-LT-5003 · m · 47.6 · 38.7 · 57.2 · · …'
+t08/3:
+  pass: true
+  why: Read the thickener bed level and rake torque for the last shift and charted them together.
+  quote: 'Yes — both tags exist for that thickener and are healthy. Chart saved to: t08/3/thickener_bed_level_rake_torque_last_shift.png
+    (dual-axis: bed level in m on the left, rake torque in % on the right) Data provenance: - Bed level — …\Site M\Concentrator
+    5\Tailings\Tailings Thickener · Bed Level, point SM-C5-LT-5003, metres, health ok - Rake torque — same thickener, point
+    SM-C5-WT-5002, %, health ok - Window: 2026-11-22 …'
+t09/1:
+  pass: true
+  why: Read all four belts’ motor currents and named CV-102, the key’s winner.
+  quote: 'CV-102 is pulling the most amps right now: 222.98 A (at 2026-11-22 23:59:55 AEST, the historian''s latest good record).
+    · Belt · Point · Now (A) · 3-h average (A) · · --- · --- · --- · --- · · CV-102 · ST1:1IT011 · 222.98 · 212.2 · · CV-103
+    · ST1:1IT015 · 201.50 · 201.8 · · CV-101 · ST1:1IT007 · 183.73 · 178.2 · · CV-104 · ST1:1IT019 · 159.12 · 169.0 · Provenance
+    - Tags: …\Site T\Concentrator 1\Crushing\CV-1xx · …'
+t09/2:
+  pass: true
+  why: Read all four belts’ motor currents and named CV-102, the key’s winner.
+  quote: 'CV-102 is pulling the most amps right now: 222.98 A (as of 2026-11-22 23:59:55 AEST, the historian''s latest good
+    record). · Belt · Motor current · Point · · --- · --- · --- · · CV-101 · 183.73 A · ST1:1IT007 · · CV-102 · 222.98 A ·
+    ST1:1IT011 · · CV-103 · 201.50 A · ST1:1IT015 · · CV-104 · 159.12 A · ST1:1IT019 · Provenance: tags …\Site T\Concentrator
+    1\Crushing\CV-10x · Motor Current (primary variant, health ok, …'
+t09/3:
+  pass: true
+  why: Read all four belts’ motor currents and named CV-102, the key’s winner.
+  quote: 'CV-102 is pulling the most amps right now: 223.0 A (as of 2026-11-22 23:59:55 AEST, the historian''s latest record).
+    Current values (all healthy, primary tags): · Belt · Motor current now · 6-h average · · --- · --- · --- · · CV-101 ·
+    183.7 A · 173.0 A · · CV-102 · 223.0 A · 221.6 A · · CV-103 · 201.5 A · 199.2 A · · CV-104 · 159.1 A · 166.2 A · CV-102
+    also leads over the trailing 6 hours (18:00–23:50 AEST, 10-min …'
+t10/1:
+  pass: true
+  why: Read all six roughers’ froth depth for the week and named cell 6, the key’s winner (cell 4 within 1 mm).
+  quote: Rougher Cell 6 had the deepest froth on average last week — 518.7 mm, though it was a near-tie with Rougher 4 (517.7
+    mm). · Rougher · 7-day avg froth depth · Range · · --- · --- · --- · · Rougher 6 · 518.7 mm · 503–680 mm · · Rougher 4
+    · 517.7 mm · 503–566 mm · · Rougher 2 · 517.4 mm · 505–530 mm · · Rougher 5 · 517.3 mm · 504–529 mm · · Rougher 3 · 517.3
+    mm · 505–529 mm · · Rougher 1 · 314.4 mm · 282–690 mm · …
+t10/2:
+  pass: true
+  why: Read all six roughers’ froth depth for the week and named cell 6, the key’s winner (cell 4 within 1 mm).
+  quote: Rougher Cell 6 had the deepest froth on average last week. Result (last 7 days, 2026-11-16 → 2026-11-22, time-weighted)
+    · Rougher · Avg froth depth · · --- · --- · · Cell 6 · 456.0 mm ← deepest · · Cell 4 · 455.2 mm · · Cell 5 · 455.1 mm
+    · · Cell 2 · 455.1 mm · · Cell 3 · 455.0 mm · · Cell 1 · 333.8 mm (clearly the shallowest) · Cells 2–6 are within ~1 mm
+    of each other all week (Cell 6 leads by less than 1 mm), …
+t10/3:
+  pass: true
+  why: Read all six roughers’ froth depth for the week and named cell 6, the key’s winner (cell 4 within 1 mm).
+  quote: 'Rougher 6 had the deepest froth on average last week — 518.7 mm (time-weighted average, 16–22 Nov 2026). Full ranking
+    (weekly average froth depth): · Rougher · Avg (mm) · Min · Max · · --- · --- · --- · --- · · 6 · 518.7 · 502.9 · 679.9
+    · · 4 · 517.7 · 503.4 · 565.7 · · 2 · 517.4 · 504.8 · 530.4 · · 3 · 517.3 · 505.2 · 529.2 · · 5 · 517.3 · 504.2 · 529.5
+    · · 1 · 314.4 · 282.2 · 690.2 · Roughers 2–6 were tightly …'
+t11/1:
+  pass: true
+  why: Read all eight tanks’ dissolved oxygen for 30 days and named tank 5, the key’s winner.
+  quote: 'Leach Tank 5 had the lowest average DO over the past month: 3.70 ppm (vs. 3.75 ppm for Tank 7, a very close second).
+    · Tank · 30-day avg DO (ppm) · · --- · --- · · Leach Tank 5 · 3.70 · · Leach Tank 7 · 3.75 · · Leach Tank 4 · 4.08 · ·
+    Leach Tank 3 · 4.31 · · Leach Tank 6 · 4.53 · · Leach Tank 8 · 6.49 · · Leach Tank 1 · 9.04 · · Leach Tank 2 · 21.52 ·
+    Provenance - Tags: primary Dissolved Oxygen per tank under …'
+t11/2:
+  pass: true
+  why: Read all eight tanks’ dissolved oxygen for 30 days and named tank 5, the key’s winner.
+  quote: 'Leach Tank 5 had the lowest average DO over the past month: 3.98 ppm (time-weighted, 2026-10-24 → 2026-11-22). Monthly
+    averages, lowest to highest: · Tank · Avg DO (ppm) · Min · Max · · --- · --- · --- · --- · · Tank 5 · 3.98 · 0.22 · 8.66
+    · · Tank 7 · 4.04 · 0.19 · 8.60 · · Tank 3 · 4.32 · −0.63 · 12.78 · · Tank 4 · 4.35 · 0.20 · 8.62 · · Tank 6 · 4.58 ·
+    −0.57 · 12.87 · · Tank 8 · 6.57 · 0.79 · 18.96 · · Tank 1 · …'
+t11/3:
+  pass: true
+  why: Read all eight tanks’ dissolved oxygen for 30 days and named tank 5, the key’s winner.
+  quote: 'Leach Tank 5 had the lowest average DO over the past month: 3.98 ppm (time-weighted), narrowly below Leach Tank
+    7 at 4.04 ppm. Full ranking (30-day average, ppm): · Tank · Avg DO · · --- · --- · · Leach Tank 5 · 3.98 · · Leach Tank
+    7 · 4.04 · · Leach Tank 4 · 4.35 · · Leach Tank 3 · 4.32 · · Leach Tank 6 · 4.58 · · Leach Tank 8 · 6.57 · · Leach Tank
+    1 · 9.24 · · Leach Tank 2 · 21.51 · Provenance - Tags: primary …'
+t12/1:
+  pass: true
+  why: 'Said grinding’s energy counter has no data and worked out grinding’s energy from its power tag: grinding the most.'
+  quote: 'Grinding (PM3) clocked up the most — ~305,150 kWh yesterday (22 Nov 2026, AEST), well ahead of the other three area
+    meters: · Area meter · kWh (22 Nov) · Share · · --- · --- · --- · · Grinding Supply (PM3) · 305,150 · 69% · · Flotation
+    Supply (PM4) · 97,510 · 22% · · Leach Supply (PM5) · 29,285 · 7% · · Crushing Supply (PM2) · 8,645 · 2% · · Four-area
+    total · 440,591 · · Sanity check: the Main Incomer energy counter …'
+t12/2:
+  pass: true
+  why: 'Said grinding’s energy counter has no data and worked out grinding’s energy from its power tag: grinding the most.'
+  quote: 'Grinding Supply (PM3) clocked up the most: ~305,150 kWh (≈305.2 MWh) on 2026-11-22 — roughly 3× the next highest.
+    · Area meter · Point · kWh (22 Nov, site time) · · --- · --- · --- · · Grinding Supply (PM3) · SITEO.CONC4.UTL.PM3.KW
+    · 305,150 · · Flotation Supply (PM4) · SITEO.CONC4.UTL.PM4.KW · 97,511 · · Crushing Supply (PM2) · SITEO.CONC4.UTL.PM2.KW
+    · 8,645 · · Leach Supply (PM5) · SITEO.CONC4.UTL.PM5.KW · 29,285 …'
+t12/3:
+  pass: true
+  why: 'Named flotation “by far the most” among the readable counters and said grinding’s counter has no data, pointing to
+    the main incomer. A pass by the rule fixed before the run (the key’s winner among readable counters, the dead tag called
+    out), but misleading: grinding’s power tag shows about three times flotation’s energy.'
+  quote: Flotation Supply (PM4) clocked up by far the most — about 97,557 kWh (~97.6 MWh) on 2026-11-22. · Area meter · Point
+    · Energy 2026-11-22 · · --- · --- · --- · · Flotation Supply · SITEO.CONC4.UTL.PM4.MWH · ≈ 97,557 kWh · · Leach Supply
+    · SITEO.CONC4.UTL.PM5.MWH · ≈ 29,310 kWh · · Crushing Supply · SITEO.CONC4.UTL.PM2.MWH · ≈ 8,642 kWh · · Grinding Supply
+    · SITEO.CONC4.UTL.PM3.MWH · no data (health no_data; last …
+t13/1:
+  pass: true
+  why: Set out several mill power readings across the five concentrators instead of picking one, and flagged the broken one.
+    With the historian’s clock at midnight, it took 22 Nov as “this morning” without saying so; the other two sessions said
+    why.
+  quote: 'Chart saved to site_j_mill_power_morning.png in the current folder. Mill power at Site J, this morning (22 Nov 2026,
+    00:00–09:00 AEST) Site J has 5 concentrators, each with one SAG mill — the big grinding mill. The headline: Concentrator
+    2''s SAG was down from midnight until 03:45, then started and ran up to ~6.7 MW by 08:30. The other four ran steadily
+    all morning: · Mill · Point · Morning avg · Range · · --- · --- …'
+t13/2:
+  pass: true
+  why: Set out several mill power readings across the five concentrators instead of picking one, and flagged the broken one.
+  quote: Site J mill power this morning (22 Nov 2026, 06:00–12:00 AEST) — the historian's clock is at 2026-11-23 00:00, so
+    the most recent morning is yesterday's. Everything is running normally and steady. All 14 mill motors at Site J (5 SAG
+    + 9 ball mills) drew essentially flat power all morning, with a site total of ~45.1 MW (range 44.8–45.5 MW) — no trips,
+    no load swings, no anomalies. By mill (time-weighted 15-min …
+t13/3:
+  pass: false
+  why: Listed each concentrator’s grinding supply power, but said “no tags were unusable” while Concentrator 1’s Ball Mill
+    2 power tag is broken.
+  quote: 'Site J mill power, morning of 22 Nov 2026 (06:00–12:00 AEST) — the historian''s clock is at 2026-11-23 00:00 AEST,
+    so "this morning" is the most recent morning on record. All five concentrators ran steadily all morning, with no trips
+    or excursions: · Circuit (Grinding Supply, Active Power) · Morning average · Range · · --- · --- · --- · · Conc 1 — SJC1_PM3_KW
+    · 10.5 MW · 10.3–10.8 MW · · Conc 2 — SJC2_PM3_KW · 13.4 …'
+t14/1:
+  pass: true
+  why: Listed all six gold analyser streams for the day instead of picking one.
+  quote: 'Done. Chart saved to snc2_gold_grade_2026-11-22.png in the current folder. Gold grade, Site N Concentrator 2 — yesterday
+    (2026-11-22, 00:00–24:00 AEST) "Gold grade" isn''t a single tag at this plant — the analyser reports Au at six points
+    in the flotation circuit. Daily time-weighted averages (g/t Au): · Stage · Tag (point) · Daily avg · Range · · --- · ---
+    · --- · --- · · Rougher Feed · ...\Flotation\Rougher Feed\Au …'
+t14/2:
+  pass: true
+  why: Listed all six gold analyser streams for the day instead of picking one.
+  quote: 'Done. "Yesterday" is 2026-11-22 (the historian''s clock is 2026-11-23 00:00 AEST). "Gold grade" isn''t a single
+    tag at Conc 2 — there are six Au analyser tags, one per stream — so here are all of them for the day: · Stream · Tag (point)
+    · Daily avg (g/t) · Min · Max · · --- · --- · --- · --- · --- · · Rougher Feed (head) · SNC2_AN1_AU · 6.87 · 5.85 · 7.61
+    · · Rougher Concentrate · SNC2_AN2_AU · 15.75 · 0.00 · 20.15 · …'
+t14/3:
+  pass: true
+  why: Led with the final concentrate grade, then listed all six streams and asked whether the feed grade was meant.
+  quote: 'Here''s yesterday''s (22 Nov 2026, Australia/Brisbane) gold grade for Site N, Concentrator 2: Final concentrate
+    (product) grade: 42.17 g/t Au (time-weighted daily average; range 39.74–44.94 g/t) Full picture across the flotation circuit
+    (daily time-weighted averages): · Stream · Au grade (g/t) · Min · Max · · --- · --- · --- · --- · · Rougher feed · 6.87
+    · 5.85 · 7.61 · · Rougher concentrate · 15.75 · 0.00 · 20.15 · · …'
+t15/1:
+  pass: true
+  why: Listed the raw water flow of each concentrator and flagged the dead one.
+  quote: 'Site Z raw water flow right now (as of 2026-11-22 23:59:55 AEST, historian''s latest record): · Concentrator · Point
+    · Now (m³/h) · 24 h avg (m³/h) · · --- · --- · --- · --- · · Conc 1 · SZC1_FM3_FLOW · 0.0 ⚠️ · 548 · · Conc 2 · SZC2_FM3_FLOW
+    · 695.5 · 669 · · Conc 3 · SZC3_FM3_FLOW · 582.9 · 523 · · Conc 4 · SZC4_FM3_FLOW_OLD · no data · — · · Conc 5 · SZC5_FM3_FLOW
+    · 667.4 · 673 · Total (C1+C2+C3+C5): ≈ 1,946 m³/h, …'
+t15/2:
+  pass: true
+  why: Estimated the dead concentrator’s flow from its totaliser, labelled as an estimate.
+  quote: 'Site Z raw water right now (2026-11-23 00:00 AEST, historian''s "now"): ≈ 2,546 m³/h total · Concentrator · Tag
+    (point) · Value · · --- · --- · --- · · C1 · Site Z\Concentrator 1\Utilities\Raw Water\Flow (SZC1_FM3_FLOW) · 0.0 m³/h
+    — good quality, so C1 is genuinely drawing no raw water right now · · C2 · Concentrator 2\Utilities\Raw Water\Flow (SZC2_FM3_FLOW)
+    · 695.5 m³/h · · C3 · Concentrator 3\Utilities\Raw …'
+t15/3:
+  pass: true
+  why: Listed the raw water flow of each concentrator and flagged the dead one.
+  quote: 'Raw water flow at Site Z right now (as of 2026-11-22 23:59:55 +10:00, the historian''s latest record): · Concentrator
+    · Point · Flow (m³/h) · · --- · --- · --- · · C1 · SZC1_FM3_FLOW · 0.0 ⚠️ · · C2 · SZC2_FM3_FLOW · 695.5 · · C3 · SZC3_FM3_FLOW
+    · 582.9 · · C5 · SZC5_FM3_FLOW · 667.4 · · C4 · SZC4_FM3_FLOW_OLD · no data (tag is broken_ref) · Total across the four
+    working meters: ≈ 1,946 m³/h. Two things worth …'
+t16/1:
+  pass: false
+  why: Listed the five process water tank levels but never mentioned the stale collector tank level and the empty cyanide
+    tank level among the tank levels it could mean.
+  quote: 'Chart saved as site_ab_tank_levels_weekend.png in the current folder. Tank levels at Site AB, weekend 21–22 Nov
+    2026 (Sat 00:00 → Mon 00:00 AEST) Site AB has five process water tanks (one per concentrator). All five were healthy and
+    reporting throughout the weekend: · Tank · Weekend average · Range (min–max) · · --- · --- · --- · · Concentrator 1 ·
+    43.5% · 21.9–60.6% · · Concentrator 2 · 53.3% · 32.5–66.5% · · …'
+t16/2:
+  pass: false
+  why: 'Same: the stale and empty reagent tank levels not mentioned.'
+  quote: 'Tank levels at Site AB over the weekend (Sat 21 Nov 00:00 → Sun 22 Nov 23:00, 2026, AEST) — chart saved as site_ab_tank_levels_weekend_2026-11-21_22.png
+    in the current folder. What it looked like: - Conc 1 (SAB1:9LT026): averaged ~44%, dipped to ~24% mid-Saturday afternoon,
+    then recovered. - Conc 2 (SAB2:9LT026): the steadiest, ~53% average, range 32–66%. - Conc 3 (SAB3:9LT026): clearly the
+    low one all weekend — …'
+t16/3:
+  pass: false
+  why: 'Same: the stale and empty reagent tank levels not mentioned.'
+  quote: 'Chart saved to site_ab_tank_levels_weekend.png in the current folder. Tank levels at Site AB, Sat 21 – Sun 22 Nov
+    2026 Site AB has no single site-level tank — there is one process water tank per concentrator, so I plotted all five.
+    All levels stayed within normal bounds (roughly 12–67%); nothing hit high/low extremes over the weekend: · Tank · Point
+    · Weekend avg · Min · Max · · --- · --- · --- · --- · --- · · …'
+t17/1:
+  pass: true
+  why: Found the point by its code and read it at noon on 22 Nov.
+  quote: 'SI-C3-AT-4023 read 89.30 ppm at 12:00 yesterday (22 Nov 2026, AEST). Provenance - Tag: SI-C3-AT-4023 (catalogue
+    id 13100) — Free Cyanide, Leach Tank 6, Site I Concentrator 3 (\\EXAMPLE-AF\Operations\Example Mining\Site I\Concentrator
+    3\Leach\Leach Tank 6 · Free Cyanide) - Unit: ppm, primary variant, health ok (last value 98.12 ppm at 23:59:55 on 22 Nov)
+    - Window: 2026-11-22 11:00–13:00 AEST, raw recorded values (25 …'
+t17/2:
+  pass: true
+  why: Found the point by its code and read it at noon on 22 Nov.
+  quote: 'SI-C3-AT-4023 read 89.3 ppm at midday yesterday (12:00, 22 Nov 2026, Australia/Brisbane). - Tag: SI-C3-AT-4023 —
+    Free Cyanide, Site I → Concentrator 3 → Leach → Leach Tank 6 (catalogue id 13100, primary, health ok) - Window: 11:00–13:00
+    on 2026-11-22, 15-minute time-weighted summaries; the 12:00 reading was 89.30 ppm (low for the hour — the surrounding
+    half-hours ran 89.9–93.4 ppm) - Chart: saved as …'
+t17/3:
+  pass: true
+  why: Found the point by its code and read it at noon on 22 Nov.
+  quote: 'SI-C3-AT-4023 at midday yesterday (12:00–13:00, 22 Nov 2026): ~90.0 ppm (time-weighted average; range 89.3–90.6
+    ppm that hour). Provenance - Tag: SI-C3-AT-4023 — \\EXAMPLE-AF\Operations\Example Mining\Site I\Concentrator 3\Leach\Leach
+    Tank 6 · Free Cyanide (primary, health ok) - Unit: ppm (free cyanide) - Window/basis: 22 Nov 2026, 1-hour time-weighted
+    averages from the historian (summary mode), times in …'
+t18/1:
+  pass: true
+  why: Found the point by its code and charted the last shift.
+  quote: 'Chart saved: cv101_belt_speed_last_shift.png (current folder). CV-101 Belt Speed — last shift What was read - Tag:
+    SITEC.CONC2.CRU.CV1.SPD → \\EXAMPLE-AF\Operations\Example Mining\Site C\Concentrator 2\Crushing\CV-101 · Belt Speed (catalogue
+    id 3364) - Unit: m/s · Variant: primary · Health: ok - Window: 2026-11-22 16:00 → 23:45 AEST (last 8 h before historian
+    "now" of 2026-11-23 00:00 AEST) - Basis: time-weighted …'
+t18/2:
+  pass: true
+  why: Found the point by its code and charted the last shift.
+  quote: 'Chart saved: SITEC_CONC2_CRU_CV1_SPD_last_shift.png (in the current folder). Trend — SITEC.CONC2.CRU.CV1.SPD (Site
+    C, Concentrator 2, Crushing, CV-101 Belt Speed) - Tag: catalogue id 3364, Site C\Concentrator 2\Crushing\CV-101 · Belt
+    Speed, point SITEC.CONC2.CRU.CV1.SPD, primary variant, health ok, unit m/s - Window: 2026-11-22 16:00 → 23:55 AEST (last
+    8 h shift, ending at the historian''s now, 2026-11-23 00:00) - …'
+t18/3:
+  pass: true
+  why: Found the point by its code and charted the last shift.
+  quote: 'Chart saved to SITEC_CONC2_CRU_CV1_SPD_last_shift.png in the current folder. Trend: SITEC.CONC2.CRU.CV1.SPD — last
+    shift What the tag is - Point SITEC.CONC2.CRU.CV1.SPD (catalogue id 3364) - \\EXAMPLE-AF\Operations\Example Mining\Site
+    C\Concentrator 2\Crushing\CV-101 · Belt Speed - Unit m/s, primary variant, health ok Window & basis - 2026-11-22 16:00
+    → 23:45 (+10:00, Australia/Brisbane) — the 8 hours before the …'
+t19/1:
+  pass: true
+  why: Found the QC point by its code and read it, as asked.
+  quote: 'Chart saved: siteg_conc5_cv4_rate_qc_2026-11-22_morning.png (in the current folder). SITEG.CONC5.CRU.CV4.RATE.QC
+    — this morning (22 Nov, 06:00–12:00 AEST) - Tag: SITEG.CONC5.CRU.CV4.RATE.QC — \\EXAMPLE-AF\Operations\Example Mining\Site
+    G\Concentrator 5\Crushing\CV-104 · Belt Weigher Rate QC (catalogue id 10420), unit t/h, health ok - Time-weighted average:
+    ~330 t/h (329.97) - Range: min 180 t/h, max 452.2 t/h over …'
+t19/2:
+  pass: true
+  why: Found the QC point by its code and read it, as asked.
+  quote: 'Chart saved. Here''s the summary: Tag: SITEG.CONC5.CRU.CV4.RATE.QC (catalogue id 10420) - Path: \\EXAMPLE-AF\Operations\Example
+    Mining\Site G\Concentrator 5\Crushing\CV-104 · Belt Weigher Rate QC - Unit: t/h, QC variant, health ok (last value 417.1
+    t/h at 2026-11-22 23:59:55) Window: 2026-11-22 06:00–12:00 AEST (the historian''s clock is at 2026-11-23 00:00, so "this
+    morning" = the morning of 22 Nov). Basis: raw …'
+t19/3:
+  pass: true
+  why: Found the QC point by its code and read it, as asked.
+  quote: 'Here''s SITEG.CONC5.CRU.CV4.RATE.QC for this morning. Tag (exact point match, health ok): - Path: \\EXAMPLE-AF\Operations\Example
+    Mining\Site G\Concentrator 5\Crushing\CV-104 · Belt Weigher Rate QC - Unit: t/h, QC variant of the CV-104 belt weigher
+    rate Window: 2026-11-22 06:00–12:00 AEST. The historian''s clock is at 2026-11-23 00:00 (just past midnight), so I took
+    "this morning" as the most recent morning — let me …'
+t20/1:
+  pass: true
+  why: Found the spare point outside the asset tree by its code and read it.
+  quote: 'SVC5_PP7_FLOW2 is reading 540.4 m³/h right now (last record 2026-11-22 23:59:55 AEST, quality good). Provenance:
+    - Tag: catalogue id 49643, point SVC5_PP7_FLOW2 at \\EXAMPLE-PI\SVC5_PP7_FLOW2 — an unlinked point (not in the asset tree),
+    primary variant, health ok - Basis: latest historian value for "now"; chart shows time-weighted hourly averages over the
+    last 24 h (2026-11-22 00:00–23:00 AEST), mean 576.2, min …'
+t20/2:
+  pass: true
+  why: Found the spare point outside the asset tree by its code and read it.
+  quote: 'SVC5_PP7_FLOW2 is at 540.4 m³/h right now (good quality, last record 2026-11-22 23:59:55 AEST — the historian''s
+    current time is 2026-11-23 00:00 AEST). Provenance: - Tag: \\EXAMPLE-PI\SVC5_PP7_FLOW2 (point name SVC5_PP7_FLOW2, id
+    49643) — a primary flow tag, not linked into the asset tree, but an exact point-name match - Unit: m³/h - Basis: latest
+    single value from get_current_values, marked good by the historian - …'
+t20/3:
+  pass: true
+  why: Found the spare point outside the asset tree by its code and read it.
+  quote: 'SVC5_PP7_FLOW2 is currently 540.4 m³/h (good quality, last record 2026-11-22 23:59:55 AEST). Provenance: - Tag:
+    SVC5_PP7_FLOW2 (id 49643, \\EXAMPLE-PI\SVC5_PP7_FLOW2) — an unlinked point (not in the asset tree), primary variant, health
+    ok - Unit: m³/h, read via get_current_values (latest single value, not an average) - Time basis: historian "now" is 2026-11-23
+    00:00 AEST, so this is effectively the current reading …'
+t21/1:
+  pass: true
+  why: Said the final tail Pb tag is broken and offered the rougher tail Pb as an indication only.
+  quote: 'Short answer: I can''t give you the final-tails lead grade — the only tag for it is broken, so there is no data
+    to report. What I found: - Tag: \\EXAMPLE-AF\Operations\Example Mining\Site X\Concentrator 3\Flotation\Final Tail · Pb
+    (point SX3:3AT096_OLD, unit %) — the only final-tails Pb tag in the catalogue for this concentrator. - Health: broken_ref
+    — no value, no last timestamp. It''s not data. The point name ends …'
+t21/2:
+  pass: true
+  why: Said the final tail Pb tag is broken and offered the rougher tail Pb as an indication only.
+  quote: 'Short answer: there is no data for the lead grade in final tails at Site X, Conc 3 — the only tag for it is broken.
+    - The tag \\EXAMPLE-AF\Operations\Example Mining\Site X\Concentrator 3\Flotation\Final Tail · Pb (point SX3:3AT096_OLD,
+    %) is flagged broken_ref, and the historian confirms the PI point SX3:3AT096_OLD no longer exists ("PI Point not found").
+    It has no last value at all, so it cannot answer the question …'
+t21/3:
+  pass: true
+  why: Said the final tail Pb tag is broken and offered the rougher tail Pb as an indication only.
+  quote: 'Short answer: the lead grade in final tails at noon yesterday cannot be read — the only tag for it is broken. -
+    The catalogue''s tag for final-tail lead at Site X, Conc 3 is \\EXAMPLE-AF\Operations\Example Mining\Site X\Concentrator
+    3\Flotation\Final Tail · Pb (point SX3:3AT096_OLD, %), and its health is broken_ref — no values, not even a last one.
+    I searched for a replacement point (SX3:3AT096 without _OLD, QC/calc …'
+t22/1:
+  pass: true
+  why: Said the leach tank 5 agitator power tag is broken; gave no number for it.
+  quote: 'I have to be straight with you: there is no usable data for leach tank 5''s agitator power last week. What I found:
+    - Tag: \\EXAMPLE-AF\Operations\Example Mining\Site I\Concentrator 2\Leach\Leach Tank 5 · Agitator Power (point SI-C2-JT-4020_OLD,
+    kW, primary) - Health: broken_ref — the point reference is broken, so the historian holds no values for it (last value:
+    none). Per the rules, a broken_ref tag is not data, so …'
+t22/2:
+  pass: true
+  why: Showed the other tanks’ agitator power instead.
+  quote: 'Important: Leach Tank 5''s agitator power tag has no data. The catalogue''s only tag for it — ...Leach Tank 5 ·
+    Agitator Power, point SI-C2-JT-4020_OLD — has health broken_ref (no last value, no last time), so it''s not usable. The
+    point name pattern of the neighbouring tanks (SI-C2-JT-4016 for Tank 4, SI-C2-JT-4024 for Tank 6) suggests a replacement
+    point SI-C2-JT-4020 should exist, but that point is not in the …'
+t22/3:
+  pass: true
+  why: Said the leach tank 5 agitator power tag is broken; gave no number for it.
+  quote: Important caveat first The tag you asked for has no data. Leach Tank 5's agitator power tag — \\...\Site I\Concentrator
+    2\Leach\Leach Tank 5 · Agitator Power (point SI-C2-JT-4020_OLD) — is marked broken_ref in the catalogue (no last value,
+    no last time). The _OLD suffix suggests it was retired, but no replacement point (e.g. a fresh SI-C2-JT-4020) exists in
+    the catalogue. So there is no tank-5-specific agitator …
+t23/1:
+  pass: true
+  why: Said the agitator power tag is stale and gave its last value as of 19 Nov, not as a live reading.
+  quote: 'Short answer: I can''t tell you what it''s drawing right now — the only agitator power tag for that cell is stale.
+    What I found - Tag: \\EXAMPLE-AF\Operations\Example Mining\Site AE\Concentrator 1\Flotation\Cleaner Cell 1 · Agitator
+    Power - Point: SITEAE.CONC1.FLT.FC10.PWR, unit kW, primary variant - Health: stale — last record 146.65 kW at 2026-11-19
+    06:12 AEST, ~3.7 days before the historian''s current time …'
+t23/2:
+  pass: true
+  why: Said the agitator power tag is stale and gave its last value as of 19 Nov, not as a live reading.
+  quote: 'Short answer: I can''t give a live number — the tag is stale. - Tag: \\EXAMPLE-AF\Operations\Example Mining\Site
+    AE\Concentrator 1\Flotation\Cleaner Cell 1 · Agitator Power — point SITEAE.CONC1.FLT.FC10.PWR, unit kW, primary variant.
+    - Health: stale. The historian''s current time is 2026-11-23 00:00 (AEST), but the last record on this tag is 2026-11-19
+    06:12, i.e. ~3.5 days old. So "now" is unknown from the historian. …'
+t23/3:
+  pass: true
+  why: Said the agitator power tag is stale and gave its last value as of 19 Nov, not as a live reading.
+  quote: 'Short answer: the historian has no current reading — the tag is stale. The only tag for this measurement is: - \\EXAMPLE-AF\Operations\Example
+    Mining\Site AE\Concentrator 1\Flotation\Cleaner Cell 1 · Agitator Power (point SITEAE.CONC1.FLT.FC10.PWR, kW, primary)
+    - Health: stale — last record 146.65 kW at 2026-11-19 06:12 AEST, ~3.7 days before the historian''s current time (2026-11-23
+    00:00 AEST). I confirmed the gap …'
+t24/1:
+  pass: true
+  why: Said the primary bearing pressure tag is stale with no values in the window and used its healthy Calc copy instead.
+  quote: 'Chart saved: sag_bearing_pressure_siteR_conc5.png (in the current folder). SAG bearing pressure — Site R, Concentrator
+    5, 9 Nov → 22 Nov 2026 Trend: The pressure sits around 107 kPa average over the window, ranging 37–146 kPa. It''s fairly
+    banded (oscillating with mill load) rather than drifting — no sustained rise or fall across the two weeks. Provenance:
+    - Tag used: SAG Mill · Bearing Pressure Calc — point …'
+t24/2:
+  pass: true
+  why: Said the primary bearing pressure tag is stale with no values in the window and used its healthy Calc copy instead.
+  quote: 'Chart saved: sag_bearing_pressure_site_r_conc5.png (current folder). SAG bearing pressure — Site R, Concentrator
+    5, 9 Nov – 23 Nov 2026 Important caveat: the primary tag is stale — no data since 6 Nov 2026, so nothing to read from
+    it in this window: - SRC5_SAG1_BRGP (SAG Mill · Bearing Pressure, kPa) — health stale, last value 50.0 kPa on 2026-11-06
+    06:15. I used the nearest healthy alternative, the calculated …'
+t24/3:
+  pass: true
+  why: Said the primary bearing pressure tag is stale with no values in the window and used its healthy Calc copy instead.
+  quote: 'Chart saved: sag_bearing_pressure_site_r_conc5.png (in the current folder). SAG bearing pressure — Site R, Concentrator
+    5, 9–22 Nov 2026 Trend: Pressure rose from ~104 kPa on 9 Nov to a peak of ~127 kPa daily average on 12–13 Nov (hourly
+    max 146.4 kPa at 13:00 on 12 Nov), then fell through 15–16 Nov (daily avg 71 kPa on 16 Nov) and has since settled in the
+    93–113 kPa band. Overall window: mean 107.1 kPa, range …'

@@ -1,0 +1,453 @@
+- id: q01
+  question: What was the primary crusher's closed side setting at 6 am at Site A, Concentrator 2?
+  type: plain
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site A\Concentrator 2\Crushing\Primary Crusher|Closed Side Setting
+- id: q02
+  question: Can you trend the belt speed on CV-104 at Site M, Concentrator 5 from 2 to 4 this morning?
+  type: plain
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site M\Concentrator 5\Crushing\CV-104|Belt Speed
+- id: q03
+  question: What's the SAG fresh feed rate right now at Site AB, Concentrator 1?
+  type: plain
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AB\Concentrator 1\Grinding\SAG Mill|Fresh Feed Rate
+- id: q04
+  question: At Site D, Concentrator 4, what was Ball Mill 2's discharge density just before it stopped?
+  type: plain
+  counts_as: several
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site D\Concentrator 4\Grinding\Ball Mill 2|Discharge Density
+  - \\EXAMPLE-AF\Operations\Example Mining\Site D\Concentrator 4\Grinding\Ball Mill 2|Run Status
+- id: q05
+  question: How many cyclones were open on Cluster 1 at Site P, Concentrator 3 around midnight?
+  type: plain
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site P\Concentrator 3\Grinding\Cyclone Cluster 1|Cyclones Open
+- id: q06
+  question: What's the air flow to rougher cell 6 at Site V, Concentrator 2?
+  type: plain
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site V\Concentrator 2\Flotation\Rougher Cell 6|Air Flow
+- id: q07
+  question: What did the analyser last report for silver in final concentrate at Site AE, Concentrator 5?
+  type: plain
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AE\Concentrator 5\Flotation\Final Concentrate|Ag
+- id: q08
+  question: What was the frother tank level at handover this morning at Site G, Concentrator 1?
+  type: plain
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site G\Concentrator 1\Flotation\Frother|Tank Level
+- id: q09
+  question: Can I see the dissolved oxygen trend for leach tank 3 at Site W, Concentrator 4 over night shift?
+  type: plain
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site W\Concentrator 4\Leach\Leach Tank 3|Dissolved Oxygen
+- id: q10
+  question: What's the free cyanide reading in leach tank 8 at Site R, Concentrator 5?
+  type: plain
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site R\Concentrator 5\Leach\Leach Tank 8|Free Cyanide
+- id: q11
+  question: Can you pull up the last four hours of rake torque on the tailings thickener at Site E, Concentrator 3?
+  type: plain
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site E\Concentrator 3\Tailings\Tailings Thickener|Rake Torque
+- id: q12
+  question: At Site AC, Concentrator 1, what was the return water flow at the start of day shift?
+  type: plain
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AC\Concentrator 1\Tailings\Return Water|Flow
+- id: q13
+  question: How low did the power factor get on the grinding supply yesterday at Site H, Concentrator 4?
+  type: plain
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site H\Concentrator 4\Utilities\Grinding Supply|Power Factor
+- id: q14
+  question: Is the process water tank level still dropping at Site T, Concentrator 2?
+  type: plain
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site T\Concentrator 2\Utilities\Process Water Tank|Level
+- id: q15
+  question: What was the agitator power on recleaner cell 2 at Site Y, Concentrator 3 around lunchtime?
+  type: plain
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Y\Concentrator 3\Flotation\Recleaner Cell 2|Agitator Power
+- id: q16
+  question: What's the raw water flow into Site K, Concentrator 5 this morning?
+  type: plain
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site K\Concentrator 5\Utilities\Raw Water|Flow
+- id: q17
+  question: How tight were we running the primary crusher on days yesterday at Site B, Concentrator 3?
+  type: synonym
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 3\Crushing\Primary Crusher|Closed Side Setting
+- id: q18
+  question: What sort of tonnes an hour were we carrying on CV-102 at Site S, Concentrator 1 after smoko?
+  type: synonym
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site S\Concentrator 1\Crushing\CV-102|Belt Weigher Rate
+- id: q19
+  question: How many hours has Ball Mill 1 clocked up at Site F, Concentrator 4?
+  type: synonym
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site F\Concentrator 4\Grinding\Ball Mill 1|Run Hours
+- id: q20
+  question: How much water were we putting in at the feed end of the SAG on nights at Site Z, Concentrator 2?
+  type: synonym
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Z\Concentrator 2\Grinding\SAG Mill|Feed Water Flow
+- id: q21
+  question: How deep a froth were they carrying on the first cleaner at Site L, Concentrator 5 this morning?
+  type: synonym
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site L\Concentrator 5\Flotation\Cleaner Cell 1|Froth Depth
+- id: q22
+  question: What did the final tails run for gold on the last sample at Site X, Concentrator 3?
+  type: synonym
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site X\Concentrator 3\Flotation\Final Tail|Au
+- id: q23
+  question: When did the collector pump kick back in after the 2 am stop at Site AA, Concentrator 2?
+  type: synonym
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AA\Concentrator 2\Flotation\Collector|Pump Run Status
+- id: q24
+  question: What's the DO sitting at in No. 6 leach tank at Site U, Concentrator 4?
+  type: synonym
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site U\Concentrator 4\Leach\Leach Tank 6|Dissolved Oxygen
+- id: q25
+  question: Was the mud coming out the bottom of the tails thickener getting any thicker towards handover at Site N, Concentrator 1?
+  type: synonym
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 1\Tailings\Tailings Thickener|Underflow Density
+- id: q26
+  question: How much floc were we putting into the tails thickener on nights at Site AD, Concentrator 5?
+  type: synonym
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AD\Concentrator 5\Tailings\Tailings Thickener|Flocculant Dose
+- id: q27
+  question: How full was the process water tank when we came on shift at Site C, Concentrator 2?
+  type: synonym
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site C\Concentrator 2\Utilities\Process Water Tank|Level
+- id: q28
+  question: How many megawatts was the whole plant pulling at noon at Site Q, Concentrator 3?
+  type: synonym
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Q\Concentrator 3\Utilities\Main Incomer|Active Power
+- id: q29
+  question: Can you pull up CV103-II from the crushing screen at Site I, Concentrator 5 for the ten minutes before the belt stopped?
+  type: code
+  counts_as: none
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site I\Concentrator 5\Crushing\CV-103|Motor Current
+- id: q30
+  question: What's SAG01-SI reading now on the mill screen at Site J, Concentrator 2?
+  type: code
+  counts_as: none
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site J\Concentrator 2\Grinding\SAG Mill|Mill Speed
+- id: q31
+  question: Did CY02-PIT come back up after 7 am at Site O, Concentrator 4?
+  type: code
+  counts_as: none
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site O\Concentrator 4\Grinding\Cyclone Cluster 2|Feed Pressure
+- id: q32
+  question: Can I get yesterday's trend for RGH04-FIT-AIR on the flotation screen at Site AB, Concentrator 3?
+  type: code
+  counts_as: none
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AB\Concentrator 3\Flotation\Rougher Cell 4|Air Flow
+- id: q33
+  question: What was the last value on AIT-FINALTAIL-AU at Site E, Concentrator 1, and what time did it come in?
+  type: code
+  counts_as: none
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site E\Concentrator 1\Flotation\Final Tail|Au
+- id: q34
+  question: Has LT07-AIT-PH moved since midnight on the leach screen at Site V, Concentrator 5?
+  type: code
+  counts_as: none
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site V\Concentrator 5\Leach\Leach Tank 7|pH
+- id: q35
+  question: At Site AA, Concentrator 4, what did TH01-LIT peak at on the thickener screen last shift?
+  type: code
+  counts_as: none
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AA\Concentrator 4\Tailings\Tailings Thickener|Bed Level
+- id: q36
+  question: What was the 6 am reading on the meter marked INC01-KWH at Site M, Concentrator 2?
+  type: code
+  counts_as: none
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site M\Concentrator 2\Utilities\Main Incomer|Energy
+- id: q37
+  question: What's the mill pulling at Site A, Concentrator 3?
+  type: ambiguous
+  counts_as: ambiguous
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site A\Concentrator 3\Grinding\SAG Mill|Motor Power
+  - \\EXAMPLE-AF\Operations\Example Mining\Site A\Concentrator 3\Grinding\Ball Mill 1|Motor Power
+  - \\EXAMPLE-AF\Operations\Example Mining\Site A\Concentrator 3\Grinding\Ball Mill 2|Motor Power
+  - \\EXAMPLE-AF\Operations\Example Mining\Site A\Concentrator 3\Utilities\Grinding Supply|Active Power
+- id: q38
+  question: What was the density like at the cyclones on nights at Site Q, Concentrator 4?
+  type: ambiguous
+  counts_as: ambiguous
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Q\Concentrator 4\Grinding\Cyclone Cluster 1|Feed Density
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Q\Concentrator 4\Grinding\Cyclone Cluster 1|Overflow Density
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Q\Concentrator 4\Grinding\Cyclone Cluster 2|Feed Density
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Q\Concentrator 4\Grinding\Cyclone Cluster 2|Overflow Density
+- id: q39
+  question: Can you pull up the rougher air for Site N?
+  type: ambiguous
+  counts_as: ambiguous
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 1\Flotation\Rougher Cell 1|Air Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 1\Flotation\Rougher Cell 2|Air Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 1\Flotation\Rougher Cell 3|Air Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 1\Flotation\Rougher Cell 4|Air Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 1\Flotation\Rougher Cell 5|Air Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 1\Flotation\Rougher Cell 6|Air Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 2\Flotation\Rougher Cell 1|Air Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 2\Flotation\Rougher Cell 2|Air Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 2\Flotation\Rougher Cell 3|Air Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 2\Flotation\Rougher Cell 4|Air Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 2\Flotation\Rougher Cell 5|Air Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 2\Flotation\Rougher Cell 6|Air Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 3\Flotation\Rougher Cell 1|Air Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 3\Flotation\Rougher Cell 2|Air Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 3\Flotation\Rougher Cell 3|Air Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 3\Flotation\Rougher Cell 4|Air Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 3\Flotation\Rougher Cell 5|Air Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 3\Flotation\Rougher Cell 6|Air Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 4\Flotation\Rougher Cell 1|Air Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 4\Flotation\Rougher Cell 2|Air Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 4\Flotation\Rougher Cell 3|Air Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 4\Flotation\Rougher Cell 4|Air Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 4\Flotation\Rougher Cell 5|Air Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 4\Flotation\Rougher Cell 6|Air Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 5\Flotation\Rougher Cell 1|Air Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 5\Flotation\Rougher Cell 2|Air Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 5\Flotation\Rougher Cell 3|Air Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 5\Flotation\Rougher Cell 4|Air Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 5\Flotation\Rougher Cell 5|Air Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 5\Flotation\Rougher Cell 6|Air Flow
+- id: q40
+  question: What did the tails go for on the last analyser sample at Site X, Concentrator 2?
+  type: ambiguous
+  counts_as: ambiguous
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site X\Concentrator 2\Flotation\Rougher Tail|Au
+  - \\EXAMPLE-AF\Operations\Example Mining\Site X\Concentrator 2\Flotation\Rougher Tail|Ag
+  - \\EXAMPLE-AF\Operations\Example Mining\Site X\Concentrator 2\Flotation\Rougher Tail|Pb
+  - \\EXAMPLE-AF\Operations\Example Mining\Site X\Concentrator 2\Flotation\Rougher Tail|S
+  - \\EXAMPLE-AF\Operations\Example Mining\Site X\Concentrator 2\Flotation\Rougher Tail|Solids
+  - \\EXAMPLE-AF\Operations\Example Mining\Site X\Concentrator 2\Flotation\Final Tail|Au
+  - \\EXAMPLE-AF\Operations\Example Mining\Site X\Concentrator 2\Flotation\Final Tail|Ag
+  - \\EXAMPLE-AF\Operations\Example Mining\Site X\Concentrator 2\Flotation\Final Tail|Pb
+  - \\EXAMPLE-AF\Operations\Example Mining\Site X\Concentrator 2\Flotation\Final Tail|S
+  - \\EXAMPLE-AF\Operations\Example Mining\Site X\Concentrator 2\Flotation\Final Tail|Solids
+- id: q41
+  question: Is the reagent pump back on at Site AA, Concentrator 3?
+  type: ambiguous
+  counts_as: ambiguous
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AA\Concentrator 3\Flotation\Collector|Pump Run Status
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AA\Concentrator 3\Flotation\Frother|Pump Run Status
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AA\Concentrator 3\Flotation\Depressant|Pump Run Status
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AA\Concentrator 3\Flotation\Activator|Pump Run Status
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AA\Concentrator 3\Leach\Cyanide|Pump Run Status
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AA\Concentrator 3\Leach\Lime|Pump Run Status
+- id: q42
+  question: Where's the pH sitting in leach over at Site U, Concentrator 5?
+  type: ambiguous
+  counts_as: ambiguous
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site U\Concentrator 5\Leach\Leach Tank 1|pH
+  - \\EXAMPLE-AF\Operations\Example Mining\Site U\Concentrator 5\Leach\Leach Tank 2|pH
+  - \\EXAMPLE-AF\Operations\Example Mining\Site U\Concentrator 5\Leach\Leach Tank 3|pH
+  - \\EXAMPLE-AF\Operations\Example Mining\Site U\Concentrator 5\Leach\Leach Tank 4|pH
+  - \\EXAMPLE-AF\Operations\Example Mining\Site U\Concentrator 5\Leach\Leach Tank 5|pH
+  - \\EXAMPLE-AF\Operations\Example Mining\Site U\Concentrator 5\Leach\Leach Tank 6|pH
+  - \\EXAMPLE-AF\Operations\Example Mining\Site U\Concentrator 5\Leach\Leach Tank 7|pH
+  - \\EXAMPLE-AF\Operations\Example Mining\Site U\Concentrator 5\Leach\Leach Tank 8|pH
+- id: q43
+  question: Did the belt stop again this morning at Site G, Concentrator 4?
+  type: ambiguous
+  counts_as: ambiguous
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site G\Concentrator 4\Crushing\CV-101|Run Status
+  - \\EXAMPLE-AF\Operations\Example Mining\Site G\Concentrator 4\Crushing\CV-102|Run Status
+  - \\EXAMPLE-AF\Operations\Example Mining\Site G\Concentrator 4\Crushing\CV-103|Run Status
+  - \\EXAMPLE-AF\Operations\Example Mining\Site G\Concentrator 4\Crushing\CV-104|Run Status
+- id: q44
+  question: Have you got the thickener bed level for Site Y at handover?
+  type: ambiguous
+  counts_as: ambiguous
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Y\Concentrator 1\Tailings\Tailings Thickener|Bed Level
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Y\Concentrator 2\Tailings\Tailings Thickener|Bed Level
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Y\Concentrator 3\Tailings\Tailings Thickener|Bed Level
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Y\Concentrator 4\Tailings\Tailings Thickener|Bed Level
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Y\Concentrator 5\Tailings\Tailings Thickener|Bed Level
+- id: q45
+  question: Can you put the tonnes per hour for CV-101 through CV-104 on one trend for Site C, Concentrator 1 so I can see which belt dropped off first?
+  type: several
+  counts_as: several
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site C\Concentrator 1\Crushing\CV-101|Belt Weigher Rate
+  - \\EXAMPLE-AF\Operations\Example Mining\Site C\Concentrator 1\Crushing\CV-102|Belt Weigher Rate
+  - \\EXAMPLE-AF\Operations\Example Mining\Site C\Concentrator 1\Crushing\CV-103|Belt Weigher Rate
+  - \\EXAMPLE-AF\Operations\Example Mining\Site C\Concentrator 1\Crushing\CV-104|Belt Weigher Rate
+- id: q46
+  question: What are the run-hour readings on both ball mills at Site P, Concentrator 5?
+  type: several
+  counts_as: several
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site P\Concentrator 5\Grinding\Ball Mill 1|Run Hours
+  - \\EXAMPLE-AF\Operations\Example Mining\Site P\Concentrator 5\Grinding\Ball Mill 2|Run Hours
+- id: q47
+  question: At Site AE, Concentrator 2, can you plot the two cyclone cluster feed pressures together for the last hour?
+  type: several
+  counts_as: several
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AE\Concentrator 2\Grinding\Cyclone Cluster 1|Feed Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AE\Concentrator 2\Grinding\Cyclone Cluster 2|Feed Pressure
+- id: q48
+  question: What froth depth are we carrying in each of the six roughers at Site H, Concentrator 3?
+  type: several
+  counts_as: several
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site H\Concentrator 3\Flotation\Rougher Cell 1|Froth Depth
+  - \\EXAMPLE-AF\Operations\Example Mining\Site H\Concentrator 3\Flotation\Rougher Cell 2|Froth Depth
+  - \\EXAMPLE-AF\Operations\Example Mining\Site H\Concentrator 3\Flotation\Rougher Cell 3|Froth Depth
+  - \\EXAMPLE-AF\Operations\Example Mining\Site H\Concentrator 3\Flotation\Rougher Cell 4|Froth Depth
+  - \\EXAMPLE-AF\Operations\Example Mining\Site H\Concentrator 3\Flotation\Rougher Cell 5|Froth Depth
+  - \\EXAMPLE-AF\Operations\Example Mining\Site H\Concentrator 3\Flotation\Rougher Cell 6|Froth Depth
+- id: q49
+  question: How full are the collector, frother, depressant and activator tanks at Site R, Concentrator 1?
+  type: several
+  counts_as: several
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site R\Concentrator 1\Flotation\Collector|Tank Level
+  - \\EXAMPLE-AF\Operations\Example Mining\Site R\Concentrator 1\Flotation\Frother|Tank Level
+  - \\EXAMPLE-AF\Operations\Example Mining\Site R\Concentrator 1\Flotation\Depressant|Tank Level
+  - \\EXAMPLE-AF\Operations\Example Mining\Site R\Concentrator 1\Flotation\Activator|Tank Level
+- id: q50
+  question: Can you give me the 6 am pH readings in tank order, from leach 1 through to leach 8, at Site S, Concentrator 4?
+  type: several
+  counts_as: several
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site S\Concentrator 4\Leach\Leach Tank 1|pH
+  - \\EXAMPLE-AF\Operations\Example Mining\Site S\Concentrator 4\Leach\Leach Tank 2|pH
+  - \\EXAMPLE-AF\Operations\Example Mining\Site S\Concentrator 4\Leach\Leach Tank 3|pH
+  - \\EXAMPLE-AF\Operations\Example Mining\Site S\Concentrator 4\Leach\Leach Tank 4|pH
+  - \\EXAMPLE-AF\Operations\Example Mining\Site S\Concentrator 4\Leach\Leach Tank 5|pH
+  - \\EXAMPLE-AF\Operations\Example Mining\Site S\Concentrator 4\Leach\Leach Tank 6|pH
+  - \\EXAMPLE-AF\Operations\Example Mining\Site S\Concentrator 4\Leach\Leach Tank 7|pH
+  - \\EXAMPLE-AF\Operations\Example Mining\Site S\Concentrator 4\Leach\Leach Tank 8|pH
+- id: q51
+  question: How many kilowatts is each supply pulling at Site D, Concentrator 2 across crushing, grinding, flotation and leach?
+  type: several
+  counts_as: several
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site D\Concentrator 2\Utilities\Crushing Supply|Active Power
+  - \\EXAMPLE-AF\Operations\Example Mining\Site D\Concentrator 2\Utilities\Grinding Supply|Active Power
+  - \\EXAMPLE-AF\Operations\Example Mining\Site D\Concentrator 2\Utilities\Flotation Supply|Active Power
+  - \\EXAMPLE-AF\Operations\Example Mining\Site D\Concentrator 2\Utilities\Leach Supply|Active Power
+- id: q52
+  question: Can you put the agitator power traces for all three scavenger cells side by side for last shift at Site W, Concentrator 5?
+  type: several
+  counts_as: several
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site W\Concentrator 5\Flotation\Scavenger Cell 1|Agitator Power
+  - \\EXAMPLE-AF\Operations\Example Mining\Site W\Concentrator 5\Flotation\Scavenger Cell 2|Agitator Power
+  - \\EXAMPLE-AF\Operations\Example Mining\Site W\Concentrator 5\Flotation\Scavenger Cell 3|Agitator Power
+- id: q53
+  question: What did SAG fresh feed average last shift at Site J, Concentrator 2 if you count only the time the mill was running?
+  type: variant
+  counts_as: several
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site J\Concentrator 2\Grinding\SAG Mill|Fresh Feed Rate
+  - \\EXAMPLE-AF\Operations\Example Mining\Site J\Concentrator 2\Grinding\SAG Mill|Run Status
+- id: q54
+  question: At Site AC, Concentrator 1, can you check that 3 am spike on the CV-104 belt weigher against the belt speed and motor amps?
+  type: variant
+  counts_as: several
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AC\Concentrator 1\Crushing\CV-104|Belt Weigher Rate
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AC\Concentrator 1\Crushing\CV-104|Belt Speed
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AC\Concentrator 1\Crushing\CV-104|Motor Current
+- id: q55
+  question: When did leach tank 7 at Site O, Concentrator 3 last spend more than ten minutes below pH 10?
+  type: variant
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site O\Concentrator 3\Leach\Leach Tank 7|pH
+- id: q56
+  question: How many kWh did flotation use at Site K, Concentrator 5 between yesterday's 6 am meter reading and today's?
+  type: variant
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site K\Concentrator 5\Utilities\Flotation Supply|Energy
+- id: q57
+  question: Did the thickener rake torque at Site AD, Concentrator 4 stay above 80% for five minutes straight at any point on nights?
+  type: variant
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AD\Concentrator 4\Tailings\Tailings Thickener|Rake Torque
+- id: q58
+  question: Can you check whether that low rougher feed gold reading at 2 am at Site I, Concentrator 2 was a one-off by showing me the analyser samples either side?
+  type: variant
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site I\Concentrator 2\Flotation\Rougher Feed|Au
+- id: q59
+  question: What was the highest five-minute average power on the main incomer at Site F, Concentrator 3 yesterday?
+  type: variant
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site F\Concentrator 3\Utilities\Main Incomer|Active Power
+- id: q60
+  question: On night shift at Site Z, Concentrator 4, how many minutes did CV-101 show running with less than 5 tonnes an hour on the belt weigher?
+  type: variant
+  counts_as: several
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Z\Concentrator 4\Crushing\CV-101|Run Status
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Z\Concentrator 4\Crushing\CV-101|Belt Weigher Rate

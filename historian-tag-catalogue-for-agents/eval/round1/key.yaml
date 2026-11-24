@@ -1,0 +1,550 @@
+- id: q01
+  question: SAG mill power at Site D con 2 last week?
+  type: plain
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site D\Concentrator 2\Grinding\SAG Mill|Motor Power
+- id: q02
+  question: What's the primary crusher closed side setting at Site AA con 1?
+  type: plain
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AA\Concentrator 1\Crushing\Primary Crusher|Closed Side Setting
+- id: q03
+  question: How fast is the CV-103 belt moving at Site F con 3?
+  type: plain
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site F\Concentrator 3\Crushing\CV-103|Belt Speed
+- id: q04
+  question: What was the feed pressure on cyclone cluster 2 at Site M con 1 around 6 am?
+  type: plain
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site M\Concentrator 1\Grinding\Cyclone Cluster 2|Feed Pressure
+- id: q05
+  question: Can I see froth depth on cleaner cell 3 at Site H con 2?
+  type: plain
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site H\Concentrator 2\Flotation\Cleaner Cell 3|Froth Depth
+- id: q06
+  question: How much water is coming back from tailings at Site AE con 1, in L/s?
+  type: plain
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AE\Concentrator 1\Tailings\Return Water|Flow
+- id: q07
+  question: What's the power factor on the main incomer at Site K con 4?
+  type: plain
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site K\Concentrator 4\Utilities\Main Incomer|Power Factor
+- id: q08
+  question: Did dissolved oxygen drop in leach tank 7 at Site P con 2 overnight?
+  type: plain
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site P\Concentrator 2\Leach\Leach Tank 7|Dissolved Oxygen
+- id: q09
+  question: What tonnage are we pushing over CV-101 at Site J con 2, in tph?
+  type: synonym
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site J\Concentrator 2\Crushing\CV-101|Belt Weigher Rate
+- id: q10
+  question: How many amps was the primary pulling at Site R con 1 on night shift?
+  type: synonym
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site R\Concentrator 1\Crushing\Primary Crusher|Motor Current
+- id: q11
+  question: What's the gold grade in the final tails at Site AB con 3?
+  type: synonym
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AB\Concentrator 3\Flotation\Final Tail|Au
+- id: q12
+  question: How many hours has the No. 2 ball mill clocked up at Site L con 1?
+  type: synonym
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site L\Concentrator 1\Grinding\Ball Mill 2|Run Hours
+- id: q13
+  question: What frother dosage are we running at Site U con 2?
+  type: synonym
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site U\Concentrator 2\Flotation\Frother|Dose Rate
+- id: q14
+  question: What's the SAG drawing at Site Y con 1, in megawatts?
+  type: synonym
+  counts_as: one
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Y\Concentrator 1\Grinding\SAG Mill|Motor Power
+- id: q15
+  question: Can you trend FT-3104 from the Site A con 1 flotation screen for the last hour?
+  type: code
+  counts_as: none
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site A\Concentrator 1\Flotation\Cleaner Feed Pump|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site A\Concentrator 1\Flotation\Cleaner Feed Pump|Flow
+- id: q16
+  question: What was PIT-2201 reading at shift change? Site B con 2, cyclone panel.
+  type: code
+  counts_as: none
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 2\Grinding\Cyclone Cluster 1|Feed Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 2\Grinding\Cyclone Cluster 2|Feed Pressure
+- id: q17
+  question: Is LT-6102 on the Site C con 1 water tank screen still dropping?
+  type: code
+  counts_as: none
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site C\Concentrator 1\Utilities\Process Water Tank|Level
+- id: q18
+  question: Got a trend for AIT-4103? It's on the leach pH screen at Site E con 3.
+  type: code
+  counts_as: none
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site E\Concentrator 3\Leach\Leach Tank 1|pH
+  - \\EXAMPLE-AF\Operations\Example Mining\Site E\Concentrator 3\Leach\Leach Tank 2|pH
+  - \\EXAMPLE-AF\Operations\Example Mining\Site E\Concentrator 3\Leach\Leach Tank 3|pH
+  - \\EXAMPLE-AF\Operations\Example Mining\Site E\Concentrator 3\Leach\Leach Tank 4|pH
+  - \\EXAMPLE-AF\Operations\Example Mining\Site E\Concentrator 3\Leach\Leach Tank 5|pH
+  - \\EXAMPLE-AF\Operations\Example Mining\Site E\Concentrator 3\Leach\Leach Tank 6|pH
+  - \\EXAMPLE-AF\Operations\Example Mining\Site E\Concentrator 3\Leach\Leach Tank 7|pH
+  - \\EXAMPLE-AF\Operations\Example Mining\Site E\Concentrator 3\Leach\Leach Tank 8|pH
+- id: q19
+  question: What's the pressure at Site B?
+  type: ambiguous
+  counts_as: ambiguous
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 1\Flotation\Cleaner Feed Pump|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 1\Flotation\Final Conc Pump|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 1\Flotation\Flotation Blower 1|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 1\Flotation\Flotation Blower 2|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 1\Flotation\Rougher Conc Pump|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 1\Flotation\Tail Pump|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 1\Grinding\Ball Mill 1|Bearing Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 1\Grinding\Ball Mill 2|Bearing Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 1\Grinding\Cyclone Cluster 1|Feed Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 1\Grinding\Cyclone Cluster 2|Feed Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 1\Grinding\Cyclone Feed Pump 1|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 1\Grinding\Cyclone Feed Pump 2|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 1\Grinding\Cyclone Feed Pump 3|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 1\Grinding\Cyclone Feed Pump 4|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 1\Grinding\SAG Mill|Bearing Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 1\Leach\Leach Feed Pump|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 1\Leach\Leach Tail Pump|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 1\Tailings\Thickener Underflow Pump 1|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 1\Tailings\Thickener Underflow Pump 2|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 1\Utilities\Plant Air Compressor 1|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 1\Utilities\Plant Air Compressor 2|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 2\Flotation\Cleaner Feed Pump|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 2\Flotation\Final Conc Pump|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 2\Flotation\Flotation Blower 1|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 2\Flotation\Flotation Blower 2|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 2\Flotation\Rougher Conc Pump|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 2\Flotation\Tail Pump|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 2\Grinding\Ball Mill 1|Bearing Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 2\Grinding\Ball Mill 2|Bearing Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 2\Grinding\Cyclone Cluster 1|Feed Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 2\Grinding\Cyclone Cluster 2|Feed Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 2\Grinding\Cyclone Feed Pump 1|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 2\Grinding\Cyclone Feed Pump 2|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 2\Grinding\Cyclone Feed Pump 3|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 2\Grinding\Cyclone Feed Pump 4|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 2\Grinding\SAG Mill|Bearing Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 2\Leach\Leach Feed Pump|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 2\Leach\Leach Tail Pump|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 2\Tailings\Thickener Underflow Pump 1|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 2\Tailings\Thickener Underflow Pump 2|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 2\Utilities\Plant Air Compressor 1|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 2\Utilities\Plant Air Compressor 2|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 3\Flotation\Cleaner Feed Pump|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 3\Flotation\Final Conc Pump|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 3\Flotation\Flotation Blower 1|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 3\Flotation\Flotation Blower 2|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 3\Flotation\Rougher Conc Pump|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 3\Flotation\Tail Pump|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 3\Grinding\Ball Mill 1|Bearing Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 3\Grinding\Ball Mill 2|Bearing Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 3\Grinding\Cyclone Cluster 1|Feed Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 3\Grinding\Cyclone Cluster 2|Feed Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 3\Grinding\Cyclone Feed Pump 1|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 3\Grinding\Cyclone Feed Pump 2|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 3\Grinding\Cyclone Feed Pump 3|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 3\Grinding\Cyclone Feed Pump 4|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 3\Grinding\SAG Mill|Bearing Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 3\Leach\Leach Feed Pump|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 3\Leach\Leach Tail Pump|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 3\Tailings\Thickener Underflow Pump 1|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 3\Tailings\Thickener Underflow Pump 2|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 3\Utilities\Plant Air Compressor 1|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 3\Utilities\Plant Air Compressor 2|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 4\Flotation\Cleaner Feed Pump|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 4\Flotation\Final Conc Pump|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 4\Flotation\Flotation Blower 1|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 4\Flotation\Flotation Blower 2|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 4\Flotation\Rougher Conc Pump|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 4\Flotation\Tail Pump|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 4\Grinding\Ball Mill 1|Bearing Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 4\Grinding\Ball Mill 2|Bearing Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 4\Grinding\Cyclone Cluster 1|Feed Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 4\Grinding\Cyclone Cluster 2|Feed Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 4\Grinding\Cyclone Feed Pump 1|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 4\Grinding\Cyclone Feed Pump 2|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 4\Grinding\Cyclone Feed Pump 3|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 4\Grinding\Cyclone Feed Pump 4|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 4\Grinding\SAG Mill|Bearing Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 4\Leach\Leach Feed Pump|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 4\Leach\Leach Tail Pump|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 4\Tailings\Thickener Underflow Pump 1|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 4\Tailings\Thickener Underflow Pump 2|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 4\Utilities\Plant Air Compressor 1|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 4\Utilities\Plant Air Compressor 2|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 5\Flotation\Cleaner Feed Pump|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 5\Flotation\Final Conc Pump|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 5\Flotation\Flotation Blower 1|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 5\Flotation\Flotation Blower 2|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 5\Flotation\Rougher Conc Pump|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 5\Flotation\Tail Pump|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 5\Grinding\Ball Mill 1|Bearing Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 5\Grinding\Ball Mill 2|Bearing Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 5\Grinding\Cyclone Cluster 1|Feed Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 5\Grinding\Cyclone Cluster 2|Feed Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 5\Grinding\Cyclone Feed Pump 1|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 5\Grinding\Cyclone Feed Pump 2|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 5\Grinding\Cyclone Feed Pump 3|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 5\Grinding\Cyclone Feed Pump 4|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 5\Grinding\SAG Mill|Bearing Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 5\Leach\Leach Feed Pump|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 5\Leach\Leach Tail Pump|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 5\Tailings\Thickener Underflow Pump 1|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 5\Tailings\Thickener Underflow Pump 2|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 5\Utilities\Plant Air Compressor 1|Discharge Pressure
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 5\Utilities\Plant Air Compressor 2|Discharge Pressure
+- id: q20
+  question: How much water are we using on con 2?
+  type: ambiguous
+  counts_as: ambiguous
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AA\Concentrator 2\Grinding\Process Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AA\Concentrator 2\Grinding\Process Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AA\Concentrator 2\Grinding\SAG Mill|Feed Water Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AA\Concentrator 2\Tailings\Return Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AA\Concentrator 2\Tailings\Return Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AA\Concentrator 2\Utilities\Raw Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AA\Concentrator 2\Utilities\Raw Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AB\Concentrator 2\Grinding\Process Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AB\Concentrator 2\Grinding\Process Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AB\Concentrator 2\Grinding\SAG Mill|Feed Water Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AB\Concentrator 2\Tailings\Return Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AB\Concentrator 2\Tailings\Return Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AB\Concentrator 2\Utilities\Raw Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AB\Concentrator 2\Utilities\Raw Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AC\Concentrator 2\Grinding\Process Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AC\Concentrator 2\Grinding\Process Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AC\Concentrator 2\Grinding\SAG Mill|Feed Water Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AC\Concentrator 2\Tailings\Return Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AC\Concentrator 2\Tailings\Return Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AC\Concentrator 2\Utilities\Raw Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AC\Concentrator 2\Utilities\Raw Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AD\Concentrator 2\Grinding\Process Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AD\Concentrator 2\Grinding\Process Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AD\Concentrator 2\Grinding\SAG Mill|Feed Water Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AD\Concentrator 2\Tailings\Return Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AD\Concentrator 2\Tailings\Return Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AD\Concentrator 2\Utilities\Raw Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AD\Concentrator 2\Utilities\Raw Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AE\Concentrator 2\Grinding\Process Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AE\Concentrator 2\Grinding\Process Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AE\Concentrator 2\Grinding\SAG Mill|Feed Water Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AE\Concentrator 2\Tailings\Return Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AE\Concentrator 2\Tailings\Return Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AE\Concentrator 2\Utilities\Raw Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AE\Concentrator 2\Utilities\Raw Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site A\Concentrator 2\Grinding\Process Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site A\Concentrator 2\Grinding\Process Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site A\Concentrator 2\Grinding\SAG Mill|Feed Water Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site A\Concentrator 2\Tailings\Return Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site A\Concentrator 2\Tailings\Return Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site A\Concentrator 2\Utilities\Raw Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site A\Concentrator 2\Utilities\Raw Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 2\Grinding\Process Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 2\Grinding\Process Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 2\Grinding\SAG Mill|Feed Water Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 2\Tailings\Return Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 2\Tailings\Return Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 2\Utilities\Raw Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site B\Concentrator 2\Utilities\Raw Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site C\Concentrator 2\Grinding\Process Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site C\Concentrator 2\Grinding\Process Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site C\Concentrator 2\Grinding\SAG Mill|Feed Water Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site C\Concentrator 2\Tailings\Return Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site C\Concentrator 2\Tailings\Return Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site C\Concentrator 2\Utilities\Raw Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site C\Concentrator 2\Utilities\Raw Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site D\Concentrator 2\Grinding\Process Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site D\Concentrator 2\Grinding\Process Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site D\Concentrator 2\Grinding\SAG Mill|Feed Water Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site D\Concentrator 2\Tailings\Return Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site D\Concentrator 2\Tailings\Return Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site D\Concentrator 2\Utilities\Raw Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site D\Concentrator 2\Utilities\Raw Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site E\Concentrator 2\Grinding\Process Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site E\Concentrator 2\Grinding\Process Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site E\Concentrator 2\Grinding\SAG Mill|Feed Water Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site E\Concentrator 2\Tailings\Return Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site E\Concentrator 2\Tailings\Return Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site E\Concentrator 2\Utilities\Raw Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site E\Concentrator 2\Utilities\Raw Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site F\Concentrator 2\Grinding\Process Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site F\Concentrator 2\Grinding\Process Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site F\Concentrator 2\Grinding\SAG Mill|Feed Water Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site F\Concentrator 2\Tailings\Return Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site F\Concentrator 2\Tailings\Return Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site F\Concentrator 2\Utilities\Raw Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site F\Concentrator 2\Utilities\Raw Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site G\Concentrator 2\Grinding\Process Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site G\Concentrator 2\Grinding\Process Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site G\Concentrator 2\Grinding\SAG Mill|Feed Water Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site G\Concentrator 2\Tailings\Return Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site G\Concentrator 2\Tailings\Return Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site G\Concentrator 2\Utilities\Raw Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site G\Concentrator 2\Utilities\Raw Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site H\Concentrator 2\Grinding\Process Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site H\Concentrator 2\Grinding\Process Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site H\Concentrator 2\Grinding\SAG Mill|Feed Water Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site H\Concentrator 2\Tailings\Return Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site H\Concentrator 2\Tailings\Return Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site H\Concentrator 2\Utilities\Raw Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site H\Concentrator 2\Utilities\Raw Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site I\Concentrator 2\Grinding\Process Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site I\Concentrator 2\Grinding\Process Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site I\Concentrator 2\Grinding\SAG Mill|Feed Water Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site I\Concentrator 2\Tailings\Return Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site I\Concentrator 2\Tailings\Return Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site I\Concentrator 2\Utilities\Raw Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site I\Concentrator 2\Utilities\Raw Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site J\Concentrator 2\Grinding\Process Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site J\Concentrator 2\Grinding\Process Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site J\Concentrator 2\Grinding\SAG Mill|Feed Water Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site J\Concentrator 2\Tailings\Return Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site J\Concentrator 2\Tailings\Return Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site J\Concentrator 2\Utilities\Raw Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site J\Concentrator 2\Utilities\Raw Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site K\Concentrator 2\Grinding\Process Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site K\Concentrator 2\Grinding\Process Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site K\Concentrator 2\Grinding\SAG Mill|Feed Water Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site K\Concentrator 2\Tailings\Return Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site K\Concentrator 2\Tailings\Return Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site K\Concentrator 2\Utilities\Raw Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site K\Concentrator 2\Utilities\Raw Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site L\Concentrator 2\Grinding\Process Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site L\Concentrator 2\Grinding\Process Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site L\Concentrator 2\Grinding\SAG Mill|Feed Water Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site L\Concentrator 2\Tailings\Return Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site L\Concentrator 2\Tailings\Return Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site L\Concentrator 2\Utilities\Raw Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site L\Concentrator 2\Utilities\Raw Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site M\Concentrator 2\Grinding\Process Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site M\Concentrator 2\Grinding\Process Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site M\Concentrator 2\Grinding\SAG Mill|Feed Water Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site M\Concentrator 2\Tailings\Return Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site M\Concentrator 2\Tailings\Return Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site M\Concentrator 2\Utilities\Raw Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site M\Concentrator 2\Utilities\Raw Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 2\Grinding\Process Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 2\Grinding\Process Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 2\Grinding\SAG Mill|Feed Water Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 2\Tailings\Return Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 2\Tailings\Return Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 2\Utilities\Raw Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 2\Utilities\Raw Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site O\Concentrator 2\Grinding\Process Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site O\Concentrator 2\Grinding\Process Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site O\Concentrator 2\Grinding\SAG Mill|Feed Water Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site O\Concentrator 2\Tailings\Return Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site O\Concentrator 2\Tailings\Return Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site O\Concentrator 2\Utilities\Raw Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site O\Concentrator 2\Utilities\Raw Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site P\Concentrator 2\Grinding\Process Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site P\Concentrator 2\Grinding\Process Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site P\Concentrator 2\Grinding\SAG Mill|Feed Water Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site P\Concentrator 2\Tailings\Return Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site P\Concentrator 2\Tailings\Return Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site P\Concentrator 2\Utilities\Raw Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site P\Concentrator 2\Utilities\Raw Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Q\Concentrator 2\Grinding\Process Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Q\Concentrator 2\Grinding\Process Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Q\Concentrator 2\Grinding\SAG Mill|Feed Water Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Q\Concentrator 2\Tailings\Return Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Q\Concentrator 2\Tailings\Return Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Q\Concentrator 2\Utilities\Raw Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Q\Concentrator 2\Utilities\Raw Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site R\Concentrator 2\Grinding\Process Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site R\Concentrator 2\Grinding\Process Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site R\Concentrator 2\Grinding\SAG Mill|Feed Water Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site R\Concentrator 2\Tailings\Return Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site R\Concentrator 2\Tailings\Return Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site R\Concentrator 2\Utilities\Raw Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site R\Concentrator 2\Utilities\Raw Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site S\Concentrator 2\Grinding\Process Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site S\Concentrator 2\Grinding\Process Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site S\Concentrator 2\Grinding\SAG Mill|Feed Water Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site S\Concentrator 2\Tailings\Return Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site S\Concentrator 2\Tailings\Return Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site S\Concentrator 2\Utilities\Raw Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site S\Concentrator 2\Utilities\Raw Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site T\Concentrator 2\Grinding\Process Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site T\Concentrator 2\Grinding\Process Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site T\Concentrator 2\Grinding\SAG Mill|Feed Water Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site T\Concentrator 2\Tailings\Return Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site T\Concentrator 2\Tailings\Return Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site T\Concentrator 2\Utilities\Raw Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site T\Concentrator 2\Utilities\Raw Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site U\Concentrator 2\Grinding\Process Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site U\Concentrator 2\Grinding\Process Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site U\Concentrator 2\Grinding\SAG Mill|Feed Water Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site U\Concentrator 2\Tailings\Return Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site U\Concentrator 2\Tailings\Return Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site U\Concentrator 2\Utilities\Raw Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site U\Concentrator 2\Utilities\Raw Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site V\Concentrator 2\Grinding\Process Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site V\Concentrator 2\Grinding\Process Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site V\Concentrator 2\Grinding\SAG Mill|Feed Water Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site V\Concentrator 2\Tailings\Return Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site V\Concentrator 2\Tailings\Return Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site V\Concentrator 2\Utilities\Raw Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site V\Concentrator 2\Utilities\Raw Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site W\Concentrator 2\Grinding\Process Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site W\Concentrator 2\Grinding\Process Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site W\Concentrator 2\Grinding\SAG Mill|Feed Water Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site W\Concentrator 2\Tailings\Return Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site W\Concentrator 2\Tailings\Return Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site W\Concentrator 2\Utilities\Raw Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site W\Concentrator 2\Utilities\Raw Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site X\Concentrator 2\Grinding\Process Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site X\Concentrator 2\Grinding\Process Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site X\Concentrator 2\Grinding\SAG Mill|Feed Water Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site X\Concentrator 2\Tailings\Return Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site X\Concentrator 2\Tailings\Return Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site X\Concentrator 2\Utilities\Raw Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site X\Concentrator 2\Utilities\Raw Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Y\Concentrator 2\Grinding\Process Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Y\Concentrator 2\Grinding\Process Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Y\Concentrator 2\Grinding\SAG Mill|Feed Water Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Y\Concentrator 2\Tailings\Return Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Y\Concentrator 2\Tailings\Return Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Y\Concentrator 2\Utilities\Raw Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Y\Concentrator 2\Utilities\Raw Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Z\Concentrator 2\Grinding\Process Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Z\Concentrator 2\Grinding\Process Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Z\Concentrator 2\Grinding\SAG Mill|Feed Water Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Z\Concentrator 2\Tailings\Return Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Z\Concentrator 2\Tailings\Return Water|Totalised Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Z\Concentrator 2\Utilities\Raw Water|Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Z\Concentrator 2\Utilities\Raw Water|Totalised Flow
+- id: q21
+  question: What's the concentrate grade at Site N con 1?
+  type: ambiguous
+  counts_as: ambiguous
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 1\Flotation\Cleaner Concentrate|Ag
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 1\Flotation\Cleaner Concentrate|Au
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 1\Flotation\Cleaner Concentrate|Pb
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 1\Flotation\Cleaner Concentrate|S
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 1\Flotation\Final Concentrate|Ag
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 1\Flotation\Final Concentrate|Au
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 1\Flotation\Final Concentrate|Pb
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 1\Flotation\Final Concentrate|S
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 1\Flotation\Rougher Concentrate|Ag
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 1\Flotation\Rougher Concentrate|Au
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 1\Flotation\Rougher Concentrate|Pb
+  - \\EXAMPLE-AF\Operations\Example Mining\Site N\Concentrator 1\Flotation\Rougher Concentrate|S
+- id: q22
+  question: Is the mill running at Site AC?
+  type: ambiguous
+  counts_as: ambiguous
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AC\Concentrator 1\Grinding\Ball Mill 1|Run Status
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AC\Concentrator 1\Grinding\Ball Mill 2|Run Status
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AC\Concentrator 1\Grinding\SAG Mill|Run Status
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AC\Concentrator 2\Grinding\Ball Mill 1|Run Status
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AC\Concentrator 2\Grinding\Ball Mill 2|Run Status
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AC\Concentrator 2\Grinding\SAG Mill|Run Status
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AC\Concentrator 3\Grinding\Ball Mill 1|Run Status
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AC\Concentrator 3\Grinding\Ball Mill 2|Run Status
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AC\Concentrator 3\Grinding\SAG Mill|Run Status
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AC\Concentrator 4\Grinding\Ball Mill 1|Run Status
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AC\Concentrator 4\Grinding\Ball Mill 2|Run Status
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AC\Concentrator 4\Grinding\SAG Mill|Run Status
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AC\Concentrator 5\Grinding\Ball Mill 1|Run Status
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AC\Concentrator 5\Grinding\Ball Mill 2|Run Status
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AC\Concentrator 5\Grinding\SAG Mill|Run Status
+- id: q23
+  question: Which leach tank at Site C con 1 has the lowest pH?
+  type: several
+  counts_as: several
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site C\Concentrator 1\Leach\Leach Tank 1|pH
+  - \\EXAMPLE-AF\Operations\Example Mining\Site C\Concentrator 1\Leach\Leach Tank 2|pH
+  - \\EXAMPLE-AF\Operations\Example Mining\Site C\Concentrator 1\Leach\Leach Tank 3|pH
+  - \\EXAMPLE-AF\Operations\Example Mining\Site C\Concentrator 1\Leach\Leach Tank 4|pH
+  - \\EXAMPLE-AF\Operations\Example Mining\Site C\Concentrator 1\Leach\Leach Tank 5|pH
+  - \\EXAMPLE-AF\Operations\Example Mining\Site C\Concentrator 1\Leach\Leach Tank 6|pH
+  - \\EXAMPLE-AF\Operations\Example Mining\Site C\Concentrator 1\Leach\Leach Tank 7|pH
+  - \\EXAMPLE-AF\Operations\Example Mining\Site C\Concentrator 1\Leach\Leach Tank 8|pH
+- id: q24
+  question: Can you put all six rougher air flows on one trend for Site V con 2?
+  type: several
+  counts_as: several
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site V\Concentrator 2\Flotation\Rougher Cell 1|Air Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site V\Concentrator 2\Flotation\Rougher Cell 2|Air Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site V\Concentrator 2\Flotation\Rougher Cell 3|Air Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site V\Concentrator 2\Flotation\Rougher Cell 4|Air Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site V\Concentrator 2\Flotation\Rougher Cell 5|Air Flow
+  - \\EXAMPLE-AF\Operations\Example Mining\Site V\Concentrator 2\Flotation\Rougher Cell 6|Air Flow
+- id: q25
+  question: Which belts are running at Site G con 3, CV-101 through CV-104?
+  type: several
+  counts_as: several
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site G\Concentrator 3\Crushing\CV-101|Run Status
+  - \\EXAMPLE-AF\Operations\Example Mining\Site G\Concentrator 3\Crushing\CV-102|Run Status
+  - \\EXAMPLE-AF\Operations\Example Mining\Site G\Concentrator 3\Crushing\CV-103|Run Status
+  - \\EXAMPLE-AF\Operations\Example Mining\Site G\Concentrator 3\Crushing\CV-104|Run Status
+- id: q26
+  question: Which ball mill has the denser discharge at Site AD con 1?
+  type: several
+  counts_as: several
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AD\Concentrator 1\Grinding\Ball Mill 1|Discharge Density
+  - \\EXAMPLE-AF\Operations\Example Mining\Site AD\Concentrator 1\Grinding\Ball Mill 2|Discharge Density
+- id: q27
+  question: Got the QC'd final tails Au reading for Site A con 1 at 6 am?
+  type: variant
+  counts_as: none
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site A\Concentrator 1\Flotation\Final Tail|Au
+- id: q28
+  question: Can I see the 15-minute moving average for SAG feed tph at Site T con 2?
+  type: variant
+  counts_as: none
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site T\Concentrator 2\Grinding\SAG Mill|Fresh Feed Rate
+- id: q29
+  question: Did the high rake torque alarm come in on the Site Z con 1 tailings thickener last night?
+  type: variant
+  counts_as: none
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site Z\Concentrator 1\Tailings\Tailings Thickener|Rake Torque
+- id: q30
+  question: When did the low-level alarm last clear on the process water tank at Site W con 3?
+  type: variant
+  counts_as: none
+  tags:
+  - \\EXAMPLE-AF\Operations\Example Mining\Site W\Concentrator 3\Utilities\Process Water Tank|Level

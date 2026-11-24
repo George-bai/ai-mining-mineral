@@ -1,0 +1,72 @@
+- id: t01
+  type: read
+  question: "What's the pH in leach tank 8 at Site B, Conc 4 right now?"
+- id: t02
+  type: read
+  question: "Site AA, Conc 2 — what was the main incomer power factor at noon yesterday?"
+- id: t03
+  type: read
+  question: "Trend yesterday's SAG fresh feed tph for Site D, Conc 1."
+- id: t04
+  type: read
+  question: "Plot the tailings return water flow for the past month at Site U, Conc 5."
+- id: t05
+  type: compare
+  question: "Site H, Conc 3 — put CV-103 motor amps and belt weigher tph on the same trend for yesterday."
+- id: t06
+  type: compare
+  question: "At Site AC, Conc 4, plot Cluster 2 feed pressure alongside the number of cyclones open last week."
+- id: t07
+  type: compare
+  question: "Show frother dose rate and rougher cell 1 froth depth on one chart for Site F, Conc 2 since 12 Nov 2026."
+- id: t08
+  type: compare
+  question: "Can I see the thickener bed level and rake torque on the same trend for the last shift at Site M, Conc 5?"
+- id: t09
+  type: across
+  question: "Site T, Conc 1 — which of the four crushing belts is pulling the most amps right now?"
+- id: t10
+  type: across
+  question: "Which of the six roughers at Site W, Conc 3 had the deepest froth on average last week?"
+- id: t11
+  type: across
+  question: "Over the past month, which leach tank at Site L, Conc 2 had the lowest average DO?"
+- id: t12
+  type: across
+  question: "Site O, Conc 4 — which of the four area power meters clocked up the most kWh yesterday?"
+- id: t13
+  type: ambiguous
+  question: "What's mill power doing at Site J this morning?"
+- id: t14
+  type: ambiguous
+  question: "Can you pull yesterday's gold grade for Site N, Conc 2?"
+- id: t15
+  type: ambiguous
+  question: "What water flow are we getting at Site Z right now?"
+- id: t16
+  type: ambiguous
+  question: "How did the tank level look at Site AB over the weekend?"
+- id: t17
+  type: code
+  question: "What was SI-C3-AT-4023 reading at midday yesterday?"
+- id: t18
+  type: code
+  question: "Trend SITEC.CONC2.CRU.CV1.SPD for the last shift."
+- id: t19
+  type: code
+  question: "Pull up SITEG.CONC5.CRU.CV4.RATE.QC for this morning."
+- id: t20
+  type: code
+  question: "What's SVC5_PP7_FLOW2 on right now?"
+- id: t21
+  type: unhealthy
+  question: "What was the lead grade in final tails at noon yesterday, Site X, Conc 3?"
+- id: t22
+  type: unhealthy
+  question: "Show me the agitator power on leach tank 5 at Site I, Conc 2 for last week."
+- id: t23
+  type: unhealthy
+  question: "Site AE, Conc 1 — how many kW is the cleaner cell 1 agitator drawing now?"
+- id: t24
+  type: unhealthy
+  question: "Pull the SAG bearing pressure trend for Site R, Conc 5 since 9 Nov 2026."

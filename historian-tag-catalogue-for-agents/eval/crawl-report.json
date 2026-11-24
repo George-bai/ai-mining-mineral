@@ -1,0 +1,37 @@
+{
+ "run_id": "20261123T061127Z",
+ "historian_time": "2026-11-22T14:00:00+00:00",
+ "historian_earliest": "2024-04-20T02:00:00Z",
+ "elements": 11967,
+ "attributes": 47369,
+ "points": 50251,
+ "tags": 50594,
+ "by_health": {
+  "bad_quality": 195,
+  "broken_ref": 343,
+  "no_data": 805,
+  "ok": 47992,
+  "stale": 1259
+ },
+ "by_variant": {
+  "alarm": 2018,
+  "calc": 1559,
+  "primary": 40732,
+  "qc": 1635,
+  "status": 4650
+ },
+ "unlinked_points": 3225,
+ "golden_tags": 602,
+ "diff": null,
+ "requests": 3560,
+ "seconds": 14.5,
+ "step_seconds": {
+  "discover": 0.0,
+  "elements": 0.22,
+  "attributes": 2.33,
+  "points": 1.37,
+  "health": 9.13,
+  "earliest": 0.0,
+  "enrich_index": 1.36
+ }
+}

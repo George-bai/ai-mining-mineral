@@ -1,0 +1,10 @@
+{
+  "providers": {
+    "qwen27b": {
+      "baseUrl": "http://localhost:8088/v1",
+      "api": "openai-completions",
+      "apiKey": "none",
+      "models": [{"id": "qwen38-27b", "input": ["text"], "contextWindow": 131072, "maxTokens": 32768}]
+    }
+  }
+}

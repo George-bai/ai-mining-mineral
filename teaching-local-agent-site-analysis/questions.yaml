@@ -1,0 +1,9 @@
+# No. 5's test questions: none says how recovery or mass pull is calculated, or which streams to use.
+- id: p1
+  question: "At Site A, Concentrator 1, what is the relationship between the collector dose rate and rougher gold recovery over all the data the historian has, and is it different at high, mid and low feed grade?"
+- id: p2
+  question: "What was the gold recovery at Site A, Concentrator 1 last month?"
+- id: p3
+  question: "What was the rougher mass pull at Site A, Concentrator 1 last week?"
+- id: p4
+  question: "Which month of 2026 so far had the lowest gold recovery at Site A, Concentrator 1, and what was the feed grade that month?"

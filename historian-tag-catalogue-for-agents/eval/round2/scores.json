@@ -1,0 +1,115 @@
+{
+ "headline": {
+  "enriched": {
+   "n": 44,
+   "recall_at5": 0.885,
+   "recall_at10": 0.915,
+   "mrr": 0.879
+  },
+  "baseline": {
+   "n": 44,
+   "recall_at5": 0.551,
+   "recall_at10": 0.71,
+   "mrr": 0.571
+  }
+ },
+ "paired_at10": {
+  "enriched_better": 14,
+  "baseline_better": 2,
+  "same": 28
+ },
+ "none": {
+  "enriched": {
+   "n": 8,
+   "near_match_at10": 0.75,
+   "top_is_exact_name": 0.0
+  },
+  "baseline": {
+   "n": 8,
+   "near_match_at10": 0.375,
+   "top_is_exact_name": 0.0
+  }
+ },
+ "ambiguous": {
+  "enriched": {
+   "n": 8,
+   "precision_at10": 0.562,
+   "any_valid_at10": 0.875
+  },
+  "baseline": {
+   "n": 8,
+   "precision_at10": 0.3,
+   "any_valid_at10": 0.5
+  }
+ },
+ "by_type": {
+  "ambiguous": {
+   "enriched": {
+    "n": 8,
+    "at10": 0.875
+   },
+   "baseline": {
+    "n": 8,
+    "at10": 0.5
+   }
+  },
+  "code": {
+   "enriched": {
+    "n": 8,
+    "at10": 0.75
+   },
+   "baseline": {
+    "n": 8,
+    "at10": 0.375
+   }
+  },
+  "plain": {
+   "enriched": {
+    "n": 16,
+    "at10": 1.0
+   },
+   "baseline": {
+    "n": 16,
+    "at10": 0.844
+   }
+  },
+  "several": {
+   "enriched": {
+    "n": 8,
+    "at10": 0.906
+   },
+   "baseline": {
+    "n": 8,
+    "at10": 0.448
+   }
+  },
+  "synonym": {
+   "enriched": {
+    "n": 12,
+    "at10": 0.75
+   },
+   "baseline": {
+    "n": 12,
+    "at10": 0.75
+   }
+  },
+  "variant": {
+   "enriched": {
+    "n": 8,
+    "at10": 1.0
+   },
+   "baseline": {
+    "n": 8,
+    "at10": 0.646
+   }
+  }
+ },
+ "provenance": {
+  "catalogue": "48bdd699843027a5f6631b6766555468d581317bad79881154316d43ddc8ba15",
+  "catalog.py": "9e9787941b868efc88371a6e27d547ecdca38a76e89df547d901277e8e78bc09",
+  "enrichment.yaml": "19c753a34e0d7e1f97b78e67af7f276553e55a66b5f92450f2fa7d2665bfdb31",
+  "test-questions.yaml": "e34e805e573dcf1b78d3d7cba5362b9660ad4bd7caeaa54af22fe75308f91db5",
+  "key.yaml": "1d5ee19a7becce7d660a95bead479f83fd7e741c658c580e7927c481aff81a81",
+  "git": "dce062b (files uncommitted)"
+ }
+}

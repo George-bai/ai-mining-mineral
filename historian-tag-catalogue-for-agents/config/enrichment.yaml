@@ -1,0 +1,180 @@
+# Enrichment rules: how the crawler makes tags findable by meaning. A site supplies its own; the code stays
+# the same. Nothing here mentions recovery: the historian has no such tag, and No. 5 of the series tests whether
+# an agent works that out (series.md).
+
+# Names of the asset-tree levels below the database, top down.
+levels: [enterprise, site, concentrator, area, equipment]
+
+# Regex rewrites applied (case-sensitive) to point names before decoding, so each site's location codes read as
+# words. One rule per naming style in config/plant.yaml.
+aliases:
+  - ['\bS([A-Z]{1,2}?)-C(\d)-', 'site \1 concentrator \2 ']          # SA-C1-FT-3104
+  - ['\bS([A-Z]{1,2}?)C(\d)_', 'site \1 concentrator \2 ']           # SBC1_BM2_PWR
+  - ['\bSITE([A-Z]{1,2})\.CONC(\d)\.', 'site \1 concentrator \2 ']  # SITEC.CONC1.GRD.BM2.PWR
+  - ['\bS([A-Z]{1,2}?)(\d):', 'site \1 concentrator \2 ']            # SD1:3FT104
+
+# Abbreviations in point names and descriptors. Equipment abbreviations are followed by a number (BM2).
+equipment_abbrev:
+  CR: crusher
+  CV: conveyor
+  SAG: sag mill
+  BM: ball mill
+  CYC: cyclone cluster
+  PP: slurry pump
+  FC: flotation cell
+  RD: reagent dosing
+  AN: analyser
+  TH: thickener
+  LT: leach tank
+  BL: blower
+  PM: power meter
+  AC: air compressor
+  FM: flow meter
+  TK: tank
+attribute_abbrev:
+  PWR: power
+  AMP: current amps
+  CSS: closed side setting
+  RUN: run status
+  RATE: rate
+  SPD: speed
+  FEED: feed rate
+  BRGP: bearing pressure
+  H2O: water flow
+  HRS: run hours
+  DEN: density
+  PRES: pressure
+  FDEN: feed density
+  FLOW: flow
+  ODEN: overflow density
+  NOPEN: cyclones open
+  AIR: air flow
+  LVL: level
+  FROTH: froth depth
+  DOSE: dose rate
+  AU: gold au
+  AG: silver ag
+  PB: lead pb
+  SUL: sulphur
+  SOL: solids
+  UDEN: underflow density
+  TORQ: torque
+  BED: bed level
+  FLOC: flocculant
+  PH: ph
+  DO: dissolved oxygen
+  CN: cyanide
+  KW: power
+  MWH: energy
+  PF: power factor
+  TOT: totalised
+area_abbrev:
+  CRU: crushing
+  GRD: grinding
+  FLT: flotation
+  LCH: leach
+  TLS: tailings
+  UTL: utilities
+area_number: {"1": crushing, "2": grinding, "3": flotation, "4": leach, "5": tailings, "9": utilities}
+
+# Instrument codes (ISA-style letters) to quantity.
+instrument_codes:
+  FT: flow
+  FI: flow
+  FQ: volume
+  PT: pressure
+  PI: pressure
+  TT: temperature
+  JT: power
+  JQ: energy
+  IT: current
+  WT: rate
+  ST: speed
+  SC: speed
+  LT: level
+  DT: density
+  AT: composition
+  XS: status
+  KQ: duration
+  ZT: position
+  ZI: count
+
+# Units to quantity.
+units:
+  kW: power
+  MW: power
+  MWh: energy
+  A: current
+  t/h: rate
+  m3/h: flow
+  L/s: flow
+  m3: volume
+  kPa: pressure
+  bar: pressure
+  rpm: speed
+  m/s: speed
+  g/t: composition
+  ppm: composition
+  pH: composition
+  mL/min: flow
+  h: duration
+  mm: length
+  m: length
+
+# Words a user may say, and the words the catalogue uses.
+synonyms:
+  consumption: [power, energy, load]
+  draw: [power, current]
+  load: [power, current]
+  amps: [current]
+  throughput: [feed, rate]
+  tonnage: [feed, rate]
+  tph: [feed, rate]
+  grade: [au, ag, pb, sulphur, analyser]
+  assay: [au, ag, pb, sulphur, analyser]
+  gold: [au]
+  silver: [ag]
+  lead: [pb]
+  sulfur: [sulphur]
+  sulphur: [s, sulphur]
+  tails: [tail]
+  tailings: [tail, thickener]
+  conc: [concentrate]
+  uptime: [run, status, hours]
+  running: [run, status]
+  online: [run, status]
+  speed: [speed, spd]
+  water: [water, h2o]
+  dosage: [dose, rate]
+  addition: [dose, rate]
+  solids: [density, solids]
+  froth: [froth, depth]
+  oxygen: [dissolved, oxygen, do]
+  cyanide: [cyanide, cn]
+  incomer: [main, incomer]
+  site-wide: [main, incomer]
+  mill: [sag, ball, mill]
+
+# Quantity words in a question: used to boost tags of that quantity.
+quantity_words:
+  power: [power, consumption, draw, kw, mw, megawatts, electricity, load]
+  energy: [energy, mwh, kwh]
+  flow: [flow, flowrate, water, dose, dosage, addition]
+  rate: [throughput, tonnage, tph, feed rate]
+  pressure: [pressure, kpa, bar]
+  density: [density, solids]
+  level: [level]
+  composition: [grade, assay, au, ag, gold, silver, ph, cyanide, oxygen, sulphur, lead]
+  current: [current, amps]
+  speed: [speed, rpm]
+  status: [status, running, online, stopped]
+  duration: [hours, uptime]
+
+# Curated "known good" tags for common questions, relative to a concentrator.
+golden_tags:
+  - {kpi: throughput, path: 'Grinding\SAG Mill|Fresh Feed Rate'}
+  - {kpi: power, path: 'Utilities\Main Incomer|Active Power'}
+  - {kpi: energy, path: 'Utilities\Main Incomer|Energy'}
+  - {kpi: raw water, path: 'Utilities\Raw Water|Flow'}
+
+stale_after_hours: 24

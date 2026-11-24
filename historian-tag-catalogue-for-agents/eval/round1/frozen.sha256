@@ -1,0 +1,5 @@
+# Round 1's freeze. catalog.py and config/enrichment.yaml changed after round 1 (round2/frozen.sha256 has the
+# round 2 versions), so only the questions' hash still checks.
+82c362374d68a602ab5538db2606dea01a6c0c665468d9ec578cc642cfa1f7f8  eval/round1/test-questions.yaml
+34ecea9815c25eda4cffa0d04f7bd9eecb5bf525997c5130d9d1ff90d835ddc7  catalog.py
+e2f9b13213d6cc915e6e4d568c13566a01fb2d825345a7ebad8699443fc7b106  config/enrichment.yaml

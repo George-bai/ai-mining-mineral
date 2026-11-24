@@ -1,0 +1,173 @@
+# The mock plant: a fictional mining company with gold concentrators (grinding, flotation, cyanide leach).
+# All names are generic. generator.py builds the asset tree and the PI points from this file.
+
+enterprise: Example Mining
+asset_server: EXAMPLE-AF
+asset_database: Operations
+data_server: EXAMPLE-PI
+timezone: Australia/Brisbane
+
+# Each site names its PI points its own way (cycled over the sites). Asset-tree attribute names come from the
+# templates and are the same everywhere, as an AF template makes them; point names and descriptors differ.
+naming_styles:
+  isa:      {point: "{site}-{conc}-{code}-{loop}", descriptor: full}       # SA-C1-FT-3104
+  abbrev:   {point: "{site}{conc}_{eq_abbrev}_{attr_abbrev}", descriptor: abbrev}   # SBC1_BM2_PWR
+  dotted:   {point: "{site_name}.{conc_name}.{area_abbrev}.{eq_abbrev}.{attr_abbrev}", descriptor: none}  # SITEC.CONC1.GRD.BM2.PWR
+  legacy:   {point: "{area_num}{code}{loop_short}", descriptor: abbrev}    # 3FT104 (an old DCS export)
+
+# Per-site unit habits: the same quantity in other units.
+unit_styles:
+  - {}
+  - {kW: MW}
+  - {"m3/h": "L/s"}
+  - {kPa: bar, kW: MW}
+
+# Injected messiness, as fractions of analog attributes (reference plan 1.1).
+faults:
+  broken_ref: 0.01      # attribute points at a PI point that does not exist
+  stale: 0.02           # last value days old
+  no_data: 0.01         # point exists, never written
+  bad_quality: 0.005    # last value flagged bad
+  qc_variant: 0.04      # an extra "<attr> QC" attribute and point
+  calc_variant: 0.04    # an extra "<attr> Calc" attribute and point
+  alarm_point: 0.05     # an extra "<point>.ALM" digital point, not in the asset tree
+  unlinked: 0.03        # extra PI points nobody linked to the asset tree (old or spare loops)
+
+# Attribute: [name, abbrev, kind, unit, instrument code]. kind picks the value recipe (values.py).
+templates:
+  Crusher:
+    abbrev: CR
+    attributes:
+      - [Motor Power, PWR, power, kW, JT]
+      - [Motor Current, AMP, current, A, IT]
+      - [Closed Side Setting, CSS, gap, mm, ZT]
+      - [Run Status, RUN, status, "", XS]
+  Conveyor:
+    abbrev: CV
+    attributes:
+      - [Belt Weigher Rate, RATE, feed_rate, t/h, WT]
+      - [Belt Speed, SPD, speed, m/s, ST]
+      - [Motor Current, AMP, current, A, IT]
+      - [Run Status, RUN, status, "", XS]
+  SAG Mill:
+    abbrev: SAG
+    attributes:
+      - [Fresh Feed Rate, FEED, feed_rate, t/h, WT]
+      - [Motor Power, PWR, power, kW, JT]
+      - [Bearing Pressure, BRGP, pressure, kPa, PT]
+      - [Mill Speed, SPD, speed, rpm, ST]
+      - [Feed Water Flow, H2O, flow, m3/h, FT]
+      - [Run Status, RUN, status, "", XS]
+      - [Run Hours, HRS, run_hours, h, KQ]
+  Ball Mill:
+    abbrev: BM
+    attributes:
+      - [Motor Power, PWR, power, kW, JT]
+      - [Bearing Pressure, BRGP, pressure, kPa, PT]
+      - [Discharge Density, DEN, density, "%", DT]
+      - [Run Status, RUN, status, "", XS]
+      - [Run Hours, HRS, run_hours, h, KQ]
+  Cyclone Cluster:
+    abbrev: CYC
+    attributes:
+      - [Feed Pressure, PRES, pressure, kPa, PT]
+      - [Feed Density, FDEN, density, "%", DT]
+      - [Feed Flow, FLOW, flow, m3/h, FT]
+      - [Overflow Density, ODEN, density, "%", DT]
+      - [Cyclones Open, NOPEN, count, "", ZI]
+  Slurry Pump:
+    abbrev: PP
+    attributes:
+      - [Discharge Pressure, PRES, pressure, kPa, PT]
+      - [Flow, FLOW, flow, m3/h, FT]
+      - [Motor Power, PWR, power, kW, JT]
+      - [Speed, SPD, speed_pct, "%", SC]
+      - [Run Status, RUN, status, "", XS]
+  Flotation Cell:
+    abbrev: FC
+    attributes:
+      - [Air Flow, AIR, air_flow, m3/h, FT]
+      - [Pulp Level, LVL, level, "%", LT]
+      - [Froth Depth, FROTH, froth_depth, mm, LT]
+      - [Agitator Power, PWR, power, kW, JT]
+  Reagent Dosing:
+    abbrev: RD
+    attributes:
+      - [Dose Rate, DOSE, reagent_flow, mL/min, FT]
+      - [Tank Level, LVL, level, "%", LT]
+      - [Pump Run Status, RUN, status, "", XS]
+  Analyser Stream:          # one online analyser sample point
+    abbrev: AN
+    attributes:
+      - [Au, AU, assay_au, g/t, AT]
+      - [Ag, AG, assay_ag, g/t, AT]
+      - [Pb, PB, assay_pct, "%", AT]
+      - [S, SUL, assay_pct, "%", AT]
+      - [Solids, SOL, density, "%", AT]
+  Thickener:
+    abbrev: TH
+    attributes:
+      - [Underflow Density, UDEN, density, "%", DT]
+      - [Rake Torque, TORQ, torque_pct, "%", WT]
+      - [Bed Level, BED, level, m, LT]
+      - [Flocculant Dose, FLOC, reagent_flow, mL/min, FT]
+  Leach Tank:
+    abbrev: LT
+    attributes:
+      - [pH, PH, ph, pH, AT]
+      - [Dissolved Oxygen, DO, dissolved_oxygen, ppm, AT]
+      - [Free Cyanide, CN, cyanide, ppm, AT]
+      - [Agitator Power, PWR, power, kW, JT]
+  Blower:
+    abbrev: BL
+    attributes:
+      - [Discharge Pressure, PRES, pressure, kPa, PT]
+      - [Air Flow, AIR, air_flow, m3/h, FT]
+      - [Motor Power, PWR, power, kW, JT]
+      - [Run Status, RUN, status, "", XS]
+  Power Meter:
+    abbrev: PM
+    attributes:
+      - [Active Power, KW, power, kW, JT]
+      - [Energy, MWH, energy, MWh, JQ]
+      - [Power Factor, PF, power_factor, "", JT]
+  Air Compressor:
+    abbrev: AC
+    attributes:
+      - [Discharge Pressure, PRES, pressure, kPa, PT]
+      - [Motor Power, PWR, power, kW, JT]
+      - [Run Status, RUN, status, "", XS]
+      - [Run Hours, HRS, run_hours, h, KQ]
+  Flow Meter:
+    abbrev: FM
+    attributes:
+      - [Flow, FLOW, flow, m3/h, FT]
+      - [Totalised Flow, TOT, volume, m3, FQ]
+  Tank:
+    abbrev: TK
+    attributes:
+      - [Level, LVL, level, "%", LT]
+
+# One concentrator. Each area: [number, name, abbrev, equipment list]. Equipment: [template, names...].
+concentrator:
+  - [100, Crushing, CRU, [[Crusher, Primary Crusher], [Conveyor, CV-101, CV-102, CV-103, CV-104]]]
+  - [200, Grinding, GRD, [[SAG Mill, SAG Mill], [Ball Mill, Ball Mill 1, Ball Mill 2],
+      [Cyclone Cluster, Cyclone Cluster 1, Cyclone Cluster 2],
+      [Slurry Pump, Cyclone Feed Pump 1, Cyclone Feed Pump 2, Cyclone Feed Pump 3, Cyclone Feed Pump 4],
+      [Flow Meter, Process Water]]]
+  - [300, Flotation, FLT, [[Flotation Cell, Rougher Cell 1, Rougher Cell 2, Rougher Cell 3, Rougher Cell 4,
+        Rougher Cell 5, Rougher Cell 6, Scavenger Cell 1, Scavenger Cell 2, Scavenger Cell 3,
+        Cleaner Cell 1, Cleaner Cell 2, Cleaner Cell 3, Recleaner Cell 1, Recleaner Cell 2],
+      [Reagent Dosing, Collector, Frother, Depressant, Activator],
+      [Analyser Stream, Rougher Feed, Rougher Concentrate, Rougher Tail, Cleaner Concentrate,
+        Final Concentrate, Final Tail],
+      [Slurry Pump, Rougher Conc Pump, Cleaner Feed Pump, Final Conc Pump, Tail Pump],
+      [Blower, Flotation Blower 1, Flotation Blower 2]]]
+  - [400, Leach, LCH, [[Leach Tank, Leach Tank 1, Leach Tank 2, Leach Tank 3, Leach Tank 4, Leach Tank 5,
+        Leach Tank 6, Leach Tank 7, Leach Tank 8],
+      [Reagent Dosing, Cyanide, Lime], [Slurry Pump, Leach Feed Pump, Leach Tail Pump]]]
+  - [500, Tailings, TLS, [[Thickener, Tailings Thickener], [Slurry Pump, Thickener Underflow Pump 1,
+        Thickener Underflow Pump 2], [Flow Meter, Return Water]]]
+  - [900, Utilities, UTL, [[Power Meter, Main Incomer, Crushing Supply, Grinding Supply, Flotation Supply,
+        Leach Supply], [Air Compressor, Plant Air Compressor 1, Plant Air Compressor 2],
+      [Flow Meter, Raw Water], [Tank, Process Water Tank]]]

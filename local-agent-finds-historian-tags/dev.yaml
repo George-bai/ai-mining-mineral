@@ -1,0 +1,7 @@
+# Harness checks only, never scored: two of No. 2's round-2 questions (development material).
+- id: d01
+  type: read
+  question: "What was the primary crusher's closed side setting at 6 am at Site A, Concentrator 2?"
+- id: d02
+  type: ambiguous
+  question: "What's the pressure at Site B?"

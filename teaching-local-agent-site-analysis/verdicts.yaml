@@ -1,0 +1,370 @@
+bare/p1/1:
+  outcome: wrong
+  why: Built recovery from a balance on the pump flow tags (generated in the stand-in), not the assays’ two-product formula;
+    its slopes by third (3.6, 1.0, 0.6) look right on the wrong quantity.
+  quote: 'Yes — collector dose rate is positively related to rougher gold recovery, but the relationship is much stronger
+    at low feed grade than at mid or high grade.
+
+    The relationship (all data).
+
+    Over 870 usable days (2024-04-20 → 2026-11-12, daily time-weighted values):'
+  seconds: 189.6
+bare/p1/2:
+  outcome: right
+  why: First wrote the formula without the concentrate grade, then corrected it to the two-product formula on the rougher
+    assays; positive overall (r 0.52), low third steepest (2.7 against 0.8 points per mL/min).
+  quote: 'Yes, there is a clear positive relationship, and yes, it is different across feed grades — but with an important
+    caveat about the dose tag.
+
+    Overall (2024-04-20 → 2026-11-13, 861 valid days): rougher gold recovery rises with collector dose rate — Pearson r =
+    0.52 (Spearman 0.44). Binned by dose: ~62–70% recovery at ≤3.4 mL/min, ~80% at 3.4–5.1, ~85% at 5.1–6.8, and ~88% at …'
+  seconds: 239.2
+bare/p1/3:
+  outcome: right
+  why: The two-product formula, rearranged, on the rougher assays; low third steepest (4.6 against 1.3 points per mL/min).
+  quote: 'Answer: yes, there is a clear positive relationship, and it is strongest at low feed grade and weakest at high feed
+    grade.
+
+    What I used (provenance).'
+  seconds: 257.6
+bare/p2/1:
+  outcome: wrong
+  why: 'Gold recovery from pump flows and solids (generated tags), not the assays: 71.5 %, inside the range by chance.'
+  quote: 'Gold recovery at Site A, Concentrator 1 — October 2026: ≈ 71% (71.5% by month mass balance; 70.8% mean of the 24
+    valid daily values).
+
+    How it was calculated
+
+    The historian has no single "recovery" tag, so I built it from the mass balance of the flotation circuit, on a dry-mass
+    basis (grades are g/t dry solids):
+
+    Recovery = (final-concentrate flow × conc. solids % × conc. Au grade) ÷ …'
+  seconds: 279.0
+bare/p2/2:
+  outcome: wrong
+  why: 'The right streams and formula, 72.1 % for October, but it never read the feed rate: running hours, which the rule
+    requires, were not applied (it dropped days by their assays).'
+  quote: 'Gold recovery at Site A, Concentrator 1 in October 2026: ≈ 72% (grade-balance basis, 26 running days; the plant
+    was down ~5 days around Oct 25–29).
+
+    How it was calculated.
+
+    There is no recovery tag in the catalogue, so I derived it from the gold assays. The straightforward mass-balance method
+    (concentrate flow × solids × grade ÷ feed) is not usable: the flow/solids tags imply the …'
+  seconds: 278.1
+bare/p2/3:
+  outcome: wrong
+  why: 'Gold recovery from pump flows and solids: 95.5 %.'
+  quote: 'Gold recovery at Site A, Concentrator 1 in October 2026: ≈ 95.5% (mass-balance estimate; the catalogue has no direct
+    recovery tag).
+
+    How it was derived — recovery = Au in final concentrate ÷ (Au in final concentrate + Au in final tail), with each stream''s
+    Au mass flow = slurry flow × solids mass fraction × Au grade (solids density assumed 2.7 t/m³, which cancels in the ratio):'
+  seconds: 100.5
+bare/p3/1:
+  outcome: wrong
+  why: Found no mass-pull tag and reported the SAG fresh feed rate, 560 t/h, as the mass pull.
+  quote: 'Caveat first: the catalogue has no tag literally named "rougher mass pull" — I searched for "mass pull", "rougher
+    mass", "mass flow" and browsed the Rougher Feed/Concentrate streams (they only carry assay tags: Pb, S, Solids, Au, Ag).
+    The closest mass-flow measurement is the SAG mill fresh feed rate, which at steady state is the mass pull into the rougher.
+    I''ve charted that; …'
+  seconds: 258.2
+bare/p3/2:
+  outcome: wrong
+  why: 'Read mass pull as a mass flow: 937 t/h of rougher concentrate from pump flow and solids.'
+  quote: 'Rougher mass pull — Site A, Concentrator 1, last week.
+
+    ~937 t/h average over 2026-11-16 → 2026-11-23 (AEST), i.e. roughly 157,300 t of rougher concentrate in the week (range
+    626–1,148 t/h).
+
+    Important caveat: the catalogue has no tag literally named "mass pull" and no t/h mass-flow tag for the rougher, so this
+    is an estimate, not a direct reading:
+
+    • Flow: Rougher Conc PumpFlow …'
+  seconds: 119.7
+bare/p3/3:
+  outcome: wrong
+  why: 'Read mass pull as a mass flow: 834 t/h of rougher concentrate.'
+  quote: 'Rougher mass pull at Site A, Concentrator 1, last week (Mon 16 – Sun 22 Nov 2026, Australia/Brisbane):
+
+    • Average ≈ 834 t/h, for a total of ≈ 140,200 t over the week (range 626–1,020 t/h)
+
+    How it was derived — there is no direct mass-flow tag in the catalogue, so this is a calculation from two healthy primary
+    tags:'
+  seconds: 113.2
+bare/p4/1:
+  outcome: wrong
+  why: Named March at 91.4 %, from another recovery than the plant’s gold recovery.
+  quote: 'March 2026 had the lowest gold recovery at Site A, Concentrator 1: ≈91.4%, with a measured rougher feed grade of
+    ≈9.8 g/t Au that month (the highest feed grade of the year — consistent with the recovery dip).'
+  seconds: 318.1
+bare/p4/2:
+  outcome: wrong
+  why: Named January at about 62 %, gold in final concentrate over gold in the SAG feed, from flows.
+  quote: 'Answer: January 2026 had the lowest gold recovery at Site A, Concentrator 1 — about 62 % — with a feed grade of
+    about 8.2 g/t Au (mass-weighted; 8.0 g/t time-weighted).
+
+    How the number was derived (the catalogue has no recovery tag anywhere, so it was computed from a mass balance, not read
+    off a single tag):
+
+    Recovery = Au in final concentrate ÷ Au in SAG fresh feed, per month (Σ …'
+  seconds: 491.9
+bare/p4/3:
+  outcome: wrong
+  why: Named April at 59.1 %.
+  quote: 'April 2026 had the lowest gold recovery at Site A, Concentrator 1 — about 59.1%, with a feed grade of 8.44 g/t Au
+    (monthly average).
+
+    Chart saved: sa_c1_recovery_2026.png (current folder).
+
+    Monthly results (2026-01-01 → 2026-11-22, historian''s "now" is 2026-11-23).'
+  seconds: 74.4
+knowledge/p1/1:
+  outcome: right
+  why: Two-product formula on the rougher assays; r 0.52; recovery across dose thirds rises most in the low feed-grade third
+    (73 to 84 %). Right on direction and pattern, as the rule asks; its quoted “62 recovery points per mL/min” is the intercept
+    (its script swapped them), the slope being 3.8.
+  quote: 'Yes, there is a real positive relationship — but most of it is carried by feed grade, and the dose–recovery relationship
+    does differ by grade band.
+
+    Overall (all running days, Apr 2024 – Nov 2026, 861 usable days):
+
+    • Collector dose rate vs rougher gold recovery: r = 0.52 (regression ≈ 62 recovery points per mL/min across the observed
+    4.4–7.2 mL/min range; recovery 74–93%, mean …'
+  seconds: 274.0
+knowledge/p1/2:
+  outcome: right
+  why: Two-product formula on the rougher assays; positive on the recorded dose (r 0.33) but, per tonne of feed, flat in every
+    third, and says so.
+  quote: 'Bottom line: the apparent positive relationship between collector dose rate and rougher gold recovery is mostly
+    a throughput artefact. Once the dose is normalised per tonne of ore, the relationship is essentially flat — and it stays
+    flat in all three feed-grade bands.
+
+    What the data shows (2024-04-20 → 2026-11-13, running hours only, n = 18,847 hourly samples).'
+  seconds: 430.1
+knowledge/p1/3:
+  outcome: right
+  why: Low third steepest on the recorded dose (4.7 against 1.3 points per mL/min); per tonne, flat in every third, and says
+    so.
+  quote: 'Collector dose rate vs rougher gold recovery — Site A, Concentrator 1.
+
+    Short answer: there is a strong positive relationship in the raw dose-rate tag (r ≈ +0.41), but most of it is a throughput
+    artifact — the dosing pump''s flow scales with mill feed rate. Per tonne of ore, the collector dose is essentially uncorrelated
+    with rougher recovery. The raw relationship is different by …'
+  seconds: 221.1
+knowledge/p2/1:
+  outcome: right
+  why: 'The site’s formula and streams, running hours only: 70.8 % for October.'
+  quote: 'Gold recovery at Site A, Concentrator 1 in October 2026: ≈ 70.8% (mass pull ≈ 10.5%).
+
+    How it was calculated — the site''s two-product formula on the analyser''s Au assays, running hours only:
+
+    • f (feed) = Rougher Feed Au, c (concentrate) = Final Concentrate Au, t (tail) = Final Tail Au
+
+    • recovery = 100 × c(f−t) / (f(c−t)), from the time-weighted October averages over running hours: …'
+  seconds: 193.0
+knowledge/p2/2:
+  outcome: right
+  why: 'The site’s formula and streams, running hours only: 70.6 % for October.'
+  quote: 'Gold recovery, Site A Concentrator 1 — October 2026: 70.6%.
+
+    How it was calculated (the site''s method — running hours only, two-product formula on the analyser''s Au assays):'
+  seconds: 95.1
+knowledge/p2/3:
+  outcome: right
+  why: 'The site’s formula and streams, 15-minute running samples: 71.2 % for October.'
+  quote: 'Gold recovery at Site A, Concentrator 1 in October 2026: ≈ 71.2%
+
+    How it was calculated
+
+    • There is no recovery tag in the historian, so I applied the site''s two-product formula to the online analyser''s Au
+    assays: recovery = 100 × c(f−t) / (f(c−t)).
+
+    • Running hours only (site convention): kept 15-minute samples where SAG fresh feed rate ≥ 50 t/h — 2,272 of 2,976 samples,
+    568 h of …'
+  seconds: 254.7
+knowledge/p3/1:
+  outcome: right
+  why: 'Mass pull from the rougher assays, analyser faults left out: 34.3 %.'
+  quote: 'Rougher mass pull, last week (16–22 Nov 2026): ≈ 34.3%.
+
+    Computed per 15-minute analyser cycle as 100 × (f − t) / (c − t) from the Au assays, then averaged over the week.
+
+    Tags used (all primary, health ok, ...\Site A\Concentrator 1\Flotation\):'
+  seconds: 128.4
+knowledge/p3/2:
+  outcome: right
+  why: 'Mass pull from the rougher assays per analyser cycle, impossible samples left out: 33 %.'
+  quote: 'Rougher mass pull, Site A Concentrator 1, 16–23 Nov 2026 (last 7 days): ≈ 33 % average (median 31.7 %, 653 valid
+    15-minute samples).
+
+    It wasn''t flat: it ran 43–46 % on 16–17 Nov, then fell to ~19–25 % from 20 Nov onward — driven by the rougher feed grade
+    dropping from ~7 g/t Au to ~2 g/t Au (tail Au fell with it, concentrate held ~20 g/t), so a much smaller share of the
+    feed …'
+  seconds: 128.8
+knowledge/p3/3:
+  outcome: right
+  why: 'Mass pull from the rougher assays, hour by hour, running hours: 34.3 %.'
+  quote: 'Rougher mass pull, Site A Concentrator 1 — last week.
+
+    Week average: ~34.3% (2026-11-16 to 2026-11-22, running hours only)
+
+    There is no mass-pull tag in the historian, so I calculated it the site''s way, hour by hour: 100 × (f − t) / (c − t)
+    from the Au assays of the same hour.'
+  seconds: 76.9
+knowledge/p4/1:
+  outcome: wrong
+  why: 'The right formula, but monthly from daily averages with impossible readings kept in: April at 64.8 %. With impossible
+    hours left out, the lowest month is August.'
+  quote: 'April 2026 had the lowest gold recovery: 64.8%, with a feed grade of 8.44 g/t Au.
+
+    Monthly results (Jan–Nov 2026, running hours only — days with SAG fresh feed rate < 50 t/h excluded, 20 such days dropped):'
+  seconds: 221.8
+knowledge/p4/2:
+  outcome: wrong
+  why: 'The right formula and running hours, but hourly recoveries averaged with impossible or undefined analyser hours kept
+    in: April at 65.7 %.'
+  quote: 'April 2026 had the lowest gold recovery so far this year: 65.7%, with a feed grade of 8.9 g/t Au.
+
+    Monthly results (2026, running hours only):'
+  seconds: 203.1
+knowledge/p4/3:
+  outcome: wrong
+  why: 'The right formula and running blocks, but four-hour averages with impossible analyser readings kept: April at 65.3
+    %.'
+  quote: 'April 2026 had the lowest gold recovery so far in 2026: 65.3%, with a feed grade of 8.7 g/t Au that month.
+
+    Monthly results (Jan–Nov 2026, running hours only).'
+  seconds: 122.7
+skills/p1/1:
+  outcome: wrong
+  why: 'Followed the method to the letter, but its script swapped numpy’s slope and intercept and reported each third’s intercept
+    (65, 74, 82 %) as its slope: steeper at high feed grade, with a bootstrap interval to match. Our key: the reverse.'
+  quote: 'Answer — Site A, Concentrator 1, 2024-04-20 → 2026-11-13 (all data the historian has for the collector tag):
+
+    Rougher gold recovery rises with collector dose rate — about +70 percentage points per mL/min overall (r = 0.33, n = 18,847
+    running hours) — and the slope is genuinely steeper at high feed grade: 65 pp per mL/min (low) → 74 (mid) → 82 (high).
+    The high-vs-low slope …'
+  seconds: 371.5
+skills/p1/2:
+  outcome: right
+  why: 'Hourly, running hours, screened: 2.43 points per mL/min overall (r 0.33); by thirds 2.86, 1.72, 1.03 on the recorded
+    dose; per tonne the difference is not shown (interval spans zero), and it says so.'
+  quote: 'Answer — over the whole historian record (2024‑04‑20 → 2026‑11‑13, running hours, screened), rougher gold recovery
+    shows a weak positive association with collector dose: about 2.4 percentage points of recovery per mL/min of collector
+    (r = 0.33), or only 6.1 pp per mL/t when normalised to feed rate (r = 0.16); the association is not convincingly different
+    at high, mid and low …'
+  seconds: 326.1
+skills/p1/3:
+  outcome: wrong
+  why: Its script dropped 6,212 usable hours of 2026 and it reported them as a gap in the historian, which is false; on the
+    shorter record it found the per-tonne response steeper at high feed grade.
+  quote: 'Chart saved. Here''s the full answer:
+
+    Relationship: collector dose vs rougher gold recovery.
+
+    Over all usable data (20 Apr 2024 – 31 Dec 2025), rougher gold recovery rises with collector dose, but weakly: about +1.5
+    percentage points per mL/min (r = 0.20), or +9.0 pp per mL/t of ore (r = 0.26) on a dose-per-tonne basis — and it is clearly
+    different by feed grade: the response is …'
+  seconds: 426.8
+skills/p2/1:
+  outcome: right
+  why: 'Hourly, running hours, gold-weighted: 71.3 % for October.'
+  quote: 'Gold recovery at Site A, Concentrator 1 in October 2026 was 71.3 % (metal-weighted, running hours only, 1 Oct 00:00
+    – 31 Oct 23:00 AEST).
+
+    How it was calculated
+
+    • Definition (site''s reported recovery): two-product formula on Au assays, recovery = 100 × c(f−t) / (f(c−t)), with f
+    = Rougher Feed Au, c = Final Concentrate Au, t = Final Tail Au. Period recovery = metal out over metal …'
+  seconds: 130.4
+skills/p2/2:
+  outcome: right
+  why: 'Hourly, running hours, gold-weighted: 71.3 % for October.'
+  quote: 'Gold recovery at Site A, Concentrator 1 in October 2026 was 71.3 % (metal-weighted, running hours only).
+
+    How it was calculated
+
+    • Definition (per site practice): R = 100 × c(f − t) / (f(c − t)), using the online Au assays — f = Rougher Feed, c =
+    Final Concentrate, t = Final Tail.
+
+    • Tags (all primary, healthy):
+
+    • ...\Grinding\SAG MillFresh Feed Rate (SA-C1-WT-2001, t/h) — …'
+  seconds: 64.9
+skills/p2/3:
+  outcome: right
+  why: 'Hourly, running hours, gold-weighted: 71.3 % for October.'
+  quote: 'Gold recovery at Site A, Concentrator 1 for October 2026 was 71.3 % (metal-weighted, running hours only).
+
+    Definition & method (per site practice, no recovery tag exists in the historian):
+
+    • R = 100 × c(f − t) / (f(c − t)), computed hourly, then combined over the month as metal out ÷ metal in: Σ(q·f·R_h) /
+    Σ(q·f)
+
+    • f = Rougher Feed Au, c = Final Concentrate Au, t = Final Tail Au
+
+    Tag …'
+  seconds: 70.6
+skills/p3/1:
+  outcome: right
+  why: 'Hourly, screened, tonne-weighted: 33.2 %.'
+  quote: 'The rougher mass pull at Site A, Concentrator 1 last week (16–23 Nov 2026) was 33.2 % (feed-tonne-weighted, running
+    hours only).
+
+    Definition & tags — mass pull (%) = 100 × (f − t)/(c − t), from the plant knowledge, using the Au assays of:'
+  seconds: 78.6
+skills/p3/2:
+  outcome: right
+  why: 'Hourly, screened, tonne-weighted: 33.2 %.'
+  quote: 'The rougher mass pull at Site A, Concentrator 1 last week was 33.2 % (feed-tonne weighted, 16–23 Nov 2026).
+
+    Definition — mass pull (%) = 100 × (f − t) / (c − t), with f, c, t the Au assays of the rougher feed, rougher concentrate
+    and rougher tail, computed hourly and then weighted by feed tonnes across the week (the plant''s method: metal balance
+    over the period, not a mean of …'
+  seconds: 78.8
+skills/p3/3:
+  outcome: right
+  why: 'Hourly, screened, tonne-weighted: 33.2 %.'
+  quote: 'The rougher mass pull at Site A, Concentrator 1 last week was 33.2 % (feed-tonne weighted, 16–23 Nov 2026, AEST).
+
+    Definition & tags (per site plant knowledge): mass pull = 100 × (f − t)/(c − t), computed per hour from the online analyser''s
+    Au assays, then the week''s value weighted by feed tonnes:
+
+    • ...\Flotation\Rougher FeedAu (SA-C1-AT-3069), g/t
+
+    • ...\Flotation\Rougher …'
+  seconds: 71.6
+skills/p4/1:
+  outcome: right
+  why: August at 68.2 %, feed grade 6.10 g/t, hourly and gold-weighted.
+  quote: 'August 2026 had the lowest gold recovery at Site A, Concentrator 1: 68.2 %, with a feed grade of 6.10 g/t Au that
+    month.
+
+    Chart saved: recovery_2026_ytd.png (in the current folder).
+
+    How it was calculated
+
+    • Definition (site''s own, from plant knowledge): gold recovery = 100·c(f−t)/(f(c−t)), where f = Rougher Feed Au, c =
+    Final Concentrate Au, t = Final Tail Au. Monthly recovery = …'
+  seconds: 212.0
+skills/p4/2:
+  outcome: right
+  why: August at 67.9 %, feed grade 6.10 g/t.
+  quote: 'August 2026 had the lowest gold recovery: 67.9 %, with a feed grade of 6.10 g/t Au — also the lowest feed grade
+    of the year so far.
+
+    Monthly detail (metal-weighted recovery, running hours only):'
+  seconds: 137.1
+skills/p4/3:
+  outcome: right
+  why: August at 68.2 %, feed grade 6.10 g/t.
+  quote: 'August 2026 had the lowest gold recovery of 2026 so far: 68.2 %, with a feed grade of 6.10 g/t Au.
+
+    Chart saved to recovery_2026.png (monthly recovery bars + feed-grade line, August highlighted).
+
+    How it was calculated.
+
+    Definition (per site knowledge): gold recovery = two-product formula on the analyser''s Au assays — feed = Rougher Feed
+    Au, concentrate = Final Concentrate Au, tail …'
+  seconds: 120.2

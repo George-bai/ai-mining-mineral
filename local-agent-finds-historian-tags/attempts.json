@@ -1,0 +1,1658 @@
+{
+ "t01/1": {
+  "calls": 4,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_current_values"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site B\\Concentrator 4\\Leach\\Leach Tank 8|pH"
+  ],
+  "png": [],
+  "seconds": 8.5,
+  "answer": "**pH in Leach Tank 8 (Site B, Concentrator 4): 8.72**\n\n- **Tag:** `SBC4_LT8_PH` \u2014 `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site B\\Concentrator 4\\Leach\\Leach Tank 8|pH` (primary, health: ok)\n- **Value:** 8.7158 pH, good quality\n- **As of:** 2026-11-22 23:59:55 AEST (the historian's latest record; historian \"now\" is 2026-11-23 00:00)\n\nNo chart was needed \u2014 you asked for the current value, so there's nothing to plot. If you'd like a trend (e.g. last 24 h or a week), I can pull the series and save a PNG.",
+  "stopped": ""
+ },
+ "t01/2": {
+  "calls": 6,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_current_values",
+   "mcp__historian__get_timeseries",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site B\\Concentrator 4\\Leach\\Leach Tank 8|pH"
+  ],
+  "png": [
+   "leach_tank_8_pH.png"
+  ],
+  "seconds": 18.9,
+  "answer": "**pH in Leach Tank 8 (Site B, Concentrator 4) right now: 8.72**\n\n- **Value:** 8.7158 pH at 2026-11-22 23:59:55 AEST (good quality)\n- **Tag:** `SBC4_LT8_PH` \u2014 `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site B\\Concentrator 4\\Leach\\Leach Tank 8|pH` (primary, healthy)\n- **Context:** over the last 24 h it's been steady, averaging 8.78 (range 8.71\u20138.84), time-weighted hourly averages.\n\nChart saved as `leach_tank_8_pH.png` in the current folder.",
+  "stopped": ""
+ },
+ "t01/3": {
+  "calls": 6,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_current_values",
+   "mcp__historian__get_timeseries",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site B\\Concentrator 4\\Leach\\Leach Tank 8|pH"
+  ],
+  "png": [
+   "leach_tank_8_ph.png"
+  ],
+  "seconds": 20.1,
+  "answer": "**pH in Leach Tank 8, Site B Conc 4 right now: 8.72** (8.7158 at 2026-11-22 23:59:55 AEST, good quality).\n\n**Provenance**\n- Tag: `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site B\\Concentrator 4\\Leach\\Leach Tank 8|pH` \u2014 point `SBC4_LT8_PH`, unit pH, primary variant, health `ok`. It was the only pH tag in that tank, so no ambiguity.\n- \"Now\" = historian's current time 2026-11-23 00:00 AEST; the latest record is from 23:59:55 the night before.\n- Context: last 12 h of 15-minute time-weighted averages ranged 8.70\u20138.80 (mean 8.75) \u2014 steady, no excursion.\n\n**Chart:** saved to `leach_tank_8_ph.png` in the current folder (last 12 h, 15-min time-weighted averages, with the latest value marked).",
+  "stopped": ""
+ },
+ "t02/1": {
+  "calls": 6,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "read",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AA\\Concentrator 2\\Utilities\\Main Incomer|Power Factor"
+  ],
+  "png": [
+   "conc2_main_incomer_pf.png"
+  ],
+  "seconds": 22.9,
+  "answer": "**Main incomer power factor at noon yesterday (2026-11-22 12:00 AEST): 0.989** (0.9889, time-weighted over the 12:00\u201312:15 interval).\n\nProvenance:\n- **Tag:** `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AA\\Concentrator 2\\Utilities\\Main Incomer|Power Factor` \u2014 point `SITEAA.CONC2.UTL.PM1.PF` (catalogue id 40349, primary variant, health `ok`, dimensionless).\n- **Window/basis:** 2026-11-22 11:30\u201312:15, 15-minute time-weighted averages (summary mode). Neighbouring values: 0.9787 (11:30), 0.9961 (11:45), 0.9897 (12:15).\n- Note: the historian's \"now\" is 2026-11-23 00:00 AEST, so \"yesterday\" = 2026-11-22.\n\nChart saved as `conc2_main_incomer_pf.png` in the current folder.",
+  "stopped": ""
+ },
+ "t02/2": {
+  "calls": 9,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__get_golden_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash",
+   "bash",
+   "bash",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AA\\Concentrator 2\\Utilities\\Main Incomer|Power Factor"
+  ],
+  "png": [
+   "siteaa_conc2_main_incomer_pf_noon_2026-11-22.png"
+  ],
+  "seconds": 36.4,
+  "answer": "**Main incomer power factor at noon yesterday (12:00 AEST, 22 Nov 2026): 0.9925** (time-weighted average over 12:00\u201312:01; range 0.9911\u20130.9935). It was ~1.00 in the preceding half hour and stayed \u22650.99 through the hour.\n\n**Provenance**\n- Tag: `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AA\\Concentrator 2\\Utilities\\Main Incomer|Power Factor`, point `SITEAA.CONC2.UTL.PM1.PF` (catalogue id 40349, primary, health ok, dimensionless)\n- Window: 11:30\u201312:30 AEST on 2026-11-22 (historian \"yesterday\" relative to its now, 2026-11-23T00:00+10:00), 1-minute time-weighted summaries from dataset `20261123-185257-7bf9a7.csv`\n- No tags were unusable; the golden power tag (`PM1.KW`) is active power, not power factor, so I searched and used the primary PF tag directly.\n\nChart saved: `siteaa_conc2_main_incomer_pf_noon_2026-11-22.png` (in the current folder).",
+  "stopped": ""
+ },
+ "t02/3": {
+  "calls": 7,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash",
+   "bash",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AA\\Concentrator 2\\Utilities\\Main Incomer|Power Factor"
+  ],
+  "png": [
+   "site_aa_conc2_main_incomer_pf_noon_2026-11-22.png"
+  ],
+  "seconds": 28.8,
+  "answer": "**Main incomer power factor at noon yesterday (12:00, 22 Nov 2026 AEST): \u2248 0.993** (raw record at 12:00:00 was 0.9934; it sat between 0.991 and 0.994 in the minutes around noon).\n\n**Provenance**\n- **Tag:** `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AA\\Concentrator 2\\Utilities\\Main Incomer|Power Factor` \u2014 point `SITEAA.CONC2.UTL.PM1.PF` (catalogue id 40349, primary, health `ok`, dimensionless)\n- **Window/basis:** raw (recorded) values, 11:30\u201312:30 on 2026-11-22, Australia/Brisbane; \"yesterday\" resolved against the historian's clock (2026-11-23 00:00 +10:00)\n- **Context for the hour:** mean 0.9886, min 0.9698, max 1.0000 \u2014 i.e. the incomer was running near unity power factor all around noon\n- **Chart:** saved as `site_aa_conc2_main_incomer_pf_noon_2026-11-22.png` in the current folder (11:30\u201312:30 trace with the 12:00 reading marked)\n\nNote: other supplies (Crushing, Grinding, Flotation, Leach) have their own power-factor tags, but the question names the main incomer, so only PM1 was used.",
+  "stopped": ""
+ },
+ "t03/1": {
+  "calls": 7,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__get_golden_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "read",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site D\\Concentrator 1\\Grinding\\SAG Mill|Fresh Feed Rate"
+  ],
+  "png": [
+   "sag_fresh_feed_tph_2026-11-22.png"
+  ],
+  "seconds": 29.0,
+  "answer": "Chart saved to `sag_fresh_feed_tph_2026-11-22.png` in the current folder.\n\n## SAG fresh feed trend \u2014 Site D, Concentrator 1, yesterday (22 Nov 2026)\n\n**Tag:** `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site D\\Concentrator 1\\Grinding\\SAG Mill|Fresh Feed Rate` (point `SD1:2WT001`, catalogue id 4596) \u2014 primary, healthy, t/h. This is the golden throughput tag for this concentrator.\n\n**Basis:** time-weighted hourly averages, 24 hours, 2026-11-22 00:00\u201323:59 Australia/Brisbane (historian \"now\" is 2026-11-23 00:00, so yesterday = 22 Nov).\n\n**The story \u2014 a clear ramp-up through the day:**\n\n| Period | Avg (t/h) |\n|---|---|\n| Overnight (00:00\u201308:00) | ~363\u2013380 |\n| Ramp (09:00\u201311:00) | 396 \u2192 475 |\n| Midday plateau (12:00\u201317:00) | ~488\u2013514 |\n| Evening (19:00\u201323:00) | ~507\u2013540 |\n\n- **Daily average:** 339.8 t/h (time-weighted over the full day)\n- **Low:** ~363 t/h around 03:00; **high:** ~540 t/h at 22:00 (peak hourly max 554 t/h)\n- Feed rate roughly **doubled from the overnight low (~360 t/h) to the evening (~540 t/h)**, with a brief dip to ~459 t/h at 18:00 before climbing again.\n\n**Provenance:** single tag 4596, dataset `20261123-183923-3202a8` (`datasets/20261123-183923-3202a8.csv`), summary mode, 1h interval. No tags were excluded.",
+  "stopped": ""
+ },
+ "t03/2": {
+  "calls": 8,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__get_golden_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash",
+   "bash",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site D\\Concentrator 1\\Grinding\\SAG Mill|Fresh Feed Rate"
+  ],
+  "png": [
+   "sag_fresh_feed_2026-11-22.png"
+  ],
+  "seconds": 31.3,
+  "answer": "**SAG fresh feed, Site D Concentrator 1 \u2014 22 Nov 2026 (yesterday, AEST):**\n\n- **Daily mean: 447 t/h** (time-weighted, hourly averages)\n- Range: **345\u2013554 t/h** (hourly min/max)\n- Lowest hour: ~03:00 (363 t/h); highest hour: 23:00 (540 t/h)\n\nThe rate was low overnight (~360 t/h), climbed through the day, and ended the day near its peak.\n\n**Provenance:**\n- Tag: `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site D\\Concentrator 1\\Grinding\\SAG Mill|Fresh Feed Rate`, point `SD1:2WT001` (golden throughput tag, primary, health ok, t/h)\n- Window: 2026-11-22 00:00 \u2192 2026-11-23 00:00 AEST, 24 hourly intervals, summary mode (time-weighted)\n- Chart saved: `sag_fresh_feed_2026-11-22.png` in the current folder (hourly average with min\u2013max band)",
+  "stopped": ""
+ },
+ "t03/3": {
+  "calls": 7,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__get_golden_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash",
+   "read"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site D\\Concentrator 1\\Grinding\\SAG Mill|Fresh Feed Rate"
+  ],
+  "png": [
+   "sag_fresh_feed_2026-11-22.png"
+  ],
+  "seconds": 28.4,
+  "answer": "Done. Chart saved to `sag_fresh_feed_2026-11-22.png` in the current folder.\n\n**Trend \u2014 Site D, Conc 1, SAG fresh feed, 22 Nov 2026 (00:00\u201324:00 AEST):**\n\n- **Overnight (00:00\u201308:00):** low and flat, ~363\u2013377 t/h (day low ~345 t/h around 03:00)\n- **Ramp-up (09:00\u201312:00):** steady climb from ~396 to ~509 t/h\n- **Afternoon\u2013evening (12:00\u201323:00):** held high, ~488\u2013540 t/h, peaking at ~554 t/h in the 22:00 hour\n- **Day average:** ~447 t/h (time-weighted), min 345.1, max 554.0\n\n**Provenance:**\n- Tag: `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site D\\Concentrator 1\\Grinding\\SAG Mill|Fresh Feed Rate`, point `SD1:2WT001` (catalogue id 4596), t/h, primary, health ok \u2014 the golden throughput tag for this concentrator.\n- Window: 2026-11-22 00:00 \u2192 2026-11-23 00:00 (AEST; \"yesterday\" relative to historian time 2026-11-23 00:00). Data covers 00:00\u201323:00 hours.\n- Basis: time-weighted hourly summaries (Average/Min/Max), 24 hourly rows; dataset `20261123-190903-70e8ea.csv`.",
+  "stopped": ""
+ },
+ "t04/1": {
+  "calls": 8,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "read",
+   "bash",
+   "bash",
+   "read"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site U\\Concentrator 5\\Tailings\\Return Water|Flow"
+  ],
+  "png": [
+   "tailings_return_water_flow_SU_C5.png"
+  ],
+  "seconds": 32.4,
+  "answer": "Chart saved to `tailings_return_water_flow_SU_C5.png` in the current folder \u2014 a line of daily time-weighted averages with a min\u2013max band.\n\n**What the data shows (24 Oct \u2013 22 Nov 2026):**\n- Monthly mean: **588.6 m\u00b3/h**; daily averages mostly sit between ~520 and ~710 m\u00b3/h.\n- Daily peaks up to **898.7 m\u00b3/h** (20 Nov); troughs down to **219.9 m\u00b3/h** (15 Nov) and **426.6 m\u00b3/h** (4 Nov).\n- Several days (27\u201328 Oct, 1 Nov, 4 Nov, 8 Nov, 14\u201315 Nov, 17\u201318 Nov, 20\u201321 Nov) show a minimum of 0.0, indicating short stoppages or zero-flow periods within those days; the 15 Nov dip is the most significant.\n\n**Provenance:**\n- **Tag:** `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site U\\Concentrator 5\\Tailings\\Return Water|Flow`, point `SU-C5-FT-5015` (catalogue id 32096), unit m\u00b3/h, primary variant, health `ok` \u2014 top search match for \"tailings return water flow\".\n- **Window:** 2026-10-24 00:00 \u2192 2026-11-22 00:00 (Australia/Brisbane), i.e. the 30 days before the historian's current time (2026-11-23).\n- **Basis:** summary mode, 1-day intervals, time-weighted Average/Minimum/Maximum (dataset `20261123-183951-3be692`).\n- **Not used:** `SU-C5-FT-5015.CALC` (calc variant, ranked down) and `SU-C5-FQ-5016` (totalised volume, not a rate).",
+  "stopped": ""
+ },
+ "t04/2": {
+  "calls": 6,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "read",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site U\\Concentrator 5\\Tailings\\Return Water|Flow"
+  ],
+  "png": [
+   "site_u_conc5_tailings_return_water_flow.png"
+  ],
+  "seconds": 32.9,
+  "answer": "Chart saved to `site_u_conc5_tailings_return_water_flow.png` in the current folder.\n\n## What the data shows\n\n**Tag:** `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site U\\Concentrator 5\\Tailings\\Return Water|Flow` \u2014 point **SU-C5-FT-5015**, primary variant, health **ok**, unit **m3/h**.\n\n**Window:** 2026-10-24 \u2192 2026-11-22 (past month, relative to historian time 2026-11-23), daily **time-weighted averages** (1d interval, summary mode), Australia/Brisbane time zone.\n\n- Typical daily average: **~620\u2013700 m3/h**, with the full month's daily averages ranging roughly **427\u2013711 m3/h**.\n- The chart's shaded band is each day's min\u2013max; daily peaks run ~780\u2013900 m3/h.\n- **Low days:** 4 Nov (427), 8 Nov (520), 1 Nov (538), 21 Nov (483), and a pronounced dip on **15 Nov (220 m3/h)** \u2014 these days (and 27 Oct, 14 Nov, 20 Nov) also show 0 m3/h minimums, indicating shutdowns or stoppages during the day. The 15 Nov dip was substantial, not just a brief stop.\n\n**Provenance:** single tag SU-C5-FT-5015 (the catalogue's exact \"Return Water|Flow\" point; the `.CALC` variant and the totalised volume FQ-5016 were not used \u2014 the primary flow tag is the right one for this plot). No tags were unavailable.\n\n**Chart file:** `articles/local-agent-finds-historian-tags/local/runs/r1/t04/2/site_u_conc5_tailings_return_water_flow.png` (dataset: `\u2026/r1/datasets/20261123-185401-7a7597.csv`).",
+  "stopped": ""
+ },
+ "t04/3": {
+  "calls": 7,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash",
+   "bash",
+   "read"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site U\\Concentrator 5\\Tailings\\Return Water|Flow"
+  ],
+  "png": [
+   "su_c5_tailings_return_water_flow.png"
+  ],
+  "seconds": 28.6,
+  "answer": "Chart saved as `su_c5_tailings_return_water_flow.png` in the current folder.\n\n**What the data shows (24 Oct \u2013 22 Nov 2026, daily):**\n- Return water flow ran steadily around **590\u2013700 m\u00b3/h**, averaging **\u2248589 m\u00b3/h** over the month (time-weighted).\n- Daily peaks reached up to ~899 m\u00b3/h; the lowest day was 10 Nov (\u2248465 m\u00b3/h average), with a few brief zero readings inside individual days (short stoppages, not a full-day outage).\n- No sustained drop or trend \u2014 flow was stable all month.\n\n**Provenance:**\n- Tag: `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site U\\Concentrator 5\\Tailings\\Return Water|Flow` (point `SU-C5-FT-5015`, catalogue id 32096), primary variant, health **ok**, unit m\u00b3/h.\n- Window: 2026-10-24 00:00 \u2192 2026-11-22 00:00 AEST (relative `*-30d` from historian time 2026-11-23), 1-day intervals.\n- Basis: time-weighted summary (Average/Min/Max per day); dataset file `\u2026/datasets/20261123-190930-6a786a.csv`.\n- Not used: `SU-C5-FT-5015.CALC` (calc variant, ranked down) and `SU-C5-FQ-5016` (totalised volume, m\u00b3 \u2014 a cumulative counter, not a rate).",
+  "stopped": ""
+ },
+ "t05/1": {
+  "calls": 7,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_tag_details",
+   "mcp__historian__get_timeseries",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site H\\Concentrator 3\\Crushing\\CV-103|Belt Weigher Rate",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site H\\Concentrator 3\\Crushing\\CV-103|Motor Current"
+  ],
+  "png": [
+   "cv103_amps_tph_2026-11-22.png"
+  ],
+  "seconds": 38.7,
+  "answer": "Chart saved: `cv103_amps_tph_2026-11-22.png` (current folder).\n\n**Important caveat:** the CV-103 motor amps tag has **no data for yesterday**.\n\n| Series | Tag | Point | Unit | Health | Yesterday (2026-11-22, AEST) |\n|---|---|---|---|---|---|\n| CV-103 Motor Current | `\u2026\\Site H\\Concentrator 3\\Crushing\\CV-103\\|Motor Current` | `SH3:1IT015` | A | **stale** | **0 records** \u2014 last value 170.6 A on 2026-11-03 18:50 |\n| CV-103 Belt Weigher Rate | `\u2026\\Site H\\Concentrator 3\\Crushing\\CV-103\\|Belt Weigher Rate` | `SH3:1WT013` | t/h | ok | 288 readings, 15-min time-weighted: **avg 545.3 t/h, min 477.0, max 589.5** |\n\n- Window: 2026-11-22 00:00 \u2192 2026-11-23 00:00 (AEST; \"yesterday\" relative to historian time 2026-11-23 00:00). Basis: time-weighted summary at 15-min intervals.\n- The chart shows the weigher rate on top and an empty amps panel below, annotated with the gap.\n- No healthy CV-103 amps alternative exists in the catalogue (no QC/calc variant for that point). The neighbouring conveyors' motor current tags (CV-101 `SH3:1IT007`, CV-102 `SH3:1IT011`, CV-104 `SH3:1IT019`) are all healthy, but they are different machines \u2014 say the word if you'd like any of those added for context. CV-103's belt speed (`SH3:1ST014`) and run status (`SH3:1XS016`) are healthy if you want a proxy for when the belt was running.",
+  "stopped": ""
+ },
+ "t05/2": {
+  "calls": 10,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_tag_details",
+   "mcp__historian__get_timeseries",
+   "bash",
+   "bash",
+   "read"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site H\\Concentrator 3\\Crushing\\CV-103|Belt Weigher Rate",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site H\\Concentrator 3\\Crushing\\CV-103|Motor Current"
+  ],
+  "png": [
+   "cv103_amps_vs_weigher_2026-11-22.png"
+  ],
+  "seconds": 55.1,
+  "answer": "Chart saved: `cv103_amps_vs_weigher_2026-11-22.png` in the current folder.\n\n**Important caveat: the CV-103 motor amps tag has no data for yesterday.**\n\n## What's on the trend\n\n| Series | Tag | Point | Unit | Health | Yesterday (2026-11-22, AEST) |\n|---|---|---|---|---|---|\n| Belt weigher rate | `Site H\\Concentrator 3\\Crushing\\CV-103\\Belt Weigher Rate` | `SH3:1WT013` | t/h | ok | avg **545.7 t/h**, min 477.0, max 589.5 (24 hourly values) |\n| Motor current | `Site H\\Concentrator 3\\Crushing\\CV-103\\Motor Current` | `SH3:1IT015` | A | **stale** | **0 values** \u2014 last record 2026-11-03 18:50 AEST (170.6 A) |\n\n## Provenance\n- **Window:** 2026-11-22 00:00 \u2192 2026-11-23 00:00 AEST (\"yesterday\" relative to the historian's clock, 2026-11-23 00:00 AEST).\n- **Basis:** time-weighted summary, 1 h interval (dataset `20261123-185451-5a702b`).\n- The chart plots the weigher average with its min\u2013max band; the amps panel is shown empty and flagged, since a stale tag is not data.\n\n## Options for the amps side\nThere is no other CV-103 current tag in the catalogue. The nearest healthy alternatives (different conveyors, so not a substitute):\n- CV-101 Motor Current `SH3:1IT007` (ok, ~226 A)\n- CV-104 Motor Current `SH3:1IT019` (ok, ~170 A \u2014 similar magnitude to CV-103's last reading)\n\nWant me to add CV-104's amps to the trend for comparison, or check when `SH3:1IT015` last had data (it stopped ~3 weeks ago)?",
+  "stopped": ""
+ },
+ "t05/3": {
+  "calls": 7,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site H\\Concentrator 3\\Crushing\\CV-103|Belt Weigher Rate",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site H\\Concentrator 3\\Crushing\\CV-103|Motor Current"
+  ],
+  "png": [
+   "cv103_amps_vs_weigher_2026-11-22.png"
+  ],
+  "seconds": 42.9,
+  "answer": "Chart saved: `cv103_amps_vs_weigher_2026-11-22.png`\n\n**Heads-up \u2014 I couldn't plot both series.** The CV-103 motor amps tag is dead:\n\n| Tag | Point | Status |\n|---|---|---|\n| `...\\Site H\\Concentrator 3\\Crushing\\CV-103\\|Motor Current` | `SH3:1IT015` | **Stale** \u2014 last value 170.6 A on **3 Nov 2026**, zero records for 22 Nov |\n| `...\\Site H\\Concentrator 3\\Crushing\\CV-103\\|Belt Weigher Rate` | `SH3:1WT013` | Healthy \u2014 96 readings for 22 Nov |\n\n**What's on the chart** (Site H Conc 3, 22 Nov 2026, AEST, time-weighted hourly averages):\n- CV-103 belt weigher rate: avg **589 t/h**, min **477 t/h**, max **720 t/h** (brief zero-ish dip early in the day, steady ~520\u2013585 t/h the rest of the day)\n- CV-103 motor amps: no data \u2014 flagged on the chart in red.\n\n**Healthy alternatives for the amps axis** (all running, last value ~23:59 on 22 Nov):\n- CV-101 Motor Current (`SH3:1IT007`) \u2014 225.9 A\n- CV-102 Motor Current (`SH3:1IT011`) \u2014 227.4 A\n- CV-104 Motor Current (`SH3:1IT019`) \u2014 170.5 A (closest in magnitude to CV-103's last known 170.6 A)\n\nWant me to add one of those to the trend, or investigate why `SH3:1IT015` stopped logging on 3 Nov?",
+  "stopped": ""
+ },
+ "t06/1": {
+  "calls": 10,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__browse_asset",
+   "mcp__historian__search_tags",
+   "mcp__historian__browse_asset",
+   "mcp__historian__get_timeseries",
+   "bash",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AC\\Concentrator 4\\Grinding\\Cyclone Cluster 2|Cyclones Open",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AC\\Concentrator 4\\Grinding\\Cyclone Cluster 2|Feed Pressure"
+  ],
+  "png": [
+   "cluster2_feed_pressure_vs_cyclones_open.png"
+  ],
+  "seconds": 82.3,
+  "answer": "Chart saved: `cluster2_feed_pressure_vs_cyclones_open.png` (in `.../runs/r1/t06/1/`).\n\n**Important caveat \u2014 the pressure series could not be plotted:**\n\n- **Cluster 2 Feed Pressure** \u2014 `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AC\\Concentrator 4\\Grinding\\Cyclone Cluster 2|Feed Pressure` (point `SAC-C4-PT-2023`, kPa): health is **stale**, last reading 2026\u201111\u201110 06:15 AEST. I confirmed the historian returned **0 values** for 16\u201322 Nov, so there is no Cluster 2 feed pressure data for last week. The chart shows the count series with the gap annotated.\n- **Cyclones open (Cluster 2)** \u2014 `...\\Cyclone Cluster 2|Cyclones Open` (point `SAC-C4-ZI-2027`, count): healthy. 168 hourly time\u2011weighted values, 16\u201322 Nov 2026 (Australia/Brisbane), mean \u2248 8.1, range \u2248 6.7\u20139.6.\n\n**Nearest healthy alternatives for the pressure** (all primary, healthy, kPa, same Grinding area):\n- Cyclone Feed Pump 1 discharge \u2014 `SAC-C4-PT-2028` (last 103.9 kPa)\n- Cyclone Feed Pump 2 discharge \u2014 `SAC-C4-PT-2033` (last 87.3 kPa)\n- Cyclone Feed Pump 3 discharge \u2014 `SAC-C4-PT-2038` (last 83.0 kPa)\n\nI couldn't tell from the asset tree which pump feeds Cluster 2, so I didn't guess. If you'd like, tell me which pump (or \"all three\") and I'll re-plot the week with that discharge pressure alongside the cyclones-open count.",
+  "stopped": ""
+ },
+ "t06/2": {
+  "calls": 7,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AC\\Concentrator 4\\Grinding\\Cyclone Cluster 2|Cyclones Open",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AC\\Concentrator 4\\Grinding\\Cyclone Cluster 2|Feed Pressure"
+  ],
+  "png": [
+   "cluster2_feed_pressure_vs_cyclones_open.png"
+  ],
+  "seconds": 41.0,
+  "answer": "Chart saved: `cluster2_feed_pressure_vs_cyclones_open.png`\n\n**What's in it**\n- **Cyclones open (Cluster 2)** \u2014 `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AC\\Concentrator 4\\Grinding\\Cyclone Cluster 2|Cyclones Open` (point `SAC-C4-ZI-2027`), healthy. 2026-11-16 \u2192 2026-11-23 (last 7 days from the historian's now, 2026-11-23 00:00 AEST), 1-h time-weighted averages: mean \u2248 8.1, range ~6.7\u20139.6.\n- **Cluster 2 feed pressure** \u2014 `...\\Cyclone Cluster 2|Feed Pressure` (point `SAC-C4-PT-2023`, kPa) is **stale**: its last reading was 2026-11-10 06:15 AEST (118.8 kPa), so it has **zero values in the last-week window**. It's shown as a no-data band, not plotted \u2014 a stale tag isn't data.\n\n**Healthy alternatives for the pressure, if you want one:**\n1. `Cyclone Cluster 1|Feed Pressure` (`SAC-C4-PT-2018`, ok) \u2014 same instrument type, different cluster\n2. `Cyclone Feed Pump 1/2/3|Discharge Pressure` (`SAC-C4-PT-2028/2033/2038`, all ok) \u2014 pump-side, not cluster-specific\n\nTell me which (or if you'd rather I widen the window back to 2026-11-10 to include the last pressure reading) and I'll redo the plot.",
+  "stopped": ""
+ },
+ "t06/3": {
+  "calls": 6,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AC\\Concentrator 4\\Grinding\\Cyclone Cluster 2|Cyclones Open",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AC\\Concentrator 4\\Grinding\\Cyclone Cluster 2|Feed Pressure"
+  ],
+  "png": [
+   "conc4_cluster2_last_week.png"
+  ],
+  "seconds": 41.5,
+  "answer": "Chart saved: `conc4_cluster2_last_week.png` (in the current folder).\n\n**Important caveat \u2014 one of the two requested series has no data:**\n\n- **Cluster 2 feed pressure** \u2014 `\\\\EXAMPLE-AF\\...\\Site AC\\Concentrator 4\\Grinding\\Cyclone Cluster 2|Feed Pressure` (point `SAC-C4-PT-2023`, kPa): health **stale**, last reading 2026-11-10 06:15. The historian returned **0 values** for last week (16\u201322 Nov), so it cannot be plotted for that window.\n- **Cluster 2 cyclones open** \u2014 `...\\Cyclone Cluster 2|Cyclones Open` (point `SAC-C4-ZI-2027`, count): healthy. Last week: time-weighted average **8.07**, range **6.7\u20139.6** (168 hourly values, Australia/Brisbane). This is what the chart shows.\n\n**Nearest healthy alternatives for the pressure**, if you want one added to the plot:\n\n1. **Cluster 1 feed pressure** \u2014 `SAC-C4-PT-2018` (kPa, ok) \u2014 same measurement, the other cluster\n2. **Cyclone feed pump discharge pressures** \u2014 `SAC-C4-PT-2028` (pump 1, ok), `SAC-C4-PT-2033` (pump 2, ok), `SAC-C4-PT-2038` (pump 3, ok) \u2014 upstream of the clusters\n\nWhich would you like me to plot alongside the cyclones-open series (or none, if the current chart is enough)?",
+  "stopped": ""
+ },
+ "t07/1": {
+  "calls": 7,
+  "tools": [
+   "read",
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site F\\Concentrator 2\\Flotation\\Frother|Dose Rate",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site F\\Concentrator 2\\Flotation\\Rougher Cell 1|Froth Depth"
+  ],
+  "png": [
+   "site_f_conc2_frother_dose_froth_depth.png"
+  ],
+  "seconds": 30.2,
+  "answer": "Chart saved: `site_f_conc2_frother_dose_froth_depth.png` (in the current folder).\n\n## What's on the chart\n\n| Series | Tag (path) | Point | Unit | Health |\n|---|---|---|---|---|\n| Frother dose rate (blue, left axis) | `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site F\\Concentrator 2\\Flotation\\Frother\\|Dose Rate` | `SFC2_RD2_DOSE` | mL/min | ok |\n| Rougher Cell 1 froth depth (red, right axis) | `...\\Site F\\Concentrator 2\\Flotation\\Rougher Cell 1\\|Froth Depth` | `SFC2_FC1_FROTH` | mm | ok |\n\n**Window & basis:** 12 Nov 2026 00:00 \u2192 22 Nov 2026 23:00 (AEST, Australia/Brisbane; historian \"now\" is 23 Nov 2026 00:00), hourly **time-weighted averages** (summary mode), 264 rows.\n\n**Quick read:**\n- Frother dose rate: mean \u2248 33.8 mL/min, ranging 30.1\u201336.6 mL/min over the window.\n- Rougher Cell 1 froth depth: mean \u2248 489.4 mm, very stable (487.4\u2013491.8 mm) \u2014 but note it has **14 missing hours** out of 264 (250 of 264 values present); those gaps show as breaks in the red line. The tag itself is healthy, so this is a data gap in the window, not a bad tag.\n\nBoth are the primary, healthy tags \u2014 no QC/Calc/alarm variants were used, and no other candidate was close enough to be ambiguous (the other froth-depth hits were Scavenger/Cleaner/Recleaner cells, not Rougher Cell 1).",
+  "stopped": ""
+ },
+ "t07/2": {
+  "calls": 7,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site F\\Concentrator 2\\Flotation\\Frother|Dose Rate",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site F\\Concentrator 2\\Flotation\\Rougher Cell 1|Froth Depth"
+  ],
+  "png": [
+   "site_f_conc2_frother_froth.png"
+  ],
+  "seconds": 30.5,
+  "answer": "Done. Chart saved to `site_f_conc2_frother_froth.png` in the current folder.\n\n**What's on the chart** (dual-axis, hourly time-weighted averages, 12 Nov 00:00 \u2013 22 Nov 23:00 AEST, 264 hourly intervals):\n\n| Series | Tag | Point | Unit | Window stats |\n|---|---|---|---|---|\n| Frother dose rate (blue, left axis) | `...\\Site F\\Concentrator 2\\Flotation\\Frother\\|Dose Rate` (id 8080, primary, healthy) | `SFC2_RD2_DOSE` | mL/min | mean 33.8, range 30.1\u201336.6 |\n| Rougher Cell 1 froth depth (red, right axis) | `...\\Site F\\Concentrator 2\\Flotation\\Rougher Cell 1\\|Froth Depth` (id 8021, primary, healthy) | `SFC2_FC1_FROTH` | mm | mean 489.4, range 487.4\u2013491.8 |\n\n**Notes**\n- Both tags were unambiguous catalogue matches (the frother tag is the Flotation frother, not the Leach cyanide/lime dosing; the froth depth is specifically Rougher Cell 1, not Scavenger/Cleaner/Recleaner Cell 1).\n- The froth depth tag returned values for 250 of the 264 hourly intervals \u2014 there are short gaps in its record (missing points simply aren't drawn); the dose rate is complete.\n- Basis: time-weighted (summary mode), 1 h interval; times in the historian's time zone (Australia/Brisbane). Dataset CSV: `.../runs/r1/datasets/20261123-185611-4ec379.csv`.",
+  "stopped": ""
+ },
+ "t07/3": {
+  "calls": 7,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash",
+   "read"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site F\\Concentrator 2\\Flotation\\Frother|Dose Rate",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site F\\Concentrator 2\\Flotation\\Rougher Cell 1|Froth Depth"
+  ],
+  "png": [
+   "sitef_conc2_frother_dose_rougher1_froth_depth.png"
+  ],
+  "seconds": 30.0,
+  "answer": "Chart saved to `sitef_conc2_frother_dose_rougher1_froth_depth.png` in the current folder.\n\n**What's on the chart**\n- **Blue (left axis):** Frother dose rate \u2014 `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site F\\Concentrator 2\\Flotation\\Frother|Dose Rate` (point `SFC2_RD2_DOSE`), mL/min, healthy, 264 hourly values.\n- **Red (right axis):** Rougher Cell 1 froth depth \u2014 `...\\Flotation\\Rougher Cell 1|Froth Depth` (point `SFC2_FC1_FROTH`), mm, healthy, 250 of 264 hourly values (14 h gaps, plotted as breaks).\n\n**Window & basis:** 12 Nov 2026 00:00 \u2192 22 Nov 2026 23:00 (AEST, historian's current time is 23 Nov 2026 00:00), time-weighted 1-hour averages.\n\n**Quick read:** frother dose rate wanders between ~30 and ~36.5 mL/min (mean \u2248 33.8), with a dip to ~30.1 around 15\u201316 Nov; rougher cell 1 froth depth is essentially flat at ~489 mm (range 487.4\u2013491.8) across the whole period.",
+  "stopped": ""
+ },
+ "t08/1": {
+  "calls": 8,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash",
+   "bash",
+   "read"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site M\\Concentrator 5\\Tailings\\Tailings Thickener|Bed Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site M\\Concentrator 5\\Tailings\\Tailings Thickener|Rake Torque"
+  ],
+  "png": [
+   "thickener_bedlevel_raketorque_shift.png"
+  ],
+  "seconds": 32.7,
+  "answer": "Yes \u2014 chart saved as **`thickener_bedlevel_raketorque_shift.png`** in the current folder, with bed level on the left axis (m) and rake torque on the right axis (%), min\u2013max bands around each 15-minute average.\n\n**What's plotted**\n- **Bed level** \u2014 `SM-C5-LT-5003` (\u2026Site M\\Concentrator 5\\Tailings\\Tailings Thickener|Bed Level), m, healthy\n- **Rake torque** \u2014 `SM-C5-WT-5002` (same thickener |Rake Torque), %, healthy\n\n**Window & basis** \u2014 last shift, 16:00\u201323:45 on 22 Nov 2026 (AEST, ending at the historian's now 00:00 on 23 Nov), 15-minute intervals, time-weighted averages (32 intervals).\n\n**Quick read of the shift**\n- Bed level: avg **47.6 m**, ranging **38.7\u201357.2 m** \u2014 a pronounced rise through the shift with a dip near the middle\n- Rake torque: avg **29.3 %**, ranging **22.2\u201338.7 %** \u2014 torque tracks the bed build-up, peaking around the same time the bed is highest\n\nData file (if you want to dig further): `\u2026/runs/r1/datasets/20261123-184257-c4da26.csv`.",
+  "stopped": ""
+ },
+ "t08/2": {
+  "calls": 7,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site M\\Concentrator 5\\Tailings\\Tailings Thickener|Bed Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site M\\Concentrator 5\\Tailings\\Tailings Thickener|Rake Torque"
+  ],
+  "png": [
+   "thickener_bed_level_rake_torque.png"
+  ],
+  "seconds": 29.2,
+  "answer": "Yes \u2014 both tags are healthy and on the same thickener. Chart saved to `thickener_bed_level_rake_torque.png` in the current folder.\n\n**What's on the trend** (16:00 \u2192 00:00 AEST, 2026-11-22, i.e. the last 8-hour shift before the historian's \"now\" of 2026-11-23 00:00):\n\n| Tag | Point | Unit | Mean | Min | Max |\n|---|---|---|---|---|---|\n| Tailings Thickener \\| Bed Level | `SM-C5-LT-5003` | m | 47.6 | 38.7 | 57.2 |\n| Tailings Thickener \\| Rake Torque | `SM-C5-WT-5002` | % | 29.3 | 22.2 | 38.7 |\n\n**Provenance**\n- Tags: `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site M\\Concentrator 5\\Tailings\\Tailings Thickener|Bed Level` (SM-C5-LT-5003) and `...|Rake Torque` (SM-C5-WT-5002), both primary, health `ok`.\n- Window: 2026-11-22 16:00 \u2192 23:50 (last record before 00:00), site timezone Australia/Brisbane.\n- Basis: time-weighted summary, 10-minute intervals (48 rows); plotted values are the 10-min averages.\n- Units differ (metres vs %), so the chart uses a dual-axis plot: bed level on the left (blue), rake torque on the right (red).\n\nOne caveat: \"last shift\" is interpreted as the most recent 8 hours (16:00\u201300:00). If your shift boundaries are different (e.g. 07:00\u201315:00), tell me and I'll re-pull the window.",
+  "stopped": ""
+ },
+ "t08/3": {
+  "calls": 8,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "write",
+   "bash",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site M\\Concentrator 5\\Tailings\\Tailings Thickener|Bed Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site M\\Concentrator 5\\Tailings\\Tailings Thickener|Rake Torque"
+  ],
+  "png": [
+   "thickener_bed_level_rake_torque_last_shift.png"
+  ],
+  "seconds": 29.4,
+  "answer": "Yes \u2014 both tags exist for that thickener and are healthy. Chart saved to:\n\n**`t08/3/thickener_bed_level_rake_torque_last_shift.png`** (dual-axis: bed level in m on the left, rake torque in % on the right)\n\n**Data provenance:**\n- **Bed level** \u2014 `\u2026\\Site M\\Concentrator 5\\Tailings\\Tailings Thickener|Bed Level`, point `SM-C5-LT-5003`, metres, health ok\n- **Rake torque** \u2014 same thickener, point `SM-C5-WT-5002`, %, health ok\n- **Window:** 2026-11-22 16:00 \u2192 2026-11-23 00:00 AEST (last 8-hour shift, relative to the historian's clock at 2026-11-23 00:00)\n- **Basis:** time-weighted 15-minute averages (summary mode), 32 intervals\n\n**What the shift shows:**\n- Bed level: avg **47.6 m**, ranging **38.7\u201357.2 m** \u2014 a wide swing, with the bed dropping well below average mid-shift before climbing back toward ~51 m by the end\n- Rake torque: avg **29.3 %**, ranging **22.2\u201338.7 %** \u2014 tracking the bed movement, dipping to ~22% when the bed was low and rising to ~39% as the bed rebuilt\n\nThe two trends are clearly correlated (torque rises with bed height), which is the expected behaviour. If you'd like, I can pull a longer window (e.g. last 7 days) to see whether the bed-level swing is normal for this thickener.",
+  "stopped": ""
+ },
+ "t09/1": {
+  "calls": 6,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_current_values",
+   "mcp__historian__get_timeseries",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site T\\Concentrator 1\\Crushing\\CV-101|Motor Current",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site T\\Concentrator 1\\Crushing\\CV-102|Motor Current",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site T\\Concentrator 1\\Crushing\\CV-103|Motor Current",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site T\\Concentrator 1\\Crushing\\CV-104|Motor Current"
+  ],
+  "png": [
+   "crushing_belt_currents.png"
+  ],
+  "seconds": 25.7,
+  "answer": "**CV-102 is pulling the most amps right now: 222.98 A** (at 2026-11-22 23:59:55 AEST, the historian's latest good record).\n\n| Belt | Point | Now (A) | 3-h average (A) |\n|---|---|---|---|\n| **CV-102** | `ST1:1IT011` | **222.98** | 212.2 |\n| CV-103 | `ST1:1IT015` | 201.50 | 201.8 |\n| CV-101 | `ST1:1IT007` | 183.73 | 178.2 |\n| CV-104 | `ST1:1IT019` | 159.12 | 169.0 |\n\n**Provenance**\n- Tags: `\u2026\\Site T\\Concentrator 1\\Crushing\\CV-1xx|Motor Current` (catalogue ids 29091, 29096, 29100, 29104), all primary variants, health `ok`, unit A.\n- \"Now\" values from `get_current_values`; the 3-h window (21:00\u201323:55 AEST) from `get_timeseries` in summary mode, 5-min intervals, time-weighted average.\n- CV-102 leads both instantaneously and over the window \u2014 it's been running ~15\u201320 A above CV-103 the whole 3 hours, not just a spike.\n\nChart saved: `crushing_belt_currents.png` in the current folder.",
+  "stopped": ""
+ },
+ "t09/2": {
+  "calls": 6,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_current_values",
+   "bash",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site T\\Concentrator 1\\Crushing\\CV-101|Motor Current",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site T\\Concentrator 1\\Crushing\\CV-102|Motor Current",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site T\\Concentrator 1\\Crushing\\CV-103|Motor Current",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site T\\Concentrator 1\\Crushing\\CV-104|Motor Current"
+  ],
+  "png": [
+   "crushing_belt_currents.png"
+  ],
+  "seconds": 18.8,
+  "answer": "**CV-102 is pulling the most amps right now: 222.98 A** (as of 2026-11-22 23:59:55 AEST, the historian's latest good record).\n\n| Belt | Motor current | Point |\n|---|---|---|\n| CV-101 | 183.73 A | ST1:1IT007 |\n| **CV-102** | **222.98 A** | ST1:1IT011 |\n| CV-103 | 201.50 A | ST1:1IT015 |\n| CV-104 | 159.12 A | ST1:1IT019 |\n\n**Provenance:** tags `\u2026\\Site T\\Concentrator 1\\Crushing\\CV-10x|Motor Current` (primary variant, health `ok`, unit A), read via `get_current_values` \u2014 the latest good value per tag, not an average. All four belts are running at similar belt speeds (~10\u201312 m/s) and weigher rates (~580\u2013594 t/h), so the higher current on CV-102 reflects a genuinely higher motor load, not just more material.\n\nChart saved to `crushing_belt_currents.png` in the current folder.",
+  "stopped": ""
+ },
+ "t09/3": {
+  "calls": 6,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_current_values",
+   "mcp__historian__get_timeseries",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site T\\Concentrator 1\\Crushing\\CV-101|Motor Current",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site T\\Concentrator 1\\Crushing\\CV-102|Motor Current",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site T\\Concentrator 1\\Crushing\\CV-103|Motor Current",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site T\\Concentrator 1\\Crushing\\CV-104|Motor Current"
+  ],
+  "png": [
+   "crushing_belt_current.png"
+  ],
+  "seconds": 25.2,
+  "answer": "**CV-102 is pulling the most amps right now: 223.0 A** (as of 2026-11-22 23:59:55 AEST, the historian's latest record).\n\nCurrent values (all healthy, primary tags):\n\n| Belt | Motor current now | 6-h average |\n|---|---|---|\n| CV-101 | 183.7 A | 173.0 A |\n| **CV-102** | **223.0 A** | **221.6 A** |\n| CV-103 | 201.5 A | 199.2 A |\n| CV-104 | 159.1 A | 166.2 A |\n\nCV-102 also leads over the trailing 6 hours (18:00\u201323:50 AEST, 10-min time-weighted averages), so this isn't a momentary spike \u2014 it's been consistently the heaviest-loaded belt.\n\n**Provenance**\n- Tags: `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site T\\Concentrator 1\\Crushing\\CV-10x|Motor Current` \u2014 points `ST1:1IT007` (CV-101), `ST1:1IT011` (CV-102), `ST1:1IT015` (CV-103), `ST1:1IT019` (CV-104), unit A, all health `ok`.\n- \"Now\" via latest historian values; chart window via summary mode, 10-min interval, time-weighted average.\n- The Primary Crusher's own motor current (82.3 A) was excluded \u2014 you asked about the belts.\n\nChart saved to `crushing_belt_current.png` in the current folder.",
+  "stopped": ""
+ },
+ "t10/1": {
+  "calls": 7,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__browse_asset",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site W\\Concentrator 3\\Flotation\\Rougher Cell 1|Froth Depth",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site W\\Concentrator 3\\Flotation\\Rougher Cell 2|Froth Depth",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site W\\Concentrator 3\\Flotation\\Rougher Cell 3|Froth Depth",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site W\\Concentrator 3\\Flotation\\Rougher Cell 4|Froth Depth",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site W\\Concentrator 3\\Flotation\\Rougher Cell 5|Froth Depth",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site W\\Concentrator 3\\Flotation\\Rougher Cell 6|Froth Depth"
+  ],
+  "png": [
+   "rougher_froth_depth.png"
+  ],
+  "seconds": 32.7,
+  "answer": "**Rougher Cell 6 had the deepest froth on average last week** \u2014 518.7 mm, though it was a near-tie with Rougher 4 (517.7 mm).\n\n| Rougher | 7-day avg froth depth | Range |\n|---|---|---|\n| **Rougher 6** | **518.7 mm** | 503\u2013680 mm |\n| Rougher 4 | 517.7 mm | 503\u2013566 mm |\n| Rougher 2 | 517.4 mm | 505\u2013530 mm |\n| Rougher 5 | 517.3 mm | 504\u2013529 mm |\n| Rougher 3 | 517.3 mm | 505\u2013529 mm |\n| Rougher 1 | 314.4 mm | 282\u2013690 mm |\n\nRougher 1 ran clearly shallower than the other five, which all held a tight band around ~517 mm.\n\n**Provenance**\n- Tags: `SITEW.CONC3.FLT.FC1\u2013FC6.FROTH` (catalogue ids 34335, 34339, 34343, 34347, 34351, 34355), primary variants, all health `ok`, unit mm\n- Scope: `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site W\\Concentrator 3\\Flotation\\Rougher Cell 1\u20136`\n- Window: 2026-11-16 00:00 \u2192 2026-11-22 23:00 AEST (relative `*-7d` to `*` against the historian clock of 2026-11-23)\n- Basis: time-weighted hourly summaries (168 intervals per tag, 504 underlying values each)\n- Chart: `rougher_froth_depth.png` in the current folder (hourly traces + 7-day averages)",
+  "stopped": ""
+ },
+ "t10/2": {
+  "calls": 9,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__find_assets",
+   "mcp__historian__browse_asset",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash",
+   "bash",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site W\\Concentrator 3\\Flotation\\Rougher Cell 1|Froth Depth",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site W\\Concentrator 3\\Flotation\\Rougher Cell 2|Froth Depth",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site W\\Concentrator 3\\Flotation\\Rougher Cell 3|Froth Depth",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site W\\Concentrator 3\\Flotation\\Rougher Cell 4|Froth Depth",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site W\\Concentrator 3\\Flotation\\Rougher Cell 5|Froth Depth",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site W\\Concentrator 3\\Flotation\\Rougher Cell 6|Froth Depth"
+  ],
+  "png": [
+   "siteW_conc3_rouger_froth_depth_week.png"
+  ],
+  "seconds": 60.6,
+  "answer": "**Rougher Cell 6** had the deepest froth on average last week.\n\n## Result (last 7 days, 2026-11-16 \u2192 2026-11-22, time-weighted)\n\n| Rougher | Avg froth depth |\n|---|---|\n| **Cell 6** | **456.0 mm** \u2190 deepest |\n| Cell 4 | 455.2 mm |\n| Cell 5 | 455.1 mm |\n| Cell 2 | 455.1 mm |\n| Cell 3 | 455.0 mm |\n| Cell 1 | 333.8 mm (clearly the shallowest) |\n\nCells 2\u20136 are within ~1 mm of each other all week (Cell 6 leads by less than 1 mm), while Cell 1 ran about 120 mm shallower \u2014 worth a look if the rougher bank should be balanced.\n\n## Provenance\n- **Tags:** `Rougher Cell N|Froth Depth` under `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site W\\Concentrator 3\\Flotation`, points `SITEW.CONC3.FLT.FC1\u2013FC6.FROTH`, unit mm, all primary variant, health `ok`, no exclusions.\n- **Window:** `*-7d` to `t` (2026-11-16 00:00 \u2192 2026-11-22 23:00 AEST, historian's clock at 2026-11-23 00:00).\n- **Basis:** summary mode, 1h intervals, time-weighted; 720 records/hour per tag (uniform), so no zero/downtime gaps affected the averages.\n- **Data:** dataset `20261123-185732-9823df.csv`.\n- **Chart:** `siteW_conc3_rouger_froth_depth_week.png` (saved in the current folder) \u2014 hourly time-weighted froth depth for all six roughers.",
+  "stopped": ""
+ },
+ "t10/3": {
+  "calls": 6,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site W\\Concentrator 3\\Flotation\\Rougher Cell 1|Froth Depth",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site W\\Concentrator 3\\Flotation\\Rougher Cell 2|Froth Depth",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site W\\Concentrator 3\\Flotation\\Rougher Cell 3|Froth Depth",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site W\\Concentrator 3\\Flotation\\Rougher Cell 4|Froth Depth",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site W\\Concentrator 3\\Flotation\\Rougher Cell 5|Froth Depth",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site W\\Concentrator 3\\Flotation\\Rougher Cell 6|Froth Depth"
+  ],
+  "png": [
+   "rougher_froth_depth_site_w_conc3.png"
+  ],
+  "seconds": 32.1,
+  "answer": "**Rougher 6 had the deepest froth on average last week** \u2014 **518.7 mm** (time-weighted average, 16\u201322 Nov 2026).\n\nFull ranking (weekly average froth depth):\n\n| Rougher | Avg (mm) | Min | Max |\n|---|---|---|---|\n| **6** | **518.7** | 502.9 | 679.9 |\n| 4 | 517.7 | 503.4 | 565.7 |\n| 2 | 517.4 | 504.8 | 530.4 |\n| 3 | 517.3 | 505.2 | 529.2 |\n| 5 | 517.3 | 504.2 | 529.5 |\n| 1 | 314.4 | 282.2 | 690.2 |\n\nRoughers 2\u20136 were tightly clustered around ~517\u2013519 mm; Rougher 6 edges them out (with a spike to ~680 mm). Rougher 1 ran much shallower at ~314 mm, so it stands out in the opposite direction \u2014 worth a look if it's supposed to match the others.\n\n**Provenance**\n- Tags (all primary, health `ok`, unit mm): `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site W\\Concentrator 3\\Flotation\\Rougher Cell 1\u20136|Froth Depth`, points `SITEW.CONC3.FLT.FC1\u2013FC6.FROTH` (catalogue ids 34335, 34339, 34343, 34347, 34351, 34355)\n- Window: 2026-11-16 00:00 \u2192 2026-11-23 00:00 AEST (the completed week before the historian's now of 2026-11-23); 504 hourly values per tag, no gaps\n- Basis: time-weighted hourly averages (summary mode), then averaged over the week\n- Chart saved as `rougher_froth_depth_site_w_conc3.png` in the current folder",
+  "stopped": ""
+ },
+ "t11/1": {
+  "calls": 6,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank 1|Dissolved Oxygen",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank 2|Dissolved Oxygen",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank 3|Dissolved Oxygen",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank 4|Dissolved Oxygen",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank 5|Dissolved Oxygen",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank 6|Dissolved Oxygen",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank 7|Dissolved Oxygen",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank 8|Dissolved Oxygen"
+  ],
+  "png": [
+   "leach_tank_do_30d.png"
+  ],
+  "seconds": 26.7,
+  "answer": "**Leach Tank 5 had the lowest average DO over the past month: 3.70 ppm** (vs. 3.75 ppm for Tank 7, a very close second).\n\n| Tank | 30-day avg DO (ppm) |\n|---|---|\n| **Leach Tank 5** | **3.70** |\n| Leach Tank 7 | 3.75 |\n| Leach Tank 4 | 4.08 |\n| Leach Tank 3 | 4.31 |\n| Leach Tank 6 | 4.53 |\n| Leach Tank 8 | 6.49 |\n| Leach Tank 1 | 9.04 |\n| Leach Tank 2 | 21.52 |\n\n**Provenance**\n- **Tags:** primary `Dissolved Oxygen` per tank under `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank N` \u2014 points `SL2:4AT002, 4AT006, 4AT010, 4AT014, 4AT018, 4AT022, 4AT026, 4AT030`. All 8 healthy (`ok`, primary variant, ppm).\n- **Window:** 2026-10-24 \u2192 2026-11-22 (30 days back from historian \"now\" 2026-11-23, Australia/Brisbane), 30 daily values per tank.\n- **Basis:** time-weighted daily averages (summary mode, 1d interval); month average is the mean of those daily averages.\n- **Excluded:** the `SL2:4AT022.QC` QC variant of Tank 6 \u2014 QC variant, not needed. No tags were unusable.\n\nChart saved to `leach_tank_do_30d.png` in the current folder.",
+  "stopped": ""
+ },
+ "t11/2": {
+  "calls": 5,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank 1|Dissolved Oxygen",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank 2|Dissolved Oxygen",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank 3|Dissolved Oxygen",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank 4|Dissolved Oxygen",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank 5|Dissolved Oxygen",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank 6|Dissolved Oxygen",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank 7|Dissolved Oxygen",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank 8|Dissolved Oxygen"
+  ],
+  "png": [
+   "leach_tank_do_30d.png"
+  ],
+  "seconds": 29.5,
+  "answer": "**Leach Tank 5 had the lowest average DO over the past month: 3.98 ppm** (time-weighted, 2026-10-24 \u2192 2026-11-22).\n\nMonthly averages, lowest to highest:\n\n| Tank | Avg DO (ppm) | Min | Max |\n|---|---|---|---|\n| **Tank 5** | **3.98** | 0.22 | 8.66 |\n| Tank 7 | 4.04 | 0.19 | 8.60 |\n| Tank 3 | 4.32 | \u22120.63 | 12.78 |\n| Tank 4 | 4.35 | 0.20 | 8.62 |\n| Tank 6 | 4.58 | \u22120.57 | 12.87 |\n| Tank 8 | 6.57 | 0.79 | 18.96 |\n| Tank 1 | 9.24 | 0.25 | 22.23 |\n| Tank 2 | 21.51 | 19.91 | 21.66 |\n\nTanks 5 and 7 are very close (3.98 vs 4.04 ppm) and both dip near zero on several days, but Tank 5 is the lower over the full window. Tank 2 runs consistently high (~21.5 ppm, barely varying).\n\n**Provenance**\n- Tags: primary `Dissolved Oxygen` per tank, `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank N` \u2014 points `SL2:4AT002/006/010/014/018/022/026/030`, all in ppm, all healthy (`ok`). The one QC variant found (Tank 6, `SL2:4AT022.QC`) was not used.\n- Window: `*-30d` to now (historian now = 2026-11-23 00:00 AEST), resolved to 2026-10-24 \u2192 2026-11-22, 30 daily intervals.\n- Basis: time-weighted daily averages from the historian (summary mode, 1d interval); dataset `20261123-185830-083f7b`.\n\nChart saved as `leach_tank_do_30d.png` in the current folder.",
+  "stopped": ""
+ },
+ "t11/3": {
+  "calls": 5,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank 1|Dissolved Oxygen",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank 2|Dissolved Oxygen",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank 3|Dissolved Oxygen",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank 4|Dissolved Oxygen",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank 5|Dissolved Oxygen",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank 6|Dissolved Oxygen",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank 7|Dissolved Oxygen",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank 8|Dissolved Oxygen"
+  ],
+  "png": [
+   "leach_tank_do_30d.png"
+  ],
+  "seconds": 29.4,
+  "answer": "**Leach Tank 5 had the lowest average DO over the past month: 3.98 ppm** (time-weighted), narrowly below Leach Tank 7 at 4.04 ppm.\n\nFull ranking (30-day average, ppm):\n\n| Tank | Avg DO |\n|---|---|\n| **Leach Tank 5** | **3.98** |\n| Leach Tank 7 | 4.04 |\n| Leach Tank 4 | 4.35 |\n| Leach Tank 3 | 4.32 |\n| Leach Tank 6 | 4.58 |\n| Leach Tank 8 | 6.57 |\n| Leach Tank 1 | 9.24 |\n| Leach Tank 2 | 21.51 |\n\n**Provenance**\n- Tags: primary `Dissolved Oxygen` per tank, `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site L\\Concentrator 2\\Leach\\Leach Tank N` \u2014 points `SL2:4AT002/006/010/014/018/022/026/030`, all healthy, unit ppm.\n- Window: 2026-10-24 \u2192 2026-11-22 (relative `*-30d` from historian now 2026-11-23), Australia/Brisbane time zone.\n- Basis: time-weighted daily averages (summary mode, 1d interval); the table uses the historian's time-weighted means.\n- Chart saved: `leach_tank_do_30d.png` in the current folder (daily traces with 30-day means, plus a ranking bar chart).\n- No tags excluded; the Tank 6 QC variant was not used (primary preferred).",
+  "stopped": ""
+ },
+ "t12/1": {
+  "calls": 8,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__get_golden_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "mcp__historian__get_timeseries",
+   "mcp__historian__get_timeseries",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site O\\Concentrator 4\\Utilities\\Crushing Supply|Active Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site O\\Concentrator 4\\Utilities\\Flotation Supply|Active Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site O\\Concentrator 4\\Utilities\\Grinding Supply|Active Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site O\\Concentrator 4\\Utilities\\Leach Supply|Active Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site O\\Concentrator 4\\Utilities\\Main Incomer|Energy"
+  ],
+  "png": [
+   "conc4_area_power_2026-11-22.png"
+  ],
+  "seconds": 66.4,
+  "answer": "**Grinding (PM3) clocked up the most \u2014 ~305,150 kWh yesterday (22 Nov 2026, AEST)**, well ahead of the other three area meters:\n\n| Area meter | kWh (22 Nov) | Share |\n|---|---|---|\n| **Grinding Supply (PM3)** | **305,150** | 69% |\n| Flotation Supply (PM4) | 97,510 | 22% |\n| Leach Supply (PM5) | 29,285 | 7% |\n| Crushing Supply (PM2) | 8,645 | 2% |\n| Four-area total | 440,591 | |\n\nSanity check: the Main Incomer energy counter (PM1) rose 445,311.60 \u2192 445,774.16 MWh over the same day = 462,556 kWh, i.e. ~5% above the four areas combined \u2014 consistent with other conc 4 loads not on these four meters.\n\n**Provenance**\n- Tags: `...\\Site O\\Concentrator 4\\Utilities\\<area>\\Active Power` \u2014 points `SITEO.CONC4.UTL.PM2/PM3/PM4/PM5.KW` (kW, all healthy/primary).\n- Basis: kWh = sum of 48 hourly time-weighted averages, 2026-11-22 00:00 \u2192 23:00, summary mode, 1h interval.\n- Cross-check: `SITEO.CONC4.UTL.PM1.MWH` (Main Incomer | Energy, MWh, healthy) raw records at 00:00 and 00:00+1d.\n- Not used: `SITEO.CONC4.UTL.PM3.MWH` (Grinding | Energy) \u2014 health `no_data` (no records since 2024-04-20), so grinding kWh was integrated from its healthy kW tag instead.\n\nChart saved to `conc4_area_power_2026-11-22.png` in the current folder.",
+  "stopped": ""
+ },
+ "t12/2": {
+  "calls": 9,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__get_golden_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "mcp__historian__get_timeseries",
+   "mcp__historian__get_tag_details",
+   "bash",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site O\\Concentrator 4\\Utilities\\Crushing Supply|Active Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site O\\Concentrator 4\\Utilities\\Crushing Supply|Energy",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site O\\Concentrator 4\\Utilities\\Flotation Supply|Active Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site O\\Concentrator 4\\Utilities\\Flotation Supply|Energy",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site O\\Concentrator 4\\Utilities\\Grinding Supply|Active Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site O\\Concentrator 4\\Utilities\\Grinding Supply|Energy",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site O\\Concentrator 4\\Utilities\\Leach Supply|Active Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site O\\Concentrator 4\\Utilities\\Leach Supply|Energy"
+  ],
+  "png": [
+   "siteO_conc4_area_power_2026-11-22.png"
+  ],
+  "seconds": 48.0,
+  "answer": "**Grinding Supply (PM3) clocked up the most: ~305,150 kWh (\u2248305.2 MWh) on 2026-11-22** \u2014 roughly 3\u00d7 the next highest.\n\n| Area meter | Point | kWh (22 Nov, site time) |\n|---|---|---|\n| **Grinding Supply (PM3)** | `SITEO.CONC4.UTL.PM3.KW` | **305,150** |\n| Flotation Supply (PM4) | `SITEO.CONC4.UTL.PM4.KW` | 97,511 |\n| Crushing Supply (PM2) | `SITEO.CONC4.UTL.PM2.KW` | 8,645 |\n| Leach Supply (PM5) | `SITEO.CONC4.UTL.PM5.KW` | 29,285 |\n\n**Provenance**\n- Window: 2026-11-22 00:00 \u2192 2026-11-23 00:00 Australia/Brisbane (historian \"now\" is 2026-11-23 00:00, so \"yesterday\" = 22 Nov).\n- Basis: 1-hour time-weighted average kW, summed over 24 full hours (all four tags healthy/primary, 24/24 hours present).\n- Cross-check: the three healthy cumulative energy counters (PM2/PM4/PM5 `.MWH`) agree within rounding (8.64, 97.56, 29.31 MWh).\n- Caveat: the Grinding energy counter `SITEO.CONC4.UTL.PM3.MWH` is `no_data` (last record 2024-04-20), so Grinding's figure is the kW integral rather than the meter's own kWh register.\n- Excluded: PM1 (Main Incomer) \u2014 it's the total, not one of the four area meters.\n\nChart saved: `siteO_conc4_area_power_2026-11-22.png`",
+  "stopped": ""
+ },
+ "t12/3": {
+  "calls": 8,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__get_golden_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__browse_asset",
+   "mcp__historian__get_timeseries",
+   "bash",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site O\\Concentrator 4\\Utilities\\Crushing Supply|Energy",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site O\\Concentrator 4\\Utilities\\Flotation Supply|Energy",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site O\\Concentrator 4\\Utilities\\Grinding Supply|Energy",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site O\\Concentrator 4\\Utilities\\Leach Supply|Energy"
+  ],
+  "png": [
+   "conc4_area_meters_2026-11-22.png"
+  ],
+  "seconds": 51.2,
+  "answer": "**Flotation Supply (PM4) clocked up by far the most \u2014 about 97,557 kWh (~97.6 MWh) on 2026-11-22.**\n\n| Area meter | Point | Energy 2026-11-22 |\n|---|---|---|\n| **Flotation Supply** | `SITEO.CONC4.UTL.PM4.MWH` | **\u2248 97,557 kWh** |\n| Leach Supply | `SITEO.CONC4.UTL.PM5.MWH` | \u2248 29,310 kWh |\n| Crushing Supply | `SITEO.CONC4.UTL.PM2.MWH` | \u2248 8,642 kWh |\n| Grinding Supply | `SITEO.CONC4.UTL.PM3.MWH` | **no data** (health `no_data`; last record 2024-04-20) |\n\n**Provenance**\n- Tags: the four area meters under `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site O\\Concentrator 4\\Utilities` (Crushing/Grinding/Flotation/Leach Supply | Energy). The fifth meter there, Main Incomer (PM1), is the concentrator total, not an area meter, so it was excluded.\n- Units: cumulative MWh registers; daily kWh computed as end-of-day reading minus start-of-day reading (register difference, not a sum of hourly values).\n- Window: 2026-11-22 00:00 \u2192 2026-11-23 00:00 Australia/Brisbane (historian \"now\" is 2026-11-23 00:00, so \"yesterday\" = 2026-11-22).\n- Basis: summary mode, 1-hour intervals, time-weighted; PM3/PM4/PM5 each returned 96 hourly points with good quality.\n- **Not usable:** Grinding Supply energy (PM3) has no data at all in the window \u2014 if Grinding's load matters, the Main Incomer (PM1) total is the nearest healthy alternative.\n\nChart saved: `conc4_area_meters_2026-11-22.png` (bar chart of daily kWh + cumulative register traces).",
+  "stopped": ""
+ },
+ "t13/1": {
+  "calls": 9,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__find_assets",
+   "mcp__historian__get_golden_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "mcp__historian__get_timeseries",
+   "read",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 1\\Grinding\\SAG Mill|Motor Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 2\\Grinding\\SAG Mill|Motor Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 3\\Grinding\\SAG Mill|Motor Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 4\\Grinding\\SAG Mill|Motor Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 5\\Grinding\\SAG Mill|Motor Power"
+  ],
+  "png": [
+   "site_j_mill_power_morning.png"
+  ],
+  "seconds": 48.9,
+  "answer": "Chart saved to `site_j_mill_power_morning.png` in the current folder.\n\n## Mill power at Site J, this morning (22 Nov 2026, 00:00\u201309:00 AEST)\n\nSite J has 5 concentrators, each with one SAG mill \u2014 the big grinding mill. The headline: **Concentrator 2's SAG was down from midnight until 03:45, then started and ran up to ~6.7 MW by 08:30.** The other four ran steadily all morning:\n\n| Mill | Point | Morning avg | Range |\n|---|---|---|---|\n| C1 SAG | `SJC1_SAG1_PWR` | 5.95 MW | 5.57\u20136.20 |\n| C2 SAG | `SJC2_SAG1_PWR` | 3.55 MW (dragged down by 3h 45m at 0 MW) | 0.0\u20136.69 |\n| C3 SAG | `SJC3_SAG1_PWR` | 6.23 MW | 6.07\u20136.36 |\n| C4 SAG | `SJC4_SAG1_PWR` | 6.05 MW | 5.96\u20136.12 |\n| C5 SAG | `SJC5_SAG1_PWR` | 5.56 MW | 5.35\u20135.76 |\n\nOnce C2 came back online at 04:00 (~6.4 MW), all five SAGs were running, with C2 actually finishing the morning as the highest-drawn mill (6.69 MW at 08:30).\n\n**Provenance:** tags are the primary \"Motor Power\" points under `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator N\\Grinding\\SAG Mill` (all health `ok`, unit MW). Window 2026-11-22 00:00\u201309:00 AEST, 15-min time-weighted averages (36 intervals, dataset `20261123-184615-2af9b2`). \"This morning\" interpreted as the most recent morning, since the historian's clock is at 2026-11-23 00:00 AEST.\n\nNotes:\n- I charted SAG mills (the main mills). Each concentrator also has ball mills (e.g. `SJC1_BM1_PWR`, 3.4 MW last value) \u2014 happy to add those or any specific mill if you want.\n- One stale point, `SJC1_BM2_PWR_OLD` (Ball Mill 2, C1), is `broken_ref` with no data and was not used.",
+  "stopped": ""
+ },
+ "t13/2": {
+  "calls": 8,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__get_golden_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "mcp__historian__get_timeseries",
+   "mcp__historian__get_timeseries",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 1\\Grinding\\Ball Mill 1|Motor Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 1\\Grinding\\SAG Mill|Motor Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 2\\Grinding\\Ball Mill 1|Motor Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 2\\Grinding\\Ball Mill 2|Motor Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 2\\Grinding\\SAG Mill|Motor Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 3\\Grinding\\Ball Mill 1|Motor Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 3\\Grinding\\Ball Mill 2|Motor Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 3\\Grinding\\SAG Mill|Motor Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 4\\Grinding\\Ball Mill 1|Motor Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 4\\Grinding\\Ball Mill 2|Motor Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 4\\Grinding\\SAG Mill|Motor Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 5\\Grinding\\Ball Mill 1|Motor Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 5\\Grinding\\Ball Mill 2|Motor Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 5\\Grinding\\SAG Mill|Motor Power"
+  ],
+  "png": [
+   "site_j_mill_power_morning_2026-11-22.png"
+  ],
+  "seconds": 54.3,
+  "answer": "**Site J mill power this morning (22 Nov 2026, 06:00\u201312:00 AEST)** \u2014 the historian's clock is at 2026-11-23 00:00, so the most recent morning is yesterday's.\n\n**Everything is running normally and steady.** All 14 mill motors at Site J (5 SAG + 9 ball mills) drew essentially flat power all morning, with a site total of **~45.1 MW** (range 44.8\u201345.5 MW) \u2014 no trips, no load swings, no anomalies.\n\nBy mill (time-weighted 15-min averages, MW):\n\n| Mill | Morning avg | Range |\n|---|---|---|\n| C1 SAG | 6.07 | 5.97\u20136.17 |\n| C2 SAG | 6.50 | 6.17\u20136.69 |\n| C3 SAG | 6.15 | 6.06\u20136.29 |\n| C4 SAG | 6.05 | 5.96\u20136.13 |\n| C5 SAG | 5.67 | 5.59\u20135.76 |\n| C1 BM1 | 3.18 | 3.07\u20133.28 |\n| C2 BM1 | 2.50 | 2.40\u20132.56 |\n| C2 BM2 | 2.93 | 2.87\u20132.98 |\n| C3 BM1 | 2.86 | 2.79\u20132.90 |\n| C3 BM2 | 3.21 | 3.16\u20133.25 |\n| C4 BM1 | 2.53 | 2.46\u20132.59 |\n| C4 BM2 | 3.40 | 3.37\u20133.46 |\n| C5 BM1 | 2.24 | 2.19\u20132.30 |\n| C5 BM2 | 2.79 | 2.73\u20132.84 |\n\nC2's SAG is the biggest single consumer (~6.5 MW); C5's mills run a bit lighter than the others.\n\n**Provenance**\n- Tags: primary `Motor Power` tags per mill, e.g. `SJC1_SAG1_PWR` (\u2026Site J\\Concentrator 1\\Grinding\\SAG Mill|Motor Power), `SJC1_BM1_PWR`, etc. \u2014 14 tags, all health `ok`, units MW.\n- Window: 2026-11-22 06:00\u201312:00 +10:00 (Australia/Brisbane), summary mode, 15-min interval, time-weighted averages; 24 values per tag, no gaps.\n- Not used: `SJC1_BM2_PWR_OLD` (Concentrator 1 Ball Mill 2) \u2014 health `broken_ref`, no data. C1 Ball Mill 2's current power is therefore not in this chart; if you need it, the nearest alternative would be the C1 main incomer (`SJC1_PM1_KW`, MW, ok).\n\nChart saved as **`site_j_mill_power_morning_2026-11-22.png`** in the current folder (dashed black line = site total, right axis).",
+  "stopped": ""
+ },
+ "t13/3": {
+  "calls": 9,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__get_golden_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__browse_asset",
+   "mcp__historian__get_timeseries",
+   "bash",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 1\\Utilities\\Grinding Supply|Active Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 2\\Utilities\\Grinding Supply|Active Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 3\\Utilities\\Grinding Supply|Active Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 4\\Utilities\\Grinding Supply|Active Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site J\\Concentrator 5\\Utilities\\Grinding Supply|Active Power"
+  ],
+  "png": [
+   "site_j_mill_power.png"
+  ],
+  "seconds": 48.4,
+  "answer": "**Site J mill power, morning of 22 Nov 2026 (06:00\u201312:00 AEST)** \u2014 the historian's clock is at 2026-11-23 00:00 AEST, so \"this morning\" is the most recent morning on record.\n\nAll five concentrators ran steadily all morning, with no trips or excursions:\n\n| Circuit (Grinding Supply, Active Power) | Morning average | Range |\n|---|---|---|\n| Conc 1 \u2014 `SJC1_PM3_KW` | 10.5 MW | 10.3\u201310.8 MW |\n| Conc 2 \u2014 `SJC2_PM3_KW` | 13.4 MW | 12.9\u201313.8 MW |\n| Conc 3 \u2014 `SJC3_PM3_KW` | 13.5 MW | 13.0\u201313.8 MW |\n| Conc 4 \u2014 `SJC4_PM3_KW` | 13.6 MW | 13.4\u201313.9 MW |\n| Conc 5 \u2014 `SJC5_PM3_KW` | 12.2 MW | 11.9\u201312.5 MW |\n| **Site J total** | **\u224863.2 MW** | |\n\nConc 1 is running a bit light (its SAG at ~6.5 MW and a single ball mill at ~3.4 MW vs ~13 MW on the other circuits), while Concs 2\u20134 are clustered tightly at ~13.4\u201313.6 MW.\n\nChart saved: `site_j_mill_power.png` (current folder).\n\n**Provenance:** tags `SJC1\u2013SJC5_PM3_KW` (Utilities \u2192 Grinding Supply \u2192 Active Power, MW, primary, health ok) \u2014 the total metered at each grinding supply, rather than summing individual SAG/ball-mill motor tags. Window 2026-11-22 06:00\u201312:00 AEST, 15-min time-weighted averages (24 intervals), dataset `20261123-191500-d3fe9a`. No tags were unusable; if you wanted a single specific mill (e.g. just the SAGs) instead of the whole grinding circuits, say the word and I'll pull those.",
+  "stopped": ""
+ },
+ "t14/1": {
+  "calls": 5,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site N\\Concentrator 2\\Flotation\\Cleaner Concentrate|Au",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site N\\Concentrator 2\\Flotation\\Final Concentrate|Au",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site N\\Concentrator 2\\Flotation\\Final Tail|Au",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site N\\Concentrator 2\\Flotation\\Rougher Concentrate|Au",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site N\\Concentrator 2\\Flotation\\Rougher Feed|Au",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site N\\Concentrator 2\\Flotation\\Rougher Tail|Au"
+  ],
+  "png": [
+   "snc2_gold_grade_2026-11-22.png"
+  ],
+  "seconds": 32.8,
+  "answer": "Done. Chart saved to `snc2_gold_grade_2026-11-22.png` in the current folder.\n\n## Gold grade, Site N Concentrator 2 \u2014 yesterday (2026-11-22, 00:00\u201324:00 AEST)\n\n\"Gold grade\" isn't a single tag at this plant \u2014 the analyser reports Au at six points in the flotation circuit. Daily time-weighted averages (g/t Au):\n\n| Stage | Tag (point) | Daily avg | Range |\n|---|---|---|---|\n| Rougher Feed | `...\\Flotation\\Rougher Feed\\Au` (`SNC2_AN1_AU`) | **6.87** | 5.85\u20137.61 |\n| Rougher Concentrate | `SNC2_AN2_AU` | 15.75 | 0.00\u201320.15 |\n| Rougher Tail | `SNC2_AN3_AU` | 1.54 | 0.88\u20132.19 |\n| Cleaner Concentrate | `SNC2_AN4_AU` | 28.79 | 25.58\u201332.09 |\n| **Final Concentrate** | `SNC2_AN5_AU` | **42.17** | 39.74\u201344.94 |\n| Final Tail | `SNC2_AN6_AU` | 2.44 | 1.52\u20133.34 |\n\nIf by \"gold grade\" you mean the product grade, that's the **Final Concentrate: ~42.2 g/t Au** for the day (last reading 42.31 g/t). If you meant the feed grade, it's ~6.9 g/t.\n\n**Provenance:** tags `SNC2_AN1_AU`\u2013`SNC2_AN6_AU` under `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site N\\Concentrator 2\\Flotation\\...|Au`, all primary analyser tags with health `ok`, units g/t, window 2026-11-22 00:00\u201324:00 Australia/Brisbane, summary mode at 1h intervals (time-weighted averages, 24 values each). Dataset: `datasets/20261123-184656-291ea8.csv`.\n\nOne caveat: the Rougher Concentrate series dips to 0.0 at some point in the day \u2014 that looks like a missed/blank assay rather than a real zero, so treat that average (15.75) with care.",
+  "stopped": ""
+ },
+ "t14/2": {
+  "calls": 6,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site N\\Concentrator 2\\Flotation\\Cleaner Concentrate|Au",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site N\\Concentrator 2\\Flotation\\Final Concentrate|Au",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site N\\Concentrator 2\\Flotation\\Final Tail|Au",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site N\\Concentrator 2\\Flotation\\Rougher Concentrate|Au",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site N\\Concentrator 2\\Flotation\\Rougher Feed|Au",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site N\\Concentrator 2\\Flotation\\Rougher Tail|Au"
+  ],
+  "png": [
+   "snc2_gold_grade_2026-11-22.png"
+  ],
+  "seconds": 47.9,
+  "answer": "Done. \"Yesterday\" is **2026-11-22** (the historian's clock is 2026-11-23 00:00 AEST). \"Gold grade\" isn't a single tag at Conc 2 \u2014 there are six Au analyser tags, one per stream \u2014 so here are all of them for the day:\n\n| Stream | Tag (point) | Daily avg (g/t) | Min | Max |\n|---|---|---|---|---|\n| Rougher Feed (head) | `SNC2_AN1_AU` | **6.87** | 5.85 | 7.61 |\n| Rougher Concentrate | `SNC2_AN2_AU` | 15.75 | 0.00* | 20.15 |\n| Rougher Tail | `SNC2_AN3_AU` | 1.54 | 0.88 | 2.19 |\n| Cleaner Concentrate | `SNC2_AN4_AU` | 28.79 | 25.58 | 32.09 |\n| Final Concentrate | `SNC2_AN5_AU` | **42.17** | 39.74 | 44.94 |\n| Final Tail | `SNC2_AN6_AU` | 2.44 | 1.52 | 3.34 |\n\n\\* The Rougher Concentrate's 0.0 minimum is a single bad/missed analyser reading, not a real grade \u2014 the tag's health is `ok` overall.\n\nIf you meant one specific stream: the **head grade** (Rougher Feed) averaged **6.87 g/t Au**, and the **final concentrate grade** averaged **42.17 g/t Au**.\n\n**Provenance**\n- Tags: `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site N\\Concentrator 2\\Flotation\\<stream>\\Au` (points `SNC2_AN1_AU` \u2026 `SNC2_AN6_AU`), all primary, health `ok`, unit g/t\n- Window: 2026-11-22 00:00 \u2192 2026-11-23 00:00 (Australia/Brisbane), 24 hourly intervals, 72 readings per tag\n- Basis: time-weighted hourly averages (summary mode)\n- Chart saved to `snc2_gold_grade_2026-11-22.png` in the current folder; raw data in `\u2026/datasets/20261123-190051-9d347c.csv`",
+  "stopped": ""
+ },
+ "t14/3": {
+  "calls": 6,
+  "tools": [
+   "read",
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site N\\Concentrator 2\\Flotation\\Cleaner Concentrate|Au",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site N\\Concentrator 2\\Flotation\\Final Concentrate|Au",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site N\\Concentrator 2\\Flotation\\Final Tail|Au",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site N\\Concentrator 2\\Flotation\\Rougher Concentrate|Au",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site N\\Concentrator 2\\Flotation\\Rougher Feed|Au",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site N\\Concentrator 2\\Flotation\\Rougher Tail|Au"
+  ],
+  "png": [
+   "snc2_gold_grade_2026-11-22.png"
+  ],
+  "seconds": 35.7,
+  "answer": "Here's yesterday's (22 Nov 2026, Australia/Brisbane) gold grade for Site N, Concentrator 2:\n\n**Final concentrate (product) grade: 42.17 g/t Au** (time-weighted daily average; range 39.74\u201344.94 g/t)\n\nFull picture across the flotation circuit (daily time-weighted averages):\n\n| Stream | Au grade (g/t) | Min | Max |\n|---|---|---|---|\n| Rougher feed | 6.87 | 5.85 | 7.61 |\n| Rougher concentrate | 15.75 | 0.00 | 20.15 |\n| Rougher tail | 1.54 | 0.88 | 2.19 |\n| Cleaner concentrate | 28.79 | 25.58 | 32.09 |\n| **Final concentrate** | **42.17** | 39.74 | 44.94 |\n| Final tail | 2.44 | 1.52 | 3.34 |\n\n**Provenance**\n- Tags: `SNC2_AN1_AU` \u2026 `SNC2_AN6_AU` (catalogue ids 20349, 20354, 20360, 20365, 20370, 20375) under `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site N\\Concentrator 2\\Flotation\\\u2026`, all primary analyser tags, health **ok**, unit g/t.\n- Window: 2026-11-22 00:00 \u2192 2026-11-23 00:00 +10:00 (historian \"now\" is 2026-11-23 00:00, so yesterday = 22 Nov).\n- Basis: summary mode, 1-hour intervals, time-weighted average (72 hourly values per tag). Dataset: `runs/r1/datasets/20261123-191537-601bc1.csv`.\n- Note: the rougher concentrate shows a 0.00 g/t dip at some hour \u2014 a single bad/blank assay sample rather than a trend.\n\nIf by \"gold grade\" you meant the **feed** grade (6.87 g/t) rather than the final concentrate, that number is in the table above \u2014 just say the word and I'll re-chart it.\n\nChart saved: `snc2_gold_grade_2026-11-22.png` in the current folder.",
+  "stopped": ""
+ },
+ "t15/1": {
+  "calls": 9,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__get_golden_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_current_values",
+   "mcp__historian__get_timeseries",
+   "bash",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator 1\\Utilities\\Raw Water|Flow",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator 2\\Utilities\\Raw Water|Flow",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator 3\\Utilities\\Raw Water|Flow",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator 5\\Utilities\\Raw Water|Flow"
+  ],
+  "png": [
+   "site_z_raw_water_flow.png"
+  ],
+  "seconds": 39.4,
+  "answer": "**Site Z raw water flow right now** (as of 2026-11-22 23:59:55 AEST, historian's latest record):\n\n| Concentrator | Point | Now (m\u00b3/h) | 24 h avg (m\u00b3/h) |\n|---|---|---|---|\n| Conc 1 | `SZC1_FM3_FLOW` | **0.0** \u26a0\ufe0f | 548 |\n| Conc 2 | `SZC2_FM3_FLOW` | **695.5** | 669 |\n| Conc 3 | `SZC3_FM3_FLOW` | **582.9** | 523 |\n| Conc 4 | `SZC4_FM3_FLOW_OLD` | *no data* | \u2014 |\n| Conc 5 | `SZC5_FM3_FLOW` | **667.4** | 673 |\n\n**Total (C1+C2+C3+C5): \u2248 1,946 m\u00b3/h**, excluding Conc 4.\n\nCaveats:\n- **Conc 1 reads 0.0** even though its tag is healthy and it averaged 548 m\u00b3/h over the past 24 h (and its SAG mill feed water is still 616 m\u00b3/h) \u2014 either the plant stopped drawing raw water in the last hour or the meter is misbehaving. Worth a look.\n- **Conc 4's raw water flow tag is `broken_ref`** (no data at all), so its contribution is missing from the total. Its totalised volume tag (`SZC4_FM3_TOT`) is healthy, so flow could be derived from it if you want.\n- There's no site-level water meter in the catalogue; water is metered per concentrator, so this is a sum of the four healthy raw-water meters.\n\n**Provenance:** golden \"raw water\" tags under `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator N\\Utilities\\Raw Water|Flow`, primary variants, health `ok` (except C4 `broken_ref`), units m\u00b3/h, window 2026-11-22 00:00 \u2192 23:00 AEST, time-weighted 1 h averages (dataset `20261123-184729-018abe.csv`); \"now\" values from `get_current_values`.\n\nChart saved: `site_z_raw_water_flow.png` (per-concentrator flow over the last 24 h with site total as background bars).",
+  "stopped": ""
+ },
+ "t15/2": {
+  "calls": 11,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__get_golden_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_current_values",
+   "mcp__historian__browse_asset",
+   "mcp__historian__search_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator 1\\Utilities\\Raw Water|Flow",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator 2\\Utilities\\Raw Water|Flow",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator 3\\Utilities\\Raw Water|Flow",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator 4\\Utilities\\Raw Water|Totalised Flow",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator 5\\Utilities\\Raw Water|Flow"
+  ],
+  "png": [
+   "site_z_raw_water_flow.png"
+  ],
+  "seconds": 48.4,
+  "answer": "**Site Z raw water right now (2026-11-23 00:00 AEST, historian's \"now\"): \u2248 2,546 m\u00b3/h total**\n\n| Concentrator | Tag (point) | Value |\n|---|---|---|\n| C1 | `Site Z\\Concentrator 1\\Utilities\\Raw Water\\Flow` (SZC1_FM3_FLOW) | **0.0 m\u00b3/h** \u2014 good quality, so C1 is genuinely drawing no raw water right now |\n| C2 | `Concentrator 2\\Utilities\\Raw Water\\Flow` (SZC2_FM3_FLOW) | 695.5 m\u00b3/h |\n| C3 | `Concentrator 3\\Utilities\\Raw Water\\Flow` (SZC3_FM3_FLOW) | 582.9 m\u00b3/h |\n| C4 | flow tag SZC4_FM3_FLOW_OLD is **broken_ref** \u2014 estimated from totaliser SZC4_FM3_TOT (healthy): 15,939,648 \u2192 15,940,248 m\u00b3 over the last hour | \u2248 600 m\u00b3/h (estimate) |\n| C5 | `Concentrator 5\\Utilities\\Raw Water\\Flow` (SZC5_FM3_FLOW) | 667.4 m\u00b3/h |\n\n**Provenance:** values are the latest historian records (all marked good), read at 2026-11-22 23:59:55+10:00. C4 is a raw-record totaliser delta over the last hour, not a live flow tag. There is no site-level raw water tag; these are the golden raw-water tags per concentrator, and I've summed them since no main incomer exists.\n\n**Caveats:** C1's zero is a valid reading but worth a look \u2014 it may be running on return water or the supply is down. Also, if you meant a different water stream (process water or SAG feed water \u2014 e.g. C1 SAG feed is 616 m\u00b3/h), say so and I'll pull those instead.\n\nChart saved: `site_z_raw_water_flow.png` in the current folder.",
+  "stopped": ""
+ },
+ "t15/3": {
+  "calls": 10,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__get_golden_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__browse_asset",
+   "mcp__historian__get_current_values",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator 1\\Utilities\\Raw Water|Flow",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator 2\\Utilities\\Raw Water|Flow",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator 3\\Utilities\\Raw Water|Flow",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator 5\\Utilities\\Raw Water|Flow"
+  ],
+  "png": [
+   "site_z_raw_water_flow.png"
+  ],
+  "seconds": 44.8,
+  "answer": "**Raw water flow at Site Z right now** (as of 2026-11-22 23:59:55 +10:00, the historian's latest record):\n\n| Concentrator | Point | Flow (m\u00b3/h) |\n|---|---|---|\n| C1 | `SZC1_FM3_FLOW` | **0.0** \u26a0\ufe0f |\n| C2 | `SZC2_FM3_FLOW` | **695.5** |\n| C3 | `SZC3_FM3_FLOW` | **582.9** |\n| C5 | `SZC5_FM3_FLOW` | **667.4** |\n| C4 | `SZC4_FM3_FLOW_OLD` | no data (tag is `broken_ref`) |\n\n**Total across the four working meters: \u2248 1,946 m\u00b3/h.**\n\nTwo things worth flagging:\n- **C1 is reading 0 m\u00b3/h** with good quality \u2014 but its 12 h average was ~412 m\u00b3/h, so this is a very recent drop (shutdown or flowmeter issue?).\n- **C4 has no usable raw-water flow tag** (broken reference). Nearest healthy alternatives: SAG feed water `SZC4_SAG1_H2O` at 544.5 m\u00b3/h, or process water `SZC4_FM1_FLOW` at 446.9 m\u00b3/h.\n\nProvenance: golden \"raw water\" tags under `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site Z\\Concentrator N\\Utilities\\Raw Water|Flow`, all health `ok`, units m\u00b3/h. Current values from `get_current_values`; chart uses 12 h of time-weighted hourly averages (1 h interval) from the historian.\n\nChart saved: `site_z_raw_water_flow.png` in the current folder.\n\nIf you meant a different water stream (process water or SAG mill feed water rather than raw water intake), tell me which and I'll pull those instead.",
+  "stopped": ""
+ },
+ "t16/1": {
+  "calls": 5,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 1\\Utilities\\Process Water Tank|Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 2\\Utilities\\Process Water Tank|Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 3\\Utilities\\Process Water Tank|Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 4\\Utilities\\Process Water Tank|Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 5\\Utilities\\Process Water Tank|Level"
+  ],
+  "png": [
+   "site_ab_tank_levels_weekend.png"
+  ],
+  "seconds": 37.7,
+  "answer": "Chart saved as `site_ab_tank_levels_weekend.png` in the current folder.\n\n## Tank levels at Site AB, weekend 21\u201322 Nov 2026 (Sat 00:00 \u2192 Mon 00:00 AEST)\n\nSite AB has five process water tanks (one per concentrator). All five were healthy and reporting throughout the weekend:\n\n| Tank | Weekend average | Range (min\u2013max) |\n|---|---|---|\n| Concentrator 1 | 43.5% | 21.9\u201360.6% |\n| Concentrator 2 | 53.3% | 32.5\u201366.5% |\n| Concentrator 3 | **20.5%** | 12.1\u201340.7% |\n| Concentrator 4 | 50.2% | 38.5\u201362.3% |\n| Concentrator 5 | 44.1% | 16.2\u201366.7% |\n\n**Read:** C2, C4 and C5 sat in a normal mid-range band with mild swings. **Concentrator 3 ran clearly low all weekend** \u2014 never above ~41% and touching ~12% at its lowest, so it was running a lot emptier than its neighbours. Concentrator 1 dipped to ~22% at one point but recovered; C5 had the widest swings of the group.\n\n**Provenance**\n- Tags: `Process Water Tank|Level` at each concentrator, points `SAB1:9LT026` \u2026 `SAB5:9LT026` (catalogue ids 41593, 41897, 42206, 42508, 42816), unit %, all health `ok`, primary variants.\n- Window: 2026-11-21 00:00 \u2192 2026-11-23 00:00 Australia/Brisbane (weekend relative to historian's now, Mon 2026-11-23 00:00 AEST).\n- Basis: time-weighted hourly averages (summary mode, 48 intervals), dataset `20261123-184810-21bebd`.\n\nNote: the site also has reagent tank levels (frother, depressant, activator, cyanide, lime). I assumed \"the tank level\" means the process water tanks \u2014 say the word if you wanted one of the reagent tanks instead.",
+  "stopped": ""
+ },
+ "t16/2": {
+  "calls": 7,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash",
+   "bash",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 1\\Utilities\\Process Water Tank|Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 2\\Utilities\\Process Water Tank|Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 3\\Utilities\\Process Water Tank|Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 4\\Utilities\\Process Water Tank|Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 5\\Utilities\\Process Water Tank|Level"
+  ],
+  "png": [
+   "site_ab_tank_levels_weekend_2026-11-21_22.png"
+  ],
+  "seconds": 45.2,
+  "answer": "Tank levels at Site AB over the weekend (Sat 21 Nov 00:00 \u2192 Sun 22 Nov 23:00, 2026, AEST) \u2014 chart saved as `site_ab_tank_levels_weekend_2026-11-21_22.png` in the current folder.\n\n**What it looked like:**\n- **Conc 1** (SAB1:9LT026): averaged ~44%, dipped to ~24% mid-Saturday afternoon, then recovered.\n- **Conc 2** (SAB2:9LT026): the steadiest, ~53% average, range 32\u201366%.\n- **Conc 3** (SAB3:9LT026): clearly the low one all weekend \u2014 only ~20% average, bottoming at ~14% around 04:00 Sunday. Worth a look if that's expected.\n- **Conc 4** (SAB4:9LT026): steady at ~50%, 38\u201362%.\n- **Conc 5** (SAB5:9LT026): ~44% average, dropped to ~18% Saturday evening (19:00) before climbing to ~67% by Sunday night.\n\nNo tank hit alarm-level extremes (0% or 100%); the notable items are the persistently low Conc 3 tank and the evening dips on Conc 1 and 5.\n\n**Provenance:**\n- Tags: Process Water Tank | Level at `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 1\u20135\\Utilities\\` \u2014 points `SAB1:9LT026`, `SAB2:9LT026`, `SAB3:9LT026`, `SAB4:9LT026`, `SAB5:9LT026` (primary variants, all healthy, unit %).\n- Window: 2026-11-21 00:00 \u2192 2026-11-22 23:00 Australia/Brisbane (weekend per the historian's clock, now = Mon 2026-11-23 00:00).\n- Basis: time-weighted hourly averages from the historian (dataset `20261123-190226-0e9a5b`, 48 rows \u00d7 5 tags).\n- Note: I plotted the five Process Water Tanks as the site's \"tank levels\". If you meant a specific tank (e.g. a reagent tank like Frother/Cyanide/Lime), tell me which and I'll pull it instead.",
+  "stopped": ""
+ },
+ "t16/3": {
+  "calls": 8,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__browse_asset",
+   "mcp__historian__get_timeseries",
+   "bash",
+   "bash",
+   "read"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 1\\Utilities\\Process Water Tank|Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 2\\Utilities\\Process Water Tank|Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 3\\Utilities\\Process Water Tank|Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 4\\Utilities\\Process Water Tank|Level",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator 5\\Utilities\\Process Water Tank|Level"
+  ],
+  "png": [
+   "site_ab_tank_levels_weekend.png"
+  ],
+  "seconds": 49.7,
+  "answer": "Chart saved to `site_ab_tank_levels_weekend.png` in the current folder.\n\n## Tank levels at Site AB, Sat 21 \u2013 Sun 22 Nov 2026\n\nSite AB has no single site-level tank \u2014 there is one **process water tank per concentrator**, so I plotted all five. All levels stayed within normal bounds (roughly 12\u201367%); nothing hit high/low extremes over the weekend:\n\n| Tank | Point | Weekend avg | Min | Max |\n|---|---|---|---|---|\n| Concentrator 1 | `SAB1:9LT026` | 43.5% | 21.9% | 60.6% |\n| Concentrator 2 | `SAB2:9LT026` | 53.3% | 32.5% | 66.5% |\n| Concentrator 3 | `SAB3:9LT026` | 20.5% | 12.1% | 40.7% |\n| Concentrator 4 | `SAB4:9LT026` | 50.2% | 38.5% | 62.3% |\n| Concentrator 5 | `SAB5:9LT026` | 44.1% | 16.2% | 66.7% |\n\nNotable: **Concentrator 3 ran noticeably low all weekend** (mostly 12\u201340%), and **Concentrator 5 dipped to ~16% mid-Saturday** before recovering. If you were asking about a specific tank (or the reagent tanks \u2014 frother, depressant, activator, cyanide, lime \u2014 which also have \"Tank Level\" tags), tell me which and I'll pull that one.\n\n**Provenance**\n- Tags: `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AB\\Concentrator N\\Utilities\\Process Water Tank|Level`, points `SAB1:9LT026` \u2026 `SAB5:9LT026` (primary variants, health `ok`, unit %)\n- Window: 2026-11-21 00:00 \u2192 2026-11-23 00:00 AEST (weekend relative to the historian's clock, now = Mon 23 Nov 2026 00:00)\n- Basis: time-weighted hourly averages (48 intervals); the shaded bands are hourly min\u2013max\n- Dataset: `20261123-191705-eca96d` (CSV in the datasets folder)",
+  "stopped": ""
+ },
+ "t17/1": {
+  "calls": 5,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "read",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site I\\Concentrator 3\\Leach\\Leach Tank 6|Free Cyanide"
+  ],
+  "png": [
+   "SI-C3-AT-4023_midday_2026-11-22.png"
+  ],
+  "seconds": 27.1,
+  "answer": "**SI-C3-AT-4023 read 89.30 ppm at 12:00 yesterday (22 Nov 2026, AEST).**\n\n**Provenance**\n- **Tag:** `SI-C3-AT-4023` (catalogue id 13100) \u2014 Free Cyanide, Leach Tank 6, Site I Concentrator 3 (`\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site I\\Concentrator 3\\Leach\\Leach Tank 6|Free Cyanide`)\n- **Unit:** ppm, primary variant, health `ok` (last value 98.12 ppm at 23:59:55 on 22 Nov)\n- **Window:** 2026-11-22 11:00\u201313:00 AEST, **raw recorded** values (25 records) from dataset `20261123-184840-b72793`\n- The exact 12:00:00 record was 89.303 ppm; the 11:00\u201313:00 window ranged 89.30\u201395.25 ppm (mean \u2248 91.3 ppm). The value was steady at 89.30 from 12:00 until 12:15, then ticked up to ~90.3\u201390.6 by 12:45\u201313:00.\n\n**Chart:** saved as `SI-C3-AT-4023_midday_2026-11-22.png` in the current folder (red dashed line marks the 12:00 reading).",
+  "stopped": ""
+ },
+ "t17/2": {
+  "calls": 5,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "read",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site I\\Concentrator 3\\Leach\\Leach Tank 6|Free Cyanide"
+  ],
+  "png": [
+   "SI-C3-AT-4023_midday_2026-11-22.png"
+  ],
+  "seconds": 22.2,
+  "answer": "**SI-C3-AT-4023 read 89.3 ppm at midday yesterday** (12:00, 22 Nov 2026, Australia/Brisbane).\n\n- **Tag:** `SI-C3-AT-4023` \u2014 Free Cyanide, Site I \u2192 Concentrator 3 \u2192 Leach \u2192 Leach Tank 6 (catalogue id 13100, primary, health ok)\n- **Window:** 11:00\u201313:00 on 2026-11-22, 15-minute time-weighted summaries; the 12:00 reading was 89.30 ppm (low for the hour \u2014 the surrounding half-hours ran 89.9\u201393.4 ppm)\n- **Chart:** saved as `SI-C3-AT-4023_midday_2026-11-22.png` in the current folder",
+  "stopped": ""
+ },
+ "t17/3": {
+  "calls": 5,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "read",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site I\\Concentrator 3\\Leach\\Leach Tank 6|Free Cyanide"
+  ],
+  "png": [
+   "SI-C3-AT-4023_2026-11-22.png"
+  ],
+  "seconds": 23.2,
+  "answer": "**SI-C3-AT-4023 at midday yesterday (12:00\u201313:00, 22 Nov 2026): ~90.0 ppm** (time-weighted average; range 89.3\u201390.6 ppm that hour).\n\n**Provenance**\n- **Tag:** `SI-C3-AT-4023` \u2014 `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site I\\Concentrator 3\\Leach\\Leach Tank 6|Free Cyanide` (primary, health ok)\n- **Unit:** ppm (free cyanide)\n- **Window/basis:** 22 Nov 2026, 1-hour time-weighted averages from the historian (summary mode), times in Australia/Brisbane\n- **Context:** the day ran 68\u2013112 ppm; it dipped to ~69 ppm in the early morning, was ~90 ppm at midday, then climbed to a peak of ~111 ppm around 20:00.\n\nChart saved to `SI-C3-AT-4023_2026-11-22.png` (full-day trace with the midday hour highlighted).",
+  "stopped": ""
+ },
+ "t18/1": {
+  "calls": 6,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__get_tag_details",
+   "mcp__historian__get_timeseries",
+   "read",
+   "bash",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site C\\Concentrator 2\\Crushing\\CV-101|Belt Speed"
+  ],
+  "png": [
+   "cv101_belt_speed_last_shift.png"
+  ],
+  "seconds": 27.4,
+  "answer": "Chart saved: `cv101_belt_speed_last_shift.png` (current folder).\n\n## CV-101 Belt Speed \u2014 last shift\n\n**What was read**\n- **Tag:** `SITEC.CONC2.CRU.CV1.SPD` \u2192 `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site C\\Concentrator 2\\Crushing\\CV-101|Belt Speed` (catalogue id 3364)\n- **Unit:** m/s \u00b7 **Variant:** primary \u00b7 **Health:** ok\n- **Window:** 2026-11-22 16:00 \u2192 23:45 AEST (last 8 h before historian \"now\" of 2026-11-23 00:00 AEST)\n- **Basis:** time-weighted summary, 15-min intervals (32 intervals), dataset `20261123-184906-8615ff.csv`\n\n**Trend**\n- **16:00\u201320:45: belt stopped** (0 m/s for the whole period \u2014 5 h 45 min of downtime).\n- **~21:00: startup**, then steady running at **~10.0\u201310.3 m/s** for the rest of the shift, with only small \u00b10.15 m/s variation.\n- Shift-wide average 3.79 m/s is dominated by the stoppage; while running, the average is \u2248 10.1 m/s.\n- Latest value: **9.97 m/s** at 23:59:55 AEST (belt running).\n\n**Provenance note:** no tags were excluded; this single primary tag covered the whole request. The 16:00\u201320:45 stoppage is a real reading (belt speed = 0), not a data gap \u2014 the tag is healthy and reporting continuously.",
+  "stopped": ""
+ },
+ "t18/2": {
+  "calls": 5,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site C\\Concentrator 2\\Crushing\\CV-101|Belt Speed"
+  ],
+  "png": [
+   "SITEC_CONC2_CRU_CV1_SPD_last_shift.png"
+  ],
+  "seconds": 25.5,
+  "answer": "Chart saved: `SITEC_CONC2_CRU_CV1_SPD_last_shift.png` (in the current folder).\n\n**Trend \u2014 SITEC.CONC2.CRU.CV1.SPD (Site C, Concentrator 2, Crushing, CV-101 Belt Speed)**\n\n- **Tag:** catalogue id 3364, `Site C\\Concentrator 2\\Crushing\\CV-101|Belt Speed`, point `SITEC.CONC2.CRU.CV1.SPD`, primary variant, health **ok**, unit **m/s**\n- **Window:** 2026-11-22 16:00 \u2192 23:55 AEST (last 8 h shift, ending at the historian's now, 2026-11-23 00:00)\n- **Basis:** time-weighted 5-minute summaries (96 intervals)\n- **Result:** shift average **3.79 m/s**, min **0.0**, max **10.39 m/s**\n\nThe wide spread (0 \u2192 ~10.4 m/s) means the belt was not running steadily: it cycled between stopped (0 m/s) and near-full speed (~10 m/s) during the shift, i.e. intermittent operation rather than a constant run. The PNG shows the 5-minute average with the min\u2013max band per interval.",
+  "stopped": ""
+ },
+ "t18/3": {
+  "calls": 6,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "read",
+   "bash",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site C\\Concentrator 2\\Crushing\\CV-101|Belt Speed"
+  ],
+  "png": [
+   "SITEC_CONC2_CRU_CV1_SPD_last_shift.png"
+  ],
+  "seconds": 30.6,
+  "answer": "Chart saved to `SITEC_CONC2_CRU_CV1_SPD_last_shift.png` in the current folder.\n\n## Trend: SITEC.CONC2.CRU.CV1.SPD \u2014 last shift\n\n**What the tag is**\n- Point `SITEC.CONC2.CRU.CV1.SPD` (catalogue id 3364)\n- `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site C\\Concentrator 2\\Crushing\\CV-101 | Belt Speed`\n- Unit m/s, primary variant, health **ok**\n\n**Window & basis**\n- 2026-11-22 16:00 \u2192 23:45 (+10:00, Australia/Brisbane) \u2014 the 8 hours before the historian's current time (2026-11-23 00:00)\n- Time-weighted summary, 15-minute intervals (32 rows; last partial interval 23:45\u201324:00 not included in the summary)\n- Dataset: `datasets/20261123-191804-aa70d1.csv`\n\n**What it shows**\n- **16:00\u201320:45: belt stopped** (0.0 m/s for the entire first ~5 hours of the shift)\n- **21:00: started up** and ran steadily at ~10 m/s (average 9.9\u201310.3 m/s, min 9.8, max 10.4) for the rest of the shift\n- Shift average 3.79 m/s (dominated by the 5 h standstill); while running, it held a tight band around 10 m/s \u2014 no ramp-down, stalls, or speed excursions\n\nSo the story for this shift: CV-101 sat stopped until 21:00, then ran at its normal ~10 m/s until the end of the window.\n\n*Note: a point name `SITEC...` matched exactly, so no ambiguity with the same belt speed at other sites (Site G/K/O/S/W etc. all have CV-101 belt speed tags).*",
+  "stopped": ""
+ },
+ "t19/1": {
+  "calls": 4,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site G\\Concentrator 5\\Crushing\\CV-104|Belt Weigher Rate QC"
+  ],
+  "png": [
+   "siteg_conc5_cv4_rate_qc_2026-11-22_morning.png"
+  ],
+  "seconds": 26.3,
+  "answer": "Chart saved: `siteg_conc5_cv4_rate_qc_2026-11-22_morning.png` (in the current folder).\n\n**SITEG.CONC5.CRU.CV4.RATE.QC \u2014 this morning (22 Nov, 06:00\u201312:00 AEST)**\n\n- **Tag:** `SITEG.CONC5.CRU.CV4.RATE.QC` \u2014 `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site G\\Concentrator 5\\Crushing\\CV-104|Belt Weigher Rate QC` (catalogue id 10420), unit **t/h**, health **ok**\n- **Time-weighted average: ~330 t/h** (329.97)\n- **Range:** min 180 t/h, max 452.2 t/h over 15-minute intervals (24 intervals, 96 underlying values)\n- The rate varied a lot through the morning \u2014 dipping to ~180 t/h at times and peaking near 452 t/h, so it wasn't a steady run.\n\n**Provenance:** historian summary mode, 15-min intervals, time-weighted basis, window 2026-11-22 06:00\u201311:45 AEST (dataset `20261123-184937-d0db4b`). Note: the historian's clock reads 23 Nov 00:00, so \"this morning\" = the morning of 22 Nov; if you meant a different window, tell me and I'll re-pull. I used the QC variant as you named it (the primary `...RATE` tag is also available if you'd prefer it).",
+  "stopped": ""
+ },
+ "t19/2": {
+  "calls": 4,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site G\\Concentrator 5\\Crushing\\CV-104|Belt Weigher Rate QC"
+  ],
+  "png": [
+   "SITEG_CONC5_CRU_CV4_RATE_QC_morning_2026-11-22.png"
+  ],
+  "seconds": 25.1,
+  "answer": "Chart saved. Here's the summary:\n\n**Tag:** `SITEG.CONC5.CRU.CV4.RATE.QC` (catalogue id 10420)\n- Path: `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site G\\Concentrator 5\\Crushing\\CV-104|Belt Weigher Rate QC`\n- Unit: t/h, QC variant, health **ok** (last value 417.1 t/h at 2026-11-22 23:59:55)\n\n**Window:** 2026-11-22 06:00\u201312:00 AEST (the historian's clock is at 2026-11-23 00:00, so \"this morning\" = the morning of 22 Nov). Basis: **raw recorded records**, 4,024 points.\n\n**Stats (t/h):**\n- Mean: **379.5** | Median: 388.0\n- Min: 286.8 | Max: 452.2 | Std: 43.9\n\nThe rate ran in a fairly steady 350\u2013450 t/h band through the morning, with a dip toward ~287 t/h and no long outages.\n\n**Chart:** `SITEG_CONC5_CRU_CV4_RATE_QC_morning_2026-11-22.png` in the current folder.\n\nNote: the QC variant is the one you asked for; the primary belt-weigher tag `SITEG.CONC5.CRU.CV4.RATE` (id 10419) is also healthy if you want the unfiltered signal.",
+  "stopped": ""
+ },
+ "t19/3": {
+  "calls": 5,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site G\\Concentrator 5\\Crushing\\CV-104|Belt Weigher Rate QC"
+  ],
+  "png": [
+   "siteg_conc5_cv4_rate_qc_morning.png"
+  ],
+  "seconds": 30.3,
+  "answer": "Here's **SITEG.CONC5.CRU.CV4.RATE.QC** for this morning.\n\n**Tag** (exact point match, health `ok`):\n- Path: `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site G\\Concentrator 5\\Crushing\\CV-104|Belt Weigher Rate QC`\n- Unit: t/h, QC variant of the CV-104 belt weigher rate\n\n**Window:** 2026-11-22 06:00\u201312:00 AEST. The historian's clock is at 2026-11-23 00:00 (just past midnight), so I took \"this morning\" as the most recent morning \u2014 let me know if you meant a different window.\n\n**Numbers** (time-weighted, 10-min intervals, 36 values):\n- Morning average: **314.7 t/h**\n- Low: ~296 t/h at 06:10; high: ~442 t/h at 11:50\n- Pattern: started ~300 t/h, ramped to a ~436 t/h peak around 08:20, eased back to ~340 t/h by 10:20, then climbed again to ~442 t/h by 11:50.\n\n**Chart:** saved to `siteg_conc5_cv4_rate_qc_morning.png` in the current folder (10-min time-weighted average with the min\u2013max band).\n\n**Provenance:** dataset `20261123-191837-c588cf` (`.../runs/r1/datasets/20261123-191837-c588cf.csv`), summary mode, time-weighted basis, Australia/Brisbane time zone.",
+  "stopped": ""
+ },
+ "t20/1": {
+  "calls": 6,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_current_values",
+   "mcp__historian__get_timeseries",
+   "bash",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-PI\\SVC5_PP7_FLOW2"
+  ],
+  "png": [
+   "SVC5_PP7_FLOW2_24h.png"
+  ],
+  "seconds": 21.8,
+  "answer": "**SVC5_PP7_FLOW2 is reading 540.4 m\u00b3/h right now** (last record 2026-11-22 23:59:55 AEST, quality good).\n\nProvenance:\n- **Tag:** catalogue id 49643, point `SVC5_PP7_FLOW2` at `\\\\EXAMPLE-PI\\SVC5_PP7_FLOW2` \u2014 an unlinked point (not in the asset tree), primary variant, health **ok**\n- **Basis:** latest historian value for \"now\"; chart shows time-weighted hourly averages over the last 24 h (2026-11-22 00:00\u201323:00 AEST), mean 576.2, min 500.0, max 648.5 m\u00b3/h\n- **Chart:** saved as `SVC5_PP7_FLOW2_24h.png` in the current folder\n\nNote: the sibling `SVC5_PP7_FLOW` (the Final Conc Pump flow in the asset tree, Site V / Concentrator 5 / Flotation) is a different tag at 718.1 m\u00b3/h \u2014 I used the exact point name you asked for.",
+  "stopped": ""
+ },
+ "t20/2": {
+  "calls": 3,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_current_values"
+  ],
+  "read": [
+   "\\\\EXAMPLE-PI\\SVC5_PP7_FLOW2"
+  ],
+  "png": [],
+  "seconds": 10.2,
+  "answer": "**SVC5_PP7_FLOW2 is at 540.4 m\u00b3/h right now** (good quality, last record 2026-11-22 23:59:55 AEST \u2014 the historian's current time is 2026-11-23 00:00 AEST).\n\nProvenance:\n- **Tag:** `\\\\EXAMPLE-PI\\SVC5_PP7_FLOW2` (point name `SVC5_PP7_FLOW2`, id 49643) \u2014 a primary flow tag, not linked into the asset tree, but an exact point-name match\n- **Unit:** m\u00b3/h\n- **Basis:** latest single value from `get_current_values`, marked good by the historian\n- **Health:** ok\n\nNote: it sits alongside `SVC5_PP7_FLOW` (718.1 m\u00b3/h) on Site V, Concentrator 5, Flotation, Final Conc Pump \u2014 so if you meant the pump's main flow rather than this secondary point, that's the other one.\n\nNo chart was needed for a single \"now\" value, so no PNG was saved. Happy to pull a trend (e.g. last 24 h) and chart it if you'd like.",
+  "stopped": ""
+ },
+ "t20/3": {
+  "calls": 3,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_current_values"
+  ],
+  "read": [
+   "\\\\EXAMPLE-PI\\SVC5_PP7_FLOW2"
+  ],
+  "png": [],
+  "seconds": 8.9,
+  "answer": "**SVC5_PP7_FLOW2 is currently 540.4 m\u00b3/h** (good quality, last record 2026-11-22 23:59:55 AEST).\n\nProvenance:\n- **Tag:** `SVC5_PP7_FLOW2` (id 49643, `\\\\EXAMPLE-PI\\SVC5_PP7_FLOW2`) \u2014 an unlinked point (not in the asset tree), primary variant, health **ok**\n- **Unit:** m\u00b3/h, read via `get_current_values` (latest single value, not an average)\n- **Time basis:** historian \"now\" is 2026-11-23 00:00 AEST, so this is effectively the current reading\n\nNote: there's a sibling tag `SVC5_PP7_FLOW` (Site V \u2192 Concentrator 5 \u2192 Flotation \u2192 Final Conc Pump|Flow) reading 718.1 m\u00b3/h. Since you named the exact point `SVC5_PP7_FLOW2`, I used that one \u2014 but if you meant the asset-tree flow on the PP7 pump, that's the other tag.\n\nNo chart was needed for a single current value, so no PNG was saved.",
+  "stopped": ""
+ },
+ "t21/1": {
+  "calls": 9,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__browse_asset",
+   "mcp__historian__get_tag_details",
+   "mcp__historian__search_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site X\\Concentrator 3\\Flotation\\Rougher Tail|Pb"
+  ],
+  "png": [
+   "rougher_tail_pb_noon_20261122.png"
+  ],
+  "seconds": 40.8,
+  "answer": "**Short answer: I can't give you the final-tails lead grade \u2014 the only tag for it is broken, so there is no data to report.**\n\nWhat I found:\n\n- **Tag:** `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site X\\Concentrator 3\\Flotation\\Final Tail|Pb` (point `SX3:3AT096_OLD`, unit %) \u2014 the only final-tails Pb tag in the catalogue for this concentrator.\n- **Health: `broken_ref`** \u2014 no value, no last timestamp. It's not data. The point name ends in `_OLD`, suggesting the analyser point was moved (likely to `SX3:3AT096`), but that new point is not in the catalogue, so I won't guess it.\n\n**Nearest healthy alternative** (different stream, so treat as indicative only):\n\n- **Rougher Tail|Pb**, `\\\\...\\Site X\\Concentrator 3\\Flotation\\Rougher Tail|Pb` (point `SX3:3AT081`, %, primary, health ok).\n- Around noon yesterday (2026-11-22 12:00, Australia/Brisbane \u2014 historian's \"now\" is 2026-11-23 00:00): **\u2248 0.50 % Pb** (time-weighted average over 11:00\u201312:45, range 0.48\u20130.53 %).\n\nChart saved to `rougher_tail_pb_noon_20261122.png` in the current folder.\n\n**Basis:** summary mode, 15-min intervals, time-weighted averages, dataset `20261123-185039-69031e.csv`.\n\nIf you can confirm the new final-tails Pb point name (e.g. `SX3:3AT096`), I can pull it directly once it's in the catalogue.",
+  "stopped": ""
+ },
+ "t21/2": {
+  "calls": 20,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__browse_asset",
+   "mcp__historian__get_tag_details",
+   "mcp__historian__search_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "read",
+   "bash",
+   "bash",
+   "bash",
+   "bash",
+   "bash",
+   "bash",
+   "bash",
+   "bash",
+   "bash",
+   "bash",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site X\\Concentrator 3\\Flotation\\Final Tail|Pb",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site X\\Concentrator 3\\Flotation\\Rougher Tail|Pb"
+  ],
+  "png": [
+   "final_tails_pb_site_x_conc3.png"
+  ],
+  "seconds": 104.8,
+  "answer": "**Short answer: there is no data for the lead grade in final tails at Site X, Conc 3 \u2014 the only tag for it is broken.**\n\n- The tag `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site X\\Concentrator 3\\Flotation\\Final Tail|Pb` (point `SX3:3AT096_OLD`, %) is flagged `broken_ref`, and the historian confirms the PI point `SX3:3AT096_OLD` no longer exists (\"PI Point not found\"). It has no last value at all, so it cannot answer the question for noon yesterday (2026-11-22 12:00 AEST, per the historian clock) or any other time.\n- I searched for a replacement (point name variants, other words, QC/calc variants) and browsed the Final Tail node: the other Final Tail analyser tags (Au, Ag, S, Solids) are healthy, but there is **no healthy Final Tail Pb tag** anywhere in the catalogue for this concentrator.\n\n**Nearest healthy alternative (a different stream, not final tails):**\n- `...\\Concentrator 3\\Flotation\\Rougher Tail|Pb` (point `SX3:3AT081`, %, health ok) \u2014 time-weighted 15-min average, 2026-11-22 11:30\u201312:15 AEST:\n  - 11:30 \u2192 0.524 %, 11:45 \u2192 0.480 %, **12:00 \u2192 0.506 %**, 12:15 \u2192 0.499 %\n\nSo if \"final tails\" was meant loosely as \"tails\", the rougher tails carried **0.506 % Pb at noon yesterday**; but for the actual final tails stream, the historian has no lead-grade tag that works. If the point was recently renamed (the `_OLD` suffix suggests that), the new point name isn't in the catalogue yet \u2014 worth checking with the instrumentation team.\n\nChart saved: `final_tails_pb_site_x_conc3.png` (in the current folder), showing the rougher-tails alternative with the 12:00 value marked.",
+  "stopped": ""
+ },
+ "t21/3": {
+  "calls": 10,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_tag_details",
+   "mcp__historian__browse_asset",
+   "mcp__historian__search_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site X\\Concentrator 3\\Flotation\\Rougher Tail|Pb"
+  ],
+  "png": [
+   "sx3_tail_lead_noon_2026-11-22.png"
+  ],
+  "seconds": 40.8,
+  "answer": "**Short answer: the lead grade in final tails at noon yesterday cannot be read \u2014 the only tag for it is broken.**\n\n- The catalogue's tag for final-tail lead at Site X, Conc 3 is `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site X\\Concentrator 3\\Flotation\\Final Tail|Pb` (point `SX3:3AT096_OLD`, %), and its health is **`broken_ref`** \u2014 no values, not even a last one. I searched for a replacement point (`SX3:3AT096` without `_OLD`, QC/calc variants, other wording) and found none; the other Site X concentrators (C1, C2, C4, C5) have healthy `*:3AT096` final-tail Pb tags, but Conc 3's was evidently retired without a catalogue entry for its successor.\n- The other final-tail analyser streams (Au, Ag, S, Solids) are all healthy, so only the Pb channel is dead.\n\n**Nearest healthy alternative \u2014 rougher tail lead (upstream of final tail, so it will read higher than final tail):**\n- Tag: `...\\Concentrator 3\\Flotation\\Rougher Tail|Pb`, point `SX3:3AT081`, %, health ok\n- Window: 2026-11-22 11:00\u201312:45 AEST (noon = 12:00; historian now is 2026-11-23 00:00 AEST), 15-min time-weighted averages\n- Around noon: **\u2248 0.50\u20130.53 % Pb** (2-hour mean 0.503%, range 0.480\u20130.528%)\n\nChart saved: `sx3/t21/3/sx3_tail_lead_noon_2026-11-22.png` (full path: `articles/local-agent-finds-historian-tags/local/runs/r1/t21/3/sx3_tail_lead_noon_2026-11-22.png`).\n\nIf you know the new point name for the Conc 3 final-tail Pb analyser, tell me and I'll pull it directly.",
+  "stopped": ""
+ },
+ "t22/1": {
+  "calls": 9,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__get_golden_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__browse_asset",
+   "mcp__historian__search_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_tag_details"
+  ],
+  "read": [],
+  "png": [],
+  "seconds": 29.2,
+  "answer": "I have to be straight with you: **there is no usable data for leach tank 5's agitator power last week.**\n\nWhat I found:\n\n- **Tag:** `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site I\\Concentrator 2\\Leach\\Leach Tank 5|Agitator Power` (point `SI-C2-JT-4020_OLD`, kW, primary)\n- **Health:** `broken_ref` \u2014 the point reference is broken, so the historian holds no values for it (last value: none). Per the rules, a broken_ref tag is not data, so I did not plot anything, and there is no chart to save.\n\nI also checked for a replacement point (the `_OLD` suffix hints the point was migrated): searching `SI-C2-JT-4020` and browsing the tank's attributes turns up no healthy successor \u2014 tank 5's only power attribute is the broken one.\n\n**Nearest healthy alternatives (all ok, kW, current values):**\n\n| Tank | Point | Last value |\n|---|---|---|\n| Leach Tank 4 | `SI-C2-JT-4016` | 68.5 kW |\n| Leach Tank 6 | `SI-C2-JT-4024` | 88.3 kW |\n| Leach Tank 7 | `SI-C2-JT-4028` | 113.7 kW |\n| Conc 2 Main Incomer (golden tag) | `SI-C2-JT-9001` | 14,854 kW (whole concentrator, not the agitator) |\n\nIf you'd like, I can pull last week's (2026-11-16 \u2192 2026-11-23, historian time) time-weighted hourly profile for a neighbouring tank's agitator \u2014 say tank 4 or 6 \u2014 and save that as a PNG, or for the whole leach area if you want a total. Just tell me which.",
+  "stopped": ""
+ },
+ "t22/2": {
+  "calls": 9,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__browse_asset",
+   "mcp__historian__search_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_tag_details",
+   "mcp__historian__get_timeseries",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site I\\Concentrator 2\\Leach\\Leach Tank 1|Agitator Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site I\\Concentrator 2\\Leach\\Leach Tank 2|Agitator Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site I\\Concentrator 2\\Leach\\Leach Tank 3|Agitator Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site I\\Concentrator 2\\Leach\\Leach Tank 4|Agitator Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site I\\Concentrator 2\\Leach\\Leach Tank 6|Agitator Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site I\\Concentrator 2\\Leach\\Leach Tank 7|Agitator Power",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site I\\Concentrator 2\\Leach\\Leach Tank 8|Agitator Power"
+  ],
+  "png": [
+   "leach_agitator_power_siteI_conc2_lastweek.png"
+  ],
+  "seconds": 44.0,
+  "answer": "**Important: Leach Tank 5's agitator power tag has no data.**\n\nThe catalogue's only tag for it \u2014 `...Leach Tank 5|Agitator Power`, point `SI-C2-JT-4020_OLD` \u2014 has health **broken_ref** (no last value, no last time), so it's not usable. The point name pattern of the neighbouring tanks (`SI-C2-JT-4016` for Tank 4, `SI-C2-JT-4024` for Tank 6) suggests a replacement point `SI-C2-JT-4020` should exist, but that point is not in the catalogue, so I can't read it.\n\n**What I can show instead** \u2014 last week's agitator power for the other six tanks, which gives a good sense of what Tank 5's would look like:\n\n| Tank | Point | 7-day mean (kW) | Range |\n|---|---|---|---|\n| Leach Tank 1 | SI-C2-JT-4004 | 81.8 | 0 \u2013 108.2 |\n| Leach Tank 2 | SI-C2-JT-4008 | 80.2 | 0 \u2013 107.0 |\n| Leach Tank 3 | SI-C2-JT-4012 | 79.7 | 0 \u2013 105.9 |\n| Leach Tank 4 | SI-C2-JT-4016 | 76.4 | 0 \u2013 107.9 |\n| Leach Tank 6 | SI-C2-JT-4024 | 83.4 | 0 \u2013 114.9 |\n| Leach Tank 7 | SI-C2-JT-4028 | 97.7 | 0 \u2013 127.5 |\n| Leach Tank 8 | SI-C2-JT-4032 | 78.8 | 0 \u2013 107.2 |\n\nChart saved to `leach_agitator_power_siteI_conc2_lastweek.png` in the current folder.\n\n**Provenance**\n- Tags: primary \"Agitator Power\" attributes under `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site I\\Concentrator 2\\Leach\\Leach Tank N`, points `SI-C2-JT-40xx`, unit kW\n- Window: 2026-11-16 00:00 \u2192 2026-11-22 23:00 (Australia/Brisbane), i.e. the 7 days before the historian's current time (2026-11-23)\n- Basis: time-weighted average per 1-hour interval (summary mode), 168 values per tag\n- Excluded: `Leach Tank 5|Agitator Power` (`SI-C2-JT-4020_OLD`) \u2014 broken_ref, no data\n\nIf you know the replacement point name for Tank 5's agitator (e.g. a new `SI-C2-JT-4020`), tell me and I'll pull its data.",
+  "stopped": ""
+ },
+ "t22/3": {
+  "calls": 10,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__get_golden_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__browse_asset",
+   "mcp__historian__search_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site I\\Concentrator 2\\Utilities\\Leach Supply|Active Power"
+  ],
+  "png": [
+   "leach_tank5_agitator_power.png"
+  ],
+  "seconds": 42.3,
+  "answer": "## Important caveat first\n\n**The tag you asked for has no data.** Leach Tank 5's agitator power tag \u2014 `\\\\...\\Site I\\Concentrator 2\\Leach\\Leach Tank 5|Agitator Power` (point **SI-C2-JT-4020_OLD**) \u2014 is marked **broken_ref** in the catalogue (no last value, no last time). The `_OLD` suffix suggests it was retired, but no replacement point (e.g. a fresh SI-C2-JT-4020) exists in the catalogue. So there is no tank-5-specific agitator power to show.\n\n## Closest healthy alternative: Leach Supply meter\n\nThe nearest working power measurement is the **Leach Supply** feeder \u2014 `\\\\...\\Site I\\Concentrator 2\\Utilities\\Leach Supply|Active Power` (point **SI-C2-JT-9013**, kW, health ok). Note this covers the **whole leach circuit (all 8 tanks + leach feed pump)**, so it is *not* a substitute for tank 5's agitator alone \u2014 treat it as circuit context only.\n\n**Last week (16 Nov 00:00 \u2192 23 Nov 00:00, 2026, AEST):**\n- Time-weighted average: **\u2248 1,060 kW**\n- Hourly range: **\u22122.7 kW to 1,363 kW** (the negative dip is a metering/transient artifact, ~1 hour)\n- Current reading (22 Nov 23:59): **\u2248 1,017 kW**\n\n**Provenance:** tag 12855, SI-C2-JT-9013, kW, 168 hourly time-weighted averages, summary mode, dataset `20261123-192012-97dd19`. Tag 12794 (the actual agitator) could not be used: broken_ref.\n\n**Chart:** saved as `leach_tank5_agitator_power.png` in the current folder (hourly average with min\u2013max band, clearly labelled as the leach-circuit substitute).\n\nIf you need tank-5-specific agitator power, the options are: get the SI-C2-JT-4020_OLD reference repaired/re-pointed in the historian, or confirm with the plant whether a new point name was issued that isn't yet in the catalogue.",
+  "stopped": ""
+ },
+ "t23/1": {
+  "calls": 8,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__browse_asset",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AE\\Concentrator 1\\Flotation\\Cleaner Cell 1|Agitator Power"
+  ],
+  "png": [
+   "cleaner_cell1_agitator_power.png"
+  ],
+  "seconds": 34.8,
+  "answer": "**Short answer: I can't tell you what it's drawing *right now* \u2014 the only agitator power tag for that cell is stale.**\n\n**What I found**\n\n- Tag: `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AE\\Concentrator 1\\Flotation\\Cleaner Cell 1|Agitator Power`\n- Point: `SITEAE.CONC1.FLT.FC10.PWR`, unit kW, primary variant\n- Health: **stale** \u2014 last record **146.65 kW at 2026-11-19 06:12 AEST**, ~3.7 days before the historian's current time (2026-11-23 00:00 AEST). That's the last known value, not a live reading.\n\n**Recent history (for context)**\n\nOver the 7 days to 2026-11-22 (1-h time-weighted averages), the tag recorded 79 of 168 hours \u2014 it stopped at 2026-11-19 06:12. While it was recording: mean **151.9 kW**, min **115.7 kW**, max **180.0 kW**. Chart saved as `cleaner_cell1_agitator_power.png` in the current folder.\n\n**Provenance**\n\n- Tag 45974, `SITEAE.CONC1.FLT.FC10.PWR` (kW), window 2026-11-16 00:00 \u2192 2026-11-22 23:00 AEST, summary mode, 1-h interval, time-weighted average. Dataset: `.../runs/r1/datasets/20261123-185139-26fd2d.csv`.\n\n**Alternatives**\n\nThe cell has no other power tags \u2014 its only healthy tags are Air Flow (L/s), Froth Depth (mm) and Pulp Level (%). If you want a live power figure, I can look at the Flotation system or concentrator supply level for a healthy feeder/motor tag that covers this cell \u2014 say the word and I'll search.",
+  "stopped": ""
+ },
+ "t23/2": {
+  "calls": 8,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_tag_details",
+   "mcp__historian__get_current_values",
+   "mcp__historian__get_timeseries",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AE\\Concentrator 1\\Flotation\\Cleaner Cell 1|Agitator Power"
+  ],
+  "png": [
+   "cleaner_cell_1_agitator_power.png"
+  ],
+  "seconds": 33.6,
+  "answer": "**Short answer: I can't give a live number \u2014 the tag is stale.**\n\n- **Tag:** `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AE\\Concentrator 1\\Flotation\\Cleaner Cell 1|Agitator Power` \u2014 point `SITEAE.CONC1.FLT.FC10.PWR`, unit kW, primary variant.\n- **Health:** `stale`. The historian's current time is **2026-11-23 00:00 (AEST)**, but the last record on this tag is **2026-11-19 06:12**, i.e. ~3.5 days old. So \"now\" is unknown from the historian.\n- **Last recorded value:** **146.7 kW** (at 2026-11-19 06:12). For context, its 7-day average before the gap was 151.9 kW (range 115.7\u2013179.9 kW, 1-h time-weighted).\n- **No healthy alternative for this specific motor:** I searched for other FC10 power variants (QC/calc) and found none. The neighbouring Cleaner Cell 2 (`FC11.PWR`, 134.3 kW) and Cleaner Cell 3 (`FC12.PWR`, 116.7 kW) agitator tags are healthy, and the Flotation Supply incomer (`SITEAE.CONC1.UTL.PM4.KW`, 4,405 kW) is healthy \u2014 but none of those measures Cleaner Cell 1's agitator, so I can't substitute them.\n\n**Chart:** saved to `cleaner_cell_1_agitator_power.png` in the current folder \u2014 7-day history with the data gap (19th Nov 06:12 \u2192 now) shaded red.\n\nIf you need a real-time figure, it would have to come from the DCS/SCADA side; the historian feed for this point appears to have dropped.",
+  "stopped": ""
+ },
+ "t23/3": {
+  "calls": 13,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_current_values",
+   "mcp__historian__browse_asset",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash",
+   "bash",
+   "bash",
+   "bash",
+   "bash",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AE\\Concentrator 1\\Flotation\\Cleaner Cell 1|Agitator Power"
+  ],
+  "png": [
+   "cleaner_cell1_agitator_power.png"
+  ],
+  "seconds": 61.8,
+  "answer": "**Short answer: the historian has no current reading \u2014 the tag is stale.**\n\nThe only tag for this measurement is:\n\n- **`\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site AE\\Concentrator 1\\Flotation\\Cleaner Cell 1|Agitator Power`** (point `SITEAE.CONC1.FLT.FC10.PWR`, kW, primary)\n- Health: **stale** \u2014 last record **146.65 kW at 2026-11-19 06:12 AEST**, ~3.7 days before the historian's current time (2026-11-23 00:00 AEST). I confirmed the gap in the raw history: hourly data runs continuously up to 2026-11-19 06:00 (that final hour averaged 157.8 kW over 149 records), then nothing.\n\nSo I can't honestly quote a \"now\" value. The last known draw was **~147 kW** (or ~158 kW for the final hour, time-weighted).\n\n**What I checked for alternatives:**\n- Cleaner Cell 1 has no other power-related tags (only Agitator Power, Air Flow, Froth Depth, Pulp Level) and no QC/calc/alarm variants.\n- Widening to the Flotation scope: the agitator power tags for Cleaner Cell 2 (134.3 kW) and Cleaner Cell 3 (116.7 kW) are healthy, but they are different cells \u2014 not a substitute for Cell 1's \"now\".\n\n**Chart:** saved to `cleaner_cell1_agitator_power.png` in the current folder \u2014 5-day history at 1-h time-weighted intervals, with the data gap marked.\n\n**Basis:** time-weighted hourly averages from the historian, Australia/Brisbane time zone. If you need a live number, the field/DCS side should be checked \u2014 the historian feed for this point appears to have dropped on 19 Nov.",
+  "stopped": ""
+ },
+ "t24/1": {
+  "calls": 5,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site R\\Concentrator 5\\Grinding\\SAG Mill|Bearing Pressure",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site R\\Concentrator 5\\Grinding\\SAG Mill|Bearing Pressure Calc"
+  ],
+  "png": [
+   "sag_bearing_pressure_siteR_conc5.png"
+  ],
+  "seconds": 27.0,
+  "answer": "Chart saved: `sag_bearing_pressure_siteR_conc5.png` (in the current folder).\n\n## SAG bearing pressure \u2014 Site R, Concentrator 5, 9 Nov \u2192 22 Nov 2026\n\n**Trend:** The pressure sits around **107 kPa** average over the window, ranging **37\u2013146 kPa**. It's fairly banded (oscillating with mill load) rather than drifting \u2014 no sustained rise or fall across the two weeks.\n\n**Provenance:**\n- **Tag used:** `SAG Mill|Bearing Pressure Calc` \u2014 point `SRC5_SAG1_BRGP.CALC`, path `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site R\\Concentrator 5\\Grinding\\SAG Mill`, unit kPa, health **ok**, 336 hourly values.\n- **Tag not used:** the primary `SAG Mill|Bearing Pressure` (`SRC5_SAG1_BRGP`) is **stale** \u2014 last record 6 Nov 2026 06:15, so it has **zero values** in your window. The Calc variant is the nearest healthy alternative and is what the chart shows. If you specifically need the primary (raw) signal, that tag needs attention upstream.\n- **Window:** 2026-11-09 00:00 \u2192 2026-11-22 23:00 (Australia/Brisbane), 1-hour intervals, **time-weighted average** per hour.\n- **Dataset:** `datasets/20261123-185209-1a529a.csv` (dataset id `20261123-185209-1a529a`).\n\nNote: I used the Calc variant because the primary is stale; if you want the raw primary history (it has data before 6 Nov) or a QC variant instead, say the word.",
+  "stopped": ""
+ },
+ "t24/2": {
+  "calls": 7,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash",
+   "bash",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site R\\Concentrator 5\\Grinding\\SAG Mill|Bearing Pressure",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site R\\Concentrator 5\\Grinding\\SAG Mill|Bearing Pressure Calc"
+  ],
+  "png": [
+   "sag_bearing_pressure_site_r_conc5.png"
+  ],
+  "seconds": 44.0,
+  "answer": "Chart saved: `sag_bearing_pressure_site_r_conc5.png` (current folder).\n\n## SAG bearing pressure \u2014 Site R, Concentrator 5, 9 Nov \u2013 23 Nov 2026\n\n**Important caveat:** the primary tag is **stale** \u2014 no data since 6 Nov 2026, so nothing to read from it in this window:\n- `SRC5_SAG1_BRGP` (SAG Mill | Bearing Pressure, kPa) \u2014 health **stale**, last value 50.0 kPa on 2026-11-06 06:15.\n\nI used the nearest healthy alternative, the calculated variant:\n- `SRC5_SAG1_BRGP.CALC` (SAG Mill | Bearing Pressure Calc, kPa) \u2014 health **ok**, 720 records/hour, full coverage of the window.\n\n**Trend (hourly time-weighted averages, kPa):**\n- Mean \u2248 **107 kPa**, median \u2248 113 kPa, range of hourly averages 37\u2013146 kPa\n- Hourly maximum peaked at **154.9 kPa** on 12 Nov 13:00; other notable high hours on 13\u201314 Nov (~150 kPa)\n- Roughly two regimes: a lower band (~90\u2013105 kPa) early in the window, stepping up to ~110\u2013125 kPa from mid-November, with a dip to ~37 kPa around 17\u201318 Nov (likely a mill stop)\n\n**Provenance:**\n- Tags: `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site R\\Concentrator 5\\Grinding\\SAG Mill|Bearing Pressure` (27268, unused \u2014 stale) and `...|Bearing Pressure Calc` (27269, used)\n- Window: 2026-11-09 00:00 \u2192 2026-11-22 23:00 AEST (historian now: 2026-11-23 00:00 AEST), 336 hourly intervals\n- Basis: summary mode, time-weighted Average/Min/Max/StdDev/Count; dataset `20261123-190733-e53b42.csv`\n\nIf you want the raw (non-calculated) signal, the primary tag would need to be restored first \u2014 the gap since 6 Nov suggests an instrument or link problem worth checking.",
+  "stopped": ""
+ },
+ "t24/3": {
+  "calls": 8,
+  "tools": [
+   "mcp__historian__catalog_status",
+   "mcp__historian__find_assets",
+   "mcp__historian__search_tags",
+   "mcp__historian__get_timeseries",
+   "bash",
+   "bash",
+   "bash",
+   "bash"
+  ],
+  "read": [
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site R\\Concentrator 5\\Grinding\\SAG Mill|Bearing Pressure",
+   "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site R\\Concentrator 5\\Grinding\\SAG Mill|Bearing Pressure Calc"
+  ],
+  "png": [
+   "sag_bearing_pressure_site_r_conc5.png"
+  ],
+  "seconds": 39.8,
+  "answer": "Chart saved: `sag_bearing_pressure_site_r_conc5.png` (in the current folder).\n\n## SAG bearing pressure \u2014 Site R, Concentrator 5, 9\u201322 Nov 2026\n\n**Trend:** Pressure rose from ~104 kPa on 9 Nov to a peak of ~127 kPa daily average on 12\u201313 Nov (hourly max **146.4 kPa at 13:00 on 12 Nov**), then fell through 15\u201316 Nov (daily avg 71 kPa on 16 Nov) and has since settled in the 93\u2013113 kPa band. Overall window: mean **107.1 kPa**, range 37.1\u2013146.4 kPa (the 37 kPa dip is a short overnight low on 22 Nov).\n\n**Provenance:**\n- **Tag used:** `\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site R\\Concentrator 5\\Grinding\\SAG Mill|Bearing Pressure Calc`, point `SRC5_SAG1_BRGP.CALC` (catalogue id 27269), kPa.\n- **Window:** 2026-11-09 00:00 \u2192 2026-11-22 23:00 AEST (historian \"now\" is 2026-11-23 00:00 AEST); 336 hourly, time-weighted averages.\n- **Tag not usable:** the primary tag `SRC5_SAG1_BRGP` (id 27268) is **stale** \u2014 last value 2026-11-06 06:15, and it returned **zero values** in your window. The Calc variant (healthy, current to 22 Nov 23:59) is the only source of data here, so treat it as a calculated/derived reading, not the raw transmitter. If you need the primary transmitter data, it would need investigation \u2014 it stopped reporting before your window began.",
+  "stopped": ""
+ }
+}

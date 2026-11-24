@@ -1,0 +1,93 @@
+# Test questions, written by Codex (gpt-6.2-astra, xhigh) from a plain description of the plant: its sites, areas,
+# equipment and what each measures, but no point names or naming conventions. Run from an empty folder. Frozen
+# 23 Nov 2026 with catalog.py and config/enrichment.yaml (eval/frozen.sha256); prompt in test-questions.prompt.md.
+- id: q01
+  type: plain
+  question: "SAG mill power at Site D con 2 last week?"
+- id: q02
+  type: plain
+  question: "What's the primary crusher closed side setting at Site AA con 1?"
+- id: q03
+  type: plain
+  question: "How fast is the CV-103 belt moving at Site F con 3?"
+- id: q04
+  type: plain
+  question: "What was the feed pressure on cyclone cluster 2 at Site M con 1 around 6 am?"
+- id: q05
+  type: plain
+  question: "Can I see froth depth on cleaner cell 3 at Site H con 2?"
+- id: q06
+  type: plain
+  question: "How much water is coming back from tailings at Site AE con 1, in L/s?"
+- id: q07
+  type: plain
+  question: "What's the power factor on the main incomer at Site K con 4?"
+- id: q08
+  type: plain
+  question: "Did dissolved oxygen drop in leach tank 7 at Site P con 2 overnight?"
+- id: q09
+  type: synonym
+  question: "What tonnage are we pushing over CV-101 at Site J con 2, in tph?"
+- id: q10
+  type: synonym
+  question: "How many amps was the primary pulling at Site R con 1 on night shift?"
+- id: q11
+  type: synonym
+  question: "What's the gold grade in the final tails at Site AB con 3?"
+- id: q12
+  type: synonym
+  question: "How many hours has the No. 2 ball mill clocked up at Site L con 1?"
+- id: q13
+  type: synonym
+  question: "What frother dosage are we running at Site U con 2?"
+- id: q14
+  type: synonym
+  question: "What's the SAG drawing at Site Y con 1, in megawatts?"
+- id: q15
+  type: code
+  question: "Can you trend FT-3104 from the Site A con 1 flotation screen for the last hour?"
+- id: q16
+  type: code
+  question: "What was PIT-2201 reading at shift change? Site B con 2, cyclone panel."
+- id: q17
+  type: code
+  question: "Is LT-6102 on the Site C con 1 water tank screen still dropping?"
+- id: q18
+  type: code
+  question: "Got a trend for AIT-4103? It's on the leach pH screen at Site E con 3."
+- id: q19
+  type: ambiguous
+  question: "What's the pressure at Site B?"
+- id: q20
+  type: ambiguous
+  question: "How much water are we using on con 2?"
+- id: q21
+  type: ambiguous
+  question: "What's the concentrate grade at Site N con 1?"
+- id: q22
+  type: ambiguous
+  question: "Is the mill running at Site AC?"
+- id: q23
+  type: several
+  question: "Which leach tank at Site C con 1 has the lowest pH?"
+- id: q24
+  type: several
+  question: "Can you put all six rougher air flows on one trend for Site V con 2?"
+- id: q25
+  type: several
+  question: "Which belts are running at Site G con 3, CV-101 through CV-104?"
+- id: q26
+  type: several
+  question: "Which ball mill has the denser discharge at Site AD con 1?"
+- id: q27
+  type: variant
+  question: "Got the QC'd final tails Au reading for Site A con 1 at 6 am?"
+- id: q28
+  type: variant
+  question: "Can I see the 15-minute moving average for SAG feed tph at Site T con 2?"
+- id: q29
+  type: variant
+  question: "Did the high rake torque alarm come in on the Site Z con 1 tailings thickener last night?"
+- id: q30
+  type: variant
+  question: "When did the low-level alarm last clear on the process water tank at Site W con 3?"
