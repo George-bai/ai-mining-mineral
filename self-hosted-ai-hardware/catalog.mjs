@@ -119,7 +119,7 @@ export const platforms = [
     note: 'ProArt X870E-Creator (x8/x8 CPU slots, chipset x4), 2 x 64 GB DDR5-5600 (out of stock on 15 Nov), Define 7 XL, 1,250 W.'},
   {id: 'am5-256', name: '256 GB DDR5 · Ryzen 9 9950X desktop', short: 'The DDR5 desktop with 256 GB', mem: 'DDR5-3600, 2 channels, 4 DIMMs', ecc: false, ram: 256, bw: 57.6, gen: 5, split: true, slots: 3, server: false, lan10: true, psu: 1250, watts: 260, price: 8346,
     note: 'As above with 4 x 64 GB. AMD rates four DIMMs at 3600 MT/s; ASUS lists up to 5200 with qualified kits.'},
-  {id: 'trx50-128', name: '128 GB DDR5 ECC · Threadripper 9970X', short: 'The Threadripper workstation', mem: 'DDR5-4800 ECC, 4 channels', ecc: true, ram: 128, bw: 153.6, gen: 5, split: false, slots: 4, server: false, psu: 1600, outlet15: true, watts: 450, price: 17508,
+  {id: 'trx50-128', name: '128 GB DDR5 ECC · Threadripper 9970X', short: 'The Threadripper workstation', mem: 'DDR5-4800 ECC, 4 channels', ecc: true, ram: 128, bw: 153.6, gen: 5, split: false, x8from: 3, slots: 4, server: false, psu: 1600, outlet15: true, watts: 450, price: 17508,
     note: 'Derived from Scorptec Atlas R2R10690 (A$20,999 in stock) less its RTX PRO 4000, with a 1,600 W Seasonic and Meshify 2 XL. Pro WS TRX50-SAGE WIFI.'},
   {id: 'wrx90-256', name: '256 GB DDR5 ECC · Threadripper PRO 9965WX', short: 'The Threadripper PRO workstation', mem: 'DDR5-5600 ECC, 8 channels', ecc: true, ram: 256, bw: 358.4, gen: 5, split: false, slots: 4, server: false, lan10: true, psu: 1600, outlet15: true, watts: 480, price: 25833,
     note: 'Pro WS WRX90E-SAGE SE, 8 x 32 GB DDR5-5600 RDIMM (A$2,016 each), Meshify 2 XL, Seasonic PRIME PX-1600 (needs a 15 A outlet).'},

@@ -27,7 +27,7 @@ V = {
     "knowledge/p1/2": ("right", "Two-product formula on the rougher assays; positive on the recorded dose (r 0.33) but, per tonne of feed, flat in every third, and says so."),
     "knowledge/p1/3": ("right", "Low third steepest on the recorded dose (4.7 against 1.3 points per mL/min); per tonne, flat in every third, and says so."),
     "knowledge/p2/1": ("right", "The site’s formula and streams, running hours only: 70.8 % for October."),
-    "knowledge/p2/2": ("right", "The site’s formula and streams, running hours only: 70.6 % for October."),
+    "knowledge/p2/2": ("right", "The site’s formula and streams, running hours only: 70.6 % for October. It read 1 to 30 October, a day short."),
     "knowledge/p2/3": ("right", "The site’s formula and streams, 15-minute running samples: 71.2 % for October."),
     "knowledge/p3/1": ("right", "Mass pull from the rougher assays, analyser faults left out: 34.3 %."),
     "knowledge/p3/2": ("right", "Mass pull from the rougher assays per analyser cycle, impossible samples left out: 33 %."),
@@ -40,7 +40,7 @@ V = {
     "skills/p1/3": ("wrong", "Its script dropped 6,212 usable hours of 2026 and it reported them as a gap in the historian, which is false; on the shorter record it found the per-tonne response steeper at high feed grade."),
     "skills/p2/1": ("right", "Hourly, running hours, gold-weighted: 71.3 % for October."),
     "skills/p2/2": ("right", "Hourly, running hours, gold-weighted: 71.3 % for October."),
-    "skills/p2/3": ("right", "Hourly, running hours, gold-weighted: 71.3 % for October."),
+    "skills/p2/3": ("right", "Hourly, running hours, gold-weighted: 71.3 % for October. It read 1 to 30 October, a day short."),
     "skills/p3/1": ("right", "Hourly, screened, tonne-weighted: 33.2 %."),
     "skills/p3/2": ("right", "Hourly, screened, tonne-weighted: 33.2 %."),
     "skills/p3/3": ("right", "Hourly, screened, tonne-weighted: 33.2 %."),
@@ -48,6 +48,9 @@ V = {
     "skills/p4/2": ("right", "August at 67.9 %, feed grade 6.10 g/t."),
     "skills/p4/3": ("right", "August at 68.2 %, feed grade 6.10 g/t."),
 }
+# Right by its question's rule, with an error our reading found in the answer (named in its reason). It counts as right:
+# the rules were fixed before the runs. The page marks these answers so a tick is not read as "every number is sound".
+SLIP = {"knowledge/p1/1", "knowledge/p2/2", "skills/p2/3", "skills/p4/1"}
 
 
 def clean(text, n=380):
@@ -84,7 +87,8 @@ def main(runs):
     for k, (o, why) in sorted(V.items()):
         c, q, r = k.split("/")
         a = runs / c / q / r / "answer.md"
-        out[k] = {"outcome": o, "why": why, "quote": clean(a.read_text()),
+        assert k not in SLIP or o == "right", k
+        out[k] = {"outcome": o, **({"slip": True} if k in SLIP else {}), "why": why, "quote": clean(a.read_text()),
                   "seconds": float((runs / c / q / r / "seconds.txt").read_text())}
         shutil.copy(a, HERE / "answers" / f"{c}-{q}-{r}.md")
     (HERE / "verdicts.yaml").write_text(yaml.safe_dump(out, sort_keys=False, allow_unicode=True, width=120))

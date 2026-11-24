@@ -106,7 +106,10 @@ export function calculate(cfg) {
   if (noSlot) notes.push(`Four cards fill the server's eight openings, so the 10GbE card has no slot: it runs on the board's 1GbE.`);
   // each card's link: the slower of card and slot, halved where two cards share a desktop's CPU lanes (x8/x8)
   const link = { 3: 13, 4: 26, 5: 52 }[Math.min(gpu.pcie, platform.gen)] * (count > 1 && platform.split ? 0.5 : 1);
-  const host = { ...platform, pcieGBs: link };
+  // a board whose later slots are wired x8 (the TRX50 board's third, ASUS manual E23238 p. ix): those cards link at half
+  // width, so the cards' mean link, which prefill multiplies by their number, is lower
+  const narrow = platform.x8from && count >= platform.x8from ? count - platform.x8from + 1 : 0;
+  const host = { ...platform, pcieGBs: link * (count - narrow / 2) / count };
 
   // price
   const watts = gpu.watts * count + toolsGpu.watts + platform.watts;

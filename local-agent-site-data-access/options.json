@@ -9,12 +9,12 @@
  "options": [
   {"id": "export", "name": "A file export", "short": "Export",
    "what": "Someone exports the tag list and a slice of data to a file the agent reads.",
-   "change": ["good", "No: it is a copy."], "leave": ["good", "No, with the model, tools and logs on site."],
+   "change": ["good", "No: it is a copy."], "leave": ["good", "No, with the model, tools and logs on site and the server's routes out closed."],
    "load": ["depends", "Only while the export is made."],
    "find": ["bad", "The whole tag list is 13 times the model's window; the agent sees what was exported, nothing newer."]},
   {"id": "login", "name": "The agent's own login", "short": "Own login",
    "what": "The agent writes its own queries against the historian's web API or database with an account of its own.",
-   "change": ["depends", "Whatever the account may do: the PI web API also writes."], "leave": ["good", "No, with the model, tools and logs on site."],
+   "change": ["depends", "Whatever the account may do: the PI web API also writes."], "leave": ["good", "No, with the model, tools and logs on site and the server's routes out closed."],
    "load": ["bad", "Nothing stops a ten-year, one-second query."],
    "find": ["bad", "It guesses names: an ABB historian prototype chose the right identifiers in 18 of 30 questions."]},
   {"id": "cloud", "name": "A vendor's cloud assistant", "short": "Vendor cloud",
@@ -25,13 +25,13 @@
    "find": ["depends", "Through the vendor's asset model, where the site has built one."]},
   {"id": "tools", "name": "Read-only tools", "short": "Read-only tools",
    "what": "A small set of fixed tools on a read-only account: browse the asset tree, read a series, with limits on each call.",
-   "change": ["good", "No: the tools only read, and so does the account."], "leave": ["good", "No, with the model, tools and logs on site."],
-   "load": ["good", "Bounded: limits on tags, values and window per call."],
+   "change": ["good", "No: the tools only read, and so does the account."], "leave": ["good", "No, with the model, tools and logs on site and the server's routes out closed."],
+   "load": ["good", "Limits per call on tags, values and window, and on calls per minute."],
    "find": ["depends", "By browsing the tree level by level: slow, and the agent can lose its way."]},
   {"id": "catalogue", "name": "Read-only tools and a tag catalogue", "short": "Tools and catalogue",
    "what": "The same tools, plus a catalogue of every tag, crawled nightly, which the agent searches by place and the site's words; a skill tells it how.",
-   "change": ["good", "No: the tools only read, and so does the account."], "leave": ["good", "No, with the model, tools and logs on site."],
-   "load": ["good", "Limits per call; the crawl runs at night."],
+   "change": ["good", "No: the tools only read, and so does the account."], "leave": ["good", "No, with the model, tools and logs on site and the server's routes out closed."],
+   "load": ["good", "Limits per call and per minute; the crawl runs at night."],
    "find": ["good", "No. 18's search put on average 0.915 of the right tags in its top 10 (keyword search given the same place filter: 0.938); dead tags flagged before reading."]}
  ]
 }

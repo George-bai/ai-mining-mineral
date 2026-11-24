@@ -32,6 +32,36 @@ catalogue, MCP server and skill (`../historian-tag-catalogue-for-agents/`).
 | `verdicts.yaml` | Pass or fail for each attempt, read by hand beside the key, with the reason |
 | `dev.yaml` | Two of No. 18's development questions used only to check the harness; never scored |
 
+## Run it
+
+**Without a model: the stand-in and the key.** In No. 18's folder (`../historian-tag-catalogue-for-agents/`) run
+`uv sync`, build the backbones as its README says, start the stand-in and crawl it:
+
+```bash
+MOCK_SITES=31 MOCK_CONCENTRATORS=5 uv run uvicorn mock_api:app --port 8711 &
+uv run python crawler.py run
+```
+
+Then here, `../historian-tag-catalogue-for-agents/.venv/bin/python make_key.py` rebuilds the key through the same
+tool code. The key's tags come from the generator and repeat exactly. The winners of the "across" questions are read
+from values: those on tags that follow the private plant's records will differ, because without that file the tags
+are generated.
+
+**With a model: the runs.** `AGENT_ENV=<python environment> REPEATS=3 ./run.sh <run-name>` needs:
+
+- the stand-in and catalogue above, and No. 18's `.venv` (the script starts its MCP server over HTTP);
+- a Python environment for the agent's own scripts (`python3 -m venv agent-env && agent-env/bin/pip install pandas
+  numpy matplotlib scipy`), passed as `AGENT_ENV`;
+- the Pi agent harness 1.5.2 and bubblewrap (0.11.1 here);
+- the model behind an OpenAI-compatible API on port 8088 (`models.json`). Ours: vLLM 0.27.1 serving
+  `RadixArk/Qwen3.8-27B-NVFP4-BF16-LMHead` at revision `009632fef96dd349150baa780c984e62e70e91fe` across 2 × RTX 5080
+  (16 GB each): `--dtype bfloat16 --max-model-len 165000 --tensor-parallel-size 2 --gpu-memory-utilization 0.92
+  --kv-cache-dtype fp8_e4m3 --max-num-seqs 2 --reasoning-parser qwen3 --enable-auto-tool-choice --tool-call-parser
+  qwen3_coder`, generation defaults temperature 0.6, top-p 0.95, top-k 20, thinking on at medium effort. The
+  checkpoint mixes precisions (NVFP4 for most weights; its model card has the detail).
+
+Runs are written to `../local/runs/<run-name>/`. Answers vary from run to run: the sampling is not seeded.
+
 ## Rules (fixed before the runs)
 
 read, compare, code: reads every key tag and reports its values, with a chart when asked. across: names the key's
@@ -51,7 +81,7 @@ and a private plant's) with generated records, not published as data here.
 ## Means quoted from our tool
 
 No. 18's `get_timeseries` returned a per-tag mean, minimum and maximum taken over every summary column the agent
-asked for together (Average with Minimum, Maximum or Count). Seven answers quoted such a mean where it was 1 to 24 %
+asked for together (Average with Minimum, Maximum, Total, StdDev or Count). Seven answers quoted such a mean where it was 1 to 24 %
 off the averages: t03/1, t04/1, t10/2, t11/2, t11/3, t19/1, t19/3 (each verdict says by how much). The rules score
 tags, not values, and the winners named in t10 and t11 are the same on the averages, so no verdict changes. The tool
 is fixed since (No. 18's README, 24 Nov 2026); these runs used the earlier version.

@@ -10,6 +10,7 @@ audit_log: local/audit.jsonl
 timezone: Australia/Brisbane
 
 limits:
+  calls_per_minute: 60            # all tools together; added 24 Nov 2026, after the runs of Nos. 19 to 21
   tags_per_call: 10
   search_results: 25
   summary_intervals: 2000         # per tag

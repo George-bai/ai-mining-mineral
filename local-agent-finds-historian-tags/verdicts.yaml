@@ -43,7 +43,8 @@ t02/3:
 t03/1:
   pass: true
   why: Read the SAG fresh feed rate at Site D, Concentrator 1 for 22 Nov and saved a chart. Its daily mean of 339.8 t/h is
-    the tool’s, which averaged the count, minimum and maximum in with the hourly averages; the hourly averages give 446.5.
+    the tool’s, which averaged the hourly totals, minimums and maximums in with the hourly averages; those averages alone
+    give 446.5.
   quote: 'Chart saved to sag_fresh_feed_tph_2026-11-22.png in the current folder. SAG fresh feed trend — Site D, Concentrator
     1, yesterday (22 Nov 2026) Tag: \\EXAMPLE-AF\Operations\Example Mining\Site D\Concentrator 1\Grinding\SAG Mill · Fresh
     Feed Rate (point SD1:2WT001, catalogue id 4596) — primary, healthy, t/h. This is the golden throughput tag for this concentrator.

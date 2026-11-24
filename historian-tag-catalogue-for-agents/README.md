@@ -52,13 +52,17 @@ these files by the article's page script.
 - **Energy counters** (23 Nov 2026, evening): each meter's energy tag now integrates that meter's active power hour by
   hour (sampled every 15 minutes) instead of counting at a fixed rate. Search and the scored catalogue are not
   affected (search does not rank on values); No. 19's question about the most energy used needed it. Tests: 12 pass.
-- **`get_timeseries` statistics** (24 Nov 2026, after an external review): the per-tag mean, minimum and maximum it
-  returns had been taken over every summary column requested together (Average with Minimum, Maximum, Count), Count
-  was converted with the unit, and bad-quality values were kept. Now each column has its own statistics (the first
-  summary requested leads, the rest under `other_summaries`), Count is never converted, bad-quality values are left
-  out and counted in `notes`, and the file's unit is in the provenance (`unit_in_file`). Nos. 19 to 21 ran on the
-  earlier version; seven of No. 19's 72 answers quoted a mean from it that was 1 to 24 % off (its README lists them).
-  The dataset files kept each summary column apart. Test: `tests/test_timeseries.py`.
+- **`get_timeseries` statistics** (24 Nov 2026, after two external reviews): the per-tag mean, minimum and maximum it
+  returns had been taken over every summary column requested together (Average with Minimum, Maximum, Total, StdDev
+  or Count), Count and Total were converted with the tag's unit, and bad-quality values were kept. Now each column has
+  its own statistics and unit (the first summary requested leads, the rest under `other_summaries`; `column_units` in
+  the provenance: a Count is a number of samples, a Total is the unit times days), Count is never converted, a
+  conversion the units do not allow is refused with a note, and bad-quality values are left out and counted in
+  `notes`. Nos. 19 to 21 ran on the earlier version; seven of No. 19's 72 answers quoted a mean from it that was 1 to
+  24 % off (its README lists them). The dataset files kept each summary column apart. Test: `tests/test_timeseries.py`.
+- **Calls per minute** (24 Nov 2026): the server now refuses more than 60 tool calls a minute, all tools together
+  (`config/settings.yaml`). The limits per call bound one read; this bounds how many. The runs of Nos. 19 to 21 were
+  made before it.
 
 ## Data
 

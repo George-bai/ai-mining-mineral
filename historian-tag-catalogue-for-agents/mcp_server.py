@@ -58,9 +58,18 @@ def audit(tool: str, args: dict, result, started: float):
                             "result_items": size, "ms": round((time.time() - started) * 1000)}) + "\n")
 
 
+CALLS: list[float] = []  # start times of the last minute's tool calls, all tools together
+
+
 def logged(fn):
     def wrapper(**kwargs):
         t = time.time()
+        CALLS[:] = [c for c in CALLS if c > t - 60]
+        if len(CALLS) >= L["calls_per_minute"]:  # per-call limits bound one read; this bounds how many
+            out = {"error": f"Too many calls: at most {L['calls_per_minute']} a minute. Wait, then go on."}
+            audit(fn.__name__, kwargs, out, t)
+            return out
+        CALLS.append(t)
         try:
             out = fn(**kwargs)
         except Exception as e:
@@ -205,7 +214,9 @@ def get_timeseries(ids: list[str], start: str = "*-1d", end: str = "*", mode: st
         raise ValueError("mode must be summary, interpolated or recorded.")
     by_web = {it["WebId"]: it for it in items}
     primary = summaries[0] if mode == "summary" else "Value"
-    table, stats, notes, out_unit = {}, [], [], {}
+    table, stats, notes, out_unit, col_units = {}, [], [], {}, {}
+    # a count is a number of samples and a total is the unit times days (time-weighted), whatever the tag's unit
+    col_unit = lambda typ, u: "count" if typ == "Count" else (f"{u} x days" if typ == "Total" else u)
     for r in rows:
         it = by_web.get(r["webid"], {})
         if it.get("Errors"):
@@ -214,6 +225,8 @@ def get_timeseries(ids: list[str], start: str = "*-1d", end: str = "*", mode: st
         factor = CONVERT.get((r["unit"], units), 1) if units else 1
         unit = units if units and factor != 1 or units == r["unit"] else r["unit"]
         out_unit[r["id"]] = unit
+        if units and factor == 1 and units != r["unit"]:
+            notes.append(f"{r['path']}: cannot convert {r['unit']} to {units}; left in {r['unit']}")
         vals, bad = {}, 0  # per summary column: a tag's stats never mix Average with Count or Maximum
         for typ, v in get(it):
             val = v.get("Value")
@@ -227,6 +240,7 @@ def get_timeseries(ids: list[str], start: str = "*-1d", end: str = "*", mode: st
                     val = val * factor
                 vals.setdefault(typ, []).append(val)
             table.setdefault(t, {})[f"{r['id']}|{typ}"] = val
+            col_units[f"{r['id']}|{typ}"] = col_unit(typ, unit)
         if bad:
             notes.append(f"{r['path']}: {bad} bad-quality values left out")
         n_limit = L["summary_intervals"] if mode == "summary" else L["interpolated_values"]
@@ -234,8 +248,9 @@ def get_timeseries(ids: list[str], start: str = "*-1d", end: str = "*", mode: st
             raise ValueError(f"Too many values for {r['path']}: use a longer interval.")
         summ = lambda xs: {"values": len(xs), "mean": round(sum(xs) / len(xs), 4) if xs else None,
                            "min": min(xs) if xs else None, "max": max(xs) if xs else None}
-        stats.append({"id": r["id"], "path": r["path"], "unit": unit, "summary": primary, **summ(vals.get(primary, [])),
-                      "other_summaries": {k: summ(x) for k, x in vals.items() if k != primary}})
+        stats.append({"id": r["id"], "path": r["path"], "unit": col_unit(primary, unit), "summary": primary,
+                      **summ(vals.get(primary, [])),
+                      "other_summaries": {k: {"unit": col_unit(k, unit), **summ(x)} for k, x in vals.items() if k != primary}})
     DATASETS.mkdir(parents=True, exist_ok=True)
     ds = datetime.now(TZ).strftime("%Y%m%d-%H%M%S-") + uuid.uuid4().hex[:6]
     cols = sorted({k for v in table.values() for k in v})
@@ -251,8 +266,8 @@ def get_timeseries(ids: list[str], start: str = "*-1d", end: str = "*", mode: st
                              "last": times[-1] if times else None, "timezone": S["timezone"]},
                   "mode": mode, "interval": interval if mode != "recorded" else None,
                   "basis": "time-weighted" if mode == "summary" else ("interpolated" if mode == "interpolated" else "raw records"),
-                  "summaries": summaries if mode == "summary" else None, "units_requested": units,
-                  "columns": "time, then one column per tag and summary: <catalogue id>|<summary>; Count is not converted",
+                  "summaries": summaries if mode == "summary" else None, "units_requested": units, "column_units": col_units,
+                  "columns": "time, then one column per tag and summary: <catalogue id>|<summary>; units per column in column_units",
                   "queried": datetime.now(TZ).isoformat(timespec="seconds")}
     (DATASETS / f"{ds}.json").write_text(json.dumps(provenance, indent=1))
     return {"dataset_id": ds, "file": str(DATASETS / f"{ds}.csv"), "rows": len(times), "tags": stats,

@@ -14,7 +14,9 @@ qfile=$(cd "$(dirname "$qfile")" && pwd)/$(basename "$qfile")
 out=$here/../local/runs/$run
 mkdir -p "$out"
 out=$(cd "$out" && pwd)
-env=${AGENT_ENV:-$(cd "$here/../local/agent-env" && pwd)}   # the agent's Python: pandas, numpy, matplotlib, scipy
+env=${AGENT_ENV:-$here/../local/agent-env}   # the agent's Python: pandas, numpy, matplotlib, scipy
+[ -d "$env" ] || { echo "Set AGENT_ENV to a Python environment with pandas, numpy, matplotlib and scipy (README, Run it)." >&2; exit 1; }
+env=$(cd "$env" && pwd)
 data=$out/datasets && mkdir -p "$data"
 
 # No. 2's MCP server over HTTP with its key; its dataset files go to this run's folder, which the agent may read

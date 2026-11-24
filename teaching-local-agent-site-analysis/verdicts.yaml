@@ -121,6 +121,7 @@ bare/p4/3:
   seconds: 74.4
 knowledge/p1/1:
   outcome: right
+  slip: true
   why: Two-product formula on the rougher assays; r 0.52; recovery across dose thirds rises most in the low feed-grade third
     (73 to 84 %). Right on direction and pattern, as the rule asks; its quoted “62 recovery points per mL/min” is the intercept
     (its script swapped them), the slope being 3.8.
@@ -165,7 +166,8 @@ knowledge/p2/1:
   seconds: 193.0
 knowledge/p2/2:
   outcome: right
-  why: 'The site’s formula and streams, running hours only: 70.6 % for October.'
+  slip: true
+  why: 'The site’s formula and streams, running hours only: 70.6 % for October. It read 1 to 30 October, a day short.'
   quote: 'Gold recovery, Site A Concentrator 1 — October 2026: 70.6%.
 
     How it was calculated (the site''s method — running hours only, two-product formula on the analyser''s Au assays):'
@@ -294,7 +296,8 @@ skills/p2/2:
   seconds: 64.9
 skills/p2/3:
   outcome: right
-  why: 'Hourly, running hours, gold-weighted: 71.3 % for October.'
+  slip: true
+  why: 'Hourly, running hours, gold-weighted: 71.3 % for October. It read 1 to 30 October, a day short.'
   quote: 'Gold recovery at Site A, Concentrator 1 for October 2026 was 71.3 % (metal-weighted, running hours only).
 
     Definition & method (per site practice, no recovery tag exists in the historian):
@@ -337,6 +340,7 @@ skills/p3/3:
   seconds: 71.6
 skills/p4/1:
   outcome: right
+  slip: true
   why: 'August at 68.2 %, feed grade 6.10 g/t, hourly and gold-weighted. Its remark that August’s low-recovery hours carried
     more feed metal has the sign backwards: weighting by feed metal raised the month’s recovery (68.2 against a plain 65.9
     %).'

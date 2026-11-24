@@ -53,7 +53,7 @@ FAILS = {  # by the letter of the rule "a key tag marked unhealthy must be calle
     "t13/3": "Listed each concentrator’s grinding supply power, but said “no tags were unusable” while Concentrator 1’s Ball Mill 2 power tag is broken.",
 }
 TOOLMEAN = {  # found 24 Nov 2026: the answer quotes the mean No. 18's get_timeseries returned, which mixed summary columns
-    "t03/1": "Its daily mean of 339.8 t/h is the tool’s, which averaged the count, minimum and maximum in with the hourly averages; the hourly averages give 446.5.",
+    "t03/1": "Its daily mean of 339.8 t/h is the tool’s, which averaged the hourly totals, minimums and maximums in with the hourly averages; those averages alone give 446.5.",
     "t04/1": "Its mean of 588.6 m³/h is the tool’s mixed mean; the daily averages give 624.3.",
     "t10/2": "Its froth depth means (333.8; about 455 for cells 2 to 6) are the tool’s mixed means; the averages give 314.3 and about 517.",
     "t11/2": "Its dissolved oxygen means are the tool’s mixed means, 1 to 8 % above the averages (tank 5: 3.98 against 3.70).",

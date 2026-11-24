@@ -79,7 +79,9 @@ their own:
 | 1 | Seasonic PRIME PX-1600 ATX 3.1 (two 12V-2x6; sold for a 15 A outlet) | 749 | [PCCG](https://www.pccasegear.com/products/63804/seasonic-prime-px-1600-platinum-1600w-atx-3-1-power-supply) |
 | 1 | Fractal Meshify 2 XL (the original case takes no 210 mm power supply) | 359 | [PCCG](https://www.pccasegear.com/products/52445/fractal-design-meshify-2-xl-black-tg-light-tint) |
 
-4 channels, 1 DIMM each, 4,800 MT/s JEDEC (6,000 is an EXPO profile): 154 GB/s. Bought whole, with the PRO 4000 kept,
+4 channels, 1 DIMM each, 4,800 MT/s JEDEC (6,000 is an EXPO profile): 154 GB/s. Slots: two PCIe 5.0 x16 and a third
+PCIe 5.0 slot wired x8 (ASUS manual E23238, p. ix), so a third card links at half width; the calculator counts it so
+(corrected 24 Nov 2026: it had counted three x16 links, which put three-card prompt-reading speeds 1 to 3 % high). Bought whole, with the PRO 4000 kept,
 the outlay is A$22,107.
 
 ### Threadripper PRO workstation, 256 GB DDR5 ECC: A$25,833 (512 GB: A$45,361)

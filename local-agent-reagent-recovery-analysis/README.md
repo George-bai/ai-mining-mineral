@@ -26,6 +26,18 @@ Zyfra's `rougher.input.floatbank10_xanthate`.
 | `answers/` | Each session's tool calls and answers, turn by turn |
 | `verdicts.yaml` | Each turn's verdict, the agent's numbers as it reported them, and the reason |
 
+## Run it
+
+The environment is No. 19's (its README, "Run it": the stand-in and catalogue of No. 18, the agent's Python as
+`AGENT_ENV`, Pi 1.5.2, bubblewrap, the model server and its settings).
+
+- **The key, without a model:** with the stand-in running and crawled,
+  `../historian-tag-catalogue-for-agents/.venv/bin/python make_key.py`. Its tags follow Zyfra's public record, so it
+  repeats from public inputs.
+- **The first run:** `AGENT_ENV=<python environment> REPEATS=3 ./run.sh <run-name>`.
+- **The second run** (`KIT=1 ./run.sh kit`) needs the analytical skill, which is not published (`SKILLS_DIR` points at
+  it), so it can be read here but not repeated.
+
 ## Rules (fixed before the runs)
 
 Turn 1 passes when the agent reads the four Site A, Concentrator 1 tags over the whole record, calculates recovery

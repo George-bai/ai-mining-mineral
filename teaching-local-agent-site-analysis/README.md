@@ -32,7 +32,19 @@ two grinding questions (`dev.yaml`), never on the test questions. `run.sh` takes
 | `run.sh`, `models.json`, `prompt.md`, `answer.py` | The run |
 | `dev.yaml` | The two development questions for the skill (grinding at Site C); never scored |
 | `answers/` | Every attempt's tool calls and answer |
-| `verdicts.yaml` | right, asked or wrong for each attempt, with the reason |
+| `verdicts.yaml` | right, asked or wrong for each attempt, with the reason. `slip: true` marks four answers that met their question's rule and still hold an error we found (a slope given as 62 for 3.8, a window a day short twice, a reversed remark); they count as right |
+
+## Run it
+
+The environment is No. 19's (its README, "Run it": the stand-in and catalogue of No. 18, the agent's Python as
+`AGENT_ENV`, Pi 1.5.2, bubblewrap, the model server and its settings).
+
+- **The key, without a model:** with the stand-in running and crawled,
+  `../historian-tag-catalogue-for-agents/.venv/bin/python make_key.py` (it reuses No. 20's reader). Its tags follow
+  Zyfra's public record, so it repeats from public inputs.
+- **Bare and plant knowledge:** `CONDITION=bare REPEATS=3 ./run.sh <run-name>` and `CONDITION=knowledge …`.
+- **Knowledge and skill** (`CONDITION=skills`) needs the analytical skill, which is not published (`SKILLS_DIR` points
+  at it), so that condition can be read here but not repeated.
 
 ## Rules (fixed before the runs)
 
