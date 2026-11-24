@@ -71,7 +71,8 @@ these files by the article's page script.
   tag had stopped a week ago, every tag looked fresh. Staleness is now measured on the server's own clock, read from
   its responses (the stand-in sends its fixed clock as `X-Historian-Time`; any server sends `Date`), and the crawl
   report keeps the newest sample apart (`newest_sample`). `historian_earliest` is the oldest record of one healthy
-  tag, taken as where the archive starts. On the stand-in the two clocks agree, so its health counts are unchanged.
+  tag, taken as where the archive starts. On the stand-in the two clocks agree, and a full re-crawl on 24 Nov 2026
+  gave the same health counts as before.
 - **Calls per minute** (24 Nov 2026): the server now refuses more than 60 tool calls a minute, all tools together
   (`config/settings.yaml`). The limits per call bound one read; this bounds how many. The runs of Nos. 19 to 21 were
   made before it.
@@ -99,9 +100,10 @@ uv run python mcp_server.py                                                # the
 uv run pytest -q tests
 ```
 
-The first crawl after the stand-in starts is slow, over an hour on our workstation: since 23 Nov 2026 each energy
-counter integrates its meter's power, and the stand-in works every counter out the first time it is read. The 14.5
-seconds the article gives was timed before that change (`eval/crawl-report.json`).
+The first crawl after the stand-in starts is slow: 48 minutes on our workstation (24 Nov 2026). Since 23 Nov 2026 each
+energy counter integrates its meter's power, and the stand-in works every counter out the first time it is read.
+A crawl after that takes 14 seconds (13.8 s on 24 Nov; the article's 14.5 s is `eval/crawl-report.json`, timed on
+23 Nov). Both give the same 3,560 requests and the same health counts: 2,602 tags flagged of 50,594.
 
 To connect an agent, register the server as a stdio MCP server running `uv run python mcp_server.py` in this
 folder (for example `pi mcp add historian -- uv run python mcp_server.py`). For a shared server, run
