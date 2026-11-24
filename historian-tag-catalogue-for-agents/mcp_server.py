@@ -6,8 +6,8 @@
 Every answer is short and says where its numbers came from (tags, units, window, basis). Full data goes to a
 dataset file (CSV plus a metadata file); the agent gets its path and a summary. Every call is logged.
 """
-import argparse, csv, json, os, time, uuid
-from datetime import datetime
+import argparse, csv, json, os, re, time, uuid
+from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -80,6 +80,56 @@ def logged(fn):
     wrapper.__annotations__ = fn.__annotations__
     wrapper.__wrapped__ = fn
     return wrapper
+
+
+# ---------- the window of a read, checked before the historian is asked ----------
+UNIT_S = {"s": 1, "m": 60, "h": 3600, "d": 86400, "w": 604800, "mo": 30 * 86400, "y": 365 * 86400}
+
+
+def seconds(s: str) -> float:
+    m = re.fullmatch(r"\s*(\d+(?:\.\d+)?)\s*(mo|[smhdwy])\s*", s or "", re.I)
+    if not m:
+        raise ValueError(f"Cannot read the interval '{s}': use a number and s, m, h, d or w, such as 15m, 1h or 1d.")
+    return float(m.group(1)) * UNIT_S[m.group(2).lower()]
+
+
+def when(s: str, now: float) -> float:
+    """A time string on the historian's clock: *, t (today 00:00) or y, with an offset such as *-30d or t+6h, or ISO 8601."""
+    s = (s or "*").strip()
+    m = re.fullmatch(r"(\*|t|today|y|yesterday)?\s*(([+-])\s*(\d+(?:\.\d+)?)\s*(mo|[smhdwy]))?", s, re.I)
+    if m and (m.group(1) or m.group(2)):
+        midnight = datetime.fromtimestamp(now, TZ).replace(hour=0, minute=0, second=0, microsecond=0)
+        t = {"*": now, "t": midnight.timestamp(), "today": midnight.timestamp(),
+             "y": (midnight - timedelta(days=1)).timestamp(), "yesterday": (midnight - timedelta(days=1)).timestamp()}[(m.group(1) or "*").lower()]
+        return t + (0 if not m.group(2) else (1 if m.group(3) == "+" else -1) * float(m.group(4)) * UNIT_S[m.group(5).lower()])
+    try:
+        d = datetime.fromisoformat(s.replace("Z", "+00:00"))
+    except ValueError:
+        raise ValueError(f"Cannot read the time '{s}': use ISO 8601, or *, t or y with an offset such as *-7d.")
+    return (d if d.tzinfo else d.replace(tzinfo=TZ)).timestamp()
+
+
+def check_window(c: Client, start: str, end: str, mode: str, interval: str) -> None:
+    """Refuse a read the limits do not allow before any of it is asked of the historian (until 24 Nov 2026 the request
+    was sent first and only its answer counted, and recorded_days was not applied). Times are resolved on the
+    historian's own clock; learning it costs one small request to the server's home page, once."""
+    if mode not in ("summary", "interpolated", "recorded"):
+        raise ValueError("mode must be summary, interpolated or recorded.")
+    now = c.server_time()
+    if now is None:
+        c.get("")
+        now = c.server_time() or time.time()
+    span = when(end, now) - when(start, now)
+    if span <= 0:
+        raise ValueError(f"The window ends before it starts ({start} to {end}).")
+    if mode == "recorded":
+        if span > L["recorded_days"] * 86400:
+            raise ValueError(f"Raw records: at most {L['recorded_days']} days a call, and this asks for {span / 86400:.1f}. "
+                             "Use summary mode for a longer window.")
+        return
+    n, limit = span / seconds(interval), L["summary_intervals"] if mode == "summary" else L["interpolated_values"]
+    if n > limit:
+        raise ValueError(f"{n:,.0f} intervals a tag is over the limit of {limit:,}: use a longer interval or a shorter window.")
 
 
 def local_time(iso: str | None) -> str | None:
@@ -200,6 +250,7 @@ def get_timeseries(ids: list[str], start: str = "*-1d", end: str = "*", mode: st
     rows = resolve(ids)
     summaries = summaries or ["Average"]
     c, webids = client(), [r["webid"] for r in rows]
+    check_window(c, start, end, mode, interval)
     if mode == "summary":
         items = c.streamset("summary", webids, startTime=start, endTime=end, summaryType=summaries,
                             summaryDuration=interval, calculationBasis="TimeWeighted")
@@ -243,6 +294,8 @@ def get_timeseries(ids: list[str], start: str = "*-1d", end: str = "*", mode: st
             col_units[f"{r['id']}|{typ}"] = col_unit(typ, unit)
         if bad:
             notes.append(f"{r['path']}: {bad} bad-quality values left out")
+        if mode == "recorded" and max(map(len, vals.values()), default=0) >= L["recorded_values"]:
+            notes.append(f"{r['path']}: {L['recorded_values']:,} records returned, the most a call gives: the window may be cut short")
         n_limit = L["summary_intervals"] if mode == "summary" else L["interpolated_values"]
         if mode != "recorded" and max(map(len, vals.values()), default=0) > n_limit:
             raise ValueError(f"Too many values for {r['path']}: use a longer interval.")

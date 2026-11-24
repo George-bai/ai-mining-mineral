@@ -11,7 +11,7 @@
    "what": "Someone exports the tag list and a slice of data to a file the agent reads.",
    "change": ["good", "No: it is a copy."], "leave": ["good", "No, with the model, tools and logs on site and the server's routes out closed."],
    "load": ["depends", "Only while the export is made."],
-   "find": ["bad", "The whole tag list is 13 times the model's window; the agent sees what was exported, nothing newer."]},
+   "find": ["depends", "Only if the file is searched, not pasted: the whole tag list is 13 times the model's window. Nothing newer than the export."]},
   {"id": "login", "name": "The agent's own login", "short": "Own login",
    "what": "The agent writes its own queries against the historian's web API or database with an account of its own.",
    "change": ["depends", "Whatever the account may do: the PI web API also writes."], "leave": ["good", "No, with the model, tools and logs on site and the server's routes out closed."],

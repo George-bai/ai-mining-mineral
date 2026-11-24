@@ -20,7 +20,7 @@ marked `measured_by: "author"`.
 
 ## What is used to fit, and what is kept as evidence only
 
-1,010 records pass the checks below. After the outlier pass, 784 one-stream runs feed the speed fits (555 writing and 363 reading speeds; 33 of the writing speeds at 128K or longer) and 120 multi-stream records are kept as concurrency evidence. The rest were set aside
+1,010 records pass the checks below. After the outlier pass, 784 one-stream runs feed the speed fits (555 writing and 363 reading speeds; 45 of the writing speeds at 128K or longer) and 120 multi-stream records are kept as concurrency evidence. The rest were set aside
 for these reasons, counted by the first reason each record has (over all 2,732 collected; the GitHub and X ones stay
 in the file with their reason in `why`):
 
@@ -94,6 +94,24 @@ Each was checked against the stack's or model's own documents before it was chan
 - Section 03 labels its settings: drafting on one side only, a story and code, a 32K prompt against a 4K one, and two
   different machines for GLM.
 
+## Corrections from the reviews of 24 Nov 2026
+
+- The Threadripper board's third graphics slot is wired x8 (ASUS manual E23238, p. ix): a third card links at half
+  width, which lowers three-card prompt-reading estimates on that board by 1 to 3% (`hardware.md`).
+- Held-out groups: a machine its owner describes two ways is now one machine (`SAME_CPU` in `fit.mjs`; three were
+  split, among them the computer of project-maya issues 730 and 737). The fitted constants do not change; the bands
+  do: Strata's reading band 0.43–1.63 × became 0.33–1.46 ×, Maya's 0.43–2.06 × became 0.40–2.01 ×.
+- Context of the writing speeds: 57 runs that state their context in words but carry no token count were fitted as
+  short prompts; they are now fitted at the stated length (`decodeContextStated`, `method.md`). Strata's long-context
+  term went from 0.40 to 0.73 and its estimates moved by −3.3% to +2.3%; Maya's by less than 1%. The Medium machine's
+  headline stays 56 tokens/s (35–100 became 34–101); the runs written at 128K or longer count 45, not 33.
+  `check.mjs`'s one-stream expectation moved from 55.7 to 56.4 and its eight-stream one from 12.4 to 12.5.
+- The 1.12 for DeepSeek on one card with Maya was described as DSpark's gain. Its source (issue 737) credits the
+  64.5 → 72.3 tokens/s to a re-measured PCIe lane switching the one-GPU decode path on. The factor stays as an
+  empirical term; the description is corrected (`method.md`).
+- `fit.mjs` now stops if a band is not a number, if one machine sits under two names, or if a stated context names
+  a run that already has an exact one.
+
 ## The comparison on the page
 
 Section 03 draws only measured numbers (`stack-comparison.json`): one computer measured by Strata's author, and two
@@ -103,5 +121,6 @@ community machines for GLM-5.3-Flash. Both pairs say how comparable they are.
 
 - Few long-context and many-user runs for the expert stacks on 96 GB cards; reading speed has the widest bands.
 - SGLang's plain runs all come from one user's RTX PRO 6000 Server Edition (LocalMaxxing). They are used as reported;
-  with six writing runs its writing band is the default ±30%.
+  with six writing runs from one machine its writing band is the default ±30% or wider: 0.70–1.74 × as its held-out
+  runs stand.
 - No first-hand run combines the language model with real vision or embedding work on the tools card.

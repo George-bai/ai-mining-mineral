@@ -12,7 +12,10 @@ catalogue, MCP server and skill (`../historian-tag-catalogue-for-agents/`).
   `/skill:historian-tags`, No. 18's MCP server over streamable HTTP with an API key, and one added line
   (`prompt.md`). Python 3.12 with pandas 3.1.1, numpy, matplotlib 3.11.2, scipy 1.18.1 for charts.
 - **Fence:** each attempt in bubblewrap: the repositories, keys and other attempts hidden; the attempt's folder
-  writable; the run's dataset files, the agent's Python and the skill read-only (`run.sh`).
+  writable; the run's dataset files, the agent's Python and the skill read-only (`run.sh`). Since 24 Nov 2026 the script hides
+  the repository wherever it was cloned and checks, before the first attempt, that the key cannot be read from inside
+  the fence. Before that it hid `~/git`, which covered our runs (tested: the key was out of sight) but would have left
+  the key readable in a copy cloned elsewhere.
 - **Stand-in:** No. 18's mock historian with 31 sites × 5 concentrators (50,594 tags), clock at 23 Nov 2026 00:00
   (AEST); No. 18's catalogue as scored there. One change to No. 18 before these runs: energy counters integrate their
   meter's power (No. 18's README).
@@ -28,7 +31,7 @@ catalogue, MCP server and skill (`../historian-tag-catalogue-for-agents/`).
 | `run.sh`, `models.json`, `prompt.md`, `answer.py` | The run |
 | `sheet.py` | Builds the reading sheet and `attempts.json` (tags read, tool calls, seconds, charts) from the event logs |
 | `attempts.json` | Every attempt's facts |
-| `answers/` | Every attempt's tool calls and final answer (`<question>-<repeat>.md`) |
+| `answers/` | Every attempt's tool calls and final answer (`<question>-<repeat>.md`) (a call's arguments are cut at 400 characters and what the tools returned is not included, so these are an index of the calls, not a full trace) |
 | `verdicts.yaml` | Pass or fail for each attempt, read beside the key, with the reason |
 | `dev.yaml` | Two of No. 18's development questions used only to check the harness; never scored |
 

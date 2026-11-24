@@ -29,7 +29,8 @@ def iso_to_epoch(s: str) -> float:
 
 
 def health_of(item: dict, stale_after: float, ref: float) -> dict:
-    """ref: the newest time stamp the historian returned, so staleness is measured on the historian's clock."""
+    """ref: the historian's own clock (Client.server_time), so staleness is measured against the time it is there, not
+    against the newest sample: if every tag stopped a week ago, every tag is stale."""
     if item.get("Errors"):
         return {"health": "broken_ref", "error": item["Errors"][0]}
     v = item.get("Value", {})
@@ -78,14 +79,15 @@ def run(client: Client, database_path: str, out_dir: Path, resume: str | None = 
         stale_after = rules["stale_after_hours"] * 3600
         items = client.streamset("end", webids, selectedFields="Items.WebId;Items.Errors;Items.Value")
         stamps = [iso_to_epoch(i["Value"]["Timestamp"]) for i in items if i.get("Value", {}).get("Timestamp")]
-        ref = max(stamps) if stamps else time.time()
+        ref = client.server_time() or time.time()
         out = {item["WebId"]: health_of(item, stale_after, ref) for item in items}
         out["_historian_time"] = datetime.fromtimestamp(ref, timezone.utc).isoformat()
+        out["_newest_sample"] = datetime.fromtimestamp(max(stamps), timezone.utc).isoformat() if stamps else None
         return out
 
     health = step("health", read_health)
 
-    def read_earliest():  # the archive's first time stamp, from the first healthy attribute's oldest record
+    def read_earliest():  # the oldest record of the first healthy attribute, taken as where the archive starts (one tag, not all)
         for a in attributes:
             if health.get(a["WebId"], {}).get("health") == "ok":
                 items = client.get(f"/streams/{a['WebId']}/recorded", startTime="*-30y", endTime="*", maxCount=1).get("Items", [])
@@ -108,7 +110,7 @@ def run(client: Client, database_path: str, out_dir: Path, resume: str | None = 
         new = {r[0] for r in sqlite3.connect(tmp).execute("SELECT path FROM tags")}
         diff = {"added": len(new - old), "removed": len(old - new),
                 "added_examples": sorted(new - old)[:5], "removed_examples": sorted(old - new)[:5]}
-    report = {"run_id": run_id, "historian_time": health.get("_historian_time"), "historian_earliest": earliest, "elements": len(elements), "attributes": len(attributes), "points": len(points),
+    report = {"run_id": run_id, "historian_time": health.get("_historian_time"), "newest_sample": health.get("_newest_sample"), "historian_earliest": earliest, "elements": len(elements), "attributes": len(attributes), "points": len(points),
               **counts, "diff": diff, "requests": client.requests - requests0, "seconds": round(time.time() - started, 1),
               "step_seconds": timings}
     con = sqlite3.connect(tmp)

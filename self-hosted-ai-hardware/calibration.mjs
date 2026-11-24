@@ -3,13 +3,13 @@ export const calibration = {
  "strata": {
   "amd": 2.244,
   "eff": 1,
-  "lat": 2.104,
-  "beta": 2.108,
+  "lat": 2,
+  "beta": 2.13,
   "ramEff": 0.65,
-  "single": 0.7941,
-  "multi": 0.7115,
-  "full": 0.5051,
-  "longCtx": 0.3962,
+  "single": 0.7989,
+  "multi": 0.7228,
+  "full": 0.4767,
+  "longCtx": 0.7323,
   "kappaResident": 0.45,
   "kappaGpus": 0.67,
   "pa": 0.01453,
@@ -17,41 +17,41 @@ export const calibration = {
   "pScale": 0.08442,
   "pLen": 4000000,
   "sweeps": 4,
-  "decodeLo": 0.681,
-  "decodeHi": 1.457,
-  "prefillLo": 0.435,
-  "prefillHi": 1.633,
+  "decodeLo": 0.683,
+  "decodeHi": 1.416,
+  "prefillLo": 0.334,
+  "prefillHi": 1.459,
   "runs": {
    "decode": 224,
    "prefill": 117,
    "outliers": 11,
    "medianError": {
-    "decode": 0.157,
+    "decode": 0.146,
     "prefill": 0.265
    },
    "heldOut": {
     "decode": 225,
     "prefill": 127,
     "machines": {
-     "decode": 57,
+     "decode": 56,
      "prefill": 35
     },
     "medianError": {
-     "decode": 0.178,
-     "prefill": 0.316
+     "decode": 0.167,
+     "prefill": 0.322
     }
    }
   }
  },
  "maya": {
   "amd": 1.593,
-  "eff": 0.4891,
-  "lat": 4.758,
+  "eff": 0.4905,
+  "lat": 4.659,
   "beta": 6,
-  "ramEff": 0.261,
+  "ramEff": 0.2609,
   "single": 1,
-  "multi": 1.478,
-  "longCtx": 0.35,
+  "multi": 1.473,
+  "longCtx": 0.3642,
   "kappaResident": 0.5,
   "kappaGpus": 0,
   "pa": 0.009347,
@@ -59,27 +59,27 @@ export const calibration = {
   "pScale": 0.2831,
   "pLen": 4000000,
   "sweeps": 9,
-  "decodeLo": 0.618,
-  "decodeHi": 1.79,
-  "prefillLo": 0.428,
-  "prefillHi": 2.056,
+  "decodeLo": 0.607,
+  "decodeHi": 1.787,
+  "prefillLo": 0.402,
+  "prefillHi": 2.01,
   "runs": {
    "decode": 128,
    "prefill": 114,
    "outliers": 39,
    "medianError": {
-    "decode": 0.242,
+    "decode": 0.239,
     "prefill": 0.387
    },
    "heldOut": {
     "decode": 130,
     "prefill": 151,
     "machines": {
-     "decode": 38,
-     "prefill": 35
+     "decode": 36,
+     "prefill": 34
     },
     "medianError": {
-     "decode": 0.298,
+     "decode": 0.291,
      "prefill": 0.488
     }
    }

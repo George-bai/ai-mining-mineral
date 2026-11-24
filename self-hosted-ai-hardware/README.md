@@ -7,7 +7,7 @@ RTX PRO 2000 Blackwell 16 GB for vision, embeddings and reranking, the host, and
 ## What is measured and what is estimated
 
 - **Measured:** 2,732 first-hand speed records were collected from GitHub (Strata and Project Maya issues, docs and
-  release notes, community repositories), the LocalMaxxing public API and X. 1,010 of them, on comparable hardware and default settings, pass the checks in `evidence.md`. After the outlier pass, 784 one-stream runs feed the speed fits (555 writing and 363 reading speeds; 33 of the writing speeds at 128K or longer) and 120 multi-stream records are kept as concurrency evidence. `anchors.json` publishes 1,680: every GitHub and X record with its conditions, and
+  release notes, community repositories), the LocalMaxxing public API and X. 1,010 of them, on comparable hardware and default settings, pass the checks in `evidence.md`. After the outlier pass, 784 one-stream runs feed the speed fits (555 writing and 363 reading speeds; 45 of the writing speeds at 128K or longer) and 120 multi-stream records are kept as concurrency evidence. `anchors.json` publishes 1,680: every GitHub and X record with its conditions, and
   the 753 LocalMaxxing runs the fit uses (fitted runs, outliers and concurrency sweeps) with the run link and the
   numbers used, without usernames or notes.
 - **Estimated:** every speed the page shows. The model places each quantised file's dense weights, routed experts and
@@ -26,8 +26,8 @@ held-out runs show. Reading speed is fitted only to one-stream runs with prompts
 <!-- accuracy -->
 | Stack | Writing runs | Gap, fitted | Gap, held out (machines) | Band shown | Reading runs | Gap, fitted | Gap, held out (machines) | Band shown |
 |---|---:|---:|---:|---|---:|---:|---:|---|
-| Strata | 224 | 17% | 19% (57) | 0.68–1.46 × | 117 | 30% | 37% (35) | 0.43–1.63 × |
-| Project Maya | 128 | 27% | 35% (38) | 0.62–1.79 × | 114 | 47% | 63% (35) | 0.43–2.06 × |
+| Strata | 224 | 16% | 18% (56) | 0.68–1.42 × | 117 | 30% | 38% (35) | 0.33–1.46 × |
+| Project Maya | 128 | 27% | 34% (36) | 0.61–1.79 × | 114 | 47% | 63% (34) | 0.40–2.01 × |
 | vLLM | 77 | 7% | 9% (12) | 0.78–1.38 × | 68 | 35% | 35% (6) | 0.58–1.68 × |
 | SGLang | 6 | 0% | 20% (1) | 0.70–1.74 × | 14 | 2% | 128% (1) | 0.70–2.88 × |
 | llama.cpp | 120 | 6% | 8% (21) | 0.83–1.15 × | 50 | 46% | 85% (5) | 0.35–2.26 × |
@@ -55,9 +55,9 @@ which makes Medium A$46,568 and Large A$85,906.
 | Qwen3.8-27B | 32 (23–56), 4-bit NVFP4 · 24 GB | 58 (40–101), 4-bit NVFP4 · 24 GB | 88 (61–153), 4-bit NVFP4 · 24 GB |
 | Gemma 4 26B-A4B | 72 (56–99), 4-bit NVFP4 · 19 GB | 113 (89–156), 4-bit NVFP4 · 19 GB | 151 (118–208), 4-bit NVFP4 · 19 GB |
 | Gemma 4 31B | 27 (22–31), 4-bit GGUF · 18 GB | 48 (40–56), 4-bit GGUF · 18 GB | 48 (40–56), 4-bit GGUF · 18 GB |
-| Qwen3.8-Flash-Next | 60 (41–88), 4-bit · 82 GB + 29 GB table | 203 (138–295), 4-bit · 82 GB + 29 GB table | 182 (124–264), 4-bit · 82 GB + 29 GB table |
-| GLM-5.3-Flash | 30 (19–54), 3-bit mixed · 116 GB | 56 (35–100), 3-bit mixed · 116 GB | 83 (51–148), 3-bit mixed · 116 GB |
-| DeepSeek-V4.1-Flash-1017 | 27 (18–39), 2.25 bits · 155 GB + 111 GB table | 60 (37–108), 2–3-bit mixed · 178 GB + 162 GB table | 79 (49–142), 2–3-bit mixed · 178 GB + 162 GB table |
+| Qwen3.8-Flash-Next | 59 (40–84), 4-bit · 82 GB + 29 GB table | 196 (134–277), 4-bit · 82 GB + 29 GB table | 177 (121–251), 4-bit · 82 GB + 29 GB table |
+| GLM-5.3-Flash | 30 (18–54), 3-bit mixed · 116 GB | 56 (34–101), 3-bit mixed · 116 GB | 83 (50–148), 3-bit mixed · 116 GB |
+| DeepSeek-V4.1-Flash-1017 | 26 (18–37), 2.25 bits · 155 GB + 111 GB table | 61 (37–108), 2–3-bit mixed · 178 GB + 162 GB table | 80 (48–142), 2–3-bit mixed · 178 GB + 162 GB table |
 <!-- /machines -->
 
 ## Files

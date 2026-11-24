@@ -31,7 +31,7 @@ two grinding questions (`dev.yaml`), never on the test questions. `run.sh` takes
 | `frozen.sha256` | Hashes taken before the runs, of the files as run, at their paths in our working repository (`articles/<slug>/public/`). Entries for files changed since no longer match: the published key (values or points removed, see the comments in the file), the scripts (only to find the other articles' folders in this repository's layout, 24 Nov 2026) and No. 18's `mcp_server.py` (a statistics fix, 24 Nov 2026); the skill's hash is included, its text is not |
 | `run.sh`, `models.json`, `prompt.md`, `answer.py` | The run |
 | `dev.yaml` | The two development questions for the skill (grinding at Site C); never scored |
-| `answers/` | Every attempt's tool calls and answer |
+| `answers/` | Every attempt's tool calls and answer (a call's arguments are cut at 400 characters and what the tools returned is not included, so these are an index of the calls, not a full trace) |
 | `verdicts.yaml` | right, asked or wrong for each attempt, with the reason. `slip: true` marks four answers that met their question's rule and still hold an error we found (a slope given as 62 for 3.8, a window a day short twice, a reversed remark); they count as right |
 
 ## Run it

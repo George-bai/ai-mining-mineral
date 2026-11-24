@@ -21,6 +21,7 @@ PUB = next(p for p in (HERE.parent.parent / "historian-tag-catalogue-for-agents"
                  HERE.parent / "historian-tag-catalogue-for-agents") if p.is_dir())  # the public one
 sys.path.insert(0, str(PUB))
 import catalog, mcp_server as M  # noqa: E402
+M.L["calls_per_minute"] = float("inf")  # our own reads through the tool code, not an agent's: the cap per minute is lifted
 
 E = "\\\\EXAMPLE-AF\\Operations\\Example Mining\\Site A\\Concentrator 1\\"
 TAGS = {"f": "Flotation\\Rougher Feed|Au", "c": "Flotation\\Rougher Concentrate|Au", "t": "Flotation\\Rougher Tail|Au",

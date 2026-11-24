@@ -35,6 +35,13 @@ pi mcp add historian --exposure direct --description "The plant historian: tag c
 skill=$out/skill-used
 
 ids=${*:-$(python3 -c "import yaml;print(' '.join(q['id'] for q in yaml.safe_load(open('$qfile'))))")}
+# What the agent must not see: this repository, wherever it was cloned (the keys, the scripts, other attempts' answers), and
+# the agent tools' own folders. Checked before the first attempt: a fence that leaves the key readable stops the run.
+root=$(git -C "$here" rev-parse --show-toplevel 2>/dev/null || (cd "$here/.." && pwd))
+hide=(--tmpfs "$HOME/git" --tmpfs "$HOME/.claude" --tmpfs "$HOME/.codex" --tmpfs "$root")
+if bwrap --ro-bind / / --dev-bind /dev /dev --proc /proc --tmpfs /tmp "${hide[@]}" test -e "$here/key.json"; then
+  echo "The fence leaves $here/key.json readable: not running." >&2; exit 1
+fi
 for rep in $(seq 1 "${REPEATS:-1}"); do
   for id in $ids; do
     dir=$out/$id/$rep
@@ -46,7 +53,7 @@ $(cat "$here/prompt.md")"
     # Fenced in (bubblewrap): the repositories, keys and other runs out of sight; this attempt's folder writable;
     # the run's dataset files, the agent's Python and the skill read-only. The model and MCP endpoints stay reachable.
     fence=(bwrap --ro-bind / / --dev-bind /dev /dev --proc /proc --tmpfs /tmp
-      --tmpfs "$HOME/git" --tmpfs "$HOME/.claude" --tmpfs "$HOME/.codex"
+      "${hide[@]}"
       --bind "$dir" "$dir" --bind "$PI_CODING_AGENT_DIR" "$PI_CODING_AGENT_DIR"
       --ro-bind "$data" "$data" --ro-bind "$env" "$env" --ro-bind "$skill" "$skill" --chdir "$dir")
     start=$(date +%s.%N)

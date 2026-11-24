@@ -45,8 +45,11 @@ One stream, expert stacks:
 
 Routed bytes per token = experts × (experts used ÷ experts per layer): 10/512 for Qwen3.8-Flash-Next, 8/288 for
 GLM-5.3-Flash, 6/384 for DeepSeek-V4.1. The drafting gain is Strata's always-on MTP (with an extra term that grows when
-every expert is in VRAM), Maya's MTP with two or more cards, and Maya's DSpark for DeepSeek on one card (64.5 → 72.3
-tokens/s in issue 737). RAM bandwidth is the theoretical figure of the populated channels.
+every expert is in VRAM), Maya's MTP with two or more cards, and, for DeepSeek on one card with Maya, a fixed 1.12 from
+one report (64.5 → 72.3 tokens/s in issue 737, which credits the gain to a re-measured PCIe lane switching the one-GPU
+decode path on, with DSpark listed as calibrated on). That is one machine before and after, kept as an empirical term:
+it is not a controlled comparison of drafting on and off. RAM bandwidth is the theoretical figure of the populated
+channels.
 
 ## Several streams
 
@@ -89,8 +92,18 @@ README.
 writing speed on runs with one stream; reading speed on one-stream cold-prompt runs with prompts of 1,024 tokens or
 more (shorter prompts measure start-up, not reading). Runs from a single user's machine are used as reported.
 
+A writing speed is fitted at the context it was measured at. Of the 563 one-stream writing speeds that pass the
+checks, 369 carry an exact token count from their source. 57 give no count but state the length in words ("nominal
+32k", "prompt-16k", "at 179K context"): that length is used, and kept with its wording as `decodeContextStated` and
+`decodeContextBasis` in `anchors.json` (the list is in `fit.mjs`). The other 137 state nothing and are taken as a short
+prompt of 1,024 tokens; most are the stacks' own benchmarks on short questions. Until 24 Nov 2026 the 57 were fitted as
+short prompts too. Using their stated lengths moved Strata's long-context term from 0.40 to 0.73 and its estimates by
+−3.3% to +2.3% (−2.4% at 128K), and Maya's by less than 1%. Taking the 137 as 4,096 tokens instead moves no estimate
+by more than 0.2%.
+
 The band comes from held-out runs, not the fitted ones. The runs are split into five groups by machine (card, count
-and host); each group is predicted by a fit to the other four, and the page's band is the 10th to 90th percentile of
+and host; a machine its owner describes two ways counts as one, `SAME_CPU` in `fit.mjs`: until 24 Nov 2026 three such
+machines were split, so some of their runs sat on both sides of a fold); each group is predicted by a fit to the other four, and the page's band is the 10th to 90th percentile of
 measured ÷ estimated on those predictions, at least ±15%. With fewer than eight held-out runs, or runs from fewer than
 three machines, the band is at least ±30% and widened to what the held-out runs show: an unvalidated band.
 

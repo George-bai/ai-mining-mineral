@@ -5,6 +5,8 @@ only GET sub-requests) and the mock's token call. Retries 429 and 5xx with backo
 instead of raising them; splits long lists of web ids so URLs stay short; runs at most `workers` requests at once.
 """
 import base64, time
+from datetime import datetime
+from email.utils import parsedate_to_datetime
 from concurrent.futures import ThreadPoolExecutor
 
 import httpx
@@ -32,6 +34,7 @@ class Client:
         self.http = httpx.Client(timeout=timeout, verify=verify)
         self.token = None
         self.requests = 0  # every request sent, for the crawler's report
+        self.clock = None  # the server's own time, from its last response (see server_time)
 
     # ----- the one place requests are sent -----
     def _headers(self) -> dict:
@@ -75,11 +78,23 @@ class Client:
                     break
                 time.sleep(float(r.headers.get("retry-after", delay))); delay *= 2
                 continue
+            self.clock = r.headers.get("x-historian-time") or r.headers.get("date") or self.clock
             body = r.json() if r.content else {}
             if r.status_code >= 400:
                 raise HistorianError(r.status_code, body.get("Errors", [r.text]) if isinstance(body, dict) else [r.text])
             return body
         raise HistorianError(r.status_code, ["Gave up after retries."])
+
+    def server_time(self) -> float | None:
+        """The historian's own clock as its last response gave it: the stand-in's X-Historian-Time header (its clock is
+        fixed), else the HTTP Date header every server sends. None before any response. Never taken from the data:
+        if every tag stops, the newest sample is not the time."""
+        if not self.clock:
+            return None
+        try:
+            return datetime.fromisoformat(self.clock).timestamp()
+        except ValueError:
+            return parsedate_to_datetime(self.clock).timestamp()
 
     # ----- reading -----
     def get(self, resource: str, **params) -> dict:

@@ -45,13 +45,20 @@ if [ "${KIT:-}" = 1 ]; then
 fi
 
 ids=${*:-$(python3 -c "import yaml;print(' '.join(q['id'] for q in yaml.safe_load(open('$qfile'))))")}
+# What the agent must not see: this repository, wherever it was cloned (the keys, the scripts, other attempts' answers), and
+# the agent tools' own folders. Checked before the first attempt: a fence that leaves the key readable stops the run.
+root=$(git -C "$here" rev-parse --show-toplevel 2>/dev/null || (cd "$here/.." && pwd))
+hide=(--tmpfs "$HOME/git" --tmpfs "$HOME/.claude" --tmpfs "$HOME/.codex" --tmpfs "$root")
+if bwrap --ro-bind / / --dev-bind /dev /dev --proc /proc --tmpfs /tmp "${hide[@]}" test -e "$here/key.json"; then
+  echo "The fence leaves $here/key.json readable: not running." >&2; exit 1
+fi
 for rep in $(seq 1 "${REPEATS:-1}"); do
   for id in $ids; do
     dir=$out/$id/$rep
     rm -rf "$dir" && mkdir -p "$dir" && cd "$dir"
     n=$(python3 -c "import yaml;print(len(next(q['turns'] for q in yaml.safe_load(open('$qfile')) if q['id']=='$id')))")
     fence=(bwrap --ro-bind / / --dev-bind /dev /dev --proc /proc --tmpfs /tmp
-      --tmpfs "$HOME/git" --tmpfs "$HOME/.claude" --tmpfs "$HOME/.codex"
+      "${hide[@]}"
       --bind "$dir" "$dir" --bind "$PI_CODING_AGENT_DIR" "$PI_CODING_AGENT_DIR"
       --ro-bind "$data" "$data" --ro-bind "$env" "$env" --ro-bind "$skill" "$skill" --ro-bind "$kit" "$kit" --chdir "$dir")
     for turn in $(seq 1 "$n"); do

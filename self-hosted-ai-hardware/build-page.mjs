@@ -36,7 +36,7 @@ for (const a of pick) {
   // the Server Edition keeps its own id: its bandwidth (1,597 GB/s) is not the Workstation's (1,792)
   runs.push({ p: a.profile, card: a.gpu.card === 'pro6000' ? 'ws6000' : a.gpu.card, vendor: ['r9700', '7900xtx', '9070', '9070xt'].includes(a.gpu.card) ? 'amd' : 'nvidia',
     q: quantLabel(a.quant), same: same(a.quant, packs[a.profile]),
-    n: a.gpu.count, vram: cards[a.gpu.card][0] * a.gpu.count, d: +(+a.decode).toFixed(1), f: a.prefill ? Math.round(a.prefill) : null, ctx: a.decodeContext || null,
+    n: a.gpu.count, vram: cards[a.gpu.card][0] * a.gpu.count, d: +(+a.decode).toFixed(1), f: a.prefill ? Math.round(a.prefill) : null, ctx: a.decodeContext || a.decodeContextStated || null,
     g: `${a.gpu.count > 1 ? `${a.gpu.count} × ` : ''}${names[a.gpu.card]}`, h: [a.host.cpu, a.host.ram ? `${a.host.ram} GB` : null].filter(Boolean).join(', ') || 'host not stated',
     dr: draft === 'none' ? 'no drafting' : draft === 'mtp' ? 'MTP drafting' : draft === 'dspark' ? 'DSpark drafting' : '', u: a.url,
     who: a.measured_by === 'author' ? 'stack author' : (a.kind === 'localmaxxing' ? 'LocalMaxxing' : a.url.includes('x.com') ? 'X' : 'GitHub') });
@@ -68,7 +68,7 @@ const n0 = (x) => Math.round(x).toLocaleString('en-AU'), rng = (b) => `${n0(b.lo
 const used = JSON.parse(readFileSync(new URL('./fit-report.json', import.meta.url), 'utf8')).fitted.filter((x) => !x.outlier);
 const byId = new Map(anchors.map((a) => [a.id, a]));
 const writes = used.filter((x) => x.what === 'decode'), reads = used.filter((x) => x.what === 'prefill');
-const fitted = new Set(used.map((x) => x.id)).size, long = writes.filter((x) => (byId.get(x.id).decodeContext || 0) >= 131072).length;
+const fitted = new Set(used.map((x) => x.id)).size, long = writes.filter((x) => (byId.get(x.id).decodeContext || byId.get(x.id).decodeContextStated || 0) >= 131072).length;
 const passed = anchors.filter((a) => a.fit).length, multi = anchors.filter((a) => a.fit && a.streams > 1).length;
 const fits = `After the outlier pass, ${n0(fitted)} one-stream runs feed the speed fits (${n0(writes.length)} writing and ${n0(reads.length)} reading speeds; ${long} of the writing speeds at 128K or longer) and ${multi} multi-stream records are kept as concurrency evidence.`;
 

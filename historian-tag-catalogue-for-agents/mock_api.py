@@ -329,7 +329,10 @@ async def guard(request: Request, call_next):
     if request.url.path != "/mock/token" and not authorised(request.headers.get("authorization", "")):
         return JSONResponse({"Errors": ["Authentication required."]}, status_code=401,
                             headers={"WWW-Authenticate": 'Basic realm="mock"'})
-    return await call_next(request)
+    response = await call_next(request)
+    # the stand-in's clock is fixed (MOCK_NOW), so it says what time it is; a real server's Date header does the same job
+    response.headers["X-Historian-Time"] = datetime.fromtimestamp(values.now(), timezone.utc).isoformat()
+    return response
 
 
 def authorised(header: str) -> bool:

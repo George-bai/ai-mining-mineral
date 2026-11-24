@@ -199,6 +199,12 @@ the same-day gap between versions. One annotator's key, three readings in doubt.
 to write such readings; this test did not measure that work. The search's index carries that reader's
 mistakes too ("BRAKE PACS" = brake pads). Three companies' notes, mostly heavy mobile equipment. MaintNorm has been public since 2024; the model may have met these notes.
 
+**A known limit in `decide.py`.** Its Qwen3-Reranker adapter cuts the whole prompt at 8,192 tokens. A question and
+passage longer than that would lose the closing answer cue, and the yes/no score would be read at the wrong place;
+the model's own recipe cuts the passage first and then adds the cue. Found by an external review on 24 Nov 2026.
+The file is left as it was run, so the archived scores still replay exactly; whoever reuses it on long passages
+should make that change first.
+
 ## Files
 
 | File | What it is |

@@ -23,7 +23,8 @@ Zyfra's `rougher.input.floatbank10_xanthate`.
 | `make_key.py`, `key.json` | Our analysis through the same tool code, before any run: daily and hourly, as recorded and per tonne of feed, with a week-block bootstrap. The daily points themselves (Zyfra's values) are not published |
 | `frozen.sha256` | Hashes taken before the runs, of the files as run, at their paths in our working repository (`articles/<slug>/public/`). Entries for files changed since no longer match: the published key (values or points removed, see the comments in the file), the scripts (only to find the other articles' folders in this repository's layout, 24 Nov 2026) and No. 18's `mcp_server.py` (a statistics fix, 24 Nov 2026) |
 | `run.sh`, `models.json`, `prompt.md`, `answer.py` | The run: Pi 1.5.2, Qwen 3.8 27B, No. 18's MCP server over HTTP, a fresh fenced session per repeat, the second question with `--continue` |
-| `answers/` | Each session's tool calls and answers, turn by turn |
+| `answers/` | Each session's tool calls and answers, turn by turn (a call's arguments are cut at 400 characters and what the tools returned is not included, so these are an index of the calls, not a full trace) |
+| `charts/` | The second run's charts as the agent saved them, one per session and question. Session 2's second answer put its three slopes only on its chart (`second-run-session2-question2.png`), which is what its verdict was read from; session 3's second chart is the one titled per tonne while plotting the flow. The scripts the agent wrote in that run are not published: they were written under the unpublished skill |
 | `verdicts.yaml` | Each turn's verdict, the agent's numbers as it reported them, and the reason |
 
 ## Run it

@@ -60,6 +60,18 @@ these files by the article's page script.
   conversion the units do not allow is refused with a note, and bad-quality values are left out and counted in
   `notes`. Nos. 19 to 21 ran on the earlier version; seven of No. 19's 72 answers quoted a mean from it that was 1 to
   24 % off (its README lists them). The dataset files kept each summary column apart. Test: `tests/test_timeseries.py`.
+- **Limits before the request** (24 Nov 2026, after an external review): `get_timeseries` used to send a read and count
+  what came back, and `recorded_days` was not applied, so a ten-year read at one second reached the historian before
+  it was refused. The window is now checked first (`check_window`): too many intervals a tag, more than seven days of
+  raw records, an end before the start, or a time or interval it cannot read are refused with nothing sent. Replayed
+  on the 163 distinct windows the agents of Nos. 19 to 21 asked for: the 17 it refuses failed then too, after the
+  request (16 over the interval limit, one with the interval written "15min"). A raw read that returns the most
+  records a call gives now says the window may be cut short.
+- **The clock** (24 Nov 2026, same review): the crawler took the newest sample it was given as "now", so if every
+  tag had stopped a week ago, every tag looked fresh. Staleness is now measured on the server's own clock, read from
+  its responses (the stand-in sends its fixed clock as `X-Historian-Time`; any server sends `Date`), and the crawl
+  report keeps the newest sample apart (`newest_sample`). `historian_earliest` is the oldest record of one healthy
+  tag, taken as where the archive starts. On the stand-in the two clocks agree, so its health counts are unchanged.
 - **Calls per minute** (24 Nov 2026): the server now refuses more than 60 tool calls a minute, all tools together
   (`config/settings.yaml`). The limits per call bound one read; this bounds how many. The runs of Nos. 19 to 21 were
   made before it.
@@ -87,15 +99,30 @@ uv run python mcp_server.py                                                # the
 uv run pytest -q tests
 ```
 
+The first crawl after the stand-in starts is slow, over an hour on our workstation: since 23 Nov 2026 each energy
+counter integrates its meter's power, and the stand-in works every counter out the first time it is read. The 14.5
+seconds the article gives was timed before that change (`eval/crawl-report.json`).
+
 To connect an agent, register the server as a stdio MCP server running `uv run python mcp_server.py` in this
 folder (for example `pi mcp add historian -- uv run python mcp_server.py`). For a shared server, run
 `MCP_API_KEY=... uv run python mcp_server.py --http` and send the key as `X-API-Key`.
 
 ## Against a real historian
 
-Change `historian_url` and `historian_auth` in `config/settings.yaml` to the real web API with a read-only
-service account over HTTPS (Kerberos would be added in `connector.py`), and fill `config/enrichment.yaml` with the
-site's own naming conventions. The crawler, catalogue, tools and skill stay the same.
+This is a stand-in shaped like the PI web API, not a tested vendor integration. To point it at a real server: give the
+crawler the server's address, account and asset database (`--base-url`, `--auth`, `--user`, `--password`, `--database`;
+it reads the first data server it is given), set `historian_url` and `historian_auth` in `config/settings.yaml` for the
+tools (a read-only service account over HTTPS; Kerberos would be added in `connector.py`), fill
+`config/enrichment.yaml` with the site's own naming conventions, and test all of it against that server before anyone
+relies on it.
+
+| Built here | Not built: a site adds and tests these (No. 17 recommends them) |
+|---|---|
+| A connector that only reads | Rights per user: the HTTP server has one shared key |
+| Limits per call, checked before the historian is asked: tags, intervals a tag, days of raw records | The user's name, and allowed or refused, in the log |
+| A cap on tool calls per minute | Network isolation and a one-way copy to read from |
+| A log of every call: tool, arguments, items returned, time taken | A budget on the historian's own side |
+| Staleness measured on the server's clock, not on the newest sample | Kerberos |
 
 ## Licence
 

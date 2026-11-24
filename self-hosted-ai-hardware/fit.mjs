@@ -34,6 +34,34 @@ for (const m of models.filter((x) => x.profiles.some((p) => p.kind === 'resident
 const data = JSON.parse(readFileSync(new URL('./anchors.json', import.meta.url), 'utf8'));
 const runs = data.runs;
 for (const a of runs) delete a.outlier;   // outliers are decided afresh on every run
+// The context a writing speed was measured at. decodeContext is an exact token count from the source. Where the source gives
+// no count but states a length in words, that length is kept as decodeContextStated with its basis, and used wherever the
+// context matters. Before 24 Nov 2026 such runs entered the fit as short prompts. A run with neither stays unknown, and each
+// use below says what it then assumes. Every entry quotes the run's own notes in anchors.json.
+const STATED = {
+  // Strata: benchmark prompts of a stated nominal length
+  'p1-details-pro5000-03': [8192, "'8K document' prompt"], 'p1-amdhip-p620-03': [8192, 'nominal 8K prompt'], 'p1-amdhip-p620-04': [32768, 'nominal 32K prompt'],
+  'p1-amdhip-p620-05': [65536, 'nominal 64K prompt'], 'p1-quants-r9700-03': [6144, "'after 6K document' case"], 'p1-quants-r9700-06': [6144, "'after 6K document' case"],
+  'p1-unsloth-3090-05': [131072, '128K prompt (nominal)'], 'p1-bench-dev5090-01': [1024, 'nominal 1k'], 'p1-bench-dev5090-02': [4096, 'nominal 4k'],
+  'p1-bench-dev5090-03': [32768, 'nominal 32k'], 'p1-bench-dev5090-04': [131072, 'nominal 128k'], 'p1-bench-021-author-02': [4096, 'prompt-4k'],
+  'p1-bench-021-author-03': [16384, 'prompt-16k'], 'p1-bench-021-author-06': [4096, 'prompt-4k'], 'p1-bench-021-author-07': [16384, 'prompt-16k'],
+  'p1-iss4243-02': [4096, 'prompt-4k'], 'p1-iss4243-03': [16384, 'prompt-16k'], 'p1-iss5089-01': [8192, '8K, prompt lengths nominal'],
+  'p1-iss5089-02': [32768, 'nominal 32K'], 'p1-iss5089-03': [65536, 'nominal 64K'], 'p1-iss5089-04': [102400, 'nominal 100K'],
+  'p1-iss2038-01': [200000, 'one 200k-token prompt (as written)'], 'p1-iss2038-03': [200000, '200k solo'],
+  // Maya: in-use reports that state the context in words (approximate)
+  'p3-819-04': [179000, "'an 1850-token answer at 179K context'"], 'p3-394-live150k': [150000, "context '150K+' (at least)"],
+  'p3-614-04': [100000, "'100k+ context' (at least)"], 'p3-332-01': [100000, "'~100K tokens of context'"],
+  'p4-873-session': [382000, 'context grew 281,947 to 482,074 (midpoint)'],
+  'p3-819-api-0cold': [10619, 'two prompts, 12,505 and 8,733 tokens (mean)'], 'p3-819-api-0warm': [10619, 'two prompts, 12,505 and 8,733 tokens (mean)'],
+  'p3-819-api-1cold': [10619, 'two prompts, 12,505 and 8,733 tokens (mean)'], 'p3-819-api-1warm': [10619, 'two prompts, 12,505 and 8,733 tokens (mean)']
+};
+for (const a of runs) {
+  delete a.decodeContextStated; delete a.decodeContextBasis;
+  const m = /nominal prompt\s*(\d+)\s*K/i.exec(a.notes || ''), s = STATED[a.id] || (m && [+m[1] * 1024, m[0]]);
+  if (!a.decodeContext && s) { a.decodeContextStated = s[0]; a.decodeContextBasis = s[1]; }
+}
+for (const id of Object.keys(STATED)) if (!runs.some((a) => a.id === id && a.decodeContextStated)) throw new Error(`STATED names ${id}, which is not a run without an exact context`);
+const ctxOf = (a) => a.decodeContext || a.decodeContextStated;
 // so are the checks below, so a change to the memory rules re-admits the runs they no longer exclude
 const DERIVED = /^(RAM short|faster than the cards|needs about [\d.]+ GB of VRAM as modelled|harness import)/;
 for (const a of runs) if (!a.fit && DERIVED.test(a.why || '')) { a.fit = true; delete a.why; }
@@ -50,7 +78,7 @@ function setup(a) {
 // runs whose host could not hold the experts read them from the SSD: kept as evidence, not fitted
 for (const a of runs) {
   if (!a.fit || !profiles[a.profile] || profiles[a.profile].kind !== 'tiered' || !a.host.ram || !cards[a.gpu.card]) continue;
-  const c = setup(a), m = memory({ ...c, context: a.decodeContext || 8192, streams: 1 });
+  const c = setup(a), m = memory({ ...c, context: ctxOf(a) || 8192, streams: 1 });
   if (m.ramShort > 2) { a.fit = false; a.why = `RAM short by about ${Math.round(m.ramShort)} GB for this pack beside these cards: experts came from the SSD`; }
 }
 
@@ -69,7 +97,7 @@ for (const a of runs) {
 for (const a of runs) {
   const pr = profiles[a.profile];
   if (!a.fit || !pr || pr.kind !== 'resident' || !cards[a.gpu.card]) continue;
-  const c = setup(a), m = memory({ ...c, context: a.decodeContext || a.prefillPrompt || 4096, streams: a.streams || 1 });
+  const c = setup(a), m = memory({ ...c, context: ctxOf(a) || a.prefillPrompt || 4096, streams: a.streams || 1 });
   if (m.vramShort > 0) { a.fit = false; a.why = `needs about ${m.vramUsed.toFixed(1)} GB of VRAM as modelled against ${m.vram.toFixed(1)} GB: its cache or offload settings differ`; }
 }
 
@@ -102,7 +130,8 @@ const free = {
 };
 const bounded = (k) => (k.single ?? 1) <= 4 && (k.full ?? 0) <= 3 && (k.ramEff ?? 0.5) <= 1 && (k.ramEff ?? 0.5) >= 0.05 && (k.beta ?? 1) >= 0.5 && (k.beta ?? 1) <= 30 && k.eff <= 1 && (k.pScale ?? 0) <= 1 && (k.multi ?? 1) <= 4 && (k.longCtx ?? 0) <= 4 && (k.attention ?? 1) <= 6 && (k.amd ?? 1) >= 0.5 && (k.amd ?? 1) <= 6 && (k.pLen ?? 1e5) >= 2e4;
 
-const pd = (a, kk) => { const c = setup(a), ctx = a.decodeContext || 1024; return decodeOne({ ...c, context: ctx, m: memory({ ...c, context: ctx, streams: 1 }), k: kk }); };
+// a run with no stated context is taken as a short prompt (method.md gives the sensitivity to that)
+const pd = (a, kk) => { const c = setup(a), ctx = ctxOf(a) || 1024; return decodeOne({ ...c, context: ctx, m: memory({ ...c, context: ctx, streams: 1 }), k: kk }); };
 const pp = (a, kk) => { const c = setup(a); return prefill({ ...c, context: a.prefillPrompt, m: memory({ ...c, context: a.prefillPrompt, streams: 1 }), k: kk }); };
 const OUT = Math.log(2.5);
 const readable = (a) => a.prefill && a.prefillPrompt >= 1024 && a.streams === 1;
@@ -130,7 +159,19 @@ function fitStack(stack, set, base) {
 
 // held-out check: runs are grouped by machine (cards and host) into five folds; each fold is predicted by a fit made
 // without it. The page's bands come from these held-out ratios, not from the runs a fit has already seen.
-const machineOf = (a) => `${a.gpu.card}x${a.gpu.count}|${a.host.cpu || '?'}|${a.host.ram || '?'}`;
+// One computer written two ways in its owner's reports (same submitter, cards and RAM; project-maya #737 says its machine
+// is #730's): aliased, so all of a machine's runs fall in one fold. The check after it stops a new spelling slipping by.
+const SAME_CPU = { 'Ryzen 9 9950X3D (16c/32t, AVX-512)': 'Ryzen 9 9950X3D', 'EPYC 9354P (32C/64T)': 'EPYC 9354P (32C)', 'Ryzen 9 5900X (12c)': 'Ryzen 9 5900X (12 cores)' };
+const machineOf = (a) => `${a.gpu.card}x${a.gpu.count}|${SAME_CPU[a.host.cpu] || a.host.cpu || '?'}|${a.host.ram || '?'}`;
+{
+  const seen = {};
+  for (const a of runs.filter((x) => x.fit && x.host.cpu)) {
+    const loose = `${a.by}|${a.gpu.card}x${a.gpu.count}|${a.host.ram}|${a.host.cpu.replace(/\(.*?\)/g, '').replace(/\s+/g, ' ').trim().toLowerCase()}`;
+    (seen[loose] ||= new Set()).add(machineOf(a));
+  }
+  const split = Object.entries(seen).filter(([, v]) => v.size > 1);
+  if (split.length) throw new Error(`One machine under two names (add it to SAME_CPU): ${split.map(([k, v]) => `${k}: ${[...v].join(' / ')}`).join('; ')}`);
+}
 const foldOf = (a) => [...machineOf(a)].reduce((h, ch) => (h * 31 + ch.charCodeAt(0)) >>> 0, 7) % 5;
 
 const calibration = {}, report = [];
@@ -158,7 +199,7 @@ for (const stack of order) {
   const near = (x, y) => (!x && !y) || (x && y && Math.abs(x - y) <= 0.25 * Math.max(x, y));
   const kap = [];
   for (const g of Object.values(groups)) for (const a of g.filter((x) => x.streams > 1)) {
-    const one = g.find((b) => b.streams === 1 && b.decode && b.gpu.card === a.gpu.card && b.gpu.count === a.gpu.count && b.drafting === a.drafting && near(b.decodeContext, a.decodeContext));
+    const one = g.find((b) => b.streams === 1 && b.decode && b.gpu.card === a.gpu.card && b.gpu.count === a.gpu.count && b.drafting === a.drafting && near(ctxOf(b), ctxOf(a)));
     const per = a.aggregate ? a.aggregate / a.streams : a.decode;
     if (one && per) kap.push(Math.max(0, (one.decode / per - 1) / (a.streams - 1)));
   }
@@ -179,6 +220,7 @@ for (const stack of order) {
   k.runs = { decode: decIn.length, prefill: preIn.length, outliers: outDec.size + outPre.size,
     medianError: { decode: err(decIn.map((a) => a.decode / pd(a, k))), prefill: err(preIn.map((a) => a.prefill / pp(a, k))) },
     heldOut: { decode: held.decode.length, prefill: held.prefill.length, machines: { decode: held.dm.size, prefill: held.pm.size }, medianError: { decode: err(held.decode), prefill: err(held.prefill) } } };
+  for (const b of ['decodeLo', 'decodeHi', 'prefillLo', 'prefillHi']) if (!Number.isFinite(k[b])) throw new Error(`${stack}: ${b} is not a number: a held-out estimate failed`);
   calibration[stack] = k;
   for (const a of dec) report.push({ id: a.id, stack, what: 'decode', measured: a.decode, fitted: +pd(a, k).toFixed(1), outlier: outDec.has(a) });
   for (const a of pre) report.push({ id: a.id, stack, what: 'prefill', measured: a.prefill, fitted: +pp(a, k).toFixed(0), outlier: outPre.has(a) });

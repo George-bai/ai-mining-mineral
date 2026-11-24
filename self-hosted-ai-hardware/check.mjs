@@ -21,7 +21,8 @@ assert.equal(q.maxContext, 108 * 1024, '3090: longest context that fits');
 // 2. GLM-5.3-Flash on the Medium machine at 128K: about 56 tokens/s for one stream, 12 each for eight; a ninth request
 // waits in a queue rather than making the machine fail
 const one = run({}), eight = run({ streams: 8 }), nine = run({ streams: 9 });
-near(one.decode.mid, 55.7, 0.5, 'one stream'); near(eight.decode.mid, 12.4, 0.5, 'eight streams');
+// expectations moved with the refit of 24 Nov 2026 (machines aliased, stated contexts used): 55.7 -> 56.4 and 12.4 -> 12.5
+near(one.decode.mid, 56.4, 0.5, 'one stream'); near(eight.decode.mid, 12.5, 0.5, 'eight streams');
 assert.equal(nine.valid, true, nine.problems.join(' '));
 assert.equal(nine.active, 8); assert.equal(nine.queued, 1);
 assert.equal(nine.decode.mid, eight.decode.mid, 'the queued request does not slow the eight being written');

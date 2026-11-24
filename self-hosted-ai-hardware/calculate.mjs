@@ -51,7 +51,7 @@ export function decodeOne({ profile, gpu, count, platform, context, m, k = calib
   const cpuTime = routed * (1 - h) / (platform.bw * k.ramEff);
   const long = 1 + k.longCtx * context / 1048576;           // sparse attention: a slow drift with context
   // drafting verifies several tokens per pass over the weights: Strata always, Maya's MTP with two or more cards,
-  // Maya's DSpark for DeepSeek also on one card (profile.draft1)
+  // and, for DeepSeek on one card with Maya, an empirical 1.12 from one report (profile.draft1; method.md)
   const draft = (count > 1 ? k.multi : (profile.draft1 || k.single))
     * (1 + (k.full || 0) * Math.pow(m.c, 8));              // with every expert in VRAM a verify pass costs little more than one token
   return draft / ((Math.max(gpuTime, cpuTime) + k.lat / 1000) * long);

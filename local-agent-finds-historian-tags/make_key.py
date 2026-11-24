@@ -74,6 +74,7 @@ ACROSS = {"t09": (dict(), "max", "current"), "t10": (dict(start="*-7d", end="*",
 
 def main():
     import catalog, mcp_server as M  # noqa: E402  (reads the catalogue and the running mock)
+    M.L["calls_per_minute"] = float("inf")  # our own reads through the tool code, not an agent's: the cap per minute is lifted
     con = catalog.connect(str(M.CATALOG))
     ids = {r[1]: r[0] for r in con.execute("SELECT id, path FROM tags")}
     health = {r[0]: r[1] for r in con.execute("SELECT path, health FROM tags")}
