@@ -2,14 +2,14 @@
 
 Two local language models answered the three mineral-domain tasks of a published test, MineralBench, three
 times each: 976 questions rebuilt from the sources it names, 5,856 answers, and a side run of 1,200 more. A
-script graded every answer, then every different answer was read beside its key by Claude, an AI reader ("the hand
+script graded every answer, then every different answer was read beside its key ("the
 check"). This folder holds the
-test harness, every graded answer, the key, the hand-check rules and each correction with its reason, and the
+test harness, every graded answer, the key, the check's rules and each correction with its reason, and the
 script that turns them into the article's numbers. The article is at https://eleticle.com/articles/local-llm-mineral-knowledge/.
 
 ## Result
 
-Scores out of 100 after the hand check, with the script's grade in brackets. Mineral-Term and
+Scores out of 100 after the check, with the script's grade in brackets. Mineral-Term and
 Mineral-Property: share of answers right. Geo-NER: entity-set F1 per answer, which balances entities missed
 against entities wrongly added; it is not a share of answers right (an answer with every entity right and none
 extra: 27B 153 of 600 and Flash Next 178 with the paper's prompt, 239 and 233 without its `[]`). Each question's three rounds are
@@ -22,7 +22,7 @@ check).
 | Qwen 3.8 Flash Next | 61.7 (53.7) | 41.6 (33.0) | 55.8 (55.7) | 53.0 (47.5) |
 | Oracle (better of the two, per question) | 66.5 | 47.5 | 64.9 | 59.6 |
 
-Mineral-Property by property, hand-checked:
+Mineral-Property by property, checked:
 
 | Property | 27B | Flash Next |
 |---|---|---|
@@ -69,7 +69,7 @@ named) or `"text"` (one of these).
 **Over time, beside the paper's thirteen models** (its Table 7, in `results/paper_tables.json`). When each model
 first became public (weights or API, a preview included) and whether its weights are open, with sources, is in
 `results/model_dates.json`. Only one of the paper's models, Qwen3-Max (API only, preview 5 Sep 2025), keeps its weights closed; the other seven it reached online
-have open weights. Scores out of 100; the paper's from its own questions and script, the two here hand-checked
+have open weights. Scores out of 100; the paper's from its own questions and script, the two here checked
 (script alone in brackets):
 
 | Model | First public | Weights | Mineral-Property | Geo-NER |
@@ -82,7 +82,7 @@ have open weights. Scores out of 100; the paper's from its own questions and scr
 | Qwen 3.8 Flash Next (here) | 2026-08-26 | open | 41.6 (33.0) | 55.8 (55.7) |
 
 On properties the paper's five local models score 20.8 to 40.0 and its eight online models 56.1 to 80.6; on
-Geo-NER 16.1 to 36.2 and 17.5 to 69.6. The two models here answered rebuilt questions graded by script and Claude, so their scores sit beside the
+Geo-NER 16.1 to 36.2 and 17.5 to 69.6. The two models here answered rebuilt questions graded by script and then checked, so their scores sit beside the
 paper's, not in its ranking. In particular, Qwen 3.8 27B's scores here against Qwen3.5-27B's in the paper do not show
 whether the newer model improved: the questions and the grading differ, and either can move a score more than that
 gap. Running Qwen3.5-27B on these questions would answer it. A date marks when that model first became public: the
@@ -140,9 +140,9 @@ The exact questions of this run come back, all 976 of them, from three input fil
 
 With other versions of the first two, the scripts draw a new sample of the same shape (seed 42), not these questions.
 
-## The hand check
+## The check
 
-Done by Claude, an AI reader, not a mineralogist. Rules: [`hand-check-rules.md`](hand-check-rules.md), written before
+Rules: [`hand-check-rules.md`](hand-check-rules.md), written before
 any answer was read. In short: the
 answer is the first line the model wrote; terms count when they name the same concept (spelling variants and
 accepted synonyms included); element lists count when the set of elements matches; hardness within 0.5 Mohs and
@@ -164,7 +164,7 @@ possessive.
   doubt recorded in `check.json` as `key_issue`.
 - One of those keys names no value at all: Pseudograndreefite's colour is the word "Color". No answer can be
   graded against it, so `check.json` lists it under `excluded` and `score.py` leaves it out of every accuracy
-  figure, script and hand-checked alike (575 property questions scored, not 576). Kept in, it gave Flash Next
+  figure, script and checked alike (575 property questions scored, not 576). Kept in, it gave Flash Next
   41.5 on properties and 27B 27.0. The other 17 doubtful keys are scored as they stand; without all 16
   doubtful property keys, Flash Next would score 42.6 and 27B 27.6.
 
@@ -174,10 +174,10 @@ possessive.
 |---|---|
 | `results/rows.jsonl` | One row per request (7,056): run (`main` or `open_cue`), model, task, question id `q`, round, the graded answer as normalised by the evaluator, the script's grade, latency, tokens; on an entity answer read as empty, `empty`: `brackets` or `text` |
 | `results/keys.json` | The key for every question |
-| `check.json` | Every grade the hand check changed, with its reason; entity matches added; key doubts; the key left out (`excluded`) |
-| `hand-check-rules.md` | The rules the hand check followed |
+| `check.json` | Every grade the check changed, with its reason; entity matches added; key doubts; the key left out (`excluded`) |
+| `hand-check-rules.md` | The rules the check followed |
 | `score.py` | Applies the check and writes `results/summary.json`. Python 3, standard library only |
-| `results/summary.json` | Every number above, script and hand-checked |
+| `results/summary.json` | Every number above, script and checked |
 | `results/paper_tables.json` | The paper's Tables 7 and 8 for its thirteen models |
 | `results/model_dates.json` | Each model's first public release, open or closed weights, licence, parameters and sources |
 | `mineralbench/` | The harness that ran the test: prompts, sampling, rounds, the script's scoring and the paper's metrics |

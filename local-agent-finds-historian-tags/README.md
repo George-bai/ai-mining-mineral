@@ -29,7 +29,7 @@ catalogue, MCP server and skill (`../historian-tag-catalogue-for-agents/`).
 | `sheet.py` | Builds the reading sheet and `attempts.json` (tags read, tool calls, seconds, charts) from the event logs |
 | `attempts.json` | Every attempt's facts |
 | `answers/` | Every attempt's tool calls and final answer (`<question>-<repeat>.md`) |
-| `verdicts.yaml` | Pass or fail for each attempt, read by hand beside the key, with the reason |
+| `verdicts.yaml` | Pass or fail for each attempt, read beside the key, with the reason |
 | `dev.yaml` | Two of No. 18's development questions used only to check the harness; never scored |
 
 ## Run it
@@ -69,13 +69,13 @@ winner for the window it states. ambiguous: asks which one, or lists at least tw
 silently picking one. unhealthy: says the tag cannot be used and gives no value from it as a reading. Any key tag
 marked unhealthy must be called out. Bar: the median repeat passes 18 of 24, and no invented tag.
 
-After Codex's check of the verdicts, the last rule was applied by the letter to the vague questions' candidate tags
+After a second check of the verdicts, the last rule was applied by the letter to the vague questions' candidate tags
 too: four answers fail by it (`FAILS` in `write_verdicts.py`). Before that the count was 72 of 72.
 
 ## Limits
 
 One model and one stand-in historian whose names are tidier than most sites'; 20 of 24 questions name a site (the four code questions give only a code); three
-repeats; one reader of the answers. Values in the answers come from the stand-in: real hourly averages (Zyfra's
+repeats. Values in the answers come from the stand-in: real hourly averages (Zyfra's
 and a private plant's) with generated records, not published as data here.
 
 ## Means quoted from our tool

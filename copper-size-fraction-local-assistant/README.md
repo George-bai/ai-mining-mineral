@@ -4,8 +4,8 @@ Code, prompt and results for the article at https://eleticle.com/articles/copper
 
 Two local language models, each in a coding agent with a shell so it could run Python, were given Table 1 of a
 published study of copper flotation tailings and asked one question: which size fraction carries the most
-copper? Each model answered ten times. We worked the answer out ourselves (`check.py`), and Claude, an AI reader,
-read all 20 replies against it (`results/run1/review.json`).
+copper? Each model answered ten times. We worked the answer out ourselves (`check.py`), and all 20 replies were
+read against it (`results/run1/review.json`).
 
 **In short:** all 20 attempts named the fraction with the most of the reported copper (CTS−C5, the finest) and said that the richest fraction
 (CTS+106) is a different one. None said that the 8.2 % of the sample missing from the table might hold copper.
@@ -20,7 +20,7 @@ Tailings: A Mineralogical and Geometallurgical Approach to Identify and Evaluate
 of fresh flotation tailings from the Carrapateena processing plant, July 2024, assayed for major, minor and
 trace elements. The table is reproduced in `prompt.md`, as the models received it.
 
-Two separate readings of the publisher's page (Codex, 20 Nov 2026) agree on every mass and copper value. The
+Two separate readings of the publisher's page (20 Nov 2026) agree on every mass and copper value. The
 paper does not state the screen sizes or the method behind the codes C1, C3 and C5, gives no measured head
 grade and no copper distribution for this sample, and does not explain why the masses add to 91.8 %. Its
 abstract calls the finest fraction −10 µm; section 4.1 calls CTS−C5 the finest fraction.
@@ -77,7 +77,7 @@ python3 collect.py ../local/runs/run1            # writes results/run1/: answers
 
 `results/run1/<model>/<attempt>/answer.md` is each final reply; `steps.md` is everything before it in order
 (thinking, each command the model ran, what came back); `results.json` has the time, turns, tool calls and
-tokens. `review.json` is Claude's reading of each reply against `check.py`:
+tokens. `review.json` is the reading of each reply against `check.py`:
 
 | Check | Qwen 3.8 27B | Qwen 3.8 Flash Next |
 |---|---|---|

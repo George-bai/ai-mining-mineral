@@ -5,7 +5,7 @@ prints copper as 0.301 wt.% by four-acid digestion, 0.308 wt.% by aqua regia and
 sulphuric acid. A site's QAQC database keeps one expected value and one standard deviation (SD) per lab method, so each field takes one of
 these numbers or none. A reader can copy every digit correctly and still file the wrong one.
 
-Here three readers fill the same twelve database fields from seven public certificates, and a hand-built key says
+Here three readers fill the same twelve database fields from seven public certificates, and a key says
 what each field should hold. The article is at https://eleticle.com/articles/assay-certificate-database-fields/.
 
 **A first test, not a benchmark:** seven certificates, one local model, three attempts per certificate and
@@ -106,7 +106,7 @@ download.
 
 ## How it was scored
 
-The key was built by hand from each certificate before any model answer was read, except OREAS 902, whose first
+The key was built from each certificate before any model answer was read, except OREAS 902, whose first
 model answer came first (its key follows its Table 1 line by line). For AMIS0832 either half of 2s or the stated
 standard uncertainty counts as the 1SD (2s = 2 uc on that certificate). For SE147 the key's 1SD is the standard
 deviation of the 26 accepted laboratory sets (page 4): the field asks for a 1SD and this is the one the certificate

@@ -17,7 +17,7 @@ source, are in `research/`:
 | `q3-security.md` | Guidance on safe agent access to operational data: zones, read-only accounts, MCP and prompt injection, audit |
 | `q4-findability.md` | How large tag lists are made findable: asset models, naming standards, search, and published evaluations |
 
-A fifth Codex run checked each number and claim the page takes from a source against that source
+A fifth run checked each number and claim the page takes from a source against that source
 (`research/verify.md`, with its prompt).
 
 ## The page's data

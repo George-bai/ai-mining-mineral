@@ -11,7 +11,7 @@ and read 300 held-out notes with and without it. Here the same model, server and
 a third kind of help: SAG-Wiki's deep search, judged by Qwen3-Reranker-0.6B, run offline over the company's 3,200
 other notes (MaintNorm's train split, which is not ordered by date), each with the annotator's reading, and the ten
 passages it returned put where the glossary went. The glossary version was run again the same day. Every answer was
-scored against MaintNorm's key, then read blind by hand. A note's **meaning is kept** when the plain-English reading
+scored against MaintNorm's key, then read blind. A note's **meaning is kept** when the plain-English reading
 says what the note says: nothing misread, dropped or added (shorthand left visibly unread does not break it).
 
 | | Search (21 Nov) | Glossary (21 Nov) | Glossary (No. 13, 20 Nov) | No help (No. 13, 20 Nov) |
@@ -36,7 +36,7 @@ form joined to an asset number such as `BT0391-C/out`, and `PRESS/`); shorthand 
 22 only with the search, 5 only with the glossary, 5 with neither; exact McNemar test, two-sided, p = 0.0015. As the
 readers first judged, blind: 22 against 9, p = 0.029; after the settlement made before unblinding: 22 against 8,
 p = 0.016. Leaving out the 47 near-duplicate notes (below): 244 against 229 of 253, 19 against 4, p = 0.0026; leaving
-out the 55 of the broader check: 236 against 221 of 245, 19 against 4, p = 0.0026. Under the stricter readings Codex's
+out the 55 of the broader check: 236 against 221 of 245, 19 against 4, p = 0.0026. Under the stricter readings the
 page reviews proposed and we did not adopt, with the blind readers' verdicts on the four answers set back by No. 13's
 rulings (below): 286 against 264, 30 against 8, p = 0.0005; additions would then
 be 3 with the search and 2 with the glossary, and glossary shorthand 487 right and 13 wrong (C-test-246's "motor and
@@ -68,7 +68,7 @@ NOZZLE"). And `A-test-285` ("BRAKE PACKS") became "brake pads", following anothe
 
 **Near-duplicates.** 47 of the 300 test notes equal a training note once the tokens the key masks as asset numbers are
 removed (ignoring case); the search can find such a note itself. They are reported, not removed (sensitivity above).
-A broader check, added after the run at Codex's page review, also removes asset numbers inside a token
+A broader check, added after the run at a page review, also removes asset numbers inside a token
 (`BT0391-C/out`, where the key marks the token as holding an asset number): 55 notes (`near_duplicates_broad` in
 `coverage.json`).
 
@@ -78,7 +78,7 @@ A broader check, added after the run at Codex's page review, also removes asset 
   company, not necessarily earlier ones), the same 3,200 notes No. 13's glossary was built from;
   one Markdown file, one heading per note as typed, under it "Means: " and the annotator's reading, with masked asset
   numbers, numbers and dates put back as typed (`2000H` keeps its 2000; asset IDs keep their letters). No val or test
-  note is read. Found after the run (Codex's page reviews): the builder as run (`index_as_run.py`, SHA-256
+  note is read. Found after the run (the page reviews): the builder as run (`index_as_run.py`, SHA-256
   `16eb176d…`) misfills masks in 11 of the 9,600 notes, where an asset number runs into a word, a number or date
   shares a token with one, or a name follows a slash (`engineV1` became "engine 1", `7897-3Week` "7897 - 7897 week",
   `KD208-24/04/10` "KD208 - 208", `PARTS/NIGEL THOMAS` "parts / PARTS"). One such passage reached the model:
@@ -110,10 +110,10 @@ cut off. Files frozen before the run (SHA-256): `prompt.md` `7377f1ad…`, `ask.
 
 1. **Script** (`score.py`, No. 13's with the versions renamed): per piece of shorthand, right, wrong, unsure or kept
    against MaintNorm's key. An answer without usable plain text keeps no meaning and stays in the 300.
-2. **By hand, blind** (`handsheet.py`, rules in `handrules.md`, No. 13's gathered unchanged in substance): every
+2. **Read blind** (`handsheet.py`, rules in `handrules.md`, No. 13's gathered unchanged in substance): every
    answer of both versions, plus 40 of No. 13's recorded glossary answers (all 17 it judged meaning lost, 23 drawn
    with seed 16), each under a random id from the operating system's random source, shuffled into four sheets of
-   160 (made at 17:03 AEST); four Claude readers, one sheet each, never shown the version. Their files are
+   160 (made at 17:03 AEST); four readers, one sheet each, never shown the version. Their files are
    `hand/verdicts-*.txt`.
 3. **Settled before unblinding** (17:07 AEST): the readers split on three questions, each settled by No. 13's recorded verdict on
    the same note (a doubtful key costs meaning only when the answer's reading does not fit the note; `5H` read as
@@ -124,7 +124,7 @@ cut off. Files frozen before the run (SHA-256): `prompt.md` `7377f1ad…`, `ask.
    and these readers kept (two "quick fill" made "Kwik fill", one "Connect Inspect" made two tasks).
 5. **After unblinding** (from 17:08 AEST, versions known; every change in `hand/after-unblinding.txt` with its
    reason, applied by the merge): the "Kwik" rule, two glossary answers to meaning lost ("Connect Inspect" was already
-   judged so); after Codex's first page review, REQ read as a request right with meaning kept (No. 13's ruling;
+   judged so); after the first page review, REQ read as a request right with meaning kept (No. 13's ruling;
    B-test-237, both versions), the date 4/8/8 kept as typed right (C-test-214, both) and J4, an asset id, made
    "position J4" to meaning lost (B-test-340 glossary, the only such answer); after its third, No. 13's same-note
    rulings applied the other way as well, by a scan of all 600 answers for readings matching one No. 13 judged
@@ -197,8 +197,7 @@ One model, one answer per note and version, sampled; the glossary's run-to-run d
 the same-day gap between versions. One annotator's key, three readings in doubt. Both versions rest on the annotator's reading of the same
 3,200 notes: the glossary's 50 lines were counted from them by a script, the search reads them all. A site would have
 to write such readings; this test did not measure that work. The search's index carries that reader's
-mistakes too ("BRAKE PACS" = brake pads). Three companies' notes, mostly heavy mobile equipment. The hand check was
-made by AI readers (Claude), not a planner. MaintNorm has been public since 2024; the model may have met these notes.
+mistakes too ("BRAKE PACS" = brake pads). Three companies' notes, mostly heavy mobile equipment. MaintNorm has been public since 2024; the model may have met these notes.
 
 ## Files
 
@@ -210,7 +209,7 @@ made by AI readers (Claude), not a planner. MaintNorm has been public since 2024
 | `coverage.py`, `coverage.json` | What each version supplied, prompt sizes, near-duplicates |
 | `retrieved.json` | For each test note, the ten notes the search returned, in order, as MaintNorm training-split indices |
 | `notes-test.json`, `prepare.py` | No. 13's 300 notes and how they were drawn |
-| `check.json`, `results.json` | The hand check and every answer, scored |
+| `check.json`, `results.json` | The check and every answer, scored |
 | `answers/` | The 600 recorded answers, each with its prompt as sent |
 | `protocol.md` | The plan, the reviews and what happened |
 

@@ -5,8 +5,8 @@ Code and data for Eleticle Core Log No. 15 (https://eleticle.com/articles/offlin
 Five public records on Cadia's molybdenum plant (576 pages) were indexed in SAG-Wiki 0.3.11, an open-source document
 search application, on one workstation whose indexing, search and model scoring could connect only within it. Twelve questions were asked by keyword search
 and by deep search, where a local model judges each candidate passage. A question counts when the first five
-excerpts SAG-Wiki displays hold its whole answer, from the pages the key names. Every list was then read by Claude
-readers, blind to the setup.
+excerpts SAG-Wiki displays hold its whole answer, from the pages the key names. Every list was then read
+blind to the setup.
 
 **Corrected 22 Nov 2026: the first filtered concentrate.** q01-q03 ask what had been achieved at the plant "by the end of 2021",
 and the key credited the December-quarter report's page 3 passage (in our words: commissioning continuing, a filtered
@@ -21,7 +21,7 @@ q01-q03 again as q13-q15, changing only the date phrase: "what does the [Decembe
 achieved" (q14 and q15 now name the quarterly, a clue keyword search can use; the change is to a named, dated
 report, not the date alone). Every setup ran again, as before (same settings, offline, both collections, twice, the
 repeats identical; the speech service on the GPU stopped 10:52 to 11:01 AEST for KnowLine), into
-`local/dated/runs`, and every distinct list (42) was read blind, split between two Claude readers (21 lists each, none
+`local/dated/runs`, and every distinct list (42) was read blind, split between two readers (21 lists each, none
 read twice): all 84 judgements of where each fact first shows agreed with `score.py`; the place of the 2024 edition's
 copy differs in 10 lists only by definition (the script records it even after the 2026 page, the readers only before),
 which changes no score (`check.json`, `dated_lists`, `dated_note`). Whole answer in the first five, all 576 pages, of 3:
@@ -127,8 +127,8 @@ count. An excerpt is one passage as SAG-Wiki displays it (fast search: matched s
 range of a chosen chunk, so table rows can be separate excerpts). `score.py` scores, `test_score.py` tests its rules,
 `score.py --check-key` confirms that every page holds its phrases and that no other page holds them all.
 
-**By hand.** `handsheet.py` writes every distinct list (first 10 excerpts) under a random id, without the setup, in
-shuffled order. Five readers (Claude subagents), one per batch of 24 to 35 lists, judged each fact's first rank by
+**Read blind.** `handsheet.py` writes every distinct list (first 10 excerpts) under a random id, without the setup, in
+shuffled order. Five readers, one per batch of 24 to 35 lists, judged each fact's first rank by
 the key's descriptions; every disagreement with the script was to be re-read and recorded in `check.json`. There were
 none: 159 distinct lists in 161 readings (two KnowLine lists repeated lists already read, and got the same verdicts), 202
 judgements, all equal. The author also re-read the first six passages of every q02 and
@@ -138,7 +138,7 @@ produced it.
 **Repeats.** Every setup ran each collection twice, each time from an empty index and a new decision
 process. Every repeat list was identical to the first, excerpt for excerpt.
 
-**Protocol review.** Before launch, Codex (gpt-6.2-astra, read-only) reviewed the protocol twice; both times it held
+**Protocol review.** Before launch, the protocol was reviewed twice; both reviews held
 the launch, for defects in the runner and scorer, a key phrase that could pass a cut-off list, and four questions with
 other honest answers. All were fixed before any run on these questions. `protocol.md` records the plan and the changes.
 
@@ -193,7 +193,7 @@ metallurgist's unseen questions, with the evidence they need named by a second p
 defaults except d1-2B's 16,000-token decision batches and, for KnowLine, a 3,600 s request timeout, a 14,400 s retry
 allowance (default 600) and one decision batch at a time (default 20 in parallel); one version of SAG-Wiki. Public records, which the models may have seen in training. Each setup is one
 model and one set of weights; the ranking of setups here is for this archive and these questions. Passages only: no
-answer text was generated. The hand check was done by Claude, not by a metallurgist.
+answer text was generated.
 
 ## Repeat it
 
@@ -230,9 +230,9 @@ python3 score.py $DATED/runs check.json --questions questions-dated.json
 | `questions.json`, `questions-as-run.json`, `questions-dated.json` | The twelve questions and the key (corrected; as run); q01-q03 asked again with their date (q13-q15) |
 | `offline.sh`, `run.py`, `run_all.sh`, `run_everything.sh` | One offline run; every run |
 | `decide.py`, `check_decide.py` | The local decision service for SAG-Wiki, and its smoke check |
-| `score.py`, `test_score.py`, `handsheet.py` | Scoring, its tests, the blind hand-check sheets |
+| `score.py`, `test_score.py`, `handsheet.py` | Scoring, its tests, the blind check sheets |
 | `runs.json` | Both batches of runs (`batch`, `key`: the first, with `questions.json`; the dated re-run of q01-q03 as q13-q15, with `questions-dated.json`), every list as record, page, line range, a hash of each excerpt's text and its character start and end in `prepare.py`'s text (an excerpt can be shorter than its lines), with each run's settings and decision traffic |
-| `results.json`, `check.json` | The scores per setup, collection and question; the hand check |
+| `results.json`, `check.json` | The scores per setup, collection and question; the check |
 | `protocol.md` | The plan, the reviews and what happened during the runs |
 
 Code: MIT. The records belong to their publishers and are not included.

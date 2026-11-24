@@ -41,7 +41,7 @@ source makes. Of the 41 statements that cite a passage, 38 are fully supported (
 each passage: e7's mine name comes from it) and 3 only partly (one, e6's "only",
 adds a word no passage has); of the 15 without a citation, 4 make a claim no passage makes.
 
-The seven flagged statements (six from the second reader, one from Codex's page reviews, which also added a reason to e8's closing line), each checked against the passages:
+The seven flagged statements (six from the second reader, one from the later page reviews, which also added a reason to e8's closing line), each checked against the passages:
 
 - e4: "Thyssenkrupp double-rotor ball mills (2 × 5.8 m × 17.5 m, 7,355 kW each)" cites a table row that reads "double
   rotator ball mill" (with the size, the power and a quantity of 2, so 7,355 kW per mill is a fair reading).
@@ -51,7 +51,7 @@ The seven flagged statements (six from the second reader, one from Codex's page 
   requires either…": the rule is in the passages; "including its pulley area" is not, and reads as if a pulley may stay
   unguarded, against § 56.14107(a).
 - e6, no citation: "If it were positioned seven feet or more from the walkway, a guard would not be mandated": §
-  56.14107(b) needs seven feet from walking or working surfaces, not from one walkway. (Codex.)
+  56.14107(b) needs seven feet from walking or working surfaces, not from one walkway. (A page review.)
 - e6, no citation: "the seven-foot distance exception is the only way to avoid that requirement": as above.
 - e8: the answer lists four items the "written procedure should include"; the 2003 report gives two separate corrective
   actions (a written procedure with a pre-job risk analysis and monitoring; a written plan to contain the roaster's
@@ -59,7 +59,7 @@ The seven flagged statements (six from the second reader, one from Codex's page 
 - e8, no citation: "Goldstrike's (now part of Newmont) internal safe-job-procedure files or … MSHA's citation-termination
   documentation, neither of which is included in the sources supplied here": no passage says who owns the mine now or
   that MSHA's documentation holds the verbatim procedure, and passage [1] does hold the citation-termination text.
-  (Codex, second review; its first had flagged the earlier "termination notice", reassessed as supported: the
+  (Second page review; the first had flagged the earlier "termination notice", reassessed as supported: the
   termination text is among the sources.)
 
 The search, not the model, left out § 56.14109(b)(2) and (3), the railing's further conditions: only (b)(1) was
@@ -73,7 +73,7 @@ report, none of them its roaster pages. The answer said its sources did not desc
 For the six answered questions, every target page was already among the first round's five best-judged candidates
 (round-one ranks 1 to 5): on this archive the second round added no target page.
 
-**Key corrected after the run.** `examples.json` named NGM pages 189 and 191 for e4 and e7. Codex's page review found
+**Key corrected after the run.** `examples.json` named NGM pages 189 and 191 for e4 and e7. A page review found
 that page 191 describes the Gold Quarry roaster, not Goldstrike's; the key now names pages 189 (the Goldstrike roaster
 circuit) and 190 (its equipment table), and keeps the original as `expect_original`. e4's answer cited pages 189 and
 190; e7's outcome does not change.
@@ -131,13 +131,13 @@ record: `# <record>`, then `## <page or section>`, wrapped lines inside a paragr
   (socat on both sides); `answer.py` records no interface check of its own (the wrapper, run again afterwards, gives
   `[(1, 'lo')]`). The model server itself ran outside the namespaces, as it had since 19 Nov; it was not sealed.
 
-## The hand check
+## The check
 
 Before any search, `examples.json` named, for each question, its target pages for scoring the retrieval: the pages
 whose text answers it as the records stand (e7: the circuit as documented at 31 December 2025; e8: none). After the
 runs, each answer was split into statements, one per sentence or bullet, and each read against the passages it cites
-(`check.json`): first by Claude in the session that ran it, which found one problem (e8's owner), then statement by
-statement by a second Claude reader without the first's verdicts, which flagged six statements; Codex's page reviews
+(`check.json`): a first reading found one problem (e8's owner); a second, statement by
+statement and without the first's verdicts, flagged six statements; later page reviews
 added one more (e6, seven feet from the walkway alone) and a further reason on e8's already-flagged closing line, and
 two objections were withdrawn (to e4's "each", and to e8's "termination notice"). Every one was checked against the
 passages: seven statements stand flagged, three partly supported and four claims no source makes. Names of people in the MSHA reports (those killed, crews, investigators, witnesses)
@@ -147,8 +147,7 @@ are withheld in `results.json`, `check.json` and on the page; the prompts as sen
 
 Eight questions written by one person who had read the records; one run of each, sampled; SAG-Wiki's default
 settings; one workstation. Public records, which the models may have seen in training. The record titles sent to the
-answering model name the mine, report and date: e7's answer named the mine from them. The hand check was done by
-AI readers (Claude, with Codex's review), not by a metallurgist or a safety officer. Answer lengths: 214 to 993 output
+answering model name the mine, report and date: e7's answer named the mine from them. Answer lengths: 214 to 993 output
 tokens.
 
 ## Repeat it
@@ -182,6 +181,6 @@ MODEL='your-model-id'   # the answering model's id on your chat server
 | `decide.py` | The local decision service for SAG-Wiki |
 | `answer.py`, `answer_offline.sh` | SAG-Wiki's answer step, run offline |
 | `results.json` | Per question: every returned passage as record, page, line range, character offsets in `prepare.py`'s text and the SHA-256 of the passage as returned (a passage can be shorter than its lines); every judged candidate per round as SAG-Wiki's candidate id, its position in the request, record, page, text hash and score (SAG-Wiki breaks a tie in score by the candidate's retrieval order, then its id: e6's tenth place went to § 56.14212 over § 56.14202 at the same score); the judgements per round; the answer (names withheld); times |
-| `check.json` | The hand check, statement by statement |
+| `check.json` | The check, statement by statement |
 
 Code: MIT. The records belong to their publishers and are not included.

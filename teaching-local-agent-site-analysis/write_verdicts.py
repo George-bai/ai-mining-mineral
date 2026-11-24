@@ -1,4 +1,4 @@
-"""Writes verdicts.yaml from the verdicts recorded by hand below, after reading every attempt's tool calls, script and
+"""Writes verdicts.yaml from the verdicts recorded below, after reading every attempt's tool calls, script and
 answer beside the key (key.json; p1: No. 20's key.json). Also copies each answer.md to answers/.
 
     python3 write_verdicts.py ../local/runs

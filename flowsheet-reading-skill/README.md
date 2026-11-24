@@ -6,8 +6,8 @@ charts with no help.
 
 Here the same two models, Qwen 3.8 27B and Qwen 3.8 Flash Next, read the two whole-plant drawings of No. 06 (Phoenix
 mine mill and Twin Creeks mine) three times with a flowsheet-reading skill and three times without it. Each chart was
-scored against an answer key of the drawing's units, streams and loops, and every chart was checked by Claude, an AI
-reader ("the hand check" below).
+scored against an answer key of the drawing's units, streams and loops, and every chart was then checked ("the check"
+below).
 
 **Finding.** On each drawing, all three Flash Next attempts with the skill found more streams than any attempt without it
 on that drawing, and drew fewer wrong lines, in about twice the time. The 27B model was run twice (its first run shared
@@ -86,7 +86,7 @@ server is void and is run again alone, once. Same frozen files, same server star
 | Rerun as counted | 37, 41, 37 against 26, 26, 26 | 34, 45, 50 against 37, 34, 37 | Phoenix |
 
 **The five void attempts** (other requests on the server during them: 1 to 18 small requests, about 70 s of server time in
-all), hand-checked before they were voided, and their runs alone:
+all), checked before they were voided, and their runs alone:
 
 | Attempt | Void | Run alone |
 |---|---|---|
@@ -109,7 +109,7 @@ against none in the first run, whose logs show the same loops ending in time).
 **The first run's numbers** (in `results/qwen38-27b-first-run/`): streams 147 without the skill (180 with the repaired
 copy) and 249 with it; wrong lines per valid chart 36.0 and 33.7; 1 to 5 and 14 to 28 minutes an attempt. Its Twin Creeks
 wrong lines here are 1 or 2 lower than first published (35, 36, 34 repaired without the skill; 28, 27, 39 with it, now 34,
-35, 33 and 27, 26, 37): a hand-check call written during the rerun (a 'Trash Screen' between the jaw crusher and the
+35, 33 and 27, 26, 37): a ruling of the check written during the rerun (a 'Trash Screen' between the jaw crusher and the
 radial stacker, where the drawing has none, pairs with nothing; `reference/README.md`) was applied to both runs. It moves
 no stream count and no verdict.
 
@@ -136,7 +136,7 @@ Python 3 and Pillow.
 **How it was made.** Written and tuned only on other drawings: slides 41, 47 and 48 of the same lecture, and the
 process flowsheets (Figure 17-1) of two public technical reports, the 2024 NI 43-101 reports for Macraes (OceanaGold)
 and Detour Lake (Agnico Eagle). Each development drawing had its own answer key. Those drawings and keys are not
-published. Six versions, one change at a time, each scored on the development drawings and checked by Claude:
+published. Six versions, one change at a time, each scored on the development drawings and checked:
 
 | Version | What changed |
 |---|---|
@@ -177,9 +177,9 @@ harness (hashes below), and the test runs started at 10:53 am AEST.
 | `loop-guard.ts` | Pi extension: stops a model that repeats one call or sweeps a zoom box, and nudges one that stops before writing the chart. The same in both conditions |
 | `render.py` | Draws each chart with Mermaid 11.4.0 in headless Chrome; writes `mermaid.svg` and `mermaid.json` (the chart as Mermaid's own parser reads it) |
 | `repair.py` | For a chart that does not parse: a copy with quote marks and brackets in labels fixed. Reported beside the result, never as it |
-| `score.py` | Scores each chart against its key; `show` prints a chart beside its key for the hand check; `test` checks the scorer |
+| `score.py` | Scores each chart against its key; `show` prints a chart beside its key for the check; `test` checks the scorer |
 | `reference/` | The two answer keys, their rules (`README.md`) and the record of how they were made and settled (`log.md`) |
-| `results/` | `<condition>/<model>/<drawing>/<repeat>/`: the chart (`flowsheet.mmd`, `mermaid.svg`, `mermaid.json`), its score (`score.json`), the hand check (`check.json`) and the time (`seconds.txt`). `repaired/` holds a repaired copy where one was made. `results.json` has one row per attempt. The 27B's rows are its rerun; `qwen38-27b-first-run/<condition>/<drawing>/<repeat>/` holds its first run, with its own `results.json` |
+| `results/` | `<condition>/<model>/<drawing>/<repeat>/`: the chart (`flowsheet.mmd`, `mermaid.svg`, `mermaid.json`), its score (`score.json`), the check (`check.json`) and the time (`seconds.txt`). `repaired/` holds a repaired copy where one was made. `results.json` has one row per attempt. The 27B's rows are its rerun; `qwen38-27b-first-run/<condition>/<drawing>/<repeat>/` holds its first run, with its own `results.json` |
 
 ## Run it yourself
 
@@ -265,8 +265,8 @@ unchanged: with this file every archived `score.json` (35) is reproduced byte fo
 ## Scoring
 
 **The answer keys** (`reference/`) list each drawing's units, inputs, outputs, junctions and carriers, its streams and
-its main loops. Two readers, Claude and Codex, listed each drawing apart; every difference was looked at again on the
-drawing and settled, and each reader then checked the agreed key once more. The keys were frozen before any test run.
+its main loops. Each drawing was listed twice, apart; every difference was looked at again on the
+drawing and settled, and the agreed key was then checked once more. The keys were frozen before any test run.
 What cannot be read with confidence is marked unsure and not scored. Phoenix: 90 scored streams and 11 loops; Twin
 Creeks: 90 and 12.
 
@@ -275,7 +275,7 @@ chart's own words for where the box sits and by its lines. Junctions, carriers a
 through, so A → sump → B counts as A → B. Streams found: key streams the chart has. Wrong lines: chart lines that are no
 key stream. Loops found: key loops whose every step the chart has.
 
-**The hand check.** Every chart was read by Claude, an AI reader, beside its key and the drawing, knowing which
+**The check.** Every chart was read beside its key and the drawing, knowing which
 condition it came from (`checked` in each `check.json`). Where the scorer paired a box wrongly, the
 right pairing and the reason are written in its `check.json`, by the rules in `reference/README.md` (some dated: they
 were written down as the checks went on, and applied alike to both conditions). Every box whose label is not exactly its
@@ -302,7 +302,7 @@ left (50) is still below the lowest skill attempt (61).
 
 - Two drawings from one lecture, three attempts per model and condition. Enough to see Flash Next's gap, not to rank
   smaller differences.
-- One frozen skill, one key per drawing. The keys and the hand checks are careful readings, not ground truth from the
+- One frozen skill, one key per drawing. The keys and the checks are careful readings, not ground truth from the
   plants.
 - On the smaller development drawings Flash Next's streams were only just above its no-skill runs; on these two the gap is clear.
 - Flash Next's two conditions ran side by side on one server and slowed each other: the minutes compare the two

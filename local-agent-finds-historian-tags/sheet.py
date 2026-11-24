@@ -1,4 +1,4 @@
-"""A reading sheet per attempt, for scoring by hand beside the key: the tags the agent read (catalogue paths and
+"""A reading sheet per attempt, for scoring beside the key: the tags the agent read (catalogue paths and
 health), the key's tags, whether a chart was saved, tool calls, seconds and the final answer. Also writes
 attempts.json, the facts the scorer and the page use. Nothing here decides pass or fail; verdicts.yaml does.
 

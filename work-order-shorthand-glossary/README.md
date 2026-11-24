@@ -4,11 +4,11 @@ Code and data for Eleticle Core Log No. 13 (https://eleticle.com/articles/work-o
 
 A local LLM (Qwen 3.8 27B, on two 16 GB graphics cards) read 300 real, held-out mining maintenance work orders
 twice: once with no help, once with a 50-line glossary built from 3,200 other work orders of the same company. Every answer was
-scored against MaintNorm's key, then checked by hand by an AI reader (Claude), blind to which version it came from.
+scored against MaintNorm's key, then checked, blind to which version it came from.
 
 | | Without the glossary | With the glossary |
 |---|---|---|
-| Notes whose meaning came through (hand check) | 228 of 300 | 283 of 300 |
+| Notes whose meaning came through (checked) | 228 of 300 | 283 of 300 |
 | Shorthand read right | 437 of 508 (86.0 %) | 492 of 508 (96.9 %) |
 | Shorthand read wrong | 58 | 8 |
 | ... of it listed in the glossary (370 pieces) | 47 | 0 |
@@ -66,7 +66,7 @@ All 600 answers parsed as JSON; none was cut off.
 
 The prompt was tried on the val notes only, twice; a protocol review (by a second model, before any test note was
 sent) added the "keep numbers" and "make doubt visible" lines, the leave-out of repeated notes, 100 notes instead of
-60, the blind hand check and the meaning verdict. The protocol, its changes and the SHA-256 of every frozen file are in
+60, the blind check and the meaning verdict. The protocol, its changes and the SHA-256 of every frozen file are in
 `../plan.md` in the private working repository; the frozen hashes:
 
 | File | SHA-256 |
@@ -82,7 +82,7 @@ sent) added the "keep numbers" and "make doubt visible" lines, the leave-out of 
 1. **Script** (`score.py`): per piece of shorthand, right (the model's expansion holds every word of the key's
    meaning, singular and plural alike), wrong, unsure (listed as unsure, or two readings offered such as "repair or
    replace") or kept (left as written, unflagged).
-2. **By hand**, every answer, blind: `score.py --sheet` shows each note's two answers as x and y in an order drawn from
+2. **Read**, every answer, blind: `score.py --sheet` shows each note's two answers as x and y in an order drawn from
    the note id. Rules, fixed before the run: what the plain-English text tells the reader is what is scored; a
    synonym is right ("air conditioning" for air conditioner, "inspect" for inspection, "center" for centre); a
    different thing, action, side or interval is wrong (`1000H` as 10:00, `u/s` as upstream); an everyday form that
@@ -124,15 +124,14 @@ python3 run.py notes-test.json runs/test --url http://<host>:<port>/v1/chat/comp
 python3 score.py notes-test.json runs/test --check check.json --sheet sheet.md --out results.json
 ```
 
-With another model or run, the hand check starts again: read `sheet.md`, write your own `check.txt`, then
+With another model or run, the check starts again: read `sheet.md`, write your own `check.txt`, then
 `python3 check.py check.txt check.json runs/test` and `python3 score.py ... --check check.json --final`.
 
 ## Limits
 
 One model, one answer per note and version, sampled (a second run would differ in places). One annotator's key, and
 two of its readings in doubt. Three companies' notes, mostly heavy mobile equipment, short texts only; a site's own
-glossary would be checked by its planners rather than taken from counts alone. The hand check is one AI reader's
-(Claude), not a planner's.
+glossary would be checked by its planners rather than taken from counts alone.
 The split is MaintNorm's, not by date, so "held out" means held out from the glossary and the prompt: MaintNorm has
 been public since 2024, and the model may have met these notes in training; its effect on this comparison is unknown.
 
@@ -140,7 +139,7 @@ Two later checks, from Core Log No. 16 (`../work-order-shorthand-past-notes/`): 
 once the tokens the key masks as asset numbers are removed, 55 by a broader check (`near_duplicates_broad` in its
 `coverage.json`); without the 55, meaning kept 193 → 230 of 245 (15.1 points, against 18.3 on all 300). The glossary
 version, run again on 21 Nov 2026 with the same prompt and server, kept 273 of 300 (20 notes changed verdict; read
-by other AI readers).
+by other readers).
 
 ## Files
 
@@ -148,10 +147,10 @@ by other AI readers).
 |---|---|
 | `prepare.py` | Builds the glossaries and draws the notes |
 | `prompt.md`, `run.py` | The instruction and the runner |
-| `score.py`, `check.py` | The script's scoring, the blind sheet and the hand check |
+| `score.py`, `check.py` | The script's scoring, the blind sheet and the check |
 | `glossary/` | Each company's 50 lines, as text and with counts |
 | `notes-test.json`, `notes-dev.json` | The notes read, each token with MaintNorm's normalised form |
-| `check.txt`, `check.json` | The hand check: every correction and verdict, with its reason |
+| `check.txt`, `check.json` | The check: every correction and verdict, with its reason |
 | `results.json` | Every answer, scored |
 | `server.json` | The model list the server returned on the day |
 

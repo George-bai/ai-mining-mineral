@@ -1,4 +1,4 @@
-"""Writes verdicts.yaml from the verdicts recorded by hand below, after reading every attempt's tool calls and answer
+"""Writes verdicts.yaml from the verdicts recorded below, after reading every attempt's tool calls and answer
 beside the key (../local/sheet-r1.md). The page quotes the start of six answers; those quotes are cut from the
 answers here, markdown removed. Also copies each attempt's answer.md to answers/ and attempts.json beside it.
 
@@ -46,7 +46,7 @@ NOTES = {  # anything a repeat did differently, as read
               "With the historian’s clock at midnight, it took 22 Nov as “this morning” without saying so; the other two sessions said why."),
     "t14/3": "Led with the final concentrate grade, then listed all six streams and asked whether the feed grade was meant.",
 }
-FAILS = {  # by the letter of the rule "a key tag marked unhealthy must be called out" (README, Rules), applied after Codex's check
+FAILS = {  # by the letter of the rule "a key tag marked unhealthy must be called out" (README, Rules), applied after a second check
     "t16/1": "Listed the five process water tank levels but never mentioned the stale collector tank level and the empty cyanide tank level among the tank levels it could mean.",
     "t16/2": "Same: the stale and empty reagent tank levels not mentioned.",
     "t16/3": "Same: the stale and empty reagent tank levels not mentioned.",
