@@ -10,7 +10,8 @@
 # Output: ../local/runs/<run-name>/<id>/<repeat>/  (events.jsonl, answer.md, any chart, seconds.txt)
 set -euo pipefail
 here=$(cd "$(dirname "$0")" && pwd)
-pub=$(cd "$here/../../historian-tag-catalogue-for-agents/public" && pwd)
+# No. 18: articles/<slug>/public in our repository, <slug> in the public one
+pub=$(cd "$here/../../historian-tag-catalogue-for-agents/public" 2>/dev/null || cd "$here/../historian-tag-catalogue-for-agents" && pwd)
 run=$1; shift
 qfile=${QUESTIONS:-$here/questions.yaml}   # harness checks: QUESTIONS=dev.yaml
 qfile=$(cd "$(dirname "$qfile")" && pwd)/$(basename "$qfile")

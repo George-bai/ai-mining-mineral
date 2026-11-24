@@ -28,13 +28,13 @@ two grinding questions (`dev.yaml`), never on the test questions. `run.sh` takes
 | `questions.yaml` | The four test questions |
 | `make_key.py`, `key.json` | The key through the same tool code before any run (p1 uses No. 20's key) |
 | `plant-knowledge/site-a-concentrator-1.md` | The plant knowledge page, as given to the agent |
-| `frozen.sha256` | Hashes taken before the runs (the skill's hash included, its text not) |
+| `frozen.sha256` | Hashes taken before the runs, of the files as run, at their paths in our working repository (`articles/<slug>/public/`). Entries for files changed since no longer match: the published key (values or points removed, see the comments in the file), the scripts (only to find the other articles' folders in this repository's layout, 24 Nov 2026) and No. 18's `mcp_server.py` (a statistics fix, 24 Nov 2026); the skill's hash is included, its text is not |
 | `run.sh`, `models.json`, `prompt.md`, `answer.py` | The run |
 | `dev.yaml` | The two development questions for the skill (grinding at Site C); never scored |
 | `answers/` | Every attempt's tool calls and answer |
 | `verdicts.yaml` | right, asked or wrong for each attempt, with the reason |
 
-## Rules (fixed before the runs, `../plan.md`)
+## Rules (fixed before the runs)
 
 p1: rougher streams and the two-product formula, overall relationship positive, low feed-grade third steeper than
 high (or per tonne, said so, no clear difference). p2: rougher feed, final concentrate and final tail; running hours;

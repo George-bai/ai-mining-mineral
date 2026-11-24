@@ -42,7 +42,8 @@ t02/3:
     health ok, dimensionless) - Window/basis: raw (recorded) values, …'
 t03/1:
   pass: true
-  why: Read the SAG fresh feed rate at Site D, Concentrator 1 for 22 Nov and saved a chart.
+  why: Read the SAG fresh feed rate at Site D, Concentrator 1 for 22 Nov and saved a chart. Its daily mean of 339.8 t/h is
+    the tool’s, which averaged the count, minimum and maximum in with the hourly averages; the hourly averages give 446.5.
   quote: 'Chart saved to sag_fresh_feed_tph_2026-11-22.png in the current folder. SAG fresh feed trend — Site D, Concentrator
     1, yesterday (22 Nov 2026) Tag: \\EXAMPLE-AF\Operations\Example Mining\Site D\Concentrator 1\Grinding\SAG Mill · Fresh
     Feed Rate (point SD1:2WT001, catalogue id 4596) — primary, healthy, t/h. This is the golden throughput tag for this concentrator.
@@ -63,7 +64,8 @@ t03/3:
     peaking at ~554 t/h in the 22:00 hour - Day average: ~447 t/h …'
 t04/1:
   pass: true
-  why: Read the tailings return water flow at Site U, Concentrator 5 for 30 days and saved a chart.
+  why: Read the tailings return water flow at Site U, Concentrator 5 for 30 days and saved a chart. Its mean of 588.6 m³/h
+    is the tool’s mixed mean; the daily averages give 624.3.
   quote: 'Chart saved to tailings_return_water_flow_SU_C5.png in the current folder — a line of daily time-weighted averages
     with a min–max band. What the data shows (24 Oct – 22 Nov 2026): - Monthly mean: 588.6 m³/h; daily averages mostly sit
     between ~520 and ~710 m³/h. - Daily peaks up to 898.7 m³/h (20 Nov); troughs down to 219.9 m³/h (15 Nov) and 426.6 m³/h
@@ -196,7 +198,8 @@ t10/1:
     mm · 505–529 mm · · Rougher 1 · 314.4 mm · 282–690 mm · …
 t10/2:
   pass: true
-  why: Read all six roughers’ froth depth for the week and named cell 6, the key’s winner (cell 4 within 1 mm).
+  why: Read all six roughers’ froth depth for the week and named cell 6, the key’s winner (cell 4 within 1 mm). Its froth
+    depth means (333.8; about 455 for cells 2 to 6) are the tool’s mixed means; the averages give 314.3 and about 517.
   quote: Rougher Cell 6 had the deepest froth on average last week. Result (last 7 days, 2026-11-16 → 2026-11-22, time-weighted)
     · Rougher · Avg froth depth · · --- · --- · · Cell 6 · 456.0 mm ← deepest · · Cell 4 · 455.2 mm · · Cell 5 · 455.1 mm
     · · Cell 2 · 455.1 mm · · Cell 3 · 455.0 mm · · Cell 1 · 333.8 mm (clearly the shallowest) · Cells 2–6 are within ~1 mm
@@ -217,14 +220,16 @@ t11/1:
     Provenance - Tags: primary Dissolved Oxygen per tank under …'
 t11/2:
   pass: true
-  why: Read all eight tanks’ dissolved oxygen for 30 days and named tank 5, the key’s winner.
+  why: 'Read all eight tanks’ dissolved oxygen for 30 days and named tank 5, the key’s winner. Its dissolved oxygen means
+    are the tool’s mixed means, 1 to 8 % above the averages (tank 5: 3.98 against 3.70).'
   quote: 'Leach Tank 5 had the lowest average DO over the past month: 3.98 ppm (time-weighted, 2026-10-24 → 2026-11-22). Monthly
     averages, lowest to highest: · Tank · Avg DO (ppm) · Min · Max · · --- · --- · --- · --- · · Tank 5 · 3.98 · 0.22 · 8.66
     · · Tank 7 · 4.04 · 0.19 · 8.60 · · Tank 3 · 4.32 · −0.63 · 12.78 · · Tank 4 · 4.35 · 0.20 · 8.62 · · Tank 6 · 4.58 ·
     −0.57 · 12.87 · · Tank 8 · 6.57 · 0.79 · 18.96 · · Tank 1 · …'
 t11/3:
   pass: true
-  why: Read all eight tanks’ dissolved oxygen for 30 days and named tank 5, the key’s winner.
+  why: 'Read all eight tanks’ dissolved oxygen for 30 days and named tank 5, the key’s winner. Its dissolved oxygen means
+    are the tool’s mixed means, 1 to 8 % above the averages (tank 5: 3.98 against 3.70).'
   quote: 'Leach Tank 5 had the lowest average DO over the past month: 3.98 ppm (time-weighted), narrowly below Leach Tank
     7 at 4.04 ppm. Full ranking (30-day average, ppm): · Tank · Avg DO · · --- · --- · · Leach Tank 5 · 3.98 · · Leach Tank
     7 · 4.04 · · Leach Tank 4 · 4.35 · · Leach Tank 3 · 4.32 · · Leach Tank 6 · 4.58 · · Leach Tank 8 · 6.57 · · Leach Tank
@@ -384,7 +389,8 @@ t18/3:
     → 23:45 (+10:00, Australia/Brisbane) — the 8 hours before the …'
 t19/1:
   pass: true
-  why: Found the QC point by its code and read it, as asked.
+  why: Found the QC point by its code and read it, as asked. Its mean of 330.0 t/h is the tool’s mixed mean; the averages
+    give 379.5.
   quote: 'Chart saved: siteg_conc5_cv4_rate_qc_2026-11-22_morning.png (in the current folder). SITEG.CONC5.CRU.CV4.RATE.QC
     — this morning (22 Nov, 06:00–12:00 AEST) - Tag: SITEG.CONC5.CRU.CV4.RATE.QC — \\EXAMPLE-AF\Operations\Example Mining\Site
     G\Concentrator 5\Crushing\CV-104 · Belt Weigher Rate QC (catalogue id 10420), unit t/h, health ok - Time-weighted average:
@@ -398,7 +404,8 @@ t19/2:
     morning" = the morning of 22 Nov). Basis: raw …'
 t19/3:
   pass: true
-  why: Found the QC point by its code and read it, as asked.
+  why: Found the QC point by its code and read it, as asked. Its mean of 314.7 t/h is the tool’s mixed mean; the averages
+    give 379.5.
   quote: 'Here''s SITEG.CONC5.CRU.CV4.RATE.QC for this morning. Tag (exact point match, health ok): - Path: \\EXAMPLE-AF\Operations\Example
     Mining\Site G\Concentrator 5\Crushing\CV-104 · Belt Weigher Rate QC - Unit: t/h, QC variant of the CV-104 belt weigher
     rate Window: 2026-11-22 06:00–12:00 AEST. The historian''s clock is at 2026-11-23 00:00 (just past midnight), so I took

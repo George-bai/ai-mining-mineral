@@ -9,7 +9,7 @@ from pathlib import Path
 import yaml
 
 HERE = Path(__file__).parent
-# condition/question/session: (outcome, why). right / asked / wrong by the rules in ../plan.md.
+# condition/question/session: (outcome, why). right / asked / wrong by the rules in README.md.
 V = {
     "bare/p1/1": ("wrong", "Built recovery from a balance on the pump flow tags (generated in the stand-in), not the assays’ two-product formula; its slopes by third (3.6, 1.0, 0.6) look right on the wrong quantity."),
     "bare/p1/2": ("right", "First wrote the formula without the concentrate grade, then corrected it to the two-product formula on the rougher assays; positive overall (r 0.52), low third steepest (2.7 against 0.8 points per mL/min)."),
@@ -32,9 +32,9 @@ V = {
     "knowledge/p3/1": ("right", "Mass pull from the rougher assays, analyser faults left out: 34.3 %."),
     "knowledge/p3/2": ("right", "Mass pull from the rougher assays per analyser cycle, impossible samples left out: 33 %."),
     "knowledge/p3/3": ("right", "Mass pull from the rougher assays, hour by hour, running hours: 34.3 %."),
-    "knowledge/p4/1": ("wrong", "The right formula, but monthly from daily averages with impossible readings kept in: April at 64.8 %. With impossible hours left out, the lowest month is August."),
-    "knowledge/p4/2": ("wrong", "The right formula and running hours, but hourly recoveries averaged with impossible or undefined analyser hours kept in: April at 65.7 %."),
-    "knowledge/p4/3": ("wrong", "The right formula and running blocks, but four-hour averages with impossible analyser readings kept: April at 65.3 %."),
+    "knowledge/p4/1": ("wrong", "The right formula, monthly from daily averages: April at 64.8 %. Every way our key averages 2026’s months, impossible hours kept or left out, gives August."),
+    "knowledge/p4/2": ("wrong", "The right formula and running hours, hourly recoveries averaged its own way: April at 65.7 %. Every way our key averages 2026’s months, impossible hours kept or left out, gives August."),
+    "knowledge/p4/3": ("wrong", "The right formula and running blocks, four-hour averages: April at 65.3 %. Every way our key averages 2026’s months, impossible hours kept or left out, gives August."),
     "skills/p1/1": ("wrong", "Followed the method to the letter, but its script swapped numpy’s slope and intercept and reported each third’s intercept (65, 74, 82 %) as its slope: steeper at high feed grade, with a bootstrap interval to match. Our key: the reverse."),
     "skills/p1/2": ("right", "Hourly, running hours, screened: 2.43 points per mL/min overall (r 0.33); by thirds 2.86, 1.72, 1.03 on the recorded dose; per tonne the difference is not shown (interval spans zero), and it says so."),
     "skills/p1/3": ("wrong", "Its script dropped 6,212 usable hours of 2026 and it reported them as a gap in the historian, which is false; on the shorter record it found the per-tonne response steeper at high feed grade."),
@@ -44,7 +44,7 @@ V = {
     "skills/p3/1": ("right", "Hourly, screened, tonne-weighted: 33.2 %."),
     "skills/p3/2": ("right", "Hourly, screened, tonne-weighted: 33.2 %."),
     "skills/p3/3": ("right", "Hourly, screened, tonne-weighted: 33.2 %."),
-    "skills/p4/1": ("right", "August at 68.2 %, feed grade 6.10 g/t, hourly and gold-weighted."),
+    "skills/p4/1": ("right", "August at 68.2 %, feed grade 6.10 g/t, hourly and gold-weighted. Its remark that August’s low-recovery hours carried more feed metal has the sign backwards: weighting by feed metal raised the month’s recovery (68.2 against a plain 65.9 %)."),
     "skills/p4/2": ("right", "August at 67.9 %, feed grade 6.10 g/t."),
     "skills/p4/3": ("right", "August at 68.2 %, feed grade 6.10 g/t."),
 }

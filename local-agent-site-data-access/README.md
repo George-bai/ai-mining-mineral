@@ -23,7 +23,7 @@ A fifth Codex run checked each number and claim the page takes from a source aga
 ## The page's data
 
 - `studies.json`: nine published studies in which an agent read plant or equipment records, each marked on four
-  points as the publication reports them (model on site, real records, read-only access, answers scored), with its
+  points as the publication reports them (local model, i.e. run on the user's own hardware rather than a cloud service; real records; read-only access; answers scored), with its
   own main result. Our reading; "unknown" means not reported or not verifiable, not "no".
 - `options.json`: five ways to give a local agent historian data, each judged on four questions (can it change plant
   data, do readings leave the site, can it overload the historian, does it find the right tag), with the reason.

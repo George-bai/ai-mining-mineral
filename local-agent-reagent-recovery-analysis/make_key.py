@@ -17,7 +17,8 @@ from pathlib import Path
 import numpy as np
 
 HERE = Path(__file__).parent
-PUB = HERE.parent.parent / "historian-tag-catalogue-for-agents" / "public"
+PUB = next(p for p in (HERE.parent.parent / "historian-tag-catalogue-for-agents" / "public",  # our repository
+                 HERE.parent / "historian-tag-catalogue-for-agents") if p.is_dir())  # the public one
 sys.path.insert(0, str(PUB))
 import catalog, mcp_server as M  # noqa: E402
 

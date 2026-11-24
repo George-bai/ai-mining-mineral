@@ -3,7 +3,7 @@ summaries read through the same MCP tool code the agent uses. Never from an agen
 
     (mock running on :8711)  ../../historian-tag-catalogue-for-agents/public/.venv/bin/python make_key.py
 
-Counting rules (fixed before any run, plan.md):
+Counting rules (fixed before any run; README, Rules):
   read, compare, code  the agent reads every tag listed (get_timeseries or get_current_values on it)
   across               it reads the group and names the winner listed
   ambiguous            it asks which one, or lists at least two of the valid readings, instead of silently picking one
@@ -14,7 +14,8 @@ import json, sys
 from pathlib import Path
 
 HERE = Path(__file__).parent
-PUB = HERE.parent.parent / "historian-tag-catalogue-for-agents" / "public"
+PUB = next(p for p in (HERE.parent.parent / "historian-tag-catalogue-for-agents" / "public",  # our repository
+                 HERE.parent / "historian-tag-catalogue-for-agents") if p.is_dir())  # the public one
 sys.path.insert(0, str(PUB))
 import generator  # noqa: E402
 

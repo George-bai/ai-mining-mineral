@@ -7,7 +7,8 @@ import json, random, sys
 from pathlib import Path
 
 HERE = Path(__file__).parent
-sys.path.insert(0, str(HERE.parent.parent / "historian-tag-catalogue-for-agents" / "public"))
+sys.path.insert(0, str(next(p for p in (HERE.parent.parent / "historian-tag-catalogue-for-agents" / "public",  # our repository
+                 HERE.parent / "historian-tag-catalogue-for-agents") if p.is_dir())))  # the public one
 import generator  # noqa: E402
 
 P = generator.build(31, 5)

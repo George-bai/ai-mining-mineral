@@ -204,7 +204,8 @@ def get_timeseries(ids: list[str], start: str = "*-1d", end: str = "*", mode: st
     else:
         raise ValueError("mode must be summary, interpolated or recorded.")
     by_web = {it["WebId"]: it for it in items}
-    table, stats, notes = {}, [], []
+    primary = summaries[0] if mode == "summary" else "Value"
+    table, stats, notes, out_unit = {}, [], [], {}
     for r in rows:
         it = by_web.get(r["webid"], {})
         if it.get("Errors"):
@@ -212,22 +213,29 @@ def get_timeseries(ids: list[str], start: str = "*-1d", end: str = "*", mode: st
             continue
         factor = CONVERT.get((r["unit"], units), 1) if units else 1
         unit = units if units and factor != 1 or units == r["unit"] else r["unit"]
-        vals = []
+        out_unit[r["id"]] = unit
+        vals, bad = {}, 0  # per summary column: a tag's stats never mix Average with Count or Maximum
         for typ, v in get(it):
             val = v.get("Value")
             if isinstance(val, dict):          # a digital state or a system value such as No Data
                 val = val.get("Value") if not val.get("IsSystem") else None
+            if v.get("Good") is False and val is not None:   # bad quality: left out of the file and the stats
+                val, bad = None, bad + 1
             t = local_time(v["Timestamp"])
             if isinstance(val, (int, float)) and not isinstance(val, bool):
-                val = val * factor
-                vals.append(val)
+                if typ != "Count":             # a count is not in the tag's unit, so it is never converted
+                    val = val * factor
+                vals.setdefault(typ, []).append(val)
             table.setdefault(t, {})[f"{r['id']}|{typ}"] = val
+        if bad:
+            notes.append(f"{r['path']}: {bad} bad-quality values left out")
         n_limit = L["summary_intervals"] if mode == "summary" else L["interpolated_values"]
-        if mode != "recorded" and len(vals) > n_limit:
+        if mode != "recorded" and max(map(len, vals.values()), default=0) > n_limit:
             raise ValueError(f"Too many values for {r['path']}: use a longer interval.")
-        stats.append({"id": r["id"], "path": r["path"], "unit": unit, "values": len(vals),
-                      "mean": round(sum(vals) / len(vals), 4) if vals else None,
-                      "min": min(vals) if vals else None, "max": max(vals) if vals else None})
+        summ = lambda xs: {"values": len(xs), "mean": round(sum(xs) / len(xs), 4) if xs else None,
+                           "min": min(xs) if xs else None, "max": max(xs) if xs else None}
+        stats.append({"id": r["id"], "path": r["path"], "unit": unit, "summary": primary, **summ(vals.get(primary, [])),
+                      "other_summaries": {k: summ(x) for k, x in vals.items() if k != primary}})
     DATASETS.mkdir(parents=True, exist_ok=True)
     ds = datetime.now(TZ).strftime("%Y%m%d-%H%M%S-") + uuid.uuid4().hex[:6]
     cols = sorted({k for v in table.values() for k in v})
@@ -237,13 +245,14 @@ def get_timeseries(ids: list[str], start: str = "*-1d", end: str = "*", mode: st
         for t in sorted(table):
             w.writerow([t] + [table[t].get(k, "") for k in cols])
     times = sorted(table)
-    provenance = {"tags": [{"id": r["id"], "path": r["path"], "point": r["point"], "unit": r["unit"]} for r in rows],
+    provenance = {"tags": [{"id": r["id"], "path": r["path"], "point": r["point"], "unit": r["unit"],
+                            "unit_in_file": out_unit.get(r["id"], r["unit"])} for r in rows],
                   "window": {"requested": [start, end], "first": times[0] if times else None,
                              "last": times[-1] if times else None, "timezone": S["timezone"]},
                   "mode": mode, "interval": interval if mode != "recorded" else None,
                   "basis": "time-weighted" if mode == "summary" else ("interpolated" if mode == "interpolated" else "raw records"),
                   "summaries": summaries if mode == "summary" else None, "units_requested": units,
-                  "columns": "time, then one column per tag and summary: <catalogue id>|<summary>",
+                  "columns": "time, then one column per tag and summary: <catalogue id>|<summary>; Count is not converted",
                   "queried": datetime.now(TZ).isoformat(timespec="seconds")}
     (DATASETS / f"{ds}.json").write_text(json.dumps(provenance, indent=1))
     return {"dataset_id": ds, "file": str(DATASETS / f"{ds}.csv"), "rows": len(times), "tags": stats,

@@ -7,7 +7,8 @@
 # Output: ../local/runs/<run-name>/<id>/<repeat>/  (events.jsonl, answer.md, any chart, seconds.txt)
 set -euo pipefail
 here=$(cd "$(dirname "$0")" && pwd)
-pub=$(cd "$here/../../historian-tag-catalogue-for-agents/public" && pwd)
+# No. 18: articles/<slug>/public in our repository, <slug> in the public one
+pub=$(cd "$here/../../historian-tag-catalogue-for-agents/public" 2>/dev/null || cd "$here/../historian-tag-catalogue-for-agents" && pwd)
 run=$1; shift
 qfile=${QUESTIONS:-$here/questions.yaml}   # a list of conversations: id, turns
 qfile=$(cd "$(dirname "$qfile")" && pwd)/$(basename "$qfile")
@@ -31,12 +32,12 @@ pi mcp add historian --exposure direct --description "The plant historian: tag c
   --url http://127.0.0.1:${MCP_PORT:-8713}/mcp --header "x-api-key=$MCP_API_KEY" > /dev/null
 [ -d "$out/skill-used" ] || cp -r "$pub/skill/historian-tags" "$out/skill-used"
 skill=$out/skill-used
-# KIT=1: the labelled second run (plan.md, 23 Nov 2026 evening): No. 21's plant knowledge page and analytical skill added
+# KIT=1: the labelled second run (README, Two runs; 23 Nov 2026 evening): No. 21's plant knowledge page and analytical skill added
 extra=() && kit=$out/condition && mkdir -p "$kit"
 if [ "${KIT:-}" = 1 ]; then
-  n5=$(cd "$here/../../teaching-local-agent-site-analysis" && pwd)
-  cp "$n5/public/plant-knowledge/site-a-concentrator-1.md" "$kit/plant-knowledge.md"
-  [ -d "$kit/site-analysis" ] || cp -r "${SKILLS_DIR:-$n5/skills}/site-analysis" "$kit/site-analysis"
+  n5=$(cd "$here/../../teaching-local-agent-site-analysis/public" 2>/dev/null || cd "$here/../teaching-local-agent-site-analysis" && pwd)
+  cp "$n5/plant-knowledge/site-a-concentrator-1.md" "$kit/plant-knowledge.md"
+  [ -d "$kit/site-analysis" ] || cp -r "${SKILLS_DIR:-$n5/../skills}/site-analysis" "$kit/site-analysis"
   printf '%s\n' "For any calculation, KPI, period average or relationship between plant variables, read and follow the site-analysis skill first." > "$kit/use-skill.md"
   extra+=(--append-system-prompt "$kit/plant-knowledge.md" --skill "$kit/site-analysis" --append-system-prompt "$kit/use-skill.md")
 fi

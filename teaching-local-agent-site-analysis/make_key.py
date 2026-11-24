@@ -15,7 +15,8 @@ from pathlib import Path
 import numpy as np
 
 HERE = Path(__file__).parent
-sys.path.insert(0, str(HERE.parent.parent / "local-agent-reagent-recovery-analysis" / "public"))
+sys.path.insert(0, str(next(p for p in (HERE.parent.parent / "local-agent-reagent-recovery-analysis" / "public",  # our repository
+                                     HERE.parent / "local-agent-reagent-recovery-analysis") if p.is_dir())))  # the public one
 from make_key import E, M, catalog, read  # noqa: E402  (No. 4's reader: same tool code, same tags)
 
 TAGS = {"f": "Flotation\\Rougher Feed|Au", "rc": "Flotation\\Rougher Concentrate|Au", "rt": "Flotation\\Rougher Tail|Au",

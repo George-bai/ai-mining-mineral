@@ -21,12 +21,12 @@ Zyfra's `rougher.input.floatbank10_xanthate`.
 |---|---|
 | `questions.yaml` | The two questions, asked in turn in one session |
 | `make_key.py`, `key.json` | Our analysis through the same tool code, before any run: daily and hourly, as recorded and per tonne of feed, with a week-block bootstrap. The daily points themselves (Zyfra's values) are not published |
-| `frozen.sha256` | Hashes taken before the runs |
+| `frozen.sha256` | Hashes taken before the runs, of the files as run, at their paths in our working repository (`articles/<slug>/public/`). Entries for files changed since no longer match: the published key (values or points removed, see the comments in the file), the scripts (only to find the other articles' folders in this repository's layout, 24 Nov 2026) and No. 18's `mcp_server.py` (a statistics fix, 24 Nov 2026) |
 | `run.sh`, `models.json`, `prompt.md`, `answer.py` | The run: Pi 1.5.2, Qwen 3.8 27B, No. 18's MCP server over HTTP, a fresh fenced session per repeat, the second question with `--continue` |
 | `answers/` | Each session's tool calls and answers, turn by turn |
 | `verdicts.yaml` | Each turn's verdict, the agent's numbers as it reported them, and the reason |
 
-## Rules (fixed before the runs, `../plan.md`)
+## Rules (fixed before the runs)
 
 Turn 1 passes when the agent reads the four Site A, Concentrator 1 tags over the whole record, calculates recovery
 by the two-product formula, reports a positive overall relationship with a number and saves a chart. Turn 2 passes
@@ -38,8 +38,8 @@ turns pass; the bar is two of three.
 
 - **First run** (`answers/session<N>-question<M>.md`, `verdicts.yaml`): the questions as above. One session of three
   passed: session 1 calculated mass pull, (f − t)/(c − t), and called it recovery; session 3 built recovery from the
-  pump flow tags, which the stand-in generates. All three found recovery, as each calculated it, rising most at low
-  feed grade. Two rules were written down after session 1 was read and before sessions 2 and 3 were (`../plan.md`):
+  pump flow tags, which the stand-in generates. All three found their strongest correlation, on recovery as each calculated it, in the low
+  feed-grade third (correlations, not slopes). Two rules were written down after session 1 was read and before sessions 2 and 3 were:
   turn 2 needs recovery itself, and "steeper" needs a rate, not a correlation alone.
 - **Second run** (`answers/second-run-*.md`, `verdicts-kit.yaml`), added because the first missed its bar, as that
   rule said: the same questions with No. 21's plant knowledge page and analytical skill (`KIT=1 run.sh kit`; the skill

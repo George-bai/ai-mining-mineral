@@ -8,7 +8,8 @@ import json, sqlite3, sys
 from pathlib import Path
 
 HERE = Path(__file__).parent
-CAT = HERE.parent.parent / "historian-tag-catalogue-for-agents" / "public" / "local" / "catalog" / "catalog.sqlite"
+CAT = next(p for p in (HERE.parent.parent / "historian-tag-catalogue-for-agents" / "public",  # our repository
+                 HERE.parent / "historian-tag-catalogue-for-agents") if p.is_dir()) / "local" / "catalog" / "catalog.sqlite"  # the public one
 READS = ("mcp__historian__get_timeseries", "mcp__historian__get_current_values")
 
 

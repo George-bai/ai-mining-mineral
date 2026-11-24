@@ -39,8 +39,8 @@
    "local": "unknown", "real": "yes", "readonly": "yes", "checked": "partly",
    "result": "47 past alarms replayed: about 60 % less time to resolve, estimated",
    "url": "https://www.intel.com/content/www/us/en/content-details/932028/proving-the-value-of-context-in-ai-driven-industrial-operations.html"},
-  {"id": "nexa", "who": "Nexa Resources, Cerro Lindo", "date": "2025-02", "what": "a concentrator's databases, cloud model",
-   "local": "no", "real": "yes", "readonly": "unknown", "checked": "no",
+  {"id": "nexa", "who": "Nexa Resources, Cerro Lindo", "date": "2025-02", "what": "a concentrator's databases, a Gemini-based assistant",
+   "local": "unknown", "real": "yes", "readonly": "unknown", "checked": "no",
    "result": "an assistant in use; no accuracy reported",
    "url": "https://www.smv.gob.pe/ConsultasP8/temp/Memoria%20Anual%202024%20Nexa%20Peru.pdf"}
  ]

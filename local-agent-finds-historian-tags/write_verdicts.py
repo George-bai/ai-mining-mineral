@@ -46,11 +46,20 @@ NOTES = {  # anything a repeat did differently, as read
               "With the historian’s clock at midnight, it took 22 Nov as “this morning” without saying so; the other two sessions said why."),
     "t14/3": "Led with the final concentrate grade, then listed all six streams and asked whether the feed grade was meant.",
 }
-FAILS = {  # by the letter of the rule "a key tag marked unhealthy must be called out" (plan.md), applied after Codex's check
+FAILS = {  # by the letter of the rule "a key tag marked unhealthy must be called out" (README, Rules), applied after Codex's check
     "t16/1": "Listed the five process water tank levels but never mentioned the stale collector tank level and the empty cyanide tank level among the tank levels it could mean.",
     "t16/2": "Same: the stale and empty reagent tank levels not mentioned.",
     "t16/3": "Same: the stale and empty reagent tank levels not mentioned.",
     "t13/3": "Listed each concentrator’s grinding supply power, but said “no tags were unusable” while Concentrator 1’s Ball Mill 2 power tag is broken.",
+}
+TOOLMEAN = {  # found 24 Nov 2026: the answer quotes the mean No. 18's get_timeseries returned, which mixed summary columns
+    "t03/1": "Its daily mean of 339.8 t/h is the tool’s, which averaged the count, minimum and maximum in with the hourly averages; the hourly averages give 446.5.",
+    "t04/1": "Its mean of 588.6 m³/h is the tool’s mixed mean; the daily averages give 624.3.",
+    "t10/2": "Its froth depth means (333.8; about 455 for cells 2 to 6) are the tool’s mixed means; the averages give 314.3 and about 517.",
+    "t11/2": "Its dissolved oxygen means are the tool’s mixed means, 1 to 8 % above the averages (tank 5: 3.98 against 3.70).",
+    "t11/3": "Its dissolved oxygen means are the tool’s mixed means, 1 to 8 % above the averages (tank 5: 3.98 against 3.70).",
+    "t19/1": "Its mean of 330.0 t/h is the tool’s mixed mean; the averages give 379.5.",
+    "t19/3": "Its mean of 314.7 t/h is the tool’s mixed mean; the averages give 379.5.",
 }
 
 
@@ -67,7 +76,7 @@ def main(run):
     out = {}
     for k in sorted(att):
         q = k.split("/")[0]
-        out[k] = {"pass": k not in FAILS, "why": FAILS.get(k) or NOTES.get(k) or WHY[q], "quote": clean(att[k]["answer"])}
+        out[k] = {"pass": k not in FAILS, "why": " ".join(filter(None, [FAILS.get(k) or NOTES.get(k) or WHY[q], TOOLMEAN.get(k)])), "quote": clean(att[k]["answer"])}
     (HERE / "verdicts.yaml").write_text(yaml.safe_dump(out, sort_keys=False, allow_unicode=True, width=120))
     shutil.copy(run / "attempts.json", HERE / "attempts.json")
     (HERE / "answers").mkdir(exist_ok=True)

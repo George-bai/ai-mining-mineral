@@ -79,7 +79,7 @@
   why:
   - Calculated recovery as one minus tail gold over feed gold, using the rougher concentrate and tail pump flow tags (generated
     in the stand-in) instead of the assays’ two-product formula; mean 88 %, r 0.55.
-  - Found the low third steepest (r 0.62, 0.38, 0.28) on that same recovery.
+  - Found the strongest correlation in the low third (r 0.62, 0.38, 0.28) on that same recovery.
   quote:
   - 'Done. The chart is saved at collector_dose_vs_rougher_recovery.png (script: collector_recovery.py, dataset: runs/r1/datasets/20261123-193134-0b3033.csv).
 

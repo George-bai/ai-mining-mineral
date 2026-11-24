@@ -214,24 +214,24 @@ knowledge/p3/3:
   seconds: 76.9
 knowledge/p4/1:
   outcome: wrong
-  why: 'The right formula, but monthly from daily averages with impossible readings kept in: April at 64.8 %. With impossible
-    hours left out, the lowest month is August.'
+  why: 'The right formula, monthly from daily averages: April at 64.8 %. Every way our key averages 2026’s months, impossible
+    hours kept or left out, gives August.'
   quote: 'April 2026 had the lowest gold recovery: 64.8%, with a feed grade of 8.44 g/t Au.
 
     Monthly results (Jan–Nov 2026, running hours only — days with SAG fresh feed rate < 50 t/h excluded, 20 such days dropped):'
   seconds: 221.8
 knowledge/p4/2:
   outcome: wrong
-  why: 'The right formula and running hours, but hourly recoveries averaged with impossible or undefined analyser hours kept
-    in: April at 65.7 %.'
+  why: 'The right formula and running hours, hourly recoveries averaged its own way: April at 65.7 %. Every way our key averages
+    2026’s months, impossible hours kept or left out, gives August.'
   quote: 'April 2026 had the lowest gold recovery so far this year: 65.7%, with a feed grade of 8.9 g/t Au.
 
     Monthly results (2026, running hours only):'
   seconds: 203.1
 knowledge/p4/3:
   outcome: wrong
-  why: 'The right formula and running blocks, but four-hour averages with impossible analyser readings kept: April at 65.3
-    %.'
+  why: 'The right formula and running blocks, four-hour averages: April at 65.3 %. Every way our key averages 2026’s months,
+    impossible hours kept or left out, gives August.'
   quote: 'April 2026 had the lowest gold recovery so far in 2026: 65.3%, with a feed grade of 8.7 g/t Au that month.
 
     Monthly results (Jan–Nov 2026, running hours only).'
@@ -337,7 +337,9 @@ skills/p3/3:
   seconds: 71.6
 skills/p4/1:
   outcome: right
-  why: August at 68.2 %, feed grade 6.10 g/t, hourly and gold-weighted.
+  why: 'August at 68.2 %, feed grade 6.10 g/t, hourly and gold-weighted. Its remark that August’s low-recovery hours carried
+    more feed metal has the sign backwards: weighting by feed metal raised the month’s recovery (68.2 against a plain 65.9
+    %).'
   quote: 'August 2026 had the lowest gold recovery at Site A, Concentrator 1: 68.2 %, with a feed grade of 6.10 g/t Au that
     month.
 
